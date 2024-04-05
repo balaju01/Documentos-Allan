@@ -1,0 +1,18 @@
+\chapter{Conclusiones y Trabajo a Futuro}
+\section{Conclusiones}
+
+En este documento se observa que el esquema de intercambio de clave y la implementación de los protocolos P y P’ del esquema Díaz – Chakraborty se lleva con éxito. Los cuales son implementados para el cifrado y descifrado de los mensajes de correo electrónico por medio de CAPTCHAS. \\
+
+También se concluye que el esquema Díaz – Chakraborty es posible implementarse en los esquemas actuales de comunicación de correo electrónico de una manera trasparente al momento del envío y recepción de los correos electrónicos para el usuario.\\
+
+Esta implementación del esquema Díaz – Chakraborty es el primer prototipo funcional que se tiene del esquema de secreto compartido de Adi Shamir implementado para la comunicación por medio del correo electrónico y deteniendo los ataques de los agentes clasificadores.
+
+\section{Trabajo a futuro.}
+
+Las líneas de trabajo que son sugeridas por los autores de este documento se describen a continuación.
+
+La primera línea de trabajo que se sugiere al lector es la implementación del prototipo 8 en un cliente de correo electrónico comercial, ya sea un cliente de escritorio, como se hizo en este documento, un cliente de correos web o incluso un cliente de correo móvil.\\
+
+Otra posible línea de trabajo tiene que ver con el intercambio de CAPTCHAS entre los usuarios para el descifrado de los mensajes de correo electrónico, en este documento se realizó en un esquema de intercambio basado en los servidores de claves públicas que se implementan en los protocolos PGP y GPG. Se sugiere mejorar la autenticación  de los usuarios en el servidor para la carga y descarga de los CAPTCHAS.\\
+
+Por último, el prototipo 8 hace referencia mas a una biblioteca estándar que a una implementación solo orientada al correo electrónico ya que se tiene los protocolos P y P’ pueden utilizarse de manera separada. Se sugiere al lector utilizar estos protocolos para tratar resolver problemas de cifrado simétrico.

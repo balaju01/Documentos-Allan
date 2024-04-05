@@ -1,0 +1,28 @@
+\chapter{Pruebas}
+En este capitulo se muestran los resultados de las pruebas realizadas sobre el prototipo 10. Las pruebas realizadas fueron de tiempo de respuesta y de trafico de información en la red.
+\section{Prueba de rendimiento, Cifrado y descifrado de un solo CAPTCHA}
+\begin{figure}[h]
+ \centering
+ \includegraphics[height=6.3in]{./images/idda_unic.png}
+		\caption{Rendimiento del esquema para un solo CAPTCHA}
+		\label{fig:7-1}
+\end{figure}
+
+\begin{figure}[h]
+ \centering
+ \includegraphics[height=6.3in]{./images/regreso_uni.png}
+		\caption{Rendimiento del esquema para un solo CAPTCHA}
+		\label{fig:7-2}
+\end{figure}
+\begin{figure}[h]
+ \raggedright
+ \includegraphics[height=5.5in]{./images/idda_multic.png}
+		\caption{Rendimiento del esquema multiCAPTCHA}
+		\label{fig:7-3}
+\end{figure}
+\begin{figure}[h]
+ \raggedright
+ \includegraphics[height=4in]{./images/regraso_multi.png}
+		\caption{Rendimiento del esquema multiCAPTCHA}
+		\label{fig:7-4}
+\end{figure}

@@ -1,0 +1,30 @@
+\select@language {spanish}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {6.1}{\ignorespaces Descripci\IeC {\'o}n CU2.}}{24}{table.6.1}
+\contentsline {table}{\numberline {6.2}{\ignorespaces Descripci\IeC {\'o}n CU4.\relax }}{27}{table.caption.9}
+\contentsline {table}{\numberline {6.3}{\ignorespaces Descripci\IeC {\'o}n CU5.}}{29}{table.6.3}
+\contentsline {table}{\numberline {6.4}{\ignorespaces Descripci\IeC {\'o}n CU6.}}{32}{table.6.4}
+\contentsline {table}{\numberline {6.5}{\ignorespaces Descripci\IeC {\'o}n CU7.\relax }}{33}{table.caption.13}
+\contentsline {table}{\numberline {6.6}{\ignorespaces Descripci\IeC {\'o}n CU8.\relax }}{35}{table.caption.15}
+\contentsline {table}{\numberline {6.7}{\ignorespaces Descripci\IeC {\'o}n CU9.\relax }}{36}{table.caption.17}
+\contentsline {table}{\numberline {6.8}{\ignorespaces Descripci\IeC {\'o}n CU10.\relax }}{38}{table.caption.19}
+\contentsline {table}{\numberline {6.9}{\ignorespaces Diagrama a bloques 0 general\relax }}{40}{table.caption.21}
+\contentsline {table}{\numberline {6.10}{\ignorespaces Diagrama a bloques 1 general clave\relax }}{41}{table.caption.23}
+\contentsline {table}{\numberline {6.11}{\ignorespaces Diagrama a bloques 2 Cifrar Correo\relax }}{41}{table.caption.24}
+\contentsline {table}{\numberline {6.12}{\ignorespaces Diagrama a bloques 3 Empaquetar Correo\relax }}{42}{table.caption.26}
+\contentsline {table}{\numberline {6.13}{\ignorespaces Diagrama a bloques 4 Enviar correo\relax }}{42}{table.caption.28}
+\contentsline {table}{\numberline {6.14}{\ignorespaces Diagrama a bloques 5 Generar CAPTCHA\relax }}{43}{table.caption.30}
+\contentsline {table}{\numberline {6.15}{\ignorespaces Diagrama a bloques 6 Enviar CAPTCHAS (Usuario existente)\relax }}{44}{table.caption.32}
+\contentsline {table}{\numberline {6.16}{\ignorespaces Diagrama a bloques 7 Enviar CAPTCHAS (Usuario inexistente)\relax }}{45}{table.caption.34}
+\contentsline {table}{\numberline {6.17}{\ignorespaces Diagrama a bloques 8 Descargar mensaje\relax }}{46}{table.caption.36}
+\contentsline {table}{\numberline {6.18}{\ignorespaces Diagrama a bloques 9 Verificar protocolo (con protocolo v\IeC {\'a}lido)\relax }}{46}{table.caption.38}
+\contentsline {table}{\numberline {6.19}{\ignorespaces Diagrama a bloques 10 Verificar protocolo (con protocolo inv\IeC {\'a}lido) \relax }}{47}{table.caption.39}
+\contentsline {table}{\numberline {6.20}{\ignorespaces Diagrama a bloques 11 Conseguir CAPTCHAS (Usuario existente)\relax }}{47}{table.caption.41}
+\contentsline {table}{\numberline {6.21}{\ignorespaces Diagrama a bloques 12 Recuperar clave\relax }}{48}{table.caption.43}
+\contentsline {table}{\numberline {6.22}{\ignorespaces Diagrama a bloques 13 Descifrar correo\relax }}{48}{table.caption.44}
+\addvspace {10\p@ }

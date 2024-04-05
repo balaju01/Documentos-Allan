@@ -1,0 +1,65 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/dev/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: master_tt.aux
+A level-1 auxiliary file: archivosTex/introduccion.aux
+A level-1 auxiliary file: archivosTex/preliminares.aux
+A level-1 auxiliary file: archivosTex/adv-clasificadores.aux
+A level-1 auxiliary file: archivosTex/propuesta.aux
+A level-1 auxiliary file: archivosTex/analisisydiseno.aux
+A level-1 auxiliary file: archivosTex/desarrollo.aux
+A level-1 auxiliary file: archivosTex/pruebas.aux
+A level-1 auxiliary file: archivosTex/conclusiones.aux
+A level-1 auxiliary file: archivosTex/anexos.aux
+The style file: abbrv.bst
+Database file #1: bibliografia.bib
+A bad cross reference---entry "Attacks"
+refers to entry "DBLP:conf/wpes/2004", which doesn't exist
+Warning--I didn't find a database entry for "DBLP:conf/wpes/2004"
+Warning--to sort, need author or key in sime
+Warning--to sort, need author or key in em
+Warning--to sort, need author or key in box
+Warning--to sort, need author or key in zim
+Warning--to sort, need author or key in opera
+Warning--to sort, need author or key in thun
+You've used 33 entries,
+            2118 wiz_defined-function locations,
+            700 strings with 8858 characters,
+and the built_in function-call counts, 7939 in all, are:
+= -- 794
+> -- 252
+< -- 3
++ -- 108
+- -- 72
+* -- 327
+:= -- 1266
+add.period$ -- 114
+call.type$ -- 33
+change.case$ -- 132
+chr.to.int$ -- 0
+cite$ -- 39
+duplicate$ -- 306
+empty$ -- 796
+format.name$ -- 72
+if$ -- 1775
+int.to.chr$ -- 0
+int.to.str$ -- 33
+missing$ -- 13
+newline$ -- 181
+num.names$ -- 58
+pop$ -- 254
+preamble$ -- 1
+purify$ -- 100
+quote$ -- 0
+skip$ -- 247
+stack$ -- 0
+substring$ -- 297
+swap$ -- 60
+text.length$ -- 3
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 124
+warning$ -- 6
+while$ -- 69
+width$ -- 35
+write$ -- 369
+(There was 1 error message)

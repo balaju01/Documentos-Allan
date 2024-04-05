@@ -1,0 +1,59 @@
+\select@language {spanish}
+\contentsline {chapter}{\numberline {1}Introducci\'on}{6}{chapter.1}
+\contentsline {chapter}{Introducci\IeC {\'o}n}{6}{chapter.1}
+\contentsline {section}{\numberline {1.1}Justificaci\IeC {\'o}n}{7}{section.1.1}
+\contentsline {section}{\numberline {1.2}Objetivos}{7}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}Objetivos Generales}{7}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}Objetivos Espec\IeC {\'\i }ficos}{7}{subsection.1.2.2}
+\contentsline {section}{\numberline {1.3}PGP (Pretty Good Privacy).}{8}{section.1.3}
+\contentsline {section}{\numberline {1.4}GPG (GnuPG o GNU Privacy Guard).}{8}{section.1.4}
+\contentsline {chapter}{\numberline {2}Preliminares}{9}{chapter.2}
+\contentsline {section}{\numberline {2.1}Correo electr\IeC {\'o}nico}{9}{section.2.1}
+\contentsline {section}{\numberline {2.2}Criptograf\IeC {\'\i }a}{12}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Tipos de Ataques}{12}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Cifrado Sim\IeC {\'e}trico}{13}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Cifrado por bloques}{13}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.4}Modos de operaci\IeC {\'o}n}{14}{subsection.2.2.4}
+\contentsline {section}{\numberline {2.3}Funciones Hash}{17}{section.2.3}
+\contentsline {section}{\numberline {2.4}Aritm\IeC {\'e}tica Modular}{18}{section.2.4}
+\contentsline {section}{\numberline {2.5}Polinomio de Lagrange}{20}{section.2.5}
+\contentsline {chapter}{\numberline {3}Adversarios Clasificadores}{21}{chapter.3}
+\contentsline {section}{\numberline {3.1}Adversarios}{21}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Esquema Golle - Farahat}{22}{subsection.3.1.1}
+\contentsline {section}{\numberline {3.2}CAPTCHA}{22}{section.3.2}
+\contentsline {section}{\numberline {3.3}Esquema de Secreto Compartido de Shamir}{23}{section.3.3}
+\contentsline {section}{\numberline {3.4}Codificacion de caracteres a enteros}{25}{section.3.4}
+\contentsline {section}{\numberline {3.5}Decodificaci\IeC {\'o}n de enteros a caracteres}{25}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Esquema D\IeC {\'\i }az - Chakraborty}{26}{subsection.3.5.1}
+\contentsline {chapter}{\numberline {4}Tecnolog\IeC {\'\i }as usadas}{28}{chapter.4}
+\contentsline {section}{\numberline {4.1}Tecnolog\IeC {\'\i }as}{29}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Cliente de correo electr\IeC {\'o}nico}{29}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Lenguajes de programaci\IeC {\'o}n.}{31}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}Tipos de CAPTCHAS}{32}{subsection.4.1.3}
+\contentsline {subsection}{\numberline {4.1.4}Bases de datos para almacenar los CAPTCHAS.}{32}{subsection.4.1.4}
+\contentsline {chapter}{\numberline {5}An\'alisis y Dise\~no}{34}{chapter.5}
+\contentsline {section}{\numberline {5.1}Diagramas de caso de uso}{34}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Diagrama de casos de uso CU2 Registrar usuario en el servidor de CAPTCHAS}{35}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Diagrama de casos de uso CU3 Acceso a la cuenta en el servidor de CAPTCHAS}{37}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.3}Diagrama de casos de uso CU4 Abrir Correo Electr\IeC {\'o}nico.}{38}{subsection.5.1.3}
+\contentsline {subsection}{\numberline {5.1.4}Diagrama casos de uso CU5 Activar cifrado por CAPTCHAS.}{40}{subsection.5.1.4}
+\contentsline {subsection}{\numberline {5.1.5}Diagrama de casos de uso CU6 Descifrar correo electr\IeC {\'o}nico.}{42}{subsection.5.1.5}
+\contentsline {subsection}{\numberline {5.1.6}Diagrama de caos de uso CU7 Eliminar CAPTCHA del servidor.}{45}{subsection.5.1.6}
+\contentsline {subsection}{\numberline {5.1.7}Diagrama de casos de uso CU8 Eliminar correo electr\IeC {\'o}nico.}{46}{subsection.5.1.7}
+\contentsline {subsection}{\numberline {5.1.8}Diagrama de casos de uso CU9 Enviar CAPTCHAS}{48}{subsection.5.1.8}
+\contentsline {subsection}{\numberline {5.1.9}Diagrama de casos de uso CU10 Enviar correo electr\IeC {\'o}nico.}{49}{subsection.5.1.9}
+\contentsline {section}{\numberline {5.2}Diagramas a bloques}{51}{section.5.2}
+\contentsline {chapter}{\numberline {6}Desarrollo de prototipos}{61}{chapter.6}
+\contentsline {section}{\numberline {6.1}Prototipo 1}{61}{section.6.1}
+\contentsline {section}{\numberline {6.2}Prototipo 2}{61}{section.6.2}
+\contentsline {section}{\numberline {6.3}Prototipo 3}{65}{section.6.3}
+\contentsline {section}{\numberline {6.4}Prototipo 4}{66}{section.6.4}
+\contentsline {section}{\numberline {6.5}Prototipo 5}{70}{section.6.5}
+\contentsline {section}{\numberline {6.6}Prototipo 6}{70}{section.6.6}
+\contentsline {section}{\numberline {6.7}Prototipo 7}{71}{section.6.7}
+\contentsline {section}{\numberline {6.8}Prototipo 8}{73}{section.6.8}
+\contentsline {section}{\numberline {6.9}Prototipo 9}{80}{section.6.9}
+\contentsline {section}{\numberline {6.10}Prototipo 10}{86}{section.6.10}
+\contentsline {chapter}{\numberline {7}Conclusiones y Trabajo Futuro}{92}{chapter.7}
+\contentsline {section}{\numberline {7.1}Conclusiones}{92}{section.7.1}
+\contentsline {section}{\numberline {7.2}Trabajo futuro.}{92}{section.7.2}

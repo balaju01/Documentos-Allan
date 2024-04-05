@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?><cfdi:Comprobante LugarExpedicion="México, D.F." Moneda="MXN" certificado="MIIE0jCCA7qgAwIBAgIUMDAwMDEwMDAwMDAzMDU3MzQxNjYwDQYJKoZIhvcNAQEFBQAwggGKMTgwNgYDVQQDDC9BLkMuIGRlbCBTZXJ2aWNpbyBkZSBBZG1pbmlzdHJhY2nDs24gVHJpYnV0YXJpYTEvMC0GA1UECgwmU2VydmljaW8gZGUgQWRtaW5pc3RyYWNpw7NuIFRyaWJ1dGFyaWExODA2BgNVBAsML0FkbWluaXN0cmFjacOzbiBkZSBTZWd1cmlkYWQgZGUgbGEgSW5mb3JtYWNpw7NuMR8wHQYJKoZIhvcNAQkBFhBhY29kc0BzYXQuZ29iLm14MSYwJAYDVQQJDB1Bdi4gSGlkYWxnbyA3NywgQ29sLiBHdWVycmVybzEOMAwGA1UEEQwFMDYzMDAxCzAJBgNVBAYTAk1YMRkwFwYDVQQIDBBEaXN0cml0byBGZWRlcmFsMRQwEgYDVQQHDAtDdWF1aHTDqW1vYzEVMBMGA1UELRMMU0FUOTcwNzAxTk4zMTUwMwYJKoZIhvcNAQkCDCZSZXNwb25zYWJsZTogQ2xhdWRpYSBDb3ZhcnJ1YmlhcyBPY2hvYTAeFw0xNDEyMTkxNjUzMTlaFw0xODEyMTkxNjUzMTlaMIIBHTEzMDEGA1UEAxMqSk9WRU5FUyBPUlFVRVNUQVMsIE9SUVVFU1RBTkRPIExBIExVQ0hBIEFDMTMwMQYDVQQpEypKT1ZFTkVTIE9SUVVFU1RBUywgT1JRVUVTVEFORE8gTEEgTFVDSEEgQUMxMzAxBgNVBAoTKkpPVkVORVMgT1JRVUVTVEFTLCBPUlFVRVNUQU5ETyBMQSBMVUNIQSBBQzElMCMGA1UELRMcSk9PMTAwMjA0RDkzIC8gSlVSTzYyMDUyODg0MjEeMBwGA1UEBRMVIC8gSlVSTzYyMDUyOE1NTlJNTDAyMTUwMwYDVQQLFCxK01ZFTkVTIE9SUVVFU1RBUyBPUlFVRVNUQU5ETyBMQSBMVUNIQSwgQS5DLjCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAyl/rPhG75VvAGJfSMfWhT3GohvAWUtB6BTomrUgAwCB15ai+A+o/OHc8kT0gsbGXLLpU/ykj+YW0WXNPL83AnD0De4lKbsAku8KHNa831JOvAny1wE/SAmWYnVzAyunHE3CxbnCHgAbOFQ7LtDpzLNjQtL981cDhNwtx14GmvS0CAwEAAaMdMBswDAYDVR0TAQH/BAIwADALBgNVHQ8EBAMCBsAwDQYJKoZIhvcNAQEFBQADggEBAKZqybrd5mW7bnRtYMaPGpopSEZrcuIXOjlz6ddvIOhsjCjvlF5qDMz8SZBAHy0MdPO3gPq66ppXs605iGpB2TPRV+Y7Te/CD4cILBFAmw5CWJS3PjZU+AzEGZoa0kNmeqe+C5JiCz32g7EM990r/YMkNAAg2cDwwlFUJHwT3MmbRxpz/yGci3n6o6Bw7gv0l2bCUV1DJC8PDEaOpjcQ2H3rS3R6SE0kaTx3Q/TND74DePxde/0Zm1OKOTEAgnERHC0CC0Bz3WmlYStsyL6Yx/TR3Gpxy2c4tKS/NVDKOLSFqXOAoLVqPk7D5SjdN/382/8/P6pNl9TRl70s3TkjHow=" fecha="2014-12-20T10:07:10" folio="0" formaDePago="Cheque" metodoDePago="En una sola exhibición" noCertificado="00001000000305734166" sello="PqJJs+sx7p/0ibuVi8tXZysZEVvx2Oz9jRQk/HAQ6ltm3GjwONMHhAr7tOOxb6Zr7D1aTKDFSq+tS14umxReRjJ4avfJw7fNYa5UJD4gIir3Z2wnzwKNZnmMsiTgEbr/x3ZQ7iV09GZzsRe6h4tgaTEr4CZkwbldF6x5O0Bz+Aw=" subTotal="6000" tipoDeComprobante="egreso" total="5635" version="3.2" xmlns:cfdi="http://www.sat.gob.mx/cfd/3" xmlns:nomina="http://www.sat.gob.mx/nomina" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sat.gob.mx/cfd/3 http://www.sat.gob.mx/sitio_internet/cfd/3/cfdv32.xsd http://www.sat.gob.mx/nomina http://www.sat.gob.mx/sitio_internet/cfd/nomina/nomina11.xsd">
+  <cfdi:Emisor nombre="Jovenes Orquestas, Orquestando la lucha, A.C." rfc="JOO100204D93">
+    <cfdi:DomicilioFiscal calle="Ciprés" codigoPostal="07207" colonia="Del Bosque" estado="Distrito Federal" localidad="México" municipio="Gustavo A. Madero" noExterior="53" pais="México" referencia="Entre Pinos y Palmas" />
+    <cfdi:RegimenFiscal Regimen="General de Ley" />
+  </cfdi:Emisor>
+  <cfdi:Receptor nombre="Allán Ulises Zepeda Ibarra" rfc="ZEIA920731RH0">
+    <cfdi:Domicilio calle="Miguel Meléndez" codigoPostal="07100" colonia="Cuautepec el Alto" estado="Distrito Federal" localidad="México" municipio="Gustavo A. Madero" noExterior="7" pais="México" referencia="Dic." />
+  </cfdi:Receptor>
+  <cfdi:Conceptos>
+    <cfdi:Concepto cantidad="1" descripcion="Proyecto: Desarrollo comunitario por medio de la organización y participación comunitaria a través de talleres de música popular de México y Latino américa, taller de laudaría y" importe="6000" unidad="Servicio" valorUnitario="6000" />
+  </cfdi:Conceptos>
+  <cfdi:Impuestos>
+    <cfdi:Retenciones>
+      <cfdi:Retencion importe="365" impuesto="ISR" />
+    </cfdi:Retenciones>
+  </cfdi:Impuestos>
+  <cfdi:Complemento>
+    <nomina:Nomina Antiguedad="21" Banco="021" CURP="ZEIA920731HDFPBL04" Departamento="Capacitación" FechaFinalPago="2014-12-31" FechaInicialPago="2014-07-22" FechaInicioRelLaboral="2014-07-22" FechaPago="2014-12-20" NumDiasPagados="163" NumEmpleado="1" PeriodicidadPago="Mensual" SalarioBaseCotApor="470.000000" SalarioDiarioIntegrado="498.000000" TipoContrato="Eventual" TipoRegimen="8" Version="1.1">
+      <nomina:Percepciones TotalExento="2100" TotalGravado="3900">
+        <nomina:Percepcion Clave="001" Concepto="Sueldos, Salarios, Rayas y Jornales" ImporteExento="2100.00" ImporteGravado="3900.00" TipoPercepcion="001" />
+      </nomina:Percepciones>
+      <nomina:Deducciones TotalExento="0" TotalGravado="365">
+        <nomina:Deduccion Clave="002" Concepto="ISR" ImporteExento="0.00" ImporteGravado="365.00" TipoDeduccion="002" />
+      </nomina:Deducciones>
+    </nomina:Nomina>
+  <tfd:TimbreFiscalDigital FechaTimbrado="2014-12-20T11:07:10" UUID="F35DC302-E9DE-4A17-8945-F70FDF297829" noCertificadoSAT="00001000000203220518" selloCFD="PqJJs+sx7p/0ibuVi8tXZysZEVvx2Oz9jRQk/HAQ6ltm3GjwONMHhAr7tOOxb6Zr7D1aTKDFSq+tS14umxReRjJ4avfJw7fNYa5UJD4gIir3Z2wnzwKNZnmMsiTgEbr/x3ZQ7iV09GZzsRe6h4tgaTEr4CZkwbldF6x5O0Bz+Aw=" selloSAT="Wqeywv+M4jEuCrDNbYsM1Jvlt0FzFuPUNUHowaW8ZLm6gXOwbZbZSCXprlmLDT76jVBGZiMbabRNJr3UiOdkKxOZ6dq+3AU8nqtv1VaMd/SSQ9Veb1Tbda8YSxkynFG36S2tD7qGe61hYgh9cHGK0AU5bh6/i0tKkxGUeQDYb+A=" version="1.0" xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/TimbreFiscalDigital/TimbreFiscalDigital.xsd" /></cfdi:Complemento>
+</cfdi:Comprobante>

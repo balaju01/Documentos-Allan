@@ -1,0 +1,36 @@
+\select@language {spanish}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Diagrama cifrado\relax }}{9}{figure.caption.4}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Diagrama cifrado sim\IeC {\'e}trico\relax }}{10}{figure.caption.5}
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Diagrama ECB\relax }}{11}{figure.caption.6}
+\contentsline {figure}{\numberline {1.4}{\ignorespaces Diagrama CBC\relax }}{12}{figure.caption.8}
+\contentsline {figure}{\numberline {1.5}{\ignorespaces Diagrama CFB\relax }}{12}{figure.caption.10}
+\contentsline {figure}{\numberline {1.6}{\ignorespaces Diagrama OFB\relax }}{13}{figure.caption.12}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Diagrama General del sistema\relax }}{20}{figure.caption.13}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Diagrama General de caso de uso\relax }}{25}{figure.caption.14}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Diagrama de casos de uso CU2 Registrar usuario en el servidor de CAPTCHAS\relax }}{26}{figure.caption.15}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Diagrama de casos de uso CU3 Acceso a la cuenta en el servidor de CAPTCHAS\relax }}{28}{figure.caption.16}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Diagrama de casos de uso CU4 Abrir Correo Electr\IeC {\'o}nico.\relax }}{29}{figure.caption.17}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Diagrama casos de uso CU5 Activar cifrado por CAPTCHAS.\relax }}{31}{figure.caption.19}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Diagrama de casos de uso CU6 Descifrar correo electr\IeC {\'o}nico.\relax }}{33}{figure.caption.20}
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Diagrama de caos de uso CU7 Eliminar CAPTCHA del servidor.\relax }}{36}{figure.caption.21}
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Diagrama de casos de uso CU8 Eliminar correo electr\IeC {\'o}nico.\relax }}{37}{figure.caption.23}
+\contentsline {figure}{\numberline {6.9}{\ignorespaces Diagrama de casos de uso CU9 Enviar CAPTCHAS\relax }}{39}{figure.caption.25}
+\contentsline {figure}{\numberline {6.10}{\ignorespaces Diagrama de casos de uso CU10 Enviar correo electr\IeC {\'o}nico.\relax }}{40}{figure.caption.27}
+\contentsline {figure}{\numberline {6.11}{\ignorespaces Diagrama a bloque 0 general del sistema\relax }}{42}{figure.caption.29}
+\contentsline {figure}{\numberline {6.12}{\ignorespaces Diagrama a bloques 1 Generar clave\relax }}{44}{figure.caption.31}
+\contentsline {figure}{\numberline {6.13}{\ignorespaces Diagrama a bloques 3 Empaquetar Correo\relax }}{44}{figure.caption.34}
+\contentsline {figure}{\numberline {6.14}{\ignorespaces Diagrama a bloques 4 Enviar correo\relax }}{45}{figure.caption.36}
+\contentsline {figure}{\numberline {6.15}{\ignorespaces Diagrama a bloques 5 Generar CAPTCHA\relax }}{46}{figure.caption.38}
+\contentsline {figure}{\numberline {6.16}{\ignorespaces Diagrama a bloques 6 Enviar CAPTCHAS (Usuario existente)\relax }}{47}{figure.caption.40}
+\contentsline {figure}{\numberline {6.17}{\ignorespaces Diagrama a bloques 7 Enviar CAPTCHAS (Usuario inexistente)\relax }}{48}{figure.caption.42}
+\contentsline {figure}{\numberline {6.18}{\ignorespaces Diagrama a bloques 8 Descargar mensaje\relax }}{49}{figure.caption.44}
+\contentsline {figure}{\numberline {6.19}{\ignorespaces Diagrama a bloques 9 Verificar protocolo (con protocolo v\IeC {\'a}lido)\relax }}{49}{figure.caption.46}
+\contentsline {figure}{\numberline {6.20}{\ignorespaces Diagrama a bloques 11 Conseguir CAPTCHAS (Usuario existente)\relax }}{50}{figure.caption.49}
+\contentsline {figure}{\numberline {6.21}{\ignorespaces Diagrama a bloques 12 Recuperar clave\relax }}{50}{figure.caption.51}
+\addvspace {10\p@ }

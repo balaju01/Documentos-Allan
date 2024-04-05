@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<cfdi:Comprobante xmlns:cfdi="http://www.sat.gob.mx/cfd/3" xmlns:detallista="http://www.sat.gob.mx/detallista" xmlns:donat="http://www.sat.gob.mx/donat" xmlns:implocal="http://www.sat.gob.mx/implocal" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sat.gob.mx/cfd/3 http://www.sat.gob.mx/sitio_internet/cfd/3/cfdv32.xsd http://www.sat.gob.mx/implocal http://www.sat.gob.mx/sitio_internet/cfd/implocal/implocal.xsd http://www.sat.gob.mx/detallista http://www.sat.gob.mx/sitio_internet/cfd/detallista/detallista.xsd http://www.sat.gob.mx/donat http://www.sat.gob.mx/sitio_internet/cfd/donat/donat11.xsd" version="3.2" serie="B" folio="12804" fecha="2016-10-10T12:20:58" sello="n6B3izKJ0QGWj+sekdUe1U6dYdqNd2i2QiX9lvKnsRLipfE5PA3PNjPCc5sZZp4xQVDwobf8EA+E19VS42pVOBGqVI6hXsR1ZdmtJoSQxtFYgHtQoy1zYG2fnEhvWm62zDYuR0MMxPspTDQoExFZl1FgXHwem6d0tZuUMpR+X50=" formaDePago="Pago en una sola exhibición" noCertificado="00001000000300687655" certificado="MIIEkzCCA3ugAwIBAgIUMDAwMDEwMDAwMDAzMDA2ODc2NTUwDQYJKoZIhvcNAQEFBQAwggGKMTgwNgYDVQQDDC9BLkMuIGRlbCBTZXJ2aWNpbyBkZSBBZG1pbmlzdHJhY2nDs24gVHJpYnV0YXJpYTEvMC0GA1UECgwmU2VydmljaW8gZGUgQWRtaW5pc3RyYWNpw7NuIFRyaWJ1dGFyaWExODA2BgNVBAsML0FkbWluaXN0cmFjacOzbiBkZSBTZWd1cmlkYWQgZGUgbGEgSW5mb3JtYWNpw7NuMR8wHQYJKoZIhvcNAQkBFhBhY29kc0BzYXQuZ29iLm14MSYwJAYDVQQJDB1Bdi4gSGlkYWxnbyA3NywgQ29sLiBHdWVycmVybzEOMAwGA1UEEQwFMDYzMDAxCzAJBgNVBAYTAk1YMRkwFwYDVQQIDBBEaXN0cml0byBGZWRlcmFsMRQwEgYDVQQHDAtDdWF1aHTDqW1vYzEVMBMGA1UELRMMU0FUOTcwNzAxTk4zMTUwMwYJKoZIhvcNAQkCDCZSZXNwb25zYWJsZTogQ2xhdWRpYSBDb3ZhcnJ1YmlhcyBPY2hvYTAeFw0xMzA4MTcwMDE3MTJaFw0xNzA4MTcwMDE3MTJaMIHfMSMwIQYDVQQDExpSRVBFUlRPUklPIFdBR05FUiBTQSBERSBDVjEjMCEGA1UEKRMaUkVQRVJUT1JJTyBXQUdORVIgU0EgREUgQ1YxIzAhBgNVBAoTGlJFUEVSVE9SSU8gV0FHTkVSIFNBIERFIENWMSUwIwYDVQQtExxSV0EzODEyMDFTTTQgLyBWRUtHNTQwOTA0NkkxMR4wHAYDVQQFExUgLyBWRUtHNTQwOTA0SE5FUkhSMTQxJzAlBgNVBAsTHlJFUEVSVE9SSU8gV0FHTkVSIFMuQS4gREUgQy5WLjCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAy7LLxACx1YUUSCBmH4kiyaofiUzr2EdVuVQyTPxMRtT5QOVk44nQNQ2uiRaS6UJVyY1cziPbk9FDDFKC/rIMGd+jBs1gPVYK+7JRuUsNcZOVHeo36V3ClvmrhfeyvggAxICkQe81YPJ+GFnf7oHxyMdlr/IkwJLYAdv790+tHX8CAwEAAaMdMBswDAYDVR0TAQH/BAIwADALBgNVHQ8EBAMCBsAwDQYJKoZIhvcNAQEFBQADggEBAFkilPhko5tbopwc7r1/Tv27nkmzt5QCpyBe46/XiLFjmDax5cSVUV18vqkIYcGYUC8e+t+pFpIG62PuZ/k2KEB1Q5+QPsFDw7uK3tzQW/qpepPdU3iSSYNEcJNS7OqDRmHkfJDki0xUM63RbN4Ap/JeWhkxoeSiJEAjNmTkvjULkUWLu+KdtcRBkOOJA0Cy1C5CyECBLg61g3t2b+Hz4LlabhfkYg1Pjz9484BLLQutAABbfK2vM2//amivWDb47gen2zVdCRlsr8d+H8QZ+NTvmG6dMQD8YW5CU0WuMJ3WdjjOio7PSWiuctKo/dgSQ8xKiwopI3Aal0W5OfAP9UM=" subTotal="493.97" TipoCambio="1.000000" Moneda="MXN" total="573.01" tipoDeComprobante="ingreso" metodoDePago=".3" LugarExpedicion="MEXICO D.F.">
+  <cfdi:Emisor rfc="RWA381201SM4" nombre="REPERTORIO WAGNER, S.A. DE C.V.">
+    <cfdi:DomicilioFiscal calle="BOLIVAR" noExterior="41" colonia="CENTRO" localidad="MEXICO, D.F." municipio="CUAUHTEMOC" estado="DF" pais="MEXICO" codigoPostal="06000" />
+    <cfdi:ExpedidoEn calle="BOLIVAR" noExterior="41" colonia="CENTRO" municipio="CUAUHTEMOC" estado="DF" pais="MEXICO" codigoPostal="06000" />
+    <cfdi:RegimenFiscal Regimen="PERSONA MORAL REGIMEN GENERAL" />
+  </cfdi:Emisor>
+  <cfdi:Receptor rfc="ZEIA920731RH0" nombre="ALLAN ULISES ZEPEDA IBARRA">
+    <cfdi:Domicilio calle="MIGUEL MELENDEZ" noExterior="7" colonia="CUAUTEPEC BARRIO ALTO" municipio="GUSTAVO A. MADERO" estado="CIUDAD DE MEXICO" pais="MEXICO" codigoPostal="07100" />
+  </cfdi:Receptor>
+  <cfdi:Conceptos>
+    <cfdi:Concepto cantidad="1" unidad="pz" descripcion="ARCO VIOLIN 4/4 SHIMRO" valorUnitario="493.970000" importe="493.97" />
+  </cfdi:Conceptos>
+  <cfdi:Impuestos totalImpuestosTrasladados="79.04">
+    <cfdi:Traslados>
+      <cfdi:Traslado impuesto="IEPS" tasa="0.00" importe="0.00" />
+      <cfdi:Traslado impuesto="IVA" tasa="16.00" importe="79.04" />
+    </cfdi:Traslados>
+  </cfdi:Impuestos>
+  <cfdi:Complemento>
+    <tfd:TimbreFiscalDigital xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/TimbreFiscalDigital/TimbreFiscalDigital.xsd" selloCFD="n6B3izKJ0QGWj+sekdUe1U6dYdqNd2i2QiX9lvKnsRLipfE5PA3PNjPCc5sZZp4xQVDwobf8EA+E19VS42pVOBGqVI6hXsR1ZdmtJoSQxtFYgHtQoy1zYG2fnEhvWm62zDYuR0MMxPspTDQoExFZl1FgXHwem6d0tZuUMpR+X50=" FechaTimbrado="2016-10-10T12:21:00" UUID="9a857922-1d64-47e4-ba6e-224305c81174" version="1.0" noCertificadoSAT="00001000000202809550" selloSAT="k4Mnekp9n+tKZIBFCzN/Ixs7Su3raWFeIRTLuyY/X+xjB4DM2pPv2fl7Yh1nbnpBVoy/NAhcN2AqXW0EVmDab7BFheq6lZZ7yDL0YQSGDh/FhP3emgDu4JSa8Byn2X7tmLp/Dp5z66FsVpqIZxAGHuxViH6AQJ9e1Ehiz1uO5GQ=" />
+  </cfdi:Complemento>
+</cfdi:Comprobante>
+

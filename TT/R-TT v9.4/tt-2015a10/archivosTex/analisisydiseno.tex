@@ -1,0 +1,819 @@
+\chapter{An\'alisis y Dise\~no} % (fold)
+\section{Diagramas de caso de uso}
+Para el desarrollo de esta propuesta se muestran los siguientes diagramas del sistema.
+\begin{figure}[H]
+	\includegraphics[width=1\linewidth, height=10cm]{./images/casodeuso1.jpg}
+	\caption{Diagrama General de caso de uso}
+	\label{fig:4-2-1}
+\end{figure}
+\subsection{Diagrama de casos de uso CU2 Registrar usuario en el servidor de CAPTCHAS}
+\begin{figure}[H]
+	\includegraphics[width=1\linewidth, height=10cm]{./images/casodeuso2.jpg}
+	\caption{Diagrama de casos de uso CU2 Registrar usuario en el servidor de CAPTCHAS}
+	\label{fig:4-3-1}
+\end{figure}
+
+ \begin{longtable}[H]{| p{4,5cm} | p{0,5cm} |p{4cm}|p{5cm}|}%\footnotesize
+   %\centering
+   %{
+     %\begin{tabular}
+     \hline
+     \textbf{Caso de Uso} &\multicolumn{3}{|l|}{CU2 Registrar Usuario en el servidor de CAPTCHAS}\\
+     \hline
+     \textbf{Actor} & \multicolumn{3}{|l|}{Actor1. Usuario de Correo Electrónico}\\
+     \hline
+     \textbf{Descripción} & \multicolumn{3}{|p{10cm}|}{Describe los pasos necesarios para registrar un nuevo usuario en el servidor de CAPTCHAS.}\\
+     \hline
+     \textbf{Pre-condiciones} & \multicolumn{3}{|l|}{Tener una cuenta de correo electrónico.}\\
+     \hline
+     \textbf{Post-condiciones} & \multicolumn{3}{|l|}{Activación del módulo de cifrado por CAPTCHAS.}\\
+     \hline
+     \textbf{Puntos de inclusión} & \multicolumn{3}{|l|}{Acceso a la cuenta en el servidor de CAPTCHAS.}\\
+     \hline
+     \textbf{Puntos de extensión} & \multicolumn{3}{|l|}{}\\
+     \hline
+     \textbf{Flujo principal} & & Actor/Sistema & Acción a realizar\\
+     \hline
+     & 1 & Actor & El usuario selecciona la opción registrarse en el servidor de CAPTCHAS\\
+     \hline
+     & 2 & Sistema & El cliente de correo contesta un formulario con la información necesaria para dar de alta en el servidor de CAPTCHAS.\\
+     \hline
+     & 3 & Actor & Completa el formulario y oprime el botón de registrar.\\
+     \hline
+     & 4 & Sistema & El sistema valida los datos proporcionados por el usuario.\\
+     \hline
+     & 5 & Sistema & Se conecta con el servidor y valida si el usuario ya está registrado. <FA01 - Usuario ya registrado> <FA02 - Falla en la conexión con el servidor>\\
+     \hline
+     & 6 & Sistema & Manda la información del usuario y lo da de alta.\\
+     \hline
+     & 7 & Sistema & Despliega el siguiente mensaje ``El usuario se ha dado de alta correctamente''\\
+     \hline
+     & & & \textbf{Fin del flujo principal}.\\
+     \hline
+     & \multicolumn{3}{|l|}{\textbf{FA01 - Usuario ya registrado}.}\\
+     \hline
+     \textbf{Flujo alternativo} & & Actor/Sistema & Acción a realizar\\
+     \hline
+     & 1 & Sistema & Despliega el siguiente mensaje  ``El usuario ya está registrado favor de proporcionar otra cuenta de correo electrónico''\\
+     \hline
+     & 2 & & El flujo continúa en el paso 3 del flujo principal.\\
+     \hline
+     &  & & \textbf{Fin del flujo alternativo}\\
+     \hline
+     
+     \hline
+     & \multicolumn{3}{|l|}{\textbf{FA02 - Falla en la conexión con el servidor}.}\\
+     \hline
+     \textbf{Flujo alternativo} & & Actor/Sistema & Acción a realizar\\
+     \hline
+     & 1 & Sistema & Despliega el siguiente mensaje ``La conexión con la red es nula o limitada, favor de realizar esta operación más tarde''\\
+     \hline
+     & 2 & & El flujo continúa en el paso 1 del flujo principal.\\
+     \hline
+     &  & & \textbf{Fin del flujo alternativo}\\
+     %\end{tabular}
+    %}
+    \hline
+    \caption{Descripción CU2.}
+    \label{tabla:CU2}
+\end{longtable}
+
+
+\subsection{Diagrama de casos de uso CU3 Acceso a la cuenta en el servidor de CAPTCHAS}
+\begin{figure}[H]
+	\includegraphics[width=1\linewidth, height=5cm]{./images/casodeuso3.jpg}
+	\caption{Diagrama de casos de uso CU3 Acceso a la cuenta en el servidor de CAPTCHAS}
+	\label{fig:4-4-1}
+\end{figure}
+
+\begin{longtable}[H]{| p{4,5cm} | p{0,5cm} |p{4cm}|p{5cm}|}
+%\centering
+   %{
+     %\begin{tabular}{| p{4,5cm} | p{0,5cm} |p{4cm}|p{5cm}|}
+     \hline
+     \textbf{Caso de Uso} &\multicolumn{3}{|l|}{CU3 Acceso a la cuenta en el servidor de CAPTCHAS}\\
+     \hline
+     \textbf{Actor} & \multicolumn{3}{|l|}{Actor 1. Usuario de correo electrónico}\\
+     \hline
+     \textbf{Descripción} & \multicolumn{3}{|p{10cm}|}{Describe los pasos necesarios para dar acceso al los archivos guardados en el servidor de CAPTCHAS.}\\
+     \hline
+     \textbf{Pre-condiciones} & \multicolumn{3}{|p{10cm}|}{Tener una cuenta de correo electrónico.}\\
+     \hline
+     \textbf{Post-condiciones} & \multicolumn{3}{|l|}{Activación del modulo de cifrado por CAPTCHAS.}\\
+     \hline
+     \textbf{Puntos de inclusión} & \multicolumn{3}{|l|}{Desempaquetar correo electrónico}\\
+     \hline
+     \textbf{Puntos de extensión} & \multicolumn{3}{|l|}{Descifrar correo electrónico}\\
+     \hline
+     \textbf{Flujo principal} & & Actor/Sistema & Acción a realizar\\
+     \hline
+     & 1 & Actor & El usuario ingresa su correo electrónico, nombre de usuario y contraseña.\\
+     \hline
+     & 2 & Sistema & El cliente de correo abre una conexión con el servidor de CAPTCHAS.<FA01. Servidor no responde.>\\
+     \hline
+     & 3 & Sistema & El cliente de correo envía los datos ingresados por  el actor al servidor de CAPTCHAS.<FA02. Datos erróneos.>\\
+     \hline
+     & 4 & Sistema & Envía la respuesta satisfactoria al usuario.\\
+     \hline
+     & & & \textbf{Fin del flujo principal}.\\
+     \hline
+     & \multicolumn{3}{|l|}{\textbf{FA01 - Servidor no responde.}.}\\
+     \hline
+     \textbf{Flujo alternativo} & & Actor/Sistema & Acción a realizar\\
+     \hline
+     & 1 & Sistema & Despliega el siguiente mensaje "No se pudo establecer comunicación con el servidor de CAPTCHAS"\\
+     \hline
+     & & & \textbf{El flujo continua en el paso 1 del flujo principal.}\\
+     \hline
+     & & & \textbf{Fin del flujo alternativo}\\
+     \hline
+     & \multicolumn{3}{|l|}{\textbf{FA02 - Datos erróneos.}.}\\
+     \hline
+     \textbf{Flujo alternativo} & & Actor/Sistema & Acción a realizar\\
+     \hline
+     & 1 & Sistema & Despliega el siguiente mensaje " Los datos ingresados son inválidos"\\
+     \hline
+     & & & \textbf{El flujo continua en el paso 1 del flujo principal.}\\
+     \hline
+     & & & \textbf{Fin del flujo alternativo}\\
+     \hline
+     %\end{tabular}
+    %}
+    \caption{Descripción CU3.}
+    \label{tabla:CU3}
+\end{longtable}
+
+
+
+\subsection{Diagrama de casos de uso CU4 Abrir Correo Electrónico.}
+\begin{figure}[H]
+	\includegraphics[width=1\linewidth, height=10cm]{./images/casodeuso4.jpg}
+	\caption{Diagrama de casos de uso CU4 Abrir Correo Electrónico.}
+	\label{fig:4-5-1}
+\end{figure}
+\pagebreak
+\begin{longtable}[H]{| p{4,5cm} | p{0,5cm} |p{4cm}|p{5cm}|}
+%\centering
+   %{
+     %\begin{tabular}{| p{4,5cm} | p{0,5cm} |p{4cm}|p{5cm}|}
+     \hline
+     \textbf{Caso de Uso} &\multicolumn{3}{|l|}{CU4 Abrir correo electrónico}\\
+     \hline
+     \textbf{Actor} & \multicolumn{3}{|l|}{Actor 1. Usuario de correo electrónico}\\
+     \hline
+     \textbf{Descripción} & \multicolumn{3}{|p{10cm}|}{Describe los pasos necesarios para abrir un mensaje de correo electrónico.}\\
+     \hline
+     \textbf{Pre-condiciones} & \multicolumn{3}{|p{10cm}|}{1. Iniciar sesión con su servidor de correo electrónico. 2. Descargar el correo electrónico que se desea abrir.}\\
+     \hline
+     \textbf{Post-condiciones} & \multicolumn{3}{|l|}{Despliegue del mensaje de correo electrónico descifrado.}\\
+     \hline
+     \textbf{Puntos de inclusión} & \multicolumn{3}{|l|}{Desempaquetar correo electrónico}\\
+     \hline
+     \textbf{Puntos de extensión} & \multicolumn{3}{|l|}{Descifrar correo electrónico}\\
+     \hline
+     \textbf{Flujo principal} & & Actor/Sistema & Acción a realizar\\
+     \hline
+     & 1 & Actor & El caso de uso comienza cuando el usuario selecciona el correo que desea abrir.\\
+     \hline
+     & 2 & Sistema & El sistema manda a llamar a la función de desempaquetar correo electrónico.\\
+     \hline
+     & 3 & Sistema & Valida si el mensaje viene timbrado. <FA01 - El mensaje no viene timbrado>\\
+     \hline
+     & 4 & Sistema & Invoca al caso de uso <CU Descifrar correo electrónico>\\
+     \hline
+     & 5 & Sistema & Recibe el mensaje de correo electrónico descifrado\\
+     \hline
+     & 6 & Sistema & Despliega el contenido completo del mensaje al usuario\\
+     \hline
+     & & & \textbf{Fin del flujo principal}.\\
+     \hline
+     & \multicolumn{3}{|l|}{\textbf{FA01 - El mensaje no viene timbrado}.}\\
+     \hline
+     \textbf{Flujo alternativo} & & Actor/Sistema & Acción a realizar\\
+     \hline
+     & 1 & Sistema & El flujo continúa en el paso 6 del flujo principal.\\
+     \hline
+     &  & & \textbf{Fin del flujo alternativo}\\
+     \hline
+     %\end{tabular}
+    %}
+    \caption{Descripción CU4.}
+    \label{tabla:CU4}
+\end{longtable}
+
+
+\pagebreak
+
+\subsection{Diagrama casos de uso CU5 Activar cifrado por CAPTCHAS.}
+\begin{figure}[H]
+	\includegraphics[width=1\linewidth, height=5cm]{./images/casodeuso5.jpg}
+	\caption{Diagrama casos de uso CU5 Activar cifrado por CAPTCHAS.}
+	\label{fig:4-6-1}
+\end{figure}
+\begin{longtable}[H]{| p{4,5cm} | p{0,5cm} |p{4cm}|p{5cm}|}
+ %\centering
+   %{
+     %\begin{tabular}
+     \hline
+     \textbf{Caso de Uso} &\multicolumn{3}{|l|}{CU5 Activar cifrado por CAPTCHAS}\\
+     \hline
+     \textbf{Actor} & \multicolumn{3}{|l|}{Actor 1. Usuario de correo electrónico}\\
+     \hline
+     \textbf{Descripción} & \multicolumn{3}{|p{10cm}|}{Describe los pasos necesarios para activar el módulo de cifrado CAPTCHAS en el cliente de correo electrónico.}\\
+     \hline
+     \textbf{Pre-condiciones} & \multicolumn{3}{|l|}{1. Instalar el módulo de cifrado por CAPTCHAS}\\
+     \hline
+     \textbf{Post-condiciones} & \multicolumn{3}{|l|}{Activación del cifrado y descifrado por CAPTCHAS.}\\
+     \hline
+     \textbf{Puntos de inclusión} & \multicolumn{3}{|l|}{}\\
+     \hline
+     \textbf{Puntos de extensión} & \multicolumn{3}{|l|}{Registrar usuario del servidor de CAPTCHAS}\\
+     \hline
+     \textbf{Flujo principal} & & Actor/Sistema & Acción a realizar\\
+     \hline
+     & 1 & Actor & El caso de uso inicia cuando el actor seleccionar la opción ``Activar cifrado por CAPTCHAS''\\
+     \hline
+     & 2 & Sistema & El sistema verifica si la dirección de correo del usuario está registrada en el servidor de CAPTCHAS<FA01 -Usuario no registrado en el servidor>\\
+     \hline
+     & 3 & Sistema & Despliega una ventana con el mensaje ``Activación del módulo de cifrado por CAPTCHAS''\\
+     \hline
+     & & & \textbf{Fin del flujo principal}.\\
+     \hline
+     & \multicolumn{3}{|l|}{\textbf{FA01 -Usuario no registrado en el servidor}.}\\
+     \hline
+     \textbf{Flujo alternativo} & & Actor/Sistema & Acción a realizar\\
+     \hline
+     & 1 & Sistema & El sistema despliega una ventana con las opciones de ``Registrarse'' y ``Cancelar''. <FA02 Cancelar activación>\\
+     \hline
+     & 2 & Actor & Oprime el botón de ``Registrarse''\\
+     \hline
+     & 3 & Sistema & El sistema invoca al caso de uso <CU Registrar usuario en el servidor de CAPTCHAS>\\
+     \hline
+     & 4 & Sistema & El sistema obtiene una respuesta satisfactoria del registro\\
+     \hline
+     & 5 &  & El flujo continúa en el paso 2 del flujo principal.\\
+     \hline
+     &  & & \textbf{Fin del flujo alternativo}\\
+     \hline
+     & \multicolumn{3}{|l|}{\textbf{FA02 - Cancelar activación}.}\\
+     \hline
+     \textbf{Flujo alternativo} & & Actor/Sistema & Acción a realizar\\
+     \hline
+     & 1 & Actor & El Actor selecciona ``Cancelar''\\
+     \hline
+     & 2 & Sistema & Cierra la ventana de selección\\
+     \hline
+     & 3 &  & El flujo continúa en el paso 1 del flujo principal.\\
+     \hline
+     &  & & \textbf{Fin del flujo alternativo}\\
+     %\end{tabular}
+    %}
+    \hline
+    \caption{Descripción CU5.}
+    \label{tabla:CU5}
+\end{longtable}
+
+\subsection{Diagrama de casos de uso CU6 Descifrar correo electrónico.}
+\begin{figure}[H]
+	\includegraphics[width=1\linewidth, height=7cm]{./images/casodeuso6.jpg}
+	\caption{Diagrama de casos de uso CU6 Descifrar correo electrónico.}
+	\label{fig:4-7-1}
+\end{figure}
+\pagebreak
+\begin{longtable}[H]{| p{4,5cm} | p{0,5cm} |p{4cm}|p{5cm}|}
+ %\centering
+   %{
+     %\begin{tabular}
+     \hline
+     \textbf{Caso de Uso} &\multicolumn{3}{|l|}{CU6 Descifrar correo electrónico.}\\
+     \hline
+     \textbf{Actor} & \multicolumn{3}{|l|}{Actor 1. Usuario de correo electrónico}\\
+     \hline
+     \textbf{Descripción} & \multicolumn{3}{|p{10cm}|}{Describe los pasos necesarios para desactivar el módulo de cifrado CAPTCHAS en el cliente de correo electrónico}\\
+     \hline
+     \textbf{Pre-condiciones} & \multicolumn{3}{|p{10cm}|}{1. Activar cifrado por CAPTCHAS. 2. Registrar usuario en el servidor de CAPTCHAS}\\
+     \hline
+     \textbf{Post-condiciones} & \multicolumn{3}{|l|}{Desactivación del cifrado y descifrado por CAPTCHAS.}\\
+     \hline
+     \textbf{Puntos de inclusión} & \multicolumn{3}{|l|}{}\\
+     \hline
+     \textbf{Puntos de extensión} & \multicolumn{3}{|l|}{Eliminar usuario del servidor de CAPTCHAS}\\
+     \hline
+     \textbf{Flujo principal} & & Actor/Sistema & Acción a realizar\\
+     \hline
+     & 1 & Actor & El caso de uso inicia cuando el actor seleccionar la opción "Desactivar cifrado por CAPTCHAS"\\
+     \hline
+     & 2 & Sistema & El sistema despliega la venta con las opciones de ``Desactivar cifrado'' y ``Eliminar usuario'' <FA01 - Eliminar usuario>\\
+     \hline
+     & 3 & Actor & Selecciona la Desactivación del cifrado por CAPTCHAS\\
+     \hline
+     & 4 & Sistema & El sistema desactiva el módulo de cifrado por CAPTCHA\\
+     \hline
+     & & & \textbf{Fin del flujo principal}.\\
+     \hline
+    & \multicolumn{3}{|l|}{\textbf{FA01 - Eliminar usuario}.}\\
+    \hline
+    \textbf{Flujo alternativo} & & Actor/Sistema & Acción a realizar\\
+    \hline
+    & 1 & Actor & El Actor selecciona ``Eliminar usuario''\\
+    \hline
+    & 2 & Sistema & El sistema despliega una ventana con las opciones de ``Aceptar'' y ``Cancelar'' para confirmar la eliminación del usuario. <FA02 - Cancelar acción eliminar usuario>\\
+    \hline
+     & 3 & Actor & Oprime el botón de ``Aceptar''\\
+     \hline
+     & 4 & Sistema & Establece la conexión con el servidor de CAPTCHAS <FA03 - Fallo en la conexión con el servidor>\\
+     \hline
+     & 5 & Sistema & Busca y elimina al usuario de la base de datos desplegando la confirmación del servidor.\\
+     \hline
+     & 6 & Actor & Oprime el botón de ``Aceptar''\\
+     \hline
+     & 7 & Sistema & Desactiva el módulo de cifrado por CAPTCHA\\
+     \hline
+     &  & & \textbf{Fin del flujo alternativo}\\
+     \hline
+     & \multicolumn{3}{|l|}{\textbf{FA02 - Cancelar acción eliminar usuario}.}\\
+    \hline
+    \textbf{Flujo alternativo} & & Actor/Sistema & Acción a realizar\\
+    \hline
+    & 1 & Actor & El Actor selecciona ``Cancelar''\\
+    \hline
+    & 2 & Sistema & Cierra la ventana de confirmación\\
+    \hline
+    &  & & \textbf{Fin del flujo alternativo}\\
+     \hline
+    & \multicolumn{3}{|l|}{\textbf{FA03 - Fallo en la conexión con el servidor}.}\\
+    \hline
+    \textbf{Flujo alternativo} & & Actor/Sistema & Acción a realizar\\
+    \hline
+    & 1 & Sistema & Despliega una ventana de alerta con el mensaje ``No se ha podido establecer la conexión con el servidor, es probable que no se tenga conexión a internet. Favor de intentarlo más tarde''\\
+    \hline
+    & 2 & Actor & Cierra la ventana de alerta\\
+    \hline
+    & 3 &  & El flujo continúa en el paso 1 del flujo principal\\
+    \hline
+    &  & & \textbf{Fin del flujo alternativo}\\
+    % \end{tabular}
+    %}
+    \hline
+    \caption{Descripción CU6.}
+    \label{tabla:CU6}
+\end{longtable}
+
+
+\pagebreak
+
+\subsection{Diagrama de casos de uso CU7 Enviar CAPTCHAS}
+\begin{figure}[H]
+	\includegraphics[width=1\linewidth, height=8cm]{./images/casodeuso9.jpg}
+	\caption{Diagrama de casos de uso CU7 Enviar CAPTCHAS}
+	\label{fig:4-10-1}
+\end{figure}
+
+\begin{longtable}[H]{| p{4,5cm} | p{0,5cm} |p{4cm}|p{5cm}|}
+ %\centering
+   %{
+     %\begin{tabular}{| p{4,5cm} | p{0,5cm} |p{4cm}|p{5cm}|}
+     \hline
+     \textbf{Caso de Uso} &\multicolumn{3}{|l|}{CU7 Enviar CAPTCHAS}\\
+     \hline
+     \textbf{Actor} & \multicolumn{3}{|l|}{Actor 1. Cliente de correo electrónico.}\\
+     \hline
+     \textbf{Descripción} & \multicolumn{3}{|p{10cm}|}{Describe los pasos necesarios para enviar el CAPTCHA el servidor de CAPTCHAS}\\
+     \hline
+     \textbf{Pre-condiciones} & \multicolumn{3}{|l|}{1. Solicitar el envió de un nuevo mensaje de correo electrónico.}\\
+     \hline
+     \textbf{Post-condiciones} & \multicolumn{3}{|l|}{Envío del CAPTCHA al servidor de CAPTCHAS}\\
+     \hline
+     \textbf{Puntos de inclusión} & \multicolumn{3}{|l|}{}\\
+     \hline
+     \textbf{Puntos de extensión} & \multicolumn{3}{|l|}{}\\
+     \hline
+     \textbf{Flujo principal} & & Actor/Sistema & Acción a realizar\\
+     \hline
+     & 1 & Actor & Solicita el envío de CAPTCHA al servidor\\
+     \hline
+     & 2 & Sistema & Abre la conexión y busca al usuario en el servidor de CAPTCHAS\\
+     \hline
+     & 3 & Sistema & Da de alta el CAPTCHA en el servidor asociándolo con el usuario.\\
+     \hline
+     & 4 & Sistema & Regresa la confirmación de que se dio de alta el CAPTCHA\\
+     \hline
+     & & & \textbf{Fin del flujo principal}.\\
+     \hline
+     %\end{tabular}
+    %}
+    \caption{Descripción CU7.}
+    \label{tabla:CU7}
+\end{longtable}
+
+
+\pagebreak
+\subsection{Diagrama de casos de uso CU8 Enviar correo electrónico.}
+\begin{figure}[H]
+	\includegraphics[width=1\linewidth, height=8cm]{./images/casodeuso10.jpg}
+	\caption{Diagrama de casos de uso CU8 Enviar correo electrónico.}
+	\label{fig:4-11-1}
+\end{figure}
+\begin{longtable}[H]{| p{4,5cm} | p{0,5cm} |p{4cm}|p{5cm}|}
+ %\centering
+   %{
+     %\begin{tabular}{| p{4,5cm} | p{0,5cm} |p{4cm}|p{5cm}|}
+     \hline
+     \textbf{Caso de Uso} &\multicolumn{3}{|l|}{CU8 Enviar correo electrónico.}\\
+     \hline
+     \textbf{Actor} & \multicolumn{3}{|l|}{Actor 1. Usuario de correo electrónico.}\\
+     \hline
+     \textbf{Descripción} & \multicolumn{3}{|p{10cm}|}{Describe los pasos necesarios para enviar un mensaje de correo electrónico cifrado a otro usuario de correo electrónico.}\\
+     \hline
+     \textbf{Pre-condiciones} & \multicolumn{3}{|p{10cm}|}{1. El usuario tiene que redactar un mensaje de correo electrónico que contenga la dirección del destinatario.}\\
+     \hline
+     \textbf{Post-condiciones} & \multicolumn{3}{|p{10cm}|}{Envió de un mensaje cifrado al servidor de correo electrónico y el registro del CAPTCHA en el servidor de CAPTCHAS.}\\
+     \hline
+     \textbf{Puntos de inclusión} & \multicolumn{3}{|p{10cm}|}{1. Validar correo electrónico. 2. Empaquetar mensaje de correo electrónico SMTP.}\\
+     \hline
+     \textbf{Puntos de extensión} & \multicolumn{3}{|l|}{Enviar CAPTCHA}\\
+     \hline
+     \textbf{Flujo principal} & & Actor/Sistema & Acción a realizar\\
+     \hline
+     & 1 & Actor & Oprime el botón ``Enviar''\\
+     \hline
+     & 2 & Sistema & Valida que el mensaje de correo electrónico contenga los datos mínimos.<FA01 - Campos no completados>\\
+     \hline
+     & 3 & Sistema & Genera una llave de cifrado\\
+     \hline
+     & 4 & Sistema & Con una palabra aleatoria se genera el CAPTCHA y cifra el mensaje de correo electrónico.\\
+     \hline
+     & 5 & Sistema & Toma el mensaje cifrado y es empaquetado para enviarse al servidor de correo electrónico\\
+     \hline
+     & 6 & Sistema & Toma el CAPTCHA  y se envía al caso de uso <CU Enviar CAPTCHA>\\
+     \hline
+     & 7 & Sistema & Despliega el mensaje de ``envío satisfactorio''\\
+     \hline
+     & & & \textbf{Fin del flujo principal}.\\
+     \hline
+     & \multicolumn{3}{|l|}{\textbf{FA01 - Campos no completados}.}\\
+     \hline
+     \textbf{Flujo alternativo} & & Actor/Sistema & Acción a realizar\\
+     \hline
+     & 1 & Sistema & Notifica al usuario cuales campos han sido mal proporcionados, para poder enviar el mensaje correctamente\\
+     \hline
+     & 2 & Actor & Modifica los campos solicitados\\
+     \hline
+     & 3 &  & El flujo continúa en el paso 1 del flujo principal\\
+     \hline
+     &  & & \textbf{Fin del flujo alternativo}\\
+     \hline
+     %\end{tabular}
+    %}
+    \caption{Descripción CU8.}
+    \label{tabla:CU8}
+\end{longtable}
+
+
+
+\pagebreak
+\section{Diagramas a bloques}
+A continuación se presentan los diagramas a bloques, en donde se muestra cuál es la secuencia de procesos a realizar. Esto servirá para comprender cómo se comunican los diferentes módulos de manera interna, y cómo hacen los procesos.
+
+
+\begin{figure}[H]
+	\includegraphics[width=1\linewidth, height=5cm]{./images/bloques0.jpg}
+	\caption{Diagrama a bloque 0 general del sistema}
+	\label{fig:5-1-1}
+\end{figure}
+\pagebreak
+\begin{table}[H]
+ \centering
+   {
+     \begin{tabular}{| p{2,2cm} | p{1,7cm} | p{2,5cm} | p{3cm} | p{2cm} | p{2,1cm} | p{2cm} |}
+     \hline
+     & \textbf{Generar clave} & \textbf{Generar CAPTCHA} & \textbf{Procesamiento del mensaje} & \textbf{Recibir mensaje} & \textbf{Descifrar mensaje} & \textbf{Desplegar}\\
+     \hline
+     \textbf{Entradas} & *Señal de activación & *Cadena de 5 caracteres: Str(5) & *Clave de 16 bytes: K’(16). *Mensaje de correo. & *Correo Cifrado & Verificación (1,0) & *Correo en claro\\
+     \hline
+     \textbf{Salidas} & *Cadena de 5 caracteres: Str(5) *Clave de 16 bytes: K’(16) & *Señal de envió & *Correo Cifrado & *Verificación (1,0) & *Correo en claro&\\
+     \hline
+     \textbf{Descripción} & Se activa el proceso generar clave, este crea una palabra de 5 caracteres (Str(5)), procesa la palabra Str(5) por medio de una función hash obteniendo una palabra de 256 caracteres (K(256)) y recorta esta clave a una palabra de 16 caracteres (K’(16)). & Toma la entrada Str(5) y la convierte en una imagen CAPTCHA, Posteriormente inicia una conexión con el servidor de CAPTCHAS para mandarlo a este. & Cifra el mensaje de correo con la clave K’(16), posteriormente lo firma y genera un timbre para saber que fue creado con este esquema y lo empaqueta para su envió. & El cliente hace una petición al servidor y descarga el mensaje de correo electrónico, lo des empaqueta verifica la firma y el timbrado para saber de quién viene y si está cifrado bajo este esquema. & Se hace una petición al servidor de CAPTCHAS, se descargan los CAPTCHAS asociados al correo, ya con el CAPTCHA este se resuelve y se recupera la cadena Str(5), esta se pasa por una función hash y se recupera K(256), esta se corta a K’(16), con esto se descifra el mensaje. & Se muestra el correo descifrado en la interfase del cliente de correo electrónico.\\
+	\hline
+    \end{tabular}
+    }
+    \caption{Diagrama a bloques 0 general}
+    \label{tabla:b0}
+\end{table}
+
+
+\newpage
+\newpage
+\subsection{Diagrama a bloques 1 Generar clave}
+\begin{figure}[H]
+	\includegraphics[width=1\linewidth, height=2cm]{./images/bloques1.jpg}
+	\caption{Diagrama a bloques 1 Generar clave}
+	\label{fig:5-2-1}
+\end{figure}
+\begin{table}[H]
+ \centering
+   {
+     \begin{tabular}{| p{4cm} | p{4cm} | p{4cm} | p{4cm} |}
+     \hline
+     & \textbf{Generar Str(5)} & \textbf{Aplicar Función Hash} & \textbf{Recortar Hash K’}\\
+     \hline
+     \textbf{Entradas} & *Llamada a Función & *Cadena de 5 caracteres: Str(5) & *Digesto K(128)\\
+     \hline
+     \textbf{Salidas} & *Cadena de 5 caracteres: Str(5) & *Digesto K(128) & *K’(16)\\
+     \hline
+     \textbf{Descripción} & Toma una función random módulo 67, para formar una palabra con 5 caracteres aleatorios tomados del siguiente conjunto.Anillo67{-.,+*[a-z][A-Z]} & Se pasa la cadena Str(5) por una función hash SHA-1 para obtener un digesto único de esta palabra. & Se copian a otro string lo primeros 16 caracteres del digesto K(128) para formar la clave K’(16)\\
+	\hline
+    \end{tabular}
+    }
+    \caption{Diagrama a bloques 1 general clave}
+    \label{tabla:b1}
+\end{table}
+\subsection{Diagrama a bloques 2 Cifrado}
+\begin{table}[H]
+ \centering
+   {
+     \begin{tabular}{| p{3cm} | p{3cm} |}
+     \hline
+     & \textbf{Cifrar}\\
+     \hline
+     \textbf{Entradas} & *Clave K’(16) *Mensaje de correo\\
+     \hline
+     \textbf{Salidas} & *Correo cifrado\\
+     \hline
+     \textbf{Descripción} & Se cifra el mensaje con un algoritmo de llave simétrica (AES o DES) usando una llave de 16bytes o 128bits.\\
+	\hline
+    \end{tabular}
+    }
+    \caption{Diagrama a bloques 2 Cifrar Correo}
+    \label{tabla:b2}
+\end{table}
+\subsection{Diagrama a bloques 3 Empaquetar Correo}
+\begin{figure}[H]
+	\includegraphics[width=1\linewidth, height=1cm]{./images/bloques3.jpg}
+	\caption{Diagrama a bloques 3 Empaquetar Correo}
+	\label{fig:5-3-1}
+\end{figure}
+
+\begin{table}[H]
+ \centering
+   {
+     \begin{tabular}{| p{4cm} | p{4cm} | p{4cm} |}
+     \hline
+     & \textbf{Empaquetamiento SMTP} & \textbf{Timbrar Correo}\\
+     \hline
+     \textbf{Entradas} & *Mensaje Cifrado & *Correo Empaqueta\\
+     \hline
+     \textbf{Salidas} & *Correo Empaquetado & *Correo Timbrado\\
+     \hline
+     \textbf{Descripción} & Se toma el correo y se integra en el formato del correo marcado en el RFC822 & Se timbra el mensaje colocando una marca después del final del mensaje. Para señalar que el correo enviado está cifrado bajo este protocolo.\\
+	\hline
+    \end{tabular}
+    }
+    \caption{Diagrama a bloques 3 Empaquetar Correo}
+    \label{tabla:b3}
+\end{table}
+\subsection{Diagrama a bloques 4 Enviar correo}
+\begin{figure}[H]
+	\includegraphics[width=1\linewidth, height=2cm]{./images/bloques4.jpg}
+	\caption{Diagrama a bloques 4 Enviar correo}
+	\label{fig:5-4-1}
+\end{figure}
+
+\begin{table}[H]
+ \centering
+   {
+     \begin{tabular}{| p{4cm} | p{4cm} | p{4cm} |}
+     \hline
+     & \textbf{Abrir conexión SMTP} & \textbf{Envió de Correo por SMTP}\\
+     \hline
+     \textbf{Entradas} & *Petición & *Correo empaquetado\\
+     \hline
+     \textbf{Salidas} & *Canal de comunicación & *Confirmación de envió\\
+     \hline
+     \textbf{Descripción} & Se genera una petición para conexión SMTP  & Se manda el correo electrónico al servidor por medio del protocolo SMTP\\
+	\hline
+    \end{tabular}
+    }
+    \caption{Diagrama a bloques 4 Enviar correo}
+    \label{tabla:b4}
+\end{table}
+\clearpage
+\subsection{Diagrama a bloques 5 Generar CAPTCHA}
+\begin{figure}[H]
+	\includegraphics[width=1\linewidth, height=2cm]{./images/bloques5.jpg}
+	\caption{Diagrama a bloques 5 Generar CAPTCHA}
+	\label{fig:5-5-1}
+\end{figure}
+\begin{table}[H]
+ \centering
+   {
+     \begin{tabular}{| p{4cm} | p{4cm} | p{4cm} | p{4cm} |}
+     \hline
+     & \textbf{Generar respuesta del CAPTCHA} & \textbf{Firmar CAPTCHA} & \textbf{Transformar palabra}\\
+     \hline
+     \textbf{Entradas} & *Cadena de caracteres: Str(5) & *Firma & *Señal de confirmación\\
+     \hline
+     \textbf{Salidas} & *Señal de confirmación & *Archivo Firmado & *Imagen CAPTCHA\\
+     \hline
+     \textbf{Descripción} & Genera un archivo con la respuesta del CAPTCHA  & Se firma el CAPTCHA por medio de un Hashing del mensaje. & Convierte el Str(5) en una imagen distorsionada que llamaremos CAPTCHA\\
+	\hline
+    \end{tabular}
+    }
+    \caption{Diagrama a bloques 5 Generar CAPTCHA}
+    \label{tabla:b5}
+\end{table}
+
+\subsection{Diagrama a bloques 6 Enviar CAPTCHAS}
+\begin{figure}[H]
+	\includegraphics[width=1\linewidth, height=1cm]{./images/bloques6.jpg}
+	\caption{Diagrama a bloques 6 Enviar CAPTCHAS (Usuario existente)}
+	\label{fig:5-6-1}
+\end{figure}
+
+\begin{table}[H]
+ \centering
+   {
+     \begin{tabular}{| p{2,5cm} | p{2,5cm} | p{2,5cm} | p{2,5cm} | p{2,5cm} | p{2,5cm} |}
+     \hline
+     & \textbf{Abrir conexión} & \textbf{Verificar Usuario} & \textbf{Mandar CAPTCHA} & \textbf{Registrar en base de datos} & \textbf{Cerrar Conexión}\\
+     \hline
+     \textbf{Entradas} & *CAPTCHAS & *Datos de Usuario & *Verificación de usuario & *Datos de usuario *CAPTCHA & Verificación\\
+     \hline
+     \textbf{Salidas} & *Datos de usuario & *Verificación de usuario & *CAPTCHA & Verificación &\\
+     \hline
+     \textbf{Descripción} & Se genera una petición para poder entablar una conexión con el servidor de CAPTCHAS & Se verifica la existencia del usuario en el servidor, si existe se le da acceso & Ya verificado el usuario se manda el CAPTCHA al servidor & Se registran los datos del CAPTCHA en la base de datos y se envía una verificación & Se cierra la conexión y se guardan los datos\\
+	\hline
+    \end{tabular}
+    }
+    \caption{Diagrama a bloques 6 Enviar CAPTCHAS (Usuario existente)}
+    \label{tabla:b6}
+\end{table}
+
+\subsection{Diagrama a bloques 7 Enviar CAPTCHAS}
+\begin{figure}[H]
+	\includegraphics[width=1\linewidth, height=1cm]{./images/bloques7.jpg}
+	\caption{Diagrama a bloques 7 Enviar CAPTCHAS (Usuario inexistente)}
+	\label{fig:5-7-1}
+\end{figure}
+\begin{table}[H]
+ \centering
+   {
+     \begin{tabular}{| p{2cm} | p{2cm} | p{2,5cm} | p{2cm} | p{2,5cm} | p{2,5cm} | p{2cm} |}
+     \hline
+     & \textbf{Abrir conexión} & \textbf{Registrar usuario en Base de Datos} & \textbf{Verificar Usuario} & \textbf{Mandar CAPTCHA} & \textbf{Registrar en base de datos} & \textbf{Cerrar Conexión}\\
+     \hline
+     \textbf{Entradas} & *CAPTCHAS & *Datos de Usuario & *Verificación de registro & *Verificación de usuario & *Datos de usuario *CAPTCHA & Verificación\\
+     \hline
+     \textbf{Salidas} & *Datos de usuario & *Verificación de registro & *Verificación de usuario & *CAPTCHA & Verificación &\\
+     \hline
+     \textbf{Descripción} & Se genera una petición para poder entablar una conexión con el servidor de CAPTCHAS & Se da de alta al usuario en la base de datos & se le da acceso  al usuario & Ya verificado el usuario se manda el CAPTCHA al servidor & Se registran los datos del CAPTCHA en la base de datos y se envía una verificación & Se cierra la conexión y se guardan los datos\\
+	\hline
+    \end{tabular}
+    }
+    \caption{Diagrama a bloques 7 Enviar CAPTCHAS (Usuario inexistente)}
+    \label{tabla:b7}
+\end{table}
+\pagebreak
+\subsection{Diagrama a bloques 8 Descargar mensaje}
+\begin{figure}[H]
+	\includegraphics[width=1\linewidth, height=1cm]{./images/bloques8.jpg}
+	\caption{Diagrama a bloques 8 Descargar mensaje}
+	\label{fig:5-8-1}
+\end{figure}
+\begin{table}[H]
+ \centering
+   {
+     \begin{tabular}{| p{3cm} | p{4cm} | p{4cm} |}
+     \hline
+     & \textbf{Abrir conexión al servidor de correo} & \textbf{Descargar mensaje por IMAP o POP3}\\
+     \hline
+     \textbf{Entradas} & *Señal de activación & *Confirmación\\
+     \hline
+     \textbf{Salidas} & *Confirmación & *Correo electrónico\\
+     \hline
+     \textbf{Descripción} & El receptor se conecta al servidor de correo electrónico e inicia la sesión & Descarga del servidor de correo electrónico todos los mensajes que aún no se hayan descargado.\\
+	\hline
+    \end{tabular}
+    }
+    \caption{Diagrama a bloques 8 Descargar mensaje}
+    \label{tabla:b8}
+\end{table}
+\subsection{Diagrama a bloques 9 Verificar protocolo}
+\begin{figure}[H]
+	\includegraphics[width=1\linewidth, height=1cm]{./images/bloques9.jpg}
+	\caption{Diagrama a bloques 9 Verificar protocolo (con protocolo válido)}
+	\label{fig:5-9-1}
+\end{figure}
+\begin{table}[H]
+ \centering
+   {
+     \begin{tabular}{| p{3cm} | p{4cm} | p{4cm} |}
+     \hline
+     & \textbf{Abrir mensaje} & \textbf{Verificar mensaje}\\
+     \hline
+     \textbf{Entradas} & *Correo electrónico & *mensaje\\
+     \hline
+     \textbf{Salidas} & *Mensaje & *verificación\\
+     \hline
+     \textbf{Descripción} & Se toma el mensaje descargado del servidor y se des empaqueta para dejar solo el texto del mensaje & Se verifica que el mensaje tenga la bandera correspondiente a que está cifrado con este esquema\\
+	\hline
+    \end{tabular}
+    }
+    \caption{Diagrama a bloques 9 Verificar protocolo (con protocolo válido)}
+    \label{tabla:b9}
+\end{table}
+\pagebreak
+\subsection{Diagrama a bloques 10 Verificar protocolo}
+\begin{figure}[H]
+	\includegraphics[width=1\linewidth, height=1cm]{./images/bloques10.jpg}
+	\caption{Diagrama a bloques 10 Verificar protocolo (con protocolo inválido)}
+	\label{fig:5-9-1}
+\end{figure}
+\begin{table}[H]
+ \centering
+   {
+     \begin{tabular}{| p{3cm} | p{4cm} | p{4cm} |}
+     \hline
+     & \textbf{Abrir mensaje} & \textbf{Verificar mensaje}\\
+     \hline
+     \textbf{Entradas} & *Correo electrónico & *mensaje\\
+     \hline
+     \textbf{Salidas} & *Mensaje & *verificación\\
+     \hline
+     \textbf{Descripción} & Se toma el mensaje descargado del servidor y se des empaqueta para dejar solo el texto del mensaje & Si la verificación es negativa se manda directamente al bloque de Despliegue\\
+	\hline
+    \end{tabular}
+    }
+    \caption{Diagrama a bloques 10 Verificar protocolo (con protocolo inválido)	}
+    \label{tabla:b10}
+\end{table}
+
+\subsection{Diagrama a bloques 11 Conseguir CAPTCHAS}
+\begin{figure}[H]
+	\includegraphics[width=1\linewidth, height=1cm]{./images/bloques11.jpg}
+	\caption{Diagrama a bloques 11 Conseguir CAPTCHAS (Usuario existente)}
+	\label{fig:5-11-1}
+\end{figure}
+\begin{table}[H]
+ \centering
+   {
+     \begin{tabular}{| p{2,5cm} | p{3cm} | p{2cm} | p{2cm} | p{3cm} | p{3cm} |}
+     \hline
+     & \textbf{Abrir Conexión} & \textbf{Validar Usuario} & \textbf{Accesar a cuenta} & \textbf{Verificar existencia de CAPTCHA} & \textbf{Enviar CAPTCHA}\\
+     \hline
+     \textbf{Entradas} & *Confirmación & *Datos usuario & *Contraseña & *Petición de CAPTCHAS & *Confirmación\\
+     \hline
+     \textbf{Salidas} & *verificación & *Contraseña & *confirmación & *confirmación & *CAPTCHA\\
+     \hline
+     \textbf{Descripción} & Se abre una conexión con el servidor de CAPTCHAS & Se verifica que el usuario este dado de alta en el servidor mandándole una petición a la base de datos, si el usuario existe se accesa & Si esta dado de alta en el servidor se manda la contraseña para que pueda tener acceso a los CAPTCHAS de su cuenta & Se verifica que los CAPTCHAS que están ligados al mensaje que realizo la petición existan & Si existen estos CAPTCHAS son enviados de regreso al mensaje\\
+	\hline
+    \end{tabular}
+    }
+    \caption{Diagrama a bloques 11 Conseguir CAPTCHAS (Usuario existente)}
+    \label{tabla:b11}
+\end{table}
+
+\subsection{Diagrama a bloques 12 Recuperar clave}
+\begin{figure}[H]
+	\includegraphics[width=1\linewidth, height=1cm]{./images/bloques12.jpg}
+	\caption{Diagrama a bloques 12 Recuperar clave}
+	\label{fig:5-12-1}
+\end{figure}
+\begin{table}[H]
+ \centering
+   {
+     \begin{tabular}{| p{2,5cm} | p{3cm} | p{3cm} | p{3cm} |}
+     \hline
+     & \textbf{Resolver CAPTCHA} & \textbf{Aplicar Función Hash} & \textbf{Recortar llave}\\
+     \hline
+     \textbf{Entradas} & *CAPTCHA & *Cadena de 5 caracteres: Str(5) & *Digesto K(128)\\
+     \hline
+     \textbf{Salidas} & *Str(5) & *Digesto K(128) & *K’(16)\\
+     \hline
+     \textbf{Descripción} & Se despliega el CAPTCHA para que el usuario pueda resolverlo & Se pasa la cadena Str(5) por una función hash SHA-1 para obtener un digesto único de esta palabra & Se copian a otro string lo primeros 16 caracteres del digesto K(128) para formar la clave K’(16)\\
+	\hline
+    \end{tabular}
+    }
+    \caption{Diagrama a bloques 12 Recuperar clave}
+    \label{tabla:b12}
+\end{table}
+
+\subsection{Diagrama a bloques 13 Descifrar correo}
+\begin{table}[H]
+ \centering
+   {
+     \begin{tabular}{| p{2,5cm} | p{3cm} |}
+     \hline
+     & \textbf{Descifrar}\\
+     \hline
+     \textbf{Entradas} & *Clave K’(16) *Mensaje de correo\\
+     \hline
+     \textbf{Salidas} & *Correo descifrado\\
+     \hline
+     \textbf{Descripción} & Se descifra el mensaje con un algoritmo de llave simétrica (AES o DES) usando una llave de 16bytes o 128bits.\\
+	\hline
+    \end{tabular}
+    }
+    \caption{Diagrama a bloques 13 Descifrar correo}
+    \label{tabla:b13}
+\end{table}

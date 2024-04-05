@@ -1,0 +1,130 @@
+jonnytest@jonnytest-Inspiron-3442:~/Documentos$ openssl s_client -connect pop3.live.com:995
+CONNECTED(00000003)
+depth=2 C = BE, O = GlobalSign nv-sa, OU = Root CA, CN = GlobalSign Root CA
+verify return:1
+depth=1 C = BE, O = GlobalSign nv-sa, CN = GlobalSign Organization Validation CA - SHA256 - G2
+verify return:1
+depth=0 C = US, ST = Washington, L = Redmond, O = Microsoft Corporation, CN = *.hotmail.com
+verify return:1
+---
+Certificate chain
+ 0 s:/C=US/ST=Washington/L=Redmond/O=Microsoft Corporation/CN=*.hotmail.com
+   i:/C=BE/O=GlobalSign nv-sa/CN=GlobalSign Organization Validation CA - SHA256 - G2
+ 1 s:/C=BE/O=GlobalSign nv-sa/CN=GlobalSign Organization Validation CA - SHA256 - G2
+   i:/C=BE/O=GlobalSign nv-sa/OU=Root CA/CN=GlobalSign Root CA
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIIFWTCCBEGgAwIBAgISESHG1NfS/3OudkTw0zFOeKVhMA0GCSqGSIb3DQEBCwUA
+MGYxCzAJBgNVBAYTAkJFMRkwFwYDVQQKExBHbG9iYWxTaWduIG52LXNhMTwwOgYD
+VQQDEzNHbG9iYWxTaWduIE9yZ2FuaXphdGlvbiBWYWxpZGF0aW9uIENBIC0gU0hB
+MjU2IC0gRzIwHhcNMTUxMjE1MjIyNjExWhcNMTYxMjE1MjIyNjExWjBsMQswCQYD
+VQQGEwJVUzETMBEGA1UECBMKV2FzaGluZ3RvbjEQMA4GA1UEBxMHUmVkbW9uZDEe
+MBwGA1UEChMVTWljcm9zb2Z0IENvcnBvcmF0aW9uMRYwFAYDVQQDDA0qLmhvdG1h
+aWwuY29tMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAty0na9MuHTRu
+PIJ8UNX7NG2vPq08Nu4hK5dWYS8nz6tqOrKQbWWYlKzP5jrIFuu2VeI5gy7Bqw/8
+8RzXq8RZRYYG5fkrqJmnil91hlKA2CBFIvUUKkOP88RRSUoVcq3QKlOe9+bRgSad
+eozS+YQAj89mQdasCXSl/qlrtNg9HOGhJEY6aWIExXgwrA6fdwHXz+jQjsX6swE8
+PffA0nsaE404pu7Jky/3I2LwueaV1CiOYeKawKh8oX2u3CGRIH5Yp5KzmDJqyYdx
+vDXlCASJFII/Ny6vTgtoaTwIF7QzZjsPLyrDdJDjyXvLDkua1mpByT3ob0zAUWn+
+0Rr4eQVPQQIDAQABo4IB+TCCAfUwDgYDVR0PAQH/BAQDAgWgMEkGA1UdIARCMEAw
+PgYGZ4EMAQICMDQwMgYIKwYBBQUHAgEWJmh0dHBzOi8vd3d3Lmdsb2JhbHNpZ24u
+Y29tL3JlcG9zaXRvcnkvMEAGA1UdEQQ5MDeCDSouaG90bWFpbC5jb22CCioubGl2
+ZS5jb22CDSoub3V0bG9vay5jb22CC2hvdG1haWwuY29tMAkGA1UdEwQCMAAwHQYD
+VR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMEkGA1UdHwRCMEAwPqA8oDqGOGh0
+dHA6Ly9jcmwuZ2xvYmFsc2lnbi5jb20vZ3MvZ3Nvcmdhbml6YXRpb252YWxzaGEy
+ZzIuY3JsMIGgBggrBgEFBQcBAQSBkzCBkDBNBggrBgEFBQcwAoZBaHR0cDovL3Nl
+Y3VyZS5nbG9iYWxzaWduLmNvbS9jYWNlcnQvZ3Nvcmdhbml6YXRpb252YWxzaGEy
+ZzJyMS5jcnQwPwYIKwYBBQUHMAGGM2h0dHA6Ly9vY3NwMi5nbG9iYWxzaWduLmNv
+bS9nc29yZ2FuaXphdGlvbnZhbHNoYTJnMjAdBgNVHQ4EFgQUGese7JLgrhSuhd8T
+V1GQlJb2mVMwHwYDVR0jBBgwFoAUlt5h8b0cFilTHMDMfTuDAEDmGnwwDQYJKoZI
+hvcNAQELBQADggEBAGtFr77qTlPuke/bjNmGe3h5xH123z/2l/ypD+jsFpZwMXsC
+pfNKJSn5jdZWTuFkmxj3+a5EoAdJobDQHMO57aSWUs5ChjZkNPsuy/jS/x1eZ42/
+z6YtlJgrfF0HI7Lk96rUPALmeWHLtxlKsc4UZaKuGIAdEba27gEtEug3kvnoznPT
+CivA8NpZnvRS1874DWePrGAKY8JQcXQRfeZ1rva9kJyW/bg6KAxRHnWFtMHHe1ni
+EAoPp6Z5o+Bh9tReAnbJaSSxBi+63qp8fFVexDIOUNyohYIjELgjsCLoHZn4M6V7
+M8Dhq/n+yfUZzar8lTI0UhxSc0ZeqSfQCki4ERA=
+-----END CERTIFICATE-----
+subject=/C=US/ST=Washington/L=Redmond/O=Microsoft Corporation/CN=*.hotmail.com
+issuer=/C=BE/O=GlobalSign nv-sa/CN=GlobalSign Organization Validation CA - SHA256 - G2
+---
+No client certificate CA names sent
+Server Temp Key: ECDH, P-384, 384 bits
+---
+SSL handshake has read 3031 bytes and written 481 bytes
+---
+New, TLSv1/SSLv3, Cipher is ECDHE-RSA-AES256-SHA
+Server public key is 2048 bit
+Secure Renegotiation IS supported
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+SSL-Session:
+    Protocol  : TLSv1
+    Cipher    : ECDHE-RSA-AES256-SHA
+    Session-ID: 4C3C0000E7DE78BDDC3EB41C20B6BF76353B1AD81E3977956632198DDF0995BC
+    Session-ID-ctx: 
+    Master-Key: 741042355C5E8BB67E17E11E1E6CF53D10B8D34A4EFBDFAFD4C5D273EBC941D45C7802BAEE6CB53F8FADDDADF0612251
+    Key-Arg   : None
+    PSK identity: None
+    PSK identity hint: None
+    SRP username: None
+    Start Time: 1460581226
+    Timeout   : 300 (sec)
+    Verify return code: 0 (ok)
+---
++OK BLU003-POP289 POP3 server ready
+read:errno=104
+
+jonnytest@jonnytest-Inspiron-3442:~/Documentos$ cd Seguridad/
+jonnytest@jonnytest-Inspiron-3442:~/Documentos/Seguridad$ ls
+server2048.key
+jonnytest@jonnytest-Inspiron-3442:~/Documentos/Seguridad$ openssl req -new -x509 -days 1825 -key server2048.key -out server2048.crt
+You are about to be asked to enter information that will be incorporated
+into your certificate request.
+What you are about to enter is what is called a Distinguished Name or a DN.
+There are quite a few fields but you can leave some blank
+For some fields there will be a default value,
+If you enter '.', the field will be left blank.
+-----
+Country Name (2 letter code) [AU]:MX
+State or Province Name (full name) [Some-State]:Estado de mexico
+Locality Name (eg, city) []:ciudad de mexico
+Organization Name (eg, company) [Internet Widgits Pty Ltd]:ESCOM
+Organizational Unit Name (eg, section) []:Trabajo Terminal
+Common Name (e.g. server FQDN or YOUR name) []:Jonathan Arcos Ayala
+Email Address []:jonas.arcos.99@gmail.com
+jonnytest@jonnytest-Inspiron-3442:~/Documentos/Seguridad$ openssl rsa -in server2048.key -pubout >server2048.pub
+writing RSA key
+jonnytest@jonnytest-Inspiron-3442:~/Documentos/Seguridad$ cat server2048.key server2048.crt > server2048.pem
+jonnytest@jonnytest-Inspiron-3442:~/Documentos/Seguridad$ cat server2048.key server2048.crt > server2048.pem
+jonnytest@jonnytest-Inspiron-3442:~/Documentos/Seguridad$ python ventana2.py 
+python: can't open file 'ventana2.py': [Errno 2] No such file or directory
+jonnytest@jonnytest-Inspiron-3442:~/Documentos/Seguridad$ cd ..
+jonnytest@jonnytest-Inspiron-3442:~/Documentos$ python ventana2.py 
+abriendo conexion
+Traceback (most recent call last):
+  File "ventana2.py", line 4, in <module>
+    archivo = open("server2048.key", "r") 
+IOError: [Errno 2] No such file or directory: 'server2048.key'
+jonnytest@jonnytest-Inspiron-3442:~/Documentos$ python ventana2.py 
+abriendo conexion
+Traceback (most recent call last):
+  File "ventana2.py", line 6, in <module>
+    M = poplib.POP3_SSL(host='pop3.live.com', port=995, keyfile="/home/jonnytest/Documentos/Seguridad/server2048.key", certfile="/home/jonnytest/Documentos/Seguridad/server2048.pem")
+  File "/usr/lib/python2.7/poplib.py", line 346, in __init__
+    for res in socket.getaddrinfo(self.host, self.port, 0, socket.SOCK_STREAM):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+jonnytest@jonnytest-Inspiron-3442:~/Documentos$ python ventana2.py 
+abriendo conexion
+Validando usuario
+*cmd* 'USER jonny.test.arc.99@hotmail.com'
+*put* 'USER jonny.test.arc.99@hotmail.com'
+*get* '+OK password required\r\n'
+*resp* '+OK password required'
+*cmd* 'PASS 360_live'
+*put* 'PASS 360_live'
+*get* '+OK mailbox has 18 messages\r\n'
+*resp* '+OK mailbox has 18 messages'
+Successful login
+jonnytest@jonnytest-Inspiron-3442:~/Documentos$ 

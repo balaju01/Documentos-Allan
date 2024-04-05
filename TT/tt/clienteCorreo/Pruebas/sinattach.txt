@@ -1,0 +1,15 @@
+Content-Type: multipart/mixed; boundary="===============8591025782119177429=="
+MIME-Version: 1.0
+From: festivalsonparamilo@gmail.com
+To: jonny.test.arc.99@hotmail.com
+Subject: Jonathan Arcos Ayala
+
+--===============8591025782119177429==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+
+Tus datos han quedado registrados satisfactoriamente con el número de folio IfQswNm0Ka. Conserva este número para futuros trámites. Estamos revisando tu propuesta. La determinación del Comité Organizador se te dará a conocer a más tardar el 30 de abril del año en curso.
+Persona: Jonathan Arcos Ayala
+Correo: jonny.test.arc.99@hotmail.com
+--===============8591025782119177429==--
