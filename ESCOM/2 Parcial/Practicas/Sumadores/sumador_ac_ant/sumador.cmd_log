@@ -1,0 +1,366 @@
+xst -intstyle ise -ifn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.xst" -ofn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.syr" 
+xst -intstyle ise -ifn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.xst" -ofn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.syr" 
+xst -intstyle ise -ifn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.xst" -ofn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.syr" 
+xst -intstyle ise -ifn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.xst" -ofn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.syr" 
+xst -intstyle ise -ifn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.xst" -ofn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.syr" 
+xst -intstyle ise -ifn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.xst" -ofn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.syr" 
+xst -intstyle ise -ifn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.xst" -ofn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.syr" 
+xst -intstyle ise -ifn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.xst" -ofn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.syr" 
+xst -intstyle ise -ifn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.xst" -ofn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.syr" 
+xst -intstyle ise -ifn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.xst" -ofn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.syr" 
+xst -intstyle ise -ifn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.xst" -ofn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-5 sumador.ngc sumador.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o sumador_map.ncd sumador.ngd sumador.pcf 
+par -w -intstyle ise -ol high -t 1 sumador_map.ncd sumador.ncd sumador.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml sumador.twx sumador.ncd -o sumador.twr sumador.pcf 
+bitgen -intstyle ise -f sumador.ut sumador.ncd 
+xst -intstyle ise -ifn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.xst" -ofn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Basys2_100_250General.ucf -p xc3s100e-cp132-5 sumador.ngc sumador.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Basys2_100_250General.ucf -p xc3s100e-cp132-5 sumador.ngc sumador.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o sumador_map.ncd sumador.ngd sumador.pcf 
+par -w -intstyle ise -ol high -t 1 sumador_map.ncd sumador.ncd sumador.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml sumador.twx sumador.ncd -o sumador.twr sumador.pcf -ucf Basys2_100_250General.ucf 
+bitgen -intstyle ise -f sumador.ut sumador.ncd 
+xst -intstyle ise -ifn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.xst" -ofn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Basys2_100_250General.ucf -p xc3s100e-cp132-5 sumador.ngc sumador.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o sumador_map.ncd sumador.ngd sumador.pcf 
+par -w -intstyle ise -ol high -t 1 sumador_map.ncd sumador.ncd sumador.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml sumador.twx sumador.ncd -o sumador.twr sumador.pcf -ucf Basys2_100_250General.ucf 
+bitgen -intstyle ise -f sumador.ut sumador.ncd 
+xst -intstyle ise -ifn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.xst" -ofn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.syr" 
+xst -intstyle ise -ifn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.xst" -ofn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.syr" 
+xst -intstyle ise -ifn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.xst" -ofn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Basys2_100_250General.ucf -p xc3s100e-cp132-5 sumador.ngc sumador.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o sumador_map.ncd sumador.ngd sumador.pcf 
+par -w -intstyle ise -ol high -t 1 sumador_map.ncd sumador.ncd sumador.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml sumador.twx sumador.ncd -o sumador.twr sumador.pcf -ucf Basys2_100_250General.ucf 
+bitgen -intstyle ise -f sumador.ut sumador.ncd 
+xst -intstyle ise -ifn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.xst" -ofn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Basys2_100_250General.ucf -p xc3s100e-cp132-5 sumador.ngc sumador.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o sumador_map.ncd sumador.ngd sumador.pcf 
+par -w -intstyle ise -ol high -t 1 sumador_map.ncd sumador.ncd sumador.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml sumador.twx sumador.ncd -o sumador.twr sumador.pcf -ucf Basys2_100_250General.ucf 
+bitgen -intstyle ise -f sumador.ut sumador.ncd 
+xst -intstyle ise -ifn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.xst" -ofn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.syr" 
+xst -intstyle ise -ifn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.xst" -ofn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.syr" 
+xst -intstyle ise -ifn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.xst" -ofn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.syr" 
+xst -intstyle ise -ifn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.xst" -ofn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.syr" 
+xst -intstyle ise -ifn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.xst" -ofn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.syr" 
+xst -intstyle ise -ifn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.xst" -ofn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.syr" 
+xst -intstyle ise -ifn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.xst" -ofn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.syr" 
+xst -intstyle ise -ifn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.xst" -ofn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Basys2_100_250General.ucf -p xc3s100e-cp132-5 sumador.ngc sumador.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o sumador_map.ncd sumador.ngd sumador.pcf 
+par -w -intstyle ise -ol high -t 1 sumador_map.ncd sumador.ncd sumador.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml sumador.twx sumador.ncd -o sumador.twr sumador.pcf -ucf Basys2_100_250General.ucf 
+bitgen -intstyle ise -f sumador.ut sumador.ncd 
+xst -intstyle ise -ifn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.xst" -ofn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.syr" 
+xst -intstyle ise -ifn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.xst" -ofn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.syr" 
+xst -intstyle ise -ifn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.xst" -ofn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.syr" 
+xst -intstyle ise -ifn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.xst" -ofn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.syr" 
+xst -intstyle ise -ifn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.xst" -ofn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.syr" 
+xst -intstyle ise -ifn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.xst" -ofn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.syr" 
+xst -intstyle ise -ifn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.xst" -ofn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.syr" 
+xst -intstyle ise -ifn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.xst" -ofn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.syr" 
+xst -intstyle ise -ifn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.xst" -ofn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Basys2_100_250General.ucf -p xc3s100e-cp132-5 sumador.ngc sumador.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o sumador_map.ncd sumador.ngd sumador.pcf 
+par -w -intstyle ise -ol high -t 1 sumador_map.ncd sumador.ncd sumador.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml sumador.twx sumador.ncd -o sumador.twr sumador.pcf -ucf Basys2_100_250General.ucf 
+bitgen -intstyle ise -f sumador.ut sumador.ncd 
+xst -intstyle ise -ifn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.xst" -ofn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Basys2_100_250General.ucf -p xc3s100e-cp132-5 sumador.ngc sumador.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o sumador_map.ncd sumador.ngd sumador.pcf 
+par -w -intstyle ise -ol high -t 1 sumador_map.ncd sumador.ncd sumador.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml sumador.twx sumador.ncd -o sumador.twr sumador.pcf -ucf Basys2_100_250General.ucf 
+bitgen -intstyle ise -f sumador.ut sumador.ncd 
+xst -intstyle ise -ifn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.xst" -ofn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Basys2_100_250General.ucf -p xc3s100e-cp132-5 sumador.ngc sumador.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Basys2_100_250General.ucf -p xc3s100e-cp132-5 sumador.ngc sumador.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o sumador_map.ncd sumador.ngd sumador.pcf 
+par -w -intstyle ise -ol high -t 1 sumador_map.ncd sumador.ncd sumador.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml sumador.twx sumador.ncd -o sumador.twr sumador.pcf -ucf Basys2_100_250General.ucf 
+bitgen -intstyle ise -f sumador.ut sumador.ncd 
+xst -intstyle ise -ifn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.xst" -ofn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Basys2_100_250General.ucf -p xc3s100e-cp132-5 sumador.ngc sumador.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o sumador_map.ncd sumador.ngd sumador.pcf 
+par -w -intstyle ise -ol high -t 1 sumador_map.ncd sumador.ncd sumador.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml sumador.twx sumador.ncd -o sumador.twr sumador.pcf -ucf Basys2_100_250General.ucf 
+bitgen -intstyle ise -f sumador.ut sumador.ncd 
+xst -intstyle ise -ifn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.xst" -ofn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Basys2_100_250General.ucf -p xc3s100e-cp132-5 sumador.ngc sumador.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o sumador_map.ncd sumador.ngd sumador.pcf 
+par -w -intstyle ise -ol high -t 1 sumador_map.ncd sumador.ncd sumador.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml sumador.twx sumador.ncd -o sumador.twr sumador.pcf -ucf Basys2_100_250General.ucf 
+bitgen -intstyle ise -f sumador.ut sumador.ncd 
+xst -intstyle ise -ifn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.xst" -ofn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.syr" 
+xst -intstyle ise -ifn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.xst" -ofn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Basys2_100_250General.ucf -p xc3s100e-cp132-5 sumador.ngc sumador.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Basys2_100_250General.ucf -p xc3s100e-cp132-5 sumador.ngc sumador.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o sumador_map.ncd sumador.ngd sumador.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Basys2_100_250General.ucf -p xc3s100e-cp132-5 sumador.ngc sumador.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o sumador_map.ncd sumador.ngd sumador.pcf 
+par -w -intstyle ise -ol high -t 1 sumador_map.ncd sumador.ncd sumador.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml sumador.twx sumador.ncd -o sumador.twr sumador.pcf -ucf Basys2_100_250General.ucf 
+bitgen -intstyle ise -f sumador.ut sumador.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Basys2_100_250General.ucf -p xc3s100e-cp132-5 sumador.ngc sumador.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Basys2_100_250General.ucf -p xc3s100e-cp132-5 sumador.ngc sumador.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o sumador_map.ncd sumador.ngd sumador.pcf 
+par -w -intstyle ise -ol high -t 1 sumador_map.ncd sumador.ncd sumador.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml sumador.twx sumador.ncd -o sumador.twr sumador.pcf -ucf Basys2_100_250General.ucf 
+bitgen -intstyle ise -f sumador.ut sumador.ncd 
+xst -intstyle ise -ifn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.xst" -ofn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Basys2_100_250General.ucf -p xc3s100e-cp132-5 sumador.ngc sumador.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o sumador_map.ncd sumador.ngd sumador.pcf 
+par -w -intstyle ise -ol high -t 1 sumador_map.ncd sumador.ncd sumador.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml sumador.twx sumador.ncd -o sumador.twr sumador.pcf -ucf Basys2_100_250General.ucf 
+bitgen -intstyle ise -f sumador.ut sumador.ncd 
+xst -intstyle ise -ifn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.xst" -ofn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Basys2_100_250General.ucf -p xc3s100e-cp132-5 sumador.ngc sumador.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o sumador_map.ncd sumador.ngd sumador.pcf 
+par -w -intstyle ise -ol high -t 1 sumador_map.ncd sumador.ncd sumador.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml sumador.twx sumador.ncd -o sumador.twr sumador.pcf -ucf Basys2_100_250General.ucf 
+bitgen -intstyle ise -f sumador.ut sumador.ncd 
+xst -intstyle ise -ifn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.xst" -ofn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Basys2_100_250General.ucf -p xc3s100e-cp132-5 sumador.ngc sumador.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o sumador_map.ncd sumador.ngd sumador.pcf 
+par -w -intstyle ise -ol high -t 1 sumador_map.ncd sumador.ncd sumador.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml sumador.twx sumador.ncd -o sumador.twr sumador.pcf -ucf Basys2_100_250General.ucf 
+bitgen -intstyle ise -f sumador.ut sumador.ncd 
+xst -intstyle ise -ifn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.xst" -ofn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Basys2_100_250General.ucf -p xc3s100e-cp132-5 sumador.ngc sumador.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o sumador_map.ncd sumador.ngd sumador.pcf 
+par -w -intstyle ise -ol high -t 1 sumador_map.ncd sumador.ncd sumador.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml sumador.twx sumador.ncd -o sumador.twr sumador.pcf -ucf Basys2_100_250General.ucf 
+bitgen -intstyle ise -f sumador.ut sumador.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Basys2_100_250General.ucf -p xc3s100e-cp132-5 sumador.ngc sumador.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o sumador_map.ncd sumador.ngd sumador.pcf 
+par -w -intstyle ise -ol high -t 1 sumador_map.ncd sumador.ncd sumador.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml sumador.twx sumador.ncd -o sumador.twr sumador.pcf -ucf Basys2_100_250General.ucf 
+bitgen -intstyle ise -f sumador.ut sumador.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Basys2_100_250General.ucf -p xc3s100e-cp132-5 sumador.ngc sumador.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o sumador_map.ncd sumador.ngd sumador.pcf 
+par -w -intstyle ise -ol high -t 1 sumador_map.ncd sumador.ncd sumador.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml sumador.twx sumador.ncd -o sumador.twr sumador.pcf -ucf Basys2_100_250General.ucf 
+bitgen -intstyle ise -f sumador.ut sumador.ncd 
+xst -intstyle ise -ifn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.xst" -ofn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Basys2_100_250General.ucf -p xc3s100e-cp132-5 sumador.ngc sumador.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o sumador_map.ncd sumador.ngd sumador.pcf 
+par -w -intstyle ise -ol high -t 1 sumador_map.ncd sumador.ncd sumador.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml sumador.twx sumador.ncd -o sumador.twr sumador.pcf -ucf Basys2_100_250General.ucf 
+bitgen -intstyle ise -f sumador.ut sumador.ncd 
+xst -intstyle ise -ifn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.xst" -ofn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Basys2_100_250General.ucf -p xc3s100e-cp132-5 sumador.ngc sumador.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o sumador_map.ncd sumador.ngd sumador.pcf 
+par -w -intstyle ise -ol high -t 1 sumador_map.ncd sumador.ncd sumador.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml sumador.twx sumador.ncd -o sumador.twr sumador.pcf -ucf Basys2_100_250General.ucf 
+bitgen -intstyle ise -f sumador.ut sumador.ncd 
+xst -intstyle ise -ifn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.xst" -ofn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Basys2_100_250General.ucf -p xc3s100e-cp132-5 sumador.ngc sumador.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o sumador_map.ncd sumador.ngd sumador.pcf 
+par -w -intstyle ise -ol high -t 1 sumador_map.ncd sumador.ncd sumador.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml sumador.twx sumador.ncd -o sumador.twr sumador.pcf -ucf Basys2_100_250General.ucf 
+bitgen -intstyle ise -f sumador.ut sumador.ncd 
+xst -intstyle ise -ifn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.xst" -ofn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Basys2_100_250General.ucf -p xc3s100e-cp132-5 sumador.ngc sumador.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o sumador_map.ncd sumador.ngd sumador.pcf 
+par -w -intstyle ise -ol high -t 1 sumador_map.ncd sumador.ncd sumador.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml sumador.twx sumador.ncd -o sumador.twr sumador.pcf -ucf Basys2_100_250General.ucf 
+bitgen -intstyle ise -f sumador.ut sumador.ncd 
+xst -intstyle ise -ifn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.xst" -ofn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Basys2_100_250General.ucf -p xc3s100e-cp132-5 sumador.ngc sumador.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o sumador_map.ncd sumador.ngd sumador.pcf 
+par -w -intstyle ise -ol high -t 1 sumador_map.ncd sumador.ncd sumador.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml sumador.twx sumador.ncd -o sumador.twr sumador.pcf -ucf Basys2_100_250General.ucf 
+bitgen -intstyle ise -f sumador.ut sumador.ncd 
+xst -intstyle ise -ifn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.xst" -ofn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Basys2_100_250General.ucf -p xc3s100e-cp132-5 sumador.ngc sumador.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o sumador_map.ncd sumador.ngd sumador.pcf 
+par -w -intstyle ise -ol high -t 1 sumador_map.ncd sumador.ncd sumador.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml sumador.twx sumador.ncd -o sumador.twr sumador.pcf -ucf Basys2_100_250General.ucf 
+bitgen -intstyle ise -f sumador.ut sumador.ncd 
+xst -intstyle ise -ifn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.xst" -ofn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Basys2_100_250General.ucf -p xc3s100e-cp132-5 sumador.ngc sumador.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o sumador_map.ncd sumador.ngd sumador.pcf 
+par -w -intstyle ise -ol high -t 1 sumador_map.ncd sumador.ncd sumador.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml sumador.twx sumador.ncd -o sumador.twr sumador.pcf -ucf Basys2_100_250General.ucf 
+bitgen -intstyle ise -f sumador.ut sumador.ncd 
+xst -intstyle ise -ifn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.xst" -ofn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Basys2_100_250General.ucf -p xc3s100e-cp132-5 sumador.ngc sumador.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o sumador_map.ncd sumador.ngd sumador.pcf 
+par -w -intstyle ise -ol high -t 1 sumador_map.ncd sumador.ncd sumador.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml sumador.twx sumador.ncd -o sumador.twr sumador.pcf -ucf Basys2_100_250General.ucf 
+bitgen -intstyle ise -f sumador.ut sumador.ncd 
+xst -intstyle ise -ifn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.xst" -ofn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Basys2_100_250General.ucf -p xc3s100e-cp132-5 sumador.ngc sumador.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o sumador_map.ncd sumador.ngd sumador.pcf 
+par -w -intstyle ise -ol high -t 1 sumador_map.ncd sumador.ncd sumador.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml sumador.twx sumador.ncd -o sumador.twr sumador.pcf -ucf Basys2_100_250General.ucf 
+bitgen -intstyle ise -f sumador.ut sumador.ncd 
+xst -intstyle ise -ifn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.xst" -ofn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Basys2_100_250General.ucf -p xc3s100e-cp132-5 sumador.ngc sumador.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o sumador_map.ncd sumador.ngd sumador.pcf 
+par -w -intstyle ise -ol high -t 1 sumador_map.ncd sumador.ncd sumador.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml sumador.twx sumador.ncd -o sumador.twr sumador.pcf -ucf Basys2_100_250General.ucf 
+bitgen -intstyle ise -f sumador.ut sumador.ncd 
+xst -intstyle ise -ifn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.xst" -ofn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Basys2_100_250General.ucf -p xc3s100e-cp132-5 sumador.ngc sumador.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o sumador_map.ncd sumador.ngd sumador.pcf 
+par -w -intstyle ise -ol high -t 1 sumador_map.ncd sumador.ncd sumador.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml sumador.twx sumador.ncd -o sumador.twr sumador.pcf -ucf Basys2_100_250General.ucf 
+bitgen -intstyle ise -f sumador.ut sumador.ncd 
+xst -intstyle ise -ifn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.xst" -ofn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Basys2_100_250General.ucf -p xc3s100e-cp132-5 sumador.ngc sumador.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o sumador_map.ncd sumador.ngd sumador.pcf 
+par -w -intstyle ise -ol high -t 1 sumador_map.ncd sumador.ncd sumador.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml sumador.twx sumador.ncd -o sumador.twr sumador.pcf -ucf Basys2_100_250General.ucf 
+bitgen -intstyle ise -f sumador.ut sumador.ncd 
+xst -intstyle ise -ifn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.xst" -ofn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Basys2_100_250General.ucf -p xc3s100e-cp132-5 sumador.ngc sumador.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o sumador_map.ncd sumador.ngd sumador.pcf 
+par -w -intstyle ise -ol high -t 1 sumador_map.ncd sumador.ncd sumador.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml sumador.twx sumador.ncd -o sumador.twr sumador.pcf -ucf Basys2_100_250General.ucf 
+bitgen -intstyle ise -f sumador.ut sumador.ncd 
+xst -intstyle ise -ifn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.xst" -ofn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Basys2_100_250General.ucf -p xc3s100e-cp132-5 sumador.ngc sumador.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o sumador_map.ncd sumador.ngd sumador.pcf 
+par -w -intstyle ise -ol high -t 1 sumador_map.ncd sumador.ncd sumador.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml sumador.twx sumador.ncd -o sumador.twr sumador.pcf -ucf Basys2_100_250General.ucf 
+bitgen -intstyle ise -f sumador.ut sumador.ncd 
+xst -intstyle ise -ifn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.xst" -ofn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.syr" 
+xst -intstyle ise -ifn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.xst" -ofn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.syr" 
+xst -intstyle ise -ifn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.xst" -ofn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.syr" 
+xst -intstyle ise -ifn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.xst" -ofn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.syr" 
+xst -intstyle ise -ifn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.xst" -ofn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.syr" 
+xst -intstyle ise -ifn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.xst" -ofn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Basys2_100_250General.ucf -p xc3s100e-cp132-5 sumador.ngc sumador.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o sumador_map.ncd sumador.ngd sumador.pcf 
+par -w -intstyle ise -ol high -t 1 sumador_map.ncd sumador.ncd sumador.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml sumador.twx sumador.ncd -o sumador.twr sumador.pcf -ucf Basys2_100_250General.ucf 
+bitgen -intstyle ise -f sumador.ut sumador.ncd 
+xst -intstyle ise -ifn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.xst" -ofn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.syr" 
+xst -intstyle ise -ifn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.xst" -ofn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Basys2_100_250General.ucf -p xc3s100e-cp132-5 sumador.ngc sumador.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o sumador_map.ncd sumador.ngd sumador.pcf 
+par -w -intstyle ise -ol high -t 1 sumador_map.ncd sumador.ncd sumador.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml sumador.twx sumador.ncd -o sumador.twr sumador.pcf -ucf Basys2_100_250General.ucf 
+bitgen -intstyle ise -f sumador.ut sumador.ncd 
+xst -intstyle ise -ifn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.xst" -ofn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Basys2_100_250General.ucf -p xc3s100e-cp132-5 sumador.ngc sumador.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o sumador_map.ncd sumador.ngd sumador.pcf 
+par -w -intstyle ise -ol high -t 1 sumador_map.ncd sumador.ncd sumador.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml sumador.twx sumador.ncd -o sumador.twr sumador.pcf -ucf Basys2_100_250General.ucf 
+bitgen -intstyle ise -f sumador.ut sumador.ncd 
+xst -intstyle ise -ifn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.xst" -ofn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Basys2_100_250General.ucf -p xc3s100e-cp132-5 sumador.ngc sumador.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o sumador_map.ncd sumador.ngd sumador.pcf 
+par -w -intstyle ise -ol high -t 1 sumador_map.ncd sumador.ncd sumador.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml sumador.twx sumador.ncd -o sumador.twr sumador.pcf -ucf Basys2_100_250General.ucf 
+bitgen -intstyle ise -f sumador.ut sumador.ncd 
+xst -intstyle ise -ifn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.xst" -ofn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Basys2_100_250General.ucf -p xc3s100e-cp132-5 sumador.ngc sumador.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Basys2_100_250General.ucf -p xc3s100e-cp132-5 sumador.ngc sumador.ngd  
+xst -intstyle ise -ifn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.xst" -ofn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Basys2_100_250General.ucf -p xc3s100e-cp132-5 sumador.ngc sumador.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Basys2_100_250General.ucf -p xc3s100e-cp132-5 sumador.ngc sumador.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o sumador_map.ncd sumador.ngd sumador.pcf 
+par -w -intstyle ise -ol high -t 1 sumador_map.ncd sumador.ncd sumador.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml sumador.twx sumador.ncd -o sumador.twr sumador.pcf -ucf Basys2_100_250General.ucf 
+bitgen -intstyle ise -f sumador.ut sumador.ncd 
+xst -intstyle ise -ifn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.xst" -ofn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Basys2_100_250General.ucf -p xc3s100e-cp132-5 sumador.ngc sumador.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o sumador_map.ncd sumador.ngd sumador.pcf 
+par -w -intstyle ise -ol high -t 1 sumador_map.ncd sumador.ncd sumador.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml sumador.twx sumador.ncd -o sumador.twr sumador.pcf -ucf Basys2_100_250General.ucf 
+bitgen -intstyle ise -f sumador.ut sumador.ncd 
+xst -intstyle ise -ifn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.xst" -ofn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Basys2_100_250General.ucf -p xc3s100e-cp132-5 sumador.ngc sumador.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o sumador_map.ncd sumador.ngd sumador.pcf 
+par -w -intstyle ise -ol high -t 1 sumador_map.ncd sumador.ncd sumador.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml sumador.twx sumador.ncd -o sumador.twr sumador.pcf -ucf Basys2_100_250General.ucf 
+bitgen -intstyle ise -f sumador.ut sumador.ncd 
+xst -intstyle ise -ifn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.xst" -ofn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Basys2_100_250General.ucf -p xc3s100e-cp132-5 sumador.ngc sumador.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o sumador_map.ncd sumador.ngd sumador.pcf 
+par -w -intstyle ise -ol high -t 1 sumador_map.ncd sumador.ncd sumador.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml sumador.twx sumador.ncd -o sumador.twr sumador.pcf -ucf Basys2_100_250General.ucf 
+bitgen -intstyle ise -f sumador.ut sumador.ncd 
+xst -intstyle ise -ifn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.xst" -ofn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Basys2_100_250General.ucf -p xc3s100e-cp132-5 sumador.ngc sumador.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o sumador_map.ncd sumador.ngd sumador.pcf 
+par -w -intstyle ise -ol high -t 1 sumador_map.ncd sumador.ncd sumador.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml sumador.twx sumador.ncd -o sumador.twr sumador.pcf -ucf Basys2_100_250General.ucf 
+bitgen -intstyle ise -f sumador.ut sumador.ncd 
+xst -intstyle ise -ifn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.xst" -ofn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Basys2_100_250General.ucf -p xc3s100e-cp132-5 sumador.ngc sumador.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o sumador_map.ncd sumador.ngd sumador.pcf 
+par -w -intstyle ise -ol high -t 1 sumador_map.ncd sumador.ncd sumador.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml sumador.twx sumador.ncd -o sumador.twr sumador.pcf -ucf Basys2_100_250General.ucf 
+bitgen -intstyle ise -f sumador.ut sumador.ncd 
+xst -intstyle ise -ifn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.xst" -ofn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Basys2_100_250General.ucf -p xc3s100e-cp132-5 sumador.ngc sumador.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o sumador_map.ncd sumador.ngd sumador.pcf 
+par -w -intstyle ise -ol high -t 1 sumador_map.ncd sumador.ncd sumador.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml sumador.twx sumador.ncd -o sumador.twr sumador.pcf -ucf Basys2_100_250General.ucf 
+bitgen -intstyle ise -f sumador.ut sumador.ncd 
+xst -intstyle ise -ifn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.xst" -ofn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Basys2_100_250General.ucf -p xc3s100e-cp132-5 sumador.ngc sumador.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o sumador_map.ncd sumador.ngd sumador.pcf 
+par -w -intstyle ise -ol high -t 1 sumador_map.ncd sumador.ncd sumador.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml sumador.twx sumador.ncd -o sumador.twr sumador.pcf -ucf Basys2_100_250General.ucf 
+bitgen -intstyle ise -f sumador.ut sumador.ncd 
+xst -intstyle ise -ifn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.xst" -ofn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Basys2_100_250General.ucf -p xc3s100e-cp132-5 sumador.ngc sumador.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o sumador_map.ncd sumador.ngd sumador.pcf 
+par -w -intstyle ise -ol high -t 1 sumador_map.ncd sumador.ncd sumador.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml sumador.twx sumador.ncd -o sumador.twr sumador.pcf -ucf Basys2_100_250General.ucf 
+bitgen -intstyle ise -f sumador.ut sumador.ncd 
+xst -intstyle ise -ifn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.xst" -ofn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.syr" 
+xst -intstyle ise -ifn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.xst" -ofn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Basys2_100_250General.ucf -p xc3s100e-cp132-5 sumador.ngc sumador.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o sumador_map.ncd sumador.ngd sumador.pcf 
+par -w -intstyle ise -ol high -t 1 sumador_map.ncd sumador.ncd sumador.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml sumador.twx sumador.ncd -o sumador.twr sumador.pcf -ucf Basys2_100_250General.ucf 
+bitgen -intstyle ise -f sumador.ut sumador.ncd 
+xst -intstyle ise -ifn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.xst" -ofn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Basys2_100_250General.ucf -p xc3s100e-cp132-5 sumador.ngc sumador.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o sumador_map.ncd sumador.ngd sumador.pcf 
+par -w -intstyle ise -ol high -t 1 sumador_map.ncd sumador.ncd sumador.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml sumador.twx sumador.ncd -o sumador.twr sumador.pcf -ucf Basys2_100_250General.ucf 
+bitgen -intstyle ise -f sumador.ut sumador.ncd 
+xst -intstyle ise -ifn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.xst" -ofn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Basys2_100_250General.ucf -p xc3s100e-cp132-5 sumador.ngc sumador.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o sumador_map.ncd sumador.ngd sumador.pcf 
+par -w -intstyle ise -ol high -t 1 sumador_map.ncd sumador.ncd sumador.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml sumador.twx sumador.ncd -o sumador.twr sumador.pcf -ucf Basys2_100_250General.ucf 
+bitgen -intstyle ise -f sumador.ut sumador.ncd 
+xst -intstyle ise -ifn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.xst" -ofn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Basys2_100_250General.ucf -p xc3s100e-cp132-5 sumador.ngc sumador.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o sumador_map.ncd sumador.ngd sumador.pcf 
+par -w -intstyle ise -ol high -t 1 sumador_map.ncd sumador.ncd sumador.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml sumador.twx sumador.ncd -o sumador.twr sumador.pcf -ucf Basys2_100_250General.ucf 
+bitgen -intstyle ise -f sumador.ut sumador.ncd 
+xst -intstyle ise -ifn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.xst" -ofn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Basys2_100_250General.ucf -p xc3s100e-cp132-5 sumador.ngc sumador.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Basys2_100_250General.ucf -p xc3s100e-cp132-5 sumador.ngc sumador.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Basys2_100_250General.ucf -p xc3s100e-cp132-5 sumador.ngc sumador.ngd  
+xst -intstyle ise -ifn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.xst" -ofn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.syr" 
+xst -intstyle ise -ifn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.xst" -ofn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.syr" 
+xst -intstyle ise -ifn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.xst" -ofn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.syr" 
+xst -intstyle ise -ifn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.xst" -ofn "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Basys2_100_250General.ucf -p xc3s100e-cp132-5 sumador.ngc sumador.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Basys2_100_250General.ucf -p xc3s100e-cp132-5 sumador.ngc sumador.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o sumador_map.ncd sumador.ngd sumador.pcf 
+par -w -intstyle ise -ol high -t 1 sumador_map.ncd sumador.ncd sumador.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml sumador.twx sumador.ncd -o sumador.twr sumador.pcf -ucf Basys2_100_250General.ucf 
+bitgen -intstyle ise -f sumador.ut sumador.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Basys2_100_250General.ucf -p xc3s100e-cp132-5 sumador.ngc sumador.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o sumador_map.ncd sumador.ngd sumador.pcf 
+par -w -intstyle ise -ol high -t 1 sumador_map.ncd sumador.ncd sumador.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml sumador.twx sumador.ncd -o sumador.twr sumador.pcf -ucf Basys2_100_250General.ucf 
+bitgen -intstyle ise -f sumador.ut sumador.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Basys2_100_250General.ucf -p xc3s100e-cp132-5 sumador.ngc sumador.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o sumador_map.ncd sumador.ngd sumador.pcf 
+par -w -intstyle ise -ol high -t 1 sumador_map.ncd sumador.ncd sumador.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml sumador.twx sumador.ncd -o sumador.twr sumador.pcf -ucf Basys2_100_250General.ucf 
+bitgen -intstyle ise -f sumador.ut sumador.ncd 

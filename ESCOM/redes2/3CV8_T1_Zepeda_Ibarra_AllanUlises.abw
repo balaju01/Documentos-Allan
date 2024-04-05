@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE abiword PUBLIC "-//ABISOURCE//DTD AWML 1.0 Strict//EN" "http://www.abisource.com/awml.dtd">
+<abiword template="false" xmlns:ct="http://www.abisource.com/changetracking.dtd" xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:math="http://www.w3.org/1998/Math/MathML" xid-max="92" xmlns:dc="http://purl.org/dc/elements/1.1/" styles="unlocked" fileformat="1.1" xmlns:svg="http://www.w3.org/2000/svg" xmlns:awml="http://www.abisource.com/awml.dtd" xmlns="http://www.abisource.com/awml.dtd" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.9.1" xml:space="preserve" props="dom-dir:ltr; document-footnote-restart-section:0; document-endnote-type:numeric; document-endnote-place-enddoc:1; document-endnote-initial:1; lang:es-MX; document-endnote-restart-section:0; document-footnote-restart-page:0; document-footnote-type:numeric; document-footnote-initial:1; document-endnote-place-endsection:0">
+<!-- ======================================================================== -->
+<!-- This file is an AbiWord document.                                        -->
+<!-- AbiWord is a free, Open Source word processor.                           -->
+<!-- More information about AbiWord is available at http://www.abisource.com/ -->
+<!-- You should not edit this file by hand.                                   -->
+<!-- ======================================================================== -->
+
+<metadata>
+<m key="abiword.date_last_changed">Sun Sep 13 22:42:48 2015
+</m>
+<m key="abiword.generator">AbiWord</m>
+<m key="dc.creator">Allan</m>
+<m key="dc.date">Sun Sep 13 22:41:17 2015
+</m>
+<m key="dc.format">application/x-abiword</m>
+</metadata>
+<rdf>
+</rdf>
+<history version="2" edit-time="46349" last-saved="1442202168" uid="c0b4cb7a-5a26-11e5-9f82-b0e76a785303">
+<version id="2" started="1442202077" uid="aac00368-5a92-11e5-9f82-b0e76a785303" auto="0" top-xid="83"/>
+</history>
+<styles>
+<s type="P" name="Normal" followedby="Current Settings" props="font-family:Times New Roman; margin-top:0pt; color:000000; margin-left:0pt; text-position:normal; widows:2; font-style:normal; text-indent:0in; font-variant:normal; font-weight:normal; margin-right:0pt; font-size:12pt; text-decoration:none; margin-bottom:0pt; line-height:1.0; bgcolor:transparent; text-align:left; font-stretch:normal"/>
+<s type="P" name="Heading 3" basedon="Normal" followedby="Normal" props="keep-with-next:1; margin-top:22pt; font-weight:bold; margin-bottom:3pt; font-family:Liberation Sans; font-size:12pt"/>
+</styles>
+<pagesize pagetype="A4" orientation="portrait" width="210.000000" height="297.000000" units="mm" page-scale="1.000000"/>
+<section xid="3" props="page-margin-footer:0.5000in; page-margin-header:0.5000in; page-margin-right:1.0000in; page-margin-left:1.0000in; page-margin-top:1.0000in; page-margin-bottom:1.0000in">
+<p style="Normal" xid="4"><c props="font-weight:bold; font-size:14pt">Conexiones en el dominio de internet</c></p>
+<p style="Normal" xid="11"><c props="font-weight:bold; font-size:14pt"></c></p>
+<p style="Normal" xid="2"><c>﻿Internet es un conjunto descentralizado de redes de comunicación interconectadas. En esta red de redes, existen muchas tecnologías diferentes comunicándose entre sí, aunque desde un punto de vista abstracto, o lógico, no haya diferencia entre ellas: todas están identificadas mediante la correspondiente dirección de red IP.</c></p>
+<p style="Normal" xid="5"><c></c></p>
+<p style="Normal" xid="6"><c>﻿</c></p>
+<p style="Heading 3" xid="7"><c>Conexión analógica o conexión por línea conmutada(RTC)</c></p>
+<p style="Normal" xid="8"><c>﻿Estas son las conexiones que se hacen mediante un modem conectado a tu computadora y que hacen uso de la línea telefónica, usando un número de teléfono proporcionado por el </c><a xlink:href="http://aprenderinternet.about.com/od/Glosario/g/Que-Es-ISP.htm" xid="12"><c>PSI (ISP)</c></a><c>. Algunas computadoras tienen el modem integrado, y lo único que necesitas es un cable telefónico.</c></p>
+<p style="Normal" xid="14"><c>﻿</c></p>
+<p style="Normal" xid="16"><c>Puesto que la RTC transmite las señales de forma analógica, es necesario un sistema para demodular las señales recibidas por el ordenador de la RTC (es decir, para convertirlas en señales digitales), y modular o transformar en señales analógicas las señales digitales que el ordenador quiere que se transmitan por la red. Estas tareas corren a cargo de un módem que actúa como dispositivo de enlace entre el ordenador y la red.</c></p>
+<p style="Normal" xid="17"><c>La ventaja principal de la conexión por RTC, y que explica su enorme difusión durante años, es que no requería la instalación de ninguna infraestructura adicional a la propia RTC de la que casi todos los hogares y centros de trabajo disponían.</c></p>
+<p style="Normal" xid="18"><c></c></p>
+<p style="Normal" xid="20"><c>﻿</c><c props="font-weight:bold">Red digital RDSI</c></p>
+<p style="Normal" xid="21"><c></c></p>
+<p style="Normal" xid="22"><c>﻿La red digital de servicios integrados ﻿nació con la vocación de superar los inconvenientes de la RTC.</c></p>
+<p style="Normal" xid="28"><c>﻿</c></p>
+<p style="Normal" xid="29"><c>Se trata de una línea telefónica, pero digital (en vez de analógica) de extremo a extremo. En vez de un módem, este tipo de conexión emplea un adaptador de red que traduce las tramas generadas por la el ordenador a señales digitales de un tipo que la red está preparada para transmitir.</c></p>
+<p style="Normal" xid="30"><c>A nivel físico, la red requiere un cableado especial (normalmente un cable UTF con conectores RJ-45 en los extremos), por lo que no puede emplearse la infraestructura telefónica básica (y esto, naturalmente, encarece su uso).</c></p>
+<p style="Normal" xid="31"><c></c></p>
+<p style="Normal" xid="32"><c>﻿</c><c props="font-weight:bold">Red digital ADSL</c></p>
+<p style="Normal" xid="33"><c></c></p>
+<p style="Normal" xid="37"><c>﻿Se refiere a un conjunto de tecnologías que permite el acceso a Internet usando datos digitales mediante redes telefónicas, permitiendo el uso simultáneo con conversaciones por teléfono a traves de un par de lineas de cobre la convierte en una linea de alta velocidad. </c></p>
+<p style="Normal" xid="34"><c>﻿La ADSL aprovecha el cableado de la RTC para la transmisión de voz y datos, que puede hacerse de forma conjunta (como con la RDSI). Esto se consigue estableciendo tres canales independientes sobre la misma línea telefónica estándar.</c></p>
+<p style="Normal" xid="35"><c></c></p>
+<p style="Normal" xid="36"><c>﻿</c><c props="font-weight:bold">Conexión por cable</c></p>
+<p style="Normal" xid="40"><c></c></p>
+<p style="Normal" xid="41"><c>﻿Utilizando señales luminosas en vez de eléctricas es posible codificar una cantidad de información mucho mayor, jugando con variables como la longitud de onda y la intensidad de la señal lumínica. La señal luminosa puede transportarse, además, libre de problemas de ruido que afectan a las ondas electromagnéticas.</c></p>
+<p style="Normal" xid="51"><c></c><c>﻿Desde el punto de vista físico, la red de fibra óptica precisa de una infraestructura nueva y costosa, lo que explica que aún hoy no esté disponible en todos los lugares.</c></p>
+<p style="Normal" xid="26"><c></c></p>
+<p style="Normal" xid="52"><c>﻿</c><c props="font-weight:bold">Conexión vía satélite</c></p>
+<p style="Normal" xid="53"><c></c></p>
+<p style="Normal" xid="54"><c>﻿</c><c props="font-weight:bold">Internet por satélite</c><c> es un servicio que se emplea más comúnmente donde otros medios de conexión no están disponibles.</c></p>
+<p style="Normal" xid="55"><c>﻿En los últimos años, cada vez más compañías están empleando este sistema de transmisión para distribuir contenidos de Internet o transferir ficheros entre distintas sucursales. De esta manera, se puede aliviar la congestión existente en las redes terrestres tradicionales.<br/> <br/>El sistema de conexión que generalmente se emplea es un híbrido de satélite y teléfono. Hay que tener instalada una antena parabólica digital, un acceso telefónico a Internet (utilizando un módem RTC, RDSI, ADSL o por cable), una tarjeta receptora para PC, un software específico y una suscripción a un proveedor de satélite.</c></p>
+<p style="Normal" xid="57"><c></c></p>
+<p style="Normal" xid="58"><c>﻿</c><c props="font-weight:bold">Redes inalámbricas</c></p>
+<p style="Normal" xid="59"><c></c></p>
+<p style="Normal" xid="60"><c>﻿La conexiones a Internet inalámbricas se llevan a cabo mediante conexiones hechas por radiofrecuencias normalizadas por la IEEE.</c></p>
+<p style="Normal" xid="61"><c></c></p>
+<p style="Normal" xid="63"><c>Para conectar un equipo a una WLAN es preciso un dispositivo WIFI instalado en nuestro ordenador, que proporciona una interfaz física y a nivel de enlace entre el sistema operativo y la red. En el otro extremo existirá un punto de acceso (AP) que, en el caso de las redes WLAN típicas, está integrado con el enrutador que da acceso a Internet, normalmente usando una conexión que sí utiliza cableado.</c></p>
+<p style="Normal" xid="64"><c>Cuando se utilizan ondas de radio, éstas utilizan un rango de frecuencias desnormalizadas, o de uso libre, dentro del cual puede elegirse. Su alcance varía según la frecuencia utilizada, pero típicamente varía entre los 100 y 300 metros, en ausencia de obstáculos físicos.</c></p>
+<p style="Normal" xid="65"><c></c></p>
+<p style="Normal" xid="67"><c>﻿﻿</c><c props="font-weight:bold">PLC</c></p>
+<p style="Normal" xid="70"><c></c></p>
+<p style="Normal" xid="71"><c>﻿La tecnología PLC (</c><c props="font-style:italic">Power Line Communications</c><c>) aprovecha las líneas eléctricas para transmitir datos a alta velocidad. Como las WLAN, se utiliza en la actualidad para implementar redes locales, que se conectarían a la Internet mediante algún otro tipo de conexión.</c></p>
+<p style="Normal" xid="72"><c></c></p>
+<p style="Normal" xid="73"><c>﻿</c><c props="font-weight:bold">Conexiones para teléfonos móviles </c></p>
+<p style="Normal" xid="74"><c></c></p>
+<p style="Normal" xid="75"><c>﻿Hablamos de conexiones para teléfonos móviles ﻿</c></p>
+<p style="Normal" xid="78"><c>para designar el tipo de tecnologías específicas para acceder a Internet navegando desde el propio dispositivo móvil.</c></p>
+<p style="Normal" xid="79"><c></c><bookmark type="start" name="GSM" xid="80"/><bookmark type="end" name="GSM" xid="81"/><c>El sistema GSM (</c><c props="font-style:italic">Global System Mobile</c><c>) fue el primer sistema estandarizado en la comunicación de móviles. Se trata de un sistema que emplea ondas de radio como medio de transmisión</c></p>
+<p style="Normal" xid="82"><c></c></p>
+<p style="Normal" xid="83"><c props="font-weight:bold; font-size:14pt"></c></p>
+<p style="Normal" xid="85"><c props="font-weight:bold; font-size:14pt"></c></p>
+<p style="Normal" xid="86"><c props="font-weight:bold; font-size:14pt"></c></p>
+<p style="Normal" xid="87"><c props="font-weight:bold; font-size:14pt"></c></p>
+<p style="Normal" xid="90"><c props="font-weight:bold; font-size:14pt"></c><c props="font-weight:bold; font-size:14pt">Referencias</c></p>
+<p style="Normal" xid="84" props="text-align:left; dom-dir:ltr"><c>http://recursostic.educacion.es/usuarios/web/ayudas/54-conexiones-a-internet-bis</c></p>
+<p style="Normal" xid="91" props="text-align:left; dom-dir:ltr"><c>http://es.slideshare.net/guiille/tipos-de-conexion-a-internet-1932548</c></p>
+<p style="Normal" xid="92" props="text-align:left; dom-dir:ltr"><c>http://aprenderinternet.about.com/od/ConceptosBasico/a/Tipos-de-conexion-de-Internet.htm</c></p>
+<p style="Normal" xid="66"><c></c></p>
+<p style="Normal" xid="56"><c></c></p>
+<p style="Normal" xid="27"><c></c></p>
+<p style="Normal" xid="19"><c></c></p>
+</section>
+</abiword>

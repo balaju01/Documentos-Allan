@@ -1,0 +1,13 @@
+[driver backup information]
+driverdesc=KODAK ESP-3 AiO
+infpath=oem7.inf                                                                        
+infsection=SDSDWIA2.ESP3.Device
+MatchingDeviceId=USB\VID_040A&PID_4031&REV_0001&MI_00
+driverversion=5.8.10.10
+driverdate=2012-10-12
+providername=Eastman Kodak
+class=Imaging devices
+filenum=6
+signature=All Windows Operating Systems
+needrestore=yes
+backuptime=sábado, marzo 28, 2015

@@ -1,0 +1,64 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity FFD is
+port(
+	D, CLK, CLR, J, K , S, R, T:in std_logic;
+	SEL : IN STD_LOGIC_VECTOR(1 DOWNTO 0);
+	DISPLAY : out std_logic_VECTOR(5 DOWNTO 0)
+	);
+	
+	attribute pin_numbers of FFD: entity is
+		"CLK:1 CLR:13 J:2 K:3 T:4 D:5 S:6 R:7 SEL(0):8 SEL(1):9 DISPLAY(0):15 DISPLAY(1):16 DISPLAY(2):17 DISPLAY(3):18 DISPLAY(4):19 DISPLAY(5):20 ";
+	
+end FFD;
+
+ARCHITECTURE PROGRAMA OF FFD IS
+SIGNAL QD, QJK, QSR, QT, Q : STD_LOGIC; 
+BEGIN
+	PFFD : PROCESS( CLK, CLR )
+	BEGIN
+		IF( CLR = '1' )THEN
+			QD <= '0';
+		ELSIF( CLK'EVENT AND CLK = '1' )THEN
+			QD <= D;
+		END IF;
+	END PROCESS PFFD;
+
+	PFFJK : PROCESS( CLK, CLR )
+	BEGIN
+		IF( CLR = '1' ) THEN
+			QJK <= '0';
+		ELSIF( CLK'EVENT AND CLK = '1' )THEN
+			QJK <= (NOT K AND QJK) OR (J AND NOT QJK);
+		END IF;
+	END PROCESS PFFJK;
+	
+	PFFSR : PROCESS( CLK, CLR )
+	BEGIN
+		IF( CLR = '1' )THEN
+			QSR <= '0';
+		ELSIF( CLK'EVENT AND CLK = '1' )THEN
+			QSR <= S OR (NOT R AND QSR);
+		END IF;
+	END PROCESS PFFSR;
+	
+	PFFT : PROCESS( CLK, CLR )
+	BEGIN
+		IF( CLR = '1' )THEN
+			QT <= '0';
+		ELSIF( CLK'EVENT AND CLK = '1' )THEN
+			QT <= T XOR QT;
+		END IF;
+	END PROCESS PFFT;
+
+	WITH SEL SELECT 
+		Q <= QJK WHEN '00',
+			 QT WHEN '01',
+			 QD WHEN '10',
+			 QSR WHEN OTHERS;
+
+	DISPLAY <= 	"000000" WHEN( Q = '0' )ELSE 
+				"100111";
+
+END PROGRAMA;

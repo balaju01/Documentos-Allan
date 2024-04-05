@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\jonnyTest\oper8\main.ncd
+OUTFILE=C:\Users\jonnyTest\oper8\main.bit
+FAMILY=Spartan3E
+PART=xc3s100e-5cp132
+WORKINGDIR=C:\Users\jonnyTest\oper8
+LICENSE=WebPack
+USER_INFO=211031817_0_0_231

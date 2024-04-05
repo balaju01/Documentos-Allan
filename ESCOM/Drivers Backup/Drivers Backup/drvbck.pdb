@@ -1,0 +1,13 @@
+[driver backup information]
+driverdesc=
+infpath=machine.inf                                                                     
+infsection=NO_DRV
+MatchingDeviceId=PCI\VEN_8086&DEV_2A00&SUBSYS_902D104D&REV_0C
+driverversion=6.1.7601.17514
+driverdate=2006-06-21
+providername=Microsoft
+class=System devices
+filenum=1
+signature=Windows Vista
+needrestore=no
+backuptime=sábado, marzo 28, 2015

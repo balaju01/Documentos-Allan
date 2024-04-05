@@ -1,0 +1,6 @@
+digraph A {
+"7\n|1,1,1,0|\n|0,0,0,0|\n|0,0,0,0|\n|0,0,0,0|"[shape=circle,style=filled,color=red,height=5.12,width=0.12,fontsize=100];
+"7\n|1,1,1,0|\n|0,0,0,0|\n|0,0,0,0|\n|0,0,0,0|"->"8226\n|0,1,0,0|\n|0,1,0,0|\n|0,0,0,0|\n|0,1,0,0|"[label="t",arrowsize=1,penwidth=10]
+"8226\n|0,1,0,0|\n|0,1,0,0|\n|0,0,0,0|\n|0,1,0,0|"[shape=circle,style=filled,color=red,height=5.12,width=0.12,fontsize=100];
+"8226\n|0,1,0,0|\n|0,1,0,0|\n|0,0,0,0|\n|0,1,0,0|"->"7\n|1,1,1,0|\n|0,0,0,0|\n|0,0,0,0|\n|0,0,0,0|"[label="t",arrowsize=1,penwidth=10]
+}

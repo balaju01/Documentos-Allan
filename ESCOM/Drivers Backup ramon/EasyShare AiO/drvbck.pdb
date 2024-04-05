@@ -1,0 +1,13 @@
+[driver backup information]
+driverdesc=EasyShare AiO
+infpath=wpdmtp.inf                                                                      
+infsection=MTP.NT
+MatchingDeviceId=USB\VID_040A&PID_4031&REV_0001&MI_02
+driverversion=6.1.7600.16385
+driverdate=2006-06-21
+providername=Microsoft
+class=Portable Devices
+filenum=4
+signature=Windows Vista
+needrestore=no
+backuptime=sábado, marzo 28, 2015

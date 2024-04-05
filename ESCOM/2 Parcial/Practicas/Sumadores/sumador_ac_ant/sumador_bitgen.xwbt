@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Nancy\Documents\Xilinx\2doParcial\sumador_ac_ant\sumador.ncd
+OUTFILE=C:\Users\Nancy\Documents\Xilinx\2doParcial\sumador_ac_ant\sumador.bit
+FAMILY=Spartan3E
+PART=xc3s100e-5cp132
+WORKINGDIR=C:\Users\Nancy\Documents\Xilinx\2doParcial\sumador_ac_ant
+LICENSE=WebPack
+USER_INFO=__0_0_0

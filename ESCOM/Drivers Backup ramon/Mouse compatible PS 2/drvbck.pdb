@@ -1,0 +1,13 @@
+[driver backup information]
+driverdesc=Mouse compatible PS/2
+infpath=msmouse.inf                                                                     
+infsection=PS2_Inst
+MatchingDeviceId=ACPI\SYN0601
+driverversion=6.1.7600.16385
+driverdate=2006-06-21
+providername=Microsoft
+class=Mice and other pointing devices
+filenum=3
+signature=Windows Vista
+needrestore=no
+backuptime=sábado, marzo 28, 2015

@@ -1,0 +1,13 @@
+[driver backup information]
+driverdesc=Sony Firmware Extension Parser Device
+infpath=sfepx64.cat
+infsection=SFEP_DDI.NT
+MatchingDeviceId=ACPI\SNY5001
+driverversion=8.0.1.1
+driverdate=2009-05-21
+providername=Sony Corporation
+class=Human Interface Devices
+filenum=2
+signature=Windows Vista
+needrestore=yes
+backuptime=sábado, marzo 28, 2015

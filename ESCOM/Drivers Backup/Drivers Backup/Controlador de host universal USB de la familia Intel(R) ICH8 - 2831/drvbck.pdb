@@ -1,0 +1,13 @@
+[driver backup information]
+driverdesc=Controlador de host universal USB de la familia Intel(R) ICH8 - 2831
+infpath=usbport.inf                                                                     
+infsection=UHCI.Dev.NT
+MatchingDeviceId=PCI\VEN_8086&DEV_2831&SUBSYS_902D104D&REV_03
+driverversion=6.1.7601.18328
+driverdate=2006-06-21
+providername=Microsoft
+class=Universal Serial Bus controllers
+filenum=4
+signature=All Windows Operating Systems
+needrestore=no
+backuptime=sábado, marzo 28, 2015

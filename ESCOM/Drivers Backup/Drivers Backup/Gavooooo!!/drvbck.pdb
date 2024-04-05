@@ -1,0 +1,13 @@
+[driver backup information]
+driverdesc=Gavooooo!!
+infpath=wpdmtp.inf                                                                      
+infsection=MTP.NT
+MatchingDeviceId=USB\VID_04E8&PID_6860&REV_0400
+driverversion=6.1.7600.16385
+driverdate=2006-06-21
+providername=Microsoft
+class=Portable Devices
+filenum=4
+signature=Windows Vista
+needrestore=no
+backuptime=sábado, marzo 28, 2015

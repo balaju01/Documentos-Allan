@@ -1,0 +1,6 @@
+vhdl work "pack.vhd"
+vhdl work "FFJK.vhd"
+vhdl work "suma.vhd"
+vhdl work "Reg.vhd"
+vhdl work "clock.vhd"
+vhdl work "main.vhd"

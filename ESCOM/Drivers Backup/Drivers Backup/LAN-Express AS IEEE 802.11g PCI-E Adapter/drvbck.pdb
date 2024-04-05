@@ -1,0 +1,13 @@
+[driver backup information]
+driverdesc=LAN-Express AS IEEE 802.11g PCI-E Adapter
+infpath=oem3.inf                                                                        
+infsection=ATHR_DEV_OS61_E000105B.ndi.NTAMD64
+MatchingDeviceId=PCI\VEN_168C&DEV_001C&SUBSYS_E000105B&REV_01
+driverversion=2.0.0.75
+driverdate=2009-06-09
+providername=Atheros Communications Inc.
+class=Network adapters
+filenum=3
+signature=Windows Vista
+needrestore=yes
+backuptime=sábado, marzo 28, 2015

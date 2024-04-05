@@ -1,0 +1,13 @@
+[driver backup information]
+driverdesc=Botón de encendido ACPI
+infpath=machine.inf                                                                     
+infsection=NO_DRV
+MatchingDeviceId=ACPI\PNP0C0C
+driverversion=6.1.7601.17514
+driverdate=2006-06-21
+providername=Microsoft
+class=System devices
+filenum=1
+signature=Windows Vista
+needrestore=no
+backuptime=sábado, marzo 28, 2015

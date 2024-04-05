@@ -1,0 +1,13 @@
+[driver backup information]
+driverdesc=Sony Ericsson Device 0016 USB Ethernet Emulation (NDIS 5)
+infpath=oem10.inf                                                                       
+infsection=sed0016.ndi5.NT
+MatchingDeviceId=s0016CR\{67011cea-2aeb-4add-b69c-84087d1f3021}
+driverversion=4.44.2.0
+driverdate=2008-04-24
+providername=Sony Ericsson
+class=Network adapters
+filenum=3
+signature=Windows Vista
+needrestore=yes
+backuptime=sábado, marzo 28, 2015

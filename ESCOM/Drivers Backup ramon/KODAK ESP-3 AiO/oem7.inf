@@ -1,0 +1,2413 @@
+
+; EKAIOWia.inf -- WIA MiniDriver setup file
+; (c)Copyright Eastman Kodak Company, 2012.
+; 		All rights reserved
+; Portions Copyright (c) 2001 Microsoft Corporation
+
+
+[Version]
+Signature="$CHICAGO$"
+Class=Image
+ClassGUID={6bdd1fc6-810f-11d0-bec7-08002be2092f}
+Provider=%Mfg%
+;Uncomment this to run chkinf, or if you're signing the driver...
+CatalogFile=EkAiOWia.cat
+DriverVer=10/12/2012,5.8.10.10
+
+[DestinationDirs]
+; By default, files will be copied to \windows\system32.
+;DefaultDestDir=11
+
+
+[Manufacturer]
+%Mfg%=Models,ntx86.6.0,ntx86.5.1,NTamd64
+ 
+
+[Models]
+; we need this to make chkinf happy...
+
+; This is the models section for the x86 WIA driver (XP)
+[Models.ntx86.5.1]
+%SDSDWIA.DeviceDesc5100% = SDSDWIA.5100.Device, usb\vid_040a&pid_4025&mi_00
+%SDSDWIA.DeviceDesc5300% = SDSDWIA.5300.Device, usb\vid_040a&pid_4026&mi_00
+%SDSDWIA.DeviceDesc5500% = SDSDWIA.5500.Device, usb\vid_040a&pid_4027&mi_00
+%SDSDWIA.DeviceDesc5000Mini% = SDSDWIA.5100.Device, usb\vid_040a&pid_4028&mi_00
+%SDSDWIA.DeviceDesc3300% = SDSDWIA.ESP3.Device, usb\vid_040a&pid_4031&mi_00
+%SDSDWIA.DeviceDescESP5% = SDSDWIA.ESP5.Device, usb\vid_040a&pid_4032&mi_00
+%SDSDWIA.DeviceDescESP7% = SDSDWIA.ESP7.Device, usb\vid_040a&pid_403E&mi_00
+%SDSDWIA.DeviceDescESP9% = SDSDWIA.ESP9.Device, usb\vid_040a&pid_403F&mi_00
+%SDSDWIA.DeviceDesc5200% = SDSDWIA.5200.Device, usb\vid_040a&pid_4041&mi_00
+%SDSDWIA.DeviceDesc3200% = SDSDWIA.3200.Device, usb\vid_040a&pid_4043&mi_00
+%SDSDWIA.DeviceDesc4100% = SDSDWIA.4100.Device, usb\vid_040a&pid_4053&mi_00
+%SDSDWIA.DeviceDesc6100% = SDSDWIA.6100.Device, usb\vid_040a&pid_4054&mi_00
+%SDSDWIA.DeviceDesc7200% = SDSDWIA.7200.Device, usb\vid_040a&pid_4056&mi_00
+%SDSDWIA.DeviceDesc9200% = SDSDWIA.9200.Device, usb\vid_040a&pid_4065&mi_00
+
+;WIFI devices
+%SDSDWIA.DeviceDescESP7.WIFI%				= SDSDWIA.ESP7.WIFI, netscan&vid_040a&pid_403E&mi_00
+%SDSDWIA.DeviceDescESP9.WIFI%				= SDSDWIA.ESP9.WIFI, netscan&vid_040a&pid_403F&mi_00
+%SDSDWIA.DeviceDesc5100.WIFI%				= SDSDWIA.5100.WIFI, netscan&vid_040a&pid_4025&mi_00
+%SDSDWIA.DeviceDesc5200.WIFI%				= SDSDWIA.5200.WIFI, netscan&vid_040a&pid_4043&mi_00
+%SDSDWIA.DeviceDesc6100.WIFI%				= SDSDWIA.6100.WIFI, netscan&vid_040a&pid_4054&mi_00
+%SDSDWIA.DeviceDesc7200.WIFI%				= SDSDWIA.7200.WIFI, netscan&vid_040a&pid_4056&mi_00
+%SDSDWIA.DeviceDesc9200.WIFI%				= SDSDWIA.9200.WIFI, netscan&vid_040a&pid_4065&mi_00
+
+
+; This is the models section for the x86 WIA2 driver (Vista and Win7) 
+[Models.ntx86.6.0]
+%SDSDWIA.DeviceDesc5100% = SDSDWIA2.5100.Device, usb\vid_040a&pid_4025&mi_00
+%SDSDWIA.DeviceDesc5300% = SDSDWIA2.5300.Device, usb\vid_040a&pid_4026&mi_00
+%SDSDWIA.DeviceDesc5500% = SDSDWIA2.5500.Device, usb\vid_040a&pid_4027&mi_00
+%SDSDWIA.DeviceDesc5000Mini% = SDSDWIA2.5100.Device, usb\vid_040a&pid_4028&mi_00
+%SDSDWIA.DeviceDesc3300% = SDSDWIA2.ESP3.Device, usb\vid_040a&pid_4031&mi_00
+%SDSDWIA.DeviceDescESP5% = SDSDWIA2.ESP5.Device, usb\vid_040a&pid_4032&mi_00
+%SDSDWIA.DeviceDescESP7% = SDSDWIA2.ESP7.Device, usb\vid_040a&pid_403E&mi_00
+%SDSDWIA.DeviceDescESP9% = SDSDWIA2.ESP9.Device, usb\vid_040a&pid_403F&mi_00
+%SDSDWIA.DeviceDesc5200% = SDSDWIA2.5200.Device, usb\vid_040a&pid_4041&mi_00
+%SDSDWIA.DeviceDesc3200% = SDSDWIA2.3200.Device, usb\vid_040a&pid_4043&mi_00
+%SDSDWIA.DeviceDesc4100% = SDSDWIA2.4100.Device, usb\vid_040a&pid_4053&mi_00
+%SDSDWIA.DeviceDesc6100% = SDSDWIA2.6100.Device, usb\vid_040a&pid_4054&mi_00
+%SDSDWIA.DeviceDesc7200% = SDSDWIA2.7200.Device, usb\vid_040a&pid_4056&mi_00
+%SDSDWIA.DeviceDesc9200% = SDSDWIA2.9200.Device, usb\vid_040a&pid_4065&mi_00
+
+;WIFI devices
+%SDSDWIA.DeviceDescESP7.WIFI%				= SDSDWIA2.ESP7.WIFI, netscan&vid_040a&pid_403E&mi_00
+%SDSDWIA.DeviceDescESP9.WIFI%				= SDSDWIA2.ESP9.WIFI, netscan&vid_040a&pid_403F&mi_00
+%SDSDWIA.DeviceDesc5100.WIFI%				= SDSDWIA2.5100.WIFI, netscan&vid_040a&pid_4025&mi_00
+%SDSDWIA.DeviceDesc5200.WIFI%				= SDSDWIA2.5200.WIFI, netscan&vid_040a&pid_4043&mi_00
+%SDSDWIA.DeviceDesc6100.WIFI%				= SDSDWIA2.6100.WIFI, netscan&vid_040a&pid_4054&mi_00
+%SDSDWIA.DeviceDesc7200.WIFI%				= SDSDWIA2.7200.WIFI, netscan&vid_040a&pid_4056&mi_00
+%SDSDWIA.DeviceDesc9200.WIFI%				= SDSDWIA2.9200.WIFI, netscan&vid_040a&pid_4065&mi_00
+
+; This is the models section for the amd64 WIA2 driver (Vista and Win7)
+[Models.ntamd64]
+%SDSDWIA.DeviceDesc5100% = SDSDWIA2.5100.Device.amd64, usb\vid_040a&pid_4025&mi_00
+%SDSDWIA.DeviceDesc5300% = SDSDWIA2.5300.Device.amd64, usb\vid_040a&pid_4026&mi_00
+%SDSDWIA.DeviceDesc5500% = SDSDWIA2.5500.Device.amd64, usb\vid_040a&pid_4027&mi_00
+%SDSDWIA.DeviceDesc5000Mini% = SDSDWIA2.5100.Device.amd64, usb\vid_040a&pid_4028&mi_00
+%SDSDWIA.DeviceDesc3300% = SDSDWIA2.ESP3.Device.amd64, usb\vid_040a&pid_4031&mi_00
+%SDSDWIA.DeviceDescESP5% = SDSDWIA2.ESP5.Device.amd64, usb\vid_040a&pid_4032&mi_00
+%SDSDWIA.DeviceDescESP7% = SDSDWIA2.ESP7.Device.amd64, usb\vid_040a&pid_403E&mi_00
+%SDSDWIA.DeviceDescESP9% = SDSDWIA2.ESP9.Device.amd64, usb\vid_040a&pid_403F&mi_00
+%SDSDWIA.DeviceDesc5200% = SDSDWIA2.5200.Device.amd64, usb\vid_040a&pid_4041&mi_00
+%SDSDWIA.DeviceDesc3200% = SDSDWIA2.3200.Device.amd64, usb\vid_040a&pid_4043&mi_00
+%SDSDWIA.DeviceDesc4100% = SDSDWIA2.4100.Device.amd64, usb\vid_040a&pid_4053&mi_00
+%SDSDWIA.DeviceDesc6100% = SDSDWIA2.6100.Device.amd64, usb\vid_040a&pid_4054&mi_00
+%SDSDWIA.DeviceDesc7200% = SDSDWIA2.7200.Device.amd64, usb\vid_040a&pid_4056&mi_00
+%SDSDWIA.DeviceDesc9200% = SDSDWIA2.9200.Device.amd64, usb\vid_040a&pid_4065&mi_00
+
+;WIFI devices
+%SDSDWIA.DeviceDescESP7.WIFI%				= SDSDWIA2.ESP7.WIFI.amd64, netscan&vid_040a&pid_403E&mi_00
+%SDSDWIA.DeviceDescESP9.WIFI%				= SDSDWIA2.ESP9.WIFI.amd64, netscan&vid_040a&pid_403F&mi_00
+%SDSDWIA.DeviceDesc5100.WIFI%				= SDSDWIA2.5100.WIFI.amd64, netscan&vid_040a&pid_4025&mi_00
+%SDSDWIA.DeviceDesc5200.WIFI%				= SDSDWIA2.5200.WIFI.amd64, netscan&vid_040a&pid_4043&mi_00
+%SDSDWIA.DeviceDesc6100.WIFI%				= SDSDWIA2.6100.WIFI.amd64, netscan&vid_040a&pid_4054&mi_00
+%SDSDWIA.DeviceDesc7200.WIFI%				= SDSDWIA2.7200.WIFI.amd64, netscan&vid_040a&pid_4056&mi_00
+%SDSDWIA.DeviceDesc9200.WIFI%				= SDSDWIA2.9200.WIFI.amd64, netscan&vid_040a&pid_4065&mi_00
+
+
+
+[ControlFlags]
+;;The user should not add the USB devices manualy, PnP should be used instead
+ExcludeFromSelect=usb\vid_040a&pid_4025&mi_00, usb\vid_040a&pid_4026&mi_00, usb\vid_040a&pid_4027&mi_00, usb\vid_040a&pid_4028&mi_00, usb\vid_040a&pid_4031&mi_00, usb\vid_040a&pid_4032&mi_00, usb\vid_040a&pid_403E&mi_00, usb\vid_040a&pid_403F&mi_00, usb\vid_040a&pid_4041&mi_00, usb\vid_040a&pid_4043&mi_00, usb\vid_040a&pid_4053&mi_00, usb\vid_040a&pid_4054&mi_00, usb\vid_040a&pid_4056&mi_00, usb\vid_040a&pid_4065&mi_00
+
+;;Need UI to configure the network scanners
+InteractiveInstall=netscan&vid_040a&pid_403E&mi_00,netscan&vid_040a&pid_403F&mi_00,netscan&vid_040a&pid_4025&mi_00,netscan&vid_040a&pid_4043&mi_00,netscan&vid_040a&pid_4054&mi_00,netscan&vid_040a&pid_4056&mi_00,netscan&vid_040a&pid_4065&mi_00
+
+ 
+[SourceDisksFiles]
+EKAiOWia.dll=1,wia32
+EKAiOWia2Drv.dll=1,wia32
+EKAiOWiaShellExt.dll=1,wia32
+EKAiOWiaCoInst.dll=1,wia32
+EKAiOWiaPtp.exe=1,wia32
+EKAiOWiaShellExtRes.dll=1,wia32\%Language%
+EKAiOWiaCoInstRes.dll=1,wia32\%Language%
+WCFG5100.xml=1,wia32
+WCFG5300.xml=1,wia32
+WCFG5500.xml=1,wia32
+WCFGESP3.xml=1,wia32
+WCFGESP5.xml=1,wia32
+WCFGESP7.xml=1,wia32
+WCFGESP9.xml=1,wia32
+WCFG3200.xml=1,wia32
+WCFG5200.xml=1,wia32
+WCFG4100.xml=1,wia32
+WCFG6100.xml=1,wia32
+WCFG7200.xml=1,wia32
+WCFG9200.xml=1,wia32
+AiO5000Config.ini=1,wia32
+EKAiOWiaCoInst.ini=1,wia32
+
+
+[SourceDisksFiles.amd64]
+EKAiOWia2Drv.dll=2,wia64
+EKAiOWiaShellExt.dll=2,wia64
+EKAiOWiaCoInst.dll=2,wia64
+EKAiOWiaShellExtRes.dll=2,wia64\%Language%
+EKAiOWiaCoInstRes.dll=2,wia64\%Language%
+EKAiOWiaPtp.exe=1,wia64
+WCFG5100.xml=2,wia64
+WCFG5300.xml=2,wia64
+WCFG5500.xml=2,wia64
+WCFGESP3.xml=2,wia64
+WCFGESP5.xml=2,wia64
+WCFGESP7.xml=2,wia64
+WCFGESP9.xml=2,wia64
+WCFG3200.xml=2,wia64
+WCFG5200.xml=2,wia64
+WCFG4100.xml=2,wia64
+WCFG6100.xml=2,wia64
+WCFG7200.xml=2,wia64
+WCFG9200.xml=2,wia64
+AiO5000Config.ini=1,wia64
+EKAiOWiaCoInst.ini=1,wia64
+
+[SourceDisksNames]
+1=%Location%,,,".\Drivers\Scanner\"
+
+[SourceDisksNames.amd64]
+2=%Location%,,,".\Drivers\Scanner\" 
+
+[DestinationDirs]
+; By default, files will be copied to \windows\system32.
+; From MSDN documentation - 
+;  10 = Windows directory
+;     This is equivalent to %windir%, for 64-bit we have to add SysWOW64.
+;  11 = System directory 
+;     This is equivalent to %windir%\system32 for NT-based systems, and to %windir%\system for Windows 9x/Me.
+;  25 = Shared directory
+DefaultDestDir=11
+SDSDWIAFiles=11,kodak\kds_aio5000
+SDSDWIA2Files=11,kodak\kds_aio5000
+SDSDWIA2Files64=11,kodak\kds_aio5000
+PropertySheetFiles=11,kodak\kds_aio5000
+CoInstaller_CopyFiles=11
+SDSDWIA.CopyFiles=11,kodak\kds_aio5000
+PTPFiles=11,kodak\kds_aio5000
+PTPFiles64=11,kodak\kds_aio5000
+SDSDWIA.5100.CopyFiles=11,kodak\kds_aio5000
+SDSDWIA.5300.CopyFiles=11,kodak\kds_aio5000
+SDSDWIA.5500.CopyFiles=11,kodak\kds_aio5000
+SDSDWIA.ESP3.CopyFiles=11,kodak\kds_aio5000
+SDSDWIA.ESP5.CopyFiles=11,kodak\kds_aio5000
+SDSDWIA.ESP7.CopyFiles=11,kodak\kds_aio5000
+SDSDWIA.ESP9.CopyFiles=11,kodak\kds_aio5000
+SDSDWIA.5200.CopyFiles=11,kodak\kds_aio5000
+SDSDWIA.3200.CopyFiles=11,kodak\kds_aio5000
+SDSDWIA.4100.CopyFiles=11,kodak\kds_aio5000
+SDSDWIA.6100.CopyFiles=11,kodak\kds_aio5000
+SDSDWIA.7200.CopyFiles=11,kodak\kds_aio5000
+SDSDWIA.9200.CopyFiles=11,kodak\kds_aio5000
+
+SDSDWIA2.CopyFiles64=11,kodak\kds_aio5000
+SDSDWIA2.5100.CopyFiles64=11,kodak\kds_aio5000
+SDSDWIA2.5300.CopyFiles64=11,kodak\kds_aio5000
+SDSDWIA2.5500.CopyFiles64=11,kodak\kds_aio5000
+SDSDWIA2.ESP3.CopyFiles64=11,kodak\kds_aio5000
+SDSDWIA2.ESP5.CopyFiles64=11,kodak\kds_aio5000
+SDSDWIA2.ESP7.CopyFiles64=11,kodak\kds_aio5000
+SDSDWIA2.ESP9.CopyFiles64=11,kodak\kds_aio5000
+SDSDWIA2.5200.CopyFiles64=11,kodak\kds_aio5000
+SDSDWIA2.3200.CopyFiles64=11,kodak\kds_aio5000
+SDSDWIA2.4100.CopyFiles64=11,kodak\kds_aio5000
+SDSDWIA2.6100.CopyFiles64=11,kodak\kds_aio5000
+SDSDWIA2.7200.CopyFiles64=11,kodak\kds_aio5000
+SDSDWIA2.9200.CopyFiles64=11,kodak\kds_aio5000
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;[SDSDWIA]
+;Include=sti.inf
+;Needs=STI.USBSection
+;			; Since video devices also use the class installer you must identify still image devices.
+;SubClass=StillImage   
+;			; DeviceType should be set to 1 = scanner or 2 = camera.
+;DeviceType=1
+;			; Put here any number you want to identify subtypes. These are vendor specified.
+;DeviceSubType=0x1
+;			; Capabilities refers to the events generated by the device. Set bit 1
+;			; if it generates events and set bit 2 if the USD requires polling.
+;Capabilities=0x31
+;			; If the device supports events, add a link to the events section here.
+;Events=SDSDWIA.Events
+;			; Forward reference to ancillary device data.
+;DeviceData=SDSDWIA.DeviceData
+;			; Forward reference to registry information.
+;AddReg=SDSDWIA.AddReg,ButtonEvent.AddReg,PropertySheet.AddReg
+;			; Forward reference to those files to copy.
+;CopyFiles=SDSDWIAFiles,PropertySheetFiles
+;			; Forward reference to those files to delete during install.
+;			; Put the Image Color Management profile here.
+;ICMProfiles="sRGB Color Space Profile.icm"
+;			; To Enable property pages for this device in the CPL
+;			; add the DLL name and entry point here.  < no prop page for this >
+;			; PropertyPages="Sampcpl.cpl ,EnumStiPropPages"
+
+ 
+
+[SDSDWIA.5100.Device]
+Include=sti.inf
+Needs=STI.USBSection
+SubClass=StillImage   
+DeviceType=1
+DeviceSubType=0x1
+Capabilities=0x31
+Events=SDSDWIA.Events
+DeviceData=SDSDWIA.DeviceData
+AddReg=SDSDWIA.AddReg,ButtonEvent.AddReg,PropertySheet.AddReg,SDSDWIALog.AddReg,SDSDWIA5100.XMLAddReg 
+ICMProfiles="sRGB Color Space Profile.icm"
+CopyFiles=SDSDWIAFiles,PropertySheetFiles, SDSDWIA.5100.CopyFiles,PTPFiles
+
+[SDSDWIA.5100.CopyFiles]
+WCFG5100.xml
+
+[SDSDWIA.5100.Device.Services]
+Include=sti.inf
+Needs=STI.USBSection.Services
+
+
+[SDSDWIA.5300.Device]
+Include=sti.inf
+Needs=STI.USBSection
+SubClass=StillImage   
+DeviceType=1
+DeviceSubType=0x1
+Capabilities=0x31
+Events=SDSDWIA.Events
+DeviceData=SDSDWIA.DeviceData
+AddReg=SDSDWIA.AddReg,ButtonEvent.AddReg,PropertySheet.AddReg,SDSDWIALog.AddReg,SDSDWIA5300.XMLAddReg 
+ICMProfiles="sRGB Color Space Profile.icm"
+CopyFiles=SDSDWIAFiles,PropertySheetFiles, SDSDWIA.5300.CopyFiles,PTPFiles
+
+[SDSDWIA.5300.CopyFiles]
+WCFG5300.xml
+
+[SDSDWIA.5300.Device.Services]
+Include=sti.inf
+Needs=STI.USBSection.Services
+
+[SDSDWIA.5500.Device]
+Include=sti.inf
+Needs=STI.USBSection
+SubClass=StillImage   
+DeviceType=1
+DeviceSubType=0x1
+Capabilities=0x31
+Events=SDSDWIA.Events
+DeviceData=SDSDWIA.DeviceData
+AddReg=SDSDWIA.AddReg,ButtonEvent.AddReg,PropertySheet.AddReg,SDSDWIALog.AddReg,SDSDWIA5500.XMLAddReg 
+ICMProfiles="sRGB Color Space Profile.icm"
+CopyFiles=SDSDWIAFiles,PropertySheetFiles, SDSDWIA.5500.CopyFiles,PTPFiles
+
+[SDSDWIA.5500.CopyFiles]
+WCFG5500.xml
+
+[SDSDWIA.5500.Device.Services]
+Include=sti.inf
+Needs=STI.USBSection.Services
+
+
+[SDSDWIA.ESP3.Device]
+Include=sti.inf
+Needs=STI.USBSection
+SubClass=StillImage   
+DeviceType=1
+DeviceSubType=0x1
+Capabilities=0x31
+Events=SDSDWIA.Events
+DeviceData=SDSDWIA.DeviceData
+AddReg=SDSDWIA.AddReg,ButtonEvent.AddReg,PropertySheet.AddReg,SDSDWIALog.AddReg,SDSDWIAESP3.XMLAddReg 
+ICMProfiles="sRGB Color Space Profile.icm"
+CopyFiles=SDSDWIAFiles,PropertySheetFiles, SDSDWIA.ESP3.CopyFiles,PTPFiles
+
+[SDSDWIA.ESP3.CopyFiles]
+WCFGESP3.xml
+
+[SDSDWIA.ESP3.Device.Services]
+Include=sti.inf
+Needs=STI.USBSection.Services
+
+[SDSDWIA.ESP5.Device]
+Include=sti.inf
+Needs=STI.USBSection
+SubClass=StillImage   
+DeviceType=1
+DeviceSubType=0x1
+Capabilities=0x31
+Events=SDSDWIA.Events
+DeviceData=SDSDWIA.DeviceData
+AddReg=SDSDWIA.AddReg,ButtonEvent.AddReg,PropertySheet.AddReg,SDSDWIALog.AddReg,SDSDWIAESP5.XMLAddReg 
+ICMProfiles="sRGB Color Space Profile.icm"
+CopyFiles=SDSDWIAFiles,PropertySheetFiles, SDSDWIA.ESP5.CopyFiles,PTPFiles
+
+[SDSDWIA.ESP5.CopyFiles]
+WCFGESP5.xml
+
+[SDSDWIA.ESP5.Device.Services]
+Include=sti.inf
+Needs=STI.USBSection.Services
+
+[SDSDWIA.ESP7.Device]
+Include=sti.inf
+Needs=STI.USBSection
+SubClass=StillImage   
+DeviceType=1
+DeviceSubType=0x1
+Capabilities=0x31
+Events=SDSDWIA.Events
+DeviceData=SDSDWIA.DeviceData
+AddReg=SDSDWIA.AddReg,ButtonEvent.AddReg,PropertySheet.AddReg,SDSDWIALog.AddReg,SDSDWIAESP7.XMLAddReg 
+CopyFiles=SDSDWIAFiles, PropertySheetFiles, SDSDWIA.ESP7.CopyFiles,PTPFiles
+ICMProfiles="sRGB Color Space Profile.icm"
+
+[SDSDWIA.ESP7.CopyFiles]
+WCFGESP7.xml
+
+[SDSDWIA.ESP7.Device.Services]
+Include=sti.inf
+Needs=STI.USBSection.Services
+
+[SDSDWIA.ESP9.Device]
+Include=sti.inf
+Needs=STI.USBSection
+SubClass=StillImage   
+DeviceType=1
+DeviceSubType=0x1
+Capabilities=0x31
+Events=SDSDWIA.Events
+DeviceData=SDSDWIA.DeviceData
+AddReg=SDSDWIA.AddReg,ButtonEvent.AddReg,PropertySheet.AddReg,SDSDWIALog.AddReg,SDSDWIAESP9.XMLAddReg 
+ICMProfiles="sRGB Color Space Profile.icm"
+CopyFiles=SDSDWIAFiles,PropertySheetFiles, SDSDWIA.ESP9.CopyFiles,PTPFiles
+
+[SDSDWIA.ESP9.CopyFiles]
+WCFGESP9.xml
+
+[SDSDWIA.ESP9.Device.Services]
+Include=sti.inf
+Needs=STI.USBSection.Services
+
+[SDSDWIA.5200.Device]
+Include=sti.inf
+Needs=STI.USBSection
+SubClass=StillImage   
+DeviceType=1
+DeviceSubType=0x1
+Capabilities=0x31
+Events=SDSDWIA.Events
+DeviceData=SDSDWIA.DeviceData
+AddReg=SDSDWIA.AddReg,ButtonEvent.AddReg,PropertySheet.AddReg,SDSDWIALog.AddReg,SDSDWIA5200.XMLAddReg 
+ICMProfiles="sRGB Color Space Profile.icm"
+CopyFiles=SDSDWIAFiles,PropertySheetFiles, SDSDWIA.5200.CopyFiles,PTPFiles
+
+[SDSDWIA.5200.CopyFiles]
+WCFG5200.xml
+
+[SDSDWIA.5200.Device.Services]
+Include=sti.inf
+Needs=STI.USBSection.Services
+
+[SDSDWIA.3200.Device]
+Include=sti.inf
+Needs=STI.USBSection
+SubClass=StillImage   
+DeviceType=1
+DeviceSubType=0x1
+Capabilities=0x31
+Events=SDSDWIA.Events
+DeviceData=SDSDWIA.DeviceData
+AddReg=SDSDWIA.AddReg,ButtonEvent.AddReg,PropertySheet.AddReg,SDSDWIALog.AddReg,SDSDWIA3200.XMLAddReg 
+ICMProfiles="sRGB Color Space Profile.icm"
+CopyFiles=SDSDWIAFiles,PropertySheetFiles, SDSDWIA.3200.CopyFiles,PTPFiles
+
+[SDSDWIA.3200.CopyFiles]
+WCFG3200.xml
+
+[SDSDWIA.3200.Device.Services]
+Include=sti.inf
+Needs=STI.USBSection.Services
+
+[SDSDWIA.4100.Device]
+Include=sti.inf
+Needs=STI.USBSection
+SubClass=StillImage   
+DeviceType=1
+DeviceSubType=0x1
+Capabilities=0x31
+Events=SDSDWIA.Events
+DeviceData=SDSDWIA.DeviceData
+AddReg=SDSDWIA.AddReg,ButtonEvent.AddReg,PropertySheet.AddReg,SDSDWIALog.AddReg,SDSDWIA4100.XMLAddReg 
+ICMProfiles="sRGB Color Space Profile.icm"
+CopyFiles=SDSDWIAFiles,PropertySheetFiles, SDSDWIA.4100.CopyFiles,PTPFiles
+
+[SDSDWIA.4100.CopyFiles]
+WCFG4100.xml
+
+[SDSDWIA.4100.Device.Services]
+Include=sti.inf
+Needs=STI.USBSection.Services
+
+
+[SDSDWIA.6100.Device]
+Include=sti.inf
+Needs=STI.USBSection
+SubClass=StillImage   
+DeviceType=1
+DeviceSubType=0x1
+Capabilities=0x31
+Events=SDSDWIA.Events
+DeviceData=SDSDWIA.DeviceData
+AddReg=SDSDWIA.AddReg,ButtonEvent.AddReg,PropertySheet.AddReg,SDSDWIALog.AddReg,SDSDWIA6100.XMLAddReg 
+ICMProfiles="sRGB Color Space Profile.icm"
+CopyFiles=SDSDWIAFiles,PropertySheetFiles, SDSDWIA.6100.CopyFiles,PTPFiles
+
+[SDSDWIA.6100.CopyFiles]
+WCFG6100.xml
+
+[SDSDWIA.6100.Device.Services]
+Include=sti.inf
+Needs=STI.USBSection.Services
+
+[SDSDWIA.7200.Device]
+Include=sti.inf
+Needs=STI.USBSection
+SubClass=StillImage   
+DeviceType=1
+DeviceSubType=0x1
+Capabilities=0x31
+Events=SDSDWIA.Events
+DeviceData=SDSDWIA.DeviceData
+AddReg=SDSDWIA.AddReg,ButtonEvent.AddReg,PropertySheet.AddReg,SDSDWIALog.AddReg,SDSDWIA7200.XMLAddReg 
+ICMProfiles="sRGB Color Space Profile.icm"
+CopyFiles=SDSDWIAFiles,PropertySheetFiles, SDSDWIA.7200.CopyFiles,PTPFiles
+
+[SDSDWIA.7200.CopyFiles]
+WCFG7200.xml
+
+[SDSDWIA.7200.Device.Services]
+Include=sti.inf
+Needs=STI.USBSection.Services
+
+
+[SDSDWIA.9200.Device]
+Include=sti.inf
+Needs=STI.USBSection
+SubClass=StillImage   
+DeviceType=1
+DeviceSubType=0x1
+Capabilities=0x31
+Events=SDSDWIA.Events
+DeviceData=SDSDWIA.DeviceData
+AddReg=SDSDWIA.AddReg,ButtonEvent.AddReg,PropertySheet.AddReg,SDSDWIALog.AddReg,SDSDWIA9200.XMLAddReg 
+ICMProfiles="sRGB Color Space Profile.icm"
+CopyFiles=SDSDWIAFiles,PropertySheetFiles, SDSDWIA.9200.CopyFiles,PTPFiles
+
+[SDSDWIA.9200.CopyFiles]
+WCFG9200.xml
+
+[SDSDWIA.9200.Device.Services]
+Include=sti.inf
+Needs=STI.USBSection.Services
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;[SDSDWIA2]
+;Include=sti.inf
+;Needs=STI.USBSection
+;			; Since video devices also use the class installer you must identify still image devices.
+;SubClass=StillImage   
+;			; DeviceType should be set to 1 = scanner or 2 = camera.
+;DeviceType=1
+;			; Put here any number you want to identify subtypes. These are vendor specified.
+;DeviceSubType=0x1
+;			; Capabilities refers to the events generated by the device. Set bit 1
+;			; if it generates events and set bit 2 if the USD requires polling.
+;Capabilities=0x31
+;			; If the device supports events, add a link to the events section here.
+;Events=SDSDWIA.Events
+;			; Forward reference to ancillary device data.
+;DeviceData=SDSDWIA2.DeviceData,PropertySheet.AddReg
+;			; Forward reference to registry information.
+;AddReg=SDSDWIA2.AddReg
+;			; Forward reference to those files to copy.
+;CopyFiles=SDSDWIA2Files
+;			; Forward reference to those files to delete during install.
+;			; Put the Image Color Management profile here.
+;ICMProfiles="sRGB Color Space Profile.icm"
+;			; To Enable property pages for this device in the CPL
+;			; add the DLL name and entry point here.  < no prop page for this >
+;			; PropertyPages="Sampcpl.cpl ,EnumStiPropPages"
+
+ 
+
+[SDSDWIA2.5100.Device]
+Include=sti.inf
+Needs=STI.USBSection
+SubClass=StillImage   
+DeviceType=1
+DeviceSubType=0x1
+Capabilities=0x31
+Events=SDSDWIA2.Events
+DeviceData=SDSDWIA2.DeviceData, PropertySheet.AddReg,SDSDWIALog.AddReg
+AddReg=SDSDWIA2.AddReg,CustomButtonEvent.AddReg,SDSDWIA5100.XMLAddReg
+ICMProfiles="sRGB Color Space Profile.icm"
+CopyFiles=SDSDWIA2Files, SDSDWIA.5100.CopyFiles,PTPFiles
+;[SDSDWIA.5100.CopyFiles]
+;WCFG5100.xml
+
+[SDSDWIA2.5300.Device]
+Include=sti.inf
+Needs=STI.USBSection
+SubClass=StillImage   
+DeviceType=1
+DeviceSubType=0x1
+Capabilities=0x31
+Events=SDSDWIA2.Events
+DeviceData=SDSDWIA2.DeviceData
+AddReg=SDSDWIA2.AddReg,ButtonEvent.AddReg,PropertySheet.AddReg,CustomButtonEvent.AddReg,SDSDWIALog.AddReg,SDSDWIA5300.XMLAddReg
+ICMProfiles="sRGB Color Space Profile.icm"
+CopyFiles=SDSDWIA2Files, SDSDWIA.5300.CopyFiles,PTPFiles
+;[SDSDWIA.5300.CopyFiles]
+;WCFG5300.xml
+
+[SDSDWIA2.5500.Device]
+Include=sti.inf
+Needs=STI.USBSection
+SubClass=StillImage   
+DeviceType=1
+DeviceSubType=0x1
+Capabilities=0x31
+Events=SDSDWIA2.Events
+DeviceData=SDSDWIA2.DeviceData
+AddReg=SDSDWIA2.AddReg,ButtonEvent.AddReg,PropertySheet.AddReg,CustomButtonEvent.AddReg,SDSDWIALog.AddReg,SDSDWIA5500.XMLAddReg 
+ICMProfiles="sRGB Color Space Profile.icm"
+CopyFiles=SDSDWIA2Files, SDSDWIA.5500.CopyFiles,PTPFiles
+;[SDSDWIA.5500.CopyFiles]
+;WCFG5500.xml
+
+[SDSDWIA2.ESP3.Device]
+Include=sti.inf
+Needs=STI.USBSection
+SubClass=StillImage   
+DeviceType=1
+DeviceSubType=0x1
+Capabilities=0x31
+Events=SDSDWIA2.Events
+DeviceData=SDSDWIA2.DeviceData
+AddReg=SDSDWIA2.AddReg,ButtonEvent.AddReg,PropertySheet.AddReg,CustomButtonEvent.AddReg,SDSDWIALog.AddReg,SDSDWIAESP3.XMLAddReg 
+ICMProfiles="sRGB Color Space Profile.icm"
+CopyFiles=SDSDWIA2Files, SDSDWIA.ESP3.CopyFiles,PTPFiles
+;[SDSDWIA.ESP3.CopyFiles]
+;WCFGESP3.xml
+
+[SDSDWIA2.ESP5.Device]
+Include=sti.inf
+Needs=STI.USBSection
+SubClass=StillImage   
+DeviceType=1
+DeviceSubType=0x1
+Capabilities=0x31
+Events=SDSDWIA2.Events
+DeviceData=SDSDWIA2.DeviceData
+AddReg=SDSDWIA2.AddReg,ButtonEvent.AddReg,PropertySheet.AddReg,CustomButtonEvent.AddReg,SDSDWIALog.AddReg,SDSDWIAESP5.XMLAddReg 
+ICMProfiles="sRGB Color Space Profile.icm"
+CopyFiles=SDSDWIA2Files, SDSDWIA.ESP5.CopyFiles,PTPFiles
+;[SDSDWIA.ESP5.CopyFiles]
+;WCFGESP5.xml
+
+[SDSDWIA2.ESP7.Device]
+Include=sti.inf
+Needs=STI.USBSection
+SubClass=StillImage   
+DeviceType=1
+DeviceSubType=0x1
+Capabilities=0x31
+Events=SDSDWIA2.Events
+DeviceData=SDSDWIA2.DeviceData
+AddReg=SDSDWIA2.AddReg,ButtonEvent.AddReg,PropertySheet.AddReg,CustomButtonEvent.AddReg,SDSDWIALog.AddReg,SDSDWIAESP7.XMLAddReg 
+CopyFiles=SDSDWIA2Files, SDSDWIA.ESP7.CopyFiles,PTPFiles
+ICMProfiles="sRGB Color Space Profile.icm"
+;[SDSDWIA.ESP7.CopyFiles]
+;WCFGESP7.xml
+[SDSDWIA2.ESP7.Device.Services]
+Include=sti.inf
+Needs=STI.USBSection.Services
+
+[SDSDWIA2.ESP9.Device]
+Include=sti.inf
+Needs=STI.USBSection
+SubClass=StillImage   
+DeviceType=1
+DeviceSubType=0x1
+Capabilities=0x31
+Events=SDSDWIA2.Events
+DeviceData=SDSDWIA2.DeviceData
+AddReg=SDSDWIA2.AddReg,ButtonEvent.AddReg,PropertySheet.AddReg,CustomButtonEvent.AddReg,SDSDWIALog.AddReg,SDSDWIAESP9.XMLAddReg 
+ICMProfiles="sRGB Color Space Profile.icm"
+CopyFiles=SDSDWIA2Files, SDSDWIA.ESP9.CopyFiles,PTPFiles
+;[SDSDWIA.ESP9.CopyFiles]
+;WCFGESP9.xml
+
+
+[SDSDWIA2.5200.Device]
+Include=sti.inf
+Needs=STI.USBSection
+SubClass=StillImage   
+DeviceType=1
+DeviceSubType=0x1
+Capabilities=0x31
+Events=SDSDWIA2.Events
+DeviceData=SDSDWIA2.DeviceData
+AddReg=SDSDWIA2.AddReg,ButtonEvent.AddReg,PropertySheet.AddReg,CustomButtonEvent.AddReg,SDSDWIALog.AddReg,SDSDWIA5200.XMLAddReg 
+ICMProfiles="sRGB Color Space Profile.icm"
+CopyFiles=SDSDWIA2Files, SDSDWIA.5200.CopyFiles,PTPFiles
+;[SDSDWIA.5200.CopyFiles]
+;WCFG5200.xml
+
+[SDSDWIA2.3200.Device]
+Include=sti.inf
+Needs=STI.USBSection
+SubClass=StillImage   
+DeviceType=1
+DeviceSubType=0x1
+Capabilities=0x31
+Events=SDSDWIA2.Events
+DeviceData=SDSDWIA2.DeviceData
+AddReg=SDSDWIA2.AddReg,ButtonEvent.AddReg,PropertySheet.AddReg,CustomButtonEvent.AddReg,SDSDWIALog.AddReg,SDSDWIA3200.XMLAddReg 
+ICMProfiles="sRGB Color Space Profile.icm"
+CopyFiles=SDSDWIA2Files, SDSDWIA.3200.CopyFiles,PTPFiles
+;[SDSDWIA.3200.CopyFiles]
+;WCFG3200.xml
+
+[SDSDWIA2.4100.Device]
+Include=sti.inf
+Needs=STI.USBSection
+SubClass=StillImage   
+DeviceType=1
+DeviceSubType=0x1
+Capabilities=0x31
+Events=SDSDWIA2.Events
+DeviceData=SDSDWIA2.DeviceData
+AddReg=SDSDWIA2.AddReg,ButtonEvent.AddReg,PropertySheet.AddReg,CustomButtonEvent.AddReg,SDSDWIALog.AddReg,SDSDWIA4100.XMLAddReg 
+ICMProfiles="sRGB Color Space Profile.icm"
+CopyFiles=SDSDWIA2Files, SDSDWIA.4100.CopyFiles,PTPFiles
+;[SDSDWIA.4100.CopyFiles]
+;WCFG4100.xml
+
+[SDSDWIA2.6100.Device]
+Include=sti.inf
+Needs=STI.USBSection
+SubClass=StillImage   
+DeviceType=1
+DeviceSubType=0x1
+Capabilities=0x31
+Events=SDSDWIA2.Events
+DeviceData=SDSDWIA2.DeviceData
+AddReg=SDSDWIA2.AddReg,ButtonEvent.AddReg,PropertySheet.AddReg,CustomButtonEvent.AddReg,SDSDWIALog.AddReg,SDSDWIA6100.XMLAddReg 
+ICMProfiles="sRGB Color Space Profile.icm"
+CopyFiles=SDSDWIA2Files, SDSDWIA.6100.CopyFiles,PTPFiles
+;[SDSDWIA.6100.CopyFiles]
+;WCFG6100.xml
+
+[SDSDWIA2.7200.Device]
+Include=sti.inf
+Needs=STI.USBSection
+SubClass=StillImage   
+DeviceType=1
+DeviceSubType=0x1
+Capabilities=0x31
+Events=SDSDWIA2.Events
+DeviceData=SDSDWIA2.DeviceData
+AddReg=SDSDWIA2.AddReg,ButtonEvent.AddReg,PropertySheet.AddReg,CustomButtonEvent.AddReg,SDSDWIALog.AddReg,SDSDWIA7200.XMLAddReg 
+ICMProfiles="sRGB Color Space Profile.icm"
+CopyFiles=SDSDWIA2Files, SDSDWIA.7200.CopyFiles,PTPFiles
+;[SDSDWIA.7200.CopyFiles]
+;WCFG7200.xml
+
+[SDSDWIA2.9200.Device]
+Include=sti.inf
+Needs=STI.USBSection
+SubClass=StillImage   
+DeviceType=1
+DeviceSubType=0x1
+Capabilities=0x31
+Events=SDSDWIA2.Events
+DeviceData=SDSDWIA2.DeviceData
+AddReg=SDSDWIA2.AddReg,ButtonEvent.AddReg,PropertySheet.AddReg,CustomButtonEvent.AddReg,SDSDWIALog.AddReg,SDSDWIA9200.XMLAddReg 
+ICMProfiles="sRGB Color Space Profile.icm"
+CopyFiles=SDSDWIA2Files, SDSDWIA.9200.CopyFiles,PTPFiles
+;[SDSDWIA.9200.CopyFiles]
+;WCFG9200.xml
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;[SDSDWIA2.amd64]
+;Include=sti.inf
+;Needs=STI.USBSection
+;			; Since video devices also use the class installer you must identify still image devices.
+;SubClass=StillImage   
+;			; DeviceType should be set to 1 = scanner or 2 = camera.
+;DeviceType=1
+;			; Put here any number you want to identify subtypes. These are vendor specified.
+;DeviceSubType=0x1
+;			; Capabilities refers to the events generated by the device. Set bit 1
+;			; if it generates events and set bit 2 if the USD requires polling.
+;Capabilities=0x31
+;			; If the device supports events, add a link to the events section here.
+;Events=SDSDWIA.Events
+;			; Forward reference to ancillary device data.
+;DeviceData=SDSDWIA2.DeviceData,PropertySheet.AddReg
+;			; Forward reference to registry information.
+;AddReg=SDSDWIA2.AddReg
+;			; Forward reference to those files to copy.
+;CopyFiles=SDSDWIA2Files64,PTPFiles64
+;			; Forward reference to those files to delete during install.
+;			; Put the Image Color Management profile here.
+;ICMProfiles="sRGB Color Space Profile.icm"
+;			; To Enable property pages for this device in the CPL
+;			; add the DLL name and entry point here.  < no prop page for this >
+;			; PropertyPages="Sampcpl.cpl ,EnumStiPropPages"
+
+
+[SDSDWIA2.5100.Device.amd64]
+Include=sti.inf
+Needs=STI.USBSection
+SubClass=StillImage   
+DeviceType=1
+DeviceSubType=0x1
+Capabilities=0x31
+Events=SDSDWIA2.Events
+DeviceData=SDSDWIA2.DeviceData, PropertySheet.AddReg,SDSDWIALog.AddReg 
+AddReg=SDSDWIA2.AddReg,CustomButtonEvent.AddReg,SDSDWIA5100.XMLAddReg
+ICMProfiles="sRGB Color Space Profile.icm"
+CopyFiles=SDSDWIA2Files64, SDSDWIA2.5100.CopyFiles64,PTPFiles64
+[SDSDWIA2.5100.CopyFiles64]
+WCFG5100.xml
+
+[SDSDWIA2.5300.Device.amd64]
+Include=sti.inf
+Needs=STI.USBSection
+SubClass=StillImage   
+DeviceType=1
+DeviceSubType=0x1
+Capabilities=0x31
+Events=SDSDWIA2.Events
+DeviceData=SDSDWIA2.DeviceData
+AddReg=SDSDWIA2.AddReg,ButtonEvent.AddReg,PropertySheet.AddReg,CustomButtonEvent.AddReg,SDSDWIALog.AddReg,SDSDWIA5300.XMLAddReg
+ICMProfiles="sRGB Color Space Profile.icm"
+CopyFiles=SDSDWIA2Files64, SDSDWIA2.5300.CopyFiles64,PTPFiles64
+[SDSDWIA2.5300.CopyFiles64]
+WCFG5300.xml
+
+[SDSDWIA2.5500.Device.amd64]
+Include=sti.inf
+Needs=STI.USBSection
+SubClass=StillImage   
+DeviceType=1
+DeviceSubType=0x1
+Capabilities=0x31
+Events=SDSDWIA2.Events
+DeviceData=SDSDWIA2.DeviceData
+AddReg=SDSDWIA2.AddReg,ButtonEvent.AddReg,PropertySheet.AddReg,CustomButtonEvent.AddReg,SDSDWIALog.AddReg,SDSDWIA5500.XMLAddReg 
+ICMProfiles="sRGB Color Space Profile.icm"
+CopyFiles=SDSDWIA2Files64, SDSDWIA2.5500.CopyFiles64,PTPFiles64
+[SDSDWIA2.5500.CopyFiles64]
+WCFG5500.xml
+
+[SDSDWIA2.ESP3.Device.amd64]
+Include=sti.inf
+Needs=STI.USBSection
+SubClass=StillImage   
+DeviceType=1
+DeviceSubType=0x1
+Capabilities=0x31
+Events=SDSDWIA2.Events
+DeviceData=SDSDWIA2.DeviceData
+AddReg=SDSDWIA2.AddReg,ButtonEvent.AddReg,PropertySheet.AddReg,CustomButtonEvent.AddReg,SDSDWIALog.AddReg,SDSDWIAESP3.XMLAddReg 
+ICMProfiles="sRGB Color Space Profile.icm"
+CopyFiles=SDSDWIA2Files64, SDSDWIA2.ESP3.CopyFiles64,PTPFiles64
+[SDSDWIA2.ESP3.CopyFiles64]
+WCFGESP3.xml
+
+[SDSDWIA2.ESP5.Device.amd64]
+Include=sti.inf
+Needs=STI.USBSection
+SubClass=StillImage   
+DeviceType=1
+DeviceSubType=0x1
+Capabilities=0x31
+Events=SDSDWIA2.Events
+DeviceData=SDSDWIA2.DeviceData
+AddReg=SDSDWIA2.AddReg,ButtonEvent.AddReg,PropertySheet.AddReg,CustomButtonEvent.AddReg,SDSDWIALog.AddReg,SDSDWIAESP5.XMLAddReg 
+ICMProfiles="sRGB Color Space Profile.icm"
+CopyFiles=SDSDWIA2Files64, SDSDWIA2.ESP5.CopyFiles64,PTPFiles64
+[SDSDWIA2.ESP5.CopyFiles64]
+WCFGESP5.xml
+
+[SDSDWIA2.ESP7.Device.amd64]
+Include=sti.inf
+Needs=STI.USBSection
+SubClass=StillImage   
+DeviceType=1
+DeviceSubType=0x1
+Capabilities=0x31
+Events=SDSDWIA2.Events
+DeviceData=SDSDWIA2.DeviceData
+AddReg=SDSDWIA2.AddReg,ButtonEvent.AddReg,PropertySheet.AddReg,CustomButtonEvent.AddReg,SDSDWIALog.AddReg,SDSDWIAESP7.XMLAddReg 
+CopyFiles=SDSDWIA2Files64, SDSDWIA2.ESP7.CopyFiles64,PTPFiles64
+ICMProfiles="sRGB Color Space Profile.icm"
+[SDSDWIA2.ESP7.CopyFiles64]
+WCFGESP7.xml
+ 
+
+[SDSDWIA2.ESP9.Device.amd64]
+Include=sti.inf
+Needs=STI.USBSection
+SubClass=StillImage   
+DeviceType=1
+DeviceSubType=0x1
+Capabilities=0x31
+Events=SDSDWIA2.Events
+DeviceData=SDSDWIA2.DeviceData
+AddReg=SDSDWIA2.AddReg,ButtonEvent.AddReg,PropertySheet.AddReg,CustomButtonEvent.AddReg,SDSDWIALog.AddReg,SDSDWIAESP9.XMLAddReg
+ICMProfiles="sRGB Color Space Profile.icm"
+CopyFiles=SDSDWIA2Files64, SDSDWIA2.ESP9.CopyFiles64,PTPFiles64
+[SDSDWIA2.ESP9.CopyFiles64]
+WCFGESP9.xml
+
+[SDSDWIA2.5200.Device.amd64]
+Include=sti.inf
+Needs=STI.USBSection
+SubClass=StillImage   
+DeviceType=1
+DeviceSubType=0x1
+Capabilities=0x31
+Events=SDSDWIA2.Events
+DeviceData=SDSDWIA2.DeviceData
+AddReg=SDSDWIA2.AddReg,ButtonEvent.AddReg,PropertySheet.AddReg,CustomButtonEvent.AddReg,SDSDWIALog.AddReg,SDSDWIA5200.XMLAddReg 
+ICMProfiles="sRGB Color Space Profile.icm"
+CopyFiles=SDSDWIA2Files64, SDSDWIA2.5200.CopyFiles64,PTPFiles64
+[SDSDWIA2.5200.CopyFiles64]
+WCFG5200.xml
+
+[SDSDWIA2.3200.Device.amd64]
+Include=sti.inf
+Needs=STI.USBSection
+SubClass=StillImage   
+DeviceType=1
+DeviceSubType=0x1
+Capabilities=0x31
+Events=SDSDWIA2.Events
+DeviceData=SDSDWIA2.DeviceData
+AddReg=SDSDWIA2.AddReg,ButtonEvent.AddReg,PropertySheet.AddReg,CustomButtonEvent.AddReg,SDSDWIALog.AddReg,SDSDWIA3200.XMLAddReg 
+ICMProfiles="sRGB Color Space Profile.icm"
+CopyFiles=SDSDWIA2Files64, SDSDWIA2.3200.CopyFiles64,PTPFiles64
+[SDSDWIA2.3200.CopyFiles64]
+WCFG3200.xml
+
+[SDSDWIA2.4100.Device.amd64]
+Include=sti.inf
+Needs=STI.USBSection
+SubClass=StillImage   
+DeviceType=1
+DeviceSubType=0x1
+Capabilities=0x31
+Events=SDSDWIA2.Events
+DeviceData=SDSDWIA2.DeviceData
+AddReg=SDSDWIA2.AddReg,ButtonEvent.AddReg,PropertySheet.AddReg,CustomButtonEvent.AddReg,SDSDWIALog.AddReg,SDSDWIA4100.XMLAddReg 
+ICMProfiles="sRGB Color Space Profile.icm"
+CopyFiles=SDSDWIA2Files64, SDSDWIA2.4100.CopyFiles64,PTPFiles64
+[SDSDWIA2.4100.CopyFiles64]
+WCFG4100.xml
+
+[SDSDWIA2.6100.Device.amd64]
+Include=sti.inf
+Needs=STI.USBSection
+SubClass=StillImage   
+DeviceType=1
+DeviceSubType=0x1
+Capabilities=0x31
+Events=SDSDWIA2.Events
+DeviceData=SDSDWIA2.DeviceData
+AddReg=SDSDWIA2.AddReg,ButtonEvent.AddReg,PropertySheet.AddReg,CustomButtonEvent.AddReg,SDSDWIALog.AddReg,SDSDWIA6100.XMLAddReg 
+ICMProfiles="sRGB Color Space Profile.icm"
+CopyFiles=SDSDWIA2Files64, SDSDWIA2.6100.CopyFiles64,PTPFiles64
+[SDSDWIA2.6100.CopyFiles64]
+WCFG6100.xml
+
+[SDSDWIA2.7200.Device.amd64]
+Include=sti.inf
+Needs=STI.USBSection
+SubClass=StillImage   
+DeviceType=1
+DeviceSubType=0x1
+Capabilities=0x31
+Events=SDSDWIA2.Events
+DeviceData=SDSDWIA2.DeviceData
+AddReg=SDSDWIA2.AddReg,ButtonEvent.AddReg,PropertySheet.AddReg,CustomButtonEvent.AddReg,SDSDWIALog.AddReg,SDSDWIA7200.XMLAddReg 
+ICMProfiles="sRGB Color Space Profile.icm"
+CopyFiles=SDSDWIA2Files64, SDSDWIA2.7200.CopyFiles64,PTPFiles64
+[SDSDWIA2.7200.CopyFiles64]
+WCFG7200.xml
+
+[SDSDWIA2.9200.Device.amd64]
+Include=sti.inf
+Needs=STI.USBSection
+SubClass=StillImage   
+DeviceType=1
+DeviceSubType=0x1
+Capabilities=0x31
+Events=SDSDWIA2.Events
+DeviceData=SDSDWIA2.DeviceData
+AddReg=SDSDWIA2.AddReg,ButtonEvent.AddReg,PropertySheet.AddReg,CustomButtonEvent.AddReg,SDSDWIALog.AddReg,SDSDWIA9200.XMLAddReg 
+ICMProfiles="sRGB Color Space Profile.icm"
+CopyFiles=SDSDWIA2Files64, SDSDWIA2.9200.CopyFiles64,PTPFiles64
+[SDSDWIA2.9200.CopyFiles64]
+WCFG9200.xml
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+;;------NETWORK------------------------
+
+
+;[SDSDWIA.WIFI]
+;Include=sti.inf
+;Needs=STI.SerialSection
+;PortSelect=no
+;SubClass=StillImage
+;DeviceType=1
+;DeviceSubType=0x1
+;Capabilities=0x31
+;Events=SDSDWIA.Events
+;AddReg=SDSDWIA.AddReg,PropertySheet.AddReg,CustomButtonEvent.AddReg
+;CopyFiles=SDSDWIAFiles,PropertySheetFiles
+;ICMProfiles="sRGB Color Space Profile.icm"
+;DeviceData=SDSDWIA.DeviceData
+;
+;[SDSDWIA.WIFI.Services]
+;Include=sti.inf
+;Needs=STI.SerialSection.Services
+;
+;
+;[SDSDWIA.WIFI.CoInstallers]
+;CopyFiles=CoInstaller_CopyFiles
+;AddReg=CoInstaller_AddReg
+
+
+
+
+[SDSDWIA.ESP7.WIFI]
+Include=sti.inf
+Needs=STI.SerialSection
+PortSelect=no
+SubClass=StillImage
+DeviceType=1
+DeviceSubType=0x1
+Capabilities=0x31
+Events=SDSDWIA.Events
+AddReg=SDSDWIA.AddReg,PropertySheet.AddReg,SDSDWIALog.AddReg,SDSDWIAESP7.XMLAddReg
+CopyFiles=SDSDWIAFiles,PropertySheetFiles,SDSDWIA.ESP7.CopyFiles
+ICMProfiles="sRGB Color Space Profile.icm"
+DeviceData=SDSDWIA.DeviceData
+
+[SDSDWIA.ESP7.WIFI.Services]
+Include=sti.inf
+Needs=STI.SerialSection.Services
+
+[SDSDWIA.ESP7.WIFI.CoInstallers]
+CopyFiles=CoInstaller_CopyFiles
+AddReg=CoInstaller_AddReg
+
+
+
+[SDSDWIA.ESP9.WIFI]
+Include=sti.inf
+Needs=STI.SerialSection
+PortSelect=no
+SubClass=StillImage
+DeviceType=1
+DeviceSubType=0x1
+Capabilities=0x31
+Events=SDSDWIA.Events
+AddReg=SDSDWIA.AddReg,PropertySheet.AddReg,SDSDWIALog.AddReg,SDSDWIAESP9.XMLAddReg
+CopyFiles=SDSDWIAFiles,PropertySheetFiles,SDSDWIA.ESP9.CopyFiles
+ICMProfiles="sRGB Color Space Profile.icm"
+DeviceData=SDSDWIA.DeviceData
+
+[SDSDWIA.ESP9.WIFI.Services]
+Include=sti.inf
+Needs=STI.SerialSection.Services
+
+[SDSDWIA.ESP9.WIFI.CoInstallers]
+CopyFiles=CoInstaller_CopyFiles
+AddReg=CoInstaller_AddReg
+
+[SDSDWIA.5100.WIFI]
+Include=sti.inf
+Needs=STI.SerialSection
+PortSelect=no
+SubClass=StillImage
+DeviceType=1
+DeviceSubType=0x1
+Capabilities=0x31
+Events=SDSDWIA.Events
+AddReg=SDSDWIA.AddReg,PropertySheet.AddReg,SDSDWIALog.AddReg,SDSDWIA5100.XMLAddReg
+CopyFiles=SDSDWIAFiles,PropertySheetFiles,SDSDWIA.5100.CopyFiles
+ICMProfiles="sRGB Color Space Profile.icm"
+DeviceData=SDSDWIA.DeviceData
+
+[SDSDWIA.5100.WIFI.Services]
+Include=sti.inf
+Needs=STI.SerialSection.Services
+
+[SDSDWIA.5100.WIFI.CoInstallers]
+CopyFiles=CoInstaller_CopyFiles
+AddReg=CoInstaller_AddReg
+
+[SDSDWIA.5200.WIFI]
+Include=sti.inf
+Needs=STI.SerialSection
+PortSelect=no
+SubClass=StillImage
+DeviceType=1
+DeviceSubType=0x1
+Capabilities=0x31
+Events=SDSDWIA.Events
+AddReg=SDSDWIA.AddReg,PropertySheet.AddReg,SDSDWIALog.AddReg,SDSDWIA5200.XMLAddReg
+CopyFiles=SDSDWIAFiles,PropertySheetFiles,SDSDWIA.5200.CopyFiles
+ICMProfiles="sRGB Color Space Profile.icm"
+DeviceData=SDSDWIA.DeviceData
+
+[SDSDWIA.5200.WIFI.Services]
+Include=sti.inf
+Needs=STI.SerialSection.Services
+
+[SDSDWIA.5200.WIFI.CoInstallers]
+CopyFiles=CoInstaller_CopyFiles
+AddReg=CoInstaller_AddReg
+
+[SDSDWIA.6100.WIFI]
+Include=sti.inf
+Needs=STI.SerialSection
+PortSelect=no
+SubClass=StillImage
+DeviceType=1
+DeviceSubType=0x1
+Capabilities=0x31
+Events=SDSDWIA.Events
+AddReg=SDSDWIA.AddReg,PropertySheet.AddReg,SDSDWIALog.AddReg,SDSDWIA6100.XMLAddReg
+CopyFiles=SDSDWIAFiles,PropertySheetFiles,SDSDWIA.6100.CopyFiles
+ICMProfiles="sRGB Color Space Profile.icm"
+DeviceData=SDSDWIA.DeviceData
+
+[SDSDWIA.6100.WIFI.Services]
+Include=sti.inf
+Needs=STI.SerialSection.Services
+
+[SDSDWIA.6100.WIFI.CoInstallers]
+CopyFiles=CoInstaller_CopyFiles
+AddReg=CoInstaller_AddReg
+
+[SDSDWIA.7200.WIFI]
+Include=sti.inf
+Needs=STI.SerialSection
+PortSelect=no
+SubClass=StillImage
+DeviceType=1
+DeviceSubType=0x1
+Capabilities=0x31
+Events=SDSDWIA.Events
+AddReg=SDSDWIA.AddReg,PropertySheet.AddReg,SDSDWIALog.AddReg,SDSDWIA7200.XMLAddReg
+CopyFiles=SDSDWIAFiles,PropertySheetFiles,SDSDWIA.7200.CopyFiles
+ICMProfiles="sRGB Color Space Profile.icm"
+DeviceData=SDSDWIA.DeviceData
+
+[SDSDWIA.7200.WIFI.Services]
+Include=sti.inf
+Needs=STI.SerialSection.Services
+
+[SDSDWIA.7200.WIFI.CoInstallers]
+CopyFiles=CoInstaller_CopyFiles
+AddReg=CoInstaller_AddReg
+
+[SDSDWIA.9200.WIFI]
+Include=sti.inf
+Needs=STI.SerialSection
+PortSelect=no
+SubClass=StillImage
+DeviceType=1
+DeviceSubType=0x1
+Capabilities=0x31
+Events=SDSDWIA.Events
+AddReg=SDSDWIA.AddReg,PropertySheet.AddReg,SDSDWIALog.AddReg,SDSDWIA9200.XMLAddReg
+CopyFiles=SDSDWIAFiles,PropertySheetFiles,SDSDWIA.9200.CopyFiles
+ICMProfiles="sRGB Color Space Profile.icm"
+DeviceData=SDSDWIA.DeviceData
+
+[SDSDWIA.9200.WIFI.Services]
+Include=sti.inf
+Needs=STI.SerialSection.Services
+
+[SDSDWIA.9200.WIFI.CoInstallers]
+CopyFiles=CoInstaller_CopyFiles
+AddReg=CoInstaller_AddReg
+
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;[SDSDWIA2.WIFI]
+;Include=sti.inf
+;Needs=STI.SerialSection
+;PortSelect=no
+;SubClass=StillImage
+;DeviceType=1
+;DeviceSubType=0x1
+;Capabilities=0x31
+;Events=SDSDWIA.Events
+;AddReg=SDSDWIA2.AddReg,PropertySheet.AddReg
+;CopyFiles=SDSDWIA2Files,PropertySheetFiles
+;ICMProfiles="sRGB Color Space Profile.icm"
+;DeviceData=SDSDWIA2.DeviceData
+;
+;[SDSDWIA2.WIFI.Services]
+;Include=sti.inf
+;Needs=STI.SerialSection.Services
+;
+;
+;[SDSDWIA2.WIFI.CoInstallers]
+;CopyFiles=CoInstaller_CopyFiles
+;AddReg=CoInstaller_AddReg
+
+
+[SDSDWIA2.ESP7.WIFI]
+Include=sti.inf
+Needs=STI.SerialSection
+PortSelect=no
+SubClass=StillImage
+DeviceType=1
+DeviceSubType=0x1
+Capabilities=0x31
+Events=SDSDWIA.Events
+AddReg=SDSDWIA2.AddReg,PropertySheet.AddReg,SDSDWIALog.AddReg,SDSDWIAESP7.XMLAddReg
+CopyFiles=SDSDWIA2Files,PropertySheetFiles,SDSDWIA.ESP7.CopyFiles
+ICMProfiles="sRGB Color Space Profile.icm"
+DeviceData=SDSDWIA2.DeviceData
+
+[SDSDWIA2.ESP7.WIFI.Services]
+Include=sti.inf
+Needs=STI.SerialSection.Services
+
+[SDSDWIA2.ESP7.WIFI.CoInstallers]
+CopyFiles=CoInstaller_CopyFiles
+AddReg=CoInstaller_AddReg
+
+
+[SDSDWIA2.ESP9.WIFI]
+Include=sti.inf
+Needs=STI.SerialSection
+PortSelect=no
+SubClass=StillImage
+DeviceType=1
+DeviceSubType=0x1
+Capabilities=0x31
+Events=SDSDWIA.Events
+AddReg=SDSDWIA2.AddReg,PropertySheet.AddReg,SDSDWIALog.AddReg,SDSDWIAESP9.XMLAddReg
+CopyFiles=SDSDWIA2Files,PropertySheetFiles,SDSDWIA.ESP9.CopyFiles
+ICMProfiles="sRGB Color Space Profile.icm"
+DeviceData=SDSDWIA2.DeviceData
+
+[SDSDWIA2.ESP9.WIFI.Services]
+Include=sti.inf
+Needs=STI.SerialSection.Services
+
+[SDSDWIA2.ESP9.WIFI.CoInstallers]
+CopyFiles=CoInstaller_CopyFiles
+AddReg=CoInstaller_AddReg
+
+[SDSDWIA2.5100.WIFI]
+Include=sti.inf
+Needs=STI.SerialSection
+PortSelect=no
+SubClass=StillImage
+DeviceType=1
+DeviceSubType=0x1
+Capabilities=0x31
+Events=SDSDWIA.Events
+AddReg=SDSDWIA2.AddReg,PropertySheet.AddReg,SDSDWIALog.AddReg,SDSDWIA5100.XMLAddReg
+CopyFiles=SDSDWIA2Files,PropertySheetFiles,SDSDWIA.5100.CopyFiles
+ICMProfiles="sRGB Color Space Profile.icm"
+DeviceData=SDSDWIA2.DeviceData
+
+[SDSDWIA2.5100.WIFI.Services]
+Include=sti.inf
+Needs=STI.SerialSection.Services
+
+[SDSDWIA2.5100.WIFI.CoInstallers]
+CopyFiles=CoInstaller_CopyFiles
+AddReg=CoInstaller_AddReg
+
+[SDSDWIA2.5200.WIFI]
+Include=sti.inf
+Needs=STI.SerialSection
+PortSelect=no
+SubClass=StillImage
+DeviceType=1
+DeviceSubType=0x1
+Capabilities=0x31
+Events=SDSDWIA.Events
+AddReg=SDSDWIA2.AddReg,PropertySheet.AddReg,SDSDWIALog.AddReg,SDSDWIA5200.XMLAddReg
+CopyFiles=SDSDWIA2Files,PropertySheetFiles,SDSDWIA.5200.CopyFiles
+ICMProfiles="sRGB Color Space Profile.icm"
+DeviceData=SDSDWIA2.DeviceData
+
+[SDSDWIA2.5200.WIFI.Services]
+Include=sti.inf
+Needs=STI.SerialSection.Services
+
+[SDSDWIA2.5200.WIFI.CoInstallers]
+CopyFiles=CoInstaller_CopyFiles
+AddReg=CoInstaller_AddReg
+
+[SDSDWIA2.6100.WIFI]
+Include=sti.inf
+Needs=STI.SerialSection
+PortSelect=no
+SubClass=StillImage
+DeviceType=1
+DeviceSubType=0x1
+Capabilities=0x31
+Events=SDSDWIA.Events
+AddReg=SDSDWIA2.AddReg,PropertySheet.AddReg,SDSDWIALog.AddReg,SDSDWIA6100.XMLAddReg
+CopyFiles=SDSDWIA2Files,PropertySheetFiles,SDSDWIA.6100.CopyFiles
+ICMProfiles="sRGB Color Space Profile.icm"
+DeviceData=SDSDWIA2.DeviceData
+
+[SDSDWIA2.6100.WIFI.Services]
+Include=sti.inf
+Needs=STI.SerialSection.Services
+
+[SDSDWIA2.6100.WIFI.CoInstallers]
+CopyFiles=CoInstaller_CopyFiles
+AddReg=CoInstaller_AddReg
+
+[SDSDWIA2.7200.WIFI]
+Include=sti.inf
+Needs=STI.SerialSection
+PortSelect=no
+SubClass=StillImage
+DeviceType=1
+DeviceSubType=0x1
+Capabilities=0x31
+Events=SDSDWIA.Events
+AddReg=SDSDWIA2.AddReg,PropertySheet.AddReg,SDSDWIALog.AddReg,SDSDWIA7200.XMLAddReg
+CopyFiles=SDSDWIA2Files,PropertySheetFiles,SDSDWIA.7200.CopyFiles
+ICMProfiles="sRGB Color Space Profile.icm"
+DeviceData=SDSDWIA2.DeviceData
+
+[SDSDWIA2.7200.WIFI.Services]
+Include=sti.inf
+Needs=STI.SerialSection.Services
+
+[SDSDWIA2.7200.WIFI.CoInstallers]
+CopyFiles=CoInstaller_CopyFiles
+AddReg=CoInstaller_AddReg
+
+[SDSDWIA2.9200.WIFI]
+Include=sti.inf
+Needs=STI.SerialSection
+PortSelect=no
+SubClass=StillImage
+DeviceType=1
+DeviceSubType=0x1
+Capabilities=0x31
+Events=SDSDWIA.Events
+AddReg=SDSDWIA2.AddReg,PropertySheet.AddReg,SDSDWIALog.AddReg,SDSDWIA9200.XMLAddReg
+CopyFiles=SDSDWIA2Files,PropertySheetFiles,SDSDWIA.9200.CopyFiles
+ICMProfiles="sRGB Color Space Profile.icm"
+DeviceData=SDSDWIA2.DeviceData
+
+[SDSDWIA2.9200.WIFI.Services]
+Include=sti.inf
+Needs=STI.SerialSection.Services
+
+[SDSDWIA2.9200.WIFI.CoInstallers]
+CopyFiles=CoInstaller_CopyFiles
+AddReg=CoInstaller_AddReg
+
+ 
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+;[SDSDWIA2.WIFI.amd64]
+;Include=sti.inf
+;Needs=STI.SerialSection
+;PortSelect=no
+;SubClass=StillImage
+;DeviceType=1
+;DeviceSubType=0x1
+;Capabilities=0x31
+;Events=SDSDWIA.Events
+;AddReg=SDSDWIA2.AddReg,PropertySheet.AddReg
+;CopyFiles=SDSDWIA2Files64,PropertySheetFiles
+;ICMProfiles="sRGB Color Space Profile.icm"
+;DeviceData=SDSDWIA2.DeviceData
+;
+;
+;[SDSDWIA2.WIFI.amd64.Services]
+;Include=sti.inf
+;Needs=STI.SerialSection.Services
+;
+;
+;[SDSDWIA2.WIFI.amd64.CoInstallers]
+;CopyFiles=CoInstaller_CopyFiles
+;AddReg=CoInstaller_AddReg
+
+
+[SDSDWIA2.ESP7.WIFI.amd64]
+Include=sti.inf
+Needs=STI.SerialSection
+PortSelect=no
+SubClass=StillImage
+DeviceType=1
+DeviceSubType=0x1
+Capabilities=0x31
+Events=SDSDWIA.Events
+AddReg=SDSDWIA2.AddReg,PropertySheet.AddReg,SDSDWIALog.AddReg,SDSDWIAESP7.XMLAddReg
+CopyFiles=SDSDWIA2Files64,PropertySheetFiles,SDSDWIA.ESP7.CopyFiles
+ICMProfiles="sRGB Color Space Profile.icm"
+DeviceData=SDSDWIA2.DeviceData
+
+[SDSDWIA2.ESP7.WIFI.amd64.Services]
+Include=sti.inf
+Needs=STI.SerialSection.Services
+
+[SDSDWIA2.ESP7.WIFI.amd64.CoInstallers]
+CopyFiles=CoInstaller_CopyFiles
+AddReg=CoInstaller_AddReg
+
+
+[SDSDWIA2.ESP9.WIFI.amd64]
+Include=sti.inf
+Needs=STI.SerialSection
+PortSelect=no
+SubClass=StillImage
+DeviceType=1
+DeviceSubType=0x1
+Capabilities=0x31
+Events=SDSDWIA.Events
+AddReg=SDSDWIA2.AddReg,PropertySheet.AddReg,SDSDWIALog.AddReg,SDSDWIAESP9.XMLAddReg
+CopyFiles=SDSDWIA2Files64,PropertySheetFiles,SDSDWIA.ESP9.CopyFiles
+ICMProfiles="sRGB Color Space Profile.icm"
+DeviceData=SDSDWIA2.DeviceData
+
+[SDSDWIA2.ESP9.WIFI.amd64.Services]
+Include=sti.inf
+Needs=STI.SerialSection.Services
+
+[SDSDWIA2.ESP9.WIFI.amd64.CoInstallers]
+CopyFiles=CoInstaller_CopyFiles
+AddReg=CoInstaller_AddReg
+
+[SDSDWIA2.5100.WIFI.amd64]
+Include=sti.inf
+Needs=STI.SerialSection
+PortSelect=no
+SubClass=StillImage
+DeviceType=1
+DeviceSubType=0x1
+Capabilities=0x31
+Events=SDSDWIA.Events
+AddReg=SDSDWIA2.AddReg,PropertySheet.AddReg,SDSDWIALog.AddReg,SDSDWIA5100.XMLAddReg
+CopyFiles=SDSDWIA2Files64,PropertySheetFiles,SDSDWIA.5100.CopyFiles
+ICMProfiles="sRGB Color Space Profile.icm"
+DeviceData=SDSDWIA2.DeviceData
+
+[SDSDWIA2.5100.WIFI.amd64.Services]
+Include=sti.inf
+Needs=STI.SerialSection.Services
+
+[SDSDWIA2.5100.WIFI.amd64.CoInstallers]
+CopyFiles=CoInstaller_CopyFiles
+AddReg=CoInstaller_AddReg
+
+[SDSDWIA2.5200.WIFI.amd64]
+Include=sti.inf
+Needs=STI.SerialSection
+PortSelect=no
+SubClass=StillImage
+DeviceType=1
+DeviceSubType=0x1
+Capabilities=0x31
+Events=SDSDWIA.Events
+AddReg=SDSDWIA2.AddReg,PropertySheet.AddReg,SDSDWIALog.AddReg,SDSDWIA5200.XMLAddReg
+CopyFiles=SDSDWIA2Files64,PropertySheetFiles,SDSDWIA.5200.CopyFiles
+ICMProfiles="sRGB Color Space Profile.icm"
+DeviceData=SDSDWIA2.DeviceData
+
+[SDSDWIA2.5200.WIFI.amd64.Services]
+Include=sti.inf
+Needs=STI.SerialSection.Services
+
+[SDSDWIA2.5200.WIFI.amd64.CoInstallers]
+CopyFiles=CoInstaller_CopyFiles
+AddReg=CoInstaller_AddReg
+
+[SDSDWIA2.6100.WIFI.amd64]
+Include=sti.inf
+Needs=STI.SerialSection
+PortSelect=no
+SubClass=StillImage
+DeviceType=1
+DeviceSubType=0x1
+Capabilities=0x31
+Events=SDSDWIA.Events
+AddReg=SDSDWIA2.AddReg,PropertySheet.AddReg,SDSDWIALog.AddReg,SDSDWIA6100.XMLAddReg
+CopyFiles=SDSDWIA2Files64,PropertySheetFiles,SDSDWIA.6100.CopyFiles
+ICMProfiles="sRGB Color Space Profile.icm"
+DeviceData=SDSDWIA2.DeviceData
+
+[SDSDWIA2.6100.WIFI.amd64.Services]
+Include=sti.inf
+Needs=STI.SerialSection.Services
+
+[SDSDWIA2.6100.WIFI.amd64.CoInstallers]
+CopyFiles=CoInstaller_CopyFiles
+AddReg=CoInstaller_AddReg
+
+[SDSDWIA2.7200.WIFI.amd64]
+Include=sti.inf
+Needs=STI.SerialSection
+PortSelect=no
+SubClass=StillImage
+DeviceType=1
+DeviceSubType=0x1
+Capabilities=0x31
+Events=SDSDWIA.Events
+AddReg=SDSDWIA2.AddReg,PropertySheet.AddReg,SDSDWIALog.AddReg,SDSDWIA7200.XMLAddReg
+CopyFiles=SDSDWIA2Files64,PropertySheetFiles,SDSDWIA.7200.CopyFiles
+ICMProfiles="sRGB Color Space Profile.icm"
+DeviceData=SDSDWIA2.DeviceData
+
+[SDSDWIA2.7200.WIFI.amd64.Services]
+Include=sti.inf
+Needs=STI.SerialSection.Services
+
+[SDSDWIA2.7200.WIFI.amd64.CoInstallers]
+CopyFiles=CoInstaller_CopyFiles
+AddReg=CoInstaller_AddReg
+
+[SDSDWIA2.9200.WIFI.amd64]
+Include=sti.inf
+Needs=STI.SerialSection
+PortSelect=no
+SubClass=StillImage
+DeviceType=1
+DeviceSubType=0x1
+Capabilities=0x31
+Events=SDSDWIA.Events
+AddReg=SDSDWIA2.AddReg,PropertySheet.AddReg,SDSDWIALog.AddReg,SDSDWIA9200.XMLAddReg
+CopyFiles=SDSDWIA2Files64,PropertySheetFiles,SDSDWIA.9200.CopyFiles
+ICMProfiles="sRGB Color Space Profile.icm"
+DeviceData=SDSDWIA2.DeviceData
+
+[SDSDWIA2.9200.WIFI.amd64.Services]
+Include=sti.inf
+Needs=STI.SerialSection.Services
+
+[SDSDWIA2.9200.WIFI.amd64.CoInstallers]
+CopyFiles=CoInstaller_CopyFiles
+AddReg=CoInstaller_AddReg
+
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+[SDSDWIA.Events]
+ScanButton=%ScanButton.Desc%,{B7190564-B2E2-4ed6-932C-AA336143F345},*
+AppListButton=%AppListButton.Desc%,{ABDA039E-3720-4f7f-958B-8792D0B0D450},*
+
+
+[SDSDWIA2.Events]
+ScanButton=%ScanButton.Desc%,{B7190564-B2E2-4ed6-932C-AA336143F345},*
+AppListButton=%AppListButton.Desc%,{ABDA039E-3720-4f7f-958B-8792D0B0D450},*
+Event_2=%CustomEvent.Desc%,{2EF9FFC4-1F64-46e1-B865-B9616783F3E0},{80213413-CD3D-49e6-8EE7-5588F46FC537}
+
+[ButtonEvent.AddReg]
+
+HKR,Events\ScanButton\{D13E3F25-1688-45A0-9743-759EB35CDF9A},Desc,,"Download pictures from a camera or scanner"
+HKR,Events\ScanButton\{D13E3F25-1688-45A0-9743-759EB35CDF9A},Icon,,"wiaacmgr.exe,-2"
+HKR,Events\ScanButton\{D13E3F25-1688-45A0-9743-759EB35CDF9A},Name,,"Microsoft Scanner and Camera Wizard"
+
+[CustomButtonEvent.AddReg]
+
+HKR,Events\Event_2\{80213413-CD3D-49e6-8EE7-5588F46FC537},Name,,"PTP"
+HKR,Events\Event_2\{80213413-CD3D-49e6-8EE7-5588F46FC537},Desc,,"Photo Transfer application"
+HKR,Events\Event_2\{80213413-CD3D-49e6-8EE7-5588F46FC537},Icon,,"sti.dll,-1001"
+HKR,Events\Event_2\{80213413-CD3D-49e6-8EE7-5588F46FC537},Cmdline,,"%11%\\kodak\kds_aio5000\EKAiOWiaPtp.exe /IMG_STI"
+HKCR,CLSID\{80213413-CD3D-49e6-8EE7-5588F46FC537}
+HKCR,CLSID\{80213413-CD3D-49e6-8EE7-5588F46FC537}\LocalServer32,,,"%11%\\kodak\kds_aio5000\EKAiOWiaPtp.exe /IMG_STI"
+
+ 
+
+[SDSDWIA2.5100.Device.amd64.SERVICES] 
+Include=sti.inf
+Needs=STI.USBSection.Services
+[SDSDWIA2.5500.Device.amd64.SERVICES] 
+Include=sti.inf
+Needs=STI.USBSection.Services
+[SDSDWIA2.ESP5.Device.amd64.SERVICES] 
+Include=sti.inf
+Needs=STI.USBSection.Services
+[SDSDWIA2.ESP7.Device.amd64.SERVICES] 
+Include=sti.inf
+Needs=STI.USBSection.Services
+[SDSDWIA2.5200.Device.amd64.SERVICES]
+Include=sti.inf
+Needs=STI.USBSection.Services
+[SDSDWIA2.3200.Device.amd64.SERVICES]
+Include=sti.inf
+Needs=STI.USBSection.Services
+[SDSDWIA2.4100.Device.amd64.SERVICES]
+Include=sti.inf
+Needs=STI.USBSection.Services
+[SDSDWIA2.4100.Device.amd64.SERVICES] 
+Include=sti.inf
+Needs=STI.USBSection.Services
+[SDSDWIA2.6100.Device.amd64.SERVICES]
+Include=sti.inf
+Needs=STI.USBSection.Services
+[SDSDWIA2.7200.Device.amd64.SERVICES] 
+Include=sti.inf
+Needs=STI.USBSection.Services
+[SDSDWIA2.7200.Device.amd64.SERVICES] 
+Include=sti.inf
+Needs=STI.USBSection.Services
+[SDSDWIA2.9200.Device.amd64.SERVICES]
+Include=sti.inf
+Needs=STI.USBSection.Services
+
+[SDSDWIA2.ESP9.Device.amd64.SERVICES]
+Include=sti.inf
+Needs=STI.USBSection.Services
+
+[SDSDWIA2.5300.Device.amd64.SERVICES]
+Include=sti.inf
+Needs=STI.USBSection.Services
+[SDSDWIA2.ESP3.Device.amd64.SERVICES]
+Include=sti.inf
+Needs=STI.USBSection.Services
+
+
+
+
+[SDSDWIA2.5100.Device.SERVICES] 
+Include=sti.inf
+Needs=STI.USBSection.Services
+[SDSDWIA2.5500.Device.SERVICES] 
+Include=sti.inf
+Needs=STI.USBSection.Services
+[SDSDWIA2.ESP5.Device.SERVICES] 
+Include=sti.inf
+Needs=STI.USBSection.Services
+ 
+[SDSDWIA2.5200.Device.SERVICES]
+Include=sti.inf
+Needs=STI.USBSection.Services
+[SDSDWIA2.3200.Device.SERVICES]
+Include=sti.inf
+Needs=STI.USBSection.Services
+[SDSDWIA2.4100.Device.SERVICES]
+Include=sti.inf
+Needs=STI.USBSection.Services
+ 
+[SDSDWIA2.6100.Device.amd64.SERVICES]
+Include=sti.inf
+Needs=STI.USBSection.Services
+
+
+
+[SDSDWIA2.6100.Device.SERVICES] 
+Include=sti.inf
+Needs=STI.USBSection.Services
+
+[SDSDWIA2.7200.Device.SERVICES] 
+Include=sti.inf
+Needs=STI.USBSection.Services
+ 
+[SDSDWIA2.9200.Device.SERVICES]
+Include=sti.inf
+Needs=STI.USBSection.Services
+
+[SDSDWIA2.ESP9.Device.SERVICES]
+Include=sti.inf
+Needs=STI.USBSection.Services
+
+[SDSDWIA2.5300.Device.SERVICES]
+Include=sti.inf
+Needs=STI.USBSection.Services
+[SDSDWIA2.ESP3.Device.SERVICES]
+Include=sti.inf
+Needs=STI.USBSection.Services
+
+[SDSDWIA.DeviceData]  
+UI Class ID={AF55BBE9-EA1B-4610-A29A-A580F05D26FE}
+MiniDriver=%11%\kodak\kds_aio5000\EKAiOWia.dll
+ 
+
+
+[SDSDWIA2.DeviceData]  
+UI Class ID={AF55BBE9-EA1B-4610-A29A-A580F05D26FE}
+MiniDriver=%11%\kodak\kds_aio5000\EKAiOWia2Drv.dll
+
+[SDSDWIA.AddReg]
+HKR,,HardwareConfig,1,4
+HKR,,DevLoader,,*NTKERN
+HKR,,NTMPDriver,,USBSCAN.SYS
+; The GUID below is defined for WIA mini-drivers
+HKR,,USDClass,,"{8AFD4B1F-D334-4471-8B60-9A4389C7222C}"
+HKCR,CLSID\{8AFD4B1F-D334-4471-8B60-9A4389C7222C},,,"Kodak AIO WIA Driver"
+HKCR,CLSID\{8AFD4B1F-D334-4471-8B60-9A4389C7222C}\InProcServer32,,,%11%\kodak\kds_aio5000\EKAiOWia.dll
+HKCR,CLSID\{8AFD4B1F-D334-4471-8B60-9A4389C7222C}\InProcServer32,ThreadingModel,,"Both"
+
+
+
+[SDSDWIA2.AddReg]
+HKR,,HardwareConfig,1,4
+HKR,,DevLoader,,*NTKERN
+HKR,,NTMPDriver,,USBSCAN.SYS
+; The GUID below is defined for WIA mini-drivers
+HKR,,USDClass,,"{8AFD4B1F-D334-4471-8B60-9A4389C7222C}"
+HKCR,CLSID\{8AFD4B1F-D334-4471-8B60-9A4389C7222C},,,"Kodak Extended WIA Driver"
+HKCR,CLSID\{8AFD4B1F-D334-4471-8B60-9A4389C7222C}\InProcServer32,,,%11%\kodak\kds_aio5000\EKAiOWia2Drv.dll
+HKCR,CLSID\{8AFD4B1F-D334-4471-8B60-9A4389C7222C}\InProcServer32,ThreadingModel,,"Both" 
+
+
+[PropertySheet.AddReg]
+HKCR,CLSID\{AF55BBE9-EA1B-4610-A29A-A580F05D26FE}\shellex\PropertySheetHandlers\{8AA6B79C-BA8D-4c59-A1B2-6BDDCF80E5EE}
+
+HKCR,CLSID\{8AA6B79C-BA8D-4c59-A1B2-6BDDCF80E5EE},,,"Kodak WIA Shell Extension Handler"
+HKCR,CLSID\{8AA6B79C-BA8D-4c59-A1B2-6BDDCF80E5EE}\InProcServer32,,,%11%\kodak\kds_aio5000\EKAiOWiaShellExt.dll
+HKCR,CLSID\{8AA6B79C-BA8D-4c59-A1B2-6BDDCF80E5EE}\InProcServer32,ThreadingModel,,"Both"
+
+[SDSDWIALog.AddReg]
+HKU,.DEFAULT\Software\Kodak\Kodak AiO Software\Logging,"Logging Path",0x00000002,%16419%\Kodak\Inkjet Logging
+HKU,.DEFAULT\Software\Kodak\Kodak AiO Software\Logging\WIA,"Enabled",0x00010003,1
+HKU,.DEFAULT\Software\Kodak\Kodak AiO Software\Logging\WIA,"Level",0x00010003,0
+
+ 
+
+ 
+ 
+[CoInstaller_AddReg]
+HKR,,CoInstallers32,0x00010000,"EKAiOWiaCoInst.dll, CoDeviceInstall"
+
+
+[SDSDWIA5100.XMLAddReg]
+HKR,,DeviceCapabilities,,"WCFG5100.xml"
+
+[SDSDWIA6100.XMLAddReg]
+HKR,,DeviceCapabilities,,"WCFG6100.xml"
+
+[SDSDWIA9200.XMLAddReg]
+HKR,,DeviceCapabilities,,"WCFG9200.xml"
+
+[SDSDWIA7200.XMLAddReg]
+HKR,,DeviceCapabilities,,"WCFG7200.xml"
+
+[SDSDWIA5200.XMLAddReg]
+HKR,,DeviceCapabilities,,"WCFG5200.xml"
+
+[SDSDWIA3200.XMLAddReg]
+HKR,,DeviceCapabilities,,"WCFG3200.xml"
+
+[SDSDWIAESP9.XMLAddReg]
+HKR,,DeviceCapabilities,,"WCFGESP9.xml"
+
+[SDSDWIAESP7.XMLAddReg]
+HKR,,DeviceCapabilities,,"WCFGESP7.xml"
+
+[SDSDWIA5300.XMLAddReg]
+HKR,,DeviceCapabilities,,"WCFG5300.xml"
+
+[SDSDWIA5500.XMLAddReg]
+HKR,,DeviceCapabilities,,"WCFG5500.xml"
+
+[SDSDWIAESP3.XMLAddReg]
+HKR,,DeviceCapabilities,,"WCFGESP3.xml"
+
+[SDSDWIAESP5.XMLAddReg]
+HKR,,DeviceCapabilities,,"WCFGESP5.xml"
+
+[SDSDWIA4100.XMLAddReg]
+HKR,,DeviceCapabilities,,"WCFG4100.xml"
+
+[PropertySheetFiles]
+EKAiOWiaShellExt.dll
+EKAiOWiaShellExtRes.dll
+
+[CoInstaller_CopyFiles]
+EKAiOWiaCoInst.dll
+EKAiOWiaCoInstRes.dll
+EKAiOWiaCoInst.ini
+
+ 
+ 
+[SDSDWIAFiles]
+EKAiOWia.dll
+AiO5000Config.ini
+
+[SDSDWIA2Files]
+EKAiOWia2Drv.dll
+AiO5000Config.ini
+
+[SDSDWIA2Files64]
+EKAiOWia2Drv.dll
+AiO5000Config.ini
+
+ 
+[PTPFiles]
+EKAiOWiaPtp.exe
+
+[PTPFiles64]
+EKAiOWiaPtp.exe
+
+
+[Strings] ;(Neutral English (United Kingdom))
+Msft="Microsoft"
+Mfg="Eastman Kodak"
+Location="Install Setup Disk"
+
+SDSDWIA.DeviceDesc3300="KODAK ESP-3 AiO"
+SDSDWIA.DeviceDesc5100="KODAK 5100 AiO"
+SDSDWIA.DeviceDesc5100.WIFI="KODAK 5100 AiO WIFI"
+SDSDWIA.DeviceDesc5300="KODAK 5300 AiO"
+SDSDWIA.DeviceDesc5500="KODAK 5500 AiO"
+SDSDWIA.DeviceDesc5000Mini="KODAK 5000 Series AiO"
+SDSDWIA.DeviceDescESP5="KODAK ESP 5 AiO"
+SDSDWIA.DeviceDescESP7="KODAK ESP 7 AiO"
+SDSDWIA.DeviceDescESP7.WIFI="KODAK ESP 7 AiO WIFI"
+SDSDWIA.DeviceDescESP9="KODAK ESP 9 AiO"
+SDSDWIA.DeviceDescESP9.WIFI="KODAK ESP 9 AiO WIFI"
+SDSDWIA.DeviceDesc5200="KODAK ESP 5200 Series AiO"
+SDSDWIA.DeviceDesc5200.WIFI="KODAK ESP 5200 Series AiO WIFI"
+SDSDWIA.DeviceDesc3200="KODAK ESP 3200 Series AiO"
+SDSDWIA.DeviceDesc4100="ESPOffice 4100 Series AiO"
+SDSDWIA.DeviceDesc6100="ESPOffice 6100 Series AiO"
+SDSDWIA.DeviceDesc6100.WIFI="ESPOffice 6100 Series AiO WIFI"
+SDSDWIA.DeviceDesc7200="KODAK ESP 7200 Series AiO"
+SDSDWIA.DeviceDesc7200.WIFI="KODAK ESP 7200 Series AiO WIFI"
+SDSDWIA.DeviceDesc9200="KODAK ESP 9200 Series AiO"
+SDSDWIA.DeviceDesc9200.WIFI="KODAK ESP 9200 Series AiO WIFI"
+SDSDWIA.STIScanAppDesc="STI Scan button application"
+
+
+ScanButton.Desc="Scan Button"
+AppListButton.Desc="Scan Button"
+CustomEvent.Desc="PTP Event"
+
+Model="SDSD Composite USB"
+SDSDWIA.DeviceKey="SDSD Scanner"
+Language  = "en-GB"
+
+
+[Strings.0407] ;German (Germany)
+Msft="Microsoft"
+Mfg="Eastman Kodak"
+Location="Install Setup Disk"
+SDSDWIA.DeviceDesc3300="KODAK ESP-3 AiO"
+SDSDWIA.DeviceDesc5100="KODAK 5100 AiO"
+SDSDWIA.DeviceDesc5100.WIFI="KODAK 5100 AiO WIFI"
+SDSDWIA.DeviceDesc5300="KODAK 5300 AiO"
+SDSDWIA.DeviceDesc5500="KODAK 5500 AiO"
+SDSDWIA.DeviceDesc5000Mini="KODAK 5000 Series AiO"
+SDSDWIA.DeviceDescESP5="KODAK ESP 5 AiO"
+SDSDWIA.DeviceDescESP7="KODAK ESP 7 AiO"
+SDSDWIA.DeviceDescESP7.WIFI="KODAK ESP 7 AiO WIFI"
+SDSDWIA.DeviceDescESP9="KODAK ESP 9 AiO"
+SDSDWIA.DeviceDescESP9.WIFI="KODAK ESP 9 AiO WIFI"
+SDSDWIA.DeviceDesc5200="KODAK ESP 5200 Series AiO"
+SDSDWIA.DeviceDesc5200.WIFI="KODAK ESP 5200 Series AiO WIFI"
+SDSDWIA.DeviceDesc3200="KODAK ESP 3200 Series AiO"
+SDSDWIA.DeviceDesc4100="ESPOffice 4100 Series AiO"
+SDSDWIA.DeviceDesc6100="ESPOffice 6100 Series AiO"
+SDSDWIA.DeviceDesc6100.WIFI="ESPOffice 6100 Series AiO WIFI"
+SDSDWIA.DeviceDesc7200="KODAK ESP 7200 Series AiO"
+SDSDWIA.DeviceDesc7200.WIFI="KODAK ESP 7200 Series AiO WIFI"
+SDSDWIA.DeviceDesc9200="KODAK ESP 9200 Series AiO"
+SDSDWIA.DeviceDesc9200.WIFI="KODAK ESP 9200 Series AiO WIFI"
+SDSDWIA.STIScanAppDesc="STI Scan button application"
+
+
+ScanButton.Desc="Scan Button"
+AppListButton.Desc="Scan Button"
+CustomEvent.Desc="PTP Event"
+
+Model="SDSD Composite USB"
+SDSDWIA.DeviceKey="SDSD Scanner"
+ 
+Language  = "de-DE"
+
+[Strings.0409] ;English (United States)
+Msft="Microsoft"
+Mfg="Eastman Kodak"
+Location="Install Setup Disk"
+SDSDWIA.DeviceDesc3300="KODAK ESP-3 AiO"
+SDSDWIA.DeviceDesc5100="KODAK 5100 AiO"
+SDSDWIA.DeviceDesc5100.WIFI="KODAK 5100 AiO WIFI"
+SDSDWIA.DeviceDesc5300="KODAK 5300 AiO"
+SDSDWIA.DeviceDesc5500="KODAK 5500 AiO"
+SDSDWIA.DeviceDesc5000Mini="KODAK 5000 Series AiO"
+SDSDWIA.DeviceDescESP5="KODAK ESP 5 AiO"
+SDSDWIA.DeviceDescESP7="KODAK ESP 7 AiO"
+SDSDWIA.DeviceDescESP7.WIFI="KODAK ESP 7 AiO WIFI"
+SDSDWIA.DeviceDescESP9="KODAK ESP 9 AiO"
+SDSDWIA.DeviceDescESP9.WIFI="KODAK ESP 9 AiO WIFI"
+SDSDWIA.DeviceDesc5200="KODAK ESP 5200 Series AiO"
+SDSDWIA.DeviceDesc5200.WIFI="KODAK ESP 5200 Series AiO WIFI"
+SDSDWIA.DeviceDesc3200="KODAK ESP 3200 Series AiO"
+SDSDWIA.DeviceDesc4100="ESPOffice 4100 Series AiO"
+SDSDWIA.DeviceDesc6100="ESPOffice 6100 Series AiO"
+SDSDWIA.DeviceDesc6100.WIFI="ESPOffice 6100 Series AiO WIFI"
+SDSDWIA.DeviceDesc7200="KODAK ESP 7200 Series AiO"
+SDSDWIA.DeviceDesc7200.WIFI="KODAK ESP 7200 Series AiO WIFI"
+SDSDWIA.DeviceDesc9200="KODAK ESP 9200 Series AiO"
+SDSDWIA.DeviceDesc9200.WIFI="KODAK ESP 9200 Series AiO WIFI"
+SDSDWIA.STIScanAppDesc="STI Scan button application"
+
+
+
+ScanButton.Desc="Scan Button"
+AppListButton.Desc="Scan Button"
+CustomEvent.Desc="PTP Event"
+
+Model="SDSD Composite USB"
+SDSDWIA.DeviceKey="SDSD Scanner"
+Language  = "en-US"
+
+[Strings.040A] ;Spanish (Spain, Traditional Sort)
+Msft="Microsoft"
+Mfg="Eastman Kodak"
+Location="Install Setup Disk"
+SDSDWIA.DeviceDesc3300="KODAK ESP-3 AiO"
+SDSDWIA.DeviceDesc5100="KODAK 5100 AiO"
+SDSDWIA.DeviceDesc5100.WIFI="KODAK 5100 AiO WIFI"
+SDSDWIA.DeviceDesc5300="KODAK 5300 AiO"
+SDSDWIA.DeviceDesc5500="KODAK 5500 AiO"
+SDSDWIA.DeviceDesc5000Mini="KODAK 5000 Series AiO"
+SDSDWIA.DeviceDescESP5="KODAK ESP 5 AiO"
+SDSDWIA.DeviceDescESP7="KODAK ESP 7 AiO"
+SDSDWIA.DeviceDescESP7.WIFI="KODAK ESP 7 AiO WIFI"
+SDSDWIA.DeviceDescESP9="KODAK ESP 9 AiO"
+SDSDWIA.DeviceDescESP9.WIFI="KODAK ESP 9 AiO WIFI"
+SDSDWIA.DeviceDesc5200="KODAK ESP 5200 Series AiO"
+SDSDWIA.DeviceDesc5200.WIFI="KODAK ESP 5200 Series AiO WIFI"
+SDSDWIA.DeviceDesc3200="KODAK ESP 3200 Series AiO"
+SDSDWIA.DeviceDesc4100="ESPOffice 4100 Series AiO"
+SDSDWIA.DeviceDesc6100="ESPOffice 6100 Series AiO"
+SDSDWIA.DeviceDesc6100.WIFI="ESPOffice 6100 Series AiO WIFI"
+SDSDWIA.DeviceDesc7200="KODAK ESP 7200 Series AiO"
+SDSDWIA.DeviceDesc7200.WIFI="KODAK ESP 7200 Series AiO WIFI"
+SDSDWIA.DeviceDesc9200="KODAK ESP 9200 Series AiO"
+SDSDWIA.DeviceDesc9200.WIFI="KODAK ESP 9200 Series AiO WIFI"
+SDSDWIA.STIScanAppDesc="STI Scan button application"
+
+
+
+ScanButton.Desc="Scan Button"
+AppListButton.Desc="Scan Button"
+CustomEvent.Desc="PTP Event"
+
+Model="SDSD Composite USB"
+SDSDWIA.DeviceKey="SDSD Scanner"
+
+Language  = "es-ES"
+
+[Strings.040C] ;French (France)
+Msft="Microsoft"
+Mfg="Eastman Kodak"
+Location="Install Setup Disk"
+SDSDWIA.DeviceDesc3300="KODAK ESP-3 AiO"
+SDSDWIA.DeviceDesc5100="KODAK 5100 AiO"
+SDSDWIA.DeviceDesc5100.WIFI="KODAK 5100 AiO WIFI"
+SDSDWIA.DeviceDesc5300="KODAK 5300 AiO"
+SDSDWIA.DeviceDesc5500="KODAK 5500 AiO"
+SDSDWIA.DeviceDesc5000Mini="KODAK 5000 Series AiO"
+SDSDWIA.DeviceDescESP5="KODAK ESP 5 AiO"
+SDSDWIA.DeviceDescESP7="KODAK ESP 7 AiO"
+SDSDWIA.DeviceDescESP7.WIFI="KODAK ESP 7 AiO WIFI"
+SDSDWIA.DeviceDescESP9="KODAK ESP 9 AiO"
+SDSDWIA.DeviceDescESP9.WIFI="KODAK ESP 9 AiO WIFI"
+SDSDWIA.DeviceDesc5200="KODAK ESP 5200 Series AiO"
+SDSDWIA.DeviceDesc5200.WIFI="KODAK ESP 5200 Series AiO WIFI"
+SDSDWIA.DeviceDesc3200="KODAK ESP 3200 Series AiO"
+SDSDWIA.DeviceDesc4100="ESPOffice 4100 Series AiO"
+SDSDWIA.DeviceDesc6100="ESPOffice 6100 Series AiO"
+SDSDWIA.DeviceDesc6100.WIFI="ESPOffice 6100 Series AiO WIFI"
+SDSDWIA.DeviceDesc7200="KODAK ESP 7200 Series AiO"
+SDSDWIA.DeviceDesc7200.WIFI="KODAK ESP 7200 Series AiO WIFI"
+SDSDWIA.DeviceDesc9200="KODAK ESP 9200 Series AiO"
+SDSDWIA.DeviceDesc9200.WIFI="KODAK ESP 9200 Series AiO WIFI"
+SDSDWIA.STIScanAppDesc="STI Scan button application"
+
+
+
+ScanButton.Desc="Scan Button"
+AppListButton.Desc="Scan Button"
+CustomEvent.Desc="PTP Event"
+
+Model="SDSD Composite USB"
+SDSDWIA.DeviceKey="SDSD Scanner"
+
+Language  = "fr-FR"
+
+[Strings.0410] ;Italian (Italy)
+Msft="Microsoft"
+Mfg="Eastman Kodak"
+Location="Install Setup Disk"
+SDSDWIA.DeviceDesc3300="KODAK ESP-3 AiO"
+SDSDWIA.DeviceDesc5100="KODAK 5100 AiO"
+SDSDWIA.DeviceDesc5100.WIFI="KODAK 5100 AiO WIFI"
+SDSDWIA.DeviceDesc5300="KODAK 5300 AiO"
+SDSDWIA.DeviceDesc5500="KODAK 5500 AiO"
+SDSDWIA.DeviceDesc5000Mini="KODAK 5000 Series AiO"
+SDSDWIA.DeviceDescESP5="KODAK ESP 5 AiO"
+SDSDWIA.DeviceDescESP7="KODAK ESP 7 AiO"
+SDSDWIA.DeviceDescESP7.WIFI="KODAK ESP 7 AiO WIFI"
+SDSDWIA.DeviceDescESP9="KODAK ESP 9 AiO"
+SDSDWIA.DeviceDescESP9.WIFI="KODAK ESP 9 AiO WIFI"
+SDSDWIA.DeviceDesc5200="KODAK ESP 5200 Series AiO"
+SDSDWIA.DeviceDesc5200.WIFI="KODAK ESP 5200 Series AiO WIFI"
+SDSDWIA.DeviceDesc3200="KODAK ESP 3200 Series AiO"
+SDSDWIA.DeviceDesc4100="ESPOffice 4100 Series AiO"
+SDSDWIA.DeviceDesc6100="ESPOffice 6100 Series AiO"
+SDSDWIA.DeviceDesc6100.WIFI="ESPOffice 6100 Series AiO WIFI"
+SDSDWIA.DeviceDesc7200="KODAK ESP 7200 Series AiO"
+SDSDWIA.DeviceDesc7200.WIFI="KODAK ESP 7200 Series AiO WIFI"
+SDSDWIA.DeviceDesc9200="KODAK ESP 9200 Series AiO"
+SDSDWIA.DeviceDesc9200.WIFI="KODAK ESP 9200 Series AiO WIFI"
+SDSDWIA.STIScanAppDesc="STI Scan button application"
+
+
+
+ScanButton.Desc="Scan Button"
+AppListButton.Desc="Scan Button"
+CustomEvent.Desc="PTP Event"
+
+Model="SDSD Composite USB"
+SDSDWIA.DeviceKey="SDSD Scanner"
+Language  = "it-IT"
+
+[Strings.0413] ;Dutch (Netherlands)
+Msft="Microsoft"
+Mfg="Eastman Kodak"
+Location="Install Setup Disk"
+SDSDWIA.DeviceDesc3300="KODAK ESP-3 AiO"
+SDSDWIA.DeviceDesc5100="KODAK 5100 AiO"
+SDSDWIA.DeviceDesc5100.WIFI="KODAK 5100 AiO WIFI"
+SDSDWIA.DeviceDesc5300="KODAK 5300 AiO"
+SDSDWIA.DeviceDesc5500="KODAK 5500 AiO"
+SDSDWIA.DeviceDesc5000Mini="KODAK 5000 Series AiO"
+SDSDWIA.DeviceDescESP5="KODAK ESP 5 AiO"
+SDSDWIA.DeviceDescESP7="KODAK ESP 7 AiO"
+SDSDWIA.DeviceDescESP7.WIFI="KODAK ESP 7 AiO WIFI"
+SDSDWIA.DeviceDescESP9="KODAK ESP 9 AiO"
+SDSDWIA.DeviceDescESP9.WIFI="KODAK ESP 9 AiO WIFI"
+SDSDWIA.DeviceDesc5200="KODAK ESP 5200 Series AiO"
+SDSDWIA.DeviceDesc5200.WIFI="KODAK ESP 5200 Series AiO WIFI"
+SDSDWIA.DeviceDesc3200="KODAK ESP 3200 Series AiO"
+SDSDWIA.DeviceDesc4100="ESPOffice 4100 Series AiO"
+SDSDWIA.DeviceDesc6100="ESPOffice 6100 Series AiO"
+SDSDWIA.DeviceDesc6100.WIFI="ESPOffice 6100 Series AiO WIFI"
+SDSDWIA.DeviceDesc7200="KODAK ESP 7200 Series AiO"
+SDSDWIA.DeviceDesc7200.WIFI="KODAK ESP 7200 Series AiO WIFI"
+SDSDWIA.DeviceDesc9200="KODAK ESP 9200 Series AiO"
+SDSDWIA.DeviceDesc9200.WIFI="KODAK ESP 9200 Series AiO WIFI"
+SDSDWIA.STIScanAppDesc="STI Scan button application"
+
+
+
+ScanButton.Desc="Scan Button"
+AppListButton.Desc="Scan Button"
+CustomEvent.Desc="PTP Event"
+
+Model="SDSD Composite USB"
+SDSDWIA.DeviceKey="SDSD Scanner"
+Language  = "nl-NL"
+
+[Strings.0416] ;Portuguese (Brazilian)
+Msft="Microsoft"
+Mfg="Eastman Kodak"
+Location="Install Setup Disk"
+SDSDWIA.DeviceDesc3300="KODAK ESP-3 AiO"
+SDSDWIA.DeviceDesc5100="KODAK 5100 AiO"
+SDSDWIA.DeviceDesc5100.WIFI="KODAK 5100 AiO WIFI"
+SDSDWIA.DeviceDesc5300="KODAK 5300 AiO"
+SDSDWIA.DeviceDesc5500="KODAK 5500 AiO"
+SDSDWIA.DeviceDesc5000Mini="KODAK 5000 Series AiO"
+SDSDWIA.DeviceDescESP5="KODAK ESP 5 AiO"
+SDSDWIA.DeviceDescESP7="KODAK ESP 7 AiO"
+SDSDWIA.DeviceDescESP7.WIFI="KODAK ESP 7 AiO WIFI"
+SDSDWIA.DeviceDescESP9="KODAK ESP 9 AiO"
+SDSDWIA.DeviceDescESP9.WIFI="KODAK ESP 9 AiO WIFI"
+SDSDWIA.DeviceDesc5200="KODAK ESP 5200 Series AiO"
+SDSDWIA.DeviceDesc5200.WIFI="KODAK ESP 5200 Series AiO WIFI"
+SDSDWIA.DeviceDesc3200="KODAK ESP 3200 Series AiO"
+SDSDWIA.DeviceDesc4100="ESPOffice 4100 Series AiO"
+SDSDWIA.DeviceDesc6100="ESPOffice 6100 Series AiO"
+SDSDWIA.DeviceDesc6100.WIFI="ESPOffice 6100 Series AiO WIFI"
+SDSDWIA.DeviceDesc7200="KODAK ESP 7200 Series AiO"
+SDSDWIA.DeviceDesc7200.WIFI="KODAK ESP 7200 Series AiO WIFI"
+SDSDWIA.DeviceDesc9200="KODAK ESP 9200 Series AiO"
+SDSDWIA.DeviceDesc9200.WIFI="KODAK ESP 9200 Series AiO WIFI"
+SDSDWIA.STIScanAppDesc="STI Scan button application"
+
+
+
+ScanButton.Desc="Scan Button"
+AppListButton.Desc="Scan Button"
+CustomEvent.Desc="PTP Event"
+
+Model="SDSD Composite USB"
+SDSDWIA.DeviceKey="SDSD Scanner"
+Language  = "pt-BR"
+
+[Strings.0809] ;English (United Kingdom)
+Msft="Microsoft"
+Mfg="Eastman Kodak"
+Location="Install Setup Disk"
+SDSDWIA.DeviceDesc3300="KODAK ESP-3 AiO"
+SDSDWIA.DeviceDesc5100="KODAK 5100 AiO"
+SDSDWIA.DeviceDesc5100.WIFI="KODAK 5100 AiO WIFI"
+SDSDWIA.DeviceDesc5300="KODAK 5300 AiO"
+SDSDWIA.DeviceDesc5500="KODAK 5500 AiO"
+SDSDWIA.DeviceDesc5000Mini="KODAK 5000 Series AiO"
+SDSDWIA.DeviceDescESP5="KODAK ESP 5 AiO"
+SDSDWIA.DeviceDescESP7="KODAK ESP 7 AiO"
+SDSDWIA.DeviceDescESP7.WIFI="KODAK ESP 7 AiO WIFI"
+SDSDWIA.DeviceDescESP9="KODAK ESP 9 AiO"
+SDSDWIA.DeviceDescESP9.WIFI="KODAK ESP 9 AiO WIFI"
+SDSDWIA.DeviceDesc5200="KODAK ESP 5200 Series AiO"
+SDSDWIA.DeviceDesc5200.WIFI="KODAK ESP 5200 Series AiO WIFI"
+SDSDWIA.DeviceDesc3200="KODAK ESP 3200 Series AiO"
+SDSDWIA.DeviceDesc4100="ESPOffice 4100 Series AiO"
+SDSDWIA.DeviceDesc6100="ESPOffice 6100 Series AiO"
+SDSDWIA.DeviceDesc6100.WIFI="ESPOffice 6100 Series AiO WIFI"
+SDSDWIA.DeviceDesc7200="KODAK ESP 7200 Series AiO"
+SDSDWIA.DeviceDesc7200.WIFI="KODAK ESP 7200 Series AiO WIFI"
+SDSDWIA.DeviceDesc9200="KODAK ESP 9200 Series AiO"
+SDSDWIA.DeviceDesc9200.WIFI="KODAK ESP 9200 Series AiO WIFI"
+SDSDWIA.STIScanAppDesc="STI Scan button application"
+
+
+
+ScanButton.Desc="Scan Button"
+AppListButton.Desc="Scan Button"
+CustomEvent.Desc="PTP Event"
+
+Model="SDSD Composite USB"
+SDSDWIA.DeviceKey="SDSD Scanner"
+Language  = "en-GB"
+
+[Strings.0816] ;Portuguese (Portugal)
+Msft="Microsoft"
+Mfg="Eastman Kodak"
+Location="Install Setup Disk"
+SDSDWIA.DeviceDesc3300="KODAK ESP-3 AiO"
+SDSDWIA.DeviceDesc5100="KODAK 5100 AiO"
+SDSDWIA.DeviceDesc5100.WIFI="KODAK 5100 AiO WIFI"
+SDSDWIA.DeviceDesc5300="KODAK 5300 AiO"
+SDSDWIA.DeviceDesc5500="KODAK 5500 AiO"
+SDSDWIA.DeviceDesc5000Mini="KODAK 5000 Series AiO"
+SDSDWIA.DeviceDescESP5="KODAK ESP 5 AiO"
+SDSDWIA.DeviceDescESP7="KODAK ESP 7 AiO"
+SDSDWIA.DeviceDescESP7.WIFI="KODAK ESP 7 AiO WIFI"
+SDSDWIA.DeviceDescESP9="KODAK ESP 9 AiO"
+SDSDWIA.DeviceDescESP9.WIFI="KODAK ESP 9 AiO WIFI"
+SDSDWIA.DeviceDesc5200="KODAK ESP 5200 Series AiO"
+SDSDWIA.DeviceDesc5200.WIFI="KODAK ESP 5200 Series AiO WIFI"
+SDSDWIA.DeviceDesc3200="KODAK ESP 3200 Series AiO"
+SDSDWIA.DeviceDesc4100="ESPOffice 4100 Series AiO"
+SDSDWIA.DeviceDesc6100="ESPOffice 6100 Series AiO"
+SDSDWIA.DeviceDesc6100.WIFI="ESPOffice 6100 Series AiO WIFI"
+SDSDWIA.DeviceDesc7200="KODAK ESP 7200 Series AiO"
+SDSDWIA.DeviceDesc7200.WIFI="KODAK ESP 7200 Series AiO WIFI"
+SDSDWIA.DeviceDesc9200="KODAK ESP 9200 Series AiO"
+SDSDWIA.DeviceDesc9200.WIFI="KODAK ESP 9200 Series AiO WIFI"
+SDSDWIA.STIScanAppDesc="STI Scan button application"
+
+
+ScanButton.Desc="Scan Button"
+AppListButton.Desc="Scan Button"
+CustomEvent.Desc="PTP Event"
+
+Model="SDSD Composite USB"
+SDSDWIA.DeviceKey="SDSD Scanner"
+Language  = "pt-BR"
+
+[Strings.0C0A] ;Spanish (Spain, International Sort)
+Msft="Microsoft"
+Mfg="Eastman Kodak"
+Location="Install Setup Disk"
+SDSDWIA.DeviceDesc3300="KODAK ESP-3 AiO"
+SDSDWIA.DeviceDesc5100="KODAK 5100 AiO"
+SDSDWIA.DeviceDesc5100.WIFI="KODAK 5100 AiO WIFI"
+SDSDWIA.DeviceDesc5300="KODAK 5300 AiO"
+SDSDWIA.DeviceDesc5500="KODAK 5500 AiO"
+SDSDWIA.DeviceDesc5000Mini="KODAK 5000 Series AiO"
+SDSDWIA.DeviceDescESP5="KODAK ESP 5 AiO"
+SDSDWIA.DeviceDescESP7="KODAK ESP 7 AiO"
+SDSDWIA.DeviceDescESP7.WIFI="KODAK ESP 7 AiO WIFI"
+SDSDWIA.DeviceDescESP9="KODAK ESP 9 AiO"
+SDSDWIA.DeviceDescESP9.WIFI="KODAK ESP 9 AiO WIFI"
+SDSDWIA.DeviceDesc5200="KODAK ESP 5200 Series AiO"
+SDSDWIA.DeviceDesc5200.WIFI="KODAK ESP 5200 Series AiO WIFI"
+SDSDWIA.DeviceDesc3200="KODAK ESP 3200 Series AiO"
+SDSDWIA.DeviceDesc4100="ESPOffice 4100 Series AiO"
+SDSDWIA.DeviceDesc6100="ESPOffice 6100 Series AiO"
+SDSDWIA.DeviceDesc6100.WIFI="ESPOffice 6100 Series AiO WIFI"
+SDSDWIA.DeviceDesc7200="KODAK ESP 7200 Series AiO"
+SDSDWIA.DeviceDesc7200.WIFI="KODAK ESP 7200 Series AiO WIFI"
+SDSDWIA.DeviceDesc9200="KODAK ESP 9200 Series AiO"
+SDSDWIA.DeviceDesc9200.WIFI="KODAK ESP 9200 Series AiO WIFI"
+SDSDWIA.STIScanAppDesc="STI Scan button application"
+
+
+
+ScanButton.Desc="Scan Button"
+AppListButton.Desc="Scan Button"
+CustomEvent.Desc="PTP Event"
+
+Model="SDSD Composite USB"
+SDSDWIA.DeviceKey="SDSD Scanner"
+Language  = "es-ES"
+
+[Strings.0C0C] ;French (Canada)
+Msft="Microsoft"
+Mfg="Eastman Kodak"
+Location="Install Setup Disk"
+SDSDWIA.DeviceDesc3300="KODAK ESP-3 AiO"
+SDSDWIA.DeviceDesc5100="KODAK 5100 AiO"
+SDSDWIA.DeviceDesc5100.WIFI="KODAK 5100 AiO WIFI"
+SDSDWIA.DeviceDesc5300="KODAK 5300 AiO"
+SDSDWIA.DeviceDesc5500="KODAK 5500 AiO"
+SDSDWIA.DeviceDesc5000Mini="KODAK 5000 Series AiO"
+SDSDWIA.DeviceDescESP5="KODAK ESP 5 AiO"
+SDSDWIA.DeviceDescESP7="KODAK ESP 7 AiO"
+SDSDWIA.DeviceDescESP7.WIFI="KODAK ESP 7 AiO WIFI"
+SDSDWIA.DeviceDescESP9="KODAK ESP 9 AiO"
+SDSDWIA.DeviceDescESP9.WIFI="KODAK ESP 9 AiO WIFI"
+SDSDWIA.DeviceDesc5200="KODAK ESP 5200 Series AiO"
+SDSDWIA.DeviceDesc5200.WIFI="KODAK ESP 5200 Series AiO WIFI"
+SDSDWIA.DeviceDesc3200="KODAK ESP 3200 Series AiO"
+SDSDWIA.DeviceDesc4100="ESPOffice 4100 Series AiO"
+SDSDWIA.DeviceDesc6100="ESPOffice 6100 Series AiO"
+SDSDWIA.DeviceDesc6100.WIFI="ESPOffice 6100 Series AiO WIFI"
+SDSDWIA.DeviceDesc7200="KODAK ESP 7200 Series AiO"
+SDSDWIA.DeviceDesc7200.WIFI="KODAK ESP 7200 Series AiO WIFI"
+SDSDWIA.DeviceDesc9200="KODAK ESP 9200 Series AiO"
+SDSDWIA.DeviceDesc9200.WIFI="KODAK ESP 9200 Series AiO WIFI"
+SDSDWIA.STIScanAppDesc="STI Scan button application"
+
+
+ScanButton.Desc="Scan Button"
+AppListButton.Desc="Scan Button"
+CustomEvent.Desc="PTP Event"
+
+Model="SDSD Composite USB"
+SDSDWIA.DeviceKey="SDSD Scanner"
+
+Language  = "fr-FR"
+
+
+[Strings.0814] ;Norwegian (Nynorsk)
+Msft="Microsoft"
+Mfg="Eastman Kodak"
+Location="Install Setup Disk"
+SDSDWIA.DeviceDesc3300="KODAK ESP-3 AiO"
+SDSDWIA.DeviceDesc5100="KODAK 5100 AiO"
+SDSDWIA.DeviceDesc5100.WIFI="KODAK 5100 AiO WIFI"
+SDSDWIA.DeviceDesc5300="KODAK 5300 AiO"
+SDSDWIA.DeviceDesc5500="KODAK 5500 AiO"
+SDSDWIA.DeviceDesc5000Mini="KODAK 5000 Series AiO"
+SDSDWIA.DeviceDescESP5="KODAK ESP 5 AiO"
+SDSDWIA.DeviceDescESP7="KODAK ESP 7 AiO"
+SDSDWIA.DeviceDescESP7.WIFI="KODAK ESP 7 AiO WIFI"
+SDSDWIA.DeviceDescESP9="KODAK ESP 9 AiO"
+SDSDWIA.DeviceDescESP9.WIFI="KODAK ESP 9 AiO WIFI"
+SDSDWIA.DeviceDesc5200="KODAK ESP 5200 Series AiO"
+SDSDWIA.DeviceDesc5200.WIFI="KODAK ESP 5200 Series AiO WIFI"
+SDSDWIA.DeviceDesc3200="KODAK ESP 3200 Series AiO"
+SDSDWIA.DeviceDesc4100="ESPOffice 4100 Series AiO"
+SDSDWIA.DeviceDesc6100="ESPOffice 6100 Series AiO"
+SDSDWIA.DeviceDesc6100.WIFI="ESPOffice 6100 Series AiO WIFI"
+SDSDWIA.DeviceDesc7200="KODAK ESP 7200 Series AiO"
+SDSDWIA.DeviceDesc7200.WIFI="KODAK ESP 7200 Series AiO WIFI"
+SDSDWIA.DeviceDesc9200="KODAK ESP 9200 Series AiO"
+SDSDWIA.DeviceDesc9200.WIFI="KODAK ESP 9200 Series AiO WIFI"
+SDSDWIA.STIScanAppDesc="STI Scan button application"
+
+
+ScanButton.Desc="Scan Button"
+AppListButton.Desc="Scan Button"
+CustomEvent.Desc="PTP Event"
+
+Model="SDSD Composite USB"
+SDSDWIA.DeviceKey="SDSD Scanner"
+Language  = "no-no"
+
+
+[Strings.0414] ;Norwegian (Bokmal)
+Msft="Microsoft"
+Mfg="Eastman Kodak"
+Location="Install Setup Disk"
+SDSDWIA.DeviceDesc3300="KODAK ESP-3 AiO"
+SDSDWIA.DeviceDesc5100="KODAK 5100 AiO"
+SDSDWIA.DeviceDesc5100.WIFI="KODAK 5100 AiO WIFI"
+SDSDWIA.DeviceDesc5300="KODAK 5300 AiO"
+SDSDWIA.DeviceDesc5500="KODAK 5500 AiO"
+SDSDWIA.DeviceDesc5000Mini="KODAK 5000 Series AiO"
+SDSDWIA.DeviceDescESP5="KODAK ESP 5 AiO"
+SDSDWIA.DeviceDescESP7="KODAK ESP 7 AiO"
+SDSDWIA.DeviceDescESP7.WIFI="KODAK ESP 7 AiO WIFI"
+SDSDWIA.DeviceDescESP9="KODAK ESP 9 AiO"
+SDSDWIA.DeviceDescESP9.WIFI="KODAK ESP 9 AiO WIFI"
+SDSDWIA.DeviceDesc5200="KODAK ESP 5200 Series AiO"
+SDSDWIA.DeviceDesc5200.WIFI="KODAK ESP 5200 Series AiO WIFI"
+SDSDWIA.DeviceDesc3200="KODAK ESP 3200 Series AiO"
+SDSDWIA.DeviceDesc4100="ESPOffice 4100 Series AiO"
+SDSDWIA.DeviceDesc6100="ESPOffice 6100 Series AiO"
+SDSDWIA.DeviceDesc6100.WIFI="ESPOffice 6100 Series AiO WIFI"
+SDSDWIA.DeviceDesc7200="KODAK ESP 7200 Series AiO"
+SDSDWIA.DeviceDesc7200.WIFI="KODAK ESP 7200 Series AiO WIFI"
+SDSDWIA.DeviceDesc9200="KODAK ESP 9200 Series AiO"
+SDSDWIA.DeviceDesc9200.WIFI="KODAK ESP 9200 Series AiO WIFI"
+SDSDWIA.STIScanAppDesc="STI Scan button application"
+
+
+
+ScanButton.Desc="Scan Button"
+AppListButton.Desc="Scan Button"
+CustomEvent.Desc="PTP Event"
+
+Model="SDSD Composite USB"
+SDSDWIA.DeviceKey="SDSD Scanner"
+Language  = "no-no"
+
+
+[Strings.081D] ;Swedish (Finland)
+Msft="Microsoft"
+Mfg="Eastman Kodak"
+Location="Install Setup Disk"
+SDSDWIA.DeviceDesc3300="KODAK ESP-3 AiO"
+SDSDWIA.DeviceDesc5100="KODAK 5100 AiO"
+SDSDWIA.DeviceDesc5100.WIFI="KODAK 5100 AiO WIFI"
+SDSDWIA.DeviceDesc5300="KODAK 5300 AiO"
+SDSDWIA.DeviceDesc5500="KODAK 5500 AiO"
+SDSDWIA.DeviceDesc5000Mini="KODAK 5000 Series AiO"
+SDSDWIA.DeviceDescESP5="KODAK ESP 5 AiO"
+SDSDWIA.DeviceDescESP7="KODAK ESP 7 AiO"
+SDSDWIA.DeviceDescESP7.WIFI="KODAK ESP 7 AiO WIFI"
+SDSDWIA.DeviceDescESP9="KODAK ESP 9 AiO"
+SDSDWIA.DeviceDescESP9.WIFI="KODAK ESP 9 AiO WIFI"
+SDSDWIA.DeviceDesc5200="KODAK ESP 5200 Series AiO"
+SDSDWIA.DeviceDesc5200.WIFI="KODAK ESP 5200 Series AiO WIFI"
+SDSDWIA.DeviceDesc3200="KODAK ESP 3200 Series AiO"
+SDSDWIA.DeviceDesc4100="ESPOffice 4100 Series AiO"
+SDSDWIA.DeviceDesc6100="ESPOffice 6100 Series AiO"
+SDSDWIA.DeviceDesc6100.WIFI="ESPOffice 6100 Series AiO WIFI"
+SDSDWIA.DeviceDesc7200="KODAK ESP 7200 Series AiO"
+SDSDWIA.DeviceDesc7200.WIFI="KODAK ESP 7200 Series AiO WIFI"
+SDSDWIA.DeviceDesc9200="KODAK ESP 9200 Series AiO"
+SDSDWIA.DeviceDesc9200.WIFI="KODAK ESP 9200 Series AiO WIFI"
+SDSDWIA.STIScanAppDesc="STI Scan button application"
+
+
+
+ScanButton.Desc="Scan Button"
+AppListButton.Desc="Scan Button"
+CustomEvent.Desc="PTP Event"
+
+Model="SDSD Composite USB"
+SDSDWIA.DeviceKey="SDSD Scanner"
+Language  = "sv-se"
+
+[Strings.040B] ;Finnish
+Msft="Microsoft"
+Mfg="Eastman Kodak"
+Location="Install Setup Disk"
+SDSDWIA.DeviceDesc3300="KODAK ESP-3 AiO"
+SDSDWIA.DeviceDesc5100="KODAK 5100 AiO"
+SDSDWIA.DeviceDesc5100.WIFI="KODAK 5100 AiO WIFI"
+SDSDWIA.DeviceDesc5300="KODAK 5300 AiO"
+SDSDWIA.DeviceDesc5500="KODAK 5500 AiO"
+SDSDWIA.DeviceDesc5000Mini="KODAK 5000 Series AiO"
+SDSDWIA.DeviceDescESP5="KODAK ESP 5 AiO"
+SDSDWIA.DeviceDescESP7="KODAK ESP 7 AiO"
+SDSDWIA.DeviceDescESP7.WIFI="KODAK ESP 7 AiO WIFI"
+SDSDWIA.DeviceDescESP9="KODAK ESP 9 AiO"
+SDSDWIA.DeviceDescESP9.WIFI="KODAK ESP 9 AiO WIFI"
+SDSDWIA.DeviceDesc5200="KODAK ESP 5200 Series AiO"
+SDSDWIA.DeviceDesc5200.WIFI="KODAK ESP 5200 Series AiO WIFI"
+SDSDWIA.DeviceDesc3200="KODAK ESP 3200 Series AiO"
+SDSDWIA.DeviceDesc4100="ESPOffice 4100 Series AiO"
+SDSDWIA.DeviceDesc6100="ESPOffice 6100 Series AiO"
+SDSDWIA.DeviceDesc6100.WIFI="ESPOffice 6100 Series AiO WIFI"
+SDSDWIA.DeviceDesc7200="KODAK ESP 7200 Series AiO"
+SDSDWIA.DeviceDesc7200.WIFI="KODAK ESP 7200 Series AiO WIFI"
+SDSDWIA.DeviceDesc9200="KODAK ESP 9200 Series AiO"
+SDSDWIA.DeviceDesc9200.WIFI="KODAK ESP 9200 Series AiO WIFI"
+SDSDWIA.STIScanAppDesc="STI Scan button application"
+
+
+
+ScanButton.Desc="Scan Button"
+AppListButton.Desc="Scan Button"
+CustomEvent.Desc="PTP Event"
+
+Model="SDSD Composite USB"
+SDSDWIA.DeviceKey="SDSD Scanner"
+Language  = "fi"
+
+[Strings.0406] ;Danish
+Msft="Microsoft"
+Mfg="Eastman Kodak"
+Location="Install Setup Disk"
+SDSDWIA.DeviceDesc3300="KODAK ESP-3 AiO"
+SDSDWIA.DeviceDesc5100="KODAK 5100 AiO"
+SDSDWIA.DeviceDesc5100.WIFI="KODAK 5100 AiO WIFI"
+SDSDWIA.DeviceDesc5300="KODAK 5300 AiO"
+SDSDWIA.DeviceDesc5500="KODAK 5500 AiO"
+SDSDWIA.DeviceDesc5000Mini="KODAK 5000 Series AiO"
+SDSDWIA.DeviceDescESP5="KODAK ESP 5 AiO"
+SDSDWIA.DeviceDescESP7="KODAK ESP 7 AiO"
+SDSDWIA.DeviceDescESP7.WIFI="KODAK ESP 7 AiO WIFI"
+SDSDWIA.DeviceDescESP9="KODAK ESP 9 AiO"
+SDSDWIA.DeviceDescESP9.WIFI="KODAK ESP 9 AiO WIFI"
+SDSDWIA.DeviceDesc5200="KODAK ESP 5200 Series AiO"
+SDSDWIA.DeviceDesc5200.WIFI="KODAK ESP 5200 Series AiO WIFI"
+SDSDWIA.DeviceDesc3200="KODAK ESP 3200 Series AiO"
+SDSDWIA.DeviceDesc4100="ESPOffice 4100 Series AiO"
+SDSDWIA.DeviceDesc6100="ESPOffice 6100 Series AiO"
+SDSDWIA.DeviceDesc6100.WIFI="ESPOffice 6100 Series AiO WIFI"
+SDSDWIA.DeviceDesc7200="KODAK ESP 7200 Series AiO"
+SDSDWIA.DeviceDesc7200.WIFI="KODAK ESP 7200 Series AiO WIFI"
+SDSDWIA.DeviceDesc9200="KODAK ESP 9200 Series AiO"
+SDSDWIA.DeviceDesc9200.WIFI="KODAK ESP 9200 Series AiO WIFI"
+SDSDWIA.STIScanAppDesc="STI Scan button application"
+
+
+
+ScanButton.Desc="Scan Button"
+AppListButton.Desc="Scan Button"
+CustomEvent.Desc="PTP Event"
+
+Model="SDSD Composite USB"
+SDSDWIA.DeviceKey="SDSD Scanner"
+Language  = "da"

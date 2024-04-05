@@ -1,0 +1,21 @@
+//! **************************************************************************
+// Written by: Map P.68d on Wed May 13 07:23:32 2015
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "Sal<0>" LOCATE = SITE "M5" LEVEL 1;
+COMP "Sal<1>" LOCATE = SITE "M11" LEVEL 1;
+COMP "Sal<2>" LOCATE = SITE "P7" LEVEL 1;
+COMP "Sal<3>" LOCATE = SITE "P6" LEVEL 1;
+COMP "Sal<4>" LOCATE = SITE "N5" LEVEL 1;
+COMP "vecA<0>" LOCATE = SITE "P11" LEVEL 1;
+COMP "vecA<1>" LOCATE = SITE "L3" LEVEL 1;
+COMP "vecA<2>" LOCATE = SITE "K3" LEVEL 1;
+COMP "vecA<3>" LOCATE = SITE "B4" LEVEL 1;
+COMP "vecB<0>" LOCATE = SITE "G3" LEVEL 1;
+COMP "vecB<1>" LOCATE = SITE "F3" LEVEL 1;
+COMP "vecB<2>" LOCATE = SITE "E2" LEVEL 1;
+COMP "vecB<3>" LOCATE = SITE "N3" LEVEL 1;
+COMP "Cin" LOCATE = SITE "A7" LEVEL 1;
+SCHEMATIC END;
+

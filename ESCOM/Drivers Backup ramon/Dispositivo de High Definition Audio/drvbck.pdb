@@ -1,0 +1,13 @@
+[driver backup information]
+driverdesc=Dispositivo de High Definition Audio
+infpath=hdaudio.inf                                                                     
+infsection=HdAudModel
+MatchingDeviceId=HDAUDIO\FUNC_01&VEN_10EC&DEV_0272&SUBSYS_102802F4&REV_1000
+driverversion=6.1.7601.17514
+driverdate=2010-11-19
+providername=Microsoft
+class=Sound, video and game controllers
+filenum=2
+signature=Windows Vista
+needrestore=no
+backuptime=sábado, marzo 28, 2015

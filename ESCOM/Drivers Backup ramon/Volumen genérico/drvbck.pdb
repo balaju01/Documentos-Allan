@@ -1,0 +1,13 @@
+[driver backup information]
+driverdesc=Volumen genérico
+infpath=volume.inf                                                                      
+infsection=volume_install.NTx86
+MatchingDeviceId=STORAGE\Volume
+driverversion=6.1.7601.17514
+driverdate=2006-06-21
+providername=Microsoft
+class=Storage Volumes
+filenum=2
+signature=Windows Vista
+needrestore=no
+backuptime=sábado, marzo 28, 2015

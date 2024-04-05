@@ -1,0 +1,13 @@
+[driver backup information]
+driverdesc=Canal IDE
+infpath=mshdc.inf                                                                       
+infsection=atapi_Inst
+MatchingDeviceId=Intel-2850
+driverversion=6.1.7601.18231
+driverdate=2006-06-21
+providername=Microsoft
+class=IDE ATA/ATAPI controllers
+filenum=3
+signature=Windows Vista
+needrestore=no
+backuptime=sábado, marzo 28, 2015

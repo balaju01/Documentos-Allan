@@ -1,0 +1,13 @@
+[driver backup information]
+driverdesc=Unidad de disco
+infpath=disk.inf                                                                        
+infsection=disk_install.NT
+MatchingDeviceId=IDE\DiskHitachi_HTS542516K9SA00_________________BBCOC3BP
+driverversion=6.1.7600.16385
+driverdate=2006-06-21
+providername=Microsoft
+class=Disk drives
+filenum=2
+signature=Windows Vista
+needrestore=no
+backuptime=sábado, marzo 28, 2015

@@ -1,0 +1,13 @@
+[driver backup information]
+driverdesc=Administrador de volúmenes
+infpath=machine.inf                                                                     
+infsection=Volmgr
+MatchingDeviceId=ROOT\VOLMGR
+driverversion=6.1.7601.17514
+driverdate=2006-06-21
+providername=Microsoft
+class=System devices
+filenum=2
+signature=Windows Vista
+needrestore=no
+backuptime=sábado, marzo 28, 2015

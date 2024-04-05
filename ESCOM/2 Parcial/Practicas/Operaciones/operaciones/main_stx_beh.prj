@@ -1,0 +1,3 @@
+vhdl isim_temp "sum.vhd"
+vhdl isim_temp "pack.vhd"
+vhdl isim_temp "main.vhd"

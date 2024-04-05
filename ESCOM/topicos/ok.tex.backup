@@ -1,0 +1,14 @@
+\documentclass[a4paper,12pt]{article}
+
+
+%opening
+\title{Esther Orosco}
+\author{Allan Ulises Zepeda Ibarra}
+
+\begin{document}
+
+\maketitle
+Naci\'o en San Isidro, Chihuahua, M\'exico. Recientemente nombrado \textquotedblleft Pascual Orozco, Pueblo Heroico\textquotedblright.
+A los 17 a\~nos egres\'o de la Escuela Normal del Estado de Chihuahua. 
+Después curs\'o la Normal Superior en la Escuela Manuel E. Medrano de Chihuahua, en el \'area de Biolog\'{\i}a. Trabajó en el Instituto Mexicano del Seguro Social en el Laboratorio de Análisis Clínicos.  Obtuvo la Maestría y el Doctorado en Ciencias en Biología Celular en el Centro de Investigación y de Estudios Avanzados del Instituto Politécnico Nacional. Fundó y fue Directora General del Instituto de Ciencia y Tecnología del D.F. Fue Rectora de la Universidad Autónoma de la Ciudad de México.  Es Investigadora Emérita del CINVESTAV IPN e Investigadora Nacional Emérita por el SNI.  Su trabajo de investigación se ha centrado principalmente en el estudio de los genes y las proteínas que participan en la virulencia de la amiba (Entamoeba histoloytica).
+\end{document}

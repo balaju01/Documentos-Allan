@@ -1,0 +1,13 @@
+[driver backup information]
+driverdesc=Monitor PnP genérico
+infpath=monitor.inf                                                                     
+infsection=PnPMonitor.Install
+MatchingDeviceId=Monitor\BOE0587
+driverversion=6.1.7600.16385
+driverdate=2006-06-21
+providername=Microsoft
+class=Monitors
+filenum=2
+signature=All Windows Operating Systems
+needrestore=no
+backuptime=sábado, marzo 28, 2015

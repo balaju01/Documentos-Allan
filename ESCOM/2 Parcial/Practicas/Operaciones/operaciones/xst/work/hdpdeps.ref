@@ -1,0 +1,18 @@
+V3 10
+FL C:/Users/Nancy/Documents/Xilinx/2doParcial/alu/main.vhd 2015/05/27.08:01:28 O.40d
+EN work/main 1432731714 \
+      FL C:/Users/Nancy/Documents/Xilinx/2doParcial/alu/main.vhd \
+      PB ieee/std_logic_1164 1296775758 PH work/pack 1432731711
+AR work/main/Behavioral 1432731715 \
+      FL C:/Users/Nancy/Documents/Xilinx/2doParcial/alu/main.vhd EN work/main 1432731714 \
+      CP sumador
+FL C:/Users/Nancy/Documents/Xilinx/2doParcial/alu/pack.vhd 2015/05/13.07:50:34 O.40d
+PH work/pack 1432731711 \
+      FL C:/Users/Nancy/Documents/Xilinx/2doParcial/alu/pack.vhd \
+      PB ieee/std_logic_1164 1296775758 CD sumador
+FL C:/Users/Nancy/Documents/Xilinx/2doParcial/alu/sum.vhd 2015/05/13.07:50:34 O.40d
+EN work/sumador 1432731712 \
+      FL C:/Users/Nancy/Documents/Xilinx/2doParcial/alu/sum.vhd \
+      PB ieee/std_logic_1164 1296775758
+AR work/sumador/Behavioral 1432731713 \
+      FL C:/Users/Nancy/Documents/Xilinx/2doParcial/alu/sum.vhd EN work/sumador 1432731712

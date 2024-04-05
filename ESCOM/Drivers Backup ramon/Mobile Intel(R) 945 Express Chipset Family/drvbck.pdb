@@ -1,0 +1,13 @@
+[driver backup information]
+driverdesc=Mobile Intel(R) 945 Express Chipset Family
+infpath=oem13.inf                                                                       
+infsection=i945GM1
+MatchingDeviceId=PCI\VEN_8086&DEV_27A6&SUBSYS_02F41028&REV_03
+driverversion=8.15.10.1930
+driverdate=2009-09-23
+providername=Intel Corporation
+class=Display adapters
+filenum=57
+signature=Windows Vista
+needrestore=yes
+backuptime=sábado, marzo 28, 2015

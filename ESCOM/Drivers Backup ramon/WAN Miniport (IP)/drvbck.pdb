@@ -1,0 +1,13 @@
+[driver backup information]
+driverdesc=WAN Miniport (IP)
+infpath=netrasa.inf                                                                     
+infsection=Ndi-Mp-Ip
+MatchingDeviceId=ms_ndiswanip
+driverversion=6.1.7601.17514
+driverdate=2006-06-21
+providername=Microsoft
+class=Network adapters
+filenum=1
+signature=Windows Vista
+needrestore=no
+backuptime=sábado, marzo 28, 2015

@@ -1,0 +1,30 @@
+V3 25
+FL C:/Users/jonnyTest/colector/clock.vhd 2015/06/10.07:24:55 P.68d
+EN work/vclk 1433948817 FL C:/Users/jonnyTest/colector/clock.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/STD_LOGIC_UNSIGNED 1370735609
+AR work/vclk/retardo 1433948818 \
+      FL C:/Users/jonnyTest/colector/clock.vhd EN work/vclk 1433948817
+FL C:/Users/jonnyTest/colector/FFJK.vhd 2015/06/03.08:18:41 P.68d
+EN work/FFJK 1433948815 FL C:/Users/jonnyTest/colector/FFJK.vhd \
+      PB ieee/std_logic_1164 1370735607
+AR work/FFJK/prosJK 1433948816 \
+      FL C:/Users/jonnyTest/colector/FFJK.vhd EN work/FFJK 1433948815
+FL C:/Users/jonnyTest/colector/main.vhd 2015/06/10.10:06:47 P.68d
+EN work/main 1433948823 FL C:/Users/jonnyTest/colector/main.vhd \
+      PB ieee/std_logic_1164 1370735607 PH work/pack 1433948814
+AR work/main/acum 1433948824 \
+      FL C:/Users/jonnyTest/colector/main.vhd EN work/main 1433948823 CP vclk \
+      CP reg CP suma
+FL C:/Users/jonnyTest/colector/pack.vhd 2015/06/09.17:09:19 P.68d
+PH work/pack 1433948814 FL C:/Users/jonnyTest/colector/pack.vhd \
+      PB ieee/std_logic_1164 1370735607 CD FFJK CD suma CD Reg CD vclk
+FL C:/Users/jonnyTest/colector/Reg.vhd 2015/06/09.17:08:36 P.68d
+EN work/Reg 1433948819 FL C:/Users/jonnyTest/colector/Reg.vhd \
+      PB ieee/std_logic_1164 1370735607 PH work/pack 1433948814
+AR work/Reg/Behavioral 1433948820 \
+      FL C:/Users/jonnyTest/colector/Reg.vhd EN work/Reg 1433948819 CP FFJK
+FL C:/Users/jonnyTest/colector/suma.vhd 2015/06/09.07:19:44 P.68d
+EN work/suma 1433948821 FL C:/Users/jonnyTest/colector/suma.vhd \
+      PB ieee/std_logic_1164 1370735607
+AR work/suma/Behavioral 1433948822 \
+      FL C:/Users/jonnyTest/colector/suma.vhd EN work/suma 1433948821

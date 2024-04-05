@@ -1,0 +1,250 @@
+;*****************************************************************************
+;
+; s0016ndis.inf   -- Install the Sony Ericsson Device 0016 USB Ethernet Emulation (NDIS)
+;
+; Copyright (c) 1997-2008 MCCI Corporation
+;
+; MCCI is a registered trademark of MCCI Corporation.
+;
+; NOTICE: This software is licensed, not sold.  Any modification of this
+; inf file to change the reference to an operating system or to change the
+; reference to a device is not permitted unless authorized in writing by
+; MCCI Corporation.
+;
+;*****************************************************************************
+
+[version]
+signature="$WINDOWS NT$"
+Class=Net
+ClassGUID={4D36E972-E325-11CE-BFC1-08002BE10318}
+Provider=%Provider%
+DriverVer=04/24/2008,4.44.2.0
+Compatible = 1
+CatalogFile=s0016unic.cat
+
+[ControlFlags]
+ExcludeFromSelect = *
+
+;-----------------------------------------------------------------------------
+; Specify target paths...
+;-----------------------------------------------------------------------------
+[DestinationDirs]
+DefaultDestDir = 11           ; LDID_SYS
+sed0016.ndi3.CopyFiles = 11  ; LDID_SYS
+sed0016.ndi5.CopyFiles = 11  ; LDID_SYS
+sed0016.ndi3.nt.CopyFiles = 12
+sed0016.ndi5.nt.CopyFiles = 12
+
+;-----------------------------------------------------------------------------
+; Specify the install disks.  
+;-----------------------------------------------------------------------------
+[SourceDisksNames.x86]
+; diskid = description[, [tagfile] [, <unused>, subdir]]
+1=%DiskString%,"s0016nd5.sys",,\i386
+
+[SourceDisksNames.amd64]
+; diskid = description[, [tagfile] [, <unused>, subdir]]
+1=%DiskString%,"s0016nd5.sys",,\amd64
+
+[SourceDisksFiles]
+s0016nd3.sys=1
+s0016nd5.sys=1
+
+;-----------------------------------------------------------------------------
+; Table of Contents:  manufacturer, then devices.
+;-----------------------------------------------------------------------------
+[Manufacturer]
+%sed0016%=sed0016,NTamd64
+
+;-----------------------------------------------------------------------------
+; The ndis devices
+;-----------------------------------------------------------------------------
+[sed0016]
+%Ndis5Desc% = sed0016.ndi5, s0016CR\{67011CEA-2AEB-4add-B69C-84087D1F3021}
+%Ndis3Desc% = sed0016.ndi3, s0016CR\{670AF77A-5724-4802-B881-997112DA5A67}
+
+[sed0016.NTamd64]
+%Ndis5Desc% = sed0016.ndi5, s0016CR\{67011CEA-2AEB-4add-B69C-84087D1F3021}
+
+;*****************************************************************************
+;
+; NDIS services:
+;
+;	You would think that '\' continuation would make the following 
+;	more readable.  It only succeeds in breaking NDIS.  Keep all this
+;	on one line!
+;
+;*****************************************************************************
+
+[sed0016.ndi5]
+DriverVer=04/24/2008,4.44.2.0
+Characteristics = 0x4 ;NCF_PHYSICAL
+BusType = 15 ; PNPbus
+AddReg = sed0016.ndi.reg,sed0016.ndi.reg.W9x,sed0016.ndi5.reg,sed0016.ndi5.reg.W9x,sed0016.ndi.Gen.Resources,sed0016.ndi.Gen.Params,sed0016.ndi5.Gen.Params
+CopyFiles = sed0016.ndi5.CopyFiles
+
+[sed0016.ndi5.nt]
+Characteristics = 0x4 ;NCF_PHYSICAL
+BusType = 15 ; PNPbus
+AddReg = sed0016.ndi.reg,sed0016.ndi.reg.nt,sed0016.ndi5.reg,sed0016.ndi5.reg.nt,sed0016.ndi.Gen.Resources,sed0016.ndi.Gen.Params,sed0016.ndi5.Gen.Params
+CopyFiles = sed0016.ndi5.nt.CopyFiles
+
+[sed0016.ndi3]
+Characteristics = 0x4 ;NCF_PHYSICAL
+BusType = 15 ; PNPbus
+AddReg = sed0016.ndi.reg,sed0016.ndi.reg.W9x,sed0016.ndi3.reg,sed0016.ndi3.reg.W9x,sed0016.ndi.Gen.Resources,sed0016.ndi.Gen.Params,sed0016.ndi3.Gen.Params
+CopyFiles = sed0016.ndi3.CopyFiles
+
+[sed0016.ndi3.nt]
+Characteristics = 0x4 ;NCF_PHYSICAL
+BusType = 15 ; PNPbus
+AddReg = sed0016.ndi.reg,sed0016.ndi.reg.nt,sed0016.ndi3.reg,sed0016.ndi3.reg.nt,sed0016.ndi.Gen.Resources,sed0016.ndi.Gen.Params,sed0016.ndi3.Gen.Params
+CopyFiles = sed0016.ndi3.nt.CopyFiles
+
+;-----------------------------------------------------------------------------
+; Install all the normal things in the registry 
+;-----------------------------------------------------------------------------
+[sed0016.ndi3.reg]
+HKR,NDIS,LogDriverName,,"s0016nd3"
+; NDIS Info
+HKR,NDIS,MajorNdisVersion,1,03
+HKR,NDIS,MinorNdisVersion,1,0A
+HKR,Ndi\Interfaces,DefUpper,,"ndis3"
+HKR,Ndi\Interfaces,UpperRange,,"ndis3"
+
+[sed0016.ndi5.reg]
+HKR,NDIS,LogDriverName,,"s0016nd5"
+; NDIS Info
+HKR,NDIS,MajorNdisVersion,1,05
+HKR,NDIS,MinorNdisVersion,1,00
+HKR,Ndi\Interfaces,DefUpper,,"ndis3,ndis5"
+HKR,Ndi\Interfaces,UpperRange,,"ndis3,ndis5"
+
+[sed0016.ndi.reg]
+HKR,,EnumPropPages,,"netdi.dll,EnumPropPages"
+
+; Interfaces
+HKR,Ndi\Interfaces,DefLower,,"ethernet"
+HKR,Ndi\Interfaces,LowerRange,,"ethernet"
+
+
+;-----------------------------------------------------------------------------
+; General Resources (used to set NDI\params....)
+;-----------------------------------------------------------------------------
+[sed0016.ndi.Gen.Resources]
+
+;-----------------------------------------------------------------------------
+; General Params.
+;-----------------------------------------------------------------------------
+[sed0016.ndi.Gen.Params]
+HKR,,BoardType,,%sed0016.BoardType%
+HKR,,MediaType,,"Ethernet"
+
+[sed0016.ndi3.Gen.Params]
+HKR,,BoardName,,"%sed0016.ndi3.guid%"
+HKR,,DeviceName,,"%sed0016.ndi3.guid%"
+
+[sed0016.ndi5.Gen.Params]
+HKR,,BoardName,,"%sed0016.ndi5.guid%"
+HKR,,DeviceName,,"%sed0016.ndi5.guid%"
+
+;-----------------------------------------------------------------------------
+;	NDIS devload info for W95/W98
+;-----------------------------------------------------------------------------
+[sed0016.ndi.reg.W9x]
+HKR,,DevLoader,,*ndis
+HKR,,DriverDesc,,%sed0016.ndi.DriverDesc%
+
+[sed0016.ndi3.reg.W9x]
+HKR,,DeviceVxDs,, s0016nd3.sys
+HKR,Ndi,DeviceId,,%sed0016.ndi3.guid%
+
+[sed0016.ndi5.reg.W9x]
+HKR,,DeviceVxDs,, s0016nd5.sys
+HKR,Ndi,DeviceId,,%sed0016.ndi5.guid%
+
+;-----------------------------------------------------------------------------
+;	NDIS devload info for Win2K
+;-----------------------------------------------------------------------------
+[sed0016.ndi.reg.nt]
+HKR,,DriverDesc,,%sed0016.ndi.DriverDesc%
+
+[sed0016.ndi3.reg.nt]
+HKR,Ndi,DeviceId,,%sed0016.ndi3.guid%
+HKR,Ndi,Service,,"s0016nd3"
+
+[sed0016.ndi5.reg.nt]
+HKR,Ndi,DeviceId,,%sed0016.ndi5.guid%
+HKR,Ndi,Service,,"s0016nd5"
+
+
+[sed0016.ndi5.NT.Services]
+AddService      = s0016nd5, 2, sed0016.ndi5.AddService
+
+[sed0016.ndi5.AddService]
+DisplayName             = %sed0016.Service.Desc%
+ServiceType             = 1     ; SERVICE_KERNEL_DRIVER
+StartType               = 3     ; SERVICE_DEMAND_START
+ErrorControl            = 1     ; SERVICE_ERROR_NORMAL
+ServiceBinary           = %12%\s0016nd5.sys
+LoadOrderGroup          = NDIS
+
+[sed0016.ndi3.NT.Services]
+AddService      = s0016nd3, 2, sed0016.ndi3.AddService
+
+[sed0016.ndi3.AddService]
+DisplayName             = %sed0016.Service.Desc%
+ServiceType             = 1     ; SERVICE_KERNEL_DRIVER
+StartType               = 3     ; SERVICE_DEMAND_START
+ErrorControl            = 1     ; SERVICE_ERROR_NORMAL
+ServiceBinary           = %12%\s0016nd3.sys
+LoadOrderGroup          = Base
+
+;-----------------------------------------------------------------------------
+; Some copyfiles sections
+;-----------------------------------------------------------------------------
+[sed0016.ndi3.CopyFiles]
+s0016nd3.sys
+
+[sed0016.ndi5.CopyFiles]
+s0016nd5.sys
+
+[sed0016.ndi3.nt.CopyFiles]
+s0016nd3.sys
+
+[sed0016.ndi5.nt.CopyFiles]
+s0016nd5.sys
+
+
+;****************************************************************************
+; Localizable Strings
+;****************************************************************************
+[strings]
+
+;BEGIN ENG - US English Strings
+Provider = "Sony Ericsson"
+sed0016 = "Sony Ericsson"
+DiskString = "Sony Ericsson Device 0016 USB Ethernet Emulation Installation Disk"
+
+sed0016.ndi.DriverDesc = "Sony Ericsson Device 0016 USB Ethernet Emulation (NDIS)"
+Ndis3Desc = "Sony Ericsson Device 0016 USB Ethernet Emulation (NDIS 3)"
+Ndis5Desc = "Sony Ericsson Device 0016 USB Ethernet Emulation (NDIS 5)"
+sed0016.Service.Desc = "Sony Ericsson Device 0016 USB Ethernet Emulation SEMC0016 (NDIS)"
+sed0016.BoardType = "Sony Ericsson Device 0016 USB Ethernet Emulation (for Networking Device)"
+
+CustomerDataPath = "Sony Ericsson Device 0016"
+DriverSet = "Sony Ericsson Device 0016 Software"
+UninstallFile = "S0016Uninstall.exe"
+McciOptions = "Uninstallable"
+
+
+;END ENG - US English Strings
+
+;-----------------------------------------------------------------------------
+; Following are symbolic constants which don't change per locale.
+;-----------------------------------------------------------------------------
+sed0016.ndi5.guid = "s0016CR\{67011CEA-2AEB-4add-B69C-84087D1F3021}"
+sed0016.ndi3.guid = "s0016CR\{670AF77A-5724-4802-B881-997112DA5A67}"
+
+
+;*** end of file ***

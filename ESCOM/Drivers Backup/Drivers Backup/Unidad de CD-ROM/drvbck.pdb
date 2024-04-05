@@ -1,0 +1,13 @@
+[driver backup information]
+driverdesc=Unidad de CD-ROM
+infpath=cdrom.inf                                                                       
+infsection=cdrom_install
+MatchingDeviceId=IDE\CdRomOptiarc_DVD_RW_AD-7560A_________________DS03____
+driverversion=6.1.7601.17514
+driverdate=2006-06-21
+providername=Microsoft
+class=DVD/CD-ROM drives
+filenum=2
+signature=Windows Vista
+needrestore=no
+backuptime=sábado, marzo 28, 2015

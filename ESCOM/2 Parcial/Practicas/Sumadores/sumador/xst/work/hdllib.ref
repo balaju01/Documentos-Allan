@@ -1,0 +1,5 @@
+AR main behavioral C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador/main.vhd sub00/vhpl04 1431521555
+PH pack NULL C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador/pack.vhd sub00/vhpl00 1431521551
+AR sumador behavioral C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador/sum.vhd sub00/vhpl03 1431521553
+EN main NULL C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador/main.vhd sub00/vhpl01 1431521554
+EN sumador NULL C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador/sum.vhd sub00/vhpl02 1431521552

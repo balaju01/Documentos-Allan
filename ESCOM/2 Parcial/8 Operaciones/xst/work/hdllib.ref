@@ -1,0 +1,5 @@
+AR main behavioral C:/Users/jonnyTest/oper8/main.vhd sub00/vhpl04 1433335932
+PH pack NULL C:/Users/jonnyTest/oper8/pack.vhd sub00/vhpl03 1433335928
+EN sumac NULL C:/Users/jonnyTest/oper8/sumaC.vhd sub00/vhpl00 1433335929
+EN main NULL C:/Users/jonnyTest/oper8/main.vhd sub00/vhpl02 1433335931
+AR sumac arq_sumac C:/Users/jonnyTest/oper8/sumaC.vhd sub00/vhpl01 1433335930

@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/Administrador/arquis/operaciones/sumador.xst" -ofn "C:/Users/Administrador/arquis/operaciones/sumador.syr" 

@@ -1,0 +1,13 @@
+[driver backup information]
+driverdesc=WAN Miniport (SSTP)
+infpath=netsstpa.inf                                                                    
+infsection=Ndi-Mp-Sstp
+MatchingDeviceId=ms_sstpminiport
+driverversion=6.1.7601.17514
+driverdate=2006-06-21
+providername=Microsoft
+class=Network adapters
+filenum=1
+signature=Windows Vista
+needrestore=no
+backuptime=sábado, marzo 28, 2015

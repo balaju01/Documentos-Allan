@@ -1,0 +1,13 @@
+[driver backup information]
+driverdesc=Dispositivo de vídeo USB
+infpath=usbvideo.inf                                                                    
+infsection=USBVideo.NT
+MatchingDeviceId=USB\VID_0C45&PID_63E3&REV_9227&MI_00
+driverversion=6.1.7601.17514
+driverdate=2006-06-21
+providername=Microsoft
+class=Imaging devices
+filenum=2
+signature=All Windows Operating Systems
+needrestore=no
+backuptime=sábado, marzo 28, 2015

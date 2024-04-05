@@ -1,0 +1,20 @@
+\documentclass[a4paper,10pt]{article}
+
+
+%opening
+\title{}
+\author{Allan Ulises Zepeda Ibarra}
+
+\begin{document}
+
+\maketitle
+
+El Dr. Arturo Erdely Ru\'{\i}z aborda el tema de la migraci\'on con relaci\'on al nivel de bienestar humano, el doctor comenta que el nivel de bienestar humano 
+depende de varios factores como son el nivel econ\'omico, el nivel de estudios y el nivel de felicidad. Entonces con estas dos variables 
+pudi\'eramos pensar primeramente que a un mayor nivel de bienestar humano menor ser\'a la migraci\'on, pero el estudio revela que no es as\'{\i} 
+que se comporta de una forma un tanto raro, al momento de analizar los datos se pudieron agrupar en 7 secciones de comportamiento 
+diferentes, las cuales se ajustaron o se trataron de explicar con algunas distribuciones de probabilidad. Los resultados al momento de 
+explicar el comportamiento describen que en el primer sector la tendencia a migrar no se da porque no tienen los recursos suficientes 
+para irse, pero en cuanto su nivel de vida se mejora estos optan por migrar para conseguir un nivel de vida mejor. Pero cuando el nivel 
+de vida es m\'as alto que eso se da el comportamiento esperado de que a mayor bienestar humano menor es la tendencia a migrar.
+\end{document}

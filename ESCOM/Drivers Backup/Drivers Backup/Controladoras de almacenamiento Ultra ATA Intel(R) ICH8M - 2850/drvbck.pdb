@@ -1,0 +1,13 @@
+[driver backup information]
+driverdesc=Controladoras de almacenamiento Ultra ATA Intel(R) ICH8M - 2850
+infpath=mshdc.inf                                                                       
+infsection=intelide_Inst
+MatchingDeviceId=PCI\VEN_8086&DEV_2850&SUBSYS_902D104D&REV_03
+driverversion=6.1.7601.18231
+driverdate=2006-06-21
+providername=Microsoft
+class=IDE ATA/ATAPI controllers
+filenum=5
+signature=Windows Vista
+needrestore=no
+backuptime=sábado, marzo 28, 2015

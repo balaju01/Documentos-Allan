@@ -1,0 +1,13 @@
+[driver backup information]
+driverdesc=Sony Ericsson Device 0016 USB WMC Data Modem
+infpath=oem9.inf                                                                        
+infsection=sed0016.Install.NT
+MatchingDeviceId=USB\Vid_0fce&Pid_d0a1&Rev_0000&Mi_01&Os_NT
+driverversion=4.44.2.0
+driverdate=2008-04-24
+providername=Sony Ericsson
+class=Modems
+filenum=6
+signature=Windows Vista
+needrestore=yes
+backuptime=sábado, marzo 28, 2015

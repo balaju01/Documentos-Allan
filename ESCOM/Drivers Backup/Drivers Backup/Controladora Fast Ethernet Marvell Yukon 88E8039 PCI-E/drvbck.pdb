@@ -1,0 +1,13 @@
+[driver backup information]
+driverdesc=Controladora Fast Ethernet Marvell Yukon 88E8039 PCI-E
+infpath=netmyk00.inf                                                                    
+infsection=SLYuk2CopFast_E55C06D5.ndi.NTAMD64
+MatchingDeviceId=PCI\VEN_11AB&DEV_4353&SUBSYS_902D104D&REV_15
+driverversion=11.0.5.3
+driverdate=2009-02-23
+providername=Microsoft
+class=Network adapters
+filenum=2
+signature=Windows Vista
+needrestore=no
+backuptime=sábado, marzo 28, 2015

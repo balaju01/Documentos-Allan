@@ -1,0 +1,13 @@
+[driver backup information]
+driverdesc=Apple iPhone
+infpath=wpdmtp.inf                                                                      
+infsection=MTP.NT
+MatchingDeviceId=USB\VID_05AC&PID_1294&REV_0210&MI_00
+driverversion=6.1.7600.16385
+driverdate=2006-06-21
+providername=Microsoft
+class=Portable Devices
+filenum=4
+signature=Windows Vista
+needrestore=no
+backuptime=sábado, marzo 28, 2015

@@ -1,0 +1,8 @@
+Release 13.1 Drc O.40d (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+Wed May 27 08:23:09 2015
+
+drc -z main.ncd main.pcf
+
+DRC detected 0 errors and 0 warnings.

@@ -1,0 +1,7 @@
+V3 3
+FL C:/Users/Administrador/arquis/operaciones/sumador.vhd 2015/05/28.12:29:26 O.40d
+EN work/sumador 1432834181 \
+      FL C:/Users/Administrador/arquis/operaciones/sumador.vhd \
+      PB ieee/std_logic_1164 1296775758
+AR work/sumador/Behavioral 1432834182 \
+      FL C:/Users/Administrador/arquis/operaciones/sumador.vhd EN work/sumador 1432834181

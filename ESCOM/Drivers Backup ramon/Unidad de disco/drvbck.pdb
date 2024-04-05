@@ -1,0 +1,13 @@
+[driver backup information]
+driverdesc=Unidad de disco
+infpath=disk.inf                                                                        
+infsection=disk_install.NT
+MatchingDeviceId=IDE\DiskWDC_WD1600BEVT-75ZCT2___________________11.01A11
+driverversion=6.1.7600.16385
+driverdate=2006-06-21
+providername=Microsoft
+class=Disk drives
+filenum=2
+signature=Windows Vista
+needrestore=no
+backuptime=sábado, marzo 28, 2015

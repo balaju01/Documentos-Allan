@@ -1,0 +1,5 @@
+AR main behavioral C:/Users/jonnyTest/sumador4bits/main.vhd sub00/vhpl04 1431519797
+PH pack NULL C:/Users/jonnyTest/sumador4bits/pack.vhd sub00/vhpl02 1431519793
+EN sumac NULL C:/Users/jonnyTest/sumador4bits/sumaC.vhd sub00/vhpl00 1431519794
+EN main NULL C:/Users/jonnyTest/sumador4bits/main.vhd sub00/vhpl03 1431519796
+AR sumac arq_sumac C:/Users/jonnyTest/sumador4bits/sumaC.vhd sub00/vhpl01 1431519795

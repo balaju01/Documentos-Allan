@@ -1,0 +1,13 @@
+[driver backup information]
+driverdesc=Puerto raíz PCI Express de Intel(R) 82801G (familia ICH7) - 27D2
+infpath=machine.inf                                                                     
+infsection=PCI_DRV
+MatchingDeviceId=PCI\VEN_8086&DEV_27D2&SUBSYS_02F41028&REV_02
+driverversion=6.1.7601.17514
+driverdate=2006-06-21
+providername=Microsoft
+class=System devices
+filenum=2
+signature=Windows Vista
+needrestore=no
+backuptime=sábado, marzo 28, 2015

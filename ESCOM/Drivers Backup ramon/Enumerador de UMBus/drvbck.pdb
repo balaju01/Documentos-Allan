@@ -1,0 +1,13 @@
+[driver backup information]
+driverdesc=Enumerador de UMBus
+infpath=umbus.inf                                                                       
+infsection=UmBus_Device.NT
+MatchingDeviceId=UMB\UMBUS
+driverversion=6.1.7601.17514
+driverdate=2006-06-21
+providername=Microsoft
+class=System devices
+filenum=2
+signature=Windows Vista
+needrestore=no
+backuptime=sábado, marzo 28, 2015

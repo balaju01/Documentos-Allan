@@ -1,0 +1,13 @@
+[driver backup information]
+driverdesc=Controladora de host Texas Instruments compatible con OHCI 1394
+infpath=1394.inf                                                                        
+infsection=Generic.Install.NT
+MatchingDeviceId=PCI\VEN_104C&DEV_803A&SUBSYS_902D104D&REV_00
+driverversion=6.1.7601.17514
+driverdate=2006-06-21
+providername=Microsoft
+class=IEEE 1394 Bus host controllers
+filenum=2
+signature=All Windows Operating Systems
+needrestore=no
+backuptime=sábado, marzo 28, 2015

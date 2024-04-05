@@ -1,0 +1,13 @@
+[driver backup information]
+driverdesc=Dispositivo compatible con HID
+infpath=input.inf                                                                       
+infsection=HID_Raw_Inst.NT
+MatchingDeviceId=HID\VID_045E&PID_041E&REV_0100
+driverversion=6.1.7601.18199
+driverdate=2006-06-21
+providername=Microsoft
+class=Human Interface Devices
+filenum=1
+signature=Windows Vista
+needrestore=no
+backuptime=sábado, marzo 28, 2015

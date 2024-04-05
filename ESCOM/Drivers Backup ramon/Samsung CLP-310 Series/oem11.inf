@@ -1,0 +1,374 @@
+; Copyright 2009 Samsung. ALL right reserved.
+
+[Version]
+Signature="$Windows NT$"
+Class=Printer
+Provider=%PROVIDER%
+CatalogFile = cl31c.cat
+DriverVer=03/26/2009, 3.04.85
+ClassGUID={4D36E979-E325-11CE-BFC1-08002BE10318}
+
+;
+; The Manufacturer section lists all of the manufacturers that we will
+; display in the Dialog box
+
+[Manufacturer]
+%PROVIDER% = MODEL,NTx86
+
+; Model section for Windows 2000 and XP
+[MODEL]
+"Samsung CLP-310 Series" = DRVINSTALL, LPTENUM\SamsungCLP-310_SerieE7AB
+"Samsung CLP-310 Series" = DRVINSTALL, USBPRINT\SamsungCLP-310_SerieE7AB
+
+[MODEL.NTx86]
+"Samsung CLP-310 Series" = DRVINSTALL, LPTENUM\SamsungCLP-310_SerieE7AB
+"Samsung CLP-310 Series" = DRVINSTALL, USBPRINT\SamsungCLP-310_SerieE7AB
+
+[OEM URLS]
+%PROVIDER% = "http://www.samsungelectronics.com/printer/support/index.html"
+
+;
+; Installer Sections
+;
+; These sections control file installation, and reference all files that
+; need to be copied. If the section name will be assumed to be the driver
+; file, unless there is an explicit DriverFile section listed.
+;
+
+; Installation section for Win2000 and XP
+[DRVINSTALL]
+CopyFiles=DRVFILES,LANGMONFILES,COINSTFILES,PRPROCFILES
+DataSection=DRVCONFIG
+DataFile=cl31cpp.dll
+
+;
+; Data Sections
+;
+; These sections contain data that is shared between devices.
+;
+[DRVCONFIG]
+DriverFile=cl31c.dll
+ConfigFile=cl31cdu.dll
+LanguageMonitor="CL31C Langmon,cl31cl3.dll"
+PrintProcessor="CL31CPC,cl31cpc.dll"
+
+[DRVINSTALL.CoInstallers] 
+AddReg=COINST.AddReg 
+CopyFiles=COINSTFILES
+
+[COINST.AddReg]
+HKR,,CoInstallers32,0x10000,"cl31cci.dll,CoDeviceInstall"
+
+;------------------------------------------------------
+
+; Copy Sections
+;
+; Lists of files that are actually copied. These sections are referenced
+; from the installer sections, above. Only create a section if it contains
+; two or more files (if we only copy a single file, identify it in the
+; installer section, using the @filename notation)
+;
+[LANGMONFILES]
+cl31cl3.dll
+cl31cl3.smt
+
+[PRPROCFILES]
+cl31cpc.dll,  itdrvpc.dll
+
+[COINSTFILES] 
+cl31cci.dll,  coinst.dll
+cl31cci.exe,  coinst.exe
+
+[DRVFILES]
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; Driver Core files and DLLs and Other files
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+cl31c.dll,    itdrv.dll
+cl31cdu.dll,  itdrvdu.dll
+cl31cpp.dll,  itdrvpp.dll
+cl31cu.dll,   itdrvu.dll
+cl31cu2.dll,  itdrvu2.dll
+cl31co.dll,   itdrvo.dll
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; FrameBuffer files
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+cl31ccm.dll,  itdrvcm.dll
+cl31clf.dll,  itdrvlf.dll
+cl31cum.dll,  itdrvum.dll
+cl31cum.xml,  itdrvum.xml
+cl31ccm.ctd,  itdrvcm.ctd
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; SmartCMS files
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+cl31csc.cts
+cl31csc.dll,  itdrvsc.dll
+cl31csf.dll,  itdrvsf.dll
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; Manual Duplex files
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+cl31cm.dll,   itdrvm.dll
+cl31cex.exe,  itdrvex.exe
+cl31cm1.bmp,  itdrvm1.bmp
+cl31cm2.bmp,  itdrvm2.bmp
+cl31cm3.bmp,  itdrvm3.bmp
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; Model specific script files
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+cl31cpp.ver
+cl31cu.ini
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; Bmp files
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+cl31cua.bmp,  itdrvua.bmp
+cl31cub.bmp,  itdrvub.bmp
+cl31cul.bmp,  itdrvul.bmp
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; Color bitmap
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+cl31cuc.bmp,  itdrvuc.bmp
+cl31cucc.bmp, itdrvucc.bmp
+cl31cucd.bmp, itdrvucd.bmp
+cl31cuco.bmp, itdrvuco.bmp
+cl31cucp.bmp, itdrvucp.bmp
+cl31cucs.bmp, itdrvucs.bmp
+cl31cucv.bmp, itdrvucv.bmp
+cl31cug.bmp,  itdrvug.bmp
+cl31cuca.bmp, itdrvuca.bmp
+cl31cucb.bmp, itdrvucb.bmp
+cl31cuce.bmp, itdrvuce.bmp
+cl31cucr.bmp, itdrvucr.bmp
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; Model dependent bitmap
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; SNMP files
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+cl31cio.dll,  itdrvio.dll
+cl31cn.dll,   itdrvn.dll
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; Dat files
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+cl31cab.dat,  itdrvab.dat
+cl31cbp.dat,  itdrvbp.dat
+cl31ccp.dat,  itdrvcp.dat
+cl31cct.dat,  itdrvct.dat
+cl31ccz.dat,  itdrvcz.dat
+cl31cdn.dat,  itdrvdn.dat
+cl31cdt.dat,  itdrvdt.dat
+cl31cel.dat,  itdrvel.dat
+cl31cen.dat,  itdrven.dat
+cl31cfi.dat,  itdrvfi.dat
+cl31cfn.dat,  itdrvfn.dat
+cl31cgr.dat,  itdrvgr.dat
+cl31chb.dat,  itdrvhb.dat
+cl31chu.dat,  itdrvhu.dat
+cl31cit.dat,  itdrvit.dat
+cl31ckr.dat,  itdrvkr.dat
+cl31cnr.dat,  itdrvnr.dat
+cl31cpo.dat,  itdrvpo.dat
+cl31cpt.dat,  itdrvpt.dat
+cl31cru.dat,  itdrvru.dat
+cl31csp.dat,  itdrvsp.dat
+cl31csw.dat,  itdrvsw.dat
+cl31ctk.dat,  itdrvtk.dat
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; Help files
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+cl31cab.chm,  itdrvab.chm
+cl31cbp.chm,  itdrvbp.chm
+cl31ccp.chm,  itdrvcp.chm
+cl31cct.chm,  itdrvct.chm
+cl31ccz.chm,  itdrvcz.chm
+cl31cdn.chm,  itdrvdn.chm
+cl31cdt.chm,  itdrvdt.chm
+cl31cel.chm,  itdrvel.chm
+cl31cen.chm,  itdrven.chm
+cl31cfi.chm,  itdrvfi.chm
+cl31cfn.chm,  itdrvfn.chm
+cl31cgr.chm,  itdrvgr.chm
+cl31chb.chm,  itdrvhb.chm
+cl31chu.chm,  itdrvhu.chm
+cl31cit.chm,  itdrvit.chm
+cl31ckr.chm,  itdrvkr.chm
+cl31cnr.chm,  itdrvnr.chm
+cl31cpo.chm,  itdrvpo.chm
+cl31cpt.chm,  itdrvpt.chm
+cl31cru.chm,  itdrvru.chm
+cl31csp.chm,  itdrvsp.chm
+cl31csw.chm,  itdrvsw.chm
+cl31ctk.chm,  itdrvtk.chm
+
+;
+; Color profiles go to the colors directory.  All other files to the the
+; system directory
+;
+
+[DestinationDirs]
+DefaultDestDir=66000
+LANGMONFILES=66002
+COINSTFILES = 66002
+PRPROCFILES=66001
+
+[SourceDisksNames]
+1 = %DISK_NAME%,,,
+
+[SourceDisksFiles]
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; Driver Core files and DLLs and Other files
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+itdrv.dll       = 1
+itdrvdu.dll     = 1
+itdrvpp.dll     = 1
+itdrvu.dll      = 1
+itdrvu2.dll     = 1
+itdrvo.dll      = 1
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; FrameBuffer files
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+itdrvcm.dll     = 1
+itdrvlf.dll     = 1
+itdrvum.dll     = 1
+itdrvum.xml     = 1
+itdrvcm.ctd     = 1
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; SmartCMS files
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+cl31csc.cts     = 1
+itdrvsc.dll     = 1
+itdrvsf.dll     = 1
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; Manual Duplex files
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+itdrvm.dll      = 1
+itdrvex.exe     = 1
+itdrvm1.bmp     = 1
+itdrvm2.bmp     = 1
+itdrvm3.bmp     = 1
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; Model specific script files
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+cl31cu.ini      = 1
+cl31cpp.ver     = 1
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; Bmp files
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+itdrvua.bmp     = 1
+itdrvub.bmp     = 1
+itdrvul.bmp     = 1
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; Color bitmap
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+itdrvuc.bmp     = 1
+itdrvucc.bmp    = 1
+itdrvucd.bmp    = 1
+itdrvuco.bmp    = 1
+itdrvucp.bmp    = 1
+itdrvucs.bmp    = 1
+itdrvucv.bmp    = 1
+itdrvug.bmp     = 1
+itdrvuca.bmp    = 1
+itdrvucb.bmp    = 1
+itdrvuce.bmp    = 1
+itdrvucr.bmp    = 1
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; Model dependent bitmap
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; SNMP files
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+itdrvio.dll     = 1
+itdrvn.dll      = 1
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; Dat files
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+itdrvab.dat 	= 1
+itdrvbp.dat 	= 1
+itdrvcp.dat 	= 1
+itdrvct.dat 	= 1
+itdrvcz.dat 	= 1
+itdrvdn.dat 	= 1
+itdrvdt.dat 	= 1
+itdrvel.dat 	= 1
+itdrven.dat 	= 1
+itdrvfi.dat 	= 1
+itdrvfn.dat 	= 1
+itdrvgr.dat 	= 1
+itdrvhb.dat 	= 1
+itdrvhu.dat 	= 1
+itdrvit.dat 	= 1
+itdrvkr.dat 	= 1
+itdrvnr.dat 	= 1
+itdrvpo.dat 	= 1
+itdrvpt.dat 	= 1
+itdrvru.dat 	= 1
+itdrvsp.dat 	= 1
+itdrvsw.dat 	= 1
+itdrvtk.dat 	= 1
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; Help files
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+itdrvab.chm 	= 1
+itdrvbp.chm 	= 1
+itdrvcp.chm 	= 1
+itdrvct.chm 	= 1
+itdrvcz.chm 	= 1
+itdrvdn.chm 	= 1
+itdrvdt.chm 	= 1
+itdrvel.chm 	= 1
+itdrven.chm 	= 1
+itdrvfi.chm 	= 1
+itdrvfn.chm 	= 1
+itdrvgr.chm 	= 1
+itdrvhb.chm 	= 1
+itdrvhu.chm 	= 1
+itdrvit.chm 	= 1
+itdrvkr.chm 	= 1
+itdrvnr.chm 	= 1
+itdrvpo.chm 	= 1
+itdrvpt.chm 	= 1
+itdrvru.chm 	= 1
+itdrvsp.chm 	= 1
+itdrvsw.chm 	= 1
+itdrvtk.chm 	= 1
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; COINSTFILES
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+coinst.dll      = 1 
+coinst.exe      = 1 
+ 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; LANGMONFILES
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+cl31cl3.dll     = 1
+cl31cl3.smt     = 1
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; PRPROCFILES
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+itdrvpc.dll     = 1
+
+[Strings]
+PROVIDER = "Samsung"
+DISK_NAME = "Samsung Printer Driver Installation CD"
+

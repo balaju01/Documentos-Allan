@@ -1,0 +1,234 @@
+;*****************************************************************************
+;
+; s1018bus.inf   -- Install the Sony Ericsson Device 1018 drivers
+;
+; Copyright (c) 1997-2008 by MCCI Corporation 
+;
+; MCCI is a registered trademark of MCCI Corporation.
+;
+; NOTICE: This software is licensed, not sold.  Any modification of this
+; inf file to change the reference to an operating system or to change the
+; reference to a device is not permitted unless authorized in writing by
+; MCCI Corporation.
+;
+;*****************************************************************************
+
+[version]
+signature="$WINDOWS NT$"
+Class=USB
+ClassGuid={36FC9E60-c465-11cf-8056-444553540000}
+Provider=%Provider%
+DriverVer=03/19/2009,4.50.3.8
+CatalogFile=s1018bus.cat
+
+[ControlFlags]
+ExcludeFromSelect = *
+
+;-----------------------------------------------------------------------------
+; Specify target paths...
+;-----------------------------------------------------------------------------
+[DestinationDirs]
+DefaultDestDir                  = 11                    ; LDID_SYS
+sed1018Wdm.NT.CopyFiles        = 12                    ; system32\drivers
+PropPages.CopyFiles             = 11                    ; system
+
+;-----------------------------------------------------------------------------
+; Specify the install disks.  A bit unwieldy during development.
+;-----------------------------------------------------------------------------
+[SourceDisksNames.x86]
+; diskid = description[, [tagfile] [, <unused>, subdir]]
+1=%DiskString%,"s1018bus.sys",,\i386
+
+
+[SourceDisksNames.amd64]
+; diskid = description[, [tagfile] [, <unused>, subdir]]
+1=%DiskString%,"s1018bus.sys",,\amd64
+
+
+
+[SourceDisksFiles]
+; filename = diskid[, [subdir] [, size]]
+s1018bus.sys = 1
+s1018whnt.sys = 1
+
+;-----------------------------------------------------------------------------
+; Table of Contents:  manufacturer, then devices.
+;-----------------------------------------------------------------------------
+[Manufacturer]
+%SonyEriccson%=sed1018, NTamd64
+
+;-----------------------------------------------------------------------------
+; The devices
+;-----------------------------------------------------------------------------
+[sed1018]
+%sed1018.CdcBus.Desc% = sed1018Wdm.Install, USB\VID_0fce&PID_20ef
+%sed1018.CdcBus.Desc% = sed1018Wdm.Install, USB\VID_0fce&PID_20f1
+%sed1018.CdcBus.Desc% = sed1018Wdm.Install, USB\VID_0fce&PID_2105
+%sed1018.CdcBus.Desc% = sed1018Wdm.Install, USB\VID_0fce&PID_2108
+%sed1018.CdcBus.Desc% = sed1018Wdm.Install, USB\VID_0fce&PID_2109
+%sed1018.CdcBus.Desc% = sed1018Wdm.Install, USB\VID_0fce&PID_210b
+%sed1018.CdcBus.Desc% = sed1018Wdm.Install, USB\VID_0fce&PID_210c
+%sed1018.CdcBus.Desc% = sed1018Wdm.Install, USB\VID_0fce&PID_2112
+%sed1018.CdcBus.Desc% = sed1018Wdm.Install, USB\VID_0fce&PID_2113
+%sed1018.CdcBus.Desc% = sed1018Wdm.Install, USB\VID_0fce&PID_211a
+%sed1018.CdcBus.Desc% = sed1018Wdm.Install, USB\VID_0fce&PID_211d
+%sed1018.CdcBus.Desc% = sed1018Wdm.Install, USB\VID_0fce&PID_211e
+%sed1018.CdcBus.Desc% = sed1018Wdm.Install, USB\VID_0fce&PID_2120
+%sed1018.CdcBus.Desc% = sed1018Wdm.Install, USB\VID_0fce&PID_2121
+%sed1018.CdcBus.Desc% = sed1018Wdm.Install, USB\VID_0fce&PID_2123
+%sed1018.CdcBus.Desc% = sed1018Wdm.Install, USB\VID_0fce&PID_2126
+%sed1018.CdcBus.Desc% = sed1018Wdm.Install, USB\VID_0fce&PID_212d
+%sed1018.CdcBus.Desc% = sed1018Wdm.Install, USB\VID_0fce&PID_d0ef
+%sed1018.CdcBus.Desc% = sed1018Wdm.Install, USB\VID_0fce&PID_d0f1
+%sed1018.CdcBus.Desc% = sed1018Wdm.Install, USB\VID_0fce&PID_d105
+%sed1018.CdcBus.Desc% = sed1018Wdm.Install, USB\VID_0fce&PID_d108
+%sed1018.CdcBus.Desc% = sed1018Wdm.Install, USB\VID_0fce&PID_d109
+%sed1018.CdcBus.Desc% = sed1018Wdm.Install, USB\VID_0fce&PID_d10b
+%sed1018.CdcBus.Desc% = sed1018Wdm.Install, USB\VID_0fce&PID_d10c
+%sed1018.CdcBus.Desc% = sed1018Wdm.Install, USB\VID_0fce&PID_d112
+%sed1018.CdcBus.Desc% = sed1018Wdm.Install, USB\VID_0fce&PID_d113
+%sed1018.CdcBus.Desc% = sed1018Wdm.Install, USB\VID_0fce&PID_d11a
+%sed1018.CdcBus.Desc% = sed1018Wdm.Install, USB\VID_0fce&PID_d11d
+%sed1018.CdcBus.Desc% = sed1018Wdm.Install, USB\VID_0fce&PID_d11e
+%sed1018.CdcBus.Desc% = sed1018Wdm.Install, USB\VID_0fce&PID_d120
+%sed1018.CdcBus.Desc% = sed1018Wdm.Install, USB\VID_0fce&PID_d121
+%sed1018.CdcBus.Desc% = sed1018Wdm.Install, USB\VID_0fce&PID_d123
+%sed1018.CdcBus.Desc% = sed1018Wdm.Install, USB\VID_0fce&PID_d126
+%sed1018.CdcBus.Desc% = sed1018Wdm.Install, USB\VID_0fce&PID_d12d
+
+[sed1018.NTamd64]
+%sed1018.CdcBus.Desc% = sed1018Wdm.Install, USB\VID_0fce&PID_20ef
+%sed1018.CdcBus.Desc% = sed1018Wdm.Install, USB\VID_0fce&PID_20f1
+%sed1018.CdcBus.Desc% = sed1018Wdm.Install, USB\VID_0fce&PID_2105
+%sed1018.CdcBus.Desc% = sed1018Wdm.Install, USB\VID_0fce&PID_2108
+%sed1018.CdcBus.Desc% = sed1018Wdm.Install, USB\VID_0fce&PID_2109
+%sed1018.CdcBus.Desc% = sed1018Wdm.Install, USB\VID_0fce&PID_210b
+%sed1018.CdcBus.Desc% = sed1018Wdm.Install, USB\VID_0fce&PID_210c
+%sed1018.CdcBus.Desc% = sed1018Wdm.Install, USB\VID_0fce&PID_2112
+%sed1018.CdcBus.Desc% = sed1018Wdm.Install, USB\VID_0fce&PID_2113
+%sed1018.CdcBus.Desc% = sed1018Wdm.Install, USB\VID_0fce&PID_211a
+%sed1018.CdcBus.Desc% = sed1018Wdm.Install, USB\VID_0fce&PID_211d
+%sed1018.CdcBus.Desc% = sed1018Wdm.Install, USB\VID_0fce&PID_211e
+%sed1018.CdcBus.Desc% = sed1018Wdm.Install, USB\VID_0fce&PID_2120
+%sed1018.CdcBus.Desc% = sed1018Wdm.Install, USB\VID_0fce&PID_2121
+%sed1018.CdcBus.Desc% = sed1018Wdm.Install, USB\VID_0fce&PID_2123
+%sed1018.CdcBus.Desc% = sed1018Wdm.Install, USB\VID_0fce&PID_2126
+%sed1018.CdcBus.Desc% = sed1018Wdm.Install, USB\VID_0fce&PID_212d
+%sed1018.CdcBus.Desc% = sed1018Wdm.Install, USB\VID_0fce&PID_d0ef
+%sed1018.CdcBus.Desc% = sed1018Wdm.Install, USB\VID_0fce&PID_d0f1
+%sed1018.CdcBus.Desc% = sed1018Wdm.Install, USB\VID_0fce&PID_d105
+%sed1018.CdcBus.Desc% = sed1018Wdm.Install, USB\VID_0fce&PID_d108
+%sed1018.CdcBus.Desc% = sed1018Wdm.Install, USB\VID_0fce&PID_d109
+%sed1018.CdcBus.Desc% = sed1018Wdm.Install, USB\VID_0fce&PID_d10b
+%sed1018.CdcBus.Desc% = sed1018Wdm.Install, USB\VID_0fce&PID_d10c
+%sed1018.CdcBus.Desc% = sed1018Wdm.Install, USB\VID_0fce&PID_d112
+%sed1018.CdcBus.Desc% = sed1018Wdm.Install, USB\VID_0fce&PID_d113
+%sed1018.CdcBus.Desc% = sed1018Wdm.Install, USB\VID_0fce&PID_d11a
+%sed1018.CdcBus.Desc% = sed1018Wdm.Install, USB\VID_0fce&PID_d11d
+%sed1018.CdcBus.Desc% = sed1018Wdm.Install, USB\VID_0fce&PID_d11e
+%sed1018.CdcBus.Desc% = sed1018Wdm.Install, USB\VID_0fce&PID_d120
+%sed1018.CdcBus.Desc% = sed1018Wdm.Install, USB\VID_0fce&PID_d121
+%sed1018.CdcBus.Desc% = sed1018Wdm.Install, USB\VID_0fce&PID_d123
+%sed1018.CdcBus.Desc% = sed1018Wdm.Install, USB\VID_0fce&PID_d126
+%sed1018.CdcBus.Desc% = sed1018Wdm.Install, USB\VID_0fce&PID_d12d
+
+;-----------------------------------------------------------------------------
+; On NT, the system first tries [section.NT], then [section].
+;-----------------------------------------------------------------------------
+
+;-----------------------------------------------------------------------------
+; Diagnostics Files CopyFiles List Section
+;-----------------------------------------------------------------------------
+[sed1018.CopyFiles]
+
+;-----------------------------------------------------------------------------
+; XXX when we have a property page DLL, add it to the following section.
+;-----------------------------------------------------------------------------
+[PropPages.CopyFiles]
+
+
+;-----------------------------------------------------------------------------
+;       How to install the WDM driver on NT
+;-----------------------------------------------------------------------------
+[sed1018Wdm.Install.NT]
+CopyFiles       = sed1018Wdm.NT.CopyFiles
+AddReg          = sed1018Wdm.AddReg, sed1018Wdm.NT.AddReg
+
+;-----------------------------------------------------------------------------
+;       How to start the WDM driver on NT
+;-----------------------------------------------------------------------------
+[sed1018Wdm.Install.NT.Services]
+AddService      = s1018bus, 2, sed1018Wdm.AddService, sed1018Wdm.Install.EventLog
+
+[sed1018Wdm.AddService]
+DisplayName             = %sed1018.Service.Desc%
+ServiceType             = 1     ; SERVICE_KERNEL_DRIVER
+StartType               = 3     ; SERVICE_DEMAND_START
+ErrorControl            = 1     ; SERVICE_ERROR_NORMAL
+ServiceBinary           = %12%\s1018bus.sys
+LoadOrderGroup          = Base
+
+;-----------------------------------------------------------------------------
+;       Setup event logging, if driver supports it
+;-----------------------------------------------------------------------------
+
+[sed1018Wdm.Install.EventLog]
+
+;-----------------------------------------------------------------------------
+;       WDM registry entries (all platforms)
+;-----------------------------------------------------------------------------
+[sed1018Wdm.AddReg]
+
+HKR,,MCCI_TCPWindowSizeFix_MinValue,0x10001,f0,fa,00,00
+HKR,,MCCI_MCECIDFix,0x10001,07,00,00,00
+HKR,,Configuration,0x10001, 03,00,00,00
+HKR,Scenarios,Scenario,0x10001, 00,00,00,00
+HKR,Scenarios\Scenario_0\ifc_0A\Description, default,, "Sony Ericsson Device 1018"
+HKR,Scenarios\Scenario_0\ifc_0A,HardwareId,, "USB\Vid_$VID&Pid_$PID&Mi_$IFC$,"
+HKR,Scenarios\Scenario_0\ifc_0A,HardwareIdList,, "USB\MS_COMP_MTP$,USB\Vid_$VID&Pid_$PID&Class_$CLASS&SubClass_$SUBCLASS&Prot_$PROT&Os_$OS$,USB\Vid_$VID&Pid_$PID&Class_$CLASS&SubClass_$SUBCLASS&Prot_$PROT$,USB\Vid_$VID&Pid_$PID&Mi_$IFC&Os_$OS$,USB\Vid_$VID&Pid_$PID&MI_$IFC$,$,"
+HKR,Scenarios\Scenario_0\ifc_0A,CompatibleIdList,, "USB\MS_COMP_MTP$,USB\Vid_$VID&Pid_$PID&Mi_$IFC&Os_$OS$,USB\Vid_$VID&Pid_$PID&Mi_$IFC$,$,"
+
+
+
+;-----------------------------------------------------------------------------
+;       WDM registry entries (NT only)
+;-----------------------------------------------------------------------------
+[sed1018Wdm.NT.AddReg]
+
+
+;-----------------------------------------------------------------------------
+;       The WDM copy list for NT -- different because things go in
+;       different places.
+;-----------------------------------------------------------------------------
+[sed1018Wdm.NT.CopyFiles]
+s1018bus.sys
+s1018wh.sys,s1018whnt.sys
+s1018whnt.sys
+
+
+;****************************************************************************
+; Localizable Strings
+;****************************************************************************
+[strings]
+
+;BEGIN ENG - US English Strings
+Provider = "Sony Ericsson"
+SonyEriccson = "Sony Ericsson"
+DiskString = "Sony Ericsson Device 1018 Installation disk"
+
+sed1018.CdcBus.Desc = "Sony Ericsson Device 1018"
+sed1018.Service.Desc = "Sony Ericsson Device 1018 driver (WDM)"
+
+CustomerDataPath = "Sony Ericsson Device 1018"
+DriverSet = "Sony Ericsson Device 1018 Software"
+UninstallFile = "S1018Uninstall.exe"
+McciOptions = "Uninstallable"
+
+
+;END ENG - US English Strings
+
+;-----------------------------------------------------------------------------
+; Following are symbolic constants which don't change per locale.
+;-----------------------------------------------------------------------------
+
+;*** end of file ***

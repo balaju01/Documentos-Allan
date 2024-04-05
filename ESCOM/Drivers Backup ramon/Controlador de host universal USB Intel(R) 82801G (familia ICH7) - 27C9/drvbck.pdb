@@ -1,0 +1,13 @@
+[driver backup information]
+driverdesc=Controlador de host universal USB Intel(R) 82801G (familia ICH7) - 27C9
+infpath=usbport.inf                                                                     
+infsection=UHCI.Dev.NT
+MatchingDeviceId=PCI\VEN_8086&DEV_27C9&SUBSYS_02F41028&REV_02
+driverversion=6.1.7601.18328
+driverdate=2006-06-21
+providername=Microsoft
+class=Universal Serial Bus controllers
+filenum=4
+signature=All Windows Operating Systems
+needrestore=no
+backuptime=sábado, marzo 28, 2015

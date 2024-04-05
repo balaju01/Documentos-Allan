@@ -1,0 +1,13 @@
+[driver backup information]
+driverdesc=Proxy de servicio de transmisión por secuencias de Microsoft
+infpath=ksfilter.inf                                                                    
+infsection=MSKSSRV.NT
+MatchingDeviceId=SW\{96e080c7-143c-11d1-b40f-00a0c9223196}
+driverversion=6.1.7600.16385
+driverdate=2006-06-21
+providername=Microsoft
+class=Sound, video and game controllers
+filenum=1
+signature=All Windows Operating Systems
+needrestore=no
+backuptime=sábado, marzo 28, 2015

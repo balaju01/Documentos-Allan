@@ -1,0 +1,13 @@
+[driver backup information]
+driverdesc=Sony sa0102 ADB Interface Driver
+infpath=sa0102adba64.cat
+infsection=USB_Install
+MatchingDeviceId=USB\VID_0FCE&PID_515D&REV_0226&MI_01
+driverversion=2.0.10.30011
+driverdate=2012-03-07
+providername=Sony
+class=Sony sa0102
+filenum=3
+signature=Windows Vista
+needrestore=yes
+backuptime=sábado, marzo 28, 2015

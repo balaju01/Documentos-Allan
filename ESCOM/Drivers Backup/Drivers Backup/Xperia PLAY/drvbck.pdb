@@ -1,0 +1,13 @@
+[driver backup information]
+driverdesc=Xperia PLAY
+infpath=wpdmtp.inf                                                                      
+infsection=MTP.NT
+MatchingDeviceId=USB\VID_0FCE&PID_415D&REV_0226&MI_01
+driverversion=6.1.7600.16385
+driverdate=2006-06-21
+providername=Microsoft
+class=Portable Devices
+filenum=4
+signature=Windows Vista
+needrestore=no
+backuptime=sábado, marzo 28, 2015

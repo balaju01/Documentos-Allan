@@ -1,0 +1,236 @@
+;*****************************************************************************
+;
+; s0016bus.inf   -- Install the Sony Ericsson Device 0016 drivers
+;
+; Copyright (c) 1997-2008 by MCCI Corporation 
+;
+; MCCI is a registered trademark of MCCI Corporation.
+;
+; NOTICE: This software is licensed, not sold.  Any modification of this
+; inf file to change the reference to an operating system or to change the
+; reference to a device is not permitted unless authorized in writing by
+; MCCI Corporation.
+;
+;*****************************************************************************
+
+[version]
+signature="$WINDOWS NT$"
+Class=USB
+ClassGuid={36FC9E60-c465-11cf-8056-444553540000}
+Provider=%Provider%
+DriverVer=04/24/2008,4.44.2.0
+CatalogFile=s0016bus.cat
+
+[ControlFlags]
+ExcludeFromSelect = *
+
+;-----------------------------------------------------------------------------
+; Specify target paths...
+;-----------------------------------------------------------------------------
+[DestinationDirs]
+DefaultDestDir                  = 11                    ; LDID_SYS
+sed0016Wdm.W95.CopyFiles       = 11                    ; LDID_SYS
+sed0016Wdm.NT.CopyFiles        = 12                    ; system32\drivers
+PropPages.CopyFiles             = 11                    ; system
+
+;-----------------------------------------------------------------------------
+; Specify the install disks.  A bit unwieldy during development.
+;-----------------------------------------------------------------------------
+[SourceDisksNames.x86]
+; diskid = description[, [tagfile] [, <unused>, subdir]]
+1=%DiskString%,"s0016bus.sys",,\i386
+
+
+[SourceDisksNames.amd64]
+; diskid = description[, [tagfile] [, <unused>, subdir]]
+1=%DiskString%,"s0016bus.sys",,\amd64
+
+
+
+[SourceDisksFiles]
+; filename = diskid[, [subdir] [, size]]
+s0016bus.sys = 1
+s0016wh95.sys = 1
+s0016whnt.sys = 1
+
+;-----------------------------------------------------------------------------
+; Table of Contents:  manufacturer, then devices.
+;-----------------------------------------------------------------------------
+[Manufacturer]
+%SonyEricsson%=sed0016, NTamd64
+
+;-----------------------------------------------------------------------------
+; The devices
+;-----------------------------------------------------------------------------
+[sed0016]
+%sed0016.CdcBus.Desc% = sed0016Wdm.Install, USB\VID_0fce&PID_d038
+%sed0016.CdcBus.Desc% = sed0016Wdm.Install, USB\VID_0fce&PID_d039
+%sed0016.CdcBus.Desc% = sed0016Wdm.Install, USB\VID_0fce&PID_D043
+%sed0016.CdcBus.Desc% = sed0016Wdm.Install, USB\VID_0fce&PID_D044
+%sed0016.CdcBus.Desc% = sed0016Wdm.Install, USB\VID_0fce&PID_D045
+%sed0016.CdcBus.Desc% = sed0016Wdm.Install, USB\VID_0fce&PID_D046
+%sed0016.CdcBus.Desc% = sed0016Wdm.Install, USB\VID_0fce&PID_D047
+%sed0016.CdcBus.Desc% = sed0016Wdm.Install, USB\VID_0fce&PID_D048
+%sed0016.CdcBus.Desc% = sed0016Wdm.Install, USB\VID_0fce&PID_D049
+%sed0016.CdcBus.Desc% = sed0016Wdm.Install, USB\VID_0fce&PID_D067
+%sed0016.CdcBus.Desc% = sed0016Wdm.Install, USB\VID_0fce&PID_D068
+%sed0016.CdcBus.Desc% = sed0016Wdm.Install, USB\VID_0fce&PID_D069
+%sed0016.CdcBus.Desc% = sed0016Wdm.Install, USB\VID_0fce&PID_D070
+%sed0016.CdcBus.Desc% = sed0016Wdm.Install, USB\VID_0fce&PID_D073
+%sed0016.CdcBus.Desc% = sed0016Wdm.Install, USB\VID_0fce&PID_D079
+%sed0016.CdcBus.Desc% = sed0016Wdm.Install, USB\VID_0fce&PID_D086
+%sed0016.CdcBus.Desc% = sed0016Wdm.Install, USB\VID_0fce&PID_D087
+%sed0016.CdcBus.Desc% = sed0016Wdm.Install, USB\VID_0fce&PID_D088
+%sed0016.CdcBus.Desc% = sed0016Wdm.Install, USB\VID_0fce&PID_D089
+%sed0016.CdcBus.Desc% = sed0016Wdm.Install, USB\VID_0fce&PID_D094
+%sed0016.CdcBus.Desc% = sed0016Wdm.Install, USB\VID_0fce&PID_D0A1
+%sed0016.CdcBus.Desc% = sed0016Wdm.Install, USB\VID_0fce&PID_D0A3
+%sed0016.CdcBus.Desc% = sed0016Wdm.Install, USB\VID_0fce&PID_D0A7
+%sed0016.CdcBus.Desc% = sed0016Wdm.Install, USB\VID_0fce&PID_D0B7
+%sed0016.CdcBus.Desc% = sed0016Wdm.Install, USB\VID_0fce&PID_D0B8
+
+
+[sed0016.NTamd64]
+%sed0016.CdcBus.Desc% = sed0016Wdm.Install, USB\VID_0fce&PID_d038
+%sed0016.CdcBus.Desc% = sed0016Wdm.Install, USB\VID_0fce&PID_d039
+%sed0016.CdcBus.Desc% = sed0016Wdm.Install, USB\VID_0fce&PID_D043
+%sed0016.CdcBus.Desc% = sed0016Wdm.Install, USB\VID_0fce&PID_D044
+%sed0016.CdcBus.Desc% = sed0016Wdm.Install, USB\VID_0fce&PID_D045
+%sed0016.CdcBus.Desc% = sed0016Wdm.Install, USB\VID_0fce&PID_D046
+%sed0016.CdcBus.Desc% = sed0016Wdm.Install, USB\VID_0fce&PID_D047
+%sed0016.CdcBus.Desc% = sed0016Wdm.Install, USB\VID_0fce&PID_D048
+%sed0016.CdcBus.Desc% = sed0016Wdm.Install, USB\VID_0fce&PID_D049
+%sed0016.CdcBus.Desc% = sed0016Wdm.Install, USB\VID_0fce&PID_D067
+%sed0016.CdcBus.Desc% = sed0016Wdm.Install, USB\VID_0fce&PID_D068
+%sed0016.CdcBus.Desc% = sed0016Wdm.Install, USB\VID_0fce&PID_D069
+%sed0016.CdcBus.Desc% = sed0016Wdm.Install, USB\VID_0fce&PID_D070
+%sed0016.CdcBus.Desc% = sed0016Wdm.Install, USB\VID_0fce&PID_D073
+%sed0016.CdcBus.Desc% = sed0016Wdm.Install, USB\VID_0fce&PID_D079
+%sed0016.CdcBus.Desc% = sed0016Wdm.Install, USB\VID_0fce&PID_D086
+%sed0016.CdcBus.Desc% = sed0016Wdm.Install, USB\VID_0fce&PID_D087
+%sed0016.CdcBus.Desc% = sed0016Wdm.Install, USB\VID_0fce&PID_D088
+%sed0016.CdcBus.Desc% = sed0016Wdm.Install, USB\VID_0fce&PID_D089
+%sed0016.CdcBus.Desc% = sed0016Wdm.Install, USB\VID_0fce&PID_D094
+%sed0016.CdcBus.Desc% = sed0016Wdm.Install, USB\VID_0fce&PID_D0A1
+%sed0016.CdcBus.Desc% = sed0016Wdm.Install, USB\VID_0fce&PID_D0A3
+%sed0016.CdcBus.Desc% = sed0016Wdm.Install, USB\VID_0fce&PID_D0A7
+%sed0016.CdcBus.Desc% = sed0016Wdm.Install, USB\VID_0fce&PID_D0B7
+%sed0016.CdcBus.Desc% = sed0016Wdm.Install, USB\VID_0fce&PID_D0B8
+
+
+;-----------------------------------------------------------------------------
+; How to install them:  On W9x, the [section] name is used directly.
+; On NT, the system first tries [section.NT], then [section].
+;-----------------------------------------------------------------------------
+
+;-----------------------------------------------------------------------------
+; Diagnostics Files CopyFiles List Section
+;-----------------------------------------------------------------------------
+[sed0016.CopyFiles]
+
+;-----------------------------------------------------------------------------
+; XXX when we have a property page DLL, add it to the following section.
+;-----------------------------------------------------------------------------
+[PropPages.CopyFiles]
+
+;-----------------------------------------------------------------------------
+;       How to install the WDM driver on W95/W98
+;-----------------------------------------------------------------------------
+[sed0016Wdm.Install]
+CopyFiles       = sed0016Wdm.W95.CopyFiles, sed0016.CopyFiles, PropPages.CopyFiles
+AddReg          = sed0016Wdm.AddReg, sed0016Wdm.W95.AddReg
+
+;-----------------------------------------------------------------------------
+;       How to install the WDM driver on NT
+;-----------------------------------------------------------------------------
+[sed0016Wdm.Install.NT]
+CopyFiles       = sed0016Wdm.NT.CopyFiles
+AddReg          = sed0016Wdm.AddReg, sed0016Wdm.NT.AddReg
+
+;-----------------------------------------------------------------------------
+;       How to start the WDM driver on NT
+;-----------------------------------------------------------------------------
+[sed0016Wdm.Install.NT.Services]
+AddService      = s0016bus, 2, sed0016Wdm.AddService, sed0016Wdm.Install.EventLog
+
+[sed0016Wdm.AddService]
+DisplayName             = %sed0016.Service.Desc%
+ServiceType             = 1     ; SERVICE_KERNEL_DRIVER
+StartType               = 3     ; SERVICE_DEMAND_START
+ErrorControl            = 1     ; SERVICE_ERROR_NORMAL
+ServiceBinary           = %12%\s0016bus.sys
+LoadOrderGroup          = Base
+
+;-----------------------------------------------------------------------------
+;       Setup event logging, if driver supports it
+;-----------------------------------------------------------------------------
+
+[sed0016Wdm.Install.EventLog]
+
+;-----------------------------------------------------------------------------
+;       WDM registry entries (all platforms)
+;-----------------------------------------------------------------------------
+[sed0016Wdm.AddReg]
+
+HKR,,MCCI_TCPWindowSizeFix_MinValue,0x10001,f0,fa,00,00
+HKR,,MCCI_MCECIDFix,0x10001,07,00,00,00
+
+;-----------------------------------------------------------------------------
+;       WDM registry entries (W95/98) (including how to start the driver)
+;-----------------------------------------------------------------------------
+[sed0016Wdm.W95.AddReg]
+HKR,,DevLoader,,*ntkern
+HKR,,NTMPDriver,,s0016bus.sys
+
+;-----------------------------------------------------------------------------
+;       WDM registry entries (NT only)
+;-----------------------------------------------------------------------------
+[sed0016Wdm.NT.AddReg]
+
+;-----------------------------------------------------------------------------
+;       The WDM copy list for Win95 -- different because things go in
+;       different places.  Also, we probably need to rename drivers 
+;       during the install.
+;-----------------------------------------------------------------------------
+[sed0016Wdm.W95.CopyFiles]
+s0016bus.sys
+s0016wh.sys,s0016wh95.sys
+s0016wh95.sys
+s0016whnt.sys
+
+;-----------------------------------------------------------------------------
+;       The WDM copy list for NT -- different because things go in
+;       different places.
+;-----------------------------------------------------------------------------
+[sed0016Wdm.NT.CopyFiles]
+s0016bus.sys
+s0016wh.sys,s0016whnt.sys
+s0016whnt.sys
+
+
+;****************************************************************************
+; Localizable Strings
+;****************************************************************************
+[strings]
+
+;BEGIN ENG - US English Strings
+Provider = "Sony Ericsson"
+SonyEricsson = "Sony Ericsson"
+DiskString = "Sony Ericsson Device 0016 Installation disk"
+
+sed0016.CdcBus.Desc = "Sony Ericsson Device 0016"
+sed0016.Service.Desc = "Sony Ericsson Device 0016 driver (WDM)"
+
+CustomerDataPath = "Sony Ericsson Device 0016"
+DriverSet = "Sony Ericsson Device 0016 Software"
+UninstallFile = "S0016Uninstall.exe"
+McciOptions = "Uninstallable"
+
+
+;END ENG - US English Strings
+
+;-----------------------------------------------------------------------------
+; Following are symbolic constants which don't change per locale.
+;-----------------------------------------------------------------------------
+
+;*** end of file ***

@@ -1,0 +1,13 @@
+[driver backup information]
+driverdesc=Controladora de interfaz Intel(R) ICH8M LPC - 2815
+infpath=machine.inf                                                                     
+infsection=MSISADRV
+MatchingDeviceId=PCI\VEN_8086&DEV_2815&SUBSYS_902D104D&REV_03
+driverversion=6.1.7601.17514
+driverdate=2006-06-21
+providername=Microsoft
+class=System devices
+filenum=2
+signature=Windows Vista
+needrestore=no
+backuptime=sábado, marzo 28, 2015

@@ -1,0 +1,13 @@
+[driver backup information]
+driverdesc=Procesador de datos numéricos
+infpath=machine.inf                                                                     
+infsection=NO_DRV_X
+MatchingDeviceId=ACPI\PNP0C04
+driverversion=6.1.7601.17514
+driverdate=2006-06-21
+providername=Microsoft
+class=System devices
+filenum=1
+signature=Windows Vista
+needrestore=no
+backuptime=sábado, marzo 28, 2015

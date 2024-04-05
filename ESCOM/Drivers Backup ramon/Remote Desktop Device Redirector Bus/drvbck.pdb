@@ -1,0 +1,13 @@
+[driver backup information]
+driverdesc=Remote Desktop Device Redirector Bus
+infpath=rdpbus.inf                                                                      
+infsection=RDPBUS
+MatchingDeviceId=ROOT\RDPBUS
+driverversion=6.1.7600.16385
+driverdate=2006-06-21
+providername=Microsoft
+class=System devices
+filenum=2
+signature=Windows Vista
+needrestore=no
+backuptime=sábado, marzo 28, 2015

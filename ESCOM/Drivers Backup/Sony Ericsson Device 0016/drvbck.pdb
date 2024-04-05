@@ -1,0 +1,13 @@
+[driver backup information]
+driverdesc=Sony Ericsson Device 0016
+infpath=oem8.inf                                                                        
+infsection=sed0016Wdm.Install.NT
+MatchingDeviceId=USB\VID_0FCE&PID_D0A1&REV_0000
+driverversion=4.44.2.0
+driverdate=2008-04-24
+providername=Sony Ericsson
+class=Universal Serial Bus controllers
+filenum=5
+signature=Windows Vista
+needrestore=yes
+backuptime=sábado, marzo 28, 2015

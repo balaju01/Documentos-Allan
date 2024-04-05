@@ -1,0 +1,13 @@
+[driver backup information]
+driverdesc=Controladora de High Definition Audio
+infpath=hdaudbus.inf                                                                    
+infsection=HDAudio_Device.NT
+MatchingDeviceId=PCI\VEN_8086&DEV_284B&SUBSYS_902D104D&REV_03
+driverversion=6.1.7601.17514
+driverdate=2010-11-19
+providername=Microsoft
+class=System devices
+filenum=2
+signature=Windows Vista
+needrestore=no
+backuptime=sábado, marzo 28, 2015

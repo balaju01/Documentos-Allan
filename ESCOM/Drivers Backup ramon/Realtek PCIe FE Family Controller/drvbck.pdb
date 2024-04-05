@@ -1,0 +1,13 @@
+[driver backup information]
+driverdesc=Realtek PCIe FE Family Controller
+infpath=oem3.inf                                                                        
+infsection=RTL8102.ndi.NT
+MatchingDeviceId=PCI\VEN_10EC&DEV_8136&SUBSYS_02F41028&REV_02
+driverversion=7.3.522.2009
+driverdate=2009-05-22
+providername=Realtek
+class=Network adapters
+filenum=3
+signature=Windows Vista
+needrestore=yes
+backuptime=sábado, marzo 28, 2015

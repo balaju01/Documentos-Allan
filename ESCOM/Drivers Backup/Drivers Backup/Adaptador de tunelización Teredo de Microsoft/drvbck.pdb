@@ -1,0 +1,13 @@
+[driver backup information]
+driverdesc=Adaptador de tunelización Teredo de Microsoft
+infpath=nettun.inf                                                                      
+infsection=TEREDO.ndi
+MatchingDeviceId=*TEREDO
+driverversion=6.1.7600.16385
+driverdate=2006-06-21
+providername=Microsoft
+class=Network adapters
+filenum=1
+signature=Windows Vista
+needrestore=no
+backuptime=sábado, marzo 28, 2015

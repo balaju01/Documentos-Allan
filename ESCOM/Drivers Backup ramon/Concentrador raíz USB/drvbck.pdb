@@ -1,0 +1,13 @@
+[driver backup information]
+driverdesc=Concentrador raíz USB
+infpath=usbport.inf                                                                     
+infsection=ROOTHUB.Dev.NT
+MatchingDeviceId=USB\ROOT_HUB&VID8086&PID27CB&REV0002
+driverversion=6.1.7601.18328
+driverdate=2006-06-21
+providername=Microsoft
+class=Universal Serial Bus controllers
+filenum=3
+signature=All Windows Operating Systems
+needrestore=no
+backuptime=sábado, marzo 28, 2015

@@ -1,0 +1,13 @@
+[driver backup information]
+driverdesc=Equipo basado en ACPI x86
+infpath=hal.inf                                                                         
+infsection=ACPIAPIC_HAL
+MatchingDeviceId=acpiapic
+driverversion=6.1.7600.16385
+driverdate=2006-06-21
+providername=Microsoft
+class=Computer
+filenum=1
+signature=Windows Vista
+needrestore=no
+backuptime=sábado, marzo 28, 2015

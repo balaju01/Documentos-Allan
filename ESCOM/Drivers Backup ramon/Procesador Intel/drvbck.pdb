@@ -1,0 +1,13 @@
+[driver backup information]
+driverdesc=Procesador Intel
+infpath=cpu.inf                                                                         
+infsection=IntelPPM_Inst.NT
+MatchingDeviceId=ACPI\GenuineIntel_-_x86_Family_6_Model_28
+driverversion=6.1.7600.16385
+driverdate=2006-06-21
+providername=Microsoft
+class=Processors
+filenum=2
+signature=Windows Vista
+needrestore=no
+backuptime=sábado, marzo 28, 2015

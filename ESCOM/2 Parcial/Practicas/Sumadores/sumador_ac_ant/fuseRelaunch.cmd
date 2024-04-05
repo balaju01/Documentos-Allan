@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador_isim_beh.exe" -prj "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador_beh.prj" "work.sumador" 
