@@ -1,0 +1,10 @@
+.DS_Store
+Thumbs.db
+.idea
+node_modules
+app/bower_components
+_backups
+.sass-cache
+app/assets/css/materialism.css
+app/assets/css/materialism.css.map
+.tmp
