@@ -1,0 +1,6 @@
+
+1.- Instale el Programa, no lo inicie.
+2.- Copie el patch en "C:\Program Files\Avid\Sibelius 7" inicielo y aplique (ubique el fichero "SARILib.dll")
+
+Listo !!!!
+

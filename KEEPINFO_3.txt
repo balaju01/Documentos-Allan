@@ -1,0 +1,32 @@
+
+nforce_winxp_16.08_international_whql.exe
+
+nVIDIA nForce 630i/610i ForceWare Driver 16.08 WHQL Windows 2000/XP International
+nForce 630i / GeForce 7150 
+nForce 630i / GeForce 7100 
+nForce 610i / GeForce 7050  
+
+Version: 16.08 
+Release Date: 10.12.2007 
+Operating System: Windows XP (32-Bit) 
+Language: English (International)  
+File Size: 90.6 MB 
+WHQL driver package for nForce 630i / GeForce 7150 motherboards. 
+WHQL driver package for nForce 630i / GeForce 7100 motherboards. 
+WHQL driver package for nForce 610i / GeForce 7050 motherboards. 
+
+Installation Notes: 
+Windows XP users must install Service Pack 1, at a minimum, prior to attempting to install this package. Failure to do so will result in the inability to support USB 2.0. 
+Installation of DirectX 9.0 or higher is required in order to use NVMixer. 
+
+Windows XP Driver Versions: 
+
+Ethernet Driver (v67.64) WHQL
+
+SMU Driver (v1.34) WHQL 
+SATAIDE Driver (v10.1.0.20) WHQL 
+SATARAID Driver (v10.1.0.20) WHQL 
+RAIDTOOL Application (v10.1.0.20) 
+SMBus Driver (v4.62) WHQL 
+Installer 5.66 
+GPU Driver (v163.75) WHQL 

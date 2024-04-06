@@ -1,0 +1,28 @@
+-------------------------------
+Mejora de la Traducción
+	   por
+            SunkDevifull
+	  eMail
+      sunkdevifull@clandlan.net
+-------------------------------
+
+La mejora es básicamente generalizar términos y solucionar errores del interfaz (como dotes o poderes mal traducidos), aunque también hay algunos errores menores solucionados.
+Entre las generalizaciones se encuentran:
+-Cambiadas todas las referencias a "espada/s de luz" por "sable/s de luz".
+-Ebon Hawk ha sido traducido siempre como Halcón de Ébano.
+-Las referencias a dotes o poderes siempre son con respecto al nombre de la dote (por ejemplo, no más variaciones entre valor del caballero o explosión de velocidad).
+-Generalizadas las dotes o poderes consecutivos (disparo potente siempre es disparo potente y no unas veces disparo potente y otras explosión poderosa).
+-Ya no se usarán indiferentemente "avanzada/o" y "mejorada/o".
+-Todos los poderes tienen ahora la plantilla original con la referencia al tipo de poder del que se trata (Poder del Lado Oscuro, Poder del Lado de la Luz o Poder Universal).
+-Etcétera.
+
+También se han eliminado las abreviaciones, en unos casos desabreviándolas y en otros quitando palabras innecesarias ("Traje batalla lige. Exar Kun" por "Armadura de Exar Kun").
+
+22/04/04
+Se ha intentado eliminar palabras que puedan dar entender que Revan sea hombre o mujer, dejándolo más ambigüo. Pero he decidido dejar tal cual las veces en que se refiere a Revan como Señor Sith o similares, pues la traducción de "Lord", en este caso de los Sith, creo que debe quedar en masculino, como abogado o juez.
+Si me he saltado alguna frase de este tipo o crees que se podría mejorar lo hecho, contacta conmigo a la dirección del final de este archivo.
+
+Instalación: Sencillamente reemplaza el dialog.tlk del directorio raíz de instalación de KotOR. Podría ser interesante hacer una copia de seguridad del dialog.tlk original para así reemplazarlo en caso de errores o problemas, aunque no debería haberlos, yo personalmente lo he probado durante largas sesiones.
+Esta mejora está idealmente hecha para la versión 1.03 de SW:KotOR, aunque no debería dar problemas con versiones anteriores, sencillamente las nuevas entradas no están "enlazadas". Pero es posible que no funcione correctamente con versiones posteriores (entre las versiones 1.00 y 1.02 no se tocó el dialog.tlk).
+
+Para bugs de la mejora, o para reportar errores en la traducción oficial o en la mejora, así como comentarios, puedes contactar conmigo en sunkdevifull@clandlan.net.

@@ -1,0 +1,12 @@
+
+1.- Instale el Programa, no lo inicie.
+2.- Ir a la carpeta crack y doble click a "click.reg"
+3.- En la carpeta "Crack", copiar del siguiente modo:
+
+x32 --> 32 Bits
+x64 --> 64 Bits
+
+Copiar en "C:\Program Files\Avid\Sibelius 7"
+
+Listo !!!!
+

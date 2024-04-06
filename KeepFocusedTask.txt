@@ -1,0 +1,9 @@
+07:feb:2015 02:26:: documentacion ingenieria
+07:feb:2015 02:57:: identificacion de cuerpos ingenieria de software documentacion
+07:feb:2015 04:08:: diagramas de planeacion de actividades proyecto ingenieria de software
+07:feb:2015 06:16:: hitos diagrama de gant diagrama de pert
+07:feb:2015 11:11:: 
+07:feb:2015 11:41:: gant
+08:feb:2015 12:32:: gant
+08:feb:2015 01:03:: gant
+08:feb:2015 01:34:: gant pert

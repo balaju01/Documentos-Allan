@@ -1,0 +1,10 @@
+1.Instalar el juego(Cambiando de CD cuando es necesario).
+2.Actualizar con el parche a la version 1.03
+3.Descomprimen el rar de la carpeta crack y lo mueven al lugar donde este instalado el juego.
+4.Para la traduccion : Instalación: Sencillamente reemplaza el dialog.tlk del directorio raíz de instalación de KotOR.
+(hacer una copia de seguridad del dialog.tlk original para así reemplazarlo en caso de errores o problemas).
+5.A jugar!!!!!!
+
+By BlizzBoyGames
+
+http://www.blizzboygames.net

@@ -1,0 +1,37 @@
+SPECIAL NOTE
+DO NOT UPDATE THIS DRIVER.
+
+THIS DRIVER CAME FROM DOWNLOAD FOR nForce4/500 series - Windows 2000/XP
+
+6.86_nforce_win2kxp_international_whql.exe
+
+nForce4/500 series - Windows 2000/XP
+Version: 6.86
+Release Date: July 7, 2006
+WHQL Certified 
+English
+File Size: 43.1 MB
+
+Release Notes 
+WHQL driver package for nForce4 AMD, nForce 500 series AMD, nForce4 AMD/Intel X16 motherboards. 
+
+Installation Notes 
+Uninstall any existing nForce networking drivers prior to installing this package. 
+Windows XP users must install Service Pack 1, at a minimum, prior to attempting to install this package. 
+Failure to do so will result in the inability to support USB 2.0. 
+Installation of DirectX 9.0 or higher is required in order to use NVMixer. 
+
+Windows XP/2000 Driver Versions 
+Audio Driver (v4.65) "WHQL" 
+Audio Utility (v4.51) 
+Ethernet Driver (v50.25) "WHQL" 
+Network Management Tools (v50.19) 
+SMBus Driver (v4.57) "WHQL" 
+Installer (v4.89) 
+WinXP IDE SataRAID Driver (v6.66) "WHQL" 
+WinXP IDE SataIDE Driver (v6.66) "WHQL" 
+WinXP RAIDTOOL Application (v6.63
+
+
+SPECIAL NOTE
+DO NOT UPDATE THIS DRIVER.

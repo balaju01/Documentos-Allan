@@ -1,0 +1,5 @@
+- Run the setup
+- When asked by the "Xilinx License Configuration Manager", select "Locate Existing License"
+  and use the included license file xilinx_ise_12.lic
+
+Have fun.

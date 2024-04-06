@@ -1,0 +1,19 @@
+
+
+1) Install as trial                                    
+ 
+2) Disable the phone-home by one of two methods:        
+   - 
+add "127.0.0.1 activate.adobe.com" to Windows\system32\drivers\etc\hosts                      
+   
+- Apply our patch to disable the phone-home code          
+
+3) Use our keymaker to generate a serial                     
+
+
+NOTE: Although CORE already released the Master Collection   
+as an ESD ISO, we feel as though these applications deserve  
+seperate 0day releases.      
+
+
+Listo 

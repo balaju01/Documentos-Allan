@@ -1,0 +1,26 @@
+Instrucciones.-
+
+1 - Instalar Avast! Free Antivirus 5.0.418 y saltarse el paso de introducir
+    clave en el caso de que salga.    
+
+2 - Abrir el programa desde el icono de al lado del reloj de Windows e ir a
+       Mantenimiento / Registro
+
+    y pulsar en "Introducir clave de licencia".
+    
+3 - En la ventana que nos saldrá pegamos la Key siguiente y pulsamos "Aceptar":
+
+		W9740570R9942A0910-8NB2E62T
+
+4 - Pulsamos en la nueva ventana 'Aceptar' y ya queda el programa registrado
+    
+	hasta el 19 de enero de 2038.
+
+
+
+			Avast! Free Antivirus 5.0.418
+
+
+AGRADECER NO CUESTA NADA          BENY_MEN                DEJEN PUNTOS 
+
+			

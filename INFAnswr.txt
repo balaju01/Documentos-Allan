@@ -1,0 +1,123 @@
+; ********************************************************************************
+; ********************************************************************************
+; **	Filename: INFAnswer.txt										     **
+; **	Abstract: Windows* XP installation answer file to enable 
+; **               Intel(R) INF file preload.
+; **    Last Update:  Sept 12, 2003 (Version 6.0.0 Build 1001)
+; ********************************************************************************
+; ********************************************************************************
+; Sample Unattended Setup Answer File						**
+;										**
+; This file contains information about how to automate the installation		**
+; or upgrade of Windows XP Pro Codename Whistler so the				**
+; Setup program runs without requiring user input.				**
+; ********************************************************************************
+ 
+[Unattended]
+UnattendMode=Fullunattend
+UnattendSwitch=Yes
+OemPreinstall=Yes
+ConfirmHardware=No
+OverwriteOemFilesOnupgrade=No
+OemSkipEula=Yes
+TargetPath=WINDOWS
+;Filesystem=ConvertNTFS
+DriverSigningPolicy=Ignore
+OemPnPDriversPath="DRIVERS\INTELINF"
+CrushDumpSetting=1
+
+[UserData]
+FullName="User_Name"
+OrgName="Corporation_Name"
+ComputerName=*
+ProductKey="xxxxx-xxxxx-xxxxx-xxxxx-xxxxx"
+
+[GuiUnattended]
+Timezone=4 ;Set to the Pacific Northwest
+AdminPassword=*
+AutoLogon=Yes
+AutoLogonCount=99
+OemSkipReginal=1
+OemSkipWelcome=1
+
+[Display]
+BitsPerPel=16
+XResolution=640
+YResolution=480
+VRefresh=60
+
+[RegionalSettings]
+LanguageGroup=1
+SystemLocale=00000409
+UserLocale=00000409
+InputLocale=0409:00000409
+
+[Shell]
+DefaultStartPaneloff=Yes
+
+[ComputerSettings]
+PowerScheme=Presentation
+
+[Branding]
+BrandIEUsingUnattended=Yes
+
+[Networking]
+InstallDefaultComponents=Yes
+
+[NetAdapters]
+Adapter1=params.Adapter1
+
+[params.Adapter1]
+INFID=*
+
+[NetClients]
+MS_MSClient=parama.MS_MSClient
+
+[NetServices]
+MS_SERVER=params.MS_Server
+
+[NetProtocols]
+MS_TCPIP=params.MS_TCPIP
+
+[params.MS_TCPIP]
+DNS=Yes
+UseDomainNameDevolution=No
+EnableLMHosts=Yes
+AdapterSelections=params.MS_TCPIP.Adapter1
+
+[params.MS_TCPIP.Adapter1]
+SpecificTo=Adapter1
+DHCP=Yes
+WINS=No
+NetBIOSOptions=0
+
+; ********************************************************************************
+; Copyright (c) 2003 Intel Corporation						**
+; Copyright (c) 1994 - 2002 Microsoft Corporation				**
+;										**
+; ********************************************************************************
+; Intel is making no claims of usability, effecacy or warranty			**
+; ********************************************************************************
+; Information in this document is provided in connection with Intel products.	**
+; No license, express or implied, by estoppel or otherwise, to any intellectual **
+; property rights is granted by this document.  Intel assumes no liability	**
+; whatsoever, and Intel disclaims any express or implied warranty, relating to	**
+; sale and/or use of Intel products for particular purpose, merchantability, or **
+; infringement of any patent, copyright or other intellectual property right.	**
+; Intel products are not intended for use in medical, life saving, or life	**
+; sustaining applications.							**
+;
+; ********************************************************************************
+; Intel corporation disclaims all warranties and liabilities for the use of	**
+; this document and the information contained herein, and assumes no		** 
+; responsibility for any errors which may appear in this document, nor does	**
+; Intel makes a commitment to update the information contained herein.  Intel	** 
+; reserves the right to make changes to this document at any time, without	**
+; notice.									**
+; ********************************************************************************
+; ********************************************************************************
+
+; Third-party brands and names are the property of their respective owners.	**
+; ********************************************************************************
+;*********************************************************************************
+

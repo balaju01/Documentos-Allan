@@ -1,0 +1,36 @@
+THIS DRIVER CAME FROM DOWNLOAD FOR Nforce 590 SLI (AMD)
+
+9.35_nforce_winxp_international.exe
+
+nForce 590 SLI  
+Version: 9.35 
+Release Date: June 28, 2006 
+Operating System: Windows XP (32-Bit) 
+Language: English (International)  
+File Size: 33.8 MB 
+
+Release Notes: 
+WHQL driver package for nForce 590 SLI motherboards. 
+
+Installation Notes: 
+Uninstall any existing nForce networking drivers prior to installing this package. 
+Windows XP users must install Service Pack 1, at a minimum, prior to attempting to install this package. Failure to do so will result in the inability to support USB 2.0. 
+Installation of DirectX 9.0 or higher is required in order to use NVMixer. 
+
+MediaShield
+Networking 
+
+Windows XP Driver Versions: 
+
+Ethernet Driver (v60.15) "WHQL" 
+Network Management Tools (v60.18) 
+
+SMBus Driver (v4.52) "WHQL" 
+Installer (v5.10) 
+WinXP IDE SataRAID Driver (v6.67) "WHQL" 
+WinXP IDE SataIDE Driver (v6.67) "WHQL" 
+WinXP RAIDTOOL Application (v6.73) 
+
+notes;
+The online descriptions do NOT mention AMD.
+One knows which product was selected, and makes extra notes..

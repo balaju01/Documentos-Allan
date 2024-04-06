@@ -1,0 +1,132 @@
+LICENCIA DE SOFTWARE Y GARANTÍA LIMITADA
+
+POR FAVOR, LEA ESTA LICENCIA CUIDADOSAMENTE ANTES 
+DE INSTALAR O UTILIZAR EL SOFTWARE.  LA UTILIZACIÓN DE ESTE 
+SOFTWARE SUPONE LA ACEPTACIÓN DE LOS TÉRMINOS DE 
+LA LICENCIA. SI NO ESTÁ DE ACUERDO CON LOS TÉRMINOS 
+DE ESTA LICENCIA, NO INSTALE O UTILICE EL SOFTWARE, 
+BORRE DE SU ORDENADOR TODOS LOS ARCHIVOS Y 
+ELEMENTOS ASOCIADOS Y DEVUÉLVALO JUNTO CON LA 
+CAJA Y SU CONTENIDO DONDE LO ADQUIRIÓ PARA UN 
+REEMBOLSO TOTAL DEL IMPORTE PAGADO.  
+
+El Software, trabajo artístico, música y otros componentes 
+incluidos en este programa de ordenador (colectivamente el “Software”) son 
+copyright propiedad de LucasArts Entertainment Company LLC 
+y sus licenciadores (en adelante "LEC"). El Software se le es 
+licenciado (no vendido) y LEC  es propietario del copyright, 
+el secreto comercial, la patente y otros derechos de  propiedad 
+relativos al Software. A usted se le permite usar el 
+Software en un único ordenador. A usted no se le permite: 
+(1)copiar (a excepción de una copia de seguridad), distribuir, 
+alquilar, arrendar o sublicenciar todo o parte del Software; 
+(2) modificar o realizar trabajos derivados 
+del Software; (3) transmitir el Software por red, teléfono 
+o usando cualquier medio electrónico, excepto en el 
+transcurso de partidas multijugador; (4) conectarse a
+partidas multijugador en redes no autorizadas; (5) diseñar
+o distribuir niveles no autorizados; o (6) usar ingeniería
+inversa, descompilación y desensamblaje del Software.
+Puede ceder el Software, pero sólo si el destinatario acuerda 
+aceptar los términos y condiciones de este Acuerdo.
+Si cede el Software, deberá cederlo con todos sus
+componentes y documentación y borrar cualquier copia
+que resida en su ordenador. Su licencia terminará
+automáticamente si usted cede el Software.
+
+LEC y ELECTRONIC ARTS SOFTWARE como su distribuidor en 
+España garantizan al comprador original que el medio
+suministrado en este producto está libre de defectos en 
+materiales y mano de obra bajo un uso normal por un período 
+de noventa  (90) días desde la fecha de compra 
+(estipulada en el comprobante de compra). Si el medio 
+suministrado como parte de este producto resultase estar 
+defectuoso, y el comprador devuelve el mismo a ELECTRONIC ARTS 
+SOFTWARE de 
+acuerdo a este párrafo, ELECTRONIC ARTS SOFTWARE 
+reemplazará el soporte 
+defectuoso: (a) sin coste para el comprador, si se 
+comprueba que el medio está defectuoso dentro del período 
+de noventa  (90) días que sigue a la fecha de compra, 
+y (b) si se comprueba que el medio es defectuoso después 
+de finalizar el período de garantía de noventa  (90) 
+días, ELECTRONIC ARTS SOFTWARE reemplazará el medio 
+defectuoso con un cargo por 
+Compact Disc a consultar con el Servicio Técnico de ELECTRONIC 
+ARTS SOFTWARE. 
+Para obtener la sustitución de un CD, por favor devuelva 
+sólo el CD, a ELECTRONIC ARTS SOFTWARE, a la 
+dirección indicada en el manual adjunto, acompañado de una copia 
+del comprobante de la fecha de compra, una descripción del 
+defecto y su nombre y dirección de remite.
+
+Para reemplazar un medio defectuoso después de finalizar el 
+período de garantía, envíe sólo el CD a ELECTRONIC ARTS 
+SOFTWARE a la dirección indicada en el manual 
+adjunto, acompañado de copia del comprobante de la fecha de 
+compra, una descripción del defecto y su nombre y dirección 
+de remite, pero concrete antes las condiciones de 
+sustitución con el Servicio Técnico de ELECTRONIC ARTS 
+SOFTWARE para que le 
+envíen por correo una sustitución.
+
+Usted reconoce expresamente y está de acuerdo en que el 
+riesgo derivado del uso del Software es de su única 
+responsabilidad. Excepto para la garantía limitada de 
+noventa (90) días establecida  en el tercer párrafo, el 
+Software y cualquier documentación o materiales relacionados 
+se suministran "TAL CUAL" y sin garantía de ninguna clase. 
+LEC Y ELECTRONIC ARTS SOFTWARE COMO SU DISTRIBUIDOR EN 
+ESPAÑA DESESTIMAN EXPRESAMENTE TODAS LAS GARANTÍAS, 
+EXPLÍCITAS  E IMPLÍCITAS, INCLUYENDO, SIN LIMITACIÓN, 
+LAS GARANTÍAS IMPLÍCITAS DE COMERCIABILIDAD, NO INFRACCIÓN 
+YADECUACIÓN PARA UN FIN. LEC Y ELECTRONIC ARTS SOFTWARE 
+NO GARANTIZAN QUE EL SOFTWARE SE AJUSTE A SUS NECESIDADES, 
+NI QUE NO SUFRA INTERRUPCIONES  O ERRORES DURANTE SU 
+FUNCIONAMIENTO, NI QUE LOS DEFECTOS DEL SOFTWARE VAYAN 
+A SER CORREGIDOS. TODOS LOS RIESGOS DERIVADOS DE LA 
+EJECUCIÓN Y UTILIZACIÓN DEL SOFTWARE SON ASUMIDOS POR USTED.
+ BAJO NINGUNA CIRCUNSTANCIA, INCLUYENDO NEGLIGENCIA, 
+LEC, ELECTRONIC ARTS SOFTWARE, O SUS DIRECTORES, JEFES, 
+EMPLEADOS O AGENTES, SERÁN RESPONSABLES FRENTE A USTED POR 
+CUALQUIER DAÑO FORTUITO, INDIRECTO, ESPECIAL O CONSIGUIENTE 
+(INCLUYENDO DAÑOS POR PÉRDIDA DE BENEFICIOS, INTERRUPCIÓN 
+DE NEGOCIO, PÉRDIDA DE INFORMACIÓN COMERCIAL  Y OTROS POR 
+EL ESTILO) QUE PUDIESE SURGIR POR LA POSESIÓN, USO O 
+MAL FUNCIONAMIENTO DE ESTE PRODUCTO, INCLUYENDO SIN 
+LIMITACIÓN ALGUNA, DAÑOS A LA PROPIEDAD Y, DENTRO 
+DE LOS LÍMITES  PERMITIDOS POR LA LEY, DAÑOS PERSONALES, 
+AÚN EN EL CASO DE QUE LEC, ELECTRONIC ARTS SOFTWARE O SU 
+REPRESENTANTE AUTORIZADO HUBIESEN SIDO INFORMADOS DE LA 
+POSIBILIDAD DE DICHOS DAÑOS O PÉRDIDAS. USTED ESTÁ DE 
+ACUERDO EN QUE LA RESPONSABILIDAD DE LEC Y/O ELECTRONIC ARTS 
+SOFTWARE RESULTANTE DE CUALQUIER CLASE DE RECLAMACIÓN LEGAL 
+(CONTRACTUAL, CIVIL O CUALQUIER OTRA) NO EXCEDERÁ LA CANTIDAD 
+PAGADA ORIGINALMENTE POR EL USO DE ESTE PRODUCTO. 
+
+Reglas que rigen el uso del Editor de Escenarios: Los “Escenarios Nuevos” son datos, generalmente representados por diseños artísticos específicos, valores y otros componente en el Software, que se pueden emplear para crear escenarios nuevos y, si así lo decidiera, campañas nuevas. Los Escenarios Nuevos están permitidos por LEC, a su total discreción, con las siguientes condiciones. Usted accede a que las siguientes condiciones se aplican a su creación de cualquier Escenario Nuevo:
+(1) 	Los Escenarios Nuevos deben funcionar sólo con la versión de venta del Software y no deben funcionar con cualquier versión de demostración del  Software.
+(2) 	Los Escenarios Nuevos no deben modificar ninguno de los archivos .EXE, .DLL u otros archivos ejecutables.
+(3) 	Los Escenarios Nuevos ningún archivo .DRS u otros archivos de recursos.
+(4) 	Los Escenarios Nuevos no deben contener ningún material ilegal, escandaloso, ilícito, difamatorio, calumnioso u objetable (tal y como determina LEC a su entera discreción) o materiales que infrinjan cualquier marca comercial, copyright, trabajo protegidos, publicidad, propiedad u otros derechos de terceros o LEC.
+(5) 	Los Escenarios Nuevos deben especificar en cada archivo de descripción o descripción online y/o léeme: (a) el nombre, dirección y dirección de email del creado; y (b) la siguiente renuncia: “ESTE ESCENARIO NO ESTÁ CREADO, DISTRIBUIDO O APOYADO POR LUCASARTS ENTERTAINMENT COMPANY LLC.  ELEMENTS TM Y © LUCASARTS ENTERTAINMENT COMPANY LLC Y SUS LICENCIATARIOS.”
+(6) 	Los Escenarios Nuevos no pueden ser vendidos, trocados o distribuidos con cualquier otro producto por el que se cobre un precio (aparte de los cargos incidentales por el tiempo conectado a Internet), sino que deben ser distribuidos gratuitamente.
+Distribuyendo o permitiendo la distribución de cualquier Escenario Nuevo, todos los creadores o propietarios de cualquier marca comercial, copyright u otros derechos, título o interés, conceden a LEC un derecho irrevocable, perpetuo, libre de derechos de autor, que puede licenciar, para distribuir el Escenario Nuevo por cualquier medio (conocido o por inventar) y para crear y distribuir por cualquier medio (conocido o por inventar) trabajo derivado de él y cobrar por la distribución del Escenario Nuevo o sus trabajos derivados, sin obligación de tener en cuenta de forma alguna a los creadores o propietarios del Escenario Nuevo.
+
+
+© 2002 LucasArts Entertainment Company LLC. 
+© 2002 Lucasfilm Ltd. & TM o ® según se indique.
+Todos los derechos reservados. Usado bajo autorización.
+
+Esta es una obra de ficción. Todos los personajes y 
+acontecimientos que aparecen en este juego son ficticios. 
+Cualquier parecido con personajes reales, vivos o muertos, 
+o con sucesos reales es pura coincidencia.
+
+LucasArts Entertainment Company LLC
+P.O. Box 10307
+San Rafael, CA 94912
+
+Electronic Arts Software
+Edificio Arcade. C/ Rufino González, 23 bis planta 1ª
+28037 Madrid (España)

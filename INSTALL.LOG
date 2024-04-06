@@ -1,0 +1,33 @@
+***  Installation Started 03/06/2011 12:46  ***
+Title: Advanced RAR Repair v1.2 Installation
+Source: C:\Documents and Settings\Administrador\Escritorio\Advanced RAR Repair v1.2 Full\Advanced RAR Repair v1.2 Full\setup.exe | 09-29-2006 | 08:10:46 | 771781
+Made Dir: C:\Archivos de programa\ARAR
+File Copy: C:\Archivos de programa\ARAR\UNWISE.EXE | 05-10-2001 | 10:04:28 | | 162304 | 432c52a3
+RegDB Key: Software\Microsoft\Windows\CurrentVersion\Uninstall\Advanced RAR Repair v1.2
+RegDB Val: Advanced RAR Repair v1.2
+RegDB Name: DisplayName
+RegDB Root: 2
+RegDB Key: Software\Microsoft\Windows\CurrentVersion\Uninstall\Advanced RAR Repair v1.2
+RegDB Val: C:\ARCHIV~1\ARAR\UNWISE.EXE C:\ARCHIV~1\ARAR\INSTALL.LOG
+RegDB Name: UninstallString
+RegDB Root: 2
+File Copy: C:\Archivos de programa\ARAR\ARAR.cnt | 09-27-2006 | 21:56:56 | | 453 | e838d98b
+File Copy: C:\Archivos de programa\ARAR\ARAR.dll | 09-27-2006 | 21:33:30 | 1.2.0.0 | 144384 | f7876f56
+File Copy: C:\Archivos de programa\ARAR\ARAR.exe | 09-27-2006 | 21:38:10 | 1.2.0.0 | 381952 | 19930ad3
+File Copy: C:\Archivos de programa\ARAR\ARAR.hlp | 09-27-2006 | 21:56:56 | | 21646 | 6fe0e798
+File Copy: C:\Archivos de programa\ARAR\ARARSHL.dll | 09-27-2006 | 21:36:30 | 1.2.0.0 | 64000 | f07f9e
+File Copy: C:\Archivos de programa\ARAR\Faq.txt | 09-27-2006 | 22:00:18 | | 4858 | 2cf70c8
+File Copy: C:\Archivos de programa\ARAR\file_id.diz | 06-30-2006 | 21:24:24 | | 650 | b9b1f5c9
+File Copy: C:\Archivos de programa\ARAR\History.txt | 09-27-2006 | 21:52:14 | | 1614 | b1946b64
+File Copy: C:\Archivos de programa\ARAR\readme.txt | 09-27-2006 | 21:58:40 | | 2835 | ac8082df
+Made Dir: C:\Documents and Settings\Administrador\Menú Inicio\Programas\Advanced RAR Repair
+Shell Link: C:\Documents and Settings\Administrador\Menú Inicio\Programas\Advanced RAR Repair\ARAR.lnk
+Link Info: C:\Archivos de programa\ARAR\ARAR.exe |  |  | 0 | 1 | 0 | 
+Shell Link: C:\Documents and Settings\Administrador\Menú Inicio\Programas\Advanced RAR Repair\Help.lnk
+Link Info: C:\Archivos de programa\ARAR\ARAR.hlp |  |  | 0 | 1 | 0 | 
+Shell Link: C:\Documents and Settings\Administrador\Escritorio\ARAR.lnk
+Link Info: C:\Archivos de programa\ARAR\ARAR.exe |  |  | 0 | 1 | 0 | 
+Shell Link: C:\Documents and Settings\Administrador\Menú Inicio\Programas\Advanced RAR Repair\Uninstall ARAR.lnk
+Link Info: C:\Archivos de programa\ARAR\UNWISE.EXE |  |  | 0 | 1 | 0 | 
+Self-Register: C:\Archivos de programa\ARAR\ARARSHL.dll
+User Rights: Admin

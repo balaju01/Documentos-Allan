@@ -1,0 +1,36 @@
+
+SERIAL:9D7J4 - TPJPQ - WBVC9 - YPWB7 - CF4YY
+INSTRUCCIONES DE INSTALACION FLIGHT SIMULATOR X + EXPANSION “ACCELERATION”
+
+>Instrucciones para instalar FSX con el Pack acceleration:
+
+
+1.- Abrir imagen DVD 1 con cualquier programa de unidad virtual, elegir “Instalar” y, cuando lo pida, abrir la imagen DVD 2 y dejar que termine la instalación.
+
+2.- Ejecutar el juego, esperar a que cargue bases de datos, cerrar el juego.
+
+3.- Instalar el Sp1.
+
+4.- Instalar el Pack Acceleration, que al llevar incluido el Sp2, evita que tengas que    instalarlo posteriormente.
+
+5.- Copiar en la carpeta del FSX los 3 archivos .dll que hay en la carpeta crack.
+
+6.- Jugar…y mucho!
+*
+*
+
+>Instrucciones para instalar FSX sin el pack acceleration:
+
+
+1.- Abrir imagen DVD 1 con cualquier programa de unidad virtual, elegir “Instalar” y, cuando lo pida, abrir la imagen DVD 2 y dejar que termine la instalación.
+
+2.- Ejecutar el juego, esperar a que cargue bases de datos,cerrar el juego.
+
+3.- Instalar el Sp1
+
+4.- Instalar el Sp2.
+
+5.- Copiar en la carpeta del FSX los 3 archivos .dll que hay en la carpeta crack.
+
+6.- Jugar…aunque no tanto…
+*

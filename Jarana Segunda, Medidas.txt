@@ -1,0 +1,25 @@
+largo total: 75.3 cm
+
+ancho total: 18.5 cm
+
+cabeza: 14.4 cm
+
+total de pala: 16.4 cm
+
+entre cabeza: 2 cm
+
+cejilla: 0.5 cm
+
+boca: 6.5 cm
+
+ancho de cabeza superior: 6.5 cm
+
+ancho de cabeza inferior: 6.1 cm
+
+ancho de brazo superior: 4.2 cm
+
+ancho de brazo inferior: 4.75 cm
+
+ancho sintura de caja: 12 cm
+
+ancho lobulo superior: 14.8 cm
