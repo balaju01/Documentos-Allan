@@ -1,0 +1,16 @@
+**
+**  Velocity Windows NDISM driver release note
+**
+**  version 1.42   Apr. 2005
+**
+
+WHQL submission number
+======================
+The WHQL submission ID of Velocity NDISM x64 v1.42 is 973865.
+
+Driver change notice list:
+==========================
+  1.40  03-11-2005  1.Make Win2000/XP wake up type selectable.
+
+  1.42  04-25-2005  1.Mask Memory base with 0xFFFFFFF0 to fit PCI spec
+                    2.Fix Rx Buffer default value issue in Win2K/XP/Server2003

@@ -1,0 +1,55 @@
+; --------------------------  How to use this file  ---------------------------------
+;
+; To run this installer in quiet mode:
+; 1. Edit the information below to match your company information and install location.
+; 2. Run : setup.exe <path to this file> /q /AcceptLicenses yes. Passing the value "yes"
+;    to the /AcceptLicenses parameter indicates that you agree with the license agreements.
+;    Alternatively, instead of /q, /qb can be used to run the installer in basic UI mode.
+; 3. The installer will automatically restart your system after the installation is done. 
+;    To prevent the restart use the command line : setup.exe <path to this file> /r:n /q /AcceptLicenses yes
+;
+; Please contact National Instruments support at www.ni.com/support for further assistance.
+
+
+
+; --------------------------  Set user information  ---------------------------------
+
+;    If the SerialNo key exists but its value is empty, and the installer support an evaluation mode, then an evaluation mode will be selected by default.  
+
+[UserInfo]
+Name=
+Company=
+SerialNo=
+
+
+; --------------------------  Set feature states  ---------------------------------
+
+;    The valid feature states are Local, Absent, NoChange and Default.  
+
+;    Local  - Install it (on the local hard drive). If already installed leave it installed.
+;    Absent - Do not install it. If already installed uninstall it.
+;    NoChange - Do not install it. If already installed, leave it installed.
+
+;    Default is equivalent to not listing the feature in this file. The feature follows its default behavior. 
+
+[Features]
+EWBPro.EWB.PRO.120=Default
+EWBCosim.EWB.COSIM.120=Default
+
+
+; --------------------------  Set Install Directories  ---------------------------------
+;
+; *** To use the default paths, remove the following section ***
+
+[Directories]
+; This determines where on your hard drive the National Instruments directory goes.
+; Leave this directory commented out if you prefer the default directory be used.
+;<RootDirectory>=C:\Program Files\National Instruments
+;
+; Additionally, for each feature in the installer, you can specify where that feature will be installed.
+;
+; NI Circuit Design Suite 12.0
+;EWBPro.EWB.PRO.120=C:\Program Files\National Instruments\Circuit Design Suite 12.0\
+
+
+

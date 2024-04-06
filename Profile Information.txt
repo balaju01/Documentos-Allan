@@ -1,0 +1,53 @@
+##############################################################
+
+LucasArts Entertainment Company LLC
+Star Wars® Galactic Battlegrounds™ 
+Version 1.0
+
+##############################################################
+
+How to use the Battlegrounds.swv profile with the 1.5 version 
+of Microsoft SideWinder Game Voice
+----------------------------------------------------------
+
+Please make sure to verify that you have the most updated
+Game Voice software installed in order to use the 
+Battlegrounds.SWV profile.
+
+Note: You can verify this by starting your Game Voice 
+Software. Select the help tab in the lower right corner of the
+Game Voice window, and select the "About SideWinder Game Voice" 
+option.
+
+In order to use the Battlegrounds.SWV profile, you will need 
+to manually copy the Battlegrounds.SWV profile (located in the 
+folder where you found this document) into your SideWinder
+Game Voice profile folder. This folder can be located at:
+C:\Program Files\Microsoft Hardware\Game Voice\Profiles 
+After you have copied the Battlegrounds.SWV profile into the
+Game Voice profile folder, you will be ready to select the 
+profile for Star Wars Galactic Battlegrounds. 
+
+
+How to use the Microsoft Strategic Commander Battlegrounds 
+profile 
+----------------------------------------------------------
+
+In order to use the Micorsoft Strategic Commander profiles,
+you will need to locate the following profile names: 
+Battlegrounds Go to Menu.s14, Battlegrounds Buildings.s14, and 
+Battlegrounds Groups.s14. Next, you will need to manually copy 
+these Profiles (located in the folder where you found this 
+document)into your Strategic Commander profile folder. This 
+folder can be located at:
+C:\Program Files\Microsoft Hardware\Game Controllers\Profiles
+After you copy the profiles into the Strategic Commander 
+profile folder,  you will be ready to select each of the
+Profiles for Star Wars Galactic Battlegrounds.
+
+
+##############################################################
+
+© 2001 LucasArts Entertainment Company LLC.  
+© 2001 Lucasfilm Ltd. & TM or ® as indicated.
+All rights reserved.  Used under authorization.

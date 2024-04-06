@@ -1,0 +1,1000 @@
+[Language]
+Language=Auto
+
+[French]
+TxtOK		= OK
+TxtCancel	= Annuler
+TxtApply	= Appliquer
+MTxtYes		= Oui(&Y)
+MTxtNo		= Non(&N)
+TxtDelFiles	= Suppression des fichiers...
+TxtDelFldrs	= Suppression des dossiers...
+TxtDelReg	= Suppression des valeurs du registre système...
+
+TxtUninstApp	= Désinstallation S3 Graphics
+TxtUninst	= Désinstallation %s en cours
+TxtConfirmUn1	= Cela désinstallera le pilote %s et tous les utilitaires associés.
+TxtConfirmUn2	= Cela désinstallera le %s.
+TxtConfirm_b	= Choisissez Oui pour désinstaller, ou choisissez Non pour abandonner.
+TxtEllipsis	= ...%s
+TxtCloseApps	= Fermeture en cours des applications ouvertes...
+
+TxtFinishing	= Désinstallation en cours...
+TxtReboot1a	= Vous devez redémarrer votre ordinateur pour que ces modifications soient prises en compte.
+TxtReboot1b	= Voulez-vous redémarrer votre ordinateur maintenant ?
+
+TxtWinReq	= Cette configuration doit uniquement être exécutée sur Windows %s.
+TxtWrongOs	= Cette configuration requiert une version différente de système d'exploitation.
+TxtNoTmpDir	= Impossible de créer un répertoire temporaire.
+TxtNoInitDll	= Erreur lors de la tentative d'initialisation du DLL %s.
+TxtNoHardware	= Aucun matériel compatible n'a été détecté.
+TxtNoDrvInf	= Impossible de trouver le paramètre DrvInf dans %s.
+TxtInitLog	= Démarrage du journal du progrès...
+TxtPromptSetup	= Êtes-vous sûr de vouloir installer le pilote %s?
+TxtAborted	= La configuration n'a pas pu terminer l'installation.  Vérifier le journal de progrès dans votre répertoire Windows pour plus de détails.
+TxtRebootToUse1	= Vous devez redémarrer votre système pour utiliser le pilote que vous viens d'être installé.
+TxtRebootToUse2	= Choisissez OUI pour redémarrer maintenant, Non pour redémarrer plus tard.
+TxtRebootNopriv	= Échec du redémarrage: impossible d'avoir le privilège d'arrêt de l'ordinateur.
+TxtRebootFailExit = Échec du redémarrage: demande pour quitter Windows a retourné une erreur.
+TxtRebootFailed	= Échec du redémarrage: demande pour quitter Windows a retourné une erreur inconnue.
+TxtManualReboot	= Vous devriez redémarrer Windows manuellement.
+TxtNoDllLoad	= Impossible de charger le DLL d'aide à la configuration.  Impossible de continuer.
+TxtBadHelpDll	= Impossible de trouver les fonctions correctes dans le DLL d'aide à la configuration.  Impossible de continuer.
+
+TxtInstall	= Installation de %s...
+TxtFinishOK	= Installation terminer.
+TxtInsCancel	= La configuration à été annulée et ne s'est pas terminée.
+TxtInstOk1	= La configuration a terminé l'installation du pilote pour votre %s.
+
+[German]
+TxtOK		= OK
+TxtCancel	= Abbrechen
+MTxtYes		= &Ja
+MTxtNo		= &Nein
+TxtApply	= Übernehmen
+TxtDelFiles	= Dateien werden entfernt...
+TxtDelFldrs	= Ordner werden entfernt...
+TxtDelReg	= Werte werden aus der Systemregistrierung entfernt...
+
+TxtUninstApp	= S3 Graphics deinstallieren
+TxtUninst	= %s deinstallieren
+TxtConfirmUn1	= Mit diesem Befehl werden der %s-Treiber und alle zusammenhängenden Dienstprogramme deinstalliert.
+TxtConfirmUn2	= Mit diesem Befehl wird %s deinstalliert.
+TxtConfirm_b	= Wählen Sie zum Deinstallieren Ja oder zum Abbrechen Nein.
+TxtEllipsis	= ...%s
+TxtCloseApps	= Geöffnete Applikationen werden geschlossen...
+TxtFinishing	= Deinstallation wird fertig gestellt...
+TxtReboot1a	= Sie müssen den Computer neu starten, um die Änderungen zu übernehmen.
+TxtReboot1b	= Soll der Computer jetzt neu gestartet werden?
+
+TxtWinReq	= Dieses Setup kann nur Windows %s ausgeführt werden.
+TxtWrongOs	= Dieses Setup benötigt eine andere Version vom Betriebssystem.
+TxtNoTmpDir	= Temporäres Verzeichnis kann nicht erstellt werden.
+TxtNoInitDll	= Fehler beim Initialisieren von DLL %s.
+TxtNoHardware	= Es wurde keine kompatible Hardware festgestellt.
+TxtNoDrvInf	= DrvInf-Einstellung konnte nicht in %s gefunden werden.
+TxtInitLog	= Starten vom Verlaufsprotokoll...
+TxtPromptSetup	= Soll der %s-Treiber wirklich installiert werden?
+TxtAborted	= Setup konnte die Installation nicht fertigstellen.  Weitere Details finden Sie im Verlaufsprotokoll in Ihrem Windows-Verzeichnis.
+TxtRebootToUse1	= Sie müssen das System neu starten, um den gerade installierten Treiber zu verwenden.
+TxtRebootToUse2	= Wählen Sie Ja, um jetzt neu zu starten, Nein, um später neu zu starten.
+TxtRebootNopriv	= Neustart fehlgeschlagen: Es konnte kein Ausschaltprivileg bezogen werden.
+TxtRebootFailExit = Neustart fehlgeschlagen: Aufruf, Windows zu beenden, gab einen Fehler aus.
+TxtRebootFailed	= Neustart fehlgeschlagen: Aufruf, Windows zu beenden, gab einen unbekannten Fehler aus.
+TxtManualReboot	= Sie sollten Windows manuell neu starten.
+TxtNoDllLoad	= Das Setup-Hilfe-DLL konnte nicht geladen werden.  Der Vorgang kann nicht fortgesetzt werden.
+TxtBadHelpDll	= Die richtigen Funktionen konnten im Setup-Hilfe-DLL nicht gefunden werden.  Der Vorgang kann nicht fortgesetzt werden.
+
+TxtInstall	= Installieren von %s...
+TxtFinishOK	= Installation fertiggestellt.
+TxtInsCancel	= Setup wurde abgebrochen und hat sich nicht fertiggestellt.
+TxtInstOk1	= Setup hat die Installation des Treibers für %s fertiggestellt.
+
+[Italian]
+TxtOK		= OK
+TxtCancel	= Annulla
+TxtApply	= Applica
+MTxtYes		= &Sì
+MTxtNo		= &No
+TxtReboot1a	= Il sistema deve essere riavviato perché le modifiche abbiano effetto.
+TxtReboot1b	= Riavviare adesso?
+TxtDelFiles	= Rimozione dei file in corso ...
+TxtDelFldrs	= Rimozione delle cartelle in corso ...
+TxtDelReg	= Rimozione dei valori del registro di sistema in corso ...
+
+TxtUninstApp	= Rimozione di S3 Graphics
+TxtUninst	= Rimozione di %s in corso
+TxtConfirmUn1	= Ciò rimuoverà il driver %s e qualsiasi applicazione allegata.
+TxtConfirmUn2	= Ciò rimuoverà %s.
+TxtConfirm_b	= Scegliere Sì rimuovere, oppure No per annullare.
+TxtEllipsis	= ...%s
+TxtCloseApps	= Chiusura delle applicazioni in corso ...
+TxtFinishing	= Completamento della rimozione in corso ...
+TxtNoInfo	= Mancano alcune informazioni di rimozione. Ritentare con un registro di rimozione appropriato.
+
+TxtWinReq	= This Setup should only be run on Windows %s.
+TxtWrongOs	= This Setup requires a different version of operation system.
+TxtNoTmpDir	= Unable to create a temporary directory.
+TxtNoInitDll	= Error trying to initialize DLL %s.
+TxtNoHardware	= No compatible hardware was detected.
+TxtNoDrvInf	= Unable to find DrvInf setting in %s.
+TxtInitLog	= Starting progress log...
+TxtPromptSetup	= Are you sure you want to install the %s driver?
+TxtAborted	= Setup was unable to complete the installation.  Check the progress log in your Windows directory for more details.
+TxtRebootToUse1	= You must reboot your system to use the driver that was just installed.
+TxtRebootToUse2	= Choose Yes to reboot now, No to reboot later.
+TxtRebootNopriv	= Reboot failed: unable to get shutdown privilege.
+TxtRebootFailExit = Reboot failed: call to exit Windows returned error.
+TxtRebootFailed	= Reboot failed: call to exit Windows returned unknown error.
+TxtManualReboot	= You should restart Windows manually.
+TxtNoDllLoad	= Unable to load setup helper DLL.  Cannot continue.
+TxtBadHelpDll	= Unable to find correct functions in setup helper DLL.  Cannot continue.
+
+TxtInstall	= Installing %s...
+TxtFinishOK	= Installation complete.
+TxtInsCancel	= Setup has been canceled and did not complete.
+TxtInstOk1	= Setup has finished installing the driver for your %s.
+
+[Japanese]
+TxtOK		= OK
+TxtCancel	= ƒLƒƒƒ“ƒZƒ‹
+MTxtYes		= ‚Í‚¢(&Y)
+MTxtNo		= ‚¢‚¢‚¦(&N)
+TxtApply	= “K—p
+TxtDelFiles	= ƒtƒ@ƒCƒ‹‚ğíœ‚µ‚Ä‚¢‚Ü‚·...
+TxtDelFldrs	= ƒtƒHƒ‹ƒ_‚ğíœ‚µ‚Ä‚¢‚Ü‚·...
+TxtDelReg	= ƒVƒXƒeƒ€‚ÌƒŒƒWƒXƒgƒŠ’l‚ğíœ‚µ‚Ä‚¢‚Ü‚·...
+
+TxtUninstApp	= S3ƒOƒ‰ƒtƒBƒbƒNƒX‚ÌƒAƒ“ƒCƒ“ƒXƒg[ƒ‹
+TxtUninst	= ƒAƒ“ƒCƒ“ƒXƒg[ƒ‹‚µ‚Ä‚¢‚Ü‚· %s
+TxtConfirmUn1	= ‚±‚ê‚Í%sƒhƒ‰ƒCƒo‚Æ‘g‚İ‚Ü‚ê‚½‚·‚×‚Ä‚Ìƒ†[ƒeƒBƒŠƒeƒB‚ğƒAƒ“ƒCƒ“ƒXƒg[ƒ‹‚µ‚Ü‚·B
+TxtConfirmUn2	= ‚±‚ê‚Í%s‚ğƒAƒ“ƒCƒ“ƒXƒg[ƒ‹‚µ‚Ü‚·B
+TxtConfirm_b	= u‚Í‚¢v‚ğ‘I‘ğ‚·‚é‚ÆƒAƒ“ƒCƒ“ƒXƒg[ƒ‹‚µAu‚¢‚¢‚¦v‚ğ‘I‘ğ‚·‚é‚ÆƒLƒƒƒ“ƒZƒ‹‚µ‚Ü‚·B
+TxtEllipsis	= ...%s
+TxtCloseApps	= ŠJ‚¢‚Ä‚¢‚éƒAƒvƒŠƒP[ƒVƒ‡ƒ“‚ğ•Â‚¶‚Ü‚·...
+TxtFinishing	= ƒAƒ“ƒCƒ“ƒXƒg[ƒ‹‚ğI—¹‚µ‚Ü‚·...
+TxtReboot1a	= ƒAƒ“ƒCƒ“ƒXƒg[ƒ‹‚ğŠ®—¹‚·‚é‚½‚ß‚ÉAƒVƒXƒeƒ€‚ğÄ‹N“®‚·‚é•K—v‚ª‚ ‚è‚Ü‚·B
+TxtReboot1b	= ¡‚·‚®Ä‹N“®‚µ‚Ü‚·‚©?
+
+TxtWinReq	= ‚±‚ÌƒZƒbƒgƒAƒbƒv‚ÍWindows %s ‚Ì‚İ‚Å‹N“®‚µ‚Ü‚·B
+TxtWrongOs	= ‚±‚ÌƒZƒbƒgƒAƒbƒv‚ÍˆÙ‚È‚éƒo[ƒWƒ‡ƒ“‚ÌOS‚ª•K—v‚Å‚·B
+TxtNoTmpDir	= ˆêƒtƒHƒ‹ƒ_‚ªì¬‚Å‚«‚Ü‚¹‚ñB
+TxtNoInitDll	= DLL %s ‚Ì‰Šú‰»‚ÅƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½B
+TxtNoHardware	= ŒİŠ·‚Ìƒn[ƒhƒEƒFƒA‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñB
+TxtNoDrvInf	= –³Œø‚ÈDrvInf İ’è‚ª %s ‚É‚ ‚è‚Ü‚·B
+TxtInitLog	= ƒƒMƒ“ƒO‚ğƒXƒ^[ƒg‚µ‚Ü‚µ‚½B
+TxtPromptSetup	= –{“–‚É %s ƒhƒ‰ƒCƒo[‚ğƒZƒbƒgƒAƒbƒv‚µ‚Ü‚·‚©?
+TxtAborted	= ƒZƒbƒgƒAƒbƒv‚ÍŠ®—¹‚µ‚Ü‚¹‚ñ‚Å‚µ‚½BÚ×‚ÍWindowsƒtƒHƒ‹ƒ_‚ÌƒƒO‚ğƒ`ƒFƒbƒN‚µ‚Ä‚­‚¾‚³‚¢B
+TxtRebootToUse1	= ƒhƒ‰ƒCƒo‚ğ—LŒø‚É‚·‚é‚½‚ßƒVƒXƒeƒ€‚ÌÄ‹N“®‚ª•K—v‚Å‚·B
+TxtRebootToUse2	= Ä‹N“®‚·‚éê‡‚Í'‚Í‚¢'AŒã‚ÅÄ‹N“®‚·‚éê‡‚Í'‚¢‚¢‚¦'‚ğ‘I‚ñ‚Å‚­‚¾‚³‚¢B
+TxtRebootNopriv	= Ä‹N“®¸”s: ‹­§ƒVƒƒƒbƒgƒ_ƒEƒ“•s‰ÂB
+TxtRebootFailExit = Ä‹N“®¸”s:@WindowsI—¹ˆ—‚ÅƒGƒ‰[‚ª”­¶B
+TxtRebootFailed	= Ä‹N“®¸”s:@WindowsI—¹ˆ—‚Å–¢’m‚ÌƒGƒ‰[‚ª”­¶B
+TxtManualReboot	= è“®‚ÅWindows‚ğÄ‹N“®‚·‚é•K—v‚ª‚ ‚è‚Ü‚·B
+TxtNoDllLoad	= ƒZƒbƒgƒAƒbƒvƒwƒ‹ƒp[DLL‚ğ“Ç‚İ‚İ‚Å‚«‚Ü‚¹‚ñB
+TxtBadHelpDll	= ƒZƒbƒgƒAƒbƒvƒwƒ‹ƒp[DLL“à‚Å³‚µ‚¢ˆ—‚ª‚Å‚«‚Ü‚¹‚ñB
+
+TxtInstall	= %s ƒZƒbƒgƒAƒbƒv’†
+TxtFinishOK	= ƒZƒbƒgƒAƒbƒvŠ®—¹
+TxtInsCancel	= ƒZƒbƒgƒAƒbƒv‚Í’†’f‚µ‚Ü‚µ‚½
+TxtInstOk1	= %s‚Éƒhƒ‰ƒCƒo[ƒZƒbƒgƒAƒbƒv‚ÍŠ®—¹‚µ‚Ü‚µ‚½
+
+[Spanish]
+TxtOK		= Aceptar
+TxtCancel	= Cancelar
+TxtApply	= Aplicar
+MTxtYes		= &Sí
+MTxtNo		= &No
+TxtDelFiles	= Quitando archivos...
+TxtDelFldrs	= Quitando carpetas...
+TxtDelReg	= Quitando valores del registro del sistema...
+
+TxtUninstApp	= Desinstalar S3 Graphics
+TxtUninst	= Desinstalando %s
+TxtConfirmUn1	= Esta operación desinstalará el controlador %s y todas las utilidades incluidas.
+TxtConfirmUn2	= Esta operación desinstalará %s.
+TxtConfirm_b	= Elija Sí para realizar la desinstalación o No para cancelar la operación.
+TxtEllipsis	= ...%s
+TxtCloseApps	= Cerrando las aplicaciones abiertas...
+TxtFinishing	= Finalizando la desinstalación...
+TxtReboot1a	= Para que la nueva configuración surta efecto, deberá reiniciar su equipo.
+TxtReboot1b	= ¿Desea reiniciar su equipo ahora?
+
+TxtWinReq	= Esta Configuración sólo debería ejecutarse sobre Windows %s.
+TxtWrongOs	= Esta Configuración requiere una versión distinta de sistema operativo.
+TxtNoTmpDir	= No se pudo crear un directorio temporal.
+TxtNoInitDll	= Error al intentar inicializar DLL %s.
+TxtNoHardware	= No se ha detectado hardware compatible.
+TxtNoDrvInf	= No se pudo encontrar la configuración DrvInf en %s.
+TxtInitLog	= Iniciando registro de progreso...
+TxtPromptSetup	= ¿Seguro que desea instalar el controlador %s?
+TxtAborted	= Configuración no pudo completar la instalación. Compruebe el registro de progreso en su directorio de Windows para obtener más detalles.
+TxtRebootToUse1	= Debe reiniciar el sistema para utilizar el controlador que acaba de instalarse.
+TxtRebootToUse2	= Selección Sí para reiniciar ahora, No para reiniciar más tarde.
+TxtRebootNopriv	= Error al reiniciar: no se pudo obtener privilegio para apagar.
+TxtRebootFailExit = Error al reiniciar: la llamada para salir de Windows devolvió un error.
+TxtRebootFailed	= Error al reiniciar: la llamada para salir de Windows devolvió un error desconocido.
+TxtManualReboot	= Debería reiniciar Windows manualmente.
+TxtNoDllLoad	= No se pudo cargar DLL del ayudante de configuración. No se puede continuar.
+TxtBadHelpDll	= No se pudieron encontrar las funciones correctas en el DLL del ayudante de configuración. No se puede continuar.
+
+TxtInstall	= Instalando %s...
+TxtFinishOK	= Instalación completada.
+TxtInsCancel	= Se ha cancelado la configuración y no se ha completado.
+TxtInstOk1	= Configuración ha terminado la instalación del controlador de su %s.
+[Simplified Chinese]
+TxtOK    = È·¶¨
+TxtCancel= È¡Ïû
+MTxtYes  = ÊÇ(&Y)
+MTxtNo   = ·ñ(&N)
+TxtApply = Ó¦ÓÃ
+TxtDelFiles	= ÕıÔÚÉ¾³ıÎÄ¼ş...
+TxtDelFldrs	= ÕıÔÚÉ¾³ıÎÄ¼ş¼Ğ...
+TxtDelReg	= ÕıÔÚÉ¾³ı×¢²á±íÖµ...
+
+TxtUninstApp	= S3 Graphics Ğ¶ÔØ
+TxtUninst	= Ğ¶ÔØ %s 
+TxtConfirmUn1	= Õâ½«»áĞ¶ÔØ %s Çı¶¯³ÌĞòºÍËùÓĞ°üÀ¨µÄÊµÓÃ³ÌĞò¡£
+TxtConfirmUn2	= Õâ½«»áĞ¶ÔØ %s¡£
+TxtConfirm_b	= Ñ¡Ôñ¡°ÊÇ¡±½øĞĞĞ¶ÔØ£¬»òÑ¡Ôñ¡°·ñ¡±È¡ÏûĞ¶ÔØ¡£
+
+TxtEllipsis	= ...%s
+TxtCloseApps	= ÕıÔÚ¹Ø±Õ´ò¿ªµÄÓ¦ÓÃ³ÌĞò...
+
+TxtFinishing	= ÕıÔÚÍê³ÉĞ¶ÔØ...
+
+TxtReboot1a	= Ëù×öµÄ¸ü¸ÄÔÚÖØĞÂÆô¶¯¼ÆËã»úºóÉúĞ§¡£
+TxtReboot1b	= ÏÖÔÚ¾ÍÖØĞÂÆô¶¯¼ÆËã»úÂğ?
+
+TxtWinReq	= ´Ë°²×°³ÌĞòÖ»Ó¦ Windows %s ÉÏÔËĞĞ¡£
+TxtWrongOs	= ´Ë°²×°³ÌĞòĞèÒª²»Í¬°æ±¾µÄ²Ù×÷ÏµÍ³¡£
+TxtNoTmpDir	= ÎŞ·¨´´½¨ÁÙÊ±Ä¿Â¼¡£
+TxtNoInitDll	= ³õÊ¼»¯ DLL %s Ê±³ö´í¡£
+TxtNoHardware	= Î´¼ì²âµ½¼æÈİµÄÓ²¼ş¡£
+TxtNoDrvInf	= ÎŞ·¨ÔÚ %s ÖĞÕÒµ½ DrvInf ÉèÖÃ¡£
+TxtInitLog	= Æô¶¯½ø¶ÈÈÕÖ¾...
+TxtPromptSetup	= ÊÇ·ñÈ·ÊµÒª°²×° %s Çı¶¯³ÌĞò£¿
+TxtAborted	= °²×°³ÌĞòÎŞ·¨Íê³É°²×°¡£ÓĞ¹ØÏêÏ¸ĞÅÏ¢£¬Çë²é¿´ Windows Ä¿Â¼ÖĞµÄ½ø¶ÈÈÕÖ¾¡£
+TxtRebootToUse1	= ±ØĞëÖØĞÂÆô¶¯ÏµÍ³²ÅÄÜÊ¹ÓÃ¸Õ°²×°µÄÇı¶¯³ÌĞò¡£
+TxtRebootToUse2	= µ¥»÷¡°ÊÇ¡±¿ÉÁ¢¼´ÖØĞÂÆô¶¯£¬µ¥»÷¡°·ñ¡±¿ÉÔÚÉÔºóÖØĞÂÆô¶¯¡£
+TxtRebootNopriv	= ÖØĞÂÆô¶¯Ê§°Ü£ºÎŞ·¨»ñÈ¡¹Ø»úÌØÈ¨¡£
+TxtRebootFailExit = ÖØĞÂÆô¶¯Ê§°Ü£ºÍË³ö Windows µ÷ÓÃ·µ»Ø´íÎó¡£
+TxtRebootFailed	= ÖØĞÂÆô¶¯Ê§°Ü£ºÍË³ö Windows µ÷ÓÃ·µ»ØÎ´Öª´íÎó¡£
+TxtManualReboot	= Ó¦¸ÃÊÖ¶¯ÖØĞÂÆô¶¯ Windows¡£
+TxtNoDllLoad	= ÎŞ·¨¼ÓÔØ°²×°°ïÖú³ÌĞò DLL¡£ÎŞ·¨¼ÌĞø¡£
+TxtBadHelpDll	= ÎŞ·¨ÔÚ°²×°°ïÖú³ÌĞò DLL ÖĞÕÒµ½ÕıÈ·µÄº¯Êı¡£ÎŞ·¨¼ÌĞø¡£
+
+TxtInstall	= ÕıÔÚ°²×° %s...
+TxtFinishOK	= °²×°ÒÑÍê³É¡£
+TxtInsCancel = °²×°³ÌĞòÒÑÈ¡Ïû£¬ÉĞÎ´Íê³É°²×°¡£
+TxtInstOk1 = °²×°³ÌĞòÒÑ¾­Íê³É %s Çı¶¯³ÌĞòµÄ°²×°¡£
+[Traditional Chinese]
+TxtOK    = ½T©w
+TxtCancel= ¨ú®ø
+MTxtYes  = ¬O(&Y)
+MTxtNo   = §_(&N)
+TxtApply = ¨Ï¥Î
+TxtDelFiles	= ²¾°£ÀÉ®×...
+TxtDelFldrs	= ²¾°£¸ê®Æ§¨...
+TxtDelReg	= ²¾°£¨t²Îµn¿ı­È...
+
+TxtUninstApp	= S3 Graphics ¸Ñ°£¦w¸Ë
+TxtUninst	= ¥¿¦b¸Ñ°£¦w¸Ë %s
+TxtConfirmUn1	= §Y±N²¾°£ %s ªºÅX°Êµ{¦¡¤Î¨ä¬ÛÃö¤½¥Îµ{¦¡
+TxtConfirmUn2	= §Y±N¸Ñ°£¦w¸Ë %s
+TxtConfirm_b	= ­Y­n¸Ñ°£¦w¸Ë½Ğ«ö Yes, ­Y­n¨ú®ø¸Ñ°£¦w¸Ë½Ğ«ö No ¡C
+
+TxtEllipsis	= ...%s
+TxtCloseApps	= Ãö³¬¶}±Ò¤¤ªºµ{¦¡...
+TxtFinishing	= §¹¦¨¸Ñ°£¦w¸Ë...
+TxtReboot1a	= ±z¥²¶·­«·s±Ò°Ê¹q¸£¡A¤~¯àÅı©Ò°µªºÅÜ§ó¥Í®Ä¡C
+TxtReboot1b	= ²{¦b­n­«·s±Ò°Ê¡H
+
+[Korean]
+TxtOK		= È®ÀÎ
+TxtCancel	= Ãë¼Ò
+MTxtYes		= ¿¹(&Y)
+MTxtNo		= ¾Æ´Ï¿À(&N)
+TxtApply	= Àû¿ë
+TxtDelFiles	= ÆÄÀÏÀ» Á¦°ÅÇÏ´Â Áß¡¦
+TxtDelFldrs	= Æú´õ¸¦ Á¦°ÅÇÏ´Â Áß¡¦
+TxtDelReg	= ½Ã½ºÅÛ ·¹Áö½ºÆ®¸® °ªÀ» Á¦°ÅÇÏ´Â Áß¡¦
+
+TxtUninstApp	= S3 ±×·¡ÇÈ Á¦°Å
+TxtUninst	= %sÀ»(¸¦) Á¦°ÅÇÏ´Â Áß
+TxtConfirmUn1	= %s µå¶óÀÌ¹ö ¹× Æ÷ÇÔµÈ À¯Æ¿¸®Æ¼¸¦ Á¦°ÅÇÕ´Ï´Ù.
+TxtConfirmUn2	= %À»(¸¦) Á¦°ÅÇÕ´Ï´Ù.
+TxtConfirm_b	= »èÁ¦ÇÏ·Á¸é [¿¹]¸¦ ¼±ÅÃÇÏ°í Ãë¼ÒÇÏ·Á¸é [¾Æ´Ï¿À]¸¦ ¼±ÅÃÇÏ½Ê½Ã¿À.
+TxtEllipsis	= %s¡¦
+TxtCloseApps	= ¿­¸° ÀÀ¿ë ÇÁ·Î±×·¥À» ´İ´Â Áß¡¦
+TxtFinishing	= Á¦°Å¸¦ ¸¶¹«¸®ÇÏ´Â Áß¡¦
+TxtReboot1a	= »õ·Î¿î ¼³Á¤ ³»¿ëÀ» Àû¿ëÇÏ·Á¸é ½Ã½ºÅÛÀ» ´Ù½Ã ½ÃÀÛÇÏ½Ê½Ã¿À.
+TxtReboot1b	= Áö±İ ½Ã½ºÅÛÀ» ´Ù½Ã ½ÃÀÛÇÏ½Ã°Ú½À´Ï±î?
+
+TxtWinReq	= Windows %s¿¡¼­¸¸ ½ÇÇàÇØ¾ß ÇÕ´Ï´Ù.
+TxtWrongOs	= ´Ù¸¥ ¿î¿µ Ã¼°è ¹öÀüÀÌ ÇÊ¿äÇÕ´Ï´Ù.
+TxtNoTmpDir	= ÀÓ½Ã µğ·ºÅÍ¸®¸¦ ¸¸µé ¼ö ¾ø½À´Ï´Ù.
+TxtNoInitDll	= DLL %sÀÇ ÃÊ±âÈ­¸¦ ½ÃµµÇÏ´Â Áß¿¡ ¿À·ù°¡ ¹ß»ıÇß½À´Ï´Ù.
+TxtNoHardware	= È£È¯µÇ´Â ÇÏµå¿ş¾î°¡ °¨ÁöµÇÁö ¾Ê¾Ò½À´Ï´Ù.
+TxtNoDrvInf	= %s¿¡¼­ DrvInf ¼³Á¤À» Ã£À» ¼ö ¾ø½À´Ï´Ù.
+TxtInitLog	= ÁøÇà·ü ·Î±×¸¦ ½ÃÀÛÇÏ´Â Áß¡¦
+TxtPromptSetup	= %s µå¶óÀÌ¹ö¸¦ ¼³Ä¡ÇÏ½Ã°Ú½À´Ï±î?
+TxtAborted	= ¼³Ä¡¸¦ ¿Ï·áÇÒ ¼ö ¾ø½À´Ï´Ù. ´õ ÀÚ¼¼ÇÑ »çÇ×Àº Windows µğ·ºÅÍ¸®¿¡¼­ ÁøÇà·ü ·Î±×¸¦ È®ÀÎÇÏ½Ê½Ã¿À.
+TxtRebootToUse1	= ¹æ±İ ¼³Ä¡ÇÑ µå¶óÀÌ¹ö¸¦ »ç¿ëÇÏ·Á¸é ½Ã½ºÅÛÀ» ´Ù½Ã ºÎÆÃÇØ¾ß ÇÕ´Ï´Ù.
+TxtRebootToUse2	= Áö±İ ´Ù½Ã ºÎÆÃÇÏ·Á¸é [¿¹]¸¦ ¼±ÅÃÇÏ°í ³ªÁß¿¡ ´Ù½Ã ºÎÆÃÇÏ·Á¸é [¾Æ´Ï¿À]¸¦ ¼±ÅÃÇÏ½Ê½Ã¿À.
+TxtRebootNopriv	= ´Ù½Ã ºÎÆÃÇÏÁö ¸øÇß½À´Ï´Ù: ½Ã½ºÅÛ Á¾·á ±ÇÇÑÀ» ¾òÀ» ¼ö ¾ø½À´Ï´Ù.
+TxtRebootFailExit = ´Ù½Ã ºÎÆÃÇÏÁö ¸øÇß½À´Ï´Ù: Windows Á¾·á È£ÃâÀÌ ¿À·ù¸¦ ¹İÈ¯Çß½À´Ï´Ù.
+TxtRebootFailed	= ´Ù½Ã ºÎÆÃÇÏÁö ¸øÇß½À´Ï´Ù: Windows Á¾·á È£ÃâÀÌ ¾Ë ¼ö ¾ø´Â ¿À·ù¸¦ ¹İÈ¯Çß½À´Ï´Ù.
+TxtManualReboot	= Windows¸¦ ¼öµ¿À¸·Î ´Ù½Ã ½ÃÀÛÇØ¾ß ÇÕ´Ï´Ù.
+TxtNoDllLoad	= ¼³Ä¡ µµ¿ì¹Ì DLLÀ» ·ÎµåÇÒ ¼ö ¾ø½À´Ï´Ù. °è¼Ó ÁøÇàÇÒ ¼ö ¾ø½À´Ï´Ù.
+TxtBadHelpDll	= ¼³Ä¡ µµ¿ì¹Ì DLL¿¡¼­ ¿Ã¹Ù¸¥ ÇÔ¼ö¸¦ Ã£À» ¼ö ¾ø½À´Ï´Ù. °è¼Ó ÁøÇàÇÒ ¼ö ¾ø½À´Ï´Ù.
+
+TxtInstall	= %s ¼³Ä¡ Áß¡¦
+TxtFinishOK	= ¼³Ä¡ ¿Ï·á
+TxtInsCancel	= ¼³Ä¡°¡ Ãë¼ÒµÇ¾î ¼³Ä¡°¡ ¿Ï·áµÇÁö ¾Ê¾Ò½À´Ï´Ù.
+TxtInstOk1	= %sÀÇ µå¶óÀÌ¹ö ¼³Ä¡¸¦ ¸¶ÃÆ½À´Ï´Ù.
+
+[Danish]
+TxtOK		= OK
+TxtCancel	= Annullér
+TxtApply	= Anvend
+MTxtYes		= &Ja
+MTxtNo		= &Nej
+TxtReboot1a	= Systemet skal genstartes før ændringerne træder i kraft.
+TxtReboot1b	= Ønsker du at genstarte nu?
+TxtDelFiles	= Sletter filer...
+TxtDelFldrs	= Sletter mapper...
+TxtDelReg	= Sletter systemreg. værdier...
+
+TxtUninstApp	= Afinstallér S3-grafik.
+TxtUninst	= Afinstallerer %s
+TxtConfirmUn1	= Dette vil afinstallere %s driver og de tilhørende værktøjer.
+TxtConfirmUn2	= Dette vil afinstallere %s.
+TxtConfirm_b	= Vælg Ja for at afinstallere, eller vælg Nej for at annullere.
+TxtEllipsis	= ...%s
+TxtCloseApps	= Lukker åbne vinduer...
+TxtFinishing	= Afslutter afinstallation...
+TxtNoInfo	= Der mangler afinstallationsinformationer.  Forsøg venligst igen med den korrekte afinstallationslog.
+
+TxtWinReq	= Dette installationsprogram kan kun køres på Windows %s.
+TxtWrongOs	= Dette installationsprogram kræver en anden version af operativsystemet.
+TxtNoTmpDir	= Kunne ikke skabe et midlertidigt bibliotek.
+TxtNoInitDll	= Fejl under initialiseringen af DLL %s.
+TxtNoHardware	= Der blev ikke fundet nogen kompatibel hardware.
+TxtNoDrvInf	= Kunne ikke finde DrvInf indstillingen i %s.
+TxtInitLog	= Starter fremskridtstæller...
+TxtPromptSetup	= Er du sikker på at du vil installere %s driveren?
+TxtAborted	= Installation kunne ikke fuldføre installationen.  Kontroller log filen i din Windows mappe, for yderligere oplysninger.
+TxtRebootToUse1	= Du skal genstarte dit system, for at bruge den driver der netop er blevet installeret.
+TxtRebootToUse2	= Vælg Ja for at genstarte nu, Nej for at genstarte senere.
+TxtRebootNopriv	= Genstart kunne ikke udføres: kunne ikke få luknings privelegium.
+TxtRebootFailExit = Genstart kunne ikke udføres: kald til at lukke Windows returnerede en fejl.
+TxtRebootFailed	= Genstart kunne ikke udføres: kald til at afbryde Windows returnerede en ukendt fejl.
+TxtManualReboot	= Du skal genstarte Windows manuelt.
+TxtNoDllLoad	= Kunne ikke starte  installationsprogrammet DLL.  Kan ikke fortsætte.
+TxtBadHelpDll	= Kunne ikke finde den korrekte funktion i installationsprogrammet DLL.  Kan ikke fortsætte.
+
+TxtInstall	= Installation  %s...
+TxtFinishOK	= Installation fuldført.
+TxtInsCancel	= Installationen er blevet afbrudt og er ikke fuldført.
+TxtInstOk1	= Installationen er færdig med at installere driveren for %s.
+
+[Dutch]
+TxtOK		= OK
+TxtCancel	= Annuleren
+TxtApply	= Toepassen
+MTxtYes		= &Ja
+MTxtNo		= &Nee
+TxtReboot1a	= Het systeem moet herstart worden voordat de veranderingen actief zijn.
+TxtReboot1b	= Nu herstarten?
+TxtDelFiles	= Bestanden verwijderen...
+TxtDelFldrs	= Mappen verwijderen...
+TxtDelReg	= Waarden in Register verwijderen...
+
+TxtUninstApp	= S3 Graphics verwijderen
+TxtUninst	= %s verwijderen
+TxtConfirmUn1	= Hiermee verwijdert u het stuurprogramma van %s en de bijbehorende hulpprogramma's.
+TxtConfirmUn2	= Hiermee verwijdert u %s.
+TxtConfirm_b	= Kies Ja om te verwijderen en Nee om te annuleren.
+TxtEllipsis	= ...%s
+TxtCloseApps	= Geopende toepassingen sluiten...
+TxtFinishing	= Verwijderen voltooid...
+TxtNoInfo	= Er ontbreken gegevens voor het verwijderen. Probeer het opnieuw met het juiste logbestand.
+
+TxtWinReq	= Deze installatie moet worden uitgevoerd onder Windows %s.
+TxtWrongOs	= Deze installatie vereist een andere versie van het besturingssysteem.
+TxtNoTmpDir	= Kan tijdelijke map niet maken.
+TxtNoInitDll	= Fout bij een poging tot het initialiseren van DLL %s.
+TxtNoHardware	= Er werd geen compatibele hardware gevonden.
+TxtNoDrvInf	= Kan DrvInf-instelling niet vinden in %s.
+TxtInitLog	= Bezig met starten van voortgangslogboek...
+TxtPromptSetup	= Weet u zeker dat u het stuurprogramma %s wilt installeren?
+TxtAborted	= Setup kon de installatie niet voltooien. Controleer het voortgangslogboek in uw Windows-map voor meer details.
+TxtRebootToUse1	= U moet uw systeem opnieuw opstarten om het stuurprogramma, dat u net hebt geïnstalleerd, te gebruiken.
+TxtRebootToUse2	= Klik op Ja om nu opnieuw op te starten, of op Nee om dat later te doen.
+TxtRebootNopriv	= Opnieuw opstarten mislukt: kan geen afsluitingsbevoegdheden verkrijgen.
+TxtRebootFailExit = Opnieuw opstarten mislukt: opdracht om Windows af te sluiten heeft een fout geretourneerd.
+TxtRebootFailed	= Opnieuw opstarten mislukt: opdracht om Windows af te sluiten heeft een onbekende fout geretourneerd.
+TxtManualReboot	= U moet Windows handmatig opnieuw opstarten.
+TxtNoDllLoad	= Kan installatiehelper DLL niet laden. Kan niet doorgaan.
+TxtBadHelpDll	= Kan correcte functies niet vinden in installatiehelper DLL. Kan niet doorgaan.
+
+TxtInstall	= Bezig met installeren van %s...
+TxtFinishOK	= Installatie voltooid.
+TxtInsCancel	= De installatie werd geannuleerd en is niet voltooid.
+TxtInstOk1	= Setup heeft de installatie van het stuurprogramma voor uw %s voltooid.
+
+[Finnish]
+TxtOK		= OK
+TxtCancel	= Peruuta
+TxtApply	= Käytä
+MTxtYes		= &Kyllä
+MTxtNo		= &Ei
+TxtReboot1a	= Järjestelmä täytyy käynnistää uudelleen, jotta muutokset tulevat voimaan.
+TxtReboot1b	= Uudelleenkäynnistetäänkö nyt?
+TxtDelFiles	= Poistaa tiedostoja...
+TxtDelFldrs	= Poistaa kansioita...
+TxtDelReg	= Poistaa järjestelmän rekisteriarvoja...
+
+TxtUninstApp	= S3 Grafiikan asennuksen poisto
+TxtUninst	= Poistaa asennuksia %s
+TxtConfirmUn1	= Tämä poistaa %s laiteohjauksen asennukset ja mukana olevat apuohjelmat.
+TxtConfirmUn2	= Tämä poistaa asennukset %s.
+TxtConfirm_b	= Valitse Kyllä asennuksen poistoon, tai valitse Ei toiminnon peruuttamiseksi.
+TxtEllipsis	= ...%s
+TxtCloseApps	= Sulkee avatut sovellukset...
+TxtFinishing	= Lopettaa asennuksen poiston...
+TxtNoInfo	= Joitakin asennuksen poiston tietoja puuttuu. Yritä uudelleen sopivalla asennuksen poiston lokilla.
+
+TxtWinReq	= Tätä asetusta voidaan käyttää vain Windows %s :n kanssa.
+TxtWrongOs	= Tämä asetus vaatii toisen käyttöjärjestelmäversion.
+TxtNoTmpDir	= Tilapäisen hakemiston luominen ei onnistu.
+TxtNoInitDll	= DLL %s:n alustamisessa virhe.
+TxtNoHardware	= Yhteensopivia laitteita ei löydy.
+TxtNoDrvInf	= DrvInf-asetusta ei löydy kohteesta %s.
+TxtInitLog	= Käynnistys menossa log...
+TxtPromptSetup	= Oletko varma että haluat asentaa %s-ohjaimen?
+TxtAborted	= Asennusta ei voitu suorittaa loppuun.  Tarkista tarkemmat yksityiskohdat Windows-hakemiston lokitiedostosta.
+TxtRebootToUse1	= Järjestelmä on käynnistettävä uudelleen asennetun ohjaimen käyttöön ottamiseksi.
+TxtRebootToUse2	= Valitse Kyllä käynnistääksesi uudelleen nyt tai Ei käynnisttäksesi uudelleen myöhemmin.
+TxtRebootNopriv	= Uudelleenkäynnistys epäonnistui: sammuttaminen ei onnistu.
+TxtRebootFailExit = Uudelleenkäynnistys epäonnistui: Windowsin kutsu palautti virheen.
+TxtRebootFailed	= Uudelleenkäynnistys epäonnistui: Windowsin kutsu palautti tunnistamattoman virheen.
+TxtManualReboot	= Windows täytyy käynnistää manuaalisesti.
+TxtNoDllLoad	= Asetuksen DLL-apuohjelman lataaminen ei onnistu.  Jatkaminen ei onnistu.
+TxtBadHelpDll	=Oikeaa DLL-apufunktiota ei löydy.  Jatkaminen ei onnistu.
+
+TxtInstall	= Asennetaan %s...
+TxtFinishOK	= Asennus on valmis.
+TxtInsCancel	= Asennusta ei saatu päätökseen ja se on peruutettu.
+TxtInstOk1	= Asennusohjelma on lopettanut ohjaimen asentamisen %s:ään.
+
+[Norwegian]
+TxtOK		= OK
+TxtCancel	= Avbryt
+TxtApply	= Bruk
+MTxtYes		= &Ja
+MTxtNo		= &Nei
+TxtReboot1a	= Systemet må startes på nytt for at endringene skal ha effekt.
+TxtReboot1b	= Starte på nytt nå?
+TxtDelFiles	= Sletter filer...
+TxtDelFldrs	= Sletter mapper...
+TxtDelReg	= Slette rsystem-registry verdier...
+
+TxtUninstApp	= S3 Avinstaller grafikk
+TxtUninst		= Avinnstaller %s
+TxtConfirmUn1	= Dette vil avinstallere  %s driveren og evnt. inkluderte verktøy.
+TxtConfirmUn2	= Dette vil avinstallere %s.
+TxtConfirm_b	= Velg Ja for avinstallere, eller velg Nei for å avbryte.
+TxtEllipsis	= ...%s
+TxtCloseApps	= Lukker åpne applikasjoner...
+TxtFinishing	= Avslutter avinnstallering...
+TxtNoInfo	= Noe avinstalleringsinfo mangler.  Prøv på nytt med riktig avinstalleringslogg.
+
+TxtWinReq	= Disse innstillingene må kun gjøres på Windows %s.
+TxtWrongOs	= Disse innstillingene krever en annen versjon av operativsystemet.
+TxtNoTmpDir	= Ikke mulig å opprette en midlertidig mappe.
+TxtNoInitDll	= Feil ved forsøk på å initialisere DLL %-er.
+TxtNoHardware	= Ingen kompatibel maskinvare ble detektert.
+TxtNoDrvInf	= Ikke mulig å finne DrvInf-innstillinger i %s.
+TxtInitLog	= Starter framdriftslogg...
+TxtPromptSetup	= Er du sikker på at du ønsker å installere %s-driveren?
+TxtAborted	= Installasjonsprogrammet var ikke i stand til å fullføre installasjonen.  Kontroller framdriftsloggen i Windows-mappen for mer informasjon.
+TxtRebootToUse1	= Du må starte datamaskinen på nytt for å bruke driveren du nettopp installerte.
+TxtRebootToUse2	= Velg Ja for å starte på nytt nå, Nei for å starte på nytt senere.
+TxtRebootNopriv	= Omstart feilet: ikke mulig å få nedstengingsprivilegium.
+TxtRebootFailExit = Omstart feilet: kall for å avslutte Windows returnerte feil.
+TxtRebootFailed	= Omstart feilet: kall for å avslutte Windows returnerte ukjent feil.
+TxtManualReboot	= Du må starte Windows på nytt manuelt.
+TxtNoDllLoad	= Ikke mulig å laste installasjonshjelpe-DLL.  Kan ikke fortsette.
+TxtBadHelpDll	= Ikke mulig å finne riktige funksjoner i installasjonshjelpe-DLL.  Kan ikke fortsette.
+
+TxtInstall	= Installerer %s...
+TxtFinishOK	= Installasjon fullstendig.
+TxtInsCancel	= Installasjonsprogrammet er avbrutt og fullførte ikke.
+TxtInstOk1	= Installasjonsprogrammet har fullført installasjon av driveren for %s.
+
+[Swedish]
+TxtOK		= OK
+TxtCancel	= Avbryt
+TxtApply	= Verkställ
+MTxtYes		= &Ja
+MTxtNo		= &Nej
+TxtReboot1a	= Ditt system måste startas om för att ändringarna ska börja gälla.
+TxtReboot1b	= Vill du starta om nu?
+
+TxtDelFiles	= Tar bort filer...
+TxtDelFldrs	= Tar bort mappar...
+TxtDelReg	= Tar bort systemregistervärden...
+
+TxtUninstApp	= Avinstallera S3-grafik
+TxtUninst	= Avinstallerar %s
+TxtConfirmUn1	= Detta avinstallerar %s drivrutin och alla inkluderade verktyg.
+TxtConfirmUn2	= Detta avinstallerar %s.
+TxtConfirm_b	= Välj Ja för att avinstallera, eller Nej för att avbryta.
+TxtEllipsis	= ...%s
+TxtCloseApps	= Stänger öppna program...
+TxtFinishing	= Slutför avinstallation...
+TxtNoInfo	= Viss avinstallationsinformation saknas.  Försök igen med en korrekt avinstallationslogg.
+
+TxtWinReq	= Denna installation bör bara köras på Windows %s.
+TxtWrongOs	= Denna installation kräver en annan version av operativsystemet.
+TxtNoTmpDir	= Kunde inte skapa en temporär katalog.
+TxtNoInitDll	= Fel vid försök att initialisera DLL %s.
+TxtNoHardware	= Ingen kompatibel hårdvara kunde detekteras.
+TxtNoDrvInf	= Kunde inte hitta inställningen för DrvInf i %s.
+TxtInitLog	= Påbörjar förloppslogg...
+TxtPromptSetup	= Är du säker på att du vill installera drivrutinen för %s?
+TxtAborted	= Installationsprogramvaran kunde inte slutföra installationen. Kontrollera förloppsloggen i Windows-katalogen för ytterligare information.
+TxtRebootToUse1	= Du måste starta om systemet för att kunna använda drivrutinen som du just installerade.
+TxtRebootToUse2	= Välj Ja för att starta om nu, Nej för att starta om senare.
+TxtRebootNopriv	= Omstarten misslyckades: Kunde inte erhålla rättighet att stänga systemet.
+TxtRebootFailExit = Omstarten misslyckades: Anrop för att avsluta Windows returnerade ett fel.
+TxtRebootFailed	= Omstarten misslyckades: Anrop för att avsluta Windows returnerade ett okänt fel.
+TxtManualReboot	= Du måste starta om Windows manuellt.
+TxtNoDllLoad	= Kunde inte ladda en hjälp-DLL till installationen. Kan inte fortsätta.
+TxtBadHelpDll	= Kunde inte hitta de korrekta funktionerna i hjälp-DLL till installationen. Kan inte fortsätta.
+
+TxtInstall	= Installerar %s...
+TxtFinishOK	= Installationen är slutförd.
+TxtInsCancel	= Installationen har avbrutits och är inte slutförd.
+TxtInstOk1	= Installationsprogrammet har slutfört installationen av drivrutinen för din %s.
+
+[Russian]
+TxtOK		= OK
+TxtCancel	= Îòìåíà
+TxtApply	= Ïğèìåíèòü
+MTxtYes		= &Äà
+MTxtNo		= &Íåò
+TxtReboot1a	= ×òîáû èçìåíåíèÿ âñòóïèëè â ñèëó, íåîáõîäèìî ïğîèçâåñòè ïåğåçàãğóçêó êîìïüşòåğà.
+TxtReboot1b	= Ïğîèçâåñòè ïåğåçàãğóçêó ñåé÷àñ?
+
+TxtDelFiles	= Óäàëåíèå ôàéëîâ...
+TxtDelFldrs	= Óäàëåíèå êàòàëîãîâ...
+TxtDelReg	= Óäàëåíèå ıëåìåíòîâ ñèñòåìíîãî ğååñòğà...
+
+TxtUninstApp	= Óäàëåíèå S3 Graphics
+TxtUninst	= Óäàëåíèå %s
+TxtConfirmUn1	= Óäàëåíèå äğàéâåğà %s ñî âñåìè ñëóæåáíûìè ïğîãğàììàìè.
+TxtConfirmUn2	= Óäàëåíèå %s.
+TxtConfirm_b	= Íàæìèòå êíîïêó 'Äà' äëÿ çàïóñêà ïğîöåññà óäàëåíèÿ èëè êíîïêó 'Íåò' äëÿ âûõîäà èç ïğîãğàììû.
+TxtEllipsis	= ...%s
+TxtCloseApps	= Çàâåğøåíèå ğàáîòû çàïóùåííûõ ïğèëîæåíèé...
+TxtFinishing	= Çàâåğøåíèå ïğîöåññà óäàëåíèÿ...
+TxtNoInfo	= Íåîáõîäèìàÿ äëÿ óäàëåíèÿ èíôîğìàöèÿ ÷àñòè÷íî îòñóòñòâóåò. Ïîâòîğèòå, óêàçàâ ñîîòâåòñòâóşùèé ôàéë ïğîòîêîëà ñ èíôîğìàöèåé äëÿ óäàëåíèÿ ïğîãğàììû.
+
+TxtWinReq	= Äàííàÿ ïğîãğàììà óñòàíîâêè ğàáîòàåò òîëüêî â ÎÑ Windows %s.
+TxtWrongOs	= Äëÿ çàïóñêà äàííîé ïğîãğàììû óñòàíîâêè òğåáóåòñÿ äğóãàÿ âåğñèÿ ÎÑ.
+TxtNoTmpDir	= Íåâîçìîæíî ñîçäàòü âğåìåííóş äèğåêòîğèş.
+TxtNoInitDll	= Îøèáêà èíèöèàëèçàöèè äèíàìè÷åñêîé áèáëèîòåêè %s.
+TxtNoHardware	= Íå íàéäåíî ñîâìåñòèìîå îáîğóäîâàíèå.
+TxtNoDrvInf	= Íå íàéäåí ïóíêò DrvInf â %s.
+TxtInitLog	= Çàïóñêàş æóğíàë óñòàíîâêè...
+TxtPromptSetup	= Âû óâåğåíû, ÷òî õîòèòå óñòàíîâèòü äğàéâåğ %s?
+TxtAborted	= Ïğîãğàììà óñòàíîâêè íå ñìîãëà çàâåğøèòü ïğîöåññ óñòàíîâêè.  Äëÿ ïîëó÷åíèÿ äîïîëíèòåëüíîé èíôîğìàöèè ïğîñìîòğèòå æóğíàë óñòàíîâêè â êàòàëîãå Windows.
+TxtRebootToUse1	= Äëÿ èñïîëüçîâàíèÿ óñòàíîâëåííîãî äğàéâåğà íåîáõîäèìî ïåğåçàãğóçèòü ñèñòåìó.
+TxtRebootToUse2	= Âûáåğèòå “Äà” äëÿ íåìåäëåííîé ïåğåçàãğóçêè, “Íåò” äëÿ ïåğåçàãğóçêè ïîçäíåå.
+TxtRebootNopriv	= Ñáîé ïåğåçàãğóçêè: íåâîçìîæíî ïîëó÷èòü ïğèâèëåãèè äëÿ îñòàíîâà ñèñòåìû.
+TxtRebootFailExit = Ñáîé ïåğåçàãğóçêè: çàïğîñ íà âûõîä èç Windows âîçâğàòèë îøèáêó.
+TxtRebootFailed	= Ñáîé ïåğåçàãğóçêè: çàïğîñ íà âûõîä èç Windows âîçâğàòèë íåèçâåñòíóş îøèáêó.
+TxtManualReboot	= Ïåğåçàãğóçèòå Windows âğó÷íóş.
+TxtNoDllLoad	= Íåâîçìîæíî çàãğóçèòü âñïîìîãàòåëüíóş äèíàìè÷åñêóş áèáëèîòåêó ïğîãğàììû óñòàíîâêè.  Ïğîäîëæåíèå íåâîçìîæíî.
+TxtBadHelpDll	= Íåâîçìîæíî íàéòè êîğğåêòíûå ôóíêöèè âñïîìîãàòåëüíîé äèíàìè÷åñêîé áèáëèîòåêè ïğîãğàììû óñòàíîâêè.  Ïğîäîëæåíèå íåâîçìîæíî.
+
+TxtInstall	= Óñòàíàâëèâàåòñÿ %s...
+TxtFinishOK	= Óñòàíîâêà çàâåğøåíà.
+TxtInsCancel	= Óñòàíîâêè áûëà ïğåğâàíà è íå áûëà çàâåğøåíà.
+TxtInstOk1	= Ïğîãğàììà óñòàíîâêè çàâåğøèëà ïğîöåññ óñòàíîâêè äğàéâåğà äëÿ %s.
+
+[Portuguese Standard]
+TxtOK		= OK
+TxtCancel	= Cancelar
+TxtApply	= Aplicar
+MTxtYes		= Sim(&Y)
+MTxtNo		= Não(&N)
+TxtReboot1a	= Seu sistema deve ser reiniciado para que as alterações sejam aceitas.
+TxtReboot1b	= Pretende reiniciar agora?
+
+TxtDelFiles	= A remover ficheiros...
+TxtDelFldrs	= A remover pastas...
+TxtDelReg	= A remover valores de registo de sistema...
+
+TxtUninstApp	= A desinstalar gráficos S3
+TxtUninst	= A desinstalar %s
+TxtConfirmUn1	= Isso desinstalará o driver %s e quaisquer utilitários inclusos.
+TxtConfirmUn2	= Isso desinstalará o %s.
+TxtConfirm_b	= Seleccione Sim para desinstalar ou Não para cancelar.
+TxtEllipsis	= ...%s
+TxtCloseApps	= A fechar os aplicativos abertos...
+TxtFinishing	= A terminar a desinstalação...
+TxtNoInfo	= Algumas informações de desinstalação não estão correctas.  Tente outra vez com o log de desinstalação correcto.
+
+TxtWinReq	= Esta configuração deve apenas ser executada no Windows %s.
+TxtWrongOs	= Esta configuração requer uma versão diferente de sistema operacional.
+TxtNoTmpDir	= Não é possível criar um directório temporário.
+TxtNoInitDll	= Erro ao tentar inicializar o DLL %s.
+TxtNoHardware	= Nenhum harware compatível foi detectado.
+TxtNoDrvInf	= Não é possível encontrar configuração DrvInf no %s.
+TxtInitLog	= A iniciar o log de progresso...
+TxtPromptSetup	= Quer realmente instalar o driver %s?
+TxtAborted	= Não é possível concluir a instalação.  Marque o log de progresso no seu directório do Windows para obter mais detalhes.
+TxtRebootToUse1	= É necessário reiniciar seu sistema para usar o driver que acabou de ser instalado.
+TxtRebootToUse2	= Seleccione Sim para reiniciar agora, Não para reiniciar depois.
+TxtRebootNopriv	= Erro ao reiniciar: não é possível fechar privilégio.
+TxtRebootFailExit = Erro ao reiniciar: chame para sair do erro de retorno do Windows.
+TxtRebootFailed	= Erro ao reiniciar: active para sair do erro desconhecido de retorno do Windows.
+TxtManualReboot	= É necessário reiniciar o Windows manualmente. 
+TxtNoDllLoad	= Active o DLL do assistente de configuração de carga.  Não é possível continuar.
+TxtBadHelpDll	= Não é possível encontrar as funções correctas no DLL do assistente de configuração de carga.  Não é possível continuar.
+
+TxtInstall	= A instalar %s...
+TxtFinishOK	= Instalação concluída.
+TxtInsCancel	= A configuração foi cancelada e não foi concluída.
+TxtInstOk1	= A configuração concluiu a instalação do driver para seu %s.
+
+[Thai]
+TxtOK		= µ¡Å§
+TxtCancel	= Â¡àÅÔ¡
+TxtApply	= ãªé
+MTxtYes		= ãªè(&Y)
+MTxtNo		= äÁèãªè(&N)
+TxtReboot1a	= ÃĞºº¢Í§¤Ø³µéÍ§ÃÕÊµÒÃì· à¾×èÍãËé¡ÒÃá¡éä¢à»ÅÕèÂ¹á»Å§ÁÕ¼Å
+TxtReboot1b	= ÃÕÊµÒÃì·à´ÕëÂÇ¹Õé?
+ 
+TxtDelFiles	= ¡ÓÅÑ§Åºä¿Åì...
+TxtDelFldrs	= ¡ÓÅÑ§Åºâ¿Åà´ÍÃì...
+TxtDelReg	= ¡ÓÅÑ§Åº¤èÒÃÕ¨ÕÊ·ÃÕé¢Í§ÃĞºº...
+
+TxtUninstApp	= Åºâ»Ãá¡ÃÁ S3 Graphics 
+TxtUninst	= ¡ÓÅÑ§Åºâ»Ãá¡ÃÁ %s
+TxtConfirmUn1	= ¨Ğà»ç¹¡ÒÃÅºä´ÃàÇÍÃì %s áÅĞâ»Ãá¡ÃÁÍÃÃ¶»ÃĞâÂª¹ì·ÕèµÔ´µÑé§ÃÇÁ¡Ñ¹
+TxtConfirmUn2	= ¨Ğà»ç¹¡ÒÃÅºâ»Ãá¡ÃÁ %s
+TxtConfirm_b	= àÅÔ¡ãªèà¾×èÍÅºâ»Ãá¡ÃÁ ËÃ×ÍàÅ×Í¡äÁèãªèà¾×èÍÂ¡àÅÔ¡
+TxtEllipsis	= ...%s
+TxtCloseApps	= ¡ÓÅÑ§»Ô´áÍº¾ÅÔà¤ªÑè¹·Õèà»Ô´ÍÂÙè...
+TxtFinishing	= àÊÃç¨ÊÔé¹¡ÒÃÅºâ»Ãá¡ÃÁ...
+TxtNoInfo	= ¢éÍÁÙÅ¡ÒÃÅºâ»Ãá¡ÃÁºÒ§ÊèÇ¹¢Ò´ËÒÂä» â»Ã´ÅÍ§ãËÁè´éÇÂºÑ¹·Ö¡¡ÒÃÅºâ»Ãá¡ÃÁ·ÕèàËÁÒĞÊÁ
+
+TxtWinReq	= ¡ÒÃµÑé§¤èÒ¹Õé¤ÇÃ¨Ğãªé¡Ñº Windows %s à·èÒ¹Ñé¹
+TxtWrongOs	= ¡ÒÃµÑé§¤èÒ¹ÕéµéÍ§¡ÒÃÃĞºº»¯ÔºÑµÔ¡ÒÃàÇÍÃìªÑè¹Í×è¹
+TxtNoTmpDir	= äÁèÊÒÁÒÃ¶ÊÃéÒ§ä´àÃ¡·ÍÃÕèªÑèÇ¤ÃÒÇä´é
+TxtNoInitDll	= à¡Ô´¢éÍ¼Ô´¾ÅÒ´¢Öé¹¢³Ğ¾ÂÒÂÒÁ¡ÓË¹´¤èÒàÃÔèÁµé¹ãËé DLL %s
+TxtNoHardware	= äÁè¾ºÎÒÃì´áÇÃì·ÕèÊÒÁÒÃ¶ãªé§Ò¹ÃèÇÁ¡Ñ¹ä´é
+TxtNoDrvInf	= äÁèÊÒÁÒÃ¶ËÒ¤èÒ·ÕèµÑé§ÊÓËÃÑº DrvInf ã¹ %s ä´é
+TxtInitLog	= àÃÔèÁµÃÇ¨ÊÍº»ÃĞÇÑµÔ¡ÒÃ·Ó§Ò¹...
+TxtPromptSetup	= á¹èã¨ËÃ×ÍÇèÒµéÍ§¡ÒÃµÔ´µÑé§ä´ÃàÇÍÃì %s?
+TxtAborted	= ¡ÒÃµÑé§¤èÒäÁèÊÒÁÒÃ¶µÔ´µÑé§ä´éàÊÃç¨ÊÁºÙÃ³ì µÃÇ¨ÊÍº»ÃĞÇÑµÔ¡ÒÃ·Ó§Ò¹ã¹ä´àÃ¡·ÍÃÕè Windows à¾×èÍ´ÙÃÒÂÅĞàÍÕÂ´
+TxtRebootToUse1	= ·èÒ¹µéÍ§ÃÕºÙ·ÃĞººãËÁèà¾×èÍ¨Ğãªéä´ÃàÇÍÃì·Õèà¾Ôè§µÔ´µÑé§
+TxtRebootToUse2	= àÅ×Í¡ãªèà¾×èÍÃÕºÙ·à´ÕëÂÇ¹Õé äÁèà¾×èÍÃÕºÙ·ÀÒÂËÅÑ§
+TxtRebootNopriv	= ¡ÒÃÃÕºÙ·ÅéÁàËÅÇ: äÁèÊÒÁÒÃ¶ÊÑè§»Ô´ÃĞººä´é
+TxtRebootFailExit = ¡ÒÃÃÕºÙ·ÅéÁàËÅÇ: ¤ÓÊÑè§ãËéÍÍ¡¨Ò¡ Windows ä´éÃÑº¤ÓµÍºÇèÒà¡Ô´¢éÍ¼Ô´¾ÅÒ´¢Öé¹
+TxtRebootFailed	= ¡ÒÃÃÕºÙ·ÅéÁàËÅÇ: ¤ÓÊÑè§ãËéÍÍ¡¨Ò¡ Windows ä´éÃÑº¤ÓµÍºÇèÒà¡Ô´¢éÍ¼Ô´¾ÅÒ´·ÕèäÁè·ÃÒºÊÒàËµØ¢Öé¹
+TxtManualReboot	= ·èÒ¹¤ÇÃÃÕÊµÒÃì· Windows ´éÇÂµ¹àÍ§
+TxtNoDllLoad	= äÁèÊÒÁÒÃ¶âËÅ´µÑÇªèÇÂµÔ´µÑé§ DLL ä´é äÁèÊÒÁÒÃ¶·Ó§Ò¹µèÍä´é
+TxtBadHelpDll	= äÁèÊÒÁÒÃ¶ËÒ¿Ñ§¡ìªÑè¹·Õè¶Ù¡µéÍ§ã¹µÑÇªèÇÂµÔ´µÑé§ DLL ä´é äÁèÊÒÁÒÃ¶·Ó§Ò¹µèÍä´é
+
+TxtInstall	= ¡ÓÅÑ§µÔ´µÑé§ %s...
+TxtFinishOK	= ¡ÒÃµÔ´µÑé§àÊÃç¨ÊÁºÙÃ³ì
+TxtInsCancel	= ¡ÒÃµÑé§¤èÒ¶Ù¡Â¡àÅÔ¡áÅĞäÁèÊÒÁÒÃ¶·Óä´éàÊÃç¨ÊÁºÙÃ³ì
+TxtInstOk1	= ¡ÒÃµÑé§¤èÒàÊÃç¨ÊÔé¹â´ÂµÔ´µÑé§ä´ÃàÇÍÃìÊÓËÃÑº %s áÅéÇ
+
+[Czech]
+TxtOK		= OK
+TxtCancel	= Zrušit
+TxtApply	= Pouít
+MTxtYes		= Ano(&Y)
+MTxtNo		= Ne(&N)
+TxtReboot1a	= Zmeny se projeví a po restartování systému.
+TxtReboot1b	= Chcete jej restartovat hned?
+TxtDelFiles	= Odstranování souboru...
+TxtDelFldrs	= Odstranování sloek...
+TxtDelReg	= Odtranování údaju systémovıch registru...
+
+TxtUninstApp	= Odebrání S3 Graphics
+TxtUninst	= Odebrání %s
+TxtConfirmUn1	= Tímto odeberete %s ovladac a s ním související aplikace.
+TxtConfirmUn2	= Tímto odeberete %s.
+TxtConfirm_b	= Zvolte Ano pro odebrání, nebo Ne pro zrušení akce.
+TxtEllipsis	= ...%s
+TxtCloseApps	= Ukoncování aktivních aplikací...
+TxtFinishing	= Odebrání je dokoncováno...
+TxtNoInfo	= Chybí nekterá z informací nutnıch pro odebrání. Zkuste to prosím znovu se správnımi údaji pro odebrání.
+
+TxtWinReq	= Tato instalace mùe bıt spuštìna pouze pod Windows %s.
+TxtWrongOs	= Tato instalace vyaduje odlišnou verzi operaèního systému.
+TxtNoTmpDir	= Nemonost vytvoøit doèasnı adresáø.
+TxtNoInitDll	= Chyba pøi pokusu inicializovat DLL %s.
+TxtNoHardware	= Nebyl detekován ádnı kompatibilní hardware.
+TxtNoDrvInf	= Nemonost najít DrvInf nastavení v %s.
+TxtInitLog	= Zavedení prùbìhu zápisu...
+TxtPromptSetup	= Jste si jisti, e chcete instalovat %s ovladaè?
+TxtAborted	= Setup nemùe dokonèit instalaci.  Pro více podrobností zkontrolujte zápis o prùbìhu ve vašem adresáøi windows.
+TxtRebootToUse1	= Pro zavedení, právì nainstalovanıch ovladaèù, je nutné restartovat váš systém.
+TxtRebootToUse2	= Vyberte Ano pro restartování nyní, Ne pro restartování pozdìji.
+TxtRebootNopriv	= Restartování selhalo: nemonost získat oprávnìní pro restart.
+TxtRebootFailExit = Restartování selhalo: Pro opuštìní Windows odklepnìte vrácenou chybu.
+TxtRebootFailed	= Restartování selhalo: Pro opuštìní Windows odklepnìte vrácenou neznámou chybu.
+TxtManualReboot	= Mìli byste restartovat Windows ruènì.
+TxtNoDllLoad	= Nemonost nahrát DLL nápovìdy instalace.  Nemohu pokraèovat.
+TxtBadHelpDll	= Nemonost najít správnou funkci v DLL nápovìdy instalace.  Nemohu pokraèovat.
+
+TxtInstall	= Instalování %s...
+TxtFinishOK	= Instalace dokonèena.
+TxtInsCancel	= Setup bude zrušen a nedokonèen.
+TxtInstOk1	= Setup ukonèil instalaci ovladaèe pro váš %s.
+
+[Greek]
+;; Incomplete!
+
+
+ ;; 21-May2004
+TxtWinReq	= ÁõôŞ ç ÅãêáôÜóôáóç èá ğñİğåé íá åêôåëåßôáé óôá Windows %s.
+TxtWrongOs	= ÁõôŞ ç ÅãêáôÜóôáóç áğáéôåß ìéá äéáöïñåôéêŞ İêäïóç ôïõ ëåéôïõñãéêïı óõóôŞìáôïò.
+TxtNoTmpDir	= Äåí åßíáé äõíáôŞ ç äçìéïõñãßá ôïõ ğñïóùñéíïı êáôáëüãïõ.
+TxtNoInitDll	= ÓöÜëìá êáôÜ ôçí ğñïóğÜèåéá ğñïåôïéìáóßáò ôùí DLL %s.
+TxtNoHardware	= Äåí åíôïğßóôçêå óõìâáôü õëéêü.
+TxtNoDrvInf	= Äåí åßíáé äõíáôŞ ç åıñåóç ôùí ñõèìßóåùí DrvInf óôï %s.
+TxtInitLog	= Åêêßíçóç áñ÷åßïõ êáôáãñáöŞò äéáäéêáóßáò...
+TxtPromptSetup	= Åßóôå óßãïõñïé ğùò èİëåôå íá åãêáôáóôŞóåôå ôï ğñüãñáììá ïäŞãçóçò %s;
+TxtAborted	= Äåí Şôáí äõíáôŞ ç ïëïêëŞñùóç ôçò åãêáôÜóôáóçò áğü ôï Ğñüãñáììá ÅãêáôÜóôáóçò.  Åëİãîôå ôï áñ÷åßï êáôáãñáöŞò ôçò äéáäéêáóßáò óôïí êáôÜëïãï ôùí Windows ãéá ğåñéóóüôåñåò ëåğôïìİñåéåò.
+TxtRebootToUse1	= Èá ğñİğåé íá åğáíåêêéíŞóåôå ôï óıóôçìÜ óáò ãéá íá ÷ñçóéìïğïéŞóåôå ôï ğñüãñáììá ïäŞãçóçò ğïõ ìüëéò åãêáôáóôŞóáôå.
+TxtRebootToUse2	= Åğéëİîôå ôï Yes (Íáé) ãéá íá åêêéíŞóåôå ôïí õğïëïãéóôŞ óáò ôşñá, No (¼÷é) ãéá íá ôïí åêêéíŞóåôå áñãüôåñá.
+TxtRebootNopriv	= Ç åğáíåêêßíçóç áğİôõ÷å: áäõíáìßá ëŞøçò ğñïíïìßùí ôåñìáôéóìïı.
+TxtRebootFailExit = Áğİôõ÷å ç åğáíåêêßíçóç: ç êëŞóç ãéá İîïäï áğü ôá Windows åğİóôñåøå İíá óöÜëìá.
+TxtRebootFailed	= Ç åğáíåêêßíçóç áğİôõ÷å: ç êëŞóç ãéá İîïäï áğü ôá Windows åğİóôñåøå İíá Üãíùóôï óöÜëìá.
+TxtManualReboot	= Èá ğñİğåé íá åğáíåêêéíŞóåôå ôá Windows ÷åéñïêßíçôá.
+TxtNoDllLoad	= Äåí Şôáí äõíáôŞ ç öüñôùóç ôùí DLL âïçèçôéêşí áñ÷åßùí åãêáôÜóôáóçò.  Äåí åßíáé äõíáôŞ ç óõíİ÷éóç. 
+TxtBadHelpDll	= Äåí Şôáí äõíáôŞ ç åıñåóç ôùí óùóôşí ëåéôïõñãéşí óôá âïçèçôéêÜ áñ÷åßá DLL ôçò åãêáôÜóôáóçò.  Äåí åßíáé äõíáôŞ ç óõíİ÷éóç. 
+
+TxtInstall	= ÅãêáôÜóôáóç %s...
+TxtFinishOK	= Ç åãêáôÜóôáóç ïëïêëçñşèçêå.
+
+;; Added 27-Jul2004
+TxtInsCancel = Ôï Ğñüãñáììá ÅãêáôÜóôáóçò áêõñşèçêå êáé äåí ïëïêëçñşèçêå.
+TxtInstOk1 = Ôï Ğñüãñáììá ÅãêáôÜóôáóçò İ÷åé ïëïêëçñşóåé ôçí åãêáôÜóôáóç ôïõ ğñïãñÜììáôïò ïäŞãçóçò ãéá ôï %s óáò.
+[Hungarian]
+TxtOK		= OK
+TxtCancel	= Mégsem
+TxtApply	= Alkalmaz
+MTxtYes		= Igen(&Y)
+MTxtNo		= Nem(&N)
+TxtReboot1a	= A változások életbeléptetéséhez, újra kell indítaniuk a rendszert.
+TxtReboot1b	= Újraindítás most?
+TxtDelFiles	= Fájlok eltávolítása...
+TxtDelFldrs	= Mappák eltávolítása...
+TxtDelReg	= Regisztrációs adatbázis bejegyzéseinek az eltávolítása...
+
+TxtUninstApp	= S3 Graphics eltávolítása
+TxtUninst	= %s eltávolítása
+TxtConfirmUn1	= Ez eltávolítja a(z) %s illeszto-programját és az esetleg társult segédprogramokat.
+TxtConfirmUn2	= Ez eltávolítja a(z) %s programot.
+TxtConfirm_b	= Eltávolításhoz válasszák az Igen opciót, kilépéshez pedig a Nem opciót.
+TxtEllipsis	= ...%s
+TxtCloseApps	= Megnyitott alkalmazások bezárása...
+TxtFinishing	= Eltávolítás befejezése...
+TxtNoInfo	= Hiányoznak bizonyos információk amelyek az eltávolításhoz szükségesek. Kérjük próbálkozzon ismét a megfelelo eltávolítási naplóval.
+
+TxtWinReq	= Ez a telepítõ csak Windows %s alatt futtatható.
+TxtWrongOs	= Ehhez a telepítõhöz az operációs rendszer másikverziója szükséges. 
+TxtNoTmpDir	= Nem lehet létrehozni az ideiglenes könyvtárat.
+TxtNoInitDll	= Hiba a DLL %s inicializálásánál.
+TxtNoHardware	= Nem érzékelt kompatibilis hardvert.
+TxtNoDrvInf	= Nem található a DrvInf beállítás %s.
+TxtInitLog	= Elõrehaladás napló indítása...
+TxtPromptSetup	= Bizonyosak benne, hogy telepíteni kívánják a(z) %s illesztõprogramot?
+TxtAborted	= A telepítõ nem tudta befejezni a telepítést.  További részletekért, lásd az elõrehaladási naplót a Windows könyvtárban.
+TxtRebootToUse1	= Az újonnan telepített illesztõprogram életbeléptetéséhez, újra kell indítaniuk a rendszert.
+TxtRebootToUse2	= Igen, ha most kívánják újraindítani, Nem, ha késõbb kívánják ezt megtenni.
+TxtRebootNopriv	= Az újraindítás nem sikerült: nem elérhetõ a leállítási jogosultság.
+TxtRebootFailExit = Az újraindítás nem sikerült: hiba jelentkezett kilépésnél a Windowsból.
+TxtRebootFailed	= Az újraindítás nem sikerült: ismeretlen hiba jelentkezett kilépésnél a Windowsból.
+TxtManualReboot	= Manuálisan kell újraindítaniuk a Windowst.
+TxtNoDllLoad	= Nem tudja betölteni a telepítéstámogató DLL beállításait.  Nem lehet folytatni.
+TxtBadHelpDll	= Nem találja a telepítéstámogató DLL helyes funkcióit.  Nem lehet folytatni.
+
+TxtInstall	= Telepítés folyamatban %s...
+TxtFinishOK	= A telepítés befejezõdött.
+TxtInsCancel	= A telepítés le lett állítva és nem fejezõdött be.
+TxtInstOk1	= A telepítõ befejezte az illesztõprogram telepítését az Önök %s.
+
+[Polish]
+TxtOK	= OK
+TxtCancel= Anuluj
+TxtApply= Zastosuj
+MTxtYes	= Tak(&Y)
+MTxtNo	= Nie(&N)
+TxtReboot1a	= Aby zmiany przyniosly efekt, nalezy ponownie uruchomic system.
+TxtReboot1b	= Czy chcesz teraz ponownie uruchomic system?
+TxtDelFiles	= Usuwanie plików...
+TxtDelFldrs	= Usuwanie folderów...
+TxtDelReg	= Usuwanie wartosci rejestru systemu...
+
+TxtUninstApp	= Odinstalowanie S3 Graphics
+TxtUninst	= Odinstalowanie %s
+TxtConfirmUn1	= Funkcja ta odinstaluje sterownik %s i wszystkie towarzyszace mu programy narzedziowe.
+TxtConfirmUn2	= Funkcja ta spowoduje odinstalowanie %s.
+TxtConfirm_b	= Wybierz Tak, aby odinstalowac lub wybierz Nie, aby anulowac.
+TxtEllipsis	= ...%s
+TxtCloseApps	= Zamykanie otwartych aplikacji...
+TxtFinishing	= Zakonczenie odinstalowania...
+TxtNoInfo	= Brakuje niektórych informacji wymaganych do odinstalowania.  Spróbuj ponownie z prawidlowym plikiem log odinstalowania.
+
+TxtWinReq	= Ten program instalacyjny mo¿e byæ uruchamiany wy³¹cznie w systemie Windows %s.
+TxtWrongOs	= Ten program instalacyjny wymaga innej wersji systemu operacyjnego.
+TxtNoTmpDir	= Nie mo¿na utworzyæ tymczasowego katalogu.
+TxtNoInitDll	= B³¹d podczas próby zainicjowania biblioteki DLL %s.
+TxtNoHardware	= Nie wykryto zgodnego sprzêtu.
+TxtNoDrvInf	= Nie mo¿na odnaleŸæ ustawienia DrvInf w %s.
+TxtInitLog	= Uruchomienie dziennika postêpu...
+TxtPromptSetup	= Czy na pewno chcesz zainstalowaæ sterownik %s?
+TxtAborted	= Program instalacyjny nie móg³ dokoñczyæ instalacji.  SprawdŸ dziennik postêpu w swoim katalogu Windows, w celu uzyskania szczegó³owych informacji.
+TxtRebootToUse1	= Aby mo¿na by³o wykorzystaæ w³aœnie zainstalowany sterownik, nale¿y ponownie uruchomiæ system.
+TxtRebootToUse2	= Wybierz Yes(Tak), aby teraz ponownie uruchomiæ system lub No (Nie), aby póŸniej ponownie uruchomiæ system.
+TxtRebootNopriv	= Ponowne uruchomienie nie powiod³o siê: nie mo¿na uzyskaæ uprawnienia zamykania.
+TxtRebootFailExit = Ponowne uruchomienie nie powiod³o siê: wywo³anie zakoñczenia systemu Windows, zwróci³o b³¹d.
+TxtRebootFailed	= Ponowne uruchomienie nie powiod³o siê: wywo³anie zakoñczenia systemu Windows, zwróci³o nieznany b³¹d.
+TxtManualReboot	= Nale¿y rêcznie ponownie uruchomiæ system Windows.
+TxtNoDllLoad	= Nie mo¿na za³adowaæ biblioteki DLL pomocnika instalacji.  Kontynuowanie nie jest mo¿liwe.
+TxtBadHelpDll	= Nie mo¿na odnaleŸæ prawid³owych funkcji w bibliotece DLL pomocnika instalacji.  Kontynuowanie nie jest mo¿liwe.
+
+TxtInstall	= Instalacja %s...
+TxtFinishOK	= Instalacja zakoñczona.
+TxtInsCancel	= Program instalacyjny zosta³ anulowany i nie zosta³ zakoñczony.
+TxtInstOk1	= Program instalacyjny zakoñczy³ instalacjê sterownika dla %s.
+
+[Slovak]
+TxtOK		= OK
+TxtCancel	= Zrušit
+TxtApply	= Pouit
+MTxtYes		= Áno(&Y)
+MTxtNo		= Nie(&N) 
+TxtReboot1a	= Zmeny sa prejavia a po reštartovaní systému.
+TxtReboot1b	= Chcete ho reštartovat ihned?
+
+TxtDelFiles	= Odstranovanie súborov...
+TxtDelFldrs	= Odstranovanie zloiek...
+TxtDelReg	= Odstranovanie údajov systémovıch registrov...
+
+TxtUninstApp	= Odobratie S3 Graphics
+TxtUninst	= Odobratie %s
+TxtConfirmUn1	= Tımto odoberiete %s ovládac a s ním súvisiace aplikácie.
+TxtConfirmUn2	= Tımto odoberiete %s.
+TxtConfirm_b	= Zvolte Áno pre odobratie, alebo Nie pre zrušenie akcie.
+TxtEllipsis	= ...%s
+TxtCloseApps	= Ukoncovanie aktívnych aplikácií...
+TxtFinishing	= Odobratie sa dokoncuje...
+TxtNoInfo	= Chıba niektorá z informácií potrebnıch pre odobratie. Skúste to prosím znovu so správnymi údajmi pre odobratie.
+
+TxtWinReq	= Toto nastavenie by malo bea len na operaènom systéme Windows %s.
+TxtWrongOs	= Toto nastavenie vyaduje odlišnú verziu operaèného systému.
+TxtNoTmpDir	= Nie je moné vytvori doèasnı zoznam.
+TxtNoInitDll	= Chybnı pokus inicializova DLL %s.
+TxtNoHardware	= Nebol zistenı iadny kompatibilnı hardvér.
+TxtNoDrvInf	= Nie je moné nájs nastavenie DrvInf v %s.
+TxtInitLog	= Spustenie priebehu inštalácie...
+TxtPromptSetup	= Ste si istı, e chcete nainštalova ovládaè %s?
+TxtAborted	= Nastavenie nebolo schopné dokonèi inštaláciu.  Skontrolujte priebeh inštalácie vo vašom zozname systému Windows na získanie viac detailov.
+TxtRebootToUse1	= Musíte reštartova váš systém, aby ste mohli poui ovládaè, ktorı sa práve nainštaloval.
+TxtRebootToUse2	= Vyberte Áno na reštartovanie ihneï, Nie na reštartovanie neskôr.
+TxtRebootNopriv	= Reštartovanie neúspešné: neschopné získa právo na ukonèenie.
+TxtRebootFailExit = Reštartovanie neúspešné: iados o skonèenie systému Windows oznámila chybu.
+TxtRebootFailed	= Reštartovanie neúspešné: iados o skonèenie systému Windows oznámila neznámu chybu.
+TxtManualReboot	= Mali by ste reštartova Windows manuálne.
+TxtNoDllLoad	= Nie je moné zavies pomocníka nastavení DLL.  Nemôte pokraèova.
+TxtBadHelpDll	= Nie je moné nájs správne funkcie v pomocníkovi nastavení DLL.  Nemôte pokraèova.
+
+TxtInstall	= Inštalovanie %s...
+TxtFinishOK	= Inštalácia dokonèená.
+TxtInsCancel	= Nastavenie bolo zrušené a nie je dokonèené.
+TxtInstOk1	= Nastavenie dokonèilo inštalovanie ovládaèa pre váš %s.
+
+[Slovenian]
+TxtOK		= OK
+TxtCancel	= Preklic
+TxtApply	= Uporabi
+MTxtYes		= Da(&Y)
+MTxtNo		= Ne(&N)
+TxtReboot1a	= Za Ponovno zaenite sistem.
+TxtReboot1b	= Ponoven zagon?
+TxtDelFiles	= Odstranjevanje datotek...
+TxtDelFldrs	= Odstranjevanje datotek...
+TxtDelReg	= Odstranjevanje vrednosti sistemskega registra...
+
+TxtUninstApp	= Odstranitev S3 Grafik 
+TxtUninst	= Odstranitev %s
+TxtConfirmUn1	= S tem boste iz %s gonilnika odstranili vse uporabniške funkcije.
+TxtConfirmUn2	= S tem boste odstranili %s.
+TxtConfirm_b	= Za odstranitev izberite Da oz. Ne za preklic ukaza.
+TxtEllipsis	= ...%s
+TxtCloseApps	= Zapiranje odprtih aplikacij...
+TxtFinishing	= Odstranitev je pri koncu...
+TxtNoInfo	= Nekatere odstranitvene informacije manjkajo. Prosimo, poskusite znova z ustrezno odstranitveno beleko. 
+
+TxtWinReq	= Ta Vzpostavitev naj se uporablja le v Windows razlicici %s.
+TxtWrongOs	= Ta Vzpostavitev deluje v drugacni razlicici operacijskega sistema.
+TxtNoTmpDir	= Izdelava zacasnega direktorija ni mogoca.
+TxtNoInitDll	= Napaka v poskusu odpiranja DLL %s.
+TxtNoHardware	= Zaznana je bila nekompatibilna strojna oprema.
+TxtNoDrvInf	= DrvInf nastavitev v %s ni moc najti.
+TxtInitLog	= Pricetek naprednega beleenja...
+TxtPromptSetup	= Ste prepricani, da erlite namestiti %s gonilnik?
+TxtAborted	= Vzpostavitev se ni izvedla do konca. Za vec podatkov preverite napredno beleenje v vašem Windows direktoriju. 
+TxtRebootToUse1	= Za uporabo pravkar namešcenega gonilnika ponovno zaenite vaš racunalnik.
+TxtRebootToUse2	= Za ponovni zagon izberite Da oz. Ne, ce elite to storiti kasneje.
+TxtRebootNopriv	= Neuspešen ponovni zagon: nemogoca pridobitev shutdown privilegijev.
+TxtRebootFailExit = Neuspešen ponovni zagon: v ukazu za izhod iz Windows sistema je prišlo do napake.
+TxtRebootFailed	= Neuspešen ponovni zagon: v ukazu za izhod iz Windows sistema je prišlo do neznane napake.
+TxtManualReboot	= Windows ponovno zaenite rocno.
+TxtNoDllLoad	= Nalaganje DLL vzpostavitvenega pomocnika ni mogoce.Nadaljevanje prekinjeno.
+TxtBadHelpDll	= Lokalizacija ustreznih funkcij v vzpostavitvenem pomocniku ni mogoca. Nadaljevanje prekinjeno.
+
+TxtInstall	= Namestitev %s...
+TxtFinishOK	= Namestitev je zakljucena.
+TxtInsCancel	= Namestitev je bila prekinjena in ni koncana.
+TxtInstOk1	= Gonilnik za vaš %s je bil uspešno namešcen.
+
+[Turkish]
+TxtOK		= Tamam
+TxtCancel	= Iptal
+TxtApply	= Uygula
+MTxtYes		= Evet(&Y)
+MTxtNo		= Hayir(&N)
+TxtDelFiles	= Dosyalar kaldiriliyor...
+TxtDelFldrs	= Klasörler kaldiriliyor...
+TxtDelReg	= Sistem kayit degerleri kaldiriliyor...
+
+TxtReboot1a	= Degisikliklerin etkili hale gelmesi için sisteminizin yeniden baslatilmasi gerekmektedir.
+TxtReboot1b	= Simdi Baslatilsin mi?
+TxtUninstApp	= S3 Grafiklerini Kaldir
+TxtUninst	= %s Kurulumu kaldiriliyor
+TxtConfirmUn1	= Bu, %s sürücüsünün kurulumunu ve bu programa dahil olanlari kaldiracaktir.
+TxtConfirmUn2	= Bu, %s kurulumunu kaldiracaktir.
+TxtConfirm_b	= Kurulumu kaldirmak için Evet’i veya iptal etmek için Hayir’i seçin.
+TxtEllipsis	= ...%s
+TxtCloseApps	= Açik uygulamalarin seçilmesi...
+TxtFinishing	= Kurulumun kaldirilmasi tamamlandi...
+TxtNoInfo	= Bazi kurulum kaldirma bilgileri yok. Düzgün bir kurulum kaldirma logu kullanarak tekrar deneyin.
+
+TxtWinReq	= Bu kurulum sadece windows %2 de çalıştırılmalıdır.
+TxtWrongOs	= Bu kurulum farklı bir işletim sistemine gereksinim duymaktadır.
+TxtNoTmpDir	= Geçici bir dizin oluşturamıyor.
+TxtNoInitDll	= 5s DLL'yi başlatmaya çalışırken hata.
+TxtNoHardware	= Uyumlu bir donanım saptanamadı.
+TxtNoDrvInf	= %s'de DrvInf ayarını bulamıyor.
+TxtInitLog	= Log prosesine başlıyor...
+TxtPromptSetup	= %s sürücüsünü kurmak istediğinizden emin misiniz?
+TxtAborted	= Ayar kurulumunu tamamlayamadı. Daha fazla ayrıntı için progres logunu Windows dizininizde kontrol edin.
+TxtRebootToUse1	= Biraz önce kurulan sürücüyü kullanmak için sisteminizi yeniden başlatmanız gerekmektedir.
+TxtRebootToUse2	= Şimde yeniden başlatmak için Evet'i, sonra başlatmak için Hayır'ı seçin.
+TxtRebootNopriv	= Yeniden başlatma başarısız: önceliği kapatamıyor.
+TxtRebootFailExit = Yeniden başlatma başarısız: Windows geri dönen hatasından çıkmak için arayın.
+TxtRebootFailed	= Yeniden başlatma başarısız: Windows geri dönen bilinmeyen hatadan çıkmak için arayın.
+TxtManualReboot	= Windows'u manuel olarak başlatmalısınız.
+TxtNoDllLoad	= Ayar DLL yardımını yükleyemiyor.  Devam edemiyor.
+TxtBadHelpDll	= DLL ayar yardımcısında doğru işlevi bulamıyor. Devam edemiyor.
+
+TxtInstall	= %s kuruluyor...
+TxtFinishOK	= Kurulum tamamlandı.
+TxtInsCancel	= Ayar iptal edildi vetamamlanmadı.
+TxtInstOk1	= Ayar, %s niz için olan sürücüyü kurmayı tamamladı.
+
