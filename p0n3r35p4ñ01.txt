@@ -1,0 +1,8 @@
+*Descomprimimos el Zip: multisim_español_12.zip
+*copiamos la carpeta q esta dentro: spanish
+*abrimos la carpeta en donde instalamos el programa ejemplo:
+  C:\Archivos de programa\National Instruments\Circuit Design Suite 11.0
+*abrir la carpeta:	stringfiles
+*una vez dentro de esa carpeta. le pegamos la carpeta spanish
+listo, la proxima vez que ejecuten el programa aparecerá en idioma español
+All this tutos is by Juan087

@@ -1,0 +1,27 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'install', '-g', 'grunt-cli' ]
+2 info using npm@2.15.9
+3 info using node@v4.5.0
+4 verbose stack Error: EIO: i/o error, read
+4 verbose stack     at Error (native)
+4 verbose stack     at Object.fs.readSync (fs.js:603:19)
+4 verbose stack     at Object.readSync (/usr/lib/node_modules/npm/node_modules/graceful-fs/polyfills.js:110:28)
+4 verbose stack     at Object.fs.readFileSync (fs.js:433:24)
+4 verbose stack     at Object.Module._extensions..js (module.js:415:20)
+4 verbose stack     at Module.load (module.js:343:32)
+4 verbose stack     at Function.Module._load (module.js:300:12)
+4 verbose stack     at Module.require (module.js:353:17)
+4 verbose stack     at require (internal/module.js:12:17)
+4 verbose stack     at Object.<anonymous> (/usr/lib/node_modules/npm/node_modules/request/node_modules/combined-stream/lib/combined_stream.js:3:21)
+5 verbose cwd /home/allan/Git/hauspa-admin/node-v0.4.4
+6 error Linux 4.4.0-36-generic
+7 error argv "/usr/bin/nodejs" "/usr/bin/npm" "install" "-g" "grunt-cli"
+8 error node v4.5.0
+9 error npm  v2.15.9
+10 error code EIO
+11 error errno -5
+12 error syscall read
+13 error EIO: i/o error, read
+14 error If you need help, you may report this error at:
+14 error     <https://github.com/npm/npm/issues>
+15 verbose exit [ -5, true ]
