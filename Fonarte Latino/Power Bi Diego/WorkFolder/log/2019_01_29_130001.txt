@@ -1,0 +1,397 @@
+ZIP file [C:\Users\DELL\Documents\REPORTES_FONARTE\20190129_Dec2018_fullreport_fonarte_latino_s_a_de_c_v_US.xls.zip] extracted.
+ZIP file [C:\Users\DELL\Documents\REPORTES_FONARTE\apple diciembre 2018.zip] extracted.
+Getting [Orchard] ready... done.
+Getting [Itunes] ready... done.
+Getting [Exchange Rate] ready... done.
+Getting [Apple Music] ready... done.
+
+C:\Windows\system32>sqlcmd -S fonarte2.database.windows.net -d Reporteador -U Dataguys2 -P Fonarte2018 -I -Q "TRUNCATE TABLE TMP_APPLEMUSIC;" 
+
+C:\Windows\system32>sqlcmd -S fonarte2.database.windows.net -d Reporteador -U Dataguys2 -P Fonarte2018 -I -Q "TRUNCATE TABLE TMP_ITUNES;" 
+
+C:\Windows\system32>sqlcmd -S fonarte2.database.windows.net -d Reporteador -U Dataguys2 -P Fonarte2018 -I -Q "TRUNCATE TABLE TMP_FINANCIAL_REPORT;" 
+
+C:\Windows\system32>sqlcmd -S fonarte2.database.windows.net -d Reporteador -U Dataguys2 -P Fonarte2018 -I -Q "TRUNCATE TABLE TMP_ORCHARD;" 
+
+C:\Windows\system32>REN C:\Users\DELL\Documents\REPORTES_FONARTE\*fullreport*.txt TMP_ORCHARD.txt; 
+
+C:\Windows\system32>REN C:\Users\DELL\Documents\REPORTES_FONARTE\S1*.txt TMP_APPLEMUSIC.txt; 
+
+C:\Windows\system32>REN C:\Users\DELL\Documents\REPORTES_FONARTE\*_ZZ*.txt TMP_ITUNES.txt; 
+
+C:\Windows\system32>REN C:\Users\DELL\Documents\REPORTES_FONARTE\financial*.txt TMP_FINANCIAL_REPORT.txt; 
+
+C:\Windows\system32>bcp TMP_APPLEMUSIC in C:\Users\DELL\Documents\REPORTES_FONARTE\TMP_APPLEMUSIC.txt -S fonarte2.database.windows.net -d Reporteador -U Dataguys2 -P Fonarte2018 -q -c -t \t -r 0x0A -C 65001; 
+
+Starting copy...
+1000 rows sent to SQL Server. Total sent: 1000
+1000 rows sent to SQL Server. Total sent: 2000
+1000 rows sent to SQL Server. Total sent: 3000
+1000 rows sent to SQL Server. Total sent: 4000
+1000 rows sent to SQL Server. Total sent: 5000
+1000 rows sent to SQL Server. Total sent: 6000
+1000 rows sent to SQL Server. Total sent: 7000
+1000 rows sent to SQL Server. Total sent: 8000
+1000 rows sent to SQL Server. Total sent: 9000
+1000 rows sent to SQL Server. Total sent: 10000
+1000 rows sent to SQL Server. Total sent: 11000
+1000 rows sent to SQL Server. Total sent: 12000
+1000 rows sent to SQL Server. Total sent: 13000
+1000 rows sent to SQL Server. Total sent: 14000
+1000 rows sent to SQL Server. Total sent: 15000
+1000 rows sent to SQL Server. Total sent: 16000
+1000 rows sent to SQL Server. Total sent: 17000
+1000 rows sent to SQL Server. Total sent: 18000
+1000 rows sent to SQL Server. Total sent: 19000
+1000 rows sent to SQL Server. Total sent: 20000
+1000 rows sent to SQL Server. Total sent: 21000
+1000 rows sent to SQL Server. Total sent: 22000
+1000 rows sent to SQL Server. Total sent: 23000
+1000 rows sent to SQL Server. Total sent: 24000
+1000 rows sent to SQL Server. Total sent: 25000
+1000 rows sent to SQL Server. Total sent: 26000
+1000 rows sent to SQL Server. Total sent: 27000
+1000 rows sent to SQL Server. Total sent: 28000
+1000 rows sent to SQL Server. Total sent: 29000
+1000 rows sent to SQL Server. Total sent: 30000
+1000 rows sent to SQL Server. Total sent: 31000
+1000 rows sent to SQL Server. Total sent: 32000
+1000 rows sent to SQL Server. Total sent: 33000
+1000 rows sent to SQL Server. Total sent: 34000
+1000 rows sent to SQL Server. Total sent: 35000
+1000 rows sent to SQL Server. Total sent: 36000
+1000 rows sent to SQL Server. Total sent: 37000
+1000 rows sent to SQL Server. Total sent: 38000
+1000 rows sent to SQL Server. Total sent: 39000
+1000 rows sent to SQL Server. Total sent: 40000
+1000 rows sent to SQL Server. Total sent: 41000
+1000 rows sent to SQL Server. Total sent: 42000
+1000 rows sent to SQL Server. Total sent: 43000
+1000 rows sent to SQL Server. Total sent: 44000
+1000 rows sent to SQL Server. Total sent: 45000
+1000 rows sent to SQL Server. Total sent: 46000
+1000 rows sent to SQL Server. Total sent: 47000
+1000 rows sent to SQL Server. Total sent: 48000
+1000 rows sent to SQL Server. Total sent: 49000
+1000 rows sent to SQL Server. Total sent: 50000
+1000 rows sent to SQL Server. Total sent: 51000
+1000 rows sent to SQL Server. Total sent: 52000
+1000 rows sent to SQL Server. Total sent: 53000
+1000 rows sent to SQL Server. Total sent: 54000
+1000 rows sent to SQL Server. Total sent: 55000
+1000 rows sent to SQL Server. Total sent: 56000
+1000 rows sent to SQL Server. Total sent: 57000
+1000 rows sent to SQL Server. Total sent: 58000
+1000 rows sent to SQL Server. Total sent: 59000
+
+59224 rows copied.
+Network packet size (bytes): 4096
+Clock Time (ms.) Total     : 24134  Average : (2453.97 rows per sec.)
+
+C:\Windows\system32>bcp TMP_ITUNES in C:\Users\DELL\Documents\REPORTES_FONARTE\TMP_ITUNES.txt -S fonarte2.database.windows.net -d Reporteador -U Dataguys2 -P Fonarte2018 -q -c -t \t -r 0x0A -C 65001; 
+
+Starting copy...
+
+872 rows copied.
+Network packet size (bytes): 4096
+Clock Time (ms.) Total     : 780    Average : (1117.95 rows per sec.)
+
+C:\Windows\system32>bcp TMP_FINANCIAL_REPORT in C:\Users\DELL\Documents\REPORTES_FONARTE\TMP_FINANCIAL_REPORT.txt -S fonarte2.database.windows.net -d Reporteador -U Dataguys2 -P Fonarte2018 -q -c -t \t -r 0x0A -C 65001; 
+
+Starting copy...
+
+39 rows copied.
+Network packet size (bytes): 4096
+Clock Time (ms.) Total     : 171    Average : (228.07 rows per sec.)
+
+C:\Windows\system32>bcp TMP_ORCHARD in C:\Users\DELL\Documents\REPORTES_FONARTE\TMP_ORCHARD.txt -S fonarte2.database.windows.net -d Reporteador -U Dataguys2 -P Fonarte2018 -q -c -t \t -r 0x0A -C 65001; 
+
+Starting copy...
+1000 rows sent to SQL Server. Total sent: 1000
+1000 rows sent to SQL Server. Total sent: 2000
+1000 rows sent to SQL Server. Total sent: 3000
+1000 rows sent to SQL Server. Total sent: 4000
+1000 rows sent to SQL Server. Total sent: 5000
+1000 rows sent to SQL Server. Total sent: 6000
+1000 rows sent to SQL Server. Total sent: 7000
+1000 rows sent to SQL Server. Total sent: 8000
+1000 rows sent to SQL Server. Total sent: 9000
+1000 rows sent to SQL Server. Total sent: 10000
+1000 rows sent to SQL Server. Total sent: 11000
+1000 rows sent to SQL Server. Total sent: 12000
+1000 rows sent to SQL Server. Total sent: 13000
+1000 rows sent to SQL Server. Total sent: 14000
+1000 rows sent to SQL Server. Total sent: 15000
+1000 rows sent to SQL Server. Total sent: 16000
+1000 rows sent to SQL Server. Total sent: 17000
+1000 rows sent to SQL Server. Total sent: 18000
+1000 rows sent to SQL Server. Total sent: 19000
+1000 rows sent to SQL Server. Total sent: 20000
+1000 rows sent to SQL Server. Total sent: 21000
+1000 rows sent to SQL Server. Total sent: 22000
+1000 rows sent to SQL Server. Total sent: 23000
+1000 rows sent to SQL Server. Total sent: 24000
+1000 rows sent to SQL Server. Total sent: 25000
+1000 rows sent to SQL Server. Total sent: 26000
+1000 rows sent to SQL Server. Total sent: 27000
+1000 rows sent to SQL Server. Total sent: 28000
+1000 rows sent to SQL Server. Total sent: 29000
+1000 rows sent to SQL Server. Total sent: 30000
+1000 rows sent to SQL Server. Total sent: 31000
+1000 rows sent to SQL Server. Total sent: 32000
+1000 rows sent to SQL Server. Total sent: 33000
+1000 rows sent to SQL Server. Total sent: 34000
+1000 rows sent to SQL Server. Total sent: 35000
+1000 rows sent to SQL Server. Total sent: 36000
+1000 rows sent to SQL Server. Total sent: 37000
+1000 rows sent to SQL Server. Total sent: 38000
+1000 rows sent to SQL Server. Total sent: 39000
+1000 rows sent to SQL Server. Total sent: 40000
+1000 rows sent to SQL Server. Total sent: 41000
+1000 rows sent to SQL Server. Total sent: 42000
+1000 rows sent to SQL Server. Total sent: 43000
+1000 rows sent to SQL Server. Total sent: 44000
+1000 rows sent to SQL Server. Total sent: 45000
+1000 rows sent to SQL Server. Total sent: 46000
+1000 rows sent to SQL Server. Total sent: 47000
+1000 rows sent to SQL Server. Total sent: 48000
+1000 rows sent to SQL Server. Total sent: 49000
+1000 rows sent to SQL Server. Total sent: 50000
+1000 rows sent to SQL Server. Total sent: 51000
+1000 rows sent to SQL Server. Total sent: 52000
+1000 rows sent to SQL Server. Total sent: 53000
+1000 rows sent to SQL Server. Total sent: 54000
+1000 rows sent to SQL Server. Total sent: 55000
+1000 rows sent to SQL Server. Total sent: 56000
+1000 rows sent to SQL Server. Total sent: 57000
+1000 rows sent to SQL Server. Total sent: 58000
+1000 rows sent to SQL Server. Total sent: 59000
+1000 rows sent to SQL Server. Total sent: 60000
+1000 rows sent to SQL Server. Total sent: 61000
+1000 rows sent to SQL Server. Total sent: 62000
+1000 rows sent to SQL Server. Total sent: 63000
+1000 rows sent to SQL Server. Total sent: 64000
+1000 rows sent to SQL Server. Total sent: 65000
+1000 rows sent to SQL Server. Total sent: 66000
+1000 rows sent to SQL Server. Total sent: 67000
+1000 rows sent to SQL Server. Total sent: 68000
+1000 rows sent to SQL Server. Total sent: 69000
+1000 rows sent to SQL Server. Total sent: 70000
+1000 rows sent to SQL Server. Total sent: 71000
+1000 rows sent to SQL Server. Total sent: 72000
+1000 rows sent to SQL Server. Total sent: 73000
+1000 rows sent to SQL Server. Total sent: 74000
+1000 rows sent to SQL Server. Total sent: 75000
+1000 rows sent to SQL Server. Total sent: 76000
+1000 rows sent to SQL Server. Total sent: 77000
+1000 rows sent to SQL Server. Total sent: 78000
+1000 rows sent to SQL Server. Total sent: 79000
+1000 rows sent to SQL Server. Total sent: 80000
+1000 rows sent to SQL Server. Total sent: 81000
+1000 rows sent to SQL Server. Total sent: 82000
+1000 rows sent to SQL Server. Total sent: 83000
+1000 rows sent to SQL Server. Total sent: 84000
+1000 rows sent to SQL Server. Total sent: 85000
+1000 rows sent to SQL Server. Total sent: 86000
+1000 rows sent to SQL Server. Total sent: 87000
+1000 rows sent to SQL Server. Total sent: 88000
+1000 rows sent to SQL Server. Total sent: 89000
+1000 rows sent to SQL Server. Total sent: 90000
+1000 rows sent to SQL Server. Total sent: 91000
+1000 rows sent to SQL Server. Total sent: 92000
+1000 rows sent to SQL Server. Total sent: 93000
+1000 rows sent to SQL Server. Total sent: 94000
+1000 rows sent to SQL Server. Total sent: 95000
+1000 rows sent to SQL Server. Total sent: 96000
+1000 rows sent to SQL Server. Total sent: 97000
+1000 rows sent to SQL Server. Total sent: 98000
+1000 rows sent to SQL Server. Total sent: 99000
+1000 rows sent to SQL Server. Total sent: 100000
+1000 rows sent to SQL Server. Total sent: 101000
+1000 rows sent to SQL Server. Total sent: 102000
+1000 rows sent to SQL Server. Total sent: 103000
+1000 rows sent to SQL Server. Total sent: 104000
+1000 rows sent to SQL Server. Total sent: 105000
+1000 rows sent to SQL Server. Total sent: 106000
+1000 rows sent to SQL Server. Total sent: 107000
+1000 rows sent to SQL Server. Total sent: 108000
+1000 rows sent to SQL Server. Total sent: 109000
+1000 rows sent to SQL Server. Total sent: 110000
+1000 rows sent to SQL Server. Total sent: 111000
+1000 rows sent to SQL Server. Total sent: 112000
+1000 rows sent to SQL Server. Total sent: 113000
+1000 rows sent to SQL Server. Total sent: 114000
+1000 rows sent to SQL Server. Total sent: 115000
+1000 rows sent to SQL Server. Total sent: 116000
+1000 rows sent to SQL Server. Total sent: 117000
+1000 rows sent to SQL Server. Total sent: 118000
+1000 rows sent to SQL Server. Total sent: 119000
+1000 rows sent to SQL Server. Total sent: 120000
+1000 rows sent to SQL Server. Total sent: 121000
+1000 rows sent to SQL Server. Total sent: 122000
+1000 rows sent to SQL Server. Total sent: 123000
+1000 rows sent to SQL Server. Total sent: 124000
+1000 rows sent to SQL Server. Total sent: 125000
+1000 rows sent to SQL Server. Total sent: 126000
+1000 rows sent to SQL Server. Total sent: 127000
+1000 rows sent to SQL Server. Total sent: 128000
+1000 rows sent to SQL Server. Total sent: 129000
+1000 rows sent to SQL Server. Total sent: 130000
+1000 rows sent to SQL Server. Total sent: 131000
+1000 rows sent to SQL Server. Total sent: 132000
+1000 rows sent to SQL Server. Total sent: 133000
+1000 rows sent to SQL Server. Total sent: 134000
+1000 rows sent to SQL Server. Total sent: 135000
+1000 rows sent to SQL Server. Total sent: 136000
+1000 rows sent to SQL Server. Total sent: 137000
+1000 rows sent to SQL Server. Total sent: 138000
+1000 rows sent to SQL Server. Total sent: 139000
+1000 rows sent to SQL Server. Total sent: 140000
+1000 rows sent to SQL Server. Total sent: 141000
+1000 rows sent to SQL Server. Total sent: 142000
+1000 rows sent to SQL Server. Total sent: 143000
+1000 rows sent to SQL Server. Total sent: 144000
+1000 rows sent to SQL Server. Total sent: 145000
+1000 rows sent to SQL Server. Total sent: 146000
+1000 rows sent to SQL Server. Total sent: 147000
+1000 rows sent to SQL Server. Total sent: 148000
+1000 rows sent to SQL Server. Total sent: 149000
+1000 rows sent to SQL Server. Total sent: 150000
+1000 rows sent to SQL Server. Total sent: 151000
+1000 rows sent to SQL Server. Total sent: 152000
+1000 rows sent to SQL Server. Total sent: 153000
+1000 rows sent to SQL Server. Total sent: 154000
+1000 rows sent to SQL Server. Total sent: 155000
+1000 rows sent to SQL Server. Total sent: 156000
+1000 rows sent to SQL Server. Total sent: 157000
+1000 rows sent to SQL Server. Total sent: 158000
+1000 rows sent to SQL Server. Total sent: 159000
+1000 rows sent to SQL Server. Total sent: 160000
+1000 rows sent to SQL Server. Total sent: 161000
+1000 rows sent to SQL Server. Total sent: 162000
+1000 rows sent to SQL Server. Total sent: 163000
+1000 rows sent to SQL Server. Total sent: 164000
+1000 rows sent to SQL Server. Total sent: 165000
+1000 rows sent to SQL Server. Total sent: 166000
+1000 rows sent to SQL Server. Total sent: 167000
+1000 rows sent to SQL Server. Total sent: 168000
+1000 rows sent to SQL Server. Total sent: 169000
+1000 rows sent to SQL Server. Total sent: 170000
+1000 rows sent to SQL Server. Total sent: 171000
+1000 rows sent to SQL Server. Total sent: 172000
+1000 rows sent to SQL Server. Total sent: 173000
+1000 rows sent to SQL Server. Total sent: 174000
+1000 rows sent to SQL Server. Total sent: 175000
+1000 rows sent to SQL Server. Total sent: 176000
+1000 rows sent to SQL Server. Total sent: 177000
+1000 rows sent to SQL Server. Total sent: 178000
+1000 rows sent to SQL Server. Total sent: 179000
+1000 rows sent to SQL Server. Total sent: 180000
+1000 rows sent to SQL Server. Total sent: 181000
+1000 rows sent to SQL Server. Total sent: 182000
+1000 rows sent to SQL Server. Total sent: 183000
+1000 rows sent to SQL Server. Total sent: 184000
+1000 rows sent to SQL Server. Total sent: 185000
+1000 rows sent to SQL Server. Total sent: 186000
+1000 rows sent to SQL Server. Total sent: 187000
+1000 rows sent to SQL Server. Total sent: 188000
+1000 rows sent to SQL Server. Total sent: 189000
+1000 rows sent to SQL Server. Total sent: 190000
+1000 rows sent to SQL Server. Total sent: 191000
+1000 rows sent to SQL Server. Total sent: 192000
+1000 rows sent to SQL Server. Total sent: 193000
+1000 rows sent to SQL Server. Total sent: 194000
+1000 rows sent to SQL Server. Total sent: 195000
+1000 rows sent to SQL Server. Total sent: 196000
+1000 rows sent to SQL Server. Total sent: 197000
+1000 rows sent to SQL Server. Total sent: 198000
+1000 rows sent to SQL Server. Total sent: 199000
+1000 rows sent to SQL Server. Total sent: 200000
+1000 rows sent to SQL Server. Total sent: 201000
+1000 rows sent to SQL Server. Total sent: 202000
+1000 rows sent to SQL Server. Total sent: 203000
+1000 rows sent to SQL Server. Total sent: 204000
+1000 rows sent to SQL Server. Total sent: 205000
+1000 rows sent to SQL Server. Total sent: 206000
+1000 rows sent to SQL Server. Total sent: 207000
+1000 rows sent to SQL Server. Total sent: 208000
+1000 rows sent to SQL Server. Total sent: 209000
+1000 rows sent to SQL Server. Total sent: 210000
+1000 rows sent to SQL Server. Total sent: 211000
+1000 rows sent to SQL Server. Total sent: 212000
+1000 rows sent to SQL Server. Total sent: 213000
+1000 rows sent to SQL Server. Total sent: 214000
+1000 rows sent to SQL Server. Total sent: 215000
+1000 rows sent to SQL Server. Total sent: 216000
+1000 rows sent to SQL Server. Total sent: 217000
+1000 rows sent to SQL Server. Total sent: 218000
+1000 rows sent to SQL Server. Total sent: 219000
+1000 rows sent to SQL Server. Total sent: 220000
+1000 rows sent to SQL Server. Total sent: 221000
+1000 rows sent to SQL Server. Total sent: 222000
+1000 rows sent to SQL Server. Total sent: 223000
+1000 rows sent to SQL Server. Total sent: 224000
+1000 rows sent to SQL Server. Total sent: 225000
+1000 rows sent to SQL Server. Total sent: 226000
+1000 rows sent to SQL Server. Total sent: 227000
+1000 rows sent to SQL Server. Total sent: 228000
+1000 rows sent to SQL Server. Total sent: 229000
+
+229286 rows copied.
+Network packet size (bytes): 4096
+Clock Time (ms.) Total     : 222536 Average : (1030.33 rows per sec.)
+
+C:\Windows\system32>sqlcmd -S fonarte2.database.windows.net -d Reporteador -U Dataguys2 -P Fonarte2018 -I -Q "INSERT INTO APPLEMUSIC SELECT * FROM TMP_APPLEMUSIC;" 
+
+(59224 rows affected)
+
+C:\Windows\system32>sqlcmd -S fonarte2.database.windows.net -d Reporteador -U Dataguys2 -P Fonarte2018 -I -Q "INSERT INTO ITUNES SELECT * FROM TMP_ITUNES;" 
+
+(872 rows affected)
+
+C:\Windows\system32>sqlcmd -S fonarte2.database.windows.net -d Reporteador -U Dataguys2 -P Fonarte2018 -I -Q "INSERT INTO ORCHARD SELECT * FROM TMP_ORCHARD;" 
+
+(229286 rows affected)
+
+C:\Windows\system32>sqlcmd -S fonarte2.database.windows.net -d Reporteador -U Dataguys2 -P Fonarte2018 -I -Q "INSERT INTO APPLE_CURRENCY SELECT LEFT(RIGHT(DIVISA,4),3), TIPO_DE_CAMBIO, ANIO, MES FROM TMP_FINANCIAL_REPORT;" 
+
+(39 rows affected)
+
+C:\Windows\system32>Robocopy C:\Users\DELL\Documents\REPORTES_FONARTE C:\Users\DELL\Documents\REPORTES_FONARTE_PROCESADOS /mov /s /w:1 /r:1 
+
+-------------------------------------------------------------------------------
+   ROBOCOPY     ::     Herramienta para copia eficaz de archivos                             
+-------------------------------------------------------------------------------
+
+  Inicio: Tue Jan 29 13:08:24 2019
+
+   Origen : C:\Users\DELL\Documents\REPORTES_FONARTE\
+     Destino : C:\Users\DELL\Documents\REPORTES_FONARTE_PROCESADOS\
+
+    Archivos: *.*
+	    
+  Opciones: *.* /S /COPY:DAT /MOV /R:1 /W:1 
+
+------------------------------------------------------------------------------
+
+	                   5	C:\Users\DELL\Documents\REPORTES_FONARTE\
+	    Más reciente     		    6148	.DS_Store  0%  100%  
+	    Más reciente     		   9.2 m	TMP_APPLEMUSIC.txt  0.0% 10.7% 21.5% 32.3% 43.1% 53.9% 64.7% 75.4% 86.2% 97.0%100%  
+	    Más reciente     		    2782	TMP_FINANCIAL_REPORT.txt  0%  100%  
+	    Más reciente     		  146997	TMP_ITUNES.txt  0%   89%  100%  
+	    Más reciente     		  66.1 m	TMP_ORCHARD.txt  0.0%  1.5%  3.0%  4.5%  6.0%  7.5%  9.0% 10.5% 12.0% 13.6% 15.1% 16.6% 18.1% 19.6% 21.1% 22.6% 24.1% 25.7% 27.2% 28.7% 30.2% 31.7% 33.2% 34.7% 36.2% 37.8% 39.3% 40.8% 42.3% 43.8% 45.3% 46.8% 48.3% 49.9% 51.4% 52.9% 54.4% 55.9% 57.4% 58.9% 60.4% 62.0% 63.5% 65.0% 66.5% 68.0% 69.5% 71.0% 72.5% 74.1% 75.6% 77.1% 78.6% 80.1% 81.6% 83.1% 84.6% 86.2% 87.7% 89.2% 90.7% 92.2% 93.7% 95.2% 96.7% 98.3% 99.8%100%  
+
+------------------------------------------------------------------------------
+
+               Total   Copiado   OmitidoNo coincidencia     ERROR    Extras
+Directorios:         1         0         1         0         0         0
+ Archivos:         5         5         0         0         0         0
+    Bytes:   75.54 m   75.54 m         0         0         0         0
+    Veces:   0:00:00   0:00:00                       0:00:00   0:00:00
+
+
+Velocidad:           851734752 Bytes/s
+Velocidad:           48736.653 Megabytes/min
+
+Finalizado: Tue Jan 29 13:08:25 2019
+Total execution time: 8.39 min

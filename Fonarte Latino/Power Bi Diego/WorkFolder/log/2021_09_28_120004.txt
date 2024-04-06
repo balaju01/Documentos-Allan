@@ -1,0 +1,169 @@
+ZIP file [C:\Users\DELL\Documents\REPORTES_FONARTE\apple Agosto 2021.zip] extracted.
+Getting [Itunes] ready... done.
+Getting [Exchange Rate] ready... done.
+Getting [Apple Music] ready... done.
+
+C:\Windows\system32>sqlcmd -S fonarte2.database.windows.net -d Reporteador -U Dataguys2 -P Fonarte2018 -I -Q "TRUNCATE TABLE TMP_APPLEMUSIC;" 
+
+C:\Windows\system32>sqlcmd -S fonarte2.database.windows.net -d Reporteador -U Dataguys2 -P Fonarte2018 -I -Q "TRUNCATE TABLE TMP_ITUNES;" 
+
+C:\Windows\system32>sqlcmd -S fonarte2.database.windows.net -d Reporteador -U Dataguys2 -P Fonarte2018 -I -Q "TRUNCATE TABLE TMP_FINANCIAL_REPORT;" 
+
+C:\Windows\system32>sqlcmd -S fonarte2.database.windows.net -d Reporteador -U Dataguys2 -P Fonarte2018 -I -Q "TRUNCATE TABLE TMP_ORCHARD;" 
+
+C:\Windows\system32>REN C:\Users\DELL\Documents\REPORTES_FONARTE\*fullreport*.txt TMP_ORCHARD.txt; 
+El sistema no puede encontrar el archivo especificado.
+
+C:\Windows\system32>REN C:\Users\DELL\Documents\REPORTES_FONARTE\S1*.txt TMP_APPLEMUSIC.txt; 
+
+C:\Windows\system32>REN C:\Users\DELL\Documents\REPORTES_FONARTE\*_ZZ*.txt TMP_ITUNES.txt; 
+
+C:\Windows\system32>REN C:\Users\DELL\Documents\REPORTES_FONARTE\financial*.txt TMP_FINANCIAL_REPORT.txt; 
+
+C:\Windows\system32>bcp TMP_APPLEMUSIC in C:\Users\DELL\Documents\REPORTES_FONARTE\TMP_APPLEMUSIC.txt -S fonarte2.database.windows.net -d Reporteador -U Dataguys2 -P Fonarte2018 -q -c -t \t -r 0x0A -C 65001; 
+
+Starting copy...
+1000 rows sent to SQL Server. Total sent: 1000
+1000 rows sent to SQL Server. Total sent: 2000
+1000 rows sent to SQL Server. Total sent: 3000
+1000 rows sent to SQL Server. Total sent: 4000
+1000 rows sent to SQL Server. Total sent: 5000
+1000 rows sent to SQL Server. Total sent: 6000
+1000 rows sent to SQL Server. Total sent: 7000
+1000 rows sent to SQL Server. Total sent: 8000
+1000 rows sent to SQL Server. Total sent: 9000
+1000 rows sent to SQL Server. Total sent: 10000
+1000 rows sent to SQL Server. Total sent: 11000
+1000 rows sent to SQL Server. Total sent: 12000
+1000 rows sent to SQL Server. Total sent: 13000
+1000 rows sent to SQL Server. Total sent: 14000
+1000 rows sent to SQL Server. Total sent: 15000
+1000 rows sent to SQL Server. Total sent: 16000
+1000 rows sent to SQL Server. Total sent: 17000
+1000 rows sent to SQL Server. Total sent: 18000
+1000 rows sent to SQL Server. Total sent: 19000
+1000 rows sent to SQL Server. Total sent: 20000
+1000 rows sent to SQL Server. Total sent: 21000
+1000 rows sent to SQL Server. Total sent: 22000
+1000 rows sent to SQL Server. Total sent: 23000
+1000 rows sent to SQL Server. Total sent: 24000
+1000 rows sent to SQL Server. Total sent: 25000
+1000 rows sent to SQL Server. Total sent: 26000
+1000 rows sent to SQL Server. Total sent: 27000
+1000 rows sent to SQL Server. Total sent: 28000
+1000 rows sent to SQL Server. Total sent: 29000
+1000 rows sent to SQL Server. Total sent: 30000
+1000 rows sent to SQL Server. Total sent: 31000
+1000 rows sent to SQL Server. Total sent: 32000
+1000 rows sent to SQL Server. Total sent: 33000
+1000 rows sent to SQL Server. Total sent: 34000
+1000 rows sent to SQL Server. Total sent: 35000
+1000 rows sent to SQL Server. Total sent: 36000
+1000 rows sent to SQL Server. Total sent: 37000
+1000 rows sent to SQL Server. Total sent: 38000
+1000 rows sent to SQL Server. Total sent: 39000
+1000 rows sent to SQL Server. Total sent: 40000
+1000 rows sent to SQL Server. Total sent: 41000
+1000 rows sent to SQL Server. Total sent: 42000
+1000 rows sent to SQL Server. Total sent: 43000
+1000 rows sent to SQL Server. Total sent: 44000
+1000 rows sent to SQL Server. Total sent: 45000
+1000 rows sent to SQL Server. Total sent: 46000
+1000 rows sent to SQL Server. Total sent: 47000
+1000 rows sent to SQL Server. Total sent: 48000
+1000 rows sent to SQL Server. Total sent: 49000
+1000 rows sent to SQL Server. Total sent: 50000
+1000 rows sent to SQL Server. Total sent: 51000
+1000 rows sent to SQL Server. Total sent: 52000
+1000 rows sent to SQL Server. Total sent: 53000
+1000 rows sent to SQL Server. Total sent: 54000
+1000 rows sent to SQL Server. Total sent: 55000
+1000 rows sent to SQL Server. Total sent: 56000
+1000 rows sent to SQL Server. Total sent: 57000
+1000 rows sent to SQL Server. Total sent: 58000
+1000 rows sent to SQL Server. Total sent: 59000
+1000 rows sent to SQL Server. Total sent: 60000
+1000 rows sent to SQL Server. Total sent: 61000
+1000 rows sent to SQL Server. Total sent: 62000
+1000 rows sent to SQL Server. Total sent: 63000
+1000 rows sent to SQL Server. Total sent: 64000
+
+64278 rows copied.
+Network packet size (bytes): 4096
+Clock Time (ms.) Total     : 26302  Average : (2443.84 rows per sec.)
+
+C:\Windows\system32>bcp TMP_ITUNES in C:\Users\DELL\Documents\REPORTES_FONARTE\TMP_ITUNES.txt -S fonarte2.database.windows.net -d Reporteador -U Dataguys2 -P Fonarte2018 -q -c -t \t -r 0x0A -C 65001; 
+
+Starting copy...
+
+468 rows copied.
+Network packet size (bytes): 4096
+Clock Time (ms.) Total     : 499    Average : (937.88 rows per sec.)
+
+C:\Windows\system32>bcp TMP_FINANCIAL_REPORT in C:\Users\DELL\Documents\REPORTES_FONARTE\TMP_FINANCIAL_REPORT.txt -S fonarte2.database.windows.net -d Reporteador -U Dataguys2 -P Fonarte2018 -q -c -t \t -r 0x0A -C 65001; 
+
+Starting copy...
+
+37 rows copied.
+Network packet size (bytes): 4096
+Clock Time (ms.) Total     : 188    Average : (196.81 rows per sec.)
+
+C:\Windows\system32>bcp TMP_ORCHARD in C:\Users\DELL\Documents\REPORTES_FONARTE\TMP_ORCHARD.txt -S fonarte2.database.windows.net -d Reporteador -U Dataguys2 -P Fonarte2018 -q -c -t \t -r 0x0A -C 65001; 
+SQLState = S1000, NativeError = 0
+Error = [Microsoft][ODBC Driver 13 for SQL Server]Unable to open BCP host data-file
+
+C:\Windows\system32>sqlcmd -S fonarte2.database.windows.net -d Reporteador -U Dataguys2 -P Fonarte2018 -I -Q "INSERT INTO APPLEMUSIC SELECT * FROM TMP_APPLEMUSIC;" 
+
+(64278 rows affected)
+
+C:\Windows\system32>sqlcmd -S fonarte2.database.windows.net -d Reporteador -U Dataguys2 -P Fonarte2018 -I -Q "INSERT INTO ITUNES SELECT * FROM TMP_ITUNES;" 
+
+(468 rows affected)
+
+C:\Windows\system32>sqlcmd -S fonarte2.database.windows.net -d Reporteador -U Dataguys2 -P Fonarte2018 -I -Q "INSERT INTO ORCHARD SELECT * FROM TMP_ORCHARD;" 
+
+(0 rows affected)
+
+C:\Windows\system32>sqlcmd -S fonarte2.database.windows.net -d Reporteador -U Dataguys2 -P Fonarte2018 -I -Q "INSERT INTO APPLE_CURRENCY SELECT LEFT(RIGHT(DIVISA,4),3), TIPO_DE_CAMBIO, ANIO, MES FROM TMP_FINANCIAL_REPORT;" 
+
+(37 rows affected)
+
+C:\Windows\system32>Robocopy C:\Users\DELL\Documents\REPORTES_FONARTE C:\Users\DELL\Documents\REPORTES_FONARTE_PROCESADOS /mov /s /w:1 /r:1 
+
+-------------------------------------------------------------------------------
+   ROBOCOPY     ::     Herramienta para copia eficaz de archivos                             
+-------------------------------------------------------------------------------
+
+  Inicio: Tue Sep 28 12:01:12 2021
+
+   Origen : C:\Users\DELL\Documents\REPORTES_FONARTE\
+     Destino : C:\Users\DELL\Documents\REPORTES_FONARTE_PROCESADOS\
+
+    Archivos: *.*
+	    
+  Opciones: *.* /S /COPY:DAT /MOV /R:1 /W:1 
+
+------------------------------------------------------------------------------
+
+	                   4	C:\Users\DELL\Documents\REPORTES_FONARTE\
+	  *Archivo EXTRA 		     378	pass.txt
+	  *Archivo EXTRA 		  83.1 m	TMP_ORCHARD.txt
+	    Más reciente     		    6148	.DS_Store  0%  100%  
+	    Más reciente     		  10.2 m	TMP_APPLEMUSIC.txt  0.0%  9.7% 19.4% 29.1% 38.8% 48.6% 58.3% 68.0% 77.7% 87.5% 97.2%100%  
+	    Más reciente     		    2673	TMP_FINANCIAL_REPORT.txt  0%  100%  
+	    Más reciente     		   79710	TMP_ITUNES.txt  0%  100%  
+
+------------------------------------------------------------------------------
+
+               Total   Copiado   OmitidoNo coincidencia     ERROR    Extras
+Directorios:         1         0         1         0         0         0
+ Archivos:         4         4         0         0         0         2
+    Bytes:   10.37 m   10.37 m         0         0         0   83.17 m
+    Veces:   0:00:00   0:00:00                       0:00:00   0:00:00
+
+
+Velocidad:           679609937 Bytes/s
+Velocidad:           38887.592 Megabytes/min
+
+Finalizado: Tue Sep 28 12:01:12 2021
+Total execution time: 1.13 min

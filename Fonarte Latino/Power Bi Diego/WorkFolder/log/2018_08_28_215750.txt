@@ -1,0 +1,6 @@
+ZIP file [C:\Users\DELL\Documents\REPORTES_FONARTE\20180727_Jun2018_fullreport_fonarte_latino_s_a_de_c_v_US.xls.zip] extracted.
+Getting [Orchard] ready... done.
+Getting [Itunes] ready... done.
+Getting [Exchange Rate] ready... done.
+Getting [Apple Music] ready... done.
+Total execution time: 1.19 min
