@@ -1,0 +1,12 @@
+<B>Aircraft<B>
+
+Soon after most civilizations develop vehicles capable of flight, the possible military applications become quickly apparent.  Used for surveillance, long-range reconnaissance, attack, and occasionally defense, aircraft are versatile and valuable in their ability to travel freely over land and sea, unencumbered by geographic hazards.  Countered by anti-aircraft turrets, troopers, and ships, aircraft represent a relatively new weapon in the arsenal of conquering generals.
+
+Fighters are the most common aircraft, used by almost every army.  Fighter craft are effective hit-and-fade weapons, attacking both air-to-air and air-to-ground.  A tight formation of X-wings can send a well-ordered squadron of stormtroopers running for cover.  That said, the standard fighter is not a particularly fearsome weapon against buildings and other fortified structures.
+
+For true building-demolition, the bomber inflicts the most damage in the shortest amount of time.  Generally slower than fighters and unable to attack other air units, bombers are compensated with better armor, but still remain vulnerable without an effective fighter escort.
+
+Air transports are invaluable to most commanders due to their ability to land troops in supposedly secure areas, deep behind enemy lines, or inside the walls of a base.  An opposing army without an anti-aircraft turret defense may find himself quickly over-run when the air transports stream in, loaded down with troopers and mechs.
+
+Historically, the Naboo have been generally regarded as the expert craftsmen of aircraft manufacturing.  Their N-1 starfighter and Nubian bomber remain unparalleled in their classes.  Additionally, the Rebellion has shrewdly utilized the older model Y-wing and X-wing models, and the armored skyspeeder has emerged as an incredibly effective weapon against the Imperial AT-AT walkers.
+

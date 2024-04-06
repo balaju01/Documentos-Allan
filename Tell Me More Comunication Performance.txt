@@ -1,0 +1,28 @@
+Datos tecnicos sobre :Tell Me More Comunication Performance 
+Idioma:Menus en Espanol ,Ingles, Frances y Aleman
+Formato: ISO cortado y comprimido en Rar (Requiere Winrar)
+Tamano de la descarga: 1.82Gb (4 Links de 400Mb y 1 Link de 264Mb)
+Version: 9 Completa,Incluye Instrucciones de Instalacion
+
+
+http://www.fileserve.com/file/NNGTVT3/tellmemore_comv9_eldoctornorton.part1.rar
+http://www.fileserve.com/file/P7St52n/tellmemore_comv9_eldoctornorton.part2.rar
+http://www.fileserve.com/file/gtkbKte/tellmemore_comv9_eldoctornorton.part3.rar
+http://www.fileserve.com/file/W5gsdE3/tellmemore_comv9_eldoctornorton.part4.rar
+http://www.fileserve.com/file/B5nduaS/tellmemore_comv9_eldoctornorton.part5.rar
+
+http://bitshare.com/files/34mudovx/tellmemore_comv9_eldoctornorton.part1.rar.html
+http://bitshare.com/files/3016iusv/tellmemore_comv9_eldoctornorton.part2.rar.html
+http://bitshare.com/files/ontnkxt7/tellmemore_comv9_eldoctornorton.part3.rar.html
+http://bitshare.com/files/226cm5qj/tellmemore_comv9_eldoctornorton.part4.rar.html
+http://bitshare.com/files/oe4n94d1/tellmemore_comv9_eldoctornorton.part5.rar.html
+
+Una vez que lo tengan todo descargado descompriman y les va a salir una imagen ISO, que puede ser montado con Nero y a la vez lo puedes quemar en un DVD, pero si quieres ahorrarte todo este trabajo, haz esto.
+
+1. Instalar el powerISO O daemon tools en tu computadora.
+
+2. al instalar el programa te agregara una unidad de dvd en MI PC, como si tuvieras dos lectoras de DVD, pero esta es virtual. 
+
+3. Cuando ya este instalado dale click derecho a la unidad virtual de DVD dentro de MI PC y dale a la propiedad de Mount------buscas LA ISO que recien descomprimiste y LO MONTA COMO SI TUVIESES UN DISCO METIDO EN TU COMPUTADORA.... 
+
+by eldoctornorton

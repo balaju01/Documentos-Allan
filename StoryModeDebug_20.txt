@@ -1,0 +1,58 @@
+﻿Cargar banco de datos
+Cargar banco de campaña
+Cargar información de Liberty
+AAge = 12   BAge = 0
+AAge = 8   BAge = 0
+AAge = 2   BAge = 0
+Unidad de historia Mitocito = 1
+Unidad de historia Cazador = 2
+Unidad de historia Hidralisco - Empalador - Enterrado = 2
+Unidad de historia Hidralisco - Acechador - Enterrado = 1
+Unidad de historia Bracónido = 2
+Unidad de historia Vil = 1
+Unidad de historia Carroña = 0
+Unidad de historia Furtivo = 0
+Unidad de historia ArmyUnit/Name/SwarmHostSplitARooted = 0
+Unidad de historia ArmyUnit/Name/SwarmHostSplitBRooted = 0
+Unidad de historia Torrasque = 0
+Unidad de historia Nocivo = 0
+Unidad de historia Rapaz = 2
+Unidad de historia Hordezno = 1
+Unidad de historia Mitocito = 1
+Unidad de historia Cazador = 2
+Unidad de historia Bracónido = 2
+Unidad de historia Vil = 1
+Unidad de historia Empalador = 2
+Unidad de historia Acechador = 1
+Unidad de historia Amo de colonia = 1
+Unidad de historia Víbora = 1
+Unidad de historia Carroña = 0
+Unidad de historia Furtivo = 0
+Unidad de historia Nocivo = 0
+Unidad de historia Torrasque = 0
+Unidad de historia Rapaz = 2
+Unidad de historia Hordezno = 1
+Cargar secciones de misión
+Actualizar datos de campaña
+Abrir bancos con fines de almacenamiento
+Aplicar tecnología
+Opciones de IU
+Opciones de fin de juego
+Banco de estadísticas de campaña cargado
+Agregar tipo de unidad al panel de ayuda de la unidad Mutalisk Tienda de historia = Falso
+Agregar tipo de unidad al panel de ayuda de la unidad Marine Tienda de historia = Falso
+Agregar tipo de unidad al panel de ayuda de la unidad Marauder Tienda de historia = Falso
+Agregar tipo de unidad al panel de ayuda de la unidad Goliath Tienda de historia = Falso
+Agregar tipo de unidad al panel de ayuda de la unidad SiegeTank Tienda de historia = Falso
+Agregar tipo de unidad al panel de ayuda de la unidad Thor Tienda de historia = Falso
+Agregar tipo de unidad al panel de ayuda de la unidad VikingFighter Tienda de historia = Falso
+Agregar tipo de unidad al panel de ayuda de la unidad Wraith Tienda de historia = Falso
+Agregar tipo de unidad al panel de ayuda de la unidad Bunker Tienda de historia = Falso
+Agregar tipo de unidad al panel de ayuda de la unidad MissileTurret Tienda de historia = Falso
+Agregar tipo de unidad al panel de ayuda de la unidad PlanetaryFortress Tienda de historia = Falso
+Agregar tipo de unidad al panel de ayuda de la unidad BroodLord Tienda de historia = Falso
+Agregar tipo de unidad al panel de ayuda de la unidad MutaliskBroodlord Tienda de historia = Falso
+Agregar tipo de unidad al panel de ayuda de la unidad MutaliskViper Tienda de historia = Falso
+Agregar tipo de unidad al panel de ayuda de la unidad Viper Tienda de historia = Falso
+Agregar tipo de unidad al panel de ayuda de la unidad InfestedAbomination Tienda de historia = Falso
+En transición a: Campaign/Swarm/ZStoryHybrid

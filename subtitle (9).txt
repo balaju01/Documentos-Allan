@@ -1,0 +1,117 @@
+All right, let's talk about another
+position that's of crucial concern to the artist, and
+that is the royalty provision. The artist assigns their copyright to
+the record company and in exchange for that assignment,
+they receive royalties from various uses of those sound recordings. This provision, like all of the provisions
+have evolved over a period of time and continue to evolve. Let's talk about the royalties for
+the various uses of the sound recordings. One of the uses of sound recordings
+is the sale of the recording. The sale through digital distribution,
+the sale of physical CDs. And the royalty rates for physical recordings are couched
+in terms of percentage points. In other words one percent
+is considered one point. The norm for royalty rates for new
+artists for albums is between 13 and 16%. Now many contracts will have provisions
+stating that royalty rates for singles are three quarters of
+the album rate, which means, if you have a 16% royalty,
+your royalty for singles might be 12%. I, personally, have problems with that,
+but we're going to talk about it, particularly for digital singles, but
+we'll talk about that a little later. 13 to 16% is a good royalty rate for
+new artists in today's market. But the question arises,
+13 and 16% of what? What does that 13 or 16% apply to? Let's say you have a 15 point deal. Well, this gets back into
+the evolution of recording agreements. In years past, some major labels would
+apply that percentage to the retail price. And some labels will apply
+it to the wholesale price. Now what is the wholesale price? Record companies create
+configurations of sound recordings, say a cd is a configuration
+of a sound recording. Multiple sound recordings are on a cd. They sell those to retailers for what
+is called the wholesale price, which is usually a few dollars less than the price
+that the retailer sells to the consumer. Record companies generally,
+particularly in the past in physical distribution days,
+did not sell to the public. They sold their records to retailers
+who sold their records to the public. Well, when record companies would base
+their calculation of royalties on retail prices, it usually caused confusion. And here's the situation. Record companies suggest
+retail list prices. To retailers to sell the product for. In other words, years ago,
+lets go back to the 90s. A Jay-Z album could come out and
+the record company, although it would sell the album
+to the retailer for $12, they would suggest that
+the album be sold for 15.98. That was the retail,
+the suggested retail list price. Sometimes called the SRLP,
+The Suggested Retail List Price. And that's the price that
+the record company's suggest the retailers sell it for. Retailers don't have to sell it for
+that price. The retailers could sell it for $14. And they could determine
+their extent of profit. They paid $12 for it, they could sell
+it for $12.98 and make a dollar. They could sell it for $14.98 and
+make a greater profit. So it really depends on what
+the retailer sold it for. But that suggested retailer's price
+would be the initial price for determining how that royalty
+rate would be applied. And here's where it creates
+a lot of confusion. In the early part of the contract,
+the royalty provision would say that the royalty rate would be applied
+to the retail royalty base price. Artists would assume that to be
+the Suggested Retail List Price, in this case $15.98 or $16. But further on in the contract, there would be a provision defining
+what the retail royalty base price is, and that wouldn't be
+the Suggested Retail List Price. There would be certain deductions taken
+from that suggested retail list price, before that royalty rate was applied. And we're going to talk about some
+deductions that are taken from artists' royalties that really create confusion,
+lead to non-transparency, and have really evolved over a period of time. So the definition of
+the retail royalty base price would state that it is
+the suggested retail list price minus a packaging deduction. A packaging deduction. What is a packaging deduction? Well, record companies years ago
+really felt that the artwork on the album, which they paid for
+artists to create, really created value in
+the sale of the product. And they didn't want to pay the artist
+a royalty based on the artwork. They only want to pay the artist
+a royalty for the music. So they felt that from that
+suggested retail list price, they should take a certain amount off
+of that, to account for them paying for the artwork that helped sell the album. Here's the problem. At first, for vinyl albums,
+the packaging deduction was 15%. And once again, this goes into
+the evolution of technology. Each time a new technology,
+a new configuration was introduced to the marketplace, it seemed that the
+packaging deduction went up more and more. So when cassettes came into the
+marketplace, the packaging deduction for cassettes was 20%. And then in the 80's, the packaging deduction was 25%. So what does this all mean,
+let's go back to our example with Jay-Z. Suggested retail list price
+back in the 90s might have been $15.98, $16,
+that was the suggest list price. The retail royalty based
+price however Included a 25% deduction from that $16 price. Which reduced that royalty
+base price from $16 to $12. It's kind of discounting
+the artist's royalties so that the record company
+has to pay less for that. How much did it cost for record
+companies to not only manufacture, but package and seal CDs? They took four dollars off
+with the packaging deduction, sometimes called a container deduction,
+but the record company only spent 60 to 75
+cents, not only to manufacturer it, but package it, seal wrap the CD,
+60 to 75 cents. But they've taken a deduction of
+four dollars off the suggested retailer's price to get to
+the retail wall-to-base price. Very confusing. Non-transparent. That's what artists
+were complaining about. Unfortunately, you find a lot of
+contracts that are still couched in terms of the retail price today. However, royalties for major labels
+aren't calculated on the retail price, they're calculated on the wholesale price. What is the wholesale price? The wholesale price is sometimes called
+the published price per dealer or PPD. So let's take an example here. Let's say that currently
+an album sells through Itunes for $9.99, and
+the record company gets paid $7.50. They sell it to Itunes for $7.50. Well if you apply the royalty
+rate of 15% for that album, you will find that that leaves the artist
+with a royalty of about $1.12 per album. When you talk about singles,
+it could be a different story. I mentioned earlier, traditionally,
+single's royalty rates, many times, are only three-quarters
+of the album royalty rate. So, to make it easy, if you had 16-point
+deal for albums, you would have a 12 point deal for singles, but that's the historic
+way of paying royalties of singles. That was back in the day where
+CD singles were released, record companies had to pay a lot of
+money to produce these CD singles, to distribute them to wholesalers,
+and wholesalers who sold to retailers, there was a lot involved, a big
+investment for the release of cd singles. But since 2003 the primary configuration
+of singles has not been the cd. It's been the digital download. Now what are the costs
+to the record company to deliver these files to iTunes,
+to Amazon? Their not producing a CD. They're not having to distribute it,
+and have warehouses to distribute it. They don't have all of
+those multiple costs. So should the royalty rate be less for a
+digital single, then for a digital album? I argue, no. And although your contract might have the
+original proposal from the record company stating that they want to pay
+you a three quarter rate, I've found that if you
+really press the issue, the record companies will possibly agree
+to pay the album rate for digital singles. Why is that important? Singles are becoming a huge
+selling configuration for records. And you've got many multiple million
+selling singles in today's market. So the single is becoming important again
+just like it was back in the fifties, sixties, and seventies. So the packaging deduction
+created confusion, particularly when you deal with royalties
+being paid on the retail list price. And once again, some contracts you'll find
+out there today still state that they're paying royalties on a retail list price
+and will impose a packaging deduction, but there are other deductions that
+you need to be concerned about.

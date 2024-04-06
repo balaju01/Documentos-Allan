@@ -1,0 +1,709 @@
+13
+Secret Sharing Schemes
+13.1 Introduction: The Shamir Threshold Scheme
+In a bank, there is a vault which must be opened every day. The bank employs
+three senior tellers, but they do not trust the combination to any individual teller.
+Hence, we would like to design a system whereby any two of the three senior
+tellers can gain access to the vault, but no individual teller can do so. This problem
+can be solved by means of a secret sharing scheme, the topic of this chapter.
+Here is an interesting "real-world" example of this situation: According to Time
+Magazine,1 control of nuclear weapons in Russia in the early 1990s depended
+upon a similar "two-out-of-three" access mechanism. The three parties involved
+were the President, the Defense Minister and the Defense Ministry.
+We first study a special type of secret sharing scheme called a threshold scheme.
+Here is an informal definition.
+Definition 13.1: Let t, w be positive integers, t < w. A (t, w)-threshold
+scheme is a method of sharing a key K among a set of w participants (denoted
+by V), in such a way that any t participants can compute the value of A', but
+no group of t - 1 participants can do so.
+We will study the unconditional security of secret sharing schemes. That is, we
+do not place any limit on the amount of computation that can be performed by
+any subset of participants.
+Note that the examples described above are B,3)-threshold schemes.
+The value of K is chosen by a special participant called the dealer. The dealer
+is denoted by D and we assume D g V. When D wants to share the key K among
+the participants in !P, he gives each participant some partial information called a
+share. The shares should be distributed secretly, so no participant knows the share
+given to another participant.
+'Time Magazine, May 4, 1992, p. 13
+481
+482 Secret Sharing Schemes
+Cryptosystem 13.1: Shamir (t, w)-Threshold Scheme
+Initialization Phase
+1. D chooses w distinct, non-zero elements of 7LP, denoted x,-, 1 < i < w
+(this is where we require p > w + 1). For 1 < i < w, D gives the value
+Xj to Pi. The values x,- are public.
+Share Distribution
+2. Suppose D wants to share a key K e 7LV. D secretly chooses (indepen-
+dently at random) t — 1 elements of Xp, which are denoted ai,...,at_i.
+3. For 1 < i < w, D computes j/,- = a(xi), where
+t-i
+a(x) — K + 2_j ajx^ mod p.
+4. For 1 < i < w, D gives the share yi to P,-.
+At a later time, a subset of participants B C J will pool their shares in an
+attempt to compute the key K. (Alternatively, they could give their shares to a
+trusted authority which will perform the computation for them.) If \B\ > t, then
+they should be able to compute the value of K as a function of the shares they
+collectively hold; if |J3| < t, then they should not be able to compute K.
+We will use the following notation. Let
+?={Pi:l<i< w}
+be the set of w participants. X is the key set (i.e., the set of all possible keys); and
+§ is the share set (i.e., the set of all possible shares).
+In this section, we present a method of constructing a (t, w)-threshold scheme,
+called the Shamir Threshold Scheme, which was invented by Shamir in 1979. Let
+X = Zp, where p > w + 1 is prime. Also, let § = 1,p. Hence, the key will be an
+element of Zp, as will be each share given to a participant. The Shamir Threshold
+Scheme is presented as Cryptosystem 13.1.
+In this scheme, the dealer constructs a random polynomial a(x) of degree at
+most t - 1 in which the constant term is the key, K. Every participant P, obtains
+a point (xi, yi) on this polynomial.
+Let's look at how a subset B of t participants can reconstruct the key. This is
+basically accomplished by means of polynomial interpolation. We will describe a
+couple of methods of doing this.
+Suppose that participants Pi1,...,Pit want to determine K. They know that
+Introduction: The Shamir Threshold Scheme 483
+1 < j < t, where a(x) G 7Lv\x\ is the (secret) polynomial chosen by D. Since
+a(x) has degree at most t - 1, a(x) can be written as
+a(x) = ao + axx + \- cit-ix*'1,
+where the coefficients ao,...,at-i are unknown elements of Zp, and a0 = K
+is the key. Since ?/,-. = a{xi3), 1 < j < i, the subset _B can obtain t linear
+equations in the t unknowns ao,..., at_i, where all arithmetic is done in 7LP. If
+the equations are linearly independent, there will be a unique solution, and ao will
+be revealed as the key.
+Here is a small example to illustrate.
+Example 13.1 Suppose thaip =17,t = 3, and w = 5; and the public ar-co-
+ordinates are z, = i, 1 < i < 5. Suppose that B = {Pi,P3, P5} pool their
+shares, which are respectively 8,10, and 11. Writing the polynomial a(x) as
+a(x) = a0 + a\x + a2x2,
+and computing a(l), aC) and aE), the following three linear equations in Z17
+are obtained:
+ao + «i + a,2 = 8
+a0 + 3ai + 9a2 = 10
+ao + 5ai + 802 = 11.
+This system has a unique solution in Z17: a0 = 13, ai = 10, and a2 = 2. The
+key is therefore K = a0 = 13. D
+Clearly, it is important that the system of t linear equations has a unique so-
+lution, as in Example 13.1. There are various ways to show that this is always
+the case. Perhaps the nicest way to address this question is to appeal to the La-
+grange interpolation formula for polynomials, which was presented in Theorem
+10.3. This theorem states that the desired polynomial a(x) of degree at most t - 1
+is unique, and it provides an explicit formula that can be used to compute a(x).
+The formula for a(x) is as follows:
+A group B of t participants can compute a(x) by using the interpolation for-
+mula. But a simplification is possible, bacause the participants in B do not need
+484 Secret Sharing Schemes
+to know the whole polynomial a (a;). It is sufficient for them to deduce the con-
+stant term K = a@). Hence, they can compute the following expression, which
+is obtained by substituting x = 0 into the Lagrange interpolation formula:
+mod p.
+l<k<t,k^j 'k
+Suppose we define
+bi= II 1* modp,
+l<k<t,kjtj '" X%i
+1 < j < i. (Note that the frj 's can be precomputed, if desired, and their values are
+not secret.) Then we have
+t
+K = 'Y^bjyij mod p.
+Hence, the key is a linear combination (modulo p) of the t shares.
+To illustrate this approach, let's recompute the key from Example 13.1.
+Example 13.1 (Cont.) The participants {P1,P3,P5} can compute b\, 62, and
+63 according to the formula given above. For example, they would obtain
+, x3xz
+h = mod 17
+(X3- Xi)(X5 - Xx)
+= 3 x 5 x (-2) x (-4) mod 17
+= 4.
+Similarly, b2 = 3 and 63 = 11. Then, given shares 8,10, and 11 (respectively),
+they would obtain
+K = 4 x 8 + 3 x 10 + 11 x 11 mod 17 = 13,
+as before. D
+What happens if a subset B of t — 1 participants attempt to compute A'? Sup-
+pose they hypothesize a value y0 £ 7LV for the key K. In the Shamir Threshold
+Scheme, the key is K = ao = a@). Recall that the t - 1 shares held by B are ob-
+tained by evaluating the polynomial a(x) at t — 1 elements of Zp. Now, applying
+Theorem 10.3 again, there is a unique polynomial ayo (x) such that
+1 < j < t - 1, and such that
+2/o = ayo@).
+Introduction: The Shamir Threshold Scheme 485
+Cryptosystem 13.2: Simplified (t, t)-Threshold Scheme
+1. D secretly chooses (independently at random) t — 1 elements of 7Lm,
+yi, - - •, 2/t—i-
+2. D computes
+t~\
+yt=K - ]P j/i mod m.
+i=l
+3. For 1 <i <t, D gives the share ?/, to P,.
+That is, there is a polynomial ayo (x) that is consistent with the t — 1 shares known
+to B and which also has j/o as the key. Since this is true for any possible value
+t/o G Zp, it follows that no value of the key can be ruled out, and thus a group of
+t—1 participants can obtain no information about the key.
+For example, suppose that Pi and P3 try to compute K, given shares as in
+Example 13.1. Thus Pi has the share 8 and P3 has the share 10. For any possible
+value j/o of the key, there is a unique polynomial ayo (x) that takes on the value 8
+at x = 1, the value 10 at x = 3, and the value t/o at x = 0. Using the interpolation
+formula, this polynomial is seen to be
+ayo(x) = 6yo(« — l)(ar — 3) + 13a;(ar - 3) + Ux(x - 1) mod 17.
+The subset {Pi, P3} has no way of knowing which of these polynomials is the
+correct one, and hence they have no information about the value of K.
+13.1.1 A Simplified (t, *)-threshold Scheme
+The last topic of this section is a simplified construction for threshold schemes in
+the special case w = t. This construction will work for any key set X = 7Lm, and
+it has § = Zm. (For this scheme, it is not required that m be prime, and it is not
+necessary that m > w + 1.) If D wants to share the key K G 7Lm, he carries out
+the steps in Cryptosystem 13.2.
+Observe that the t participants can compute K by the formula
+t
+K = 2j Vi mod m.
+Can t — 1 participants compute K1 Clearly, the first t—1 participants cannot do so,
+since they receive t—1 independent random numbers as their shares. Consider the
+t—1 participants in the set 3)\{Pi}, where 1 < i < t — 1. These t — 1 participants
+possess the shares
+y\,..., j/j_i, t/j+i,.. .,2/t-i
+486 Secret Sharing Schemes
+and
+t-i
+1=1
+By summing their shares, they can compute K — yt. However, they do not know
+the random value j/,-, and hence they have no information as to the value of K.
+Consequently, we have a (t, t) -threshold scheme.
+Example 13.2 Suppose that p = 10 and t = 4 in Cryptosystem 13.2. Suppose
+also that the shares for the four participants are 2/1 = 7, 2/2 = 2, 2/3 = 4 and
+2/4 = 2. The key is therefore
+A'= 7 + 2 + 4 + 2 mod 10 = 5.
+Suppose that the first three participants try to determine K. They know that
+2/i + 2/2 + 2/3 mod 10 = 3, but they do not know the value of 2/4. There is a one-
+to-one correspondence between the ten possible values of 2/4 and the ten possible
+values of the key K:
+2,4 = 0 <£> K = 3,1/4 = 1 <$ K = 4,..., 2/4 = 9 <$ K = 2.
+13.2 Access Structures and General Secret Sharing
+In the previous section, we desired that any t of the w participants should be able
+to determine the key. A more general situation is to specify exactly which subsets
+of participants should be able to determine the key and which should not. Let
+F be a set of subsets of IP; the subsets in F are those subsets of participants that
+should be able to compute the key. F is called an access structuresecret sharing
+scheme.'access structure and each subset in F is called an authorized subsetsecret
+sharing scheme!authorized subset.
+Let % be the key set and let S be the share set. As before, when a dealer D
+wants to share a key K G X, he will give each participant a share from S. At
+a later time a subset of participants will attempt to determine K from the shares
+they collectively hold.
+Access Structures and General Secret Sharing 487
+Definition 13.2: A perfect secret sharing scheme realizing the access struc-
+ture T is a method of sharing a key K among a set of w participants (denoted
+by ?), in such a way that the following two properties are satisfied:
+1. If an authorized subset of participants B CT pool their shares, then
+they can determine the value of K.
+2. If an unauthorized subset of participants BCf pool their shares, then
+they can determine nothing about the value of K.
+Suppose that B ET and B C C C 3\ Suppose the subset C wants to determine
+K. Since B is an authorized subset, it can already determine K. Hence, the subset
+C can determine K by ignoring the shares of the participants in C\B. Stated
+another way, a superset of an authorized set is again an authorized set. What this
+says is that the access structure should satisfy the monotone property:
+if B <E T and B C G C 9, then C G F.
+In the remainder of this chapter, we will assume that all access structures are
+monotone.
+Observe that a (t, w) -threshold scheme realizes the access structure
+{BCf: \B\ >t).
+Such an access structure is called a threshold access structure. We showed in
+the previous section that the Shamir Threshold Scheme is a perfect secret sharing
+scheme realizing a threshold access structure.
+If F is an access structure, then B € F is a minimal authorized subset if A $ F
+whenever A C B, A ^ B. The set of minimal authorized subsets of F is denoted
+To and is called the basis of F. Since F consists of all subsets of CP that are
+supersets of a subset in the basis Fo, it follows that F is determined uniquely as a
+function of Fo. Expressed mathematically, we have
+Example 13.3 Suppose ?={ Pi, P2, P3, P4 } and
+Fo = {{Pi, P2, P4}, {Pi, Pa, P4}, {-P2, Pa}}-
+Then
+F = Fo U {{Pl5 P2, P3}, {P2, P3, P4}, {Pi, P2, P3, P4}}-
+Conversely, given this access structure F, it is easy to see that Fo consists of the
+minimal subsets in F. D
+In the case of a (t, w) -threshold access structure, the basis consists of all subsets
+of (exactly) t participants.
+488 Secret Sharing Schemes
+13.2.1 The Monotone Circuit Construction
+In this section, we will give a conceptually simple and elegant construction due
+to Benaloh and Leichter that shows that any (monotone) access structure can be
+realized by a perfect secret sharing scheme. The idea is to first build a monotone
+circuit that "recognizes" the access structure, and then to build the secret sharing
+scheme from the description of the circuit. We call this the "Monotone circuit
+construction."
+Suppose we have a boolean circuit C, with w boolean inputs, x\,..., xw (cor-
+responding to the w participants Pi,..., Pw), and one boolean output, y. The
+circuit consists of "or" gates and "and" gates; we do not allow any "not" gates.
+Such a circuit is called a monotone boolean circuit. The reason for this nomencla-
+ture is that changing any input x, from " (false) to " (true) can never result in
+the output y changing from " to ." The circuit is permitted to have arbitrary
+fan-in, but we require fan-out equal to 1 (that is, a gate can have arbitrarily many
+input wires, but only one output wire).
+If we specify boolean values for the w inputs of such a monotone circuit, we
+can define
+B(xi,...,xw) — {Pi : Xi = 1},
+i.e., the subset of "P corresponding to the true inputs. Suppose C is a monotone
+circuit, and define
+T(C) = {B(Xl,...,xw) : C{xu...,xw) = 1},
+where C(a?i,..., xw) denotes the output of C, given inputs x\,..., xw. Since
+the circuit C is monotone, it follows that F(C) is a monotone set of subsets of P.
+It is easy to see that there is a one-to-one correspondence between monotone
+circuits of this type and boolean formulae which contain the operators A ("and")
+and V ("or"), but which do not contain any negations.
+If F is a monotone set of subsets of 3>, then it is easy to construct a monotone
+circuit C such that F(C) = T. One way to do this is as follows. Let To be the
+basis of F. Then construct the disjunctive normal form boolean formula
+v (a*)-
+BGTo \P,€B J
+In Example 13.3, where
+To = {{Pi, Pi, Pi}, {Pi, P3, Pi], {P2, P3}},
+we would obtain the boolean formula
+(Pi A P2 A P4) V (Pi A P3 A P4) V (P2 A P3). A3.1)
+Each clause in the boolean formula corresponds to an "and" gate of the asso-
+ciated monotone circuit; the final disjunction corresponds to an "or" gate. The
+Access Structures and General Secret Sharing
+489
+Algorithm 13.1: Monotone circuit construction(C)
+f{Wout)<-K
+while there exists a wire W such that f(W) is not defined
+find a gate G of C such that /(Wg) is defined, where Wg is the
+output wire of G, but f(W) is not defined for any of the input
+wires of G
+if G is an "or" gate
+then /(W) «— /(Wg) for every input wire W of G
+(let the input wires ofGbeWi,...,Wt
+choose (independently at random) t — 1 elements of Zm
+denoted by yG,i, • ¦ -,2/G,t-i
+VG,t <- /(Wg)- Y!i=\ VG,i mod m
+for i i- 1 to t
+k do
+do
+else
+number of gates in the circuit is |Fo| + 1. This particular circuit has two "levels"
+(more formally, its depth is two), but this is not a requirement.
+Suppose C is any monotone circuit that recognizes F (note that C need not
+be the circuit described above.) We describe an algorithm which enables D, the
+dealer, to construct a perfect secret sharing scheme that realizes F. This scheme
+will use as a building block the (t, £)-schemes constructed in Cryptosystem 13.2.
+Hence, we can take the key set to be X = 7Lm, for any positive integer m.
+The algorithm proceeds by assigning a value /(W) G OC to every wire W in
+the circuit C. Initially, the output wire Wout of the circuit is assigned the value
+K, the key. The algorithm iterates a number of times, working from the bottom
+of the circuit up to the top, until every wire has a value assigned to it. Finally,
+each participant Pi is given the list of values /(W) such that W is an input wire
+of the circuit which receives input Xi. A description of the construction is given
+as Algorithm 13.1.
+Note that, whenever a gate G is an "and" gate having (say) t input wires,
+we share the "key" /(Wg) for the gate G among its input wires, using a (t, t)-
+threshold scheme.
+Let's carry out this procedure for the access structure of Example 13.3, using
+the circuit corresponding to the boolean formula A3.1).
+Example 13.4 We illustrate the construction in Figure 13.1. Suppose K is the
+key. The value K is given to each of the three input wires of the final "or" gate.
+Next, we consider the "and" gate corresponding to the clause P\ A P2 A P4. The
+three input wires are assigned values a\,ai,K — a\ — 0,2, respectively, where all
+490
+Secret Sharing Schemes
+K-brb2
+FIGURE 13.1
+A monotone circuit
+arithmetic is done in 7Lm. In a similar way, the three input wires corresponding to
+P\ A P3 A P4 are assigned values 61,b2, K — 61 — 62- Finally, the two input wires
+corresponding to P2 A P3 are assigned values ci, K — c\. Note that ai, a2, b\, b%
+and ci are all independent random values in Zm.
+If we look at the shares that the four participants receive, we have the following:
+1. Pi receives {y\,y\) = (ai, &i).
+2. P2 receives {y\, j/|) = (a2, ci).
+3. P3 receives (j/^, j/|) = F2, A' - ci).
+4. P4 receives (y], j/|) = (K - ax - a2, K - 61 - &2).
+Thus, every participant receives two elements of Zm as his or her share.
+Let's prove that the scheme is perfect. First, we verify that each basis subset
+can compute K. The authorized subset {Pi, P2, P4} can compute
+K = y\ + y\ + y\ mod m = ai + a2 + (isf — ai — a2) mod m.
+The subset {Pi, P3, P4} can compute
+K — y\ + 2/3 + y\ mod m = b\ + 62 + (A' - 61 - 62) mod m.
+Access Structures and General Secret Sharing 491
+Finally, the subset {P2,P3} can compute
+K ~ y\ + y\ mod m = c\ + (A' — ci) mod m.
+Thus any authorized subset can compute A', so we turn our attention to the
+unauthorized subsets. Note that we do not need to look at all the unauthorized
+subsets. For, if Bi and B2 are both unauthorized subsets, B\ C B2, and B2
+cannot compute K, then neither can Bi compute K. Define a subset B C 9
+to be a maximal unauthorized subset if B\ 6 F for all B\ ~D B, B\ ^ B. It
+suffices to verify that none of the maximal unauthorized subsets can determine
+any information about K.
+Here, the maximal unauthorized subsets are
+{Pi, P2}, {Pi, P3}, {Pi, Pi}, {P2, Pa], {P3, Pi}-
+In each case, it is easy to see that K cannot be computed, either because some
+necessary piece of "random" information is missing, or because all the shares
+possessed by the subset are random. For example, the subset {Pi, P2} possesses
+only the random values ai, 61, a2, c\. As another example, the subset {P3, P4}
+possesses the values b2, A' — c\, K - ai - a2,K - 61 — b2. Since the values of
+ci, ai, a2, and 61 are unknown random values, K cannot be computed.
+In each possible case, it can be checked that an unauthorized subset has no
+information about the value of A'. D
+We can obtain a different scheme realizing the same access structure by us-
+ing a different circuit. We illustrate by returning again to the access structure of
+Example 13.3.
+Example 13.5 Suppose we convert the formula A3.1) to a conjunctive normal
+form boolean formula:
+(Pi V P2) A (Pi V P3) A (P2 V P3) A (P2 V P4) A (P3 V P4). A3.2)
+(The reader can verify that this formula is equivalent to the formula A3.1).) If we
+implement the scheme using the circuit corresponding to formula A3.2), then we
+obtain the following:
+1. Pi receives (y{, y\) - {aua2).
+2. P2 receives {y\, y\, y\) = (ai,a3, a4).
+3. P3 receives («/|, j/|, y|) = (a2,a3, K - ai - a2 - a3 - a4).
+4. P4 receives {y\,y\) — (a4, K - ax - a2 - a3 - a4).
+We leave the details for the reader to check. D
+492 Secret Sharing Schemes
+We now prove that the monotone circuit construction always produces a perfect
+secret sharing scheme.
+THEOREM 13.1 Let C be any monotone boolean circuit. Then the monotone
+circuit construction yields a perfect secret sharing scheme realizing the access
+structure F(C).
+PROOF We proceed by induction on the number of gates in the circuit C. If C
+contains only one gate, then the result is fairly trivial: If C consists of one "or"
+gate, then every participant will be given the key. (This scheme realizes the access
+structure consisting of all non-empty subsets of participants.) Alternatively, if C
+consists of a single "and" gate with t inputs, then the scheme is the (t, <)-fhreshold
+scheme presented in Cryptosystem 13.2.
+Now, as an induction assumption, suppose that there is an integer j > 1 such
+that, for all circuits C with fewer than j gates, the construction produces a scheme
+that realizes F(C). Let C be a circuit on j gates. Consider the "last" gate, G, in
+the circuit; again, G could be either an "or" gate or an "and" gate. Let's first
+consider the case where G is an "or" gate. Denote the input wires to G by Wi,
+1 < i < t. These t input wires are the outputs of t sub-circuits of C, which we
+denote C,, 1 < i < t. Corresponding to each C,-, we have a (sub-)scheme that
+realizes the access structure Fc,, by induction. Now, it is easy to see that
+= (JrCl.
+Since every Wi is assigned the key K, it follows that the scheme realizes F(C),
+as desired.
+The analysis is similar if G is an "and" gate. In this situation, we have
+Since the key K is shared among the t wires Wi using a (t, t)-threshold scheme,
+it follows again that the scheme realizes F(C). This completes the proof. I
+Of course, when an authorized subset, B, wants to compute the key, the par-
+ticipants in B need to know the circuit used by D to distribute shares, and which
+shares correspond to which wires of the circuit. All this information will be public
+knowledge. Only the actual values of the shares are secret.
+The algorithm for reconstructing the key involves combining shares according
+to the structure of the circuit, with the stipulation that an "and" gate corresponds
+to summing the values on the input wires modulo m (provided these values are
+all known), and an "or" gate involves choosing the value on any input wire (with
+the understanding that all these values will be identical).
+Access Structures and General Secret Sharing 493
+Suppose we return to Example 13.4 and we again consider the authorized sub-
+set {Pi, P2, P4}. We already demonstrated how this subset can compute K. Our
+observation above is that the circuit enables the reconstruction to be carried out
+in a systematic way. Here, we would assign values to six of the eight input wires,
+namely, the ones emanating from xi, X2 and X4 in Figure 13.1. It can be seen that
+the leftmost "and" gate has values assigned to all three of its input wires. The sum
+of the values on these input wires yields K. This computation is, in fact, the same
+as the one described in Example 13.4.
+13.2.2 Formal Definitions
+In this section, we will give formal mathematical definitions of a (perfect) secret
+sharing scheme. We represent a secret sharing scheme by a set of distribution
+rules. A distribution rule is a function
+A distribution rule represents a possible distribution of shares to the participants,
+where /(P,-) is the share given to P,-, 1 < i < w.
+Now, for each K £ X, let 7k be a set of distribution rules. 7k will be distri-
+bution rules corresponding to the key having the value K. The sets of distribution
+rules 7k are public knowledge.
+Next, define
+3"=
+7 is the complete set of distribution rules of the scheme. If K £ X is the value
+of the key that D wishes to share, then D will choose a distribution rule / £ 7k ,
+and use it to distribute shares.
+This is a general model in which we can study secret sharing schemes. Any
+of our existing schemes can be described in this setting by determining the pos-
+sible distribution rules which the scheme will use. The fact that this model is
+mathematically precise makes it easier to give definitions and to present rigorous
+proofs.
+It is useful to develop conditions which ensure that a set of distribution rules
+for a scheme realizes a specified access structure. This will involve looking at cer-
+tain probability distributions, as we did previously when studying the concept of
+perfect secrecy in Chapter 2. To begin with, we suppose that there is a probability
+distribution denned on the set of keys, X. The probability that the key K £ X is
+selected by the dealer will be denoted by Pr[K = K]. Further, given K eX, D
+will choose a distribution rule / £ 7k according to a specified probability dis-
+tribution; Pi-[Fk = /] will denote the probability that / is the distribution rule
+chosen by D (given that K is the key).
+Given these probability distributions, it is straightforward to compute the prob-
+ability distribution on the list of shares given to any subset of participants, B
+494 Secret Sharing Schemes
+(authorized or unauthorized). This is done as follows. Suppose BCf. Define
+&(B) = {f\B ¦¦ f e 3-},
+where the function f\B denotes the restriction of the distribution rule / to B. That
+is, f\B : B -> S is defined by
+f\B(Pi) = f(Pi)
+for all P{ G B. Thus, §(B) is the set of possible distributions of shares to the
+participants in B.
+The probability distribution on §(B) is computed as follows: Let gB G
+Then
+Pr[S(B) = ffB] =
+Also, it is straightforward to see that
+for all gB G S(-B) and all K G 3C.
+Here is a formal definition of a perfect secret sharing scheme.
+Definition 13.3: Suppose T is an access structure and
+?= u **
+is a set of distributionrules. Then 3" is ^perfect secret sharing scheme realizing
+the access structure T provided that the following two properties are satisfied:
+1. For any authorized subset of participants SCO5, there do not exist
+two distributionrules / G $k and /' G Jri with K ^ K', such that
+f\s = f'\B- (That is, any distribution of shares to the participants in an
+authorized subset B determines the value of the key.)
+2. For any unauthorized subset of participants BC? and for any distribu-
+tion of shares gs G §s, it holds that
+Pr[K = A'|S(B) = gB] = Pr[K = K]
+for every K G %. (That is, the conditional probability distribution on
+X, given a distribution of shares gB to an unauthorized subset B, is the
+same as the a priori probability distribution on X. In other words, the
+distribution of shares to B provides no information as to the value of the
+key.)
+Access Structures and General Secret Sharing 495
+Observe that the second property in Definition 13.3 is very similar to the con-
+cept of perfect secrecy presented in Definition 2.3; this similarity is why the re-
+sulting secret sharing scheme is termed "perfect."
+The probability Pr[K = A'|S(B) = ps] can be computed from probability
+distributions exhibited above using Bayes' theorem:
+Let us now illustrate these definitions by looking at a small example.
+Example 13.6 Suppose that the scheme constructed in Example 13.5 is imple-
+mented in 7Lm. Then we have S = (ZmJ U (ZmK and \Jk\ = mA for every
+K G Zm. For any K € Zm, each of the m4 distribution rules in JK is cho-
+sen with the same probability, 1/m4. The m possible keys need not be chosen
+equiprobably, however.
+For the sake of concreteness, we present the distribution rules for this scheme
+when m = 2. In this case, each of Jo and Ji contains 16 equiprobable distri-
+bution rules. In order to achieve a concise representation, we replace a binary
+fc-tuple by an integer between 0 and 2k — 1. If this is done, then 3~o and 3~i are as
+depicted in Figure 13.2, where each row represents a distribution rule.
+This yields a perfect secret sharing scheme for any probability distribution on
+the keys. We will not perform all the verifications here, but we will look at a
+couple of typical cases to illustrate the two properties in Definition 13.3.
+The subset {P2, P3} is an authorized subset. Thus the shares that P2 and P3
+receive should (together) determine a unique key. It can easily be checked that
+any distribution of shares to these two participants occurs in a distribution rule in
+at most one of the sets Jo and Hi. For example, if P2 has the share 3 and P3 has
+the share 6, then the distribution rule must be the eighth rule in 3 and thus the
+key is 0.
+On the other hand, B = {Pi, P2} is an unauthorized subset. It is not too hard
+to see that any distribution of shares to these two participants occurs in exactly
+one distribution rule in 3"o and in exactly one distribution rule in 3"i. That is,
+for any qb E S(-B) and for K = 0,1. Next, we compute
+Pr[S(B) = gB] = Y, ( Pr[K] x £ Pr[FK = /]
+496
+Secret Sharing Schemes
+Pi
+0
+0
+0
+0
+1
+1
+1
+1
+2
+2
+2
+2
+3
+3
+3
+3
+P2
+0
+1
+2
+3
+0
+1
+2
+3
+4
+5
+6
+7
+4
+5
+6
+7
+ft
+0
+1
+3
+2
+4
+5
+7
+6
+0
+1
+3
+2
+4
+5
+7
+6
+Pa
+0
+3
+1
+2
+0
+3
+1
+2
+0
+3
+1
+2
+0
+3
+1
+2
+Pi
+0
+0
+0
+0
+1
+1
+1
+1
+2
+2
+2
+2
+3
+3
+3
+3
+3
+P2
+0
+1
+2
+3
+0
+1
+2
+3
+4
+5
+6
+7
+4
+5
+6
+7
+P3
+1
+0
+2
+3
+5
+4
+6
+7
+1
+0
+2
+3
+5
+4
+6
+7
+P*
+1
+2
+0
+3
+1
+2
+0
+3
+1
+0
+2
+3
+1
+2
+0
+3
+FIGURE 13.2
+Distribution rules for a secret sharing scheme
+for any gB '
+Finally, we use Bayes' theorem to compute Pr[K = A'|S(B) = gB]'-
+__ Pr[S(B) = gB\K = A] x Pr[K = A]
+: 9Bl ~ Pr[S(B)=fl,B]
+_ ± x Pr[K = A]
+~ _i_
+16
+= Pr[K = A],
+so the second property is satisfied for this subset B.
+Similar computations can be performed for other authorized and unauthorized
+sets, and in each case the appropriate property is satisfied. Hence we have a
+perfect secret sharing scheme. D
+13.3 Information Rate and Construction of Efficient Schemes
+The results of Section 13.2.1 prove that any monotone access structure can be
+realized by a perfect secret sharing scheme. We now want to consider the effi-
+ciency of the resulting schemes. In the case of a (t, ui)-threshold scheme, we can
+Information Rate and Construction of Efficient Schemes 497
+construct a circuit corresponding to the disjunctive normal form boolean formula
+which will have 1 + (™) gates. Each participant will receive (^Zi) elements of
+Zm as his or her share. This is very inefficient, because a Shamir (t, w)-Threshold
+Scheme enables a key to be shared by giving each participant only one "piece" of
+information.
+In general, we measure the efficiency of a secret sharing scheme by the infor-
+mation rate, which we define now.
+Definition 13.4: Suppose we have a perfect secret sharing scheme realizing
+an access structure F. The information rate for Pi is the ratio
+(Note that S(P,-) denotes the set of possible shares that P, might receive; of
+course S(P,-) C §.) The information rate of the scheme is denoted by p and is
+defined as
+p = min{/9; :!<«'< w}.
+The motivation for this definition is as follows. Since the key K comes from
+a finite set 3C, we can think of K as being represented by a bit-string of length
+log2 |3C|, by using a binary encoding, for example. In a similar way, a share given
+to Pi can be represented by a bit-string of length log2 |S(-P,-)|. Intuitively, P,
+receives log2 |§(Pi) | bits of information (in his or her share), but the information
+content of the key is log2 |3C| bits. Thus />,• is the ratio of the number of bits in a
+share to the number of bits in the key.
+Example 13.7 Let's look at the two schemes from Section 13.2, both of which
+realize the access structure having basis
+To = {{Pi, P2, Pi}, {Pi, Ps, Pi}, {P2, Ps}}-
+The scheme produced in Example 13.4 has
+log2 m 1
+Pi =
+log2 m2 2'
+i = 1,...,4. Hence, p= 1/2.
+In Example 13.5, we have a scheme with pi = p4 = 1/2 and p2 = p%= 1/3.
+Hence, p = 1/3. The first implementation, having higher information rate, is
+preferable. D
+In general, if we construct a scheme from a circuit C using the monotone cir-
+cuit construction, then the information rate can be computed as indicated in the
+following theorem.
+498 Secret Sharing Schemes
+THEOREM 13.2 Let C be any monotone boolean circuit. Then there is a perfect
+secret sharing scheme realizing the access structure F(C) having information
+rate
+p = max{l/r; : 1 < i' < w},
+where r^ denotes the number of input wires to C carrying the input a;,.
+With respect to threshold access structures, we observe that the Shamir Thresh-
+old Scheme has information rate 1, which we show below is the optimal value. In
+contrast, an implementation of a (t, iu)-threshold scheme using a disjunctive nor-
+mal form boolean circuit would have information rate l/(™ri1), which is much
+lower (and therefore inferior) ifl<t<w.
+Obviously, a high information rate is desirable. The first general result we
+prove is that p < 1 in any perfect secret sharing scheme.
+THEOREM 13.3 In any perfect secret sharing scheme realizing an access struc-
+ture r, p < i.
+PROOF Suppose we have a perfect secret sharing scheme that realizes the access
+structure T. Let B £ To and choose any participant Pj G B. Define B' =
+B\{Pj}. Let g G §(B). Now, B' £ T, so the distribution of shares g\B> provides
+no information about the key. Hence, for each K G OC, there is a distribution
+rule gK G Ik such that gK\b> = g\B'- Since B G F, it must be the case
+that gK(Pj) ^ gK'(Pj) if K ^ K'. Hence, |S(P,-)I > l^|, and thus Pj < 1.
+Therefore, p < 1. I
+Since p = 1 is the optimal situation, we refer to such a scheme an ideal secret
+sharing scheme. The Shamir Threshold Schemes are ideal schemes. In the next
+section, we present a construction for ideal schemes that generalizes the Shamir
+Threshold Schemes.

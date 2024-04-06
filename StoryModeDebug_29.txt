@@ -1,0 +1,43 @@
+﻿Cargar banco de datos
+No se encontró el banco de datos. Se usarán valores predeterminados
+Actualizar datos de campaña
+Abrir bancos con fines de almacenamiento
+Aplicar tecnología
+Opciones de IU
+Opciones de fin de juego
+Banco de estadísticas de campaña cargado
+Agregar tipo de unidad al panel de ayuda de la unidad Drone Tienda de historia = Falso
+Agregar tipo de unidad al panel de ayuda de la unidad Overlord Tienda de historia = Falso
+Agregar tipo de unidad al panel de ayuda de la unidad Zergling Tienda de historia = Falso
+Agregar tipo de unidad al panel de ayuda de la unidad UmojanLabMicrobot Tienda de historia = Falso
+Agregar tipo de unidad al panel de ayuda de la unidad UmojanLabWarbot Tienda de historia = Falso
+Agregar tipo de unidad al panel de ayuda de la unidad SentryGun Tienda de historia = Falso
+Desbloquear misión ZLab1 si Verdadero
+Desbloquear misión ZLab2 si Verdadero
+Desbloquear misión ZLab3 si Falso
+Desbloquear misión ZExpedition1 si Falso
+Desbloquear misión ZExpedition2 si Falso
+Desbloquear misión ZExpedition3 si Falso
+Desbloquear misión ZChar1 si Falso
+Desbloquear misión ZChar2 si Falso
+Desbloquear misión ZChar3 si Falso
+Desbloquear misión ZZerus1 si Falso
+Desbloquear misión ZZerus2 si Falso
+Desbloquear misión ZZerus3 si Falso
+Desbloquear misión ZHybrid1 si Falso
+Desbloquear misión ZHybrid2 si Falso
+Desbloquear misión ZHybrid3 si Falso
+Desbloquear misión ZSpace1 si Falso
+Desbloquear misión ZSpace2 si Falso
+Desbloquear misión ZKorhal1 si Falso
+Desbloquear misión ZKorhal2 si Falso
+Desbloquear misión ZKorhal3 si Falso
+Desbloquear misión ZEvolutionZergling si Falso
+Desbloquear misión ZEvolutionBaneling si Falso
+Desbloquear misión ZEvolutionZergling si Falso
+Desbloquear misión ZEvolutionRoach si Falso
+Desbloquear misión ZEvolutionHydralisk si Falso
+Desbloquear misión ZEvolutionMutalisk si Falso
+Desbloquear misión ZEvolutionUltralisk si Falso
+Desbloquear misión ZEvolutionSwarmHost si Falso
+En transición a: Campaign/Swarm/ZStoryLab

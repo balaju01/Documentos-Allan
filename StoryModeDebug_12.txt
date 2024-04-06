@@ -1,0 +1,113 @@
+﻿Cargar banco de datos
+Cargar banco de campaña
+Cargar información de Liberty
+AAge = 12   BAge = 0
+AAge = 8   BAge = 0
+AAge = 2   BAge = 0
+Unidad de historia Mitocito = 1
+Unidad de historia Cazador = 2
+Unidad de historia Hidralisco - Empalador - Enterrado = 2
+Unidad de historia Hidralisco - Acechador - Enterrado = 1
+Unidad de historia Bracónido = 2
+Unidad de historia Vil = 1
+Unidad de historia Carroña = 0
+Unidad de historia Furtivo = 0
+Unidad de historia ArmyUnit/Name/SwarmHostSplitARooted = 1
+Unidad de historia ArmyUnit/Name/SwarmHostSplitBRooted = 2
+Unidad de historia Torrasque = 2
+Unidad de historia Nocivo = 1
+Unidad de historia Rapaz = 2
+Unidad de historia Hordezno = 1
+Unidad de historia Mitocito = 1
+Unidad de historia Cazador = 2
+Unidad de historia Bracónido = 2
+Unidad de historia Vil = 1
+Unidad de historia Empalador = 2
+Unidad de historia Acechador = 1
+Unidad de historia Amo de colonia = 2
+Unidad de historia Víbora = 1
+Unidad de historia Carroña = 1
+Unidad de historia Furtivo = 2
+Unidad de historia Nocivo = 1
+Unidad de historia Torrasque = 2
+Unidad de historia Rapaz = 2
+Unidad de historia Hordezno = 1
+Cargar secciones de misión
+Actualizar datos de campaña
+Abrir bancos con fines de almacenamiento
+Aplicar tecnología
+Agregar tipo de unidad al panel de ayuda de la unidad InfestedAbomination Tienda de historia = Verdadero
+Agregar tipo de unidad al panel de ayuda de la unidad HotSHunterBurrowed Tienda de historia = Verdadero
+Agregar tipo de unidad al panel de ayuda de la unidad HydraliskImpalerBurrowed Tienda de historia = Verdadero
+Agregar tipo de unidad al panel de ayuda de la unidad RoachCorpserBurrowed Tienda de historia = Verdadero
+Agregar tipo de unidad al panel de ayuda de la unidad SwarmHostSplitBRooted Tienda de historia = Verdadero
+Agregar tipo de unidad al panel de ayuda de la unidad HotSTorrasqueBurrowed Tienda de historia = Verdadero
+Agregar tipo de unidad al panel de ayuda de la unidad HotSRaptor Tienda de historia = Verdadero
+Agregar tipo de unidad al panel de ayuda de la unidad HotSHunter Tienda de historia = Verdadero
+Agregar tipo de unidad al panel de ayuda de la unidad RoachCorpser Tienda de historia = Verdadero
+Agregar tipo de unidad al panel de ayuda de la unidad HydraliskImpaler Tienda de historia = Verdadero
+Agregar tipo de unidad al panel de ayuda de la unidad MutaliskBroodlord Tienda de historia = Verdadero
+Agregar tipo de unidad al panel de ayuda de la unidad SwarmHostSplitB Tienda de historia = Verdadero
+Agregar tipo de unidad al panel de ayuda de la unidad HotSTorrasque Tienda de historia = Verdadero
+Agregar tipo de unidad al panel de ayuda de la unidad Infestor Tienda de historia = Verdadero
+Agregar tipo de unidad al panel de ayuda de la unidad Queen Tienda de historia = Verdadero
+Agregar tipo de unidad al panel de ayuda de la unidad SpineCrawler Tienda de historia = Verdadero
+Agregar tipo de unidad al panel de ayuda de la unidad SporeCrawler Tienda de historia = Verdadero
+Agregar tipo de unidad al panel de ayuda de la unidad HotSRaptorBurrowed Tienda de historia = Verdadero
+Opciones de IU
+Opciones de fin de juego
+Banco de estadísticas de campaña cargado
+Agregar tipo de unidad al panel de ayuda de la unidad SCV Tienda de historia = Falso
+Agregar tipo de unidad al panel de ayuda de la unidad Ghost Tienda de historia = Falso
+Agregar tipo de unidad al panel de ayuda de la unidad Medivac Tienda de historia = Falso
+Agregar tipo de unidad al panel de ayuda de la unidad Raven Tienda de historia = Falso
+Agregar tipo de unidad al panel de ayuda de la unidad ScienceVessel Tienda de historia = Falso
+Agregar tipo de unidad al panel de ayuda de la unidad WarHound Tienda de historia = Falso
+Agregar tipo de unidad al panel de ayuda de la unidad MengskMarauder Tienda de historia = Falso
+Agregar tipo de unidad al panel de ayuda de la unidad MengskThor Tienda de historia = Falso
+Agregar tipo de unidad al panel de ayuda de la unidad MengskGoliath Tienda de historia = Falso
+Agregar tipo de unidad al panel de ayuda de la unidad MengskReaper Tienda de historia = Falso
+Agregar tipo de unidad al panel de ayuda de la unidad MengskMedic Tienda de historia = Falso
+Agregar tipo de unidad al panel de ayuda de la unidad MengskBanshee Tienda de historia = Falso
+Agregar tipo de unidad al panel de ayuda de la unidad MengskHellion Tienda de historia = Falso
+Agregar tipo de unidad al panel de ayuda de la unidad MengskBC Tienda de historia = Falso
+Agregar tipo de unidad al panel de ayuda de la unidad MengskFirebat Tienda de historia = Falso
+Agregar tipo de unidad al panel de ayuda de la unidad MengskDiamondback Tienda de historia = Falso
+Agregar tipo de unidad al panel de ayuda de la unidad MengskSiegeTank Tienda de historia = Falso
+Agregar tipo de unidad al panel de ayuda de la unidad MengskVikingFighter Tienda de historia = Falso
+Agregar tipo de unidad al panel de ayuda de la unidad MengskMarine Tienda de historia = Falso
+Agregar tipo de unidad al panel de ayuda de la unidad Bunker Tienda de historia = Falso
+Agregar tipo de unidad al panel de ayuda de la unidad MissileTurret Tienda de historia = Falso
+Agregar tipo de unidad al panel de ayuda de la unidad PlanetaryFortress Tienda de historia = Falso
+Agregar tipo de unidad al panel de ayuda de la unidad Odin Tienda de historia = Falso
+Desbloquear misión ZLab1 si Verdadero
+Desbloquear misión ZLab2 si Verdadero
+Desbloquear misión ZLab3 si Verdadero
+Desbloquear misión ZExpedition1 si Verdadero
+Desbloquear misión ZExpedition2 si Verdadero
+Desbloquear misión ZExpedition3 si Verdadero
+Desbloquear misión ZChar1 si Verdadero
+Desbloquear misión ZChar2 si Verdadero
+Desbloquear misión ZChar3 si Verdadero
+Desbloquear misión ZZerus1 si Verdadero
+Desbloquear misión ZZerus2 si Verdadero
+Desbloquear misión ZZerus3 si Verdadero
+Desbloquear misión ZHybrid1 si Verdadero
+Desbloquear misión ZHybrid2 si Verdadero
+Desbloquear misión ZHybrid3 si Verdadero
+Desbloquear misión ZSpace1 si Verdadero
+Desbloquear misión ZSpace2 si Verdadero
+Desbloquear misión ZKorhal1 si Verdadero
+Desbloquear misión ZKorhal2 si Verdadero
+Desbloquear misión ZKorhal3 si Verdadero
+Desbloquear misión ZEvolutionZergling si Verdadero
+Desbloquear misión ZEvolutionBaneling si Verdadero
+Desbloquear misión ZEvolutionZergling si Verdadero
+Desbloquear misión ZEvolutionRoach si Verdadero
+Desbloquear misión ZEvolutionHydralisk si Verdadero
+Desbloquear misión ZEvolutionMutalisk si Verdadero
+Desbloquear misión ZEvolutionUltralisk si Verdadero
+Desbloquear misión ZEvolutionHydralisk si Verdadero
+Desbloquear misión ZEvolutionSwarmHost si Verdadero
+En transición a: Campaign/Swarm/ZStoryKorhal
+Victoria de la Campaña

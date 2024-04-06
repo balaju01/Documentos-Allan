@@ -1,0 +1,58 @@
+﻿Cargar banco de datos
+Cargar banco de campaña
+Cargar información de Liberty
+AAge = 12   BAge = 0
+AAge = 8   BAge = 0
+AAge = 2   BAge = 0
+Unidad de historia Mitocito = 1
+Unidad de historia Cazador = 1
+Unidad de historia Hidralisco - Empalador - Enterrado = 0
+Unidad de historia Hidralisco - Acechador - Enterrado = 0
+Unidad de historia Bracónido = 2
+Unidad de historia Vil = 1
+Unidad de historia Carroña = 0
+Unidad de historia Furtivo = 0
+Unidad de historia ArmyUnit/Name/SwarmHostSplitARooted = 0
+Unidad de historia ArmyUnit/Name/SwarmHostSplitBRooted = 0
+Unidad de historia Torrasque = 0
+Unidad de historia Nocivo = 0
+Unidad de historia Rapaz = 2
+Unidad de historia Hordezno = 1
+Unidad de historia Mitocito = 1
+Unidad de historia Cazador = 1
+Unidad de historia Bracónido = 2
+Unidad de historia Vil = 1
+Unidad de historia Empalador = 0
+Unidad de historia Acechador = 0
+Unidad de historia Amo de colonia = 0
+Unidad de historia Víbora = 0
+Unidad de historia Carroña = 0
+Unidad de historia Furtivo = 0
+Unidad de historia Nocivo = 0
+Unidad de historia Torrasque = 0
+Unidad de historia Rapaz = 2
+Unidad de historia Hordezno = 1
+Cargar secciones de misión
+Actualizar datos de campaña
+Abrir bancos con fines de almacenamiento
+Aplicar tecnología
+Opciones de IU
+Opciones de fin de juego
+Banco de estadísticas de campaña cargado
+Agregar tipo de unidad al panel de ayuda de la unidad Baneling Tienda de historia = Falso
+Agregar tipo de unidad al panel de ayuda de la unidad SCV Tienda de historia = Falso
+Agregar tipo de unidad al panel de ayuda de la unidad Marine Tienda de historia = Falso
+Agregar tipo de unidad al panel de ayuda de la unidad Marauder Tienda de historia = Falso
+Agregar tipo de unidad al panel de ayuda de la unidad Firebat Tienda de historia = Falso
+Agregar tipo de unidad al panel de ayuda de la unidad Medivac Tienda de historia = Falso
+Agregar tipo de unidad al panel de ayuda de la unidad Bunker Tienda de historia = Falso
+Agregar tipo de unidad al panel de ayuda de la unidad Zealot Tienda de historia = Falso
+Agregar tipo de unidad al panel de ayuda de la unidad Stalker Tienda de historia = Falso
+Agregar tipo de unidad al panel de ayuda de la unidad Colossus Tienda de historia = Falso
+Agregar tipo de unidad al panel de ayuda de la unidad PhotonCannon Tienda de historia = Falso
+Agregar tipo de unidad al panel de ayuda de la unidad Baneling Tienda de historia = Falso
+Agregar tipo de unidad al panel de ayuda de la unidad HotSSplitterlingBig Tienda de historia = Falso
+Agregar tipo de unidad al panel de ayuda de la unidad HotSHunter Tienda de historia = Falso
+Agregar tipo de unidad al panel de ayuda de la unidad HotSSplitterlingBig Tienda de historia = Falso
+Agregar tipo de unidad al panel de ayuda de la unidad HotSHunter Tienda de historia = Falso
+En transición a: Campaign/Swarm/ZStoryChar

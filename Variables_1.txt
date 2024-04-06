@@ -1,0 +1,2 @@
+LastCampaignId=1
+MeleeHelpIntroCount=1

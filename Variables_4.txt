@@ -1,0 +1,2 @@
+camerafollow=0
+expansionlevel=StEd
