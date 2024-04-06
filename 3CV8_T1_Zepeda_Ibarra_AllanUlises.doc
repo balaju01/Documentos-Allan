@@ -1,0 +1,114 @@
+{\rtf1\ansi\ansicpg1252\deff0\uc1
+{\fonttbl
+{\f0\fnil\fcharset0\fprq0\fttruetype Times New Roman;}
+{\f1\fnil\fcharset0\fprq0\fttruetype Liberation Sans;}
+{\f2\fnil\fcharset0\fprq0\fttruetype Courier New;}}
+{\colortbl
+\red0\green0\blue0;
+\red255\green255\blue255;
+\red255\green255\blue255;}
+{\stylesheet
+{\s6\fi-431\li720\sbasedon28\snext28 Contents 1;}
+{\s7\fi-431\li1440\sbasedon28\snext28 Contents 2;}
+{\s1\fi-431\li720 Arrowhead List;}
+{\s27\fi-431\li720\sbasedon28 Lower Roman List;}
+{\s29\tx431\sbasedon20\snext28 Numbered Heading 1;}
+{\s30\tx431\sbasedon21\snext28 Numbered Heading 2;}
+{\s12\fi-431\li720 Diamond List;}
+{\s9\fi-431\li2880\sbasedon28\snext28 Contents 4;}
+{\s8\fi-431\li2160\sbasedon28\snext28 Contents 3;}
+{\s31\tx431\sbasedon22\snext28 Numbered Heading 3;}
+{\s32\fi-431\li720 Numbered List;}
+{\s15\sbasedon28 Endnote Text;}
+{\*\cs14\fs20\super Endnote Reference;}
+{\s4\fi-431\li720 Bullet List;}
+{\s5\tx1584\sbasedon29\snext28 Chapter Heading;}
+{\s35\fi-431\li720 Square List;}
+{\s11\fi-431\li720 Dashed List;}
+{\s22\sb440\sa60\f1\fs24\b\sbasedon28\snext28 Heading 3;}
+{\s37\fi-431\li720 Tick List;}
+{\s24\fi-431\li720 Heart List;}
+{\s40\fi-431\li720\sbasedon32 Upper Roman List;}
+{\s39\fi-431\li720\sbasedon32 Upper Case List;}
+{\s16\fi-288\li288\fs20\sbasedon28 Footnote;}
+{\s19\fi-431\li720 Hand List;}
+{\s18\fs20\sbasedon28 Footnote Text;}
+{\s20\sb440\sa60\f1\fs34\b\sbasedon28\snext28 Heading 1;}
+{\s21\sb440\sa60\f1\fs28\b\sbasedon28\snext28 Heading 2;}
+{\s10\qc\sb240\sa120\f1\fs32\b\sbasedon28\snext28 Contents Header;}
+{\s23\sb440\sa60\f1\fs24\b\sbasedon28\snext28 Heading 4;}
+{\s28\f0\fs24 Normal;}
+{\s26\fi-431\li720\sbasedon32 Lower Case List;}
+{\s2\li1440\ri1440\sa120\sbasedon28 Block Text;}
+{\s33\f2\sbasedon28 Plain Text;}
+{\s34\tx1584\sbasedon29\snext28 Section Heading;}
+{\s25\fi-431\li720 Implies List;}
+{\s3\fi-431\li720 Box List;}
+{\s36\fi-431\li720 Star List;}
+{\*\cs17\fs20\super Footnote Reference;}
+{\s38\fi-431\li720 Triangle List;}
+{\s13\fi-288\li288\sbasedon28 Endnote;}}
+\kerning0\cf0\ftnbj\fet2\ftnstart1\ftnnar\aftnnar\ftnstart1\aftnstart1\aenddoc\revprop3{\*\rdf}{\info\uc1{\author Allan}}\deftab720\viewkind1\paperw11905\paperh16837\margl1440\margr1440\widowctrl
+\sectd\sbknone\colsx360\pgncont\ltrsect
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs28\b\lang2058{\*\listtag0}\abinodiroverride\ltrch Conexiones en el dominio de internet}{\s28\f0\fs28\b\lang2058{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs28\b\lang2058{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang2058{\*\listtag0}\abinodiroverride\ltrch \uc0\u-257 Internet es un conjunto descentralizado de redes de comunicaci\'f3n interconectadas. En esta red de redes, existen muchas tecnolog\'edas diferentes comunic\'e1ndose entre s\'ed, aunque desde un punto de vista abstracto, o l\'f3gico, no haya diferencia entre ellas: todas est\'e1n identificadas mediante la correspondiente direcci\'f3n de red IP.}{\s28\f0\fs24\lang2058{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang2058{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang2058{\*\listtag0}\abinodiroverride\ltrch \uc0\u-257 }{\s28\f0\fs24\lang2058{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sb440\sa60\s22\itap0{\s22\f1\fs24\b\lang2058{\*\listtag0}\abinodiroverride\ltrch Conexi\'f3n anal\'f3gica o conexi\'f3n por l\'ednea conmutada(RTC)}{\s22\f1\fs24\b\lang2058{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang2058{\*\listtag0}\abinodiroverride\ltrch \uc0\u-257 Estas son las conexiones que se hacen mediante un modem conectado a tu computadora y que hacen uso de la l\'ednea telef\'f3nica, usando un n\'famero de tel\'e9fono proporcionado por el }{\field{\*\fldinst {\f0\fs24\lang2058{\*\listtag0} HYPERLINK "http://aprenderinternet.about.com/od/Glosario/g/Que-Es-ISP.htm"}}{\*\fldrslt{\s28\f0\fs24\lang2058{\*\listtag0}PSI (ISP)}}}{\s28\f0\fs24\lang2058{\*\listtag0}. Algunas computadoras tienen el modem integrado, y lo \'fanico que necesitas es un cable telef\'f3nico.}{\s28\f0\fs24\lang2058{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang2058{\*\listtag0}\abinodiroverride\ltrch \uc0\u-257 }{\s28\f0\fs24\lang2058{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang2058{\*\listtag0}\abinodiroverride\ltrch Puesto que la RTC transmite las se\'f1ales de forma anal\'f3gica, es necesario un sistema para demodular las se\'f1ales recibidas por el ordenador de la RTC (es decir, para convertirlas en se\'f1ales digitales), y modular o transformar en se\'f1ales anal\'f3gicas las se\'f1ales digitales que el ordenador quiere que se transmitan por la red. Estas tareas corren a cargo de un m\'f3dem que act\'faa como dispositivo de enlace entre el ordenador y la red.}{\s28\f0\fs24\lang2058{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang2058{\*\listtag0}\abinodiroverride\ltrch La ventaja principal de la conexi\'f3n por RTC, y que explica su enorme difusi\'f3n durante a\'f1os, es que no requer\'eda la instalaci\'f3n de ninguna infraestructura adicional a la propia RTC de la que casi todos los hogares y centros de trabajo dispon\'edan.}{\s28\f0\fs24\lang2058{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang2058{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang2058{\*\listtag0}\abinodiroverride\ltrch \uc0\u-257 }{\s28\f0\fs24\b\lang2058{\*\listtag0}Red digital RDSI}{\s28\f0\fs24\lang2058{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang2058{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang2058{\*\listtag0}\abinodiroverride\ltrch \uc0\u-257 La red digital de servicios integrados \uc0\u-257 naci\'f3 con la vocaci\'f3n de superar los inconvenientes de la RTC.}{\s28\f0\fs24\lang2058{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang2058{\*\listtag0}\abinodiroverride\ltrch \uc0\u-257 }{\s28\f0\fs24\lang2058{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang2058{\*\listtag0}\abinodiroverride\ltrch Se trata de una l\'ednea telef\'f3nica, pero digital (en vez de anal\'f3gica) de extremo a extremo. En vez de un m\'f3dem, este tipo de conexi\'f3n emplea un adaptador de red que traduce las tramas generadas por la el ordenador a se\'f1ales digitales de un tipo que la red est\'e1 preparada para transmitir.}{\s28\f0\fs24\lang2058{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang2058{\*\listtag0}\abinodiroverride\ltrch A nivel f\'edsico, la red requiere un cableado especial (normalmente un cable UTF con conectores RJ-45 en los extremos), por lo que no puede emplearse la infraestructura telef\'f3nica b\'e1sica (y esto, naturalmente, encarece su uso).}{\s28\f0\fs24\lang2058{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang2058{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang2058{\*\listtag0}\abinodiroverride\ltrch \uc0\u-257 }{\s28\f0\fs24\b\lang2058{\*\listtag0}Red digital ADSL}{\s28\f0\fs24\lang2058{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang2058{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang2058{\*\listtag0}\abinodiroverride\ltrch \uc0\u-257 Se refiere a un conjunto de tecnolog\'edas que permite el acceso a Internet usando datos digitales mediante redes telef\'f3nicas, permitiendo el uso simult\'e1neo con conversaciones por tel\'e9fono a traves de un par de lineas de cobre la convierte en una linea de alta velocidad. }{\s28\f0\fs24\lang2058{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang2058{\*\listtag0}\abinodiroverride\ltrch \uc0\u-257 La ADSL aprovecha el cableado de la RTC para la transmisi\'f3n de voz y datos, que puede hacerse de forma conjunta (como con la RDSI). Esto se consigue estableciendo tres canales independientes sobre la misma l\'ednea telef\'f3nica est\'e1ndar.}{\s28\f0\fs24\lang2058{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang2058{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang2058{\*\listtag0}\abinodiroverride\ltrch \uc0\u-257 }{\s28\f0\fs24\b\lang2058{\*\listtag0}Conexi\'f3n por cable}{\s28\f0\fs24\lang2058{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang2058{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang2058{\*\listtag0}\abinodiroverride\ltrch \uc0\u-257 Utilizando se\'f1ales luminosas en vez de el\'e9ctricas es posible codificar una cantidad de informaci\'f3n mucho mayor, jugando con variables como la longitud de onda y la intensidad de la se\'f1al lum\'ednica. La se\'f1al luminosa puede transportarse, adem\'e1s, libre de problemas de ruido que afectan a las ondas electromagn\'e9ticas.}{\s28\f0\fs24\lang2058{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang2058{\*\listtag0}\abinodiroverride\ltrch \uc0\u-257 Desde el punto de vista f\'edsico, la red de fibra \'f3ptica precisa de una infraestructura nueva y costosa, lo que explica que a\'fan hoy no est\'e9 disponible en todos los lugares.}{\s28\f0\fs24\lang2058{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang2058{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang2058{\*\listtag0}\abinodiroverride\ltrch \uc0\u-257 }{\s28\f0\fs24\b\lang2058{\*\listtag0}Conexi\'f3n v\'eda sat\'e9lite}{\s28\f0\fs24\lang2058{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang2058{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang2058{\*\listtag0}\abinodiroverride\ltrch \uc0\u-257 }{\s28\f0\fs24\b\lang2058{\*\listtag0}Internet por sat\'e9lite}{\s28\f0\fs24\lang2058{\*\listtag0} es un servicio que se emplea m\'e1s com\'fanmente donde otros medios de conexi\'f3n no est\'e1n disponibles.}{\s28\f0\fs24\lang2058{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang2058{\*\listtag0}\abinodiroverride\ltrch \uc0\u-257 En los \'faltimos a\'f1os, cada vez m\'e1s compa\'f1\'edas est\'e1n empleando este sistema de transmisi\'f3n para distribuir contenidos de Internet o transferir ficheros entre distintas sucursales. De esta manera, se puede aliviar la congesti\'f3n existente en las redes terrestres tradicionales.\line  \line El sistema de conexi\'f3n que generalmente se emplea es un h\'edbrido de sat\'e9lite y tel\'e9fono. Hay que tener instalada una antena parab\'f3lica digital, un acceso telef\'f3nico a Internet (utilizando un m\'f3dem RTC, RDSI, ADSL o por cable), una tarjeta receptora para PC, un software espec\'edfico y una suscripci\'f3n a un proveedor de sat\'e9lite.}{\s28\f0\fs24\lang2058{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang2058{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang2058{\*\listtag0}\abinodiroverride\ltrch \uc0\u-257 }{\s28\f0\fs24\b\lang2058{\*\listtag0}Redes inal\'e1mbricas}{\s28\f0\fs24\lang2058{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang2058{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang2058{\*\listtag0}\abinodiroverride\ltrch \uc0\u-257 La conexiones a Internet inal\'e1mbricas se llevan a cabo mediante conexiones hechas por radiofrecuencias normalizadas por la IEEE.}{\s28\f0\fs24\lang2058{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang2058{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang2058{\*\listtag0}\abinodiroverride\ltrch Para conectar un equipo a una WLAN es preciso un dispositivo WIFI instalado en nuestro ordenador, que proporciona una interfaz f\'edsica y a nivel de enlace entre el sistema operativo y la red. En el otro extremo existir\'e1 un punto de acceso (AP) que, en el caso de las redes WLAN t\'edpicas, est\'e1 integrado con el enrutador que da acceso a Internet, normalmente usando una conexi\'f3n que s\'ed utiliza cableado.}{\s28\f0\fs24\lang2058{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang2058{\*\listtag0}\abinodiroverride\ltrch Cuando se utilizan ondas de radio, \'e9stas utilizan un rango de frecuencias desnormalizadas, o de uso libre, dentro del cual puede elegirse. Su alcance var\'eda seg\'fan la frecuencia utilizada, pero t\'edpicamente var\'eda entre los 100 y 300 metros, en ausencia de obst\'e1culos f\'edsicos.}{\s28\f0\fs24\lang2058{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang2058{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang2058{\*\listtag0}\abinodiroverride\ltrch \uc0\u-257 \uc0\u-257 }{\s28\f0\fs24\b\lang2058{\*\listtag0}PLC}{\s28\f0\fs24\lang2058{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang2058{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang2058{\*\listtag0}\abinodiroverride\ltrch \uc0\u-257 La tecnolog\'eda PLC (}{\s28\f0\fs24\i\lang2058{\*\listtag0}Power Line Communications}{\s28\f0\fs24\lang2058{\*\listtag0}) aprovecha las l\'edneas el\'e9ctricas para transmitir datos a alta velocidad. Como las WLAN, se utiliza en la actualidad para implementar redes locales, que se conectar\'edan a la Internet mediante alg\'fan otro tipo de conexi\'f3n.}{\s28\f0\fs24\lang2058{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang2058{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang2058{\*\listtag0}\abinodiroverride\ltrch \uc0\u-257 }{\s28\f0\fs24\b\lang2058{\*\listtag0}Conexiones para tel\'e9fonos m\'f3viles }{\s28\f0\fs24\lang2058{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang2058{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang2058{\*\listtag0}\abinodiroverride\ltrch \uc0\u-257 Hablamos de conexiones para tel\'e9fonos m\'f3viles \uc0\u-257 }{\s28\f0\fs24\lang2058{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang2058{\*\listtag0}\abinodiroverride\ltrch para designar el tipo de tecnolog\'edas espec\'edficas para acceder a Internet navegando desde el propio dispositivo m\'f3vil.}{\s28\f0\fs24\lang2058{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\*\bkmkstart GSM}{\*\bkmkend GSM}{\s28\f0\fs24\lang2058{\*\listtag0}\abinodiroverride\ltrch El sistema GSM (}{\s28\f0\fs24\i\lang2058{\*\listtag0}Global System Mobile}{\s28\f0\fs24\lang2058{\*\listtag0}) fue el primer sistema estandarizado en la comunicaci\'f3n de m\'f3viles. Se trata de un sistema que emplea ondas de radio como medio de transmisi\'f3n}{\s28\f0\fs24\lang2058{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang2058{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs28\b\lang2058{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs28\b\lang2058{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs28\b\lang2058{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs28\b\lang2058{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs28\b\lang2058{\*\listtag0}\abinodiroverride\ltrch Referencias}{\s28\f0\fs28\b\lang2058{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang2058{\*\listtag0}\abinodiroverride\ltrch http://recursostic.educacion.es/usuarios/web/ayudas/54-conexiones-a-internet-bis}{\s28\f0\fs24\lang2058{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang2058{\*\listtag0}\abinodiroverride\ltrch http://es.slideshare.net/guiille/tipos-de-conexion-a-internet-1932548}{\s28\f0\fs24\lang2058{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang2058{\*\listtag0}\abinodiroverride\ltrch http://aprenderinternet.about.com/od/ConceptosBasico/a/Tipos-de-conexion-de-Internet.htm}{\s28\f0\fs24\lang2058{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang2058{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang2058{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang2058{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang2058{\*\listtag0}\par}}
