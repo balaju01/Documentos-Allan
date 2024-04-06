@@ -1,0 +1,25 @@
+﻿USER                  0    0.000    0.063 ====================================================================================================
+USER                  0    0.000    0.063 StarCraft II (B26147)
+USER                  0    0.000    0.063 
+USER                  0    0.000    0.063 Executable              C:\Program Files\StarCraft II\Versions\Base24944\SC2.exe
+USER                  0    0.000    0.063 <Parameters>            
+USER                  0    0.000    0.063 LocalTime               2014-11-28 09:58:33.688
+USER                  0    0.000    0.063 <ComputerUser>          Administrador
+USER                  0    0.000    0.063 <ComputerName>          WIN-LQFEHTVTS1O
+USER                  0    0.000    0.063 <Version>               2.0.9.26147
+USER                  0    0.000    0.063 <CodeBranch>            branches/2.0-polish
+USER                  0    0.000    0.063 <CodeRevision>          141425
+USER                  0    0.000    0.063 <Locale.Product>        esMX
+USER                  0    0.000    0.063 <Locale.Assets>         esMX
+USER                  0    0.000    0.063 <Locale.Data>           esMX
+USER                  0    0.000    0.063 ====================================================================================================
+USER                  0    0.000    0.063 [  1c    1] CActorUnit[SMX1KerriganInfestedWithLight] 
+USER               1619  101.188  101.188 [ 82e   53] CActorSite[GenericAttackImpactSite] 
+USER               2175  135.938  135.938 [110e   44] CActorSite[GenericAttackImpactSite] 
+USER               2387  149.188  149.188 [124d   47] CActorSite[GenericAttackImpactSite] 
+USER               2688  168.000  168.000 [ 2d4   5c] CActorSite[GenericAttackImpactSite] 
+USER                  0    0.000    0.063 [  1c    1] CActorUnit[SMX1KerriganInfestedWithLight] 
+USER                  0    0.000    0.063 [  1c    1] CActorUnit[SMX1KerriganInfestedWithLight] 
+USER                  0    0.000    0.063 [  1b    1] CActorUnit[SMX1KerriganInfestedWithLight] 
+USER                                      ====================================================================================================
+USER                                      ====================================================================================================

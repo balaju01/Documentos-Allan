@@ -1,0 +1,13 @@
+﻿DIAG_BUFFER_ERROR
+[20160812T22:34:38] {1864} WRN: Failed to get Windows HTTP Proxy: last error = 12180 host = blzddist1-a.akamaihd.net, path = /tpr/Hero-Live-a/data/71/f6/71f65e2ed6903c768378207a666763ea, proxy_host = , proxy_port = 0
+[20160812T22:34:53] {1864} WRN: socket timeout; h=1456 (201.144.215.59:80) ti=15000 tte=1
+
+DIAG_BUFFER_INFO
+[20160812T22:34:38] {1864} WRN: Failed to get Windows HTTP Proxy: last error = 12180 host = blzddist1-a.akamaihd.net, path = /tpr/Hero-Live-a/data/71/f6/71f65e2ed6903c768378207a666763ea, proxy_host = , proxy_port = 0
+[20160812T22:34:53] {1864} WRN: socket timeout; h=1456 (201.144.215.59:80) ti=15000 tte=1
+
+DIAG_BUFFER_ALL
+[20160812T22:34:38] {1864} WRN: Failed to get Windows HTTP Proxy: last error = 12180 host = blzddist1-a.akamaihd.net, path = /tpr/Hero-Live-a/data/71/f6/71f65e2ed6903c768378207a666763ea, proxy_host = , proxy_port = 0
+[20160812T22:34:53] {1864} WRN: socket timeout; h=1456 (201.144.215.59:80) ti=15000 tte=1
+[20160812T22:34:53] {1864} noise: socket failure; closing src 0 (reqs=0)
+[20160812T22:36:38] {1864} debug: Clearing content fault counter for all hosts

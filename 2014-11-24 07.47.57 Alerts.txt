@@ -1,0 +1,16 @@
+﻿USER              21363 1335.188 1335.188 ====================================================================================================
+USER              21363 1335.188 1335.188 StarCraft II (B26147)
+USER              21363 1335.188 1335.188 
+USER              21363 1335.188 1335.188 Executable              C:\Program Files\StarCraft II\Versions\Base24944\SC2.exe
+USER              21363 1335.188 1335.188 <Parameters>            
+USER              21363 1335.188 1335.188 LocalTime               2014-11-24 07:47:57.632
+USER              21363 1335.188 1335.188 <ComputerUser>          Administrador
+USER              21363 1335.188 1335.188 <ComputerName>          WIN-LQFEHTVTS1O
+USER              21363 1335.188 1335.188 <Version>               2.0.9.26147
+USER              21363 1335.188 1335.188 <CodeBranch>            branches/2.0-polish
+USER              21363 1335.188 1335.188 <CodeRevision>          141425
+USER              21363 1335.188 1335.188 <Locale.Product>        esMX
+USER              21363 1335.188 1335.188 <Locale.Assets>         esMX
+USER              21363 1335.188 1335.188 <Locale.Data>           esMX
+USER              21363 1335.188 1335.188 ====================================================================================================
+USER              21363 1335.188 1335.188 [ bf4    1] CActorAction[MutaliskAttackSegment2] 

@@ -1,0 +1,35 @@
+﻿DIAG_BUFFER_ERROR
+[20160811T14:31:17] {1d50} WRN: Failed to get Windows HTTP Proxy: last error = 12180 host = blzddist1-a.akamaihd.net, path = /tpr/Hero-Live-a/data/71/f6/71f65e2ed6903c768378207a666763ea, proxy_host = , proxy_port = 0
+[20160811T14:31:32] {1d50} WRN: socket timeout; h=1480 (65.200.22.146:80) ti=15000 tte=1
+
+DIAG_BUFFER_INFO
+[20160811T14:31:17] {1d50} WRN: Failed to get Windows HTTP Proxy: last error = 12180 host = blzddist1-a.akamaihd.net, path = /tpr/Hero-Live-a/data/71/f6/71f65e2ed6903c768378207a666763ea, proxy_host = , proxy_port = 0
+[20160811T14:31:32] {1d50} WRN: socket timeout; h=1480 (65.200.22.146:80) ti=15000 tte=1
+[20160811T14:33:16] {1d50} INF: Add new Host addr=201.144.215.59, port=80, name=blzddist1-a.akamaihd.net, proxy=false
+[20160811T14:33:16] {1d50} INF: Add new Host addr=201.144.215.64, port=80, name=blzddist1-a.akamaihd.net, proxy=false
+[20160811T14:33:16] {1d50} INF: Add new Host addr=65.200.22.129, port=80, name=blzddist2-a.akamaihd.net, proxy=false
+[20160811T14:33:16] {1d50} INF: Add new Host addr=65.200.22.121, port=80, name=blzddist2-a.akamaihd.net, proxy=false
+[20160811T14:33:16] {1d50} INF: Add new Host addr=65.200.22.98, port=80, name=blzddist2-a.akamaihd.net, proxy=false
+[20160811T14:33:16] {1d50} INF: Add new Host addr=65.200.22.99, port=80, name=blzddist2-a.akamaihd.net, proxy=false
+[20160811T14:33:16] {1d50} INF: Add new Host addr=65.200.22.120, port=80, name=blzddist2-a.akamaihd.net, proxy=false
+[20160811T14:33:16] {1d50} INF: Add new Host addr=65.200.22.128, port=80, name=blzddist2-a.akamaihd.net, proxy=false
+[20160811T14:33:16] {1d50} INF: Add new Host addr=65.200.22.122, port=80, name=blzddist2-a.akamaihd.net, proxy=false
+[20160811T14:33:16] {1d50} INF: Add new Host addr=65.200.22.106, port=80, name=blzddist2-a.akamaihd.net, proxy=false
+[20160811T14:33:16] {1d50} INF: Add new Host addr=65.200.22.113, port=80, name=blzddist2-a.akamaihd.net, proxy=false
+
+DIAG_BUFFER_ALL
+[20160811T14:31:17] {1d50} WRN: Failed to get Windows HTTP Proxy: last error = 12180 host = blzddist1-a.akamaihd.net, path = /tpr/Hero-Live-a/data/71/f6/71f65e2ed6903c768378207a666763ea, proxy_host = , proxy_port = 0
+[20160811T14:31:32] {1d50} WRN: socket timeout; h=1480 (65.200.22.146:80) ti=15000 tte=1
+[20160811T14:31:32] {1d50} noise: socket failure; closing src 0 (reqs=0)
+[20160811T14:33:16] {1d50} INF: Add new Host addr=201.144.215.59, port=80, name=blzddist1-a.akamaihd.net, proxy=false
+[20160811T14:33:16] {1d50} INF: Add new Host addr=201.144.215.64, port=80, name=blzddist1-a.akamaihd.net, proxy=false
+[20160811T14:33:16] {1d50} INF: Add new Host addr=65.200.22.129, port=80, name=blzddist2-a.akamaihd.net, proxy=false
+[20160811T14:33:16] {1d50} INF: Add new Host addr=65.200.22.121, port=80, name=blzddist2-a.akamaihd.net, proxy=false
+[20160811T14:33:16] {1d50} INF: Add new Host addr=65.200.22.98, port=80, name=blzddist2-a.akamaihd.net, proxy=false
+[20160811T14:33:16] {1d50} INF: Add new Host addr=65.200.22.99, port=80, name=blzddist2-a.akamaihd.net, proxy=false
+[20160811T14:33:16] {1d50} INF: Add new Host addr=65.200.22.120, port=80, name=blzddist2-a.akamaihd.net, proxy=false
+[20160811T14:33:16] {1d50} INF: Add new Host addr=65.200.22.128, port=80, name=blzddist2-a.akamaihd.net, proxy=false
+[20160811T14:33:16] {1d50} INF: Add new Host addr=65.200.22.122, port=80, name=blzddist2-a.akamaihd.net, proxy=false
+[20160811T14:33:16] {1d50} INF: Add new Host addr=65.200.22.106, port=80, name=blzddist2-a.akamaihd.net, proxy=false
+[20160811T14:33:16] {1d50} INF: Add new Host addr=65.200.22.113, port=80, name=blzddist2-a.akamaihd.net, proxy=false
+[20160811T14:33:16] {1d50} debug: Clearing content fault counter for all hosts

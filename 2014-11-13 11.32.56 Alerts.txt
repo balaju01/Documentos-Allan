@@ -1,0 +1,25 @@
+﻿USER              28488 1780.500 1780.500 ====================================================================================================
+USER              28488 1780.500 1780.500 StarCraft II (B26147)
+USER              28488 1780.500 1780.500 
+USER              28488 1780.500 1780.500 Executable              C:\Program Files\StarCraft II\Versions\Base24944\SC2.exe
+USER              28488 1780.500 1780.500 <Parameters>            
+USER              28488 1780.500 1780.500 LocalTime               2014-11-13 11:32:56.042
+USER              28488 1780.500 1780.500 <ComputerUser>          Administrador
+USER              28488 1780.500 1780.500 <ComputerName>          WIN-LQFEHTVTS1O
+USER              28488 1780.500 1780.500 <Version>               2.0.9.26147
+USER              28488 1780.500 1780.500 <CodeBranch>            branches/2.0-polish
+USER              28488 1780.500 1780.500 <CodeRevision>          141425
+USER              28488 1780.500 1780.500 <Locale.Product>        esMX
+USER              28488 1780.500 1780.500 <Locale.Assets>         esMX
+USER              28488 1780.500 1780.500 <Locale.Data>           esMX
+USER              28488 1780.500 1780.500 ====================================================================================================
+USER              28488 1780.500 1780.500 [ b25   50] CActorAction[FirebatAttack] 
+USER              28510 1781.875 1781.875 [ ade   74] CActorAction[FirebatAttack] 
+USER              28533 1783.313 1783.313 [ ada   bc] CActorAction[FirebatAttack] 
+USER              28563 1785.188 1785.188 [ a09   a1] CActorAction[FirebatAttack] 
+USER              28585 1786.563 1786.563 [ 887   de] CActorAction[FirebatAttack] 
+USER              28633 1789.563 1789.563 [ ad3   2b] CActorAction[FirebatAttack] 
+USER              28805 1800.313 1800.313 [ ae6   7d] CActorAction[MarineAttack] 
+USER              28805 1800.313 1800.313 [ 9c9   77] CActorAction[MarineAttack] 
+USER                                      ====================================================================================================
+USER                                      ====================================================================================================

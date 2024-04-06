@@ -1,0 +1,2590 @@
+\appendix
+\chapter{Código fuente del prototipo 2}
+\label{Anexos A}
+A continuación se muestra el código fuente desarrollado en el prototipo 2.
+\begin{itemize}
+\item Archivo de cifrado (cifrado.py).
+\end{itemize}
+
+\begin{lstlisting}[frame=single]
+ #! /usr/bin/env python
+from Crypto.Hash import SHA256
+from Crypto.Cipher import AES
+from captcha.image import ImageCaptcha
+import os
+import random
+hash = SHA256.new()
+semilla=""
+r=0
+image = ImageCaptcha(fonts=['./fon/A.ttf', './fon/B.ttf'])
+for i in range(5):
+	r=random.randrange(100)
+	semilla=semilla+chr(r)
+	print str(i)+" "+str(r)+" "+chr(r)+" "+semilla
+	
+print semilla+"\n"
+
+data = image.generate(semilla)
+image.write(semilla, '/tmp/out.png')
+image.write(semilla, 'out.png')
+
+os.remove("/tmp/out.png")
+
+hash.update(semilla)
+otra=hash.digest()
+llave = ""
+print otra
+
+for i  in range(16):
+	llave=llave+otra[i]
+	print str(i)+" "+otra[i]+" "+llave
+\end{lstlisting}
+\begin{lstlisting}[frame=single]
+print "\n"
+print llave
+archy=open('llave.txt','w')
+archy.write(semilla)
+archy.close()
+arc=open('cifrado.txt','w')
+archi=open('1443750804.V805Idc01e2M920300.jonnytest:2,S','r')
+obj = AES.new(llave, AES.MODE_ECB)
+lineas=' '
+c=0
+while lineas!="": 
+	c=c+1
+	lineas=archi.read(16)
+	
+	if (((len(lineas))<16)and((len(lineas))>0)):
+		c=16-(len(lineas))
+		aux=lineas
+		for i in range(c):
+			aux=aux+" "
+	else:
+		aux=lineas
+	
+	ciphertext = obj.encrypt(aux)
+	arc.write(ciphertext)
+	print str(c) +"   " + lineas + "   "+str(len(lineas))+"   "
+	+str(len(aux))+"   "+ciphertext
+	
+
+archi.close()
+arc.close()
+
+
+
+\end{lstlisting}
+\begin{itemize}
+\item Ventana de despliegue de CAPTCHAS (ventana.py)
+\end{itemize}
+
+\begin{lstlisting}[frame=single]
+ #!/usr/bin/python
+import Tkinter
+import Image, ImageTk
+imagenAnchuraMaxima=300
+imagenAlturaMaxima=200
+from Crypto.Hash import SHA256
+from Crypto.Cipher import AES
+
+import random
+hash = SHA256.new()
+# -*- coding: utf-8 -*-
+\end{lstlisting}
+\begin{lstlisting}[frame=single]
+def funcion():
+
+	a=e.get()
+	print(a)
+	hash.update(a)
+	otra=hash.digest()
+	llave = ""
+	print otra
+	for i  in range(16):	
+		llave=llave+otra[i]
+		print str(i)+" "+otra[i]+" "+llave
+	
+	print "\n"
+	print llave
+	archi=open('cifrado.txt','r')
+	arc=open('descifrado.txt','w')
+	obj = AES.new(llave, AES.MODE_ECB)
+	lineas=' '
+	c=0
+	while lineas!="": 
+		c=c+1
+		lineas=archi.read(16)	
+		if (((len(lineas))<16)and((len(lineas))>0)):
+			c=16-(len(lineas))
+			aux=lineas
+			for i in range(c):
+				aux=aux+" "
+		else:
+			aux=lineas
+	
+		ciphertext = obj.decrypt(aux)
+		arc.write(ciphertext)
+		print str(c) +"   " + lineas + "   "
+		+str(len(lineas))+"   "+str(len(aux))+"   "
+		+ciphertext
+	archi.close()
+	arc.close()
+	root.quit()
+
+# abrimos una imagen
+img = Image.open('out.png')
+
+img.thumbnail((imagenAnchuraMaxima,imagenAlturaMaxima)
+, Image.ANTIALIAS)
+
+root = Tkinter.Tk()
+\end{lstlisting}
+\begin{lstlisting}[frame=single]
+root.title("Mostrar imagen")
+# Convertimos la imagen a un objeto PhotoImage de Tkinter
+tkimage = ImageTk.PhotoImage(img)
+
+# Ponemos la imagen en un Lable dentro de la ventana
+label=Tkinter.Label(root, image=tkimage, width=imagenAnchuraMaxima
+, height=imagenAlturaMaxima).pack()
+
+valor = ""
+e = Tkinter.Entry(root)
+e.pack()
+
+buttonStart2=Tkinter.Button(root, text="Cerrar",
+                            command=funcion).pack()
+# Mostramos la ventana
+
+root.mainloop()
+
+
+\end{lstlisting}
+
+\chapter{Código fuente del prototipo 8}
+\label{Anexos B}
+A continuación se muestra el código fuente desarrollado en el prototipo 8.
+
+\begin{itemize}
+\item Biblioteca de cifrado (Ek.py).
+\end{itemize}
+
+\begin{lstlisting}[frame=single]
+from Crypto.Hash import SHA256
+import os
+import random
+import base64
+import json
+from random import randrange
+from map import mapeoBtoI
+from map import mapeoItoB
+from image import ImageCaptcha
+from Crypto.Cipher import AES
+
+def isprime(n): 
+
+ n = abs(int(n)) 
+ # 0 y 1 no son primos 
+ if n < 2: 
+  return False 
+ # 2 es el unico primo par 
+ if n == 2:  
+  return True  
+ # El resto de pares no son primos 
+ if not n & 1:  
+  return False 
+ # El rango comienza en 3 y solo necesita subir 
+ # hasta la raiz cuadrada de n  
+ # para todos los impares 
+ for x in range(3, int(n**0.5)+1, 2): 
+  if n % x == 0: 
+   return False 
+ return True 
+\end{lstlisting}
+\begin{lstlisting}[frame=single]
+def primoSig(num):
+ buscar=True
+ while buscar:
+  if isprime(num):
+   buscar=False
+  else:
+   num+=1
+ return num
+def crearSemilla(tam):
+ r=0
+ semilla=""
+ for i in range(tam):
+  r=random.randrange(64)
+  semilla=semilla+str(mapeoItoB(r))
+ return semilla
+
+def crearLlave(semilla1):
+ aux=""
+ llave=""
+ hash = SHA256.new()
+ hash.update(semilla1)
+ aux=hash.digest()
+ llave = ""
+ for i  in range(16):
+  llave=llave+aux[i]
+ return llave
+
+def crearCAPTCHA(op,semilla2,asunto):
+ imagen=""
+ aux=""
+ ax=[]
+ xa=""
+ s=[]
+ c=0
+ asunto=asunto.replace(" ","_")
+ os.mkdir('./'+asunto+"",0755)
+ image=ImageCaptcha(fonts=['./SSE/fon/A1.ttf','./SSE/fon/A1.ttf'])
+ if (op==0):
+  aux='./'+asunto+'/CAPTCHA00.png'
+  image.write(semilla2, aux)
+  return './'+asunto
+ else:
+  for x in semilla2:
+   #print(x)
+   aux='./'+asunto+'/CAPTCHA'+str(c)+'.png'
+   xa='CAPTCHA'+str(c)+'.png'
+\end{lstlisting}
+\begin{lstlisting}[frame=single]
+   ax.append(xa)
+   s.append(ax)
+   ax=[]
+   image.write(x, aux)
+   c=c+1
+  return (s,'./'+asunto)
+
+def encodeSS(strin):
+ bina=""
+ aux=""
+ for i in range(len(strin)):
+  aux=bin(mapeoBtoI(strin[i])).replace("0b","")
+  if (len(aux)==6):
+   bina=bina+aux
+  else:
+   while ((len(aux))<6):
+    aux="0"+aux
+   bina=bina+aux
+ return int(str(bina),2)
+
+def decodeSS(strr,w0):
+ c=0
+ s=""
+ capt=""
+ letras=[]
+ z=bin(strr).replace("0b","")
+ while (len(z)<(6*w0)):
+  z="0"+z
+ for i in z:
+  if (c==5):
+   c=0
+   s=s+i
+   letras.append(s)
+   s=""
+  else:
+   c=c+1
+   s=s+i
+ for j in letras:
+  capt=capt+mapeoItoB(int(str(j),2))
+ return capt
+
+def eucExt(a,b):
+ r = [a,b]
+ s = [1,0] 
+ i = 1
+ q = [[]]
+\end{lstlisting}
+\begin{lstlisting}[frame=single]
+ while (r[i] != 0): 
+  q = q + [r[i-1] // r[i]]
+  r = r + [r[i-1] % r[i]]
+  s = s + [s[i-1] - q[i]*s[i]]
+  i = i+1
+ return s[i-1]%b
+
+def GenerarPares(p=7,w=5,t=2,k=0):
+ pares =[]
+ a = [k]
+ for aux in range(0,w):
+  print(aux)
+  pares.append([randrange(p),0])
+ print("X->")
+ print(pares)
+ for aux in range(1,t):
+  print(aux)
+  a.append(randrange(p))
+ print("A->")
+ print(a)
+# for aux in range(0,w):
+#  suma = k+(a[1]*pares[aux][0])
+#  pares[aux][1] = suma%p
+ for aux in pares:
+  print("suma")
+  suma = k
+  print(suma)
+  for aux2 in range(1,t):
+   print("sin ecuacion")
+   print(suma)
+   suma = (suma+(a[aux2]*(aux[0]**aux2)))%p
+   print("con ecuacion")
+   print(suma)
+  aux[1] =suma
+ return pares
+
+def secreto(pares,p):
+ suma = 0
+# print("pares")
+# print(pares)
+ for aux in pares:
+#  print("par")
+#  print(aux)
+  ind = pares.index(aux)
+#  print("index")
+#  print(ind)
+\end{lstlisting}
+\begin{lstlisting}[frame=single]
+  lis = pares[:ind] + pares[(ind+1):]
+#  print("otros pares")
+#  print(lis)
+  num=1
+  den=1
+  for aux2 in lis:
+#   print("numerodor")
+   num = (num*(aux2[0])*-1)%p
+#   print(num)
+#   print("denominador")
+   den = (den*((aux[0]-aux2[0])%p))%p
+#   print(den)
+#  print("Euclides")
+  den = eucExt(den,p)
+#  print(den)
+  suma += (den*aux[1]*num)%p
+#  print("suma")
+#  print(suma)
+ return suma%p
+
+def cifrar(body,asunto1,op1=1,ta=5,w1=5,t1=2):
+ ruta=""
+ salida=""
+ if t1>w1:
+  salida=""
+  ruta=None
+  print("w1 < t1")
+  return (salida,ruta)
+ semilla3=crearSemilla(ta)
+ num=0
+ cap=[]
+ zp=primoSig(2**(6*ta))
+ disc={}
+ #print(semilla3)
+ if (op1==0):
+  ruta=crearCAPTCHA(0,semilla3,asunto1)
+ else:
+  ruta=[]
+  num=encodeSS(semilla3)
+  pares=GenerarPares(zp,w1,t1,num)
+  #print(pares)
+  for x in pares:
+   cap.append(decodeSS(x[1],w1))
+  ruta=crearCAPTCHA(op1,cap,asunto1)
+  num=0
+  print(cap)
+\end{lstlisting}
+\begin{lstlisting}[frame=single]
+  for x in pares:
+   ruta[0][num].insert(0,x[0])
+   num=num+1
+  for i in ruta[0]:
+   disc[i[1]]=i[0]
+  print(ruta)
+  lista=open(ruta[1]+"/lista.json","w") 
+  lista.write(json.dumps(disc))
+  lista.close
+ k=crearLlave(semilla3)
+ obj = AES.new(k, AES.MODE_ECB)
+ salida=""
+ ax=0
+ c=0
+ strr=""
+ #print len(body)
+ while (ax < len(body)):
+  while (c<16):
+   if (ax>=len(body)):
+    strr=strr+" "
+   else:
+    strr=strr+body[ax]
+   c=c+1
+   ax=ax+1
+   #print str(c) +" " + str(ax) 
+  c=0
+  #print strr
+  ciphertext = obj.encrypt(strr)
+  salida=salida+ciphertext
+  strr=""
+ salida = base64.b64encode(salida)
+ return (salida,ruta)
+
+def descifrar(body1,capt1,op2):
+ aux=[]
+ ax=0
+ pares=[]
+ zp=0
+ 
+ if (op2==0):
+  k=crearLlave(capt1)
+ else:
+  w=len(capt1[0][1])
+  zp=primoSig(2**(6*(len(capt1[0][1]))))
+  for x in capt1:
+   aux=x
+\end{lstlisting}
+\begin{lstlisting}[frame=single]
+   aux[1]=encodeSS(x[1])
+   pares.append(aux) 
+  #print(pares)
+  ax=secreto(pares,zp)
+  #print(ax)
+  semilla4=decodeSS(ax,w)
+  #print(semilla4)
+  k=crearLlave(semilla4)
+  #print(k)
+ obj = AES.new(k, AES.MODE_ECB)
+ salida=""
+ ax=0
+ c=0
+ strr=""
+ #print len(body1)
+ body1 = base64.b64decode(body1)
+ while (ax < len(body1)):
+  while (c<16):
+   if (ax>=len(body1)):
+    strr=strr+" "
+   else:
+    strr=strr+body1[ax]
+   c=c+1
+   ax=ax+1
+   #print str(c) +" " + str(ax) 
+  c=0
+  #print strr
+  ciphertext = obj.decrypt(strr)
+  salida=salida+ciphertext
+  strr=""
+ return salida
+\end{lstlisting}
+
+\begin{itemize}
+\item Generador de imágenes CAPTCHAS (imagen.py).
+\end{itemize}
+
+\begin{lstlisting}[frame=single]
+# coding: utf-8
+
+import os
+import random
+from PIL import Image
+from PIL import ImageFilter
+from PIL.ImageDraw import Draw
+from PIL.ImageFont import truetype
+try:
+ from cStringIO import StringIO as BytesIO
+except ImportError:
+ from io import BytesIO
+\end{lstlisting}
+\begin{lstlisting}[frame=single]
+try:
+ from wheezy.captcha import image as wheezy_captcha
+except ImportError:
+ wheezy_captcha = None
+DATA_DIR = os.path.join(os.path.abspath(os.path.dirname(__file__))
+                        , 'data')
+DEFAULT_FONTS = [os.path.join(DATA_DIR, 'DroidSansMono.ttf')]
+
+if wheezy_captcha:
+ __all__ = ['ImageCaptcha', 'WheezyCaptcha']
+else:
+ __all__ = ['ImageCaptcha']
+
+class _Captcha(object):
+ def generate(self, chars, format='png'):
+  im = self.generate_image(chars)
+  out = BytesIO()
+  im.save(out, format=format)
+  out.seek(0)
+  return out
+
+ def write(self, chars, output, format='png'):
+  im = self.generate_image(chars)
+  return im.save(output, format=format)
+
+class WheezyCaptcha(_Captcha):
+ def __init__(self, width=200, height=75, fonts=None):
+  self._width = width
+  self._height = height
+  self._fonts = fonts or DEFAULT_FONTS
+
+ def generate_image(self, chars):
+  text_drawings = [wheezy_captcha.warp(),wheezy_captcha.rotate(),
+                   wheezy_captcha.offset(),]
+  fn = wheezy_captcha.captcha(
+   drawings=[
+    wheezy_captcha.background(),
+    wheezy_captcha.text(fonts=self._fonts, drawings=text_drawings),
+    wheezy_captcha.curve(),
+    wheezy_captcha.noise(),
+    wheezy_captcha.smooth(),],
+   width=self._width,
+   height=self._height,
+  )
+  
+  return fn(chars)
+\end{lstlisting}
+\begin{lstlisting}[frame=single]
+class ImageCaptcha(_Captcha):
+
+ def __init__(self,width=160,height=60,fonts=None,font_sizes=None):
+ 
+  self._width = width
+  self._height = height
+  self._fonts = fonts or DEFAULT_FONTS
+  self._font_sizes = font_sizes or (46, 58, 68)
+  self._truefonts = []
+
+ @property
+ def truefonts(self):
+ 
+  if self._truefonts:
+   return self._truefonts
+  self._truefonts = tuple([
+   truetype(n, s)
+   for n in self._fonts
+   for s in self._font_sizes
+  ])
+  return self._truefonts
+
+ @staticmethod
+ def create_noise_curve(image, color):
+ 
+  w, h = image.size
+  x1 = random.randint(0, int(w / 5))
+  x2 = random.randint(w - int(w / 5), w)
+  y1 = random.randint(h / 5, h - int(h / 5))
+  y2 = random.randint(y1, h - int(h / 5))
+  points = [(x1, y1), (x2, y2)]
+  end = random.randint(160, 200)
+  start = random.randint(0, 20)
+  Draw(image).arc(points, start, end, fill=color)
+  return image
+
+ @staticmethod
+ def create_noise_dots(image, color, width=3, number=30):
+  draw = Draw(image)
+  w, h = image.size
+  while number:
+   x1 = random.randint(0, w)
+   y1 = random.randint(0, h)
+   draw.line(((x1, y1), (x1 - 1, y1 - 1)), fill=color, width=width)
+   number -= 1
+  return image
+\end{lstlisting}
+\begin{lstlisting}[frame=single]
+ def create_captcha_image(self, chars, color, background):
+
+  image = Image.new('RGB', (self._width, self._height), background)
+  draw = Draw(image)
+
+  def _draw_character(c):
+   font = random.choice(self.truefonts)
+   w, h = draw.textsize(c, font=font)
+
+   #dx = random.randint(4, 6)
+   #dy = random.randint(4, 8)
+   im = Image.new('RGBA', (w+30 , h+30 ))
+   Draw(im).text((0, 0), c, font=font, fill=color)
+
+   # rotate
+   #im = im.crop(im.getbbox())
+   #im = im.rotate(random.uniform(-30, 30),Image.BILINEAR,expand=1)
+   # warp
+   #dx = w * random.uniform(0.1, 0.3)
+   #dy = h * random.uniform(0.2, 0.3)
+   #x1 = int(random.uniform(-dx, dx))
+   #y1 = int(random.uniform(-dy, dy))
+   #x2 = int(random.uniform(-dx, dx))
+   #y2 = int(random.uniform(-dy, dy))
+   #w2 = w + abs(x1) + abs(x2)
+   #h2 = h + abs(y1) + abs(y2)
+   #data = (
+   # x1, y1,
+   # -x1, h2 - y2,
+   # w2 + x2, h2 + y2,
+   # w2 - x2, -y1,
+   #)
+   #im = im.resize((w2, h2))
+   #im = im.transform((w, h), Image.QUAD, data)
+   return im
+   
+  images = []
+  for c in chars:
+   images.append(_draw_character(c))
+
+  text_width = sum([im.size[0] for im in images])
+  width = max(text_width, self._width)
+  image = image.resize((width, self._height))
+  average = int(text_width / len(chars))
+  rand = int(0.25 * average)
+  offset = int(average * 0.1)
+\end{lstlisting}
+\begin{lstlisting}[frame=single]
+  for im in images:
+   w, h = im.size
+   mask = im.convert('L').point(lambda i: i * 1.97)
+   image.paste(im, (offset, int((self._height - h) / 2)), mask)
+   offset = offset + w + random.randint(-rand, 0)
+
+  return image
+
+ def generate_image(self, chars):
+  """Generate the image of the given characters.
+
+  :param chars: text to be generated.
+  """
+  background = random_color(238, 255)
+  color = random_color(0, 200, random.randint(220, 255))
+  im = self.create_captcha_image(chars, color, background)
+  self.create_noise_dots(im, color)
+  self.create_noise_curve(im, color)
+  im = im.filter(ImageFilter.SMOOTH)
+  return im
+
+
+def random_color(start, end, opacity=None):
+ red = random.randint(start, end)
+ green = random.randint(start, end)
+ blue = random.randint(start, end)
+ if opacity is None:
+  return (red, green, blue)
+ return (red, green, blue, opacity)
+\end{lstlisting}
+\begin{itemize}
+\item Empaquetado de imágenes CAPTCHA (empaquetar.py).
+\end{itemize}
+
+\begin{lstlisting}[frame=single]
+from Ek_din import cifrar
+from subprocess import call
+import types
+import os
+from os import path
+
+def listFiles(folder):
+ return [d for d in os.listdir(folder) 
+         if path.isfile(path.join(folder, d))]
+
+def empaquetar(body,asunto,op):
+ s=cifrar(body,asunto,op)
+ asunto=asunto.replace(" ","_")
+ disc={}
+\end{lstlisting}
+\begin{lstlisting}[frame=single]
+ #print(s[1])
+ ass=asunto+".zip"
+ if type(s[1])==types.StringType:
+  zi=call("zip -r "+ass+" "+s[1], shell=True)
+  mv=call("mv ./"+ass+" ./CAPTCHAS", shell=True)
+  rmm=call("rm -rf "+s[1], shell=True)
+  return (s[0],"./CAPTCHAS/"+ass)
+ else:
+  zi=call("zip -r "+ass+" "+s[1][1], shell=True)
+  mv=call("mv ./"+ass+" ./CAPTCHAS", shell=True)
+  rmm=call("rm -rf "+s[1][1], shell=True)
+  return (s[0],"./CAPTCHAS/"+ass)
+\end{lstlisting}
+
+\chapter{Código fuente del prototipo 9}
+\label{Anexos C}
+
+A continuación se muestra el código fuente desarrollado en el prototipo 9.
+\begin{itemize}
+\item Estructura de la base de datos (script.sql).
+\end{itemize}
+
+ \begin{lstlisting}[frame=single]
+ CREATE TABLE IF NOT EXISTS `Mensaje` (
+  `firma_digital` varchar(255) CHARACTER SET utf8 NOT NULL,
+  `correo_destino` varchar(50) CHARACTER SET utf8 NOT NULL,
+  `ruta_archivo` varchar(255) CHARACTER SET utf8 NOT NULL,
+  `correo_electronico` varchar(50) CHARACTER SET utf8 NOT NULL,
+  PRIMARY KEY (`correo_destino`,`firma_digital`)
+ ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+ CREATE TABLE IF NOT EXISTS `Usuario` (
+  `correo_electronico` varchar(50) CHARACTER SET utf8 NOT NULL,
+  `nombre` varchar(150) CHARACTER SET utf8 NOT NULL,
+  `contrasena` varchar(20) COLLATE utf8_unicode_ci NOT NULL
+ ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+ \end{lstlisting}
+\begin{itemize}
+\item Alta de usuario en el servidor de CAPTCHAS (AltaUsuario.php).
+\end{itemize}
+
+ \begin{lstlisting}[frame=single]
+ <html>
+ <head>
+  <title>Alta de usuario</title> 
+ </head>
+
+ <body>
+<?php
+$usuario = trim($_POST["nombre"]);
+$contra = trim($_POST["contrasena"]);
+$correo = trim($_POST["correo_electronico"]);
+if (empty($usuario)){
+ echo '<p name="respuesta">0</p>';
+}elseif (empty($contra)) {
+ echo '<p name="respuesta">1</p>';
+\end{lstlisting}
+\begin{lstlisting}[frame=single]
+}elseif (empty($correo)) {
+ echo '<p name="respuesta">2</p>';
+}else{
+ $enlace = new mysqli('mysql.hostinger.mx', 'u715698692_corre',
+                      'correocifrado','u715698692_corre');
+ if($enlace->connect_errno){
+  echo '<p name="respuesta">3</p>';
+  die("Error en conexion");
+ }
+
+ if (!file_exists("./Usuarios/".$correo)) {
+  mkdir("./Usuarios/".$correo);
+ }
+
+ $query = "SELECT nombre FROM Usuario 
+            WHERE correo_electronico like '$correo'";
+ $result = $enlace->query($query);
+ $aux = $result->num_rows;
+ if($aux == 1){
+  echo '<p name="respuesta">5</p>';
+  $enlace->close();
+ }else{
+  $result->free();
+  if($enlace->query("INSERT INTO `Usuario`
+  (`correo_electronico`, `nombre`, `contrasena`) 
+  VALUES 
+  ('".$correo."','".$usuario."','".$contra."')") === TRUE){
+   echo '<p name="respuesta">5</p>';
+   $enlace->close();
+  }else{
+   echo '<p name="respuesta">6</p>';
+   $enlace->close();
+  }
+ }
+}
+?>
+ </body>
+</html>
+ \end{lstlisting}
+
+\begin{itemize}
+\item Carga de imágenes CAPTCHAS en el servidor (AltaMensage.php).
+\end{itemize}
+
+ \begin{lstlisting}[frame=single]
+ <html>
+ <head>
+  <title>Alta de Mensaje</title> 
+ </head>
+\end{lstlisting}
+\begin{lstlisting}[frame=single]
+ <body>
+<?php
+$usuario = trim($_POST["nombre"]);
+$contra = trim($_POST["contrasena"]);
+$correo = trim($_POST["correo_electronico"]);
+$firma = trim($_POST["firma"]);
+$correo_des = trim($_POST["correo_destino"]);
+
+if (empty($usuario)){
+ echo '<p name="respuesta">0</p>';
+ die();
+}elseif (empty($contra)) {
+ echo '<p name="respuesta">1</p>';
+ die();
+}elseif (empty($correo)) {
+ echo '<p name="respuesta">2</p>';
+ die();
+}elseif (empty($firma)) {
+ echo '<p name="respuesta">3</p>';
+ die();
+}elseif (empty($correo_des)) {
+ echo '<p name="respuesta">4</p>';
+ die();
+}elseif (!is_uploaded_file($_FILES["archivo"]["tmp_name"])){
+ echo '<p name="respuesta">6</p>';
+ die();
+}else{
+ $enlace = new mysqli('mysql.hostinger.mx', 'u715698692_corre', 
+           'correocifrado','u715698692_corre');
+ if($enlace->connect_errno){
+  echo '<p name="respuesta">7</p>';
+  die("Error en conexion");
+ }
+ $query = "SELECT nombre, contrasena 
+           FROM Usuario 
+           WHERE Correo_Electronico like '$correo' ";
+ $result = $enlace->query($query);
+ $aux = $result->num_rows;
+ 
+ if($aux >0){
+  $row = $result->fetch_array(MYSQLI_ASSOC);
+ }else{
+  echo '<p name="respuesta">11</p>';
+  $enlace->close();
+  die("Error de autenticacion");
+ }
+\end{lstlisting}
+\begin{lstlisting}[frame=single]
+ if(!(strcmp($row["nombre"],$usuario) == 0)){
+  echo '<p name="respuesta">8</p>';
+  $enlace->close();
+  die("Error de autenticacion 1");
+ }
+ if (!(strcmp($row["contrasena"],$contra) == 0)) {
+  echo '<p name="respuesta">8</p>';
+  $enlace->close();
+  die("Error de autenticacion 2");
+ }
+ $result->free();
+ if(strcmp($_FILES['archivo']['type'], "application/zip")==0){
+  $file= sha1($correo_des.$firma.$correo).".zip";
+  $ruta=join(DIRECTORY_SEPARATOR,array("./Usuarios",
+        $correo,$file));
+  $query = "SELECT ruta_archivo 
+            FROM Mensaje 
+            WHERE Correo_Electronico like '$correo' 
+            and firma_digital like '$firma' 
+            and correo_destino like '$correo_des'";
+  $result = $enlace->query($query);
+  $aux = $result->num_rows;
+
+  if($aux >0){
+   echo '<p name="respuesta">12</p>';
+   $enlace->close();
+   die("Error de autenticacion");
+  }else{
+   $result->free();
+   if (!file_exists($ruta)) {
+    move_uploaded_file($_FILES['archivo']['tmp_name'], $ruta);
+    echo "<pre>";
+    print_r($ruta);
+    if($enlace->query("INSERT INTO `Mensaje`
+    (`firma_digital`, `correo_destino`, `ruta_archivo`, 
+    `correo_electronico`) 
+    VALUES ('".$firma."','".$correo_des."',
+    '".$ruta."','".$correo."')") === TRUE){
+     echo '<p name="respuesta">5</p>';
+     $enlace->close();
+    }else{
+     echo '<p name="respuesta">9</p>';
+     $enlace->close();
+    }
+   }else{
+    echo '<p name="respuesta">13</p>';
+\end{lstlisting}
+\begin{lstlisting}[frame=single]
+    $enlace->close();
+    die("Error de autenticacion");
+   }
+  }
+ }else{
+  echo '<p name="respuesta">10</p>';
+  $enlace->close();
+ }
+
+}
+?>
+ </body>
+</html>
+ \end{lstlisting}
+\begin{itemize}
+\item Descarga de imágenes CPATCHAS del servidor (BusquedaArchivo.php).
+\end{itemize}
+
+ \begin{lstlisting}[frame=single]
+ <html>
+ <head>
+  <title>Busqueda de Archivos</title> 
+ </head>
+
+ <body>
+<?php
+
+$correo = trim($_POST["correo_electronico"]);
+$firma = trim($_POST["firma"]);
+$correo_des = trim($_POST["correo_destino"]);
+
+if (empty($correo)) {
+ echo '<p name="respuesta">0</p>';
+ die();
+}elseif (empty($firma)) {
+ echo '<p name="respuesta">1</p>';
+ die();
+}elseif (empty($correo_des)) {
+ echo '<p name="respuesta">2</p>';
+ die();
+}else{
+
+ $enlace = new mysqli('mysql.hostinger.mx', 'u715698692_corre',
+           'correocifrado','u715698692_corre');
+ if($enlace->connect_errno){
+  echo '<p name="respuesta">7</p>';
+  die("Error en conexion");
+
+ }
+\end{lstlisting}
+\begin{lstlisting}[frame=single]
+ $query = "SELECT ruta_archivo 
+           FROM Mensaje 
+           WHERE Correo_Electronico like '$correo' 
+           and firma_digital like '$firma' 
+           and correo_destino like '$correo_des'";
+ $result = $enlace->query($query);
+ $aux = $result->num_rows;
+ if($aux == 1){
+  $row = $result->fetch_array(MYSQLI_ASSOC);
+  $ruta = "http://correocifrado.esy.es".$row["ruta_archivo"];
+  echo '<p name="respuesta">'.$ruta.'</p>';
+  $enlace->close();
+ }else{
+  echo '<p name="respuesta">4</p>';
+  $enlace->close();
+  die("Error de autenticacion");
+ }
+
+}
+?>
+ </body>
+</html>
+ \end{lstlisting}
+
+\chapter{Intalación de biblioteca GTK+ 3 y entorno gráfico GNOME 3}
+\label{Anexos D}
+
+A continuación se muestra los pasos a seguir para la intalación de las bibliotecas GTK3+ y el entorno grafico GNOME 3.
+
+\section{Instalación del entorno gráfico GNOME 3.}
+
+
+La instalación del entorno gráfico GNOME 3 se realizo en un sistema operativo XUBUNTU 15.1 y XUBUNTU 14.1. A continuación se explica los pasos a seguir para la instalación de este entorno gráfico.
+\begin{itemize}
+\item Se abre una terminal del sistema operativo.
+\item Se ingresan los siguientes comandos a la terminal para instalar los repositorios de descarga.
+\begin{lstlisting}
+sudo add-apt-repository ppa:gnome3-team/gnome3
+sudo add-apt-repository ppa:gnome3-team/gnome3-staging
+\end{lstlisting}
+
+\item Posteriormente se ingresa el siguiente comando a la terminal para actualizar los repositorios de descarga.
+\begin{lstlisting}
+sudo apt-get update
+\end{lstlisting}
+
+\item Una vez terminada la actualización se  ingresa este último comando para terminar con la instalación del entorno gráfico GNOME 3.
+\begin{lstlisting}
+sudo apt-get dist-upgrade
+\end{lstlisting}
+Una vez que la instalación termine se reinicia el equipo para activar el entorno gráfico GNOME 3.
+
+\end{itemize}
+\pagebreak
+\section{Instalación de la biblioteca gráfica GTK+ 3.}
+
+La instalación del biblioteca gráfica GTK+ 3 se realizo en un sistema operativo XUBUNTU 15.1 y XUBUNTU 14.1 siguiendo  los tutoriales proporcionados por la pagina de Python GTK+ 3 Tutorial y GNOME developer.
+Uno de los requisitos previos para la instalación de GTK+ 3 es la instalación de JHBuild la cual se instalo siguiendo el tutorial de GNOME developer encontrado en la siguiente pagina web:\\
+\url{https://developer.gnome.org/jhbuild/unstable/getting-started.html.es}\\
+
+Después de la instalación de JHBuild se prosiguió con la instalación de la biblioteca gráfica GTK+ 3. A continuación se presentan los pasos a seguir para la instalación de de la biblioteca.
+\begin{itemize}
+\item Se abre una terminal del sistema operativo.
+\item Se ingresan los siguientes comandos.
+\begin{lstlisting}
+$ jhbuild build pygobject
+$ jhbuild build gtk+
+$ jhbuild shell
+\end{lstlisting}
+\end{itemize}
+
+\chapter{Código fuente del prototipo 10}
+\label{Anexos E}
+
+A continuación se muestra el código fuente desarrollado en el prototipo 10.
+\begin{itemize}
+\item Archivo de configuración JSON config.json).
+\end{itemize}
+
+\begin{lstlisting}[frame=single]
+{
+certfile: "./Seguridad/server2048.pem",
+passwdSSE: "12345678",
+passwd: "360_live",
+portSmtp: "587",
+portPop: "995",
+ssl: true,
+hostSmtp: "smtp-mail.outlook.com",
+user: "jonny.test.arc.99@hotmail.com",
+SSE: false,
+nombre: "jonathan arcos",
+hostPop: "pop3.live.com",
+keyfile: "./Seguridad/server2048.key",
+delete: 0
+}
+\end{lstlisting}
+\begin{itemize}
+\item Interfaz gráfica del cliente de correo electrónico (setup.py).
+\end{itemize}
+
+\begin{lstlisting}[frame=single]
+import gi
+import os
+import email
+import json
+import SSE
+import re
+import captchas
+import http
+import logging
+
+gi.require_version('Gtk', '3.0')
+from gi.repository import Gtk, Gio
+\end{lstlisting}
+\begin{lstlisting}[frame=single]
+from smtp2 import datosPrincipales
+from smtp2 import validarSmtp
+from listarCorreos import listaCorreosView
+from listarCorreos import contarCorreo
+from listarCorreos import body
+from pop3 import conexionPop3
+from pop3 import validarPop
+from envios import envios
+from salidaSmtp import salida
+
+path = './Usuarios'
+
+def listdirs(folder):
+ return [d for d in os.listdir(folder) 
+        if os.path.isdir(os.path.join(folder, d))]
+
+def listFiles(folder):
+ return [d for d in os.listdir(folder) 
+        if os.path.isfile(os.path.join(folder, d))]
+
+class MyWindow(Gtk.Window):
+
+ user=listdirs(path)
+ selectCarpeta=None
+ selectUsuario=None
+ config={}
+
+ def __init__(self,config):
+  self.config = config
+  Gtk.Window.__init__(self, title="Cliente de Correos")
+  self.set_border_width(4)
+  self.set_default_size(800, 600)
+
+  self.notebook = Gtk.Notebook()
+  self.add(self.notebook)
+
+  self.page = self.newPage()
+  self.page.set_border_width(10)
+  self.notebook.append_page(self.page, Gtk.Label('Index'))
+
+ def visorCorreo(self):
+  vistaCorre = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, 
+                       spacing=10)
+  self.emisor = Gtk.Label("De: ")
+  self.emisor.set_justify(Gtk.Justification.LEFT)
+  self.destinatorio = Gtk.Label("Para: ")
+\end{lstlisting}
+\begin{lstlisting}[frame=single]
+  self.destinatorio.set_justify(Gtk.Justification.LEFT)
+  self.asunto = Gtk.Label("Asunto: ")
+  self.asunto.set_justify(Gtk.Justification.LEFT)
+  descifrado= Gtk.Button(label="Descifrar")
+  descifrado.connect("clicked", self.descifrarBody)
+  box1 = Gtk.VBox(False,10)
+  box1.pack_start(self.emisor,True,True,0)
+  box1.pack_end(self.destinatorio,False,True,0)
+  box2 = Gtk.HBox(False,0)
+  box2.pack_start(self.asunto,False, False, 0)
+  box2.pack_end(descifrado,False,False,0)
+  self.cuerpo = Gtk.TextView()
+  self.cuerpo.set_wrap_mode(Gtk.WrapMode.WORD)
+  self.cuerpo.set_editable(False)
+  scrol = Gtk.ScrolledWindow()
+  scrol.set_policy(Gtk.PolicyType.AUTOMATIC, 
+                   Gtk.PolicyType.AUTOMATIC)
+  scrol.set_vexpand(True)
+  scrol.add(self.cuerpo)
+  vistaCorre.add(box1)
+  vistaCorre.add(box2)
+  vistaCorre.add(scrol)
+  return vistaCorre
+
+ def visorCorreoNuevo(self):
+  vistaCorre = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, 
+                       spacing=10)
+                       
+  newDest = Gtk.Entry(name="Destino")
+  newDest.set_editable(True)
+  newAsunto = Gtk.Entry(name="Asunto")
+  newAsunto.set_editable(True)
+  destinatorio = Gtk.Label("De: ")
+  destinatorio.set_justify(Gtk.Justification.LEFT)
+  asunto = Gtk.Label("Asunto: ")
+  asunto.set_justify(Gtk.Justification.LEFT)
+  Cerrar = Gtk.Button(label="Cerrar")
+  Cerrar.connect("clicked", self.cerrarPagina)
+  Enviar = Gtk.Button(label="Enviar")
+  Enviar.connect("clicked", self.enviarMensage)
+  box1 = Gtk.HBox(False,0)
+  box1.pack_start(destinatorio,False,False,0)
+  box1.pack_start(newDest,True,True,0)  
+  box2 = Gtk.HBox(False,0)
+  box2.pack_start(asunto,False, False, 0)
+  box2.pack_start(newAsunto,True, True, 0)
+\end{lstlisting}
+\begin{lstlisting}[frame=single]
+  box3 = Gtk.HBox(False,0)
+  box3.pack_end(Cerrar,False, False, 0)
+  box3.pack_end(Enviar,False, False, 0)
+
+  cuerpo = Gtk.TextView(name="cuerpo")
+  cuerpo.set_wrap_mode(Gtk.WrapMode.WORD)
+  #WRAP_WORD
+  scrol = Gtk.ScrolledWindow()
+  scrol.set_policy(Gtk.PolicyType.AUTOMATIC, 
+                   Gtk.PolicyType.AUTOMATIC)
+  scrol.set_vexpand(True)
+  scrol.add(cuerpo)
+  vistaCorre.add(box1)
+  vistaCorre.add(box2)
+  vistaCorre.add(scrol)
+  vistaCorre.add(box3)
+  return vistaCorre
+
+ def cerrarPagina(self,button):
+  print("cerrarPagina")
+  page=self.notebook.get_current_page()
+  self.notebook.remove_page(page)
+  self.notebook.show_all()
+
+ def enviarMensage(self,button):
+  print("enviarMensage")
+  page=self.notebook.get_current_page()
+  contenedor = self.notebook.get_nth_page(page)
+  asunto = ""
+  destino = ""
+  cuerpo = ""
+  for c in contenedor.get_children():
+    for x in c.get_children():
+     if isinstance(x,Gtk.Entry):
+      if x.get_name() == "Destino":
+       destino = x.get_text()
+      elif x.get_name() == "Asunto":
+       asunto = x.get_text()
+     if isinstance(x,Gtk.TextView):
+      buf = x.get_buffer()
+      end_iter = buf.get_end_iter()
+      start_iter = buf.get_start_iter()
+      cuerpo = x.get_buffer().get_text(start_iter, end_iter, True)
+  if not destino.split():
+   dialog = Gtk.MessageDialog(self, 0, Gtk.MessageType.ERROR,
+    Gtk.ButtonsType.CANCEL, "Error al enviar Mensaje")
+\end{lstlisting}
+\begin{lstlisting}[frame=single]
+   dialog.format_secondary_text(
+    "El correo Destinatario no ha sido ingresado.")
+   dialog.run()
+   dialog.destroy()
+  elif not asunto and not cuerpo:
+   dialog = Gtk.MessageDialog(self, 0, Gtk.MessageType.WARNING,
+    Gtk.ButtonsType.OK_CANCEL, "Mensaje vacio")
+   dialog.format_secondary_text(
+    "El mensaje de correo esta vacio, decea que se envie?")
+   response = dialog.run()
+   if response == Gtk.ResponseType.OK:
+    print("Mensaje Incompleto")
+    t = envios(destino,self.user[0],asunto,cuerpo,[],self.config)
+    t.start()
+   dialog.destroy()
+  else:
+   print("Mensaje Completo")
+   t = envios(destino,self.user[0],asunto,cuerpo,[],self.config)
+   t.start()
+  print("Asunto: "+asunto)
+  print("Destino: "+destino)
+  print("Cuerpo: "+cuerpo)
+  print("cerrarPagina")
+  page=self.notebook.get_current_page()
+  self.notebook.remove_page(page)
+  self.notebook.show_all()
+  #print(contenedor.query_child_packing())
+
+ def descifrarBody(self, button):
+  print "Descifrar body"
+  bodyBuffer=self.cuerpo.get_buffer()
+  start_iter = bodyBuffer.get_start_iter()
+  end_iter = bodyBuffer.get_end_iter()
+  text = bodyBuffer.get_text(start_iter, end_iter, True) 
+  firma=text.find("------SSE Cipher------")
+  if(firma>=0):
+   text2 = text[firma:]
+   m = re.search('\-\n(.+)\n\-',text2)
+   if(m!=None):
+    textFirma = m.group(1)
+    print textFirma
+    correoOrigen=self.emisor.get_text()
+    correoDestino=self.destinatorio.get_text()
+    m = re.search(
+    "([(a-z0-9\_\-\.)]+@[(a-z0-9\_\-\.)]+\.[(a-z)]{2,15})"
+    ,correoOrigen)
+\end{lstlisting}
+\begin{lstlisting}[frame=single]
+    correoOriegen = m.group(1)
+    m = re.search(
+    "([(a-z0-9\_\-\.)]+@[(a-z0-9\_\-\.)]+\.[(a-z)]{2,15})"
+    ,correoDestino)
+    
+    correoDestino = m.group(1)
+    despliegue=captchas.buscarCAPTCHAS(textFirma,
+                                       correoDestino,
+                                       correoOriegen)
+    print(correoOriegen)
+    print(correoDestino)
+    if len(despliegue)>0:
+     ventanaCaptcha(self,despliegue)
+    else:
+     dialog = Gtk.MessageDialog(self, 0, Gtk.MessageType.ERROR,
+     Gtk.ButtonsType.CANCEL, "Error al descargar CAPTCHA")
+     dialog.format_secondary_text(
+      "Ocurrio un error con el servidor, intentarlo mas tarde")
+     dialog.run()
+     dialog.destroy()
+
+ def listaMail(self, usuario, carpeta):
+  
+  software_liststore = Gtk.ListStore(str, str, str, str)
+  #archivos = listdirs(path+usuario+"/"+carpeta)
+  if self.selectCarpeta == None:
+   archivos = [("", "",  "", "")]
+  else:
+   archivos = [("prueba", "prueba",  "prueba", "mail-attachment")]
+  for archivo in archivos:
+   software_liststore.append(list(archivo))
+  lista = software_liststore.filter_new()
+  self.listaCar = Gtk.TreeView.new_with_model(lista)
+  self.listaCar.connect("row-activated",self.celdasCorreo)
+  for i, column_title in enumerate(["Asunto", 
+                                    "Correo", 
+                                    "Fecha", 
+                                    "Adjunto"]):                   
+
+   if i == 3:
+    renderer = Gtk.CellRendererPixbuf()
+    column = Gtk.TreeViewColumn(column_title,renderer,icon_name=i)
+   else:
+    renderer = Gtk.CellRendererText()
+    column = Gtk.TreeViewColumn(column_title, renderer, text=i)
+   self.listaCar.append_column(column)
+\end{lstlisting}
+\begin{lstlisting}[frame=single]
+  scrollable_treelist = Gtk.ScrolledWindow()
+  scrollable_treelist.set_vexpand(True)
+  scrollable_treelist.set_hexpand(True)
+  scrollable_treelist.add(self.listaCar)
+  
+  return scrollable_treelist
+
+ def listaCarpetas(self, usuarios):
+  treestore = Gtk.TreeStore(str)
+  numCorreo = 0
+  for usuario in usuarios:
+   carpetas = listdirs(os.path.join(path,usuario))
+   piter = treestore.append(None, ['%s' % usuario])
+   for carpeta in carpetas:
+    numCorreo = contarCorreo(os.path.join(path,usuario,carpeta))
+    if carpeta=="Entrada":
+     treestore.prepend(piter, ['%s \t %d' % (carpeta, numCorreo)])
+    else:
+     treestore.append(piter, ['%s \t %d' % (carpeta, numCorreo)])
+
+  treeview = Gtk.TreeView(treestore)   
+  tvcolumn = Gtk.TreeViewColumn('Cuentas de Correos')
+  tvcolumn.set_reorderable(False)
+  treeview.append_column(tvcolumn)
+  treeview.connect("row-activated",self.celdasCarp)
+  cell = Gtk.CellRendererText()
+  tvcolumn.pack_start(cell, True)
+  tvcolumn.add_attribute(cell, 'text', 0)
+  treeview.set_search_column(0)
+  tvcolumn.set_sort_column_id(0)
+  treeview.set_reorderable(False)
+  return treeview
+
+ def celdasCorreo(self, treeview, posi, column):
+  model = treeview.get_model()
+  car = model.get_iter(posi)
+  correo = (model.get_value(car, 0),
+            model.get_value(car, 1),
+            model.get_value(car, 2),
+            model.get_value(car, 3))
+            
+  for key in self.listaCotejoCorreos:
+   aux = self.listaCotejoCorreos[key]
+   if ((aux[1]==correo[1]) and (aux[2]==correo[2])):
+    archivo=key
+    break
+\end{lstlisting}
+\begin{lstlisting}[frame=single]
+  ruta=os.path.join(path, 
+                    self.selectUsuario, 
+                    self.selectCarpeta, 
+                    archivo)
+
+  fp=open(ruta,"r")
+  ms = email.message_from_file(fp)
+  fp.close()
+  self.destinatorio.set_text("Para: "+ms['To'])
+  self.emisor.set_text("De: "+ms['From'])
+  self.asunto.set_text("Asunto: "+ms['Subject'])
+  textbody = body(ms)
+  print(textbody)
+  buffered = Gtk.TextBuffer()
+  buffered.set_text(textbody.strip())
+  self.cuerpo.set_buffer(buffered)
+  #print(correo in self.listaCotejoCorreos)
+
+ def celdasCarp(self, treeview, posi, column):
+  model = treeview.get_model()
+  car = model.get_iter(posi)
+  carpeta = model.get_value(car, 0)
+  if carpeta.find('@')>0:
+   return
+  carpeta = carpeta.split('\t')[0].strip()
+  self.selectCarpeta=carpeta
+  usu = model.iter_parent(car)
+  usuario = model.get_value(usu, 0)
+  self.selectUsuario=usuario
+  self.listaCotejoCorreos = listaCorreosView(
+                            os.path.join(path,usuario,carpeta))
+                            
+  software_liststore = Gtk.ListStore(str, str, str, str)
+  for reg in self.listaCotejoCorreos: 
+   software_liststore.append(self.listaCotejoCorreos[reg])
+  lista = software_liststore.filter_new()
+  self.listaCar.set_model(lista)
+
+ def headerMail(self):
+  box = Gtk.HBox(False,0)
+  botonNewMail = Gtk.Button(label="Nuevo correo")
+  botonNewMail.connect("clicked", self.nuevoCorreo,"newMail")
+  botonEnviarRecibir = Gtk.Button(label="Enviar y Recibir")
+  botonEnviarRecibir.connect("clicked", self.enviarRecibir)
+  botonHerramientas = Gtk.Button(label="Herramientas")
+  box.pack_start(botonNewMail, False, False, 0)
+\end{lstlisting}
+\begin{lstlisting}[frame=single]
+  box.pack_start(botonEnviarRecibir, False, False, 0)
+  #box.pack_end(botonHerramientas, False, False, 0)
+  return box
+
+ def nuevoCorreo(self, button,name):
+  print(name)
+  self.pageNuevoCorreo = self.visorCorreoNuevo()
+  self.pageNuevoCorreo.set_border_width(10)
+  self.notebook.insert_page(self.pageNuevoCorreo, 
+                            Gtk.Label("Nuevo Correo"),1)
+  self.notebook.show_all()
+
+ def enviarRecibir(self, button):
+  print(self.config)
+  host = self.config["hostPop"]
+  port = self.config["portPop"]
+  keyfile = self.config["keyfile"]
+  certfile = self.config["certfile"]
+  user = self.config["user"]
+  passwd = self.config["passwd"]
+  ssl = self.config["ssl"]
+  delete = self.config["delete"]
+  ruta = os.path.join(path,user,"Entrada")
+  t=conexionPop3(host, 
+                 port, 
+                 keyfile, 
+                 certfile, 
+                 user, 
+                 passwd, 
+                 ssl, 
+                 delete, 
+                 ruta)
+  t.start()
+  t2=salida(os.path.join(path,user),self.config)
+  t2.start()
+
+ def newPage(self):
+  marco = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=10)
+  barra = self.headerMail()
+  areaCorreo = Gtk.Box(spacing=10)
+  listaCap = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, 
+                     spacing=10)
+                    
+  listaCap.add(self.listaCarpetas(self.user))
+  areaViewCorreo = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, 
+                           spacing=10)
+\end{lstlisting}
+\begin{lstlisting}[frame=single]
+  listaCorreo = Gtk.Box(spacing=10)
+  self.listaM = self.listaMail(self.user[0],'Entrada')
+  listaCorreo.add(self.listaM)
+  
+  viewCorreo = Gtk.Box(spacing=10)
+  self.visorCo = self.visorCorreo()
+  viewCorreo.add(self.visorCo)
+
+  areaViewCorreo.pack_start(listaCorreo, False, True, 0)
+  areaViewCorreo.pack_start(viewCorreo, True, True, 0)
+  areaCorreo.add(listaCap)
+  areaCorreo.add(areaViewCorreo)
+
+  marco.pack_start(barra, False, False, 0)
+  marco.pack_end(areaCorreo, True, True, 0)
+  return marco
+
+ def cuerpoDk(self,valores,op):
+  print(valores)
+  bodyBuffer=self.cuerpo.get_buffer()
+  start_iter = bodyBuffer.get_start_iter()
+  
+  end_iter = bodyBuffer.get_end_iter()
+  text = bodyBuffer.get_text(start_iter, end_iter, True) 
+  firma=text.find("------SSE Cipher------")
+  
+  text= text[:firma]
+  descifrado=SSE.Ek_din.descifrar(text,valores,op)
+  
+  try:
+   aux=descifrado.decode("utf8")
+   buf = Gtk.TextBuffer()
+   print("utf-8 encode")
+   buf.set_text(aux.encode("utf8"))
+   self.cuerpo.set_buffer(buf)
+   
+  except Exception, e:
+  
+   print("Error al descifrar")
+   dialog = Gtk.MessageDialog(self, 0, Gtk.MessageType.ERROR,
+    Gtk.ButtonsType.CANCEL, "Error al descifrar")
+    
+   dialog.format_secondary_text(
+    "El CAPTCHA fue ingresado incorrectamente")
+   dialog.run()
+   dialog.destroy()
+\end{lstlisting}
+\begin{lstlisting}[frame=single]
+class ventanaCaptcha(Gtk.Window):
+ 
+ def __init__(self,ventana,despliegue):
+  self.ventana = ventana
+  self.ruta=despliegue[0]
+  self.archivos=despliegue[1]
+  self.op=despliegue[2]
+  Gtk.Window.__init__(self, title="Cliente de Correos")
+  self.set_border_width(4)
+  self.set_default_size(500,300)
+  self.add(self.viewCAPTCHAS())
+  self.show_all()
+
+ def descifrado(self, button):
+  for c in self.box1.get_children():
+   for x in c.get_children():
+    if isinstance(x,Gtk.Entry):
+     print(x.get_name())
+     valor=x.get_text()
+     print(valor)
+  if valor=="":
+   dialog = Gtk.MessageDialog(self, 0, Gtk.MessageType.ERROR,
+    Gtk.ButtonsType.CANCEL, "Error en el CAPTCHA")
+   dialog.format_secondary_text(
+    "Resolver el CAPTCHA")
+   dialog.run()
+   dialog.destroy()
+  else:
+   self.ventana.cuerpoDk(valor,self.op)
+
+ def descifrado2(self, button):
+  valor=[]
+  for c in self.box1.get_children():
+   for x in c.get_children():
+    if isinstance(x,Gtk.Entry):
+     print(x.get_name())
+     aux=x.get_text()
+     if aux!="":
+      valor.append([self.archivos[x.get_name()],x.get_text()])
+      print(valor)
+  for c in self.box2.get_children():
+   for x in c.get_children():
+    if isinstance(x,Gtk.Entry):
+     print(x.get_name())
+     aux=x.get_text()
+     if aux!="":
+\end{lstlisting}
+\begin{lstlisting}[frame=single]
+      valor.append([self.archivos[x.get_name()],x.get_text()])
+      print(valor)
+  for c in self.box3.get_children():
+   for x in c.get_children():
+    if isinstance(x,Gtk.Entry):
+     print(x.get_name())
+     aux=x.get_text()
+     if aux!="":
+      valor.append([self.archivos[x.get_name()],x.get_text()])
+      print(valor)
+  if len(valor)==0:
+   dialog = Gtk.MessageDialog(self, 0, Gtk.MessageType.ERROR,
+    Gtk.ButtonsType.CANCEL, "Error en el CAPTCHA")
+   dialog.format_secondary_text(
+    "Resolver el CAPTCHA")
+   dialog.run()
+   dialog.destroy()
+  else:
+   self.ventana.cuerpoDk(valor,self.op)
+
+ def viewCAPTCHAS(self):
+  marco = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=10)
+  scrol = Gtk.ScrolledWindow()
+  scrol.set_hexpand(True)
+  boxGen=Gtk.VBox(False,0)
+  boxGen.set_spacing(10)
+  boxGen.set_border_width(10)
+  separator = Gtk.HSeparator()
+  separator.set_size_request(400, 5)
+  separator2 = Gtk.HSeparator()
+  separator2.set_size_request(400, 5)
+  self.box1=Gtk.HBox(False,0)
+  boxGen.pack_start(self.box1,False,False,0)
+  boxGen.pack_start(separator, False, True, 5)
+  self.box2=Gtk.HBox(False,0)
+  boxGen.pack_start(self.box2,False,False,0)
+  boxGen.pack_start(separator2, False, True, 5)
+  self.box3=Gtk.HBox(False,0)
+  boxGen.pack_start(self.box3,False,False,0)
+  box4=Gtk.HBox(False,0)
+  descifrado= Gtk.Button(label="Descifrar")
+  if isinstance(self.archivos,dict):
+   index=0
+   for img in self.archivos.keys():
+    self.set_default_size(700,400)
+    aux = Gtk.VBox(False,0)
+\end{lstlisting}
+\begin{lstlisting}[frame=single]
+    texto = Gtk.Entry(name=img)
+    image = Gtk.Image()
+    rutaImg=os.path.join(self.ruta,img)
+    print(rutaImg)
+    image.set_from_file(rutaImg)
+    image.show()
+    aux.pack_start(image,False,False,0)
+    aux.pack_end(texto,False,False,0)
+    if index<2:
+     self.box1.pack_start(aux,False,False,0)
+    if index<4:
+     self.box2.pack_start(aux,False,False,0)
+    else:
+     self.box3.pack_start(aux,False,False,0)
+    index+=1
+   descifrado.connect("clicked", self.descifrado2)
+   
+  else:
+   for img in self.archivos:
+    aux = Gtk.VBox(False,0)
+    texto = Gtk.Entry(name=img)
+    image = Gtk.Image()
+    
+    rutaImg=os.path.join(self.ruta,img)
+    print(rutaImg)
+    image.set_from_file(rutaImg)
+    image.show()
+    aux.pack_start(image,False,False,0)
+    aux.pack_end(texto,False,False,0)
+    self.box1.pack_start(aux,False,False,0)
+   descifrado.connect("clicked", self.descifrado)
+
+  box4.pack_end(descifrado,False,False,0)
+  marco.pack_start(boxGen,False,False,0)
+  marco.pack_start(box4,False,False,0)
+  scrol.add(marco)
+  return scrol
+
+class configView(Gtk.Window):
+
+ def __init__(self):
+  Gtk.Window.__init__(self, title="Configuracion")
+  self.set_border_width(4)
+  self.set_default_size(500, 600)
+  self.add(self.viewConfig())
+  self.show_all()
+\end{lstlisting}
+\begin{lstlisting}[frame=single]
+ def viewConfig(self):
+ 
+  marco = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=10)
+  marco.pack_start(Gtk.Label("Servidor Smtp"),False,False,0)
+  
+  self.servidorSmtp=Gtk.Entry()
+  marco.pack_start(self.servidorSmtp,False,False,0)
+  marco.pack_start(Gtk.Label("Puerto Smtp"),False,False,0)
+  
+  self.puertoSmtp=Gtk.Entry()
+  marco.pack_start(self.puertoSmtp,False,False,0)
+  marco.pack_start(Gtk.Label("Servidor Pop"),False,False,0)
+  
+  self.servidorPop=Gtk.Entry()
+  marco.pack_start(self.servidorPop,False,False,0)
+  marco.pack_start(Gtk.Label("Puerto Pop"),False,False,0)
+  
+  self.puertoPop=Gtk.Entry()
+  marco.pack_start(self.puertoPop,False,False,0)
+  marco.pack_start(Gtk.Label("Usuario de Correo Electronico")
+                             ,False,False,0)
+                             
+  self.usuCorreoElec=Gtk.Entry()
+  marco.pack_start(self.usuCorreoElec,False,False,0)
+  marco.pack_start(Gtk.Label("Contrasena de Correo Elecctronico")
+                             ,False,False,0)
+                             
+  self.contraCorreoElec=Gtk.Entry()
+  self.contraCorreoElec.set_visibility(False)
+  marco.pack_start(self.contraCorreoElec,False,False,0)
+  marco.pack_start(Gtk.Label("Conexion POP SSL"),False,False,0)
+  
+  self.conexSSL=Gtk.Switch()
+  self.conexSSL.set_active(False)
+  marco.pack_start(self.conexSSL,False,False,0)
+  marco.pack_start(Gtk.Label("Usuario del Servidor de CAPTCHAS")
+                             ,False,False,0)
+                             
+  self.usuSerCAPTCHA=Gtk.Entry()
+  marco.pack_start(self.usuSerCAPTCHA,False,False,0)
+  marco.pack_start(Gtk.Label("Contrasena del Servidor de CAPTCHAS")
+                             ,False,False,0)
+                             
+  self.contraSerCAPTCHA=Gtk.Entry()
+  self.contraSerCAPTCHA.set_visibility(False)
+  marco.pack_start(self.contraSerCAPTCHA,False,False,0)
+\end{lstlisting}
+\begin{lstlisting}[frame=single]
+  marco.pack_start(Gtk.Label(
+                   "Activar Esquema de Secreto Compartido"),
+                   False,False,0)
+                             
+  self.SSE=Gtk.Switch()
+  self.SSE.set_active(False)
+  marco.pack_start(self.SSE,False,False,0)
+  boton = Gtk.Button(label="Activar")
+  
+  boton.connect("clicked", self.Activar)
+  marco.pack_start(boton,False,False,0)
+  return marco
+  
+ def Activar(self,button):
+ 
+  dic={}
+  dic["nombre"]=self.usuCorreoElec.get_text()
+  dic["contrasena"]=self.contraSerCAPTCHA.get_text()
+  dic["correo_electronico"]=self.usuCorreoElec.get_text()
+  
+  if http.httpAltaUsu(dic):
+   disc={}
+   disc["host"]=self.servidorPop.get_text()
+   disc["port"]=self.puertoPop.get_text()
+   disc["keyfile"]="./Seguridad/server2048.key"
+   disc["certfile"]="./Seguridad/server2048.pem"
+   disc["user"]=self.usuCorreoElec.get_text()
+   disc["passwd"]=self.contraCorreoElec.get_text()
+   disc["ssl"]=self.conexSSL.get_active()
+   
+   if validarPop(disc):
+    disc["host"]=self.servidorSmtp.get_text()
+    disc["port"]=self.puertoSmtp.get_text()
+    disc["ssl"]=False
+    
+    if validarSmtp(disc):
+     disc={}
+     disc["hostSmtp"]=self.servidorSmtp.get_text()
+     disc["portSmtp"]=self.puertoSmtp.get_text()
+     disc["hostPop"]=self.servidorPop.get_text()
+     disc["portPop"]=self.puertoPop.get_text()
+     disc["keyfile"]="./Seguridad/server2048.key"
+     disc["certfile"]="./Seguridad/server2048.pem"
+     disc["user"]=self.usuCorreoElec.get_text()
+     disc["passwd"]=self.contraCorreoElec.get_text()
+     disc["ssl"]=self.conexSSL.get_active()
+\end{lstlisting}
+\begin{lstlisting}[frame=single]
+     disc["delete"]=0
+     disc["SSE"]=self.SSE.get_active()
+     disc["nombre"]=self.usuSerCAPTCHA.get_text()
+     disc["passwdSSE"]=self.contraSerCAPTCHA.get_text()
+     
+     lista=open("config.json","w")   
+     lista.write(json.dumps(disc))
+     lista.close
+     
+     win = MyWindow(disc)
+     win.connect("delete-event", Gtk.main_quit)
+     win.show_all()
+     
+    else:
+     dialog = Gtk.MessageDialog(self, 0, Gtk.MessageType.ERROR,
+     Gtk.ButtonsType.CANCEL, "Error en el servidor SMTP")
+     dialog.format_secondary_text(
+      "No se logro estableser comunicacion con el 
+      servidor SMTP, verificar los datos ingresados")
+     dialog.run()
+     dialog.destroy()
+     
+   else :
+    dialog = Gtk.MessageDialog(self, 0, Gtk.MessageType.ERROR,
+    Gtk.ButtonsType.CANCEL, "Error en el servidor POP")
+    dialog.format_secondary_text(
+     "No se logro estableser comunicacion con el servidor POP, 
+     verificar los datos ingresados")
+    dialog.run()
+    dialog.destroy()
+    
+  else:
+   dialog = Gtk.MessageDialog(self, 0, Gtk.MessageType.ERROR,
+   Gtk.ButtonsType.CANCEL, "Error en el servidor de CAPTCHAS")
+   dialog.format_secondary_text(
+    "Ocurrio un error en el registro como 
+    usuario en el servidor de CAPTCHAS")
+   dialog.run()
+   dialog.destroy()
+   
+def setup_logger(logger_name, log_file, level=logging.INFO):
+
+ l = logging.getLogger(logger_name)
+ formatter = logging.Formatter('%(asctime)s : %(message)s')
+ fileHandler = logging.FileHandler(log_file, mode='w')
+ fileHandler.setFormatter(formatter)
+\end{lstlisting}
+\begin{lstlisting}[frame=single]
+ streamHandler = logging.StreamHandler()
+ streamHandler.setFormatter(formatter)
+
+ l.setLevel(level)
+ l.addHandler(fileHandler)
+ l.addHandler(streamHandler) 
+
+setup_logger('debug', r'./logs/debug.log')
+setup_logger('errorLog', r'./logs/error.log')
+debug = logging.getLogger('debug')
+errorLog = logging.getLogger('errorLog')
+
+win=None
+if not os.path.exists("config.json"):
+ debug.info('Inicia Aplicacion')
+ win = configView()
+ win.connect("delete-event", Gtk.main_quit)
+ win.show_all()
+ Gtk.main()
+
+else:
+ jsonCorreo = open("config.json","r")
+ jsonLectura = jsonCorreo.readline()
+ jsonCorreo.close()
+ configuracion = json.loads(jsonLectura)
+ win = MyWindow(configuracion)
+ win.connect("delete-event", Gtk.main_quit)  
+ win.show_all()
+ Gtk.main()
+
+\end{lstlisting}
+\begin{itemize}
+\item Conexión SMTP (smtp2.py).
+\end{itemize}
+
+\begin{lstlisting}[frame=single]
+import os
+import smtplib
+import mimetypes
+import hashlib
+import time
+import email
+# For guessing MIME type based on file name extension
+from email import encoders
+from email.message import Message
+from email.mime.audio import MIMEAudio
+from email.mime.base import MIMEBase
+from email.mime.image import MIMEImage
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
+\end{lstlisting}
+\begin{lstlisting}[frame=single]
+def validarSmtp(dat):
+ print("abriendo conexion")
+ try:
+  if dat["ssl"]:
+   M = smtplib.SMTP_SSL(host=dat["host"], port=dat["port"], 
+                        keyfile=dat["keyfile"], 
+                        certfile=dat["certfile"])
+  else:
+   M = smtplib.SMTP(host=dat["host"], port=dat["port"])
+  #M.set_debuglevel(True)
+ except Exception, e:
+  print(e)
+  print("Error de conexion")
+  return False
+ print("Validando usuario")
+ try:
+  M.ehlo()
+  M.starttls()
+  M.ehlo()
+  M.login(dat["user"], dat["passwd"])
+  M.close()
+  return True
+ except Exception, e:
+  print("Invalid credentials")
+  return False
+
+def smtpOneMensaje(to, subject, fromUser, text, attach, passwd
+                   , server, port, op, ssl):
+ outer = MIMEMultipart()
+ if to == None:
+  return 0
+ elif fromUser == None:
+  return 1
+ elif (subject == None) and (text == None):
+  return 2
+ elif passwd == None:
+  return 3
+ elif server == None:
+  return 4
+ elif port == None:
+  return 5
+
+ outer['From'] = fromUser
+ outer['To'] = to
+ outer['Subject'] = subject
+ outer['Date'] = time.asctime(time.localtime(time.time()))
+ \end{lstlisting}
+\begin{lstlisting}[frame=single]
+ outer.attach(MIMEText(text))
+ for path in attach:
+  if not os.path.isfile(path):
+   continue
+
+  ctype, encoding = mimetypes.guess_type(path)
+  if ctype is None or encoding is not None:
+   ctype = 'application/octet-stream'
+  maintype, subtype = ctype.split('/', 1)
+  if maintype == 'text':
+   fp = open(path)
+   msg = MIMEText(fp.read(), _subtype=subtype)
+   fp.close()
+   
+  elif maintype == 'image':
+   fp = open(path, 'rb')
+   msg = MIMEImage(fp.read(), _subtype=subtype)
+   fp.close()
+   
+  elif maintype == 'audio':
+   fp = open(path, 'rb')
+   msg = MIMEAudio(fp.read(), _subtype=subtype)
+   fp.close()
+  else:
+   fp = open(path, 'rb')
+   msg = MIMEBase(maintype, subtype)
+   msg.set_payload(fp.read())
+   fp.close()
+   encoders.encode_base64(msg)
+  msg.add_header('Content-Disposition', 
+                 'attachment', 
+                 filename=os.path.basename(path))
+                 
+  outer.attach(msg) 
+ composed = outer.as_string()
+ if op:
+  m = hashlib.md5()
+  m.update(time.asctime(time.localtime(time.time())))
+  aux = m.hexdigest()+".txt"
+  fp = open(aux, 'w')
+  fp.write(composed)
+  fp.close()
+  return 6
+ else:
+  print("abriendo conexion")
+  try:
+\end{lstlisting}
+\begin{lstlisting}[frame=single]
+   if ssl:
+    s = smtplib.SMTP_SSL(server,port)
+   else:
+    s = smtplib.SMTP(server,port)
+   #s.set_debuglevel(2)
+   s.ehlo()
+   print("tls")
+   s.starttls()
+   s.ehlo()
+   print("login")
+   print(fromUser,passwd)
+   s.login(fromUser, passwd)
+   print("enviando correo")
+   s.sendmail(fromUser, to, composed)
+   print("fin")
+   s.close()
+   return 6
+  except Exception, e:
+   m = hashlib.md5()
+   m.update(time.asctime(time.localtime(time.time())))
+   aux = m.hexdigest()+".txt"
+   fp = open(aux, 'w')
+   fp.write(composed)
+   fp.close()
+   return 8
+
+def smtpAllMensaje(correos, user, passwd, server, port, ssl):
+ if correos == None:
+  return 0
+ if user == None:
+  return 1
+ elif passwd == None:
+  return 3
+ elif server == None:
+  return 4
+ elif port == None:
+  return 5
+
+ print("abriendo conexion")
+ try:
+  if ssl:
+   s = smtplib.SMTP_SSL(server,port)
+  else:
+   s = smtplib.SMTP(server,port)
+  #s.set_debuglevel(2)
+  s.ehlo()
+\end{lstlisting}
+\begin{lstlisting}[frame=single]
+  print("tls")
+  s.starttls()
+  s.ehlo()
+  print("login")
+  s.login(user, passwd)
+  print("enviando correo")
+  for ms in correos:
+   try:
+    composed = ms.as_string()
+    time.sleep(1)
+    s.sendmail(ms['From'], ms['To'], composed)
+   except Exception, e:
+    m = hashlib.md5()
+    m.update(time.asctime(time.localtime(time.time())))
+    aux = m.hexdigest()+".txt"
+    fp = open(aux, 'w')
+    fp.write(composed)
+    fp.close()
+  print("fin")
+  s.close()
+  return 6
+  
+ except Exception, e:
+  return 8
+
+def smtpEnpaquetar(to, subject, fromUser, text, attach):
+ outer = MIMEMultipart()
+ if to == None:
+  return 0
+ elif fromUser == None:
+  return 1
+ elif (subject == None) and (text == None):
+  return 2
+
+ outer['From'] = fromUser
+ outer['To'] = to
+ outer['Subject'] = subject
+ outer['Date'] = time.asctime(time.localtime(time.time()))
+
+ outer.attach(MIMEText(text))
+ for path in attach:
+  if not os.path.isfile(path):
+   continue
+  ctype, encoding = mimetypes.guess_type(path)
+  if ctype is None or encoding is not None:
+   ctype = 'application/octet-stream'
+\end{lstlisting}
+\begin{lstlisting}[frame=single]
+  maintype, subtype = ctype.split('/', 1)
+  if maintype == 'text':
+   fp = open(path)
+   msg = MIMEText(fp.read(), _subtype=subtype)
+   fp.close()
+   
+  elif maintype == 'image':
+   fp = open(path, 'rb')
+   msg = MIMEImage(fp.read(), _subtype=subtype)
+   fp.close()
+   
+  elif maintype == 'audio':
+   fp = open(path, 'rb')
+   msg = MIMEAudio(fp.read(), _subtype=subtype)
+   fp.close()
+   
+  else:
+   fp = open(path, 'rb')
+   msg = MIMEBase(maintype, subtype)
+   msg.set_payload(fp.read())
+   fp.close()
+   encoders.encode_base64(msg)
+  msg.add_header('Content-Disposition', 
+                 'attachment', 
+                 filename=os.path.basename(path))
+                 
+  outer.attach(msg)
+ return outer
+
+def smtpEnvio(ms,server,port,passwd,ssl):
+ print("enviando smtp")
+ fromUser = ms['From']
+ to = ms['To']
+ composed = ms.as_string()
+ print("Datos del mensaje")
+ print("Servidor: "+server)
+ print("Port: "+str(port))
+ print("Pass: "+str(passwd))
+ try:
+  s = smtplib.SMTP(server,port)
+  s.ehlo()
+  print("tls")
+  s.starttls()
+  s.ehlo()
+  print("login")
+  s.login(fromUser, passwd)
+\end{lstlisting}
+\begin{lstlisting}[frame=single]
+  print("enviando correo")
+  s.sendmail(fromUser, to, composed)
+  print("fin")
+  s.close()
+  return 0
+ except Exception, e:
+  return 1
+
+def datosPrincipales(arc):
+ fp = open(arc, 'r')
+ ms = email.message_from_file(fp)
+ fp.close()
+ if len(ms.get_payload())>1:
+  res =(arc,ms['Subject'],ms['From'],ms['Date'],"mail-attachment")
+ else:
+  res =(ms['Subject'],ms['From'],ms['Date'],"")
+ return list(res)
+
+\end{lstlisting}
+\begin{itemize}
+\item Conexión POP3 (pop3.py).
+\end{itemize}
+
+\begin{lstlisting}[frame=single]
+import os
+import poplib
+import string
+import StringIO
+import email
+import hashlib
+import listarCorreos
+import threading
+from listarCorreos import listaCorreos
+# For guessing MIME type based on file name extension
+from email import encoders
+from email.message import Message
+from email.mime.audio import MIMEAudio
+from email.mime.base import MIMEBase
+from email.mime.image import MIMEImage
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
+
+#path="/home/jonnytest/Documentos/Usuarios/"
+class conexionPop3(threading.Thread):
+
+ def __init__(self, host, port, keyfile, certfile, user, passwd, 
+              ssl, delete, path):
+  threading.Thread.__init__(self)
+  self.host = host
+  self.port = port
+\end{lstlisting}
+\begin{lstlisting}[frame=single]
+  self.keyfile = keyfile
+  self.certfile = certfile
+  self.user = user
+  self.passwd = passwd
+  self.ssl = ssl
+  self.delete = delete
+  self.path = path
+  
+ def run(self):
+  print("abriendo conexion")
+  try:
+   if self.ssl:
+    M = poplib.POP3_SSL(host=self.host, port=self.port, 
+                        keyfile=self.keyfile, 
+                        certfile=self.certfile)
+   else:
+    M = poplib.POP3(host=self.host, port=self.port)
+   #M.set_debuglevel(2)
+  except poplib.error_proto, e:
+   print(e)
+   print("Error de conexion")
+   return 0;
+  success = False
+  print("Validando usuario")
+  while success == False:
+   lista={}
+   try:
+    M.user(self.user)
+    M.pass_(self.passwd)
+    numMesanjes = len(M.list()[1])
+    for id in range(1,(numMesanjes+1)):
+     resp, text, octets = M.retr(id)
+     text = string.join(text, "\n")
+     ms = email.message_from_string(text)
+     print(ms["Date"])
+     m = hashlib.md5()
+     m.update(ms["Date"])
+     aux = m.hexdigest()+".txt"
+     file=os.path.join(self.path,aux)
+     if os.path.exists(file):
+      if self.delete:
+       m.dele(id)
+     else:
+      composed = ms.as_string()
+      fp = open(file, 'w')
+      fp.write(composed)
+\end{lstlisting}
+\begin{lstlisting}[frame=single]
+      fp.close()
+      if self.delete:
+       m.dele(id)
+    listaCorreos(self.path)
+   except poplib.error_proto:
+    print("Invalid credentials")
+   else:
+    print("Successful login")
+    success = True
+   finally:
+    if M: 
+     M.quit()
+
+def validarPop(dat):
+ print("abriendo conexion")
+ try:
+  if dat["ssl"]:
+   M = poplib.POP3_SSL(host=dat["host"], port=dat["port"], 
+                       keyfile=dat["keyfile"], 
+                       certfile=dat["certfile"])
+  else:
+   M = poplib.POP3(host=dat["host"], port=dat["port"])
+  #M.set_debuglevel(2)
+ except Exception, e:
+  print(e)
+  print("Error de conexion")
+  return False
+ print("Validando usuario")
+ try:
+  M.user(dat["user"])
+  M.pass_(dat["passwd"])
+  assert M.noop() == '+OK'
+ except poplib.error_proto:
+  print("Invalid credentials")
+  return False
+ else:
+  print("Successful login")
+  success = True
+  return True
+ finally:
+  if M: M.quit()
+\end{lstlisting}
+\pagebreak
+\begin{itemize}
+\item Conexión con el servidor de CAPTCHAS (http.py).
+\end{itemize}
+
+\begin{lstlisting}[frame=single]
+import urllib
+import urllib2
+import re
+from poster.encode import multipart_encode
+from poster.streaminghttp import register_openers
+
+def httpEnvio(data):
+ register_openers()
+ datagen, headers = multipart_encode(data)
+ request = urllib2.Request(
+           "http://correocifrado.esy.es/AltaMensage.php", 
+           datagen, 
+           headers)
+ found=''
+ try:
+  for line in urllib2.urlopen(request):
+   print(line)
+   if line.find("name=\"respuesta\"") >= 0:
+    m = re.search('>([0-9]+)<',line)
+    if m:
+     found = m.group(1)
+     print(found)
+     if found=="5":
+      print("correcto")
+      return True
+     else:
+      return False
+    else:
+     return False
+ except Exception, e:
+  return False
+
+def httpDescarga(data,nomArc):
+ register_openers()
+ datagen, headers = multipart_encode(data)
+ print("peticion Server")
+ try:
+  request = urllib2.Request(
+            "http://correocifrado.esy.es/BusquedaArchivo.php", 
+            datagen, 
+            headers)
+  found=''
+  for line in urllib2.urlopen(request):
+   if line.find("name=\"respuesta\"") >= 0:
+    m = re.search('>(http.+zip)<',line)
+\end{lstlisting}
+\begin{lstlisting}[frame=single]
+    if m:
+     found = m.group(1)
+     print(found)
+     break
+    else:
+     return False
+     
+ except urllib2.HTTPError, e:
+  print e.code
+  return False
+  
+ except urllib2.URLError, e:
+  print e.args
+  return False
+  
+ try:
+  res=urllib2.urlopen(found)
+  arc=open(nomArc,"w")
+  arc.write(res.read())
+  arc.close()
+  return True
+  
+ except urllib2.HTTPError, e:
+  print e.code
+  return False
+  
+ except urllib2.URLError, e:
+  print e.args
+  return False
+
+def httpAltaUsu(data):
+ register_openers()
+ datagen, headers = multipart_encode(data)
+ request = urllib2.Request(
+           "http://correocifrado.esy.es/AltaUsuario.php", 
+           datagen, 
+           headers)
+
+ found=''
+ try:
+  for line in urllib2.urlopen(request):
+   print(line)
+   if line.find("name=\"respuesta\"") >= 0:
+    m = re.search('>([0-9]+)<',line)
+    if m:
+     found = m.group(1)
+\end{lstlisting}
+\begin{lstlisting}[frame=single]
+     print(found)
+     if found=="5":
+      print("correcto")
+      return True
+     else:
+      return False
+    else:
+     return False
+ except Exception, e:
+  return False
+\end{lstlisting}
+\begin{itemize}
+\item Envío de CAPTCHAS (envios.py).
+\end{itemize}
+
+\begin{lstlisting}[frame=single]
+import threading
+import hashlib
+import time
+import os
+import re
+import urllib2
+import email
+import SSE
+import http
+from subprocess import call
+from SSE import empaquetar
+#from empaquetar import empaquetar
+from subprocess import call
+
+from smtp2 import smtpEnpaquetar, smtpEnvio
+from listarCorreos import listaCorreos, listaCorreosView
+
+class envios(threading.Thread):
+ 
+ def __init__(self, correoDes, correoOri, asunto, body, 
+              attach, config):
+              
+  threading.Thread.__init__(self)
+  self.correoD = correoDes
+  self.correoO = correoOri
+  self.asunto = asunto
+  self.cuerpo = body
+  self.attachment = attach
+  self.configuracion=config
+ 
+ def run(self):
+  print("envios")
+  firma =self.firma()
+\end{lstlisting}
+\begin{lstlisting}[frame=single]
+  body,ruta = empaquetar(self.cuerpo,
+                         firma,
+                         self.configuracion["SSE"])
+  
+  body += "\n------SSE Cipher------\n"
+  body += firma
+  body += "\n------SSE Cipher------\n"
+  print(body)
+  mv=call("mv "+ruta+" ./CAPTCHAS/"+firma+".zip", shell=True)
+  ms=smtpEnpaquetar(self.correoD, 
+                    self.asunto, 
+                    self.correoO, 
+                    body, 
+                    self.attachment)
+                    
+  path=os.path.join("./Usuarios",self.correoO,
+                    "Salida")
+  print(ms.as_string())
+  print(os.path.join(path,firma+".txt"))
+  fp = open(os.path.join(path,firma+".txt"), 'w')
+  fp.write(ms.as_string())
+  fp.close()
+  print(path)
+  listaCorreos(path)
+  self.enviarCorreos(os.path.join("./Usuarios",self.correoO),
+                     "Salida")
+
+ def firma(self):
+  m = hashlib.md5()
+  localtime = time.asctime( time.localtime(time.time()) )
+  m.update(self.correoD+localtime+self.correoO)
+  return m.hexdigest()
+
+ def enviarCorreos(self,path,carpeta):
+  try:
+   response=urllib2.urlopen('http://correocifrado.esy.es',
+                            timeout=1)
+                            
+   print("Conexion al servidor")
+   salida=os.path.join(path,carpeta)
+   dic=listaCorreosView(salida)
+   print("Diccionario")
+   httpPar={}
+   httpPar["nombre"]=self.configuracion["nombre"]
+   httpPar["contrasena"]=self.configuracion["passwdSSE"]
+   for arc in dic.keys():
+\end{lstlisting}
+\begin{lstlisting}[frame=single]
+    try:
+     m = re.search('^(.+)\.txt$',arc)
+     firma = m.group(1)
+     print("Firma:   "+firma)
+     fp = open(os.path.join(salida,arc), 'r')
+     ms = email.message_from_file(fp)
+     fp.close()
+     httpPar["correo_electronico"]=ms["From"]
+     httpPar["correo_destino"]=ms["To"]
+     httpPar["firma"]=firma
+     httpPar["archivo"]=open(
+                        os.path.join("./CAPTCHAS",firma+".zip"))
+                        
+     print(os.path.join("./CAPTCHAS",firma+".zip"))
+     print(httpPar)
+     if http.httpEnvio(httpPar):
+      smtpEnvio(ms,self.configuracion["hostSmtp"], 
+                self.configuracion["portSmtp"],
+                self.configuracion["passwd"], 
+                False)
+                
+      origen = os.path.join(salida,arc)
+      destino =os.path.join(path,"Enviados",arc)
+      instruc = "mv "+origen+" "+destino
+      call(instruc, shell=True) 
+    except Exception, e:
+     print("Error al enviar Correo Electronico")
+   listaCorreos(os.path.join(path,"Enviados"))
+   listaCorreos(salida)
+  except urllib2.URLError as err: 
+   print("Sin conexion")
+#aux = envios("sdfg", "dsfg","asdfd","dfg",[])
+#aux.run()
+\end{lstlisting}
+\begin{itemize}
+\item Busqueda de CAPTCHAS (captchas.py).
+\end{itemize}
+
+\begin{lstlisting}[frame=single]
+import os
+from os import path
+import json
+import http
+from subprocess import call
+
+def listFiles(folder):
+ return [d for d in os.listdir(folder) 
+         if path.isfile(path.join(folder, d))]
+\end{lstlisting}
+\begin{lstlisting}[frame=single]
+def buscarCAPTCHAS(firma, correoDes, correoOri):
+ ruta=path.join("./CAPTCHAS",firma)
+ if path.exists(ruta):
+  return listarCaptchas(ruta)
+ elif path.exists(ruta+".zip"):
+  unzip="unzip "+ruta+".zip -d ./CAPTCHAS"
+  print(unzip)
+  unz=call(unzip, shell=True)
+  return listarCaptchas(ruta)
+ else:
+  datos={}
+  datos["correo_electronico"]=correoOri
+  datos["correo_destino"]=correoDes
+  datos["firma"]=firma
+  if http.httpDescarga(datos,ruta+".zip"):
+   unzip="unzip "+ruta+".zip -d ./CAPTCHAS"
+   print(unzip)
+   unz=call(unzip, shell=True)
+   rm=call("rm "+ruta+".zip", shell=True)
+   return listarCaptchas(ruta)
+  else:
+   return []
+
+#unzip archivo
+def listarCaptchas(ruta):
+ if path.exists(path.join(ruta,"lista.json")):
+  op=1
+  jsonCorreo = open(path.join(ruta,"lista.json"),"r")
+  jsonLectura = jsonCorreo.readline()
+  jsonCorreo.close()
+  archivos = json.loads(jsonLectura)
+  print(archivos)
+ else:
+  archivos = listFiles(ruta)
+  print("NumArchivos: "+str(len(archivos)))
+  print(archivos)
+  op=0
+ print([ruta,archivos,op])
+ return [ruta,archivos,op]
+\end{lstlisting}
+\pagebreak
+\begin{itemize}
+\item Listado de mensajes de correo electrónico (listarCorreos.py)
+\end{itemize}
+
+\begin{lstlisting}[frame=single]
+import json
+import os
+import email
+import quopri
+
+from os import path
+
+def listFiles(folder):
+ return [d for d in os.listdir(folder) 
+         if path.isfile(path.join(folder, d))]
+
+def listaCorreos(ruta):
+ print("listaCorreos")
+ archivos = listFiles(ruta)
+ disc={}
+ for archivo in archivos:
+  if archivo.find(".txt")>0:
+   fp = open(path.join(ruta,archivo), 'r')
+   ms = email.message_from_file(fp)
+   fp.close()
+   if len(ms.get_payload())>1:
+    disc[archivo]=(ms['Subject'],
+                   ms['From'],
+                   ms['Date'],
+                   "mail-attachment")
+   else:
+    disc[archivo]=(ms['Subject'],ms['From'],ms['Date'],"")
+ lista=open(path.join(ruta,"lista.json"),"w") 
+ lista.write(json.dumps(disc))
+ lista.close
+ print("Fin listaCorreos")
+
+def listaCorreosView(ruta):
+ print("listaCorreosView")
+ disc={}
+ jsonCorreo = open(os.path.join(ruta,"lista.json"),"r")
+ if jsonCorreo:
+  jsonLectura = jsonCorreo.readline()
+  jsonCorreo.close()
+  dic = json.loads(jsonLectura)
+  return dic
+ else:
+  return None
+ print("Fin listaCorreosView")
+\end{lstlisting}
+\begin{lstlisting}[frame=single]
+def contarCorreo(directorio):
+ print("contarCorreo")
+ if directorio==None:
+  return -1
+ for files in os.walk(directorio):
+  num=0
+  for file in files[2]:
+   if file.find(".txt")>0:
+    num+=1
+ print("Fin contarCorreo")
+ return num
+
+def body(ms):
+ print("body")
+ charset = ms.get_content_charset()
+ if ms.is_multipart():
+  for payload in ms.get_payload():
+   ctype=payload.get_content_type()
+   cdispo = str(payload.get('Content-Disposition'))
+   if payload.is_multipart():
+    return body(payload)
+    break
+   elif ctype=='text/plain' and 'attachment' not in cdispo:
+    charset = payload.get_content_charset()
+    aux = payload.get_payload(decode=True)
+    print("Fin body")
+    return aux.decode(charset)
+ else:
+  aux = ms.get_payload(decode=True)
+  print("Fin body")
+  return aux.decode(charset)
+\end{lstlisting}

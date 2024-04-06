@@ -1,0 +1,32 @@
+﻿GFX  23:21:57.046 ====================================================================================================
+GFX  23:21:57.046 Heroes of the Storm (B45228)
+GFX  23:21:57.046 
+GFX  23:21:57.046 Executable              C:\Program Files\Heroes of the Storm\Versions\Base45228\HeroesOfTheStorm.exe
+GFX  23:21:57.046 <Parameters>            -sso=1 -launch -uid heroes
+GFX  23:21:57.046 Parent Executable       \Device\HarddiskVolume2\Program Files\Heroes of the Storm\Support\HeroesSwitcher.exe
+GFX  23:21:57.046 Grandparent Executable  \Device\HarddiskVolume2\Program Files\Battle.net\Battle.net.7730\Battle.net.exe
+GFX  23:21:57.046 LocalTime               2016-08-14 23:21:57.046
+GFX  23:21:57.046 <ComputerUser>          Allan
+GFX  23:21:57.046 <ComputerName>          DESKTOP-9Q7F137
+GFX  23:21:57.046 <Exe.Architecture>      x86
+GFX  23:21:57.046 <Version>               19.4.45228
+GFX  23:21:57.046 <DataBuild>             B45228
+GFX  23:21:57.046 <CodeBranch>            branches/Heroes.19.mid
+GFX  23:21:57.046 <CodeRevision>          311057
+GFX  23:21:57.046 <Locale.Assets>         esMX
+GFX  23:21:57.046 <Locale.Data>           esMX
+GFX  23:21:57.046 <Locale.Install>        esMX
+GFX  23:21:57.046 <AccountCountry>        MEX
+GFX  23:21:57.046 ====================================================================================================
+GFX  23:21:57.045 DXGI: Available
+GFX  23:21:57.175 VRAM Override Variables: Dedicated [0MB] Shared [0MB]
+GFX  23:21:59.067 VRAM Override Variables: Dedicated [0MB] Shared [0MB]
+GFX  23:21:59.067 VRAM Override Variables: Dedicated [0MB] Shared [0MB]
+GFX  23:21:59.067 Initialized D3D11 GraphicsDevice: I (Driver Version: 0.0.0.0, VRAM: 64MB, SVMEM: 1466MB).
+GFX  23:21:59.164 Expanded VRAM to 512MB for Intel GPU
+GFX  23:21:59.164 Resource Cache Override Variable: 0MB
+GFX  23:21:59.164 Resource Cache: 460MB Win32
+GFX  23:21:59.164 Resource Cache Sound:  46MB 
+GFX  23:21:59.164 Resource Cache Common: 414MB 
+GFX  23:21:59.164 Resource Cache Texture: 972MB 
+GFX  23:22:03.761 PerfNotifiers initialized

@@ -1,0 +1,392 @@
+#include <iostream>
+
+using namespace std;
+
+double raiz(double n, double x){
+    double aux;
+    aux = (((n/x)+x)/2);
+    if(aux==x){
+        return x;
+    }else{
+        raiz(n,aux);
+    }
+}
+
+int main(){
+    double n, res;
+    cout.setf(ios::fixed);
+    cout.setf(ios::showpoint);
+    cout.precision(4);
+    cout<< "Hola, prodias darme un número para obtener su raiz cuadrada?? \n";
+    cin>>n;
+    res = raiz(n, 1);
+    cout<< "La raiz cuadrada de "<< n << " es: " << res << "\n";
+}
+
+
+***********************************************************************************************************************************
+#include <iostream>
+
+using namespace std;
+
+int main(){
+
+    double h, t;
+    cout << "introduce el tiempo que tardo la pelota de tenis en llegar al piso\n";
+
+    cin >> t;
+    h = ((9.81*(t*t))/2);
+    cout << "La altura del edificio desde donde arrojaste la pelota de tenis es: "<< h <<"\n";
+
+}
+
+************************************************************************************************************************************
+#include <iostream>
+
+ using namespace std;
+
+int main(){
+
+    int h,m,s;
+    int aux;
+    int tiempo;
+    cout << "introdusca el timepo en segundos";
+
+    cin >> tiempo;
+    h = tiempo/3600;
+    aux = tiempo%3600;
+    m = aux/60;
+    s = aux%60;
+    cout << "El valor "<< tiempo << " equivale a "<<h<<" horas, "<<m<<" minutos y "<<s<<" segundos.\n";
+}
+***************************************************************************************************************************************
+#ifndef TEMPERATURA_H
+#define TEMPERATURA_H
+
+class Temperatura
+{
+private:
+    float g_Kelvin;
+public:
+    Temperatura(float n);
+    void setTempKelvin(float a);
+    void impKelvin();
+    void setTempFahrenheint(float a);
+    void impFahrenheit();
+    void setTempCelsius(float a);
+    void impCelsius();
+};
+
+#endif // TEMPERATURA_H
+---------------------------------------------------------------------------------------------------------------------------------------
+#include "temperatura.h"
+#include <iostream>
+
+using namespace std;
+
+Temperatura::Temperatura(float n)
+{
+    this->g_Kelvin=n;
+}
+
+void Temperatura::impKelvin()
+{
+    cout<<"La temperatura en grados kelvin es: "<< this->g_Kelvin <<endl;
+}
+
+void Temperatura::setTempKelvin(float a)
+{
+    this->g_Kelvin=a;
+}
+
+void Temperatura::setTempFahrenheint(float a)
+{
+    this->g_Kelvin=(((a-32)/1.8000)+273.15);
+}
+
+void Temperatura::impFahrenheit()
+{
+    float aux=(((this->g_Kelvin)-273.15)*1.8000)+32.00;
+    cout<<"La temperatura en grados Fahrenheit es: "<< aux <<endl;
+}
+
+void Temperatura::setTempCelsius(float a)
+{
+    this->g_Kelvin=(a-273.15);
+}
+
+void Temperatura::impCelsius()
+{
+    float aux=((this->g_Kelvin)+273.15);
+    cout<<"La temperatura en grados Celsius es: "<< aux <<endl;
+}
+
+-------------------------------------------------------------------------------------------------------------------------------------
+#include <iostream>
+#include "temperatura.h"
+
+using namespace std;
+
+int main()
+{
+    Temperatura a(0);
+    int c;
+    float aux=0.0;
+    cout << "En que formato quiere introducir la temperatura? \n";
+    cout << "1.- Grados Kelvin \n";
+    cout << "2.- Grados Fahrenheit \n";
+    cout << "3.- Grados Celsius \n";
+    cin >> c;
+    switch(c)
+    {
+        case 1:
+            cout << "introdusca la temperatura en grados Kelvin: \n";
+            cin >> aux;
+            a.setTempKelvin(aux);
+            break;
+        case 2:
+            cout << "introdusca la temperatura en grados Fahrenheit: \n";
+            cin >> aux;
+            a.setTempFahrenheint(aux);
+            break;
+        case 3:
+            cout << "introdusca la temperatura en grados Celsius: \n";
+            cin >> aux;
+            a.setTempCelsius(aux);
+            break;
+    }
+
+    cout << "En que formato desea imprimir la temperatura \n";
+    cout << "1.- Grados Kelvin \n";
+    cout << "2.- Grados Fahrenheit \n";
+    cout << "3.- Grados Celsius \n";
+    cin >> c;
+
+    switch (c)
+    {
+
+        case 1:
+            a.impKelvin();
+            break;
+        case 2:
+            a.impFahrenheit();
+            break;
+        case 3:
+            a.impCelsius();
+            break;
+
+    }
+
+
+    cout  << endl;
+    return 0;
+}
+
+************************************************************************************************************************************
+#ifndef FRACCION_H
+#define FRACCION_H
+
+class fraccion
+{
+private:
+    int num;
+    int den;
+public:
+    fraccion();
+    double divicion();
+    void minimaExpre();
+    int euclides(int,int);
+    void darNum(int);
+    void darDen(int);
+};
+
+#endif // FRACCION_H
+------------------------------------------------------------------------------------------------------------------------------------
+#include "fraccion.h"
+#include <iostream>
+
+using namespace std;
+
+fraccion::fraccion()
+{
+    this->den=0;
+    this->num=0;
+}
+
+double fraccion::divicion()
+{
+    if (this->den!=0)
+    {
+        double aux=((double)(this->num))/((double)(this->den));
+        return aux;
+    }
+    else
+    {
+        return this->num;
+    }
+}
+
+void fraccion::minimaExpre()
+{
+    int div;
+    if (this->den!=0)
+    {
+        div = euclides(this->num,this->den);
+        cout << "La minima exprecion es:\n";
+        cout << (this->num/div) << "/" << (this->den/div) << "\n";
+    }
+    else
+    {
+        cout << "La minima exprecion es:\n";
+        cout << (this->num) << "/" << (0) << "\n";
+    }
+}
+
+int fraccion::euclides(int a, int b)
+{
+    int rew;
+    rew=a%b;
+    if(rew==0)
+    {
+        return b;
+    }
+    else
+    {
+        return euclides(b,rew);
+    }
+}
+
+void fraccion::darNum(int n)
+{
+    this->num=n;
+}
+
+void fraccion::darDen(int d)
+{
+    this->den=d;
+}
+--------------------------------------------------------------------------------------------------------------------------------------
+#include <iostream>
+#include "fraccion.h"
+
+using namespace std;
+
+int main()
+{
+    fraccion a;
+    int n,d;
+    double des;
+    cout << "introdusca el numerador\n";
+    cin >> n;
+    cout << "introdusca el denominador\n";
+    cin >> d;
+    a.darNum(n);
+    a.darDen(d);
+    cout << "tu fraccion es: " << n << "/" << d << "\n";
+    des=a.divicion();
+    cout << "Su forma decimal es:" << des << "\n";
+    a.minimaExpre();
+    cout  << endl;
+    return 0;
+}
+************************************************************************************************************************************
+
+************************************************************************************************************************************
+#ifndef PRIMO_H
+#define PRIMO_H
+
+class primo
+{
+private:
+    int numero;
+    bool indic;
+public:
+    primo();
+    void idicador(bool);
+    void numer(int);
+    bool dameIndic();
+    int dameNum();
+};
+
+#endif // PRIMO_H
+------------------------------------------------------------------------------------------------------------------------------------
+#include "primo.h"
+
+primo::primo()
+{
+    indic=true;
+    numero=1;
+}
+
+void primo::idicador(bool a)
+{
+    this->indic=a;
+}
+
+void primo::numer(int a)
+{
+    this->numero=a;
+}
+
+int primo::dameNum()
+{
+    return this->numero;
+}
+
+bool primo::dameIndic()
+{
+    return this->indic;
+}
+-----------------------------------------------------------------------------------------------------------------------------------
+#include <iostream>
+#include <vector>
+#include "primo.h"
+
+using namespace std;
+
+int main()
+{
+    int numeros, m,ot_aux;
+    vector<primo> arreglo;
+    primo aux;
+    cout << "Los primos menores a que numero desea conocer?\n";
+    cin >>numeros;
+    arreglo.reserve(numeros);
+    for(int i=2;i<=numeros;i++)
+    {
+            aux.numer(i);
+            arreglo.push_back(aux);
+            //cout << aux.dameNum();
+    }
+    vector<primo>::iterator x;
+    vector<primo>::iterator o_y;
+
+    for(x =arreglo.begin( ); x != arreglo.end( ); x++)
+    {
+
+            if(x->dameIndic())
+            {
+
+                m = x->dameNum();
+                for(o_y = x; o_y != arreglo.end(); o_y++)
+                {
+                    ot_aux = o_y->dameNum()%m;
+                    if(ot_aux == 0 && o_y->dameNum() != m)
+                    {
+                        o_y->idicador(false);
+                    }
+                }
+            }
+        }
+    cout << "Los primos son:";
+    for(x =arreglo.begin( ); x != arreglo.end( ); x++)
+    {
+        if(x->dameIndic())
+        {
+            cout << (x->dameNum()) << ",";
+        }
+    }
+    cout << "\n";
+    return 0;
+}
+

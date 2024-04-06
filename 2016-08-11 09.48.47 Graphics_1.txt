@@ -1,0 +1,32 @@
+﻿GFX  09:48:47.558 ====================================================================================================
+GFX  09:48:47.558 Heroes of the Storm (B45228)
+GFX  09:48:47.558 
+GFX  09:48:47.558 Executable              C:\Program Files\Heroes of the Storm\Versions\Base45228\HeroesOfTheStorm.exe
+GFX  09:48:47.558 <Parameters>            -launch -uid heroes
+GFX  09:48:47.558 Parent Executable       \Device\HarddiskVolume2\Program Files\Heroes of the Storm\Support\HeroesSwitcher.exe
+GFX  09:48:47.558 Grandparent Executable  \Device\HarddiskVolume2\Program Files\Battle.net\Battle.net.7730\Battle.net.exe
+GFX  09:48:47.558 LocalTime               2016-08-11 09:48:47.558
+GFX  09:48:47.558 <ComputerUser>          Allan
+GFX  09:48:47.558 <ComputerName>          DESKTOP-9Q7F137
+GFX  09:48:47.558 <Exe.Architecture>      x86
+GFX  09:48:47.558 <Version>               19.4.45228
+GFX  09:48:47.558 <DataBuild>             B45228
+GFX  09:48:47.558 <CodeBranch>            branches/Heroes.19.mid
+GFX  09:48:47.558 <CodeRevision>          311057
+GFX  09:48:47.558 <Locale.Assets>         esMX
+GFX  09:48:47.558 <Locale.Data>           esMX
+GFX  09:48:47.558 <Locale.Install>        esMX
+GFX  09:48:47.558 <AccountCountry>        MEX
+GFX  09:48:47.558 ====================================================================================================
+GFX  09:48:47.556 DXGI: Available
+GFX  09:48:47.624 VRAM Override Variables: Dedicated [0MB] Shared [0MB]
+GFX  09:48:49.220 VRAM Override Variables: Dedicated [0MB] Shared [0MB]
+GFX  09:48:49.220 VRAM Override Variables: Dedicated [0MB] Shared [0MB]
+GFX  09:48:49.220 Initialized D3D11 GraphicsDevice: I (Driver Version: 0.0.0.0, VRAM: 64MB, SVMEM: 1466MB).
+GFX  09:48:49.328 Expanded VRAM to 512MB for Intel GPU
+GFX  09:48:49.328 Resource Cache Override Variable: 0MB
+GFX  09:48:49.328 Resource Cache: 460MB Win32
+GFX  09:48:49.328 Resource Cache Sound:  46MB 
+GFX  09:48:49.329 Resource Cache Common: 414MB 
+GFX  09:48:49.329 Resource Cache Texture: 972MB 
+GFX  09:48:52.569 PerfNotifiers initialized

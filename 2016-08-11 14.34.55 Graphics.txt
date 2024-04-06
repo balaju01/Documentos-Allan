@@ -1,0 +1,32 @@
+﻿GFX  14:34:55.825 ====================================================================================================
+GFX  14:34:55.825 Heroes of the Storm (B45228)
+GFX  14:34:55.825 
+GFX  14:34:55.825 Executable              C:\Program Files\Heroes of the Storm\Versions\Base45228\HeroesOfTheStorm.exe
+GFX  14:34:55.825 <Parameters>            
+GFX  14:34:55.825 Parent Executable       \Device\HarddiskVolume2\Program Files\Heroes of the Storm\Support\HeroesSwitcher.exe
+GFX  14:34:55.825 Grandparent Executable  No grandparent process found
+GFX  14:34:55.825 LocalTime               2016-08-11 14:34:55.825
+GFX  14:34:55.825 <ComputerUser>          Allan
+GFX  14:34:55.825 <ComputerName>          DESKTOP-9Q7F137
+GFX  14:34:55.825 <Exe.Architecture>      x86
+GFX  14:34:55.825 <Version>               19.4.45228
+GFX  14:34:55.825 <DataBuild>             B45228
+GFX  14:34:55.825 <CodeBranch>            branches/Heroes.19.mid
+GFX  14:34:55.825 <CodeRevision>          311057
+GFX  14:34:55.825 <Locale.Assets>         esMX
+GFX  14:34:55.825 <Locale.Data>           esMX
+GFX  14:34:55.825 <Locale.Install>        esMX
+GFX  14:34:55.825 <AccountCountry>        MEX
+GFX  14:34:55.825 ====================================================================================================
+GFX  14:34:55.824 DXGI: Available
+GFX  14:34:55.987 VRAM Override Variables: Dedicated [0MB] Shared [0MB]
+GFX  14:34:57.752 VRAM Override Variables: Dedicated [0MB] Shared [0MB]
+GFX  14:34:57.752 VRAM Override Variables: Dedicated [0MB] Shared [0MB]
+GFX  14:34:57.752 Initialized D3D11 GraphicsDevice: I (Driver Version: 0.0.0.0, VRAM: 64MB, SVMEM: 1466MB).
+GFX  14:34:57.945 Expanded VRAM to 512MB for Intel GPU
+GFX  14:34:57.945 Resource Cache Override Variable: 0MB
+GFX  14:34:57.945 Resource Cache: 460MB Win32
+GFX  14:34:57.945 Resource Cache Sound:  46MB 
+GFX  14:34:57.945 Resource Cache Common: 414MB 
+GFX  14:34:57.945 Resource Cache Texture: 972MB 
+GFX  14:35:02.124 PerfNotifiers initialized

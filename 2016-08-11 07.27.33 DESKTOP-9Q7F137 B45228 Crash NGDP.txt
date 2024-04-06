@@ -1,0 +1,79 @@
+﻿DIAG_BUFFER_ERROR
+[20160811T06:00:46] {d30} WRN: Failed to get Windows HTTP Proxy: last error = 12180 host = blzddist1-a.akamaihd.net, path = /tpr/Hero-Live-a/data/71/f6/71f65e2ed6903c768378207a666763ea, proxy_host = , proxy_port = 0
+[20160811T06:01:01] {d30} WRN: socket timeout; h=1536 (187.141.1.58:80) ti=15000 tte=1
+
+DIAG_BUFFER_INFO
+[20160811T06:00:46] {d30} WRN: Failed to get Windows HTTP Proxy: last error = 12180 host = blzddist1-a.akamaihd.net, path = /tpr/Hero-Live-a/data/71/f6/71f65e2ed6903c768378207a666763ea, proxy_host = , proxy_port = 0
+[20160811T06:01:01] {d30} WRN: socket timeout; h=1536 (187.141.1.58:80) ti=15000 tte=1
+[20160811T06:04:45] {d30} INF: Add new Host addr=187.141.1.56, port=80, name=blzddist1-a.akamaihd.net, proxy=false
+[20160811T06:04:45] {d30} INF: Add new Host addr=187.141.1.18, port=80, name=blzddist1-a.akamaihd.net, proxy=false
+[20160811T06:04:45] {d30} INF: Add new Host addr=187.141.1.50, port=80, name=blzddist1-a.akamaihd.net, proxy=false
+[20160811T06:04:45] {d30} INF: Add new Host addr=187.141.1.18, port=80, name=blzddist2-a.akamaihd.net, proxy=false
+[20160811T06:04:45] {d30} INF: Add new Host addr=187.141.1.50, port=80, name=blzddist2-a.akamaihd.net, proxy=false
+[20160811T06:04:45] {d30} INF: Add new Host addr=187.141.1.56, port=80, name=blzddist2-a.akamaihd.net, proxy=false
+[20160811T06:08:45] {d30} INF: Add new Host addr=201.144.215.64, port=80, name=blzddist1-a.akamaihd.net, proxy=false
+[20160811T06:08:45] {d30} INF: Add new Host addr=201.144.215.59, port=80, name=blzddist1-a.akamaihd.net, proxy=false
+[20160811T06:08:45] {d30} INF: Add new Host addr=201.144.215.64, port=80, name=blzddist2-a.akamaihd.net, proxy=false
+[20160811T06:08:45] {d30} INF: Add new Host addr=201.144.215.59, port=80, name=blzddist2-a.akamaihd.net, proxy=false
+[20160811T06:22:46] {d30} INF: Add new Host addr=187.141.1.16, port=80, name=blzddist1-a.akamaihd.net, proxy=false
+[20160811T06:22:46] {d30} INF: Add new Host addr=187.141.1.19, port=80, name=blzddist1-a.akamaihd.net, proxy=false
+[20160811T06:22:46] {d30} INF: Add new Host addr=187.141.1.19, port=80, name=blzddist2-a.akamaihd.net, proxy=false
+[20160811T06:22:46] {d30} INF: Add new Host addr=187.141.1.16, port=80, name=blzddist2-a.akamaihd.net, proxy=false
+[20160811T06:26:46] {d30} INF: Add new Host addr=187.141.1.8, port=80, name=blzddist1-a.akamaihd.net, proxy=false
+[20160811T06:26:46] {d30} INF: Add new Host addr=187.141.1.11, port=80, name=blzddist1-a.akamaihd.net, proxy=false
+[20160811T06:26:46] {d30} INF: Add new Host addr=187.141.1.11, port=80, name=blzddist2-a.akamaihd.net, proxy=false
+[20160811T06:28:46] {d30} INF: Add new Host addr=187.141.1.8, port=80, name=blzddist2-a.akamaihd.net, proxy=false
+[20160811T06:34:46] {d30} INF: Add new Host addr=189.254.81.248, port=80, name=blzddist1-a.akamaihd.net, proxy=false
+[20160811T06:34:46] {d30} INF: Add new Host addr=189.254.81.242, port=80, name=blzddist1-a.akamaihd.net, proxy=false
+[20160811T06:34:46] {d30} INF: Add new Host addr=189.254.81.242, port=80, name=blzddist2-a.akamaihd.net, proxy=false
+[20160811T06:34:46] {d30} INF: Add new Host addr=189.254.81.248, port=80, name=blzddist2-a.akamaihd.net, proxy=false
+[20160811T06:38:46] {d30} INF: Add new Host addr=189.254.81.27, port=80, name=blzddist1-a.akamaihd.net, proxy=false
+[20160811T06:40:46] {d30} INF: Add new Host addr=189.254.81.27, port=80, name=blzddist2-a.akamaihd.net, proxy=false
+
+DIAG_BUFFER_ALL
+[20160811T06:22:46] {d30} INF: Add new Host addr=187.141.1.19, port=80, name=blzddist1-a.akamaihd.net, proxy=false
+[20160811T06:22:46] {d30} INF: Add new Host addr=187.141.1.19, port=80, name=blzddist2-a.akamaihd.net, proxy=false
+[20160811T06:22:46] {d30} INF: Add new Host addr=187.141.1.16, port=80, name=blzddist2-a.akamaihd.net, proxy=false
+[20160811T06:22:46] {d30} debug: Clearing content fault counter for all hosts
+[20160811T06:24:46] {d30} debug: Clearing content fault counter for all hosts
+[20160811T06:26:46] {d30} INF: Add new Host addr=187.141.1.8, port=80, name=blzddist1-a.akamaihd.net, proxy=false
+[20160811T06:26:46] {d30} INF: Add new Host addr=187.141.1.11, port=80, name=blzddist1-a.akamaihd.net, proxy=false
+[20160811T06:26:46] {d30} INF: Add new Host addr=187.141.1.11, port=80, name=blzddist2-a.akamaihd.net, proxy=false
+[20160811T06:26:46] {d30} debug: Clearing content fault counter for all hosts
+[20160811T06:28:46] {d30} INF: Add new Host addr=187.141.1.8, port=80, name=blzddist2-a.akamaihd.net, proxy=false
+[20160811T06:28:46] {d30} debug: Clearing content fault counter for all hosts
+[20160811T06:30:46] {d30} debug: Clearing content fault counter for all hosts
+[20160811T06:32:46] {d30} debug: Clearing content fault counter for all hosts
+[20160811T06:34:46] {d30} INF: Add new Host addr=189.254.81.248, port=80, name=blzddist1-a.akamaihd.net, proxy=false
+[20160811T06:34:46] {d30} INF: Add new Host addr=189.254.81.242, port=80, name=blzddist1-a.akamaihd.net, proxy=false
+[20160811T06:34:46] {d30} INF: Add new Host addr=189.254.81.242, port=80, name=blzddist2-a.akamaihd.net, proxy=false
+[20160811T06:34:46] {d30} INF: Add new Host addr=189.254.81.248, port=80, name=blzddist2-a.akamaihd.net, proxy=false
+[20160811T06:34:46] {d30} debug: Clearing content fault counter for all hosts
+[20160811T06:36:46] {d30} debug: Clearing content fault counter for all hosts
+[20160811T06:38:46] {d30} INF: Add new Host addr=189.254.81.27, port=80, name=blzddist1-a.akamaihd.net, proxy=false
+[20160811T06:38:46] {d30} debug: Clearing content fault counter for all hosts
+[20160811T06:40:46] {d30} INF: Add new Host addr=189.254.81.27, port=80, name=blzddist2-a.akamaihd.net, proxy=false
+[20160811T06:40:46] {d30} debug: Clearing content fault counter for all hosts
+[20160811T06:42:47] {d30} debug: Clearing content fault counter for all hosts
+[20160811T06:44:47] {d30} debug: Clearing content fault counter for all hosts
+[20160811T06:46:47] {d30} debug: Clearing content fault counter for all hosts
+[20160811T06:48:47] {d30} debug: Clearing content fault counter for all hosts
+[20160811T06:50:47] {d30} debug: Clearing content fault counter for all hosts
+[20160811T06:52:47] {d30} debug: Clearing content fault counter for all hosts
+[20160811T06:54:47] {d30} debug: Clearing content fault counter for all hosts
+[20160811T06:56:47] {d30} debug: Clearing content fault counter for all hosts
+[20160811T06:58:47] {d30} debug: Clearing content fault counter for all hosts
+[20160811T07:00:47] {d30} debug: Clearing content fault counter for all hosts
+[20160811T07:02:48] {d30} debug: Clearing content fault counter for all hosts
+[20160811T07:04:48] {d30} debug: Clearing content fault counter for all hosts
+[20160811T07:06:48] {d30} debug: Clearing content fault counter for all hosts
+[20160811T07:08:48] {d30} debug: Clearing content fault counter for all hosts
+[20160811T07:10:48] {d30} debug: Clearing content fault counter for all hosts
+[20160811T07:12:48] {d30} debug: Clearing content fault counter for all hosts
+[20160811T07:14:48] {d30} debug: Clearing content fault counter for all hosts
+[20160811T07:16:48] {d30} debug: Clearing content fault counter for all hosts
+[20160811T07:18:48] {d30} debug: Clearing content fault counter for all hosts
+[20160811T07:20:48] {d30} debug: Clearing content fault counter for all hosts
+[20160811T07:22:49] {d30} debug: Clearing content fault counter for all hosts
+[20160811T07:24:49] {d30} debug: Clearing content fault counter for all hosts
+[20160811T07:26:50] {d30} debug: Clearing content fault counter for all hosts

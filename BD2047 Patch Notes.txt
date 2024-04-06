@@ -1,0 +1,67 @@
+Cracked by BOX! (3.0A)
+
+This TR is dedicated to all the BidDefender fans. You can use it on AV, IS, & TS. 
+It converts a trial version into a commercial version and extends the license to 
+the year 2047. It was tested on BitDefender 2010 {13.0.15} using XP/Vista/Win7 (x86 & x64). 
+
+Go here to download the latest version of BitDefender
+http://www.bitdefender.com/site/Downloads/
+http://www.bitdefenderthailand.com/index.php?option=com_docman&task=cat_view&gid=30&Itemid=111&lang=en
+
+
+ 
+Instructions:
+
+For BitDefender 2010:
+*********************
+
+1. Install BitDefender2010 but {DO NOT RESTART YOUR COMPUTER}. 
+   (If already installed, then see Note A below.)
+
+2. Execute the TR and restart your computer.
+
+3. Adjust the BD settings, update, and do a full scan of your computer.
+
+4. To remove the TR, just click the <Uninstall>. The uninstall will convert BD back to 
+   a 30-day trial version. (You should uninstall the TR and restart the computer before 
+   uninstalling the BitDefender itself. IF you don't, BD will generate a bug report.)
+
+
+
+
+For BitDefender 2009:
+*********************
+
+1. Install BitDefender2009, restart the PC, and make sure that it works normally 
+   (update and do a full scan).
+
+2. Execute the TR and restart your computer.
+
+3. Update and do a full scan of your computer.
+
+4. To remove the TR, just click the <Uninstall>. The uninstall will convert the BD back to 
+   a 30-day trial version. (You should uninstall the TR and restart the computer before 
+   uninstalling the BitDefender itself. IF you don't, BD will generate a bug report.)
+
+Note A: If BD2010 is already installed, then you must install in TR in Windows Safe Mode (F8) 
+        using an Administrator account or uninstall BD then repeat the steps above.
+
+NOTE B: When using the TR with Total Security, the Online Backup feature does not work because 
+        you don't have an account with BD.
+
+
+
+
+To go into Safe Mode:
+********************* 
+
+- Press (F8) while (re-)starting the computer. Select Safe Mode to continue.
+
+Or:
+ 
+1- Go to Start -> Run and type msconfig, click OK. 
+2- In the System Configuration Utility, on the BOOT.INI tab, check /SAFEBOOT 
+3- Click OK. 
+4- When asked to restart the computer, click Restart.
+
+To turn back to Normal Mode repeat the above 4 steps and just uncheck /SAFEBOOT
