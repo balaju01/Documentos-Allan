@@ -1,0 +1,24 @@
+Datos tecnicos sobre :Windows 7 Bloody Edition 2011
+Idioma:Ingles, se incluye MUI espanol para 32bits, Build 7600 y 7601
+Formato:Iso DVD5 cortado en Rar (requiere Winrar)
+Tamano de la descarga Iso: 2.52 Gb (5 Links de 500Mb y 1 Link de 481Mb )
+Version: 2011 incluye para instalar Service Pack 1 Version RTM FINAL ENERO 2011 
+build 7601.17514.101119-1850 para 32 y 64bits
+
+ESTE MEGAPACK INCLUYE : (al descomprimir todos los Rar)
+-Windows 7 Bloody Edition 2011 x86 (Ingles) (Iso de 2.52 Gb)
+-Service Pack 1 Version RTM FINAL ENERO 2011 build 7601.17514.101119-1850 para 32 y 64bits (Iso de 1.44Gb)
+-MUI (Multilingual User Interface, Interfaz de Usuario Multilenguaje) para Espanol 32 y 64Bits para Build 7600
+-MUI (Multilingual User Interface, Interfaz de Usuario Multilenguaje) para Espanol 32 y 64Bits para Build 7601
+-Instrucciones PASO A PASO para realizar la Instalacion del MUI Espanol
+-Activador e Intrucciones (Windows Loader 1.9,6 by Daz)
+
+
+http://www.fileserve.com/file/k4Ds7rG/w7boodnx86_eldoctornorton.part1.rar
+http://www.fileserve.com/file/ZARyVEE/w7boodnx86_eldoctornorton.part2.rar
+http://www.fileserve.com/file/N5SzZsw/w7boodnx86_eldoctornorton.part3.rar
+http://www.fileserve.com/file/2gnAGj2/w7boodnx86_eldoctornorton.part4.rar
+http://www.fileserve.com/file/Y4C3WWn/w7boodnx86_eldoctornorton.part5.rar
+http://www.fileserve.com/file/G3cqKtx/w7boodnx86_eldoctornorton.part6.rar
+
+pass: eldoctornorton

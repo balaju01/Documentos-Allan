@@ -1,0 +1,19 @@
+Datos tecnicos sobre Windows 7 x86 maximum SP1v.178 32BITS 
+IdiomaRuso, Italiano, Ingles ,Espanol, Aleman,
+FormatoISO en 1 Link solamente
+Tamano de la descarga Iso2.76Gb (1 LINK)
+Version Incluye SERVICE PACK INTEGRADO 1 v178 RTM7601.16562 32 BITS Ultimate,
+
+CONSIDERACIONES IMPORTANTES
+La Instalacion se realizara en Ingles.No realizar el cambio de idioma por Windows Update,
+ ya que se puede perder la Activacion,y asi WGA lo reconocera como NO ORIGINAL, se incluye
+ el MUI para cambiar a Espanol, el cual ya esta integrado a la instalacion. Tambien se 
+incluye Medicina e Instrucciones para activacion y poder actualizar de por vida.Tampoco 
+no de debe instalar el Microsoft Security Essentials ya que elimira por completo cualquier 
+activacion y se volvera a la version de 30 dias
+
+1 LINK FILESERVE
+httpwww.fileserve.comfileensHrqa
+
+MEDICINA E INTRUCCIONES
+httpbitshare.comfiles3nsxcyogmedicina32y64bits_07012011.rar.html

@@ -1,0 +1,33 @@
+Datos tecnicos sobre :Windows 7 x86 maximo SP1v.178 32BITS 
+Idioma:Ruso, Italiano, Ingles ,Espanol, Aleman,
+Formato:Iso cortado en Rar (requiere Winrar)
+Tamano de la descarga Iso:2.76Gb (9 Links de 500Mb y 1 Link de 351Mb)
+Version: Incluye SERVICE PACK INTEGRADO 1 v178 RTM7601.1656232 BITS Ultimate,
+
+CONSIDERACIONES IMPORTANTES:
+La Instalacion se realizara en Ingles.No realizar el cambio de idioma por Windows Update, ya que se puede perder la Activacion,y asi WGA lo reconocera como NO ORIGINAL, se incluye el MUI para cambiar a Espanol, el cual ya esta integrado a la instalacion. Tambien se incluye Medicina e Instrucciones para activacion y poder actualizar de por vida.Tampoco no de debe instalar el Microsoft Security Essentials ya que elimira por completo cualquier activacion y se volvera a la version de 30 dias
+
+LINKS FILESERVE
+http://www.fileserve.com/file/ebYDwYu
+http://www.fileserve.com/file/VdfQkjs
+http://www.fileserve.com/file/QvqSXzW
+http://www.fileserve.com/file/rJMYCsx
+http://www.fileserve.com/file/MxmRjBy
+http://www.fileserve.com/file/whbXMhn
+http://www.fileserve.com/file/mZC9ckD
+http://www.fileserve.com/file/7FwuSy4
+
+LINKS BITSHARE
+http://bitshare.com/files/1eczm799/w7x86_eldoctornorton.part1.rar.html
+http://bitshare.com/files/agvg00j7/w7x86_eldoctornorton.part2.rar.html
+http://bitshare.com/files/zzfo0snu/w7x86_eldoctornorton.part3.rar.html
+http://bitshare.com/files/57lo746e/w7x86_eldoctornorton.part4.rar.html
+http://bitshare.com/files/f7goc9p4/w7x86_eldoctornorton.part5.rar.html
+http://bitshare.com/files/9dw3f8m1/w7x86_eldoctornorton.part6.rar.html
+http://bitshare.com/files/o75919vx/w7x86_eldoctornorton.part7.rar.html
+http://bitshare.com/files/6p3iodmp/w7x86_eldoctornorton.part8.rar.html
+
+MEDICINA E INSTRUCCIONES:
+http://bitshare.com/files/3nsxcyog/medicina32y64bits_07012011.rar.html
+
+PASSWORD PARA DESCOMPRIMIR: eldoctornorton

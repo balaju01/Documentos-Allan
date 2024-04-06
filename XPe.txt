@@ -1,0 +1,61 @@
+**
+**
+**  VIA Rhine Family Fast Ethernet Adapter
+**
+**  Driver Component for Windows XP Embedded
+**
+**  v3.54   Nov, 2005
+**
+**
+
+Release note
+============
+
+    This component is adapted from logo'ed driver for Windows XP for the
+    VIA Rhine Family Fast Ethernet Adapter.
+
+    VIA provides the user with this sample component implementation,
+    to ease development and test effort. The user, however,
+    is advised to obtain the latest available driver and author
+    his or her own components.
+
+
+File description
+================
+
+    FETND5BV.SYS        The NDIS5 driver for Windows XP Embedded.
+    FETNDIS.INF         The installation information file.
+    VUINS32.DLL         The Un-installer for Windows XP Embedded.
+    NETVT.CAT           CAT file for this driver.
+    FETNDIS.SLD         Driver component description file.
+    XPE.TXT             This file.
+
+
+Import the driver component
+===========================
+
+    1.Component Database Manager
+    (1) Open Component Database Manager under Microsoft Windows
+        Embedded Studio.
+    (2) Click on the "Database", "Import...", and then "..." buttons.
+        Navigate to directory of this driver component and then choose
+        the .SLD file. Click on the "Import" and then "Close" buttons
+        to close the dialog.
+    (3) Close Component Database Manager.
+
+    2.Target Designer
+    (1) In Tools -> Options... -> Tab "Build" -> Extra Files Folder,
+        fill the directory of this driver component.
+
+
+
+Note
+====
+
+    1. In Setup Option "Flow Control":
+       When setting to Hardware Default(Auto), the flow control setting is 
+       according to the auto-negotiation result based on PHY hardware default
+       values. However, when setting to other values(Disable, Enable), driver 
+       will just disable or enable flow control ability according to your setting.
+
+

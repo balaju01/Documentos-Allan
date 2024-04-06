@@ -1,0 +1,18 @@
+Datos tecnicos sobre: Windows 7 & Server 2008 R2 SP1 RTM FiNAL
+Idioma: English, French, German, Japanese, Spanish
+Formato: ISO 
+Tamano de la descarga:1.44 Gb (32 bits) (2 Links de 500Mb y 1 Link de 475)
+Version: (32bits/x86) 7600 RTM build 7601.17514.101119-1850
+ES UN ISO, DEBE EMULAR LA ISO CON DAEMON TOOLS O ALCOHOL 120 E INSTALAR EL SP
+
+LINKS FILESERVE
+http://www.fileserve.com/file/R99C7Rq
+http://www.fileserve.com/file/uK8cMzj
+http://www.fileserve.com/file/Jt5x62a
+
+LINKS BITSHARE
+http://bitshare.com/files/8lu8cg99/win7sp17601175141011191850.part1.rar.html
+http://bitshare.com/files/gcnso117/win7sp17601175141011191850.part2.rar.html
+http://bitshare.com/files/fay2gifk/win7sp17601175141011191850.part3.rar.html
+
+PASSWORD PARA DESCOMPRIMIR: eldoctornorton
