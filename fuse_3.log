@@ -1,0 +1,21 @@
+Running: C:\Xilinx\14.6\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Users/jonnyTest/sumador4bits/main_isim_beh.exe -prj C:/Users/jonnyTest/sumador4bits/main_beh.prj work.main 
+ISim P.68d (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/jonnyTest/sumador4bits/sumaC.vhd" into library work
+Parsing VHDL file "C:/Users/jonnyTest/sumador4bits/pack.vhd" into library work
+Parsing VHDL file "C:/Users/jonnyTest/sumador4bits/main.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package pack
+Compiling architecture arq_sumac of entity sumaC [sumac_default]
+Compiling architecture behavioral of entity main
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 6 VHDL Units
+Built simulation executable C:/Users/jonnyTest/sumador4bits/main_isim_beh.exe
+Fuse Memory Usage: 28836 KB
+Fuse CPU Usage: 670 ms

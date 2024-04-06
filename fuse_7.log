@@ -1,0 +1,16 @@
+Running: C:\Xilinx\13.1\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador_isim_beh.exe -prj C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador_beh.prj work.sumador 
+ISim O.40d (signature 0xc4ca3437)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Using precompiled package standard from library std
+Using precompiled package std_logic_1164 from library ieee
+Compiling architecture behavioral of entity sumador
+Time Resolution for simulation is 1ps.
+Compiled 3 VHDL Units
+Built simulation executable C:/Users/Nancy/Documents/Xilinx/2doParcial/sumador_ac_ant/sumador_isim_beh.exe
+Fuse Memory Usage: 17204 KB
+Fuse CPU Usage: 233 ms
