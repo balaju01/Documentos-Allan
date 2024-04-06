@@ -1,0 +1,25 @@
+Return-Path: <jhenny@cifrado.correo.net>
+X-Original-To: jonnytest@localhost
+Delivered-To: jonnytest@localhost
+Received: from localhost (localhost [127.0.0.1])
+	by jonnytest (Postfix) with ESMTP id B15C91AC2304
+	for <jonnytest@localhost>; Thu,  1 Oct 2015 20:53:24 -0500 (CDT)
+Received: from ::1
+        (SquirrelMail authenticated user jhenny)
+        by localhost with HTTP;
+        Thu, 1 Oct 2015 20:53:24 -0500
+Message-ID: <1e94d5eed7d73d041141ee469722efab.squirrel@localhost>
+Date: Thu, 1 Oct 2015 20:53:24 -0500
+Subject: prueba
+From: jhenny@cifrado.correo.net
+To: jonnytest@localhost
+User-Agent: SquirrelMail/1.4.23 [SVN]
+MIME-Version: 1.0
+Content-Type: text/plain;charset=iso-8859-1
+Content-Transfer-Encoding: 8bit
+X-Priority: 3 (Normal)
+Importance: Normal
+
+prueba
+
+           

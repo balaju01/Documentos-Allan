@@ -1,0 +1,12 @@
+2.6 BETA 1
+-Office 2016 Support (WARNING: Preliminary - Assumed to work, but may fail if unexpected changes/assumptions about Office install are introduced by Office 2016 RTM).
+-Windows 10 Support.
+-Added Licensing State message "Store License". Occurs when getting the free permanent Windows 10 Upgrade.
+-Disable KMS Online Ticket Validation (Windows 8.1+) when activating
+-Disable Windows Vista Rearm Count (OS doesn't support it)
+-Fixed Backup of Windows Vista due to lack of cache.dat
+-Fixed KMS Server Service crash on XP due to corrupt HWID
+-Improved TAP Drivers
+-Improved WinDivert Uninstall
+-Remove Trial and Grace Keys when using EZ-Activator.
+-Support for KMS PID with 5 Digit Build Number (EX: 10240).
