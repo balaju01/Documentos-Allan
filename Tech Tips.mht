@@ -1,0 +1,275 @@
+MIME-Version: 1.0
+Content-Location: file:///C:/927BB273/TechTips.htm
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset="us-ascii"
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml"
+xmlns:o=3D"urn:schemas-microsoft-com:office:office"
+xmlns:w=3D"urn:schemas-microsoft-com:office:word"
+xmlns=3D"http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=3DContent-Type content=3D"text/html; charset=3Dus-ascii">
+<meta name=3DProgId content=3DWord.Document>
+<meta name=3DGenerator content=3D"Microsoft Word 11">
+<meta name=3DOriginator content=3D"Microsoft Word 11">
+<link rel=3DFile-List href=3D"TechTips_archivos/filelist.xml">
+<title>Tech Tips - Home Setup of Your Acoustic Guitar </title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>PCChips</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>PCChips</o:LastAuthor>
+  <o:Revision>1</o:Revision>
+  <o:TotalTime>1</o:TotalTime>
+  <o:Created>2008-06-08T05:45:00Z</o:Created>
+  <o:LastSaved>2008-06-08T05:46:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>1033</o:Words>
+  <o:Characters>5686</o:Characters>
+  <o:Company>PCChips</o:Company>
+  <o:Lines>47</o:Lines>
+  <o:Paragraphs>13</o:Paragraphs>
+  <o:CharactersWithSpaces>6706</o:CharactersWithSpaces>
+  <o:Version>11.9999</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:HyphenationZone>21</w:HyphenationZone>
+  <w:PunctuationKerning/>
+  <w:DrawingGridHorizontalSpacing>9,35 pto</w:DrawingGridHorizontalSpacing>
+  <w:DisplayVerticalDrawingGridEvery>2</w:DisplayVerticalDrawingGridEvery>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState=3D"false" LatentStyleCount=3D"156">
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:536871559 0 0 0 415 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:1.0cm 2.0cm 2.0cm 1.0cm;
+	mso-header-margin:35.45pt;
+	mso-footer-margin:35.45pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Tabla normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]-->
+</head>
+
+<body lang=3DES style=3D'tab-interval:35.4pt'>
+
+<div class=3DSection1>
+
+<p class=3DMsoNormal><b><span style=3D'font-size:10.0pt;font-family:Verdana=
+'>Tech
+Tips - Home Setup of Your Acoustic Guitar</span></b><span style=3D'font-siz=
+e:
+10.0pt;font-family:Verdana'> <br>
+<i>By Dr. Spot</i> <br>
+<br>
+You've just spent the holidays penned up with the relatives in the cold of
+winter, bored out of your mind. Turns out some cousins have a banjo and a
+washboard. They're no great shakes, but they got music in their veins. A jam
+session sounds a whole lot better than listening to your aunt talk about her
+irregularity. Diligent inquiry turns up an old flattop from the back of a
+closet. It looks OK but plays like a dog. With a few clues and a little cou=
+rage
+you could get that thing up and running. Here are the clues. <br>
+<br>
+<b>Don't Expect Miracles</b> <br>
+In general, setting up an acoustic guitar is a trade-off between sound and
+playability. By and large, big strings and high action make better sound and
+worse playability. Don't start with the delusion that you're going to set t=
+he
+thing up to play like a cherry Strat. It ain't gonna happen. Slap a set of =
+.10s
+on that big ol' flattop and you're going to have problems. The head will pu=
+ll
+back, the strings will be too close to the neck, and you'll have buzz city.=
+ So
+be reasonable. Light acoustic strings&#8212;say .12 to .54&#8212;are about =
+the
+lightest strings you can go with and still get a decent tone out of your
+soundboard. Remember, all of your sound is coming from the mechanical actio=
+n of
+those strings against that board. You need some tension and some
+leverage&#8212;you need decent-sized strings. <br>
+<br>
+<b>Check For Big Problems</b> <br>
+Tune the guitar to pitch, leave your hand off the neck, and do some hard
+strumming on the open strings to listen for buzzes. If the strings are buzz=
+ing
+hard against the frets, you've got trouble. Either some idiot has cranked t=
+he
+truss rod way too hard (and probably damaged something inside) or the neck =
+is
+majorly warped. You can try loosening the truss rod, but chances are you'll
+have to take it to a pro (where the prognosis probably won't be favorable).=
+ <br>
+<br>
+If something is buzzing around the headstock, be sure it's not just an uncut
+string, then make sure the nuts that hold the tuners on and the screws on t=
+he
+back are tight. If there's a buzz on the soundboard, it's either a foreign
+object inside, a loose pickguard, or&#8212;more likely&#8212;a loose or cra=
+cked
+brace inside. If you can find the problem with a compact mirror and a
+flashlight, you may be able to glue it up yourself with wood glue or even t=
+he
+gel type of cyanoacrylate (Super Glue). The advantage of the cyanoacrylate =
+is
+that you can hold the thing tight till it dries (but be careful not to glue
+your fingers to the inside of your guitar). If in doubt, take it to a pro. =
+<br>
+<br>
+<b>Straighten The Neck</b> <br>
+The truss rod is located inside the neck in a groove beneath the fretboard.=
+ It
+runs the length of the neck and when you tighten it you pull the headstock =
+back
+causing the middle of the fretboard to come closer to the strings. In most
+acoustic guitars you'll find the part of the truss rod you're after inside =
+the
+sound hole just beneath the end of the fretboard. You'll need the right siz=
+e of
+Allen wrench to adjust it. <br>
+<br>
+Point the head of the guitar away from you with the body at eye level and s=
+ight
+down the fretboard. Ideally you will see no curvature to the fretboard at a=
+ll.
+If there's a bow so that the middle of the fretboard is visibly farther away
+from the strings than the ends, tighten the truss rod in 1/4 turns clockwise
+until the neck looks straight. If there are obvious twists or bumps in the
+fretboard, you may have to take it to a pro. Whatever you do, DON'T start
+filing frets, you'll just get yourself into a world of trouble. <br>
+<br>
+If the neck is bowed so that the middle of the fretboard is closer to the
+strings than the ends, try loosening the truss rod. If this doesn't make an
+immediately visible change, you're probably out of luck. In any event DON'T
+LOOSEN OR TIGHTEN THE TRUSS ROD MORE THAN A COMPLETE TURN! If you break som=
+ething
+in there, your guitar will need major work. <br>
+<br>
+To check your neck adjustment, press the low E string down at both the first
+and last frets. There should be a tiny gap&#8212;around a 64th of an
+inch&#8212;between the string and the middle frets. Repeat the same thing on
+the high E string. This should give you a clue if you're in the ballpark and
+also reveal any special problems. Don't be terribly alarmed if the gap is
+somewhat bigger; it might be because the fretboard takes a bit of a turn wh=
+ere
+it meets the top of the guitar. <br>
+<br>
+<b>Adjust The Saddle</b> <br>
+Sighting down the neck again, see how far you can press your high E string =
+down
+toward the body and still have clearance off the fretboard. If you can go m=
+ore
+than an eighth of an inch or so, and the neck looks straight, you can proba=
+bly
+bring the action down a bit without ill effect. But if it plays just fine f=
+or
+you, leave it alone. A little room for the strings to move is a good thing.=
+ As
+a general guide, you want the high E string about 5/64ths of an inch off the
+12th fret and the low E about 7/64ths. But use your own judgement. If it bu=
+zzes
+too much, bring it up. If it's too hard to play, bring it down. <br>
+<br>
+The piece of hard white plastic that inserts in the little slot on the brid=
+ge
+of your guitar is called the saddle or the bridge nut. Don't do anything to=
+ the
+top of this, you'll only screw it up. To bring the action up, you'll need a
+shim under the bridge nut. You can make one of these out of any number of t=
+hin,
+flat substances. I usually use the top of a butter tub. With a razor-type
+knife, cut a piece out of the butter tub lid the exact dimensions of the br=
+idge
+nut's footprint. Tuck it in the slot under the bridge nut and tune back up.=
+ If
+the buzzing is gone, you're done. If not, try another shim. If that still
+doesn't work, try loosening the truss rod a little. <br>
+<br>
+If the action can stand to go down, you'll have to file the bottom off the
+bridge nut. Being very careful to hold the bottom of the nut perfectly flat,
+file it down uniformly across the bottom. Don't take off more than about 1/=
+16th
+of an inch before trying it to see how it works. If you take too much off,
+you'll have to shim it. If you totally destroy it, don't despair; bridge nu=
+ts
+are pretty easy to come by. Whatever you do, don't try to lower the action =
+by
+filing the grooves in the head nut (at the top of the fretboard). Other than
+widening the gap slightly for a string that's real sticky, you generally wa=
+nt
+to leave head nut adjustments to a pro. <br>
+<br>
+<b>Close Enough</b> <br>
+Don't get obsessive. You'll always have SOME string buzz, that's the nature=
+ of
+fretted instruments. And you'll never get the action extremely low without =
+more
+string buzz. It's not an exact science, but it's also not rocket science. W=
+ith
+careful, small adjustments almost any old guitar can be made to play and/or
+sound better without resorting to professional repairs.</span></p>
+
+<p class=3DMsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>

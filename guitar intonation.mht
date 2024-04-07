@@ -1,0 +1,550 @@
+MIME-Version: 1.0
+Content-Location: file:///C:/A24BB24E/guitarintonation.htm
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset="us-ascii"
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml"
+xmlns:o=3D"urn:schemas-microsoft-com:office:office"
+xmlns:w=3D"urn:schemas-microsoft-com:office:word"
+xmlns=3D"http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=3DContent-Type content=3D"text/html; charset=3Dus-ascii">
+<meta name=3DProgId content=3DWord.Document>
+<meta name=3DGenerator content=3D"Microsoft Word 11">
+<meta name=3DOriginator content=3D"Microsoft Word 11">
+<link rel=3DFile-List href=3D"guitarintonation_archivos/filelist.xml">
+<title>Set/Adjust Guitar or Bass Guitar Intonation</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>PCChips</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>PCChips</o:LastAuthor>
+  <o:Revision>1</o:Revision>
+  <o:TotalTime>1</o:TotalTime>
+  <o:Created>2008-05-03T04:20:00Z</o:Created>
+  <o:LastSaved>2008-05-03T04:21:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>1164</o:Words>
+  <o:Characters>6408</o:Characters>
+  <o:Company>PCChips</o:Company>
+  <o:Lines>53</o:Lines>
+  <o:Paragraphs>15</o:Paragraphs>
+  <o:CharactersWithSpaces>7557</o:CharactersWithSpaces>
+  <o:Version>11.9999</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:HyphenationZone>21</w:HyphenationZone>
+  <w:PunctuationKerning/>
+  <w:DrawingGridHorizontalSpacing>9,35 pto</w:DrawingGridHorizontalSpacing>
+  <w:DisplayVerticalDrawingGridEvery>2</w:DisplayVerticalDrawingGridEvery>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState=3D"false" LatentStyleCount=3D"156">
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:536871559 0 0 0 415 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:normal;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h1
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	line-height:normal;
+	mso-pagination:widow-orphan;
+	mso-outline-level:1;
+	border:none;
+	mso-border-bottom-alt:solid black .75pt;
+	padding:0cm;
+	mso-padding-alt:0cm 0cm 0cm 0cm;
+	font-size:19.0pt;
+	font-family:"Times New Roman";
+	color:#313040;
+	font-weight:bold;}
+p
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:18.0pt;
+	margin-left:0cm;
+	line-height:16.8pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:1.0cm 2.0cm 2.0cm 1.0cm;
+	mso-header-margin:35.45pt;
+	mso-footer-margin:35.45pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Tabla normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]-->
+</head>
+
+<body lang=3DES style=3D'tab-interval:35.4pt'>
+
+<div class=3DSection1>
+
+<div style=3D'mso-element:para-border-div;border:solid black 1.0pt;mso-bord=
+er-alt:
+solid black .75pt;padding:12.0pt 12.0pt 12.0pt 12.0pt;margin-left:0cm;
+margin-right:18.75pt'>
+
+<h1 style=3D'border:none;mso-border-alt:solid black .75pt;padding:0cm;mso-p=
+adding-alt:
+12.0pt 12.0pt 12.0pt 12.0pt'><span lang=3DEN-US style=3D'font-size:17.5pt;
+mso-ansi-language:EN-US'>Set/Adjust Guitar or Bass Guitar Intonation<o:p></=
+o:p></span></h1>
+
+<p style=3D'border:none;mso-border-alt:solid black .75pt;padding:0cm;mso-pa=
+dding-alt:
+12.0pt 12.0pt 12.0pt 12.0pt'><span lang=3DEN-US style=3D'font-size:10.0pt;
+color:black;mso-ansi-language:EN-US'>One of the most common things that
+guitarists or bassists overlook about their instrument is the intonation. I=
+'m
+going to cover this topic here so you too can have your guitar or bass be in
+tune as much as possible - anywhere on the neck.<o:p></o:p></span></p>
+
+<p style=3D'border:none;mso-border-alt:solid black .75pt;padding:0cm;mso-pa=
+dding-alt:
+12.0pt 12.0pt 12.0pt 12.0pt'><span lang=3DEN-US style=3D'font-size:10.0pt;
+color:black;mso-ansi-language:EN-US'>I won't bore you with all the theory
+behind fretted instruments and such, so don't be afraid to read on. This is=
+ an
+instructional article on how to set your bass or guitar intonation. I'll
+provide you with a little background information, but jump right to the met=
+hods
+you should use for setting, checking and adjusting your bass or guitar's
+intonation properly. I'll also provide you with some common factors that may
+cause poor intonation.<o:p></o:p></span></p>
+
+<h1 style=3D'border:none;mso-border-alt:solid black .75pt;padding:0cm;mso-p=
+adding-alt:
+12.0pt 12.0pt 12.0pt 12.0pt'><span lang=3DEN-US style=3D'font-size:17.5pt;
+mso-ansi-language:EN-US'>What Is Guitar Intonation?<o:p></o:p></span></h1>
+
+<p style=3D'border:none;mso-border-alt:solid black .75pt;padding:0cm;mso-pa=
+dding-alt:
+12.0pt 12.0pt 12.0pt 12.0pt'><span lang=3DEN-US style=3D'font-size:10.0pt;
+color:black;mso-ansi-language:EN-US'>Intonation is the accuracy in which a
+guitar or bass guitar can produce a fretted note. Setting the intonation is=
+ the
+act of adjusting the length of the strings (by moving the bridge saddles) to
+compensate for the stretching of a string due to pushing it down to the fret
+board to produce a note. To adjust the intonation of your guitar or bass, y=
+ou
+move the bridge saddles toward or away from the fret board until the 12th f=
+ret
+octave and its harmonic are equal and the same open-string note is exactly =
+one
+octave below those. Accurate intonation is critical to sound quality.<o:p><=
+/o:p></span></p>
+
+<p style=3D'border:none;mso-border-alt:solid black .75pt;padding:0cm;mso-pa=
+dding-alt:
+12.0pt 12.0pt 12.0pt 12.0pt'><span lang=3DEN-US style=3D'font-size:10.0pt;
+color:black;mso-ansi-language:EN-US'>When a guitar or bass guitar has an
+inaccurate intonation setting, you may notice that chords played at the bot=
+tom
+of the neck sound correct, but the same chord played higher up the fret boa=
+rd
+have some notes that become out of tune, making the chords sound more like
+noise than music. An example is that you may play an open A on the 5th (or =
+3rd)
+string together with the same note on the 6th (or 4th) string to add depth.=
+ If
+these notes aren't <b>exactly</b> the same, you may think that your instrum=
+ent
+is out of tune. That is what this article will try to help you correct.<o:p=
+></o:p></span></p>
+
+<h1 style=3D'border:none;mso-border-alt:solid black .75pt;padding:0cm;mso-p=
+adding-alt:
+12.0pt 12.0pt 12.0pt 12.0pt'><span lang=3DEN-US style=3D'font-size:17.5pt;
+mso-ansi-language:EN-US'>Check Your Guitar or Bass Intonation<o:p></o:p></s=
+pan></h1>
+
+<p style=3D'border:none;mso-border-alt:solid black .75pt;padding:0cm;mso-pa=
+dding-alt:
+12.0pt 12.0pt 12.0pt 12.0pt'><span lang=3DEN-US style=3D'font-size:10.0pt;
+color:black;mso-ansi-language:EN-US'>Checking intonation is easy, especiall=
+y if
+you have a digital tuner. The best tuners to use for this task are the ones
+with <span class=3DGramE>a meter</span> readout rather than <span class=3DS=
+pellE>LEDs</span>
+since it is much easier to see how much adjustment may need to be done. You
+must also be sure that your strings are new, but you should check your
+intonation periodically just to be sure that it is correct. First, you must
+tune your guitar to your desired tuning. Each time you change strings or
+tunings, your strings' tension or height may change slightly, which may uns=
+et
+your intonation.<o:p></o:p></span></p>
+
+<p style=3D'border:none;mso-border-alt:solid black .75pt;padding:0cm;mso-pa=
+dding-alt:
+12.0pt 12.0pt 12.0pt 12.0pt'><span lang=3DEN-US style=3D'font-size:10.0pt;
+color:black;mso-ansi-language:EN-US'>With your instrument in the same posit=
+ion
+as you normally play (playing position), not lying on a table, check the tu=
+ning
+of the natural harmonic at the 12th fret (gently touching the string above =
+the
+12th fret while picking). This should be exactly equal to the tuning if you
+were to push the string down to the fret. If they are the same and you still
+have intonation problems, check the open strings and the other fretted note=
+s.
+If particular frets are out of tune while others are in tune across each
+string, the frets on your instrument may be worn to the point where the str=
+ing
+is not contacting the centers of the frets. If that is the case, you may ne=
+ed
+to grind and polish or replace the worn frets to cure this problem.<o:p></o=
+:p></span></p>
+
+<p style=3D'border:none;mso-border-alt:solid black .75pt;padding:0cm;mso-pa=
+dding-alt:
+12.0pt 12.0pt 12.0pt 12.0pt'><span lang=3DEN-US style=3D'font-size:10.0pt;
+color:black;mso-ansi-language:EN-US'>If the intonation starts out bad on the
+first few frets and gets progressively better going up to the 12th fret, yo=
+ur
+guitar may have a misplaced nut. This would throw the entire scale of your
+guitar or bass guitar off. It is suggested that you have an instrument repa=
+ir
+person replace the nut to ensure that it is in the correct position. If you=
+ do
+have the nut replaced by a repair person, be sure to check their job thorou=
+ghly
+before leaving the shop - even if you have to completely set the intonation
+right there! If the problem still exists, be sure to explain it to the repa=
+ir
+person (you may want to explain the problem before repairs are done as well=
+).
+Some cheaply made guitars may never be able to correct this problem, but if=
+ you
+are paying to have the nut replaced, be sure what they have done the best j=
+ob
+possible - before handing over your hard-earned cash.<o:p></o:p></span></p>
+
+<h1 style=3D'border:none;mso-border-alt:solid black .75pt;padding:0cm;mso-p=
+adding-alt:
+12.0pt 12.0pt 12.0pt 12.0pt'><span lang=3DEN-US style=3D'font-size:17.5pt;
+mso-ansi-language:EN-US'>Adjust Your Guitar <span class=3DGramE>Or</span> B=
+ass
+Guitar Intonation<o:p></o:p></span></h1>
+
+<p style=3D'border:none;mso-border-alt:solid black .75pt;padding:0cm;mso-pa=
+dding-alt:
+12.0pt 12.0pt 12.0pt 12.0pt'><span lang=3DEN-US style=3D'font-size:10.0pt;
+color:black;mso-ansi-language:EN-US'>Because adjustments such as action (the
+height of the strings from the fret board), truss rod tightness, string
+thickness or material and the magnetic pull of your pickups can effect an
+instrument's intonation, adjustments must be performed as the last step in
+setting up your guitar or bass guitar. When you are checking the intonation=
+ of your
+instrument, it must be done in your normal playing position in order to
+correctly account for any neck flex which <span class=3DGramE>effects</span=
+> the
+string height (action).<o:p></o:p></span></p>
+
+<p style=3D'border:none;mso-border-alt:solid black .75pt;padding:0cm;mso-pa=
+dding-alt:
+12.0pt 12.0pt 12.0pt 12.0pt'><span lang=3DEN-US style=3D'font-size:10.0pt;
+color:black;mso-ansi-language:EN-US'>Adjusting an instrument's intonation
+consists of setting the bridge saddles to produce the note at the 12th fret
+exactly an octave higher than that of the open string. With the aid of an
+electronic or digital tuner, compare either the open string or the octave
+harmonic at the 12th fret with the fretted octave at the 12th fret. Use sli=
+ght
+finger pressure, as any extra pressure (&quot;articulation&quot;) will disr=
+upt
+the accuracy of the adjustment. If the fretted note is sharp, move the sadd=
+le
+away from the pickups and fret board; if it is flat, move the saddle toward=
+ the
+pickups and fret board.<o:p></o:p></span></p>
+
+<p style=3D'border:none;mso-border-alt:solid black .75pt;padding:0cm;mso-pa=
+dding-alt:
+12.0pt 12.0pt 12.0pt 12.0pt'><span class=3DSpellE><span style=3D'font-size:=
+10.0pt;
+color:black'>If</span></span><span style=3D'font-size:10.0pt;color:black'> =
+<span
+class=3DSpellE>you</span> <span class=3DSpellE>periodically</span> check <s=
+pan
+class=3DSpellE>your</span> <span class=3DSpellE>intonation</span>, <span
+class=3DSpellE>adjustments</span> <span class=3DSpellE>should</span> <span
+class=3DSpellE>rarely</span> <span class=3DSpellE>take</span> more <span
+class=3DSpellE>than</span> a <span class=3DSpellE>few</span> minutes, <span
+class=3DSpellE>provided</span> <span class=3DSpellE>you</span> stick <span
+class=3DSpellE>with</span> <span class=3DSpellE>the</span> <span class=3DSp=
+ellE>same</span>
+<span class=3DSpellE>tuning</span>, <span class=3DSpellE>action</span> <span
+class=3DSpellE>and</span> <span class=3DSpellE>string</span> <span class=3D=
+SpellE>gauges</span>.
+Check <span class=3DSpellE>the</span> <span class=3DSpellE>intonation</span=
+> <span
+class=3DSpellE>every</span> time <span class=3DSpellE>you</span> <span
+class=3DSpellE>change</span> <span class=3DSpellE>your</span> <span class=
+=3DSpellE>strings</span>,
+<span class=3DSpellE>especially</span> <span class=3DSpellE>if</span> <span
+class=3DSpellE>you</span> are <span class=3DSpellE>changing</span> <span
+class=3DSpellE>tunings</span>, <span class=3DSpellE>gauges</span>, <span
+class=3DSpellE>or</span> even <span class=3DSpellE>brands</span>. Even <span
+class=3DSpellE>the</span> <span class=3DSpellE>slightest</span> <span class=
+=3DSpellE>differences</span>
+<span class=3DSpellE>between</span> sets <span class=3DSpellE>of</span> <sp=
+an
+class=3DSpellE>strings</span> can <span class=3DSpellE>make</span> a <span
+class=3DSpellE>noticeable</span> <span class=3DSpellE>difference</span>.<o:=
+p></o:p></span></p>
+
+<p style=3D'border:none;mso-border-alt:solid black .75pt;padding:0cm;mso-pa=
+dding-alt:
+12.0pt 12.0pt 12.0pt 12.0pt'><span class=3DSpellE><span style=3D'font-size:=
+10.0pt;
+color:black'>If</span></span><span style=3D'font-size:10.0pt;color:black'> =
+<span
+class=3DSpellE>your</span> <span class=3DSpellE>bridge</span> <span class=
+=3DSpellE>does</span>
+<span class=3DSpellE>not</span> <span class=3DSpellE>provide</span> <span
+class=3DSpellE>you</span> <span class=3DSpellE>with</span> <span class=3DSp=
+ellE>enough</span>
+<span class=3DSpellE>adjustment</span>, <span class=3DSpellE>it</span> may =
+be <span
+class=3DSpellE>necessary</span> <span class=3DSpellE>to</span> <span class=
+=3DSpellE>have</span>
+a <span class=3DSpellE>repair</span> <span class=3DSpellE>person</span> <sp=
+an
+class=3DSpellE>take</span> a <span class=3DSpellE>look</span>. <span class=
+=3DSpellE>Sometimes</span>
+<span class=3DSpellE>it</span> may be as simple as <span class=3DSpellE>the=
+</span> <span
+class=3DSpellE>saddle</span> <span class=3DSpellE>needs</span> <span class=
+=3DSpellE>to</span>
+be <span class=3DSpellE>turned</span> <span class=3DSpellE>around</span> <s=
+pan
+class=3DSpellE>and</span> re-<span class=3DSpellE>slotted</span>. In <span
+class=3DSpellE>some</span> more extreme cases, <span class=3DSpellE>the</sp=
+an> <span
+class=3DSpellE>entire</span> <span class=3DSpellE>bridge</span> may <span
+class=3DSpellE>need</span> <span class=3DSpellE>to</span> be moved.<o:p></o=
+:p></span></p>
+
+<h1 style=3D'border:none;mso-border-alt:solid black .75pt;padding:0cm;mso-p=
+adding-alt:
+12.0pt 12.0pt 12.0pt 12.0pt'><span class=3DSpellE><span style=3D'font-size:=
+17.5pt'>Factors</span></span><span
+style=3D'font-size:17.5pt'> <span class=3DSpellE>Causing</span> <span class=
+=3DSpellE>Inaccurate</span>
+<span class=3DSpellE>Or</span> <span class=3DSpellE>Poor</span> <span class=
+=3DSpellE>Intonation</span>
+<span class=3DSpellE>On</span> A Guitar <span class=3DSpellE>Or</span> Bass=
+ Guitar<o:p></o:p></span></h1>
+
+<p style=3D'border:none;mso-border-alt:solid black .75pt;padding:0cm;mso-pa=
+dding-alt:
+12.0pt 12.0pt 12.0pt 12.0pt'><span class=3DSpellE><span style=3D'font-size:=
+10.0pt;
+color:black'>If</span></span><span style=3D'font-size:10.0pt;color:black'> =
+<span
+class=3DSpellE>your</span> guitar <span class=3DSpellE>or</span> <span
+class=3DSpellE>bass</span> guitar has <span class=3DSpellE>poor</span> <span
+class=3DSpellE>intonation</span>, <span class=3DSpellE>you</span> may <span
+class=3DSpellE>want</span> <span class=3DSpellE>to</span> check <span class=
+=3DSpellE>factors</span>
+<span class=3DSpellE>such</span> as <span class=3DSpellE>your</span> <span
+class=3DSpellE>action</span>, <span class=3DSpellE>bridge</span> <span
+class=3DSpellE>saddles</span> <span class=3DSpellE>or</span> <span class=3D=
+SpellE>worn</span>
+<span class=3DSpellE>frets</span>. <span class=3DSpellE>The</span> <span
+class=3DSpellE>action</span> <span class=3DSpellE>of</span> <span class=3DS=
+pellE>your</span>
+<span class=3DSpellE>instrument</span> may cause <span class=3DSpellE>your<=
+/span> <span
+class=3DSpellE>intonation</span> <span class=3DSpellE>to</span> be <span
+class=3DSpellE>sharp</span> - <span class=3DSpellE>the</span> <span class=
+=3DSpellE>higher</span>
+<span class=3DSpellE>the</span> <span class=3DSpellE>action</span> <span
+class=3DSpellE>is</span>, <span class=3DSpellE>the</span> more <span class=
+=3DSpellE>the</span>
+<span class=3DSpellE>strings</span> <span class=3DSpellE>need</span> <span
+class=3DSpellE>to</span> be <span class=3DSpellE>stretched</span> in <span
+class=3DSpellE>order</span> <span class=3DSpellE>to</span> <span class=3DSp=
+ellE>fret</span>
+a note. <span class=3DSpellE>If</span> <span class=3DSpellE>your</span> <sp=
+an
+class=3DSpellE>bridge</span> <span class=3DSpellE>saddles</span> are <span
+class=3DSpellE>worn</span> <span class=3DSpellE>or</span> <span class=3DSpe=
+llE>leaning</span>,
+<span class=3DSpellE>that</span> may <span class=3DSpellE>effect</span> <sp=
+an
+class=3DSpellE>the</span> <span class=3DSpellE>action</span> <span class=3D=
+SpellE>of</span>
+<span class=3DSpellE>your</span> <span class=3DSpellE>instrument</span> as =
+<span
+class=3DSpellE>well</span> as <span class=3DSpellE>the</span> <span class=
+=3DSpellE>shorten</span>
+a <span class=3DSpellE>string's</span> <span class=3DSpellE>life</span>.<o:=
+p></o:p></span></p>
+
+<p style=3D'border:none;mso-border-alt:solid black .75pt;padding:0cm;mso-pa=
+dding-alt:
+12.0pt 12.0pt 12.0pt 12.0pt'><span class=3DSpellE><span style=3D'font-size:=
+10.0pt;
+color:black'>One</span></span><span style=3D'font-size:10.0pt;color:black'>=
+ <span
+class=3DSpellE>other</span> factor <span class=3DSpellE>that</span> has com=
+e up <span
+class=3DSpellE>much</span> more <span class=3DSpellE>often</span> in <span
+class=3DSpellE>the</span> <span class=3DSpellE>last</span> <span class=3DSp=
+ellE>few</span>
+<span class=3DSpellE>years</span> <span class=3DSpellE>involves</span> <span
+class=3DSpellE>low</span> <span class=3DSpellE>tunings</span>. <span class=
+=3DSpellE>Guitars</span>
+<span class=3DSpellE>and</span> <span class=3DSpellE>bass</span> <span
+class=3DSpellE>guitars</span> are made <span class=3DSpellE>to</span> <span
+class=3DSpellE>handle</span> a <span class=3DSpellE>range</span> <span
+class=3DSpellE>of</span> <span class=3DSpellE>string</span> <span class=3DS=
+pellE>thicknesses</span>.
+<span class=3DSpellE>These</span> <span class=3DSpellE>string</span> <span
+class=3DSpellE>gauges</span> can <span class=3DSpellE>only</span> produce a=
+ <span
+class=3DSpellE>certain</span> <span class=3DSpellE>number</span> <span
+class=3DSpellE>of</span> notes. <span class=3DSpellE>Lower</span> notes <sp=
+an
+class=3DSpellE>will</span> <span class=3DSpellE>not</span> <span class=3DSp=
+ellE>only</span>
+<span class=3DSpellE>loosen</span> <span class=3DSpellE>the</span> <span
+class=3DSpellE>string</span>, <span class=3DSpellE>but</span> may <span
+class=3DSpellE>require</span> <span class=3DSpellE>you</span> <span class=
+=3DSpellE>to</span>
+<span class=3DSpellE>raise</span> <span class=3DSpellE>your</span> <span
+class=3DSpellE>action</span> <span class=3DSpellE>to</span> <span class=3DS=
+pellE>prevent</span>
+<span class=3DSpellE>fret</span> <span class=3DSpellE>buzz</span>. In <span
+class=3DSpellE>doing</span> so, <span class=3DSpellE>you</span> <span class=
+=3DSpellE>will</span>
+<span class=3DSpellE>also</span> <span class=3DSpellE>make</span> <span
+class=3DSpellE>your</span> <span class=3DSpellE>intonation</span> <span
+class=3DSpellE>sharper</span>, <span class=3DSpellE>possibly</span> <span
+class=3DSpellE>causing</span> <span class=3DSpellE>your</span> <span class=
+=3DSpellE>bridge</span>
+<span class=3DSpellE>saddles</span> <span class=3DSpellE>to</span> <span
+class=3DSpellE>run</span> out <span class=3DSpellE>of</span> <span class=3D=
+SpellE>adjustment</span>
+<span class=3DSpellE>room</span>. <span class=3DSpellE>If</span> <span
+class=3DSpellE>this</span> <span class=3DSpellE>is</span> <span class=3DSpe=
+llE>the</span>
+case, <span class=3DSpellE>you</span> may (<span class=3DSpellE>though</spa=
+n> <span
+class=3DSpellE>it</span> <span class=3DSpellE>is</span> <span class=3DSpell=
+E>not</span>
+<span class=3DSpellE>recommended</span>) <span class=3DSpellE>need</span> <=
+span
+class=3DSpellE>to</span> <span class=3DSpellE>move</span> <span class=3DSpe=
+llE>your</span>
+<span class=3DSpellE>entire</span> <span class=3DSpellE>bridge</span> <span
+class=3DSpellE>away</span> <span class=3DSpellE>from</span> <span class=3DS=
+pellE>the</span>
+<span class=3DSpellE>nut</span> in <span class=3DSpellE>order</span> <span
+class=3DSpellE>to</span> <span class=3DSpellE>gain</span> <span class=3DSpe=
+llE>the</span>
+<span class=3DSpellE>additional</span> <span class=3DSpellE>adjustment</spa=
+n> <span
+class=3DSpellE>room</span> <span class=3DSpellE>required</span> <span class=
+=3DSpellE>to</span>
+set <span class=3DSpellE>your</span> <span class=3DSpellE>intonation</span>=
+.<o:p></o:p></span></p>
+
+<p style=3D'border:none;mso-border-alt:solid black .75pt;padding:0cm;mso-pa=
+dding-alt:
+12.0pt 12.0pt 12.0pt 12.0pt'><span lang=3DEN-US style=3D'font-size:10.0pt;
+color:black;mso-ansi-language:EN-US'>Before you consider moving the bridge,=
+ try
+a thicker gauge string (I know many guitarists that use a bass string in pl=
+ace
+of their low string). If this still doesn't work for you, get a new instrum=
+ent
+that can support what you want. For instance, spend the cash to get a 5-str=
+ing
+bass or a baritone or 7-string guitar if you have to. After all, homemade,
+custom-built guitars don't always have an accurate scale, and may cost just=
+ as
+much as a new mass-produced guitar by the time you buy all the pieces. (Tru=
+st
+me, I know this from experience!)<o:p></o:p></span></p>
+
+</div>
+
+<p class=3DMsoNormal><span lang=3DEN-US style=3D'mso-ansi-language:EN-US'>&=
+nbsp;<o:p></o:p></span></p>
+
+<p class=3DMsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>

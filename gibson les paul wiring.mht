@@ -1,0 +1,469 @@
+MIME-Version: 1.0
+Content-Type: multipart/related; boundary="----=_NextPart_01C8C904.48465480"
+
+Este documento es una página Web de un solo archivo, también conocido como archivo de almacenamiento Web. Si está viendo este mensaje, su explorador o editor no admite archivos de almacenamiento Web. Descargue un explorador que admita este tipo de archivos, como Microsoft Internet Explorer.
+
+------=_NextPart_01C8C904.48465480
+Content-Location: file:///C:/34CAB227/gibsonlespaulwiring.htm
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset="us-ascii"
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml"
+xmlns:o=3D"urn:schemas-microsoft-com:office:office"
+xmlns:w=3D"urn:schemas-microsoft-com:office:word"
+xmlns=3D"http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=3DContent-Type content=3D"text/html; charset=3Dus-ascii">
+<meta name=3DProgId content=3DWord.Document>
+<meta name=3DGenerator content=3D"Microsoft Word 11">
+<meta name=3DOriginator content=3D"Microsoft Word 11">
+<link rel=3DFile-List href=3D"gibsonlespaulwiring_archivos/filelist.xml">
+<link rel=3DEdit-Time-Data href=3D"gibsonlespaulwiring_archivos/editdata.ms=
+o">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>Typical Gibson-style Guitar Wiring</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>PCChips</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>PCChips</o:LastAuthor>
+  <o:Revision>1</o:Revision>
+  <o:TotalTime>2</o:TotalTime>
+  <o:Created>2008-06-08T05:37:00Z</o:Created>
+  <o:LastSaved>2008-06-08T05:39:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>306</o:Words>
+  <o:Characters>1687</o:Characters>
+  <o:Company>PCChips</o:Company>
+  <o:Lines>14</o:Lines>
+  <o:Paragraphs>3</o:Paragraphs>
+  <o:CharactersWithSpaces>1990</o:CharactersWithSpaces>
+  <o:Version>11.9999</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:HyphenationZone>21</w:HyphenationZone>
+  <w:PunctuationKerning/>
+  <w:DrawingGridHorizontalSpacing>9,35 pto</w:DrawingGridHorizontalSpacing>
+  <w:DisplayVerticalDrawingGridEvery>2</w:DisplayVerticalDrawingGridEvery>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState=3D"false" LatentStyleCount=3D"156">
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Helvetica;
+	panose-1:2 11 6 4 2 2 2 2 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:536902279 -2147483648 8 0 511 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:left;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h2
+	{margin-top:2.4pt;
+	margin-right:0cm;
+	margin-bottom:1.2pt;
+	margin-left:0cm;
+	text-align:left;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:18.0pt;
+	font-family:Helvetica;
+	font-weight:bold;}
+p
+	{margin-top:6.0pt;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:Helvetica;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:1.0cm 2.0cm 2.0cm 1.0cm;
+	mso-header-margin:35.45pt;
+	mso-footer-margin:35.45pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Tabla normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]-->
+</head>
+
+<body lang=3DES style=3D'tab-interval:35.4pt'>
+
+<div class=3DSection1>
+
+<h2 align=3Dcenter style=3D'text-align:center'><span lang=3DEN-US style=3D'=
+color:black;
+mso-ansi-language:EN-US'>Typical Gibson-style Guitar Wiring<br>
+</span><span lang=3DEN-US style=3D'font-size:13.5pt;color:black;mso-ansi-la=
+nguage:
+EN-US'>Updated 6/24/2002</span><span lang=3DEN-US style=3D'color:black;mso-=
+ansi-language:
+EN-US'><o:p></o:p></span></h2>
+
+<p><span lang=3DEN-US style=3D'font-size:10.0pt;color:black;mso-ansi-langua=
+ge:EN-US'>Below
+is a schematic of typical wiring for vintage Gibson-style guitars with two
+pickups, two volume controls, two tone controls, and a three way toggle swi=
+tch
+for pickup selection. <o:p></o:p></span></p>
+
+<p class=3DMsoNormal align=3Dcenter style=3D'text-align:center'><span
+style=3D'font-size:10.0pt;font-family:Helvetica;color:black'><!--[if gte vm=
+l 1]><v:shapetype
+ id=3D"_x0000_t75" coordsize=3D"21600,21600" o:spt=3D"75" o:preferrelative=
+=3D"t"
+ path=3D"m@4@5l@4@11@9@11@9@5xe" filled=3D"f" stroked=3D"f">
+ <v:stroke joinstyle=3D"miter"/>
+ <v:formulas>
+  <v:f eqn=3D"if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn=3D"sum @0 1 0"/>
+  <v:f eqn=3D"sum 0 0 @1"/>
+  <v:f eqn=3D"prod @2 1 2"/>
+  <v:f eqn=3D"prod @3 21600 pixelWidth"/>
+  <v:f eqn=3D"prod @3 21600 pixelHeight"/>
+  <v:f eqn=3D"sum @0 0 1"/>
+  <v:f eqn=3D"prod @6 1 2"/>
+  <v:f eqn=3D"prod @7 21600 pixelWidth"/>
+  <v:f eqn=3D"sum @8 21600 0"/>
+  <v:f eqn=3D"prod @7 21600 pixelHeight"/>
+  <v:f eqn=3D"sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok=3D"f" gradientshapeok=3D"t" o:connecttype=3D"rect"/>
+ <o:lock v:ext=3D"edit" aspectratio=3D"t"/>
+</v:shapetype><v:shape id=3D"_x0000_i1025" type=3D"#_x0000_t75" alt=3D"Typi=
+cal Gibson Schematic"
+ style=3D'width:420pt;height:5in'>
+ <v:imagedata src=3D"gibsonlespaulwiring_archivos/image001.gif" o:href=3D".=
+./Documents%20and%20Settings/Administrador/Mis%20documentos/Cursos/Compendi=
+o%20Reparacion%20de%20Guitarras/INFORMACION%20TECNICA/GIBSON%20LES%20PAUL-%=
+20ESQUEMA%20DE%20CONTROLES_archivos/image001.gif"/>
+</v:shape><![endif]--><![if !vml]><img width=3D560 height=3D480
+src=3D"gibsonlespaulwiring_archivos/image001.gif" alt=3D"Typical Gibson Sch=
+ematic"
+v:shapes=3D"_x0000_i1025"><![endif]><o:p></o:p></span></p>
+
+<p><span lang=3DEN-US style=3D'font-size:10.0pt;color:black;mso-ansi-langua=
+ge:EN-US'>Please
+notice the comments in the upper-right corner of the schematic.&nbsp; A lot=
+ of
+people don't wire the volume controls properly on these guitars.&nbsp; If y=
+ou
+wire them the way a Fender guitar is wired then the controls are
+&quot;coupled&quot; and either volume control will completely kill the outp=
+ut
+of both pickups when it is turned down all the way.&nbsp; Actually, Gibson =
+has
+been wiring guitars this way for at least a couple of decades now, but that=
+ is
+unfortunate.&nbsp; I much prefer the earlier wiring that didn't couple the
+controls.&nbsp; I think you will too, and that is why I present the earlier
+scheme here.&nbsp; Another common mistake people make is to wire two or more
+volume controls as shown here but then try to use a single master tone cont=
+rol
+with them.&nbsp; For reasons that are way <span class=3DGramE>to</span> tec=
+hnical
+to get into here, that is not a good idea because usually the volume contro=
+ls
+will drastically alter the affect of the tone control.&nbsp; You can somewh=
+at
+offset that by leaving the ground end of the volume pots floating
+(disconnected) but then you cannot turn the pickups completely off when fee=
+ding
+a high input-impedance amplifier or effect.&nbsp; So, the best solution is =
+to
+use an individual tone control for each volume control.&nbsp; Finally, note
+that decoupling the tone controls, and reducing loading on the pickup when =
+both
+are selected (which puts the two volume pots in parallel) is probably the r=
+eal
+reason Gibson used 500K pots (which then started the &quot;use 500K pots wi=
+th <span
+class=3DSpellE>humbuckers</span>&quot; rule of thumb). <o:p></o:p></span></=
+p>
+
+<p><span lang=3DEN-US style=3D'font-size:10.0pt;color:black;mso-ansi-langua=
+ge:EN-US'>Recently
+(June 2002) I received this email...<o:p></o:p></span></p>
+
+<p class=3DMsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>
+
+------=_NextPart_01C8C904.48465480
+Content-Location: file:///C:/34CAB227/gibsonlespaulwiring_archivos/image001.gif
+Content-Transfer-Encoding: base64
+Content-Type: image/gif
+
+R0lGODlhMALgAfQAAAAAAP8AMf//////////////////////////////////////////////////
+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
+/3EjP3IkT/L0iAAAOw==
+
+------=_NextPart_01C8C904.48465480
+Content-Location: file:///C:/34CAB227/gibsonlespaulwiring_archivos/filelist.xml
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/xml; charset="utf-8"
+
+<xml xmlns:o=3D"urn:schemas-microsoft-com:office:office">
+ <o:MainFile HRef=3D"../gibsonlespaulwiring.htm"/>
+ <o:File HRef=3D"image001.gif"/>
+ <o:File HRef=3D"filelist.xml"/>
+</xml>
+------=_NextPart_01C8C904.48465480--
