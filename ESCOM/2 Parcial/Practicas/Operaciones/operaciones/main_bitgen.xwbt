@@ -1,8 +1,0 @@
-INTSTYLE=ise
-INFILE=C:\Users\Nancy\Documents\Xilinx\2doParcial\alu\main.ncd
-OUTFILE=C:\Users\Nancy\Documents\Xilinx\2doParcial\alu\main.bit
-FAMILY=Spartan3E
-PART=xc3s100e-5cp132
-WORKINGDIR=C:\Users\Nancy\Documents\Xilinx\2doParcial\alu
-LICENSE=WebPack
-USER_INFO=__0_0_0

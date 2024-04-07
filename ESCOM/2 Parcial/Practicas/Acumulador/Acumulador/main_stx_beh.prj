@@ -1,6 +1,0 @@
-vhdl isim_temp "pack.vhd"
-vhdl isim_temp "FFJK.vhd"
-vhdl isim_temp "suma.vhd"
-vhdl isim_temp "Reg.vhd"
-vhdl isim_temp "clock.vhd"
-vhdl isim_temp "main.vhd"

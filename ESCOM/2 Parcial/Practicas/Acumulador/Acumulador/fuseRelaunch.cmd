@@ -1,1 +1,0 @@
--intstyle "ise" -incremental -o "C:/Users/jonnyTest/colector/main_isim_beh.exe" -prj "C:/Users/jonnyTest/colector/main_beh.prj" "work.main" 

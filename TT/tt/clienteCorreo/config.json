@@ -1,1 +1,0 @@
-{"hostSmtp":"smtp-mail.outlook.com","portSmtp":587,"hostPop":"pop3.live.com","portPop":995,"keyfile":"./Seguridad/server2048.key", "certfile":"./Seguridad/server2048.pem","user":"jonny.test.arc.99@hotmail.com","passwd":"360_live","ssl":1,"delete":0}

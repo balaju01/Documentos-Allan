@@ -1,1 +1,0 @@
--intstyle "ise" -incremental -o "C:/Users/Nancy/Documents/Xilinx/2doParcial/restador/main_isim_beh.exe" -prj "C:/Users/Nancy/Documents/Xilinx/2doParcial/restador/main_beh.prj" "work.main" 

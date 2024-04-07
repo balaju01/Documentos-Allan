@@ -1,8 +1,0 @@
-INTSTYLE=ise
-INFILE=C:\Users\jonnyTest\colector\main.ncd
-OUTFILE=C:\Users\jonnyTest\colector\main.bit
-FAMILY=Spartan3E
-PART=xc3s100e-5cp132
-WORKINGDIR=C:\Users\jonnyTest\colector
-LICENSE=WebPack
-USER_INFO=211031817_0_0_231
