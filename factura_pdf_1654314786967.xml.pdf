@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cfdi:Comprobante xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sat.gob.mx/cfd/3 http://www.sat.gob.mx/sitio_internet/cfd/3/cfdv33.xsd" Version="3.3" Serie="FAOFAAFA" Folio="1092" FormaPago="04" Moneda="MXN" TipoDeComprobante="I" MetodoPago="PUE" LugarExpedicion="06000" Fecha="2022-06-03T20:52:06" SubTotal="1886.20" Descuento="172.85" TipoCambio="1" Total="1987.49" xmlns:cfdi="http://www.sat.gob.mx/cfd/3" NoCertificado="00001000000505615933" Certificado="MIIF+zCCA+OgAwIBAgIUMDAwMDEwMDAwMDA1MDU2MTU5MzMwDQYJKoZIhvcNAQELBQAwggGEMSAwHgYDVQQDDBdBVVRPUklEQUQgQ0VSVElGSUNBRE9SQTEuMCwGA1UECgwlU0VSVklDSU8gREUgQURNSU5JU1RSQUNJT04gVFJJQlVUQVJJQTEaMBgGA1UECwwRU0FULUlFUyBBdXRob3JpdHkxKjAoBgkqhkiG9w0BCQEWG2NvbnRhY3RvLnRlY25pY29Ac2F0LmdvYi5teDEmMCQGA1UECQwdQVYuIEhJREFMR08gNzcsIENPTC4gR1VFUlJFUk8xDjAMBgNVBBEMBTA2MzAwMQswCQYDVQQGEwJNWDEZMBcGA1UECAwQQ0lVREFEIERFIE1FWElDTzETMBEGA1UEBwwKQ1VBVUhURU1PQzEVMBMGA1UELRMMU0FUOTcwNzAxTk4zMVwwWgYJKoZIhvcNAQkCE01yZXNwb25zYWJsZTogQURNSU5JU1RSQUNJT04gQ0VOVFJBTCBERSBTRVJWSUNJT1MgVFJJQlVUQVJJT1MgQUwgQ09OVFJJQlVZRU5URTAeFw0yMDExMDUyMDE4NDFaFw0yNDExMDUyMDE4NDFaMIHJMSMwIQYDVQQDExpPUEVSQURPUkEgRkFDVE9SWSBTQSBERSBDVjEjMCEGA1UEKRMaT1BFUkFET1JBIEZBQ1RPUlkgU0EgREUgQ1YxIzAhBgNVBAoTGk9QRVJBRE9SQSBGQUNUT1JZIFNBIERFIENWMSUwIwYDVQQtExxPRkE5MDA5MjYzQUEgLyBNQUNONjAxMDEwUVI4MR4wHAYDVQQFExUgLyBNQUNONjAxMDEwSE1DUlJYMDUxETAPBgNVBAsTCEZBQ1RVUkFTMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqAC1qTMHIhDmrs3CbTMFTnJYAo4+Ru0qWsubv32lLkeWx53H+Crn4OPzvJmGDdnlWm8fN2h/H6WCyxttPdnHdGFtw/FiIBHhCp//l3OnRu8CbOgU5v4Z81FcDfRs4TexVFDz6oQUntoTo7ZksMqOErwSlTYp+2GPs6I8jfAmJhnfRbe+2P3qKrJ9fPkEQNQvm6F/aCp4eJNw48wu877tz/cK0DH+J6ZJBRGXLKFuYlVpojQzN8tlZ+SObmQnn+WKJG0R+hiH7mEFfBIwI9dM2Ii7GEuGnZXsDoFr+ll94T9EyLQch3DTOphrnSxjcFDI59+gN0P7q0H1mncIzPYnTwIDAQABox0wGzAMBgNVHRMBAf8EAjAAMAsGA1UdDwQEAwIGwDANBgkqhkiG9w0BAQsFAAOCAgEAp9DzXdsovrF7ppryyefCny6MPi/ddM2Cz3H56X/YQTaiAyl4HLoQ+XTQXHmyo0vbPPVZK1pd8bDjowDNLGJl18b5mqPxyD9Du3yJ2E36La46eOTxKlkPjT52X31REdi8yLJ7W7G87D379nJCepIXZJEmCqdMCf9LJte8PE7M22NK6uLzWNoRw9Oa1jzitmNDTigLGtM9g0uilTfdmxvOvLLmivYOE08irqpAHw1jUQ9skYh2Z5c7H5pti7yPvLZEeILAh5wR8v3oFHpZcEiuKVIDrGSVP5/ShITjg2wjk/KeX/fnJpzz5u4cyumghctP1R5bFVCJjLzdunEkCrllkwn79cxJl45z4WyOjWsgtXkqR44sd1OkHrZlSABWBzG2hmP3FoGMSkRIS3reDp4VJAW/aZistwS9lHclitNtuLN0gB1AYkJTC93r7REZK3kTWHwTwk3H2I/lEn/Pl1oQSWcRzoR8PXe+Dxv/UT2ZoI4thCBowSN5GAnv0IRWU3zPjQkRQV8oXz2xoH1MiePl6dubb9Y0Jvcsi2CxBAEgt0wSZtnS4x+ywf5jgesy7rg2CgzawRY2XBHaq2FnCV+awPrSAqRsZpDEmeQ7JqiCxtGvS9X2nTgJIZW9JwDnWvnpLTjtR/w0FQ4yJMUD8RbXdM2lq5pweBcpgasOGjyrv0E=" Sello="j+vAo52m8V7wUVKc/YfgHLS0qcooXdXxEeBEaLem887gfVlzbBxhCOOYyxZjdNUXbAE9d9BpHBZddKxpgF194H6+zOEIk6s4SSUwwLUhPQ3izz9El8ZgfKS9J3Wm4pumiDNthrd3qFcuaJ4Ha8nQPp/vAp/lSGaU06mg/esMpI8rx651z+1G1gLIPnSzKD/eEOFMzQCYdw3pNiFdRKIVkUXd/Ywhk2E0H0AmSGSNwOYTUihfXLaPA26/u0LvUdJyYE/mSIe320KUk1vQc5F5IoFmsuuQwDXQhJlwQyd76UF9YNYRoUWsRZgHUL47SP7Tth5K5+qtgEgFuSfMybJUVg==" xmlns:efactPOS="https://www.e-facturasaas.com/esquemas/efactpos.xsd" xmlns:efactpos="https://www.e-facturasaas.com/esquemas">
+  <cfdi:Emisor Rfc="OFA9009263AA" Nombre="Operadora Factory, S.A. de C.V." RegimenFiscal="601" />
+  <cfdi:Receptor Rfc="ZEIA920731RH0" Nombre="Allan Ulises Zepeda Ibarra" UsoCFDI="G03" />
+  <cfdi:Conceptos>
+    <cfdi:Concepto ClaveProdServ="53101704" NoIdentificacion="7131HA1022038" ClaveUnidad="H87" Unidad="PZ" Descripcion="SUDADERA CERRADO MUJER 20 38" Cantidad="1.00" ValorUnitario="171.55" Importe="171.55" Descuento="85.78">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Impuesto="002" TipoFactor="Tasa" Base="85.77" TasaOCuota="0.160000" Importe="13.72" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53101500" NoIdentificacion="RS002154" ClaveUnidad="H87" Unidad="PZ" Descripcion="Pantalon Roberts Red" Cantidad="1.00" ValorUnitario="422.41" Importe="422.41">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Impuesto="002" TipoFactor="Tasa" Base="422.41" TasaOCuota="0.160000" Importe="67.59" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53101500" NoIdentificacion="FS00010698" ClaveUnidad="H87" Unidad="PZ" Descripcion="Pantal_n V Sonneti Uo" Cantidad="1.00" ValorUnitario="516.38" Importe="516.38" Descuento="86.21">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Impuesto="002" TipoFactor="Tasa" Base="430.17" TasaOCuota="0.160000" Importe="68.83" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53101500" NoIdentificacion="FS00015259" ClaveUnidad="H87" Unidad="PZ" Descripcion="PANTALON MODERN FIT" Cantidad="1.00" ValorUnitario="775.00" Importe="775.00">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Impuesto="002" TipoFactor="Tasa" Base="775.00" TasaOCuota="0.160000" Importe="124.00" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53121600" NoIdentificacion="FH00000180" ClaveUnidad="H87" Unidad="PZ" Descripcion="Bolsa mediana" Cantidad="1.00" ValorUnitario="0.86" Importe="0.86" Descuento="0.86">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Impuesto="002" TipoFactor="Exento" Base="0.86" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+  </cfdi:Conceptos>
+  <cfdi:Impuestos TotalImpuestosTrasladados="274.14">
+    <cfdi:Traslados>
+      <cfdi:Traslado Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="274.14" />
+    </cfdi:Traslados>
+  </cfdi:Impuestos>
+  <cfdi:Complemento>
+    <tfd:TimbreFiscalDigital xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/cfd/TimbreFiscalDigital/TimbreFiscalDigitalv11.xsd" Version="1.1" UUID="7D61CC08-214D-0E43-B246-C9F595C1B19E" FechaTimbrado="2022-06-03T22:52:39" RfcProvCertif="SCD110105654" SelloCFD="j+vAo52m8V7wUVKc/YfgHLS0qcooXdXxEeBEaLem887gfVlzbBxhCOOYyxZjdNUXbAE9d9BpHBZddKxpgF194H6+zOEIk6s4SSUwwLUhPQ3izz9El8ZgfKS9J3Wm4pumiDNthrd3qFcuaJ4Ha8nQPp/vAp/lSGaU06mg/esMpI8rx651z+1G1gLIPnSzKD/eEOFMzQCYdw3pNiFdRKIVkUXd/Ywhk2E0H0AmSGSNwOYTUihfXLaPA26/u0LvUdJyYE/mSIe320KUk1vQc5F5IoFmsuuQwDXQhJlwQyd76UF9YNYRoUWsRZgHUL47SP7Tth5K5+qtgEgFuSfMybJUVg==" NoCertificadoSAT="00001000000502000436" SelloSAT="NX6nGqr2lVo7w+dEDw/YJjA3BjjtQO8+UbMcExIK9194pNQtNPsAxawppr6JjtEJeurOnU4k+TbKWc6MCicmQGtIins8phoAYy5f+7/g+unNwyHdTyUwE7x6z0JRYUt+68im5BKZT1CcZhYvFlTVM+rlKOzZQbz1nM8WdB2eJma4Og9D3AnUFK8/bSAdctscHZ1Cqe0yfTX3x26+pGMGSMJ9wp+Bh1fYB5lkGxNsBxP4hJMy6BvNqF2y0mYlgIMe70zipZGPxBDXgKX3zou/fWbQiJl62Hno9zeaGJYBQ3Xeyd5zVjmdTHGSJuRe2K6AX5yjqVer0dTjbvSj40i7qQ==" />
+  </cfdi:Complemento>
+  <cfdi:Addenda>
+    <efactpos:Personalizados atributo="numeroTicket" valor="27543" />
+    <efactpos:Personalizados atributo="referenciaTicket" valor="0000PF050B000027542" />
+    <efactpos:Personalizados atributo="FechaTicket" valor="2022-06-03 17:43:49" />
+    <efactpos:Personalizados atributo="emailCliente" valor="balaju01@gmail.com" />
+    <efactpos:Personalizados atributo="telefono" valor="5534705635" />
+    <efactpos:Personalizados atributo="sucursal" valor="F050" />
+    <efactpos:Personalizados atributo="noTerminal" valor="F050" />
+    <efactpos:Personalizados atributo="regimen" valor="Régimen General de Ley Personas Morales" />
+    <efactpos:Personalizados atributo="usoCfdi" valor="Gastos en general" />
+    <efactpos:Personalizados atributo="formaPago" valor="PinPad Bancomer" />
+  </cfdi:Addenda>
+</cfdi:Comprobante>
