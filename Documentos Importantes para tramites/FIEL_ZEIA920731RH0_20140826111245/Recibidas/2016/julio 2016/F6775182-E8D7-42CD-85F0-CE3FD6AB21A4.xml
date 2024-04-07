@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<cfdi:Comprobante xmlns:cfdi="http://www.sat.gob.mx/cfd/3" xmlns:detallista="http://www.sat.gob.mx/detallista" xmlns:donat="http://www.sat.gob.mx/donat" xmlns:implocal="http://www.sat.gob.mx/implocal" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sat.gob.mx/cfd/3 http://www.sat.gob.mx/sitio_internet/cfd/3/cfdv32.xsd http://www.sat.gob.mx/implocal http://www.sat.gob.mx/sitio_internet/cfd/implocal/implocal.xsd http://www.sat.gob.mx/detallista http://www.sat.gob.mx/sitio_internet/cfd/detallista/detallista.xsd http://www.sat.gob.mx/donat http://www.sat.gob.mx/sitio_internet/cfd/donat/donat11.xsd" version="3.2" serie="AB" folio="4690" fecha="2016-07-06T11:25:48" sello="flietrdqMFpbSG4rBa3HdmT0eF4b7aVkHdAQksFsd2qlzzE8IleK/RdL2tS1sjNTdBtThykWTlUGQY6MVYpziwQ2bVAOapuC4LNOi32vJmaoWNzVpuBsDTBcgpgEN8HbZJpIAKpXsE5GMfZ3Og8KCC5wi9IEibwyBoLh7Iu280A=" formaDePago="Pago en una sola exhibición" noCertificado="00001000000202575642" certificado="MIIEgDCCA2igAwIBAgIUMDAwMDEwMDAwMDAyMDI1NzU2NDIwDQYJKoZIhvcNAQEFBQAwggGVMTgwNgYDVQQDDC9BLkMuIGRlbCBTZXJ2aWNpbyBkZSBBZG1pbmlzdHJhY2nDs24gVHJpYnV0YXJpYTEvMC0GA1UECgwmU2VydmljaW8gZGUgQWRtaW5pc3RyYWNpw7NuIFRyaWJ1dGFyaWExODA2BgNVBAsML0FkbWluaXN0cmFjacOzbiBkZSBTZWd1cmlkYWQgZGUgbGEgSW5mb3JtYWNpw7NuMSEwHwYJKoZIhvcNAQkBFhJhc2lzbmV0QHNhdC5nb2IubXgxJjAkBgNVBAkMHUF2LiBIaWRhbGdvIDc3LCBDb2wuIEd1ZXJyZXJvMQ4wDAYDVQQRDAUwNjMwMDELMAkGA1UEBhMCTVgxGTAXBgNVBAgMEERpc3RyaXRvIEZlZGVyYWwxFDASBgNVBAcMC0N1YXVodMOpbW9jMRUwEwYDVQQtEwxTQVQ5NzA3MDFOTjMxPjA8BgkqhkiG9w0BCQIML1Jlc3BvbnNhYmxlOiBDZWNpbGlhIEd1aWxsZXJtaW5hIEdhcmPDrWEgR3VlcnJhMB4XDTEyMTIxMTIxMTg1M1oXDTE2MTIxMTIxMTg1M1owgcExITAfBgNVBAMTGEdMVEFCTEVST1MgUyBERSBSTCBERSBDVjEhMB8GA1UEKRMYR0xUQUJMRVJPUyBTIERFIFJMIERFIENWMSEwHwYDVQQKExhHTFRBQkxFUk9TIFMgREUgUkwgREUgQ1YxJTAjBgNVBC0THEdMVDEwMTAwNVA0NSAvIEdPRkE4MjA2MjhQS0ExHjAcBgNVBAUTFSAvIEdPRkE4MjA2MjhNTUNOUk4wMzEPMA0GA1UECxMGVU5JREFEMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCeBwo/G42BGrFFWjoL1i6oYcA50qv0YUmyIhmqZqNfAH1E4WzBVPPKJn08yW5+aIYHGQ5qUUwTPhVKZKw6oHOEpvgvc2HqUHz/j+RAI1nFj9foxszoAtQ0nyIA0HGnt7oxD0/qmOFw6pRJyxOCNZlp+0PrPEARI+Sbxu/x6WuAvQIDAQABox0wGzAMBgNVHRMBAf8EAjAAMAsGA1UdDwQEAwIGwDANBgkqhkiG9w0BAQUFAAOCAQEAiQUaRvLVoLPto0rTx0wjxJ2qziwsItoi8iz2tm2AiPIjevZI+VGnRCLKVi3i4YHPyTinvJ0r3zYqadlrFbEZeMtdUnybsX0uVD21WpZh6FcXXUrVJyhbf2pORnChse2kZ3F7GMbZuOaAZSDWTnJsczh1RTCJi5m6al1T4ZUe4T9xazaQpcoB68ucMAn5d5WojJxu+aTACB0GUHjICqC7DXw1svcj418HO8pWMJXpUtH7QxLfVi/7Qjfb1dPoxU+QWjp6cugymZo3MrrPs7ozp/Lem56bNgBXSc2afvRSSH4JeS9JUasneK7vIngQSFTqa6LsKpi2sPM0OAhGsUV2WA==" subTotal="1869.83" TipoCambio="1.000000" Moneda="Pesos" total="2169.00" tipoDeComprobante="ingreso" metodoDePago="NA" LugarExpedicion="DELEG GUSTAVO A. MADERO, MEXICO, D.F.">
+  <cfdi:Emisor rfc="GLT101005P45" nombre="GL TABLEROS S. DE R.L. DE C.V.">
+    <cfdi:DomicilioFiscal calle="AV. CUAUTEPEC" noExterior="101" colonia="JORGE NEGRETE" municipio="GUSTAVO A MADERO" estado="MEXICO, D.F." pais="MEXICO" codigoPostal="07280" />
+    <cfdi:ExpedidoEn calle="AV. CUAUTEPEC" noExterior="101" colonia="JORGE NEGRETE" municipio="GUSTAVO A MADERO" estado="MEXICO, D.F." pais="MEXICO" codigoPostal="07280" />
+    <cfdi:RegimenFiscal Regimen="REGIMEN GENERAL DE LEY PERSONAS MORALES" />
+  </cfdi:Emisor>
+  <cfdi:Receptor rfc="ZEIA920731RH0" nombre="ALLAN ULISES ZEPEDA IBARRA">
+    <cfdi:Domicilio calle="PROF MIGUEL MELENDEZ" noExterior="7" colonia="SAN MIGUEL" municipio="GUSTAVO A MADERO" estado="DISTRITO FEDERAL" pais="MEXICO" codigoPostal="07100" />
+  </cfdi:Receptor>
+  <cfdi:Conceptos>
+    <cfdi:Concepto cantidad="2" unidad="pz" descripcion="PINO CC 12 MM" valorUnitario="380.172414" importe="760.35" />
+    <cfdi:Concepto cantidad="1" unidad="pz" descripcion="FIBRAN 18 MM" valorUnitario="300.862069" importe="300.86" />
+    <cfdi:Concepto cantidad="1" unidad="pz" descripcion="MDF 06 MM 2C BLANCA" valorUnitario="366.379310" importe="366.38" />
+    <cfdi:Concepto cantidad="1" unidad="pz" descripcion="FIBRA 5.5 MM ARAUCO" valorUnitario="137.068966" importe="137.07" />
+    <cfdi:Concepto cantidad="1" unidad="pz" descripcion="MDF 4.5 MM 1C BLANCA" valorUnitario="305.172414" importe="305.17" />
+  </cfdi:Conceptos>
+  <cfdi:Impuestos totalImpuestosTrasladados="299.17">
+    <cfdi:Traslados>
+      <cfdi:Traslado impuesto="IEPS" tasa="0.00" importe="0.00" />
+      <cfdi:Traslado impuesto="IVA" tasa="16.00" importe="299.17" />
+    </cfdi:Traslados>
+  </cfdi:Impuestos>
+  <cfdi:Complemento>
+    <tfd:TimbreFiscalDigital xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" version="1.0" UUID="F6775182-E8D7-42CD-85F0-CE3FD6AB21A4" FechaTimbrado="2016-07-06T11:25:50" noCertificadoSAT="00001000000301160463" selloCFD="flietrdqMFpbSG4rBa3HdmT0eF4b7aVkHdAQksFsd2qlzzE8IleK/RdL2tS1sjNTdBtThykWTlUGQY6MVYpziwQ2bVAOapuC4LNOi32vJmaoWNzVpuBsDTBcgpgEN8HbZJpIAKpXsE5GMfZ3Og8KCC5wi9IEibwyBoLh7Iu280A=" selloSAT="EefJ4r0nxd1b5MvKk6chVm03vwRNqvRVtgJa6B/eozKuiAsZ5N5MsJaL/+dYoaFKFQakvXd+TFYLjiuzJIQUz4Vqq3Em+bvbmHVgtrr6KBGzvXPT+mW/i9jf1/6pNM+T+s97uwDJR4D1cP1G/uCEnTBKVvpjfr5gnPWFuJWfKPI=" xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/TimbreFiscalDigital/TimbreFiscalDigital.xsd" />
+  </cfdi:Complemento>
+</cfdi:Comprobante>

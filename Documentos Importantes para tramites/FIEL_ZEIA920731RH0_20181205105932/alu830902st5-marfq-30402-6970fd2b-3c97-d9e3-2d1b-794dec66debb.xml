@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cfdi:Comprobante xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sat.gob.mx/cfd/3 http://www.sat.gob.mx/sitio_internet/cfd/3/cfdv33.xsd" Version="3.3" Serie="MARFQ" Folio="30402" Fecha="2019-03-05T18:43:32" Sello="CxX8G/AI3Ejbt7pC/Zh8DrJqJv03ZsVzp4V02qKUvRn4bfztlIBA4kNaKRrUcOG/jaFjlPgDldxxYnq6R58ExeuK7549BxDq+g1uU8k42uwi4el37JAm7c9/LuM+6n52J0OZZAbwsN7Q+vWp7nVdT9PA6D2cTktnqSPw8ip8N431Sqy3bphEy1D4TL+BMZW0Zv/VQFErRIMbcXFLS8nx0pm5D0BnTRtcxWthl4lpbm76IWNGbBXgu39SDe4fa0IiB0Bli3piH+GJLxXA9hZ5zxhnu462eP+mPXkgOg9Lb2QxZ47UaXGWVFPpqQpfqati2s0WnYFVQ7EvUin9fORvXA==" FormaPago="01" NoCertificado="00001000000405655828" Certificado="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" CondicionesDePago="Contado" SubTotal="274.27" Moneda="MXN" Total="318.15" TipoDeComprobante="I" MetodoPago="PUE" LugarExpedicion="07720" xmlns:cfdi="http://www.sat.gob.mx/cfd/3">
+  <cfdi:Emisor Rfc="ALU830902ST5" Nombre="ABASTECEDORA LUMEN, S.A DE C.V" RegimenFiscal="601" />
+  <cfdi:Receptor Rfc="ZEIA920731RH0" Nombre="ZEPEDA IBARRA ALLAN ULISES" UsoCFDI="G03" />
+  <cfdi:Conceptos>
+    <cfdi:Concepto ClaveProdServ="13101721" NoIdentificacion="2050000085345" Cantidad="1" ClaveUnidad="H87" Unidad="Pieza" Descripcion="ESTIRE BCO 40PTS 76X120" ValorUnitario="90.517241" Importe="90.517241">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="90.517241" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="14.48" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="14111530" NoIdentificacion="2050000206337" Cantidad="1" ClaveUnidad="H87" Unidad="Pieza" Descripcion="MICA ADH J766 5PTS 51X66 R 135" ValorUnitario="12.491379" Importe="12.491379">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="12.491379" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="2.00" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="27111803" NoIdentificacion="7501867900340" Cantidad="1" ClaveUnidad="H87" Unidad="Pieza" Descripcion="ESCUAD 340 PROF TRANSP S G S B 28CM" ValorUnitario="111.206897" Importe="111.206897">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="111.206897" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="17.79" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="46181811" NoIdentificacion="7502241123799" Cantidad="1" ClaveUnidad="H87" Unidad="Pieza" Descripcion="LENTES SEGURIDAD" ValorUnitario="53.879310" Importe="53.879310">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="53.879310" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="8.62" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="60121106" NoIdentificacion="2050000226915" Cantidad="1" ClaveUnidad="H87" Unidad="Pieza" Descripcion="BRIST COPAM 50X65 180G AZUL" ValorUnitario="6.172414" Importe="6.172414">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="6.172414" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="0.99" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+  </cfdi:Conceptos>
+  <cfdi:Impuestos TotalImpuestosTrasladados="43.88">
+    <cfdi:Traslados>
+      <cfdi:Traslado Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="43.88" />
+    </cfdi:Traslados>
+  </cfdi:Impuestos>
+  <cfdi:Complemento>
+    <tfd:TimbreFiscalDigital xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/cfd/TimbreFiscalDigital/TimbreFiscalDigitalv11.xsd" Version="1.1" FechaTimbrado="2019-03-05T18:49:51" SelloCFD="CxX8G/AI3Ejbt7pC/Zh8DrJqJv03ZsVzp4V02qKUvRn4bfztlIBA4kNaKRrUcOG/jaFjlPgDldxxYnq6R58ExeuK7549BxDq+g1uU8k42uwi4el37JAm7c9/LuM+6n52J0OZZAbwsN7Q+vWp7nVdT9PA6D2cTktnqSPw8ip8N431Sqy3bphEy1D4TL+BMZW0Zv/VQFErRIMbcXFLS8nx0pm5D0BnTRtcxWthl4lpbm76IWNGbBXgu39SDe4fa0IiB0Bli3piH+GJLxXA9hZ5zxhnu462eP+mPXkgOg9Lb2QxZ47UaXGWVFPpqQpfqati2s0WnYFVQ7EvUin9fORvXA==" UUID="6970FD2B-3C97-D9E3-2D1B-794DEC66DEBB" NoCertificadoSAT="00001000000402636111" RfcProvCertif="SAD110722MQA" SelloSAT="CaRTOBinvlSNhEiaSkNS6GIQ2bxjksKf2C5Dz5yIRgZpEdrf6MWWQMNbm5uLJrneza9l4r6YMS68Xyb658A1WTMjwmjar+5LvwkfHgGhhwprw5OwuvIKRmF3wH2CpCrdmUIuRUOtkYNcrv/vm88n4LleNpEXCYvU0ae/MjmcuKgsaSZ6hgleHY31rS3gsvTjhJwktwVrVfOnamnyUDcGKGz0nSIbF82XsPgrEarK5xdGqjAbuXiGNV3HvHdS7jeYXOWjt1iHmV/3LNej/miixQGR0QsgOHoPgnncePDdBzhwq8u3msg81Tp4dA136R2XRT54tnS4I3GG2TDHDrBlhQ==" />
+  </cfdi:Complemento>
+  <cfdi:Addenda>
+    <Observacion>
+      <TKGUID>E2AC7D5A-CB9B-4A27-BC83-08F7805DB459</TKGUID>
+      <TKFecha>2019-03-05</TKFecha>
+      <TKHora>18:44:53</TKHora>
+      <TKSucursal>T019</TKSucursal>
+      <CorreoEnvio>balaju01@gmail.com</CorreoEnvio>
+      <TKReferencia>249208</TKReferencia>
+      <SucTelefono>57193637 AL 42 Y 57193569</SucTelefono>
+    </Observacion>
+  </cfdi:Addenda>
+</cfdi:Comprobante>
