@@ -1,0 +1,585 @@
+{
+    "referenceNumber": "1901102782548700",
+    "valuerId": "0302695",
+    "requestDate": "2023-05-03",
+    "appraisalDate": "2023-05-03",
+    "vigenceDate": "2023-05-03",
+    "costTotalAvaluo": {
+        "amount": 0.49923826782322334
+    },
+    "appraisalCode": "09005121500093304",
+    "ratificationDate": "2023-05-03",
+    "serviceStatus": "RTF",
+    "endDate": "2023-05-03",
+    "creditNumber": "",
+    "property": {
+        "type": "102 - vivienda en condominio",
+        "landSurface": 0.49923826782322334,
+        "landConstruction": 0.49923826782322334,
+        "commercialValue": {
+            "amount": 0.49923826782322334
+        },
+        "insurableValue": {
+            "amount": 0.49923826782322334
+        },
+        "clasification": "Interes Social",
+        "terminationYear": "2018",
+        "realStateAge": "1",
+        "usefulLifeRemnant": "40",
+        "totalLife": "41",
+        "realStateAssessment": "s",
+        "basements": "N",
+        "levels": "1",
+        "conservationStatus": "Nuevo",
+        "amountConstruction": {
+            "amount": 0.49923826782322334
+        },
+        "addressComponents": [
+            {
+                "name":"Mexico",
+                "code":"MX",
+                "componentTypes":[
+                    "COUNTRY",
+                    "POLITICAL"
+                ]
+            },
+			{
+                "name":"03339";
+                "code":"03339",
+                "componentTypes":[
+                    "POSTAL_CODE"
+                ]
+            },
+			{
+                "name":"Distrito Federal",
+                "code":"Distrito Federal",
+                "componentTypes":[
+                    "ADMINISTRATIVE_AREA_LEVEL_1",
+                    "POLITICAL",
+                    "satate"
+                ]
+            },
+			{
+                "name":"Gustavo A. Madero",
+                "code":"",
+                "componentTypes":[
+                    "ADMINISTRATIVE_AREA_LEVEL_2",
+                    "POLITICAL",
+                    "city"
+                ]
+            },
+			{
+                "name":"xoco",
+                "code":"",
+                "componentTypes":[
+                    "LOCALITY",
+                    "POLITICAL",
+                    "neightborthood"
+                ]
+            },
+			{
+                "name":"AV. UNIVERSIDAD",
+                "code":"",
+                "componentTypes":[
+                    "streetName",
+                    "route"
+                ]
+            },
+			{
+                "name":"1206",
+                "code":"1206",
+                "componentTypes":[
+                    "STREET_NUMBER"
+                ]
+            },
+			{
+                "name":"1",
+                "code":"",
+                "componentTypes":[
+                    "DOOR_NUMBER"
+                ]
+            },
+			{
+                "name":"",
+                "code":"",
+                "componentTypes":[
+                    "CUV"
+                ]
+            },
+			{
+                "name":"",
+                "code":"",
+                "componentTypes":[
+                    "BLOCK"
+                ]
+            },
+			{
+                "name":"",
+                "code":"",
+                "componentTypes":[
+                    "additionalInformation"
+                ]
+            }
+        ]
+    }
+}
+
+servers:
+  - url: https://api.example.com
+
+paths:
+  /post:
+    post:
+      summary: Create a new item
+      description: Endpoint to create a new item.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                referenceNumber:
+                  type: string
+                  description: Number of the valuation service
+                  example: "123456"
+                valuerId:
+                  type: string
+                  description: Valuer's ID
+                  example: "A123"
+                requestDate:
+                  type: string
+                  description: Date of the request
+                  example: "2023-04-28"
+                appraisalDate:
+                  type: string
+                  description: Date of the appraisal
+                  example: "2023-05-01"
+                vigenceDate:
+                  type: string
+                  description: Date of the appraisal's validity
+                  example: "2023-06-30"
+                costTotalAvaluo:
+                  type: object
+                  properties:
+                    amount:
+                      type: number
+                      format: double
+                  description: Total cost of the appraisal
+                  example:
+                    amount: 1500.0
+                appraisalCode:
+                  type: string
+                  description: Appraisal code
+                  example: "AVL001"
+                ratificationDate:
+                  type: string
+                  description: Date of ratification
+                  example: "2023-05-05"
+                serviceStatus:
+                  type: string
+                  description: Service status
+                  example: "Accepted"
+                endDate:
+                  type: string
+                  description: End date
+                  example: "2023-06-30"
+                creditNumber:
+                  type: string
+                  description: Credit number
+                  example: "CREDIT001"
+                property:
+                  type: object
+                  properties:
+                    type:
+                      type: string
+                      description: Property type
+                      example: "Single-family house"
+                    landSurface:
+                      type: number
+                      format: double
+                      description: Land surface area
+                      example: 250.5
+                    landConstruction:
+                      type: number
+                      format: double
+                      description: Construction surface area
+                      example: 150.75
+                    commercialValue:
+                      type: object
+                      properties:
+                        amount:
+                          type: number
+                          format: double
+                      description: Commercial value
+                      example:
+                        amount: 2000000.0
+                    insurableValue:
+                      type: object
+                      properties:
+                        amount:
+                          type: number
+                          format: double
+                      description: Insurable value
+                      example:
+                        amount: 1800000.0
+                    clasification:
+                      type: string
+                      description: Property classification
+                      example: "Residential"
+                    terminationYear:
+                      type: string
+                      description: Year of construction termination
+                      example: "2010"
+                    realStateAge:
+                      type: string
+                      description: Real estate age
+                      example: "13"
+                    usefulLifeRemnant:
+                      type: string
+                      description: Remaining useful life
+                      example: "45"
+                    totalLife:
+                      type: string
+                      description: Total life of the property
+                      example: "50"
+                    realStateAssessment:
+                      type: string
+                      description: Real estate assessment
+                      example: "2000000.0"
+                    basements:
+                      type: string
+                      description: Number of basements
+                      example: "2"
+                    levels:
+                      type: string
+                      description: Number of levels
+                      example: "3"
+                    amountConstruction:
+                      type: object
+                      properties:
+                        amount:
+                          type: number
+                          format: double
+                      description: Construction value
+                      example:
+                        amount: 1500000.0
+                    conservationStatus:
+                      type: string
+                      description: Property conservation status
+                      example: "Used"
+                    addressComponents:
+                      type: array
+                      items:
+                        type: object
+                        properties:
+                          name:
+                            type: string
+                            description: Full description or name of the address component
+                            example: "Country"
+                          code:
+                            type: string
+                            description: Abbreviated name for the address component
+                            example: "CO"
+                          componentTypes:
+                            type: array
+                            items:
+                              type: string
+                            description: Array indicating the field type and its characteristics
+                            example:
+                              - "COUNTRY"
+                              - "ADMINISTRATIVE_AREA_LEVEL_1"
+                              - "LOCALITY"
+                              - "STREET_NAME"
+                              - "STREET_NUMBER"
+                              - "DOOR_NUMBER"
+                              - "ADDITIONAL_INFORMATION"
+          application/xml:
+            schema:
+              type: object
+
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  codReto:
+                    type: string
+                    description: Status of the request / return code
+                    example: "200"
+                    required: true
+                  descCod:
+                    type: string
+                    description: Description of the return code
+                    example: "Successful request"
+                    required: true
+
+
+const apiDescription = {
+  servers: [
+    {
+      url: "https://api.example.com"
+    }
+  ],
+  paths: {
+    "/post": {
+      post: {
+        summary: "Create a new item",
+        description: "Endpoint to create a new item.",
+        requestBody: {
+          required: true,
+          content: {
+            "application/json": {
+              schema: {
+                type: "object",
+                properties: {
+                  referenceNumber: {
+                    type: "string",
+                    description: "Number of the valuation service",
+                    example: "123456"
+                  },
+                  valuerId: {
+                    type: "string",
+                    description: "Valuer's ID",
+                    example: "A123"
+                  },
+                  requestDate: {
+                    type: "string",
+                    description: "Date of the request",
+                    example: "2023-04-28"
+                  },
+                  appraisalDate: {
+                    type: "string",
+                    description: "Date of the appraisal",
+                    example: "2023-05-01"
+                  },
+                  vigenceDate: {
+                    type: "string",
+                    description: "Date of the appraisal's validity",
+                    example: "2023-06-30"
+                  },
+                  costTotalAvaluo: {
+                    type: "object",
+                    properties: {
+                      amount: {
+                        type: "number",
+                        format: "double"
+                      }
+                    },
+                    description: "Total cost of the appraisal",
+                    example: {
+                      amount: 1500.0
+                    }
+                  },
+                  appraisalCode: {
+                    type: "string",
+                    description: "Appraisal code",
+                    example: "AVL001"
+                  },
+                  ratificationDate: {
+                    type: "string",
+                    description: "Date of ratification",
+                    example: "2023-05-05"
+                  },
+                  serviceStatus: {
+                    type: "string",
+                    description: "Service status",
+                    example: "Accepted"
+                  },
+                  endDate: {
+                    type: "string",
+                    description: "End date",
+                    example: "2023-06-30"
+                  },
+                  creditNumber: {
+                    type: "string",
+                    description: "Credit number",
+                    example: "CREDIT001"
+                  },
+                  property: {
+                    type: "object",
+                    properties: {
+                      type: {
+                        type: "string",
+                        description: "Property type",
+                        example: "Single-family house"
+                      },
+                      landSurface: {
+                        type: "number",
+                        format: "double",
+                        description: "Land surface area",
+                        example: 250.5
+                      },
+                      landConstruction: {
+                        type: "number",
+                        format: "double",
+                        description: "Construction surface area",
+                        example: 150.75
+                      },
+                      commercialValue: {
+                        type: "object",
+                        properties: {
+                          amount: {
+                            type: "number",
+                            format: "double"
+                          }
+                        },
+                        description: "Commercial value",
+                        example: {
+                          amount: 2000000.0
+                        }
+                      },
+                      insurableValue: {
+                        type: "object",
+                        properties: {
+                          amount: {
+                            type: "number",
+                            format: "double"
+                          }
+                        },
+                        description: "Insurable value",
+                        example: {
+                          amount: 1800000.0
+                        }
+                      },
+                      clasification: {
+                        type: "string",
+                        description: "Property classification",
+                        example: "Residential"
+                      },
+                      terminationYear: {
+                        type: "string",
+                        description: "Year of construction termination",
+                        example: "2010"
+                      },
+                      realStateAge: {
+                        type: "string",
+                        description: "Age of the property",
+                        example: "13 years"
+                      },
+                      usefulLifeRemnant: {
+                        type: "string",
+                        description: "Remaining useful life",
+                        example: "30 years"
+                      },
+                      totalLife: {
+                        type: "string",
+                        description: "Total life of the property",
+                        example: "50 years"
+                      },
+                      realStateAssessment: {
+                        type: "string",
+                        description: "Real estate assessment",
+                        example: "High"
+                      },
+                      basements: {
+                        type: "string",
+                        description: "Number of basements",
+                        example: "2"
+                      },
+                      levels: {
+                        type: "string",
+                        description: "Number of levels",
+                        example: "3"
+                      },
+                      amountConstruction: {
+                        type: "object",
+                        properties: {
+                          amount: {
+                            type: "number",
+                            format: "double"
+                          }
+                        },
+                        description: "Construction value",
+                        example: {
+                          amount: 1500000.0
+                        }
+                      },
+                      conservationStatus: {
+                        type: "string",
+                        description: "Property conservation status",
+                        example: "Used"
+                      },
+                      addressComponents: {
+                        type: "array",
+                        items: {
+                          type: "object",
+                          properties: {
+                            name: {
+                              type: "string",
+                              description: "Full description or name of the address component",
+                              example: "Country"
+                            },
+                            code: {
+                              type: "string",
+                              description: "Abbreviated name for the address component",
+                              example: "CO"
+                            },
+                            componentTypes: {
+                              type: "array",
+                              items: {
+                                type: "string"
+                              },
+                              description: "Array indicating the field type and its characteristics",
+                              example: [
+                                "COUNTRY",
+                                "ADMINISTRATIVE_AREA_LEVEL_1",
+                                "LOCALITY",
+                                "STREET_NAME",
+                                "STREET_NUMBER",
+                                "DOOR_NUMBER",
+                                "ADDITIONAL_INFORMATION"
+                              ]
+                            }
+                          },
+                          required: true
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "application/xml": {
+              schema: {
+                type: "object"
+              }
+            }
+          },
+          description: "Request body for creating a new item"
+        },
+        responses: {
+          "200": {
+            description: "Successful response",
+            content: {
+              "application/json": {
+                schema: {
+                  type: "object",
+                  properties: {
+                    codReto: {
+                      type: "string",
+                      description: "Status of the request / return code",
+                      example: "200",
+                      required: true
+                    },
+                    descCod: {
+                      type: "string",
+                      description: "Description of the return code",
+                      example: "Successful request",
+                      required: true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+};
+
+
