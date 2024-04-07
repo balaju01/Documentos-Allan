@@ -1,0 +1,122 @@
+Attribute Name,Type,Required (Y/N),Description
+referenceNumber,String,Y,No. Sev. Valuación
+valuerId,String,N,Clave del perito
+requestDate,String,N,Fecha de solicitud
+appraisalDate,String,N,Fecha de avaluó
+vigenceDate,String,N,Fecha de vigencia del avalúo
+costTotalAvaluo,Object,N,Costo del avaluó
+costTotalAvaluo.amount,Double,N,
+appraisalCode,String,N,Clave del avaluó
+ratificationDate,String,N,Fecha ratificación
+serviceStatus,String,N,"Estado del servicio
+Posibles valores:
+1 - Alta de Servicio
+2 - Aceptado
+3 - Incidencia Agendar Visita
+4 - Visita
+5 - Incidencia de Visita
+6 - En Realización
+7 - Incidencia de Documentación
+8 - Pdf Entregado
+9 - Con Adeudo 
+10 - Pte Reembolso
+11 - Finalizado"""
+endDate,String,N,Fecha finaliza
+creditNumber,String,N,Numero de crédito
+property,Object,N,
+property.type,String,N,"Tipo de inmueble
+Posibles Valores: 
+101 - Vivienda aislada(casa sola)
+102 - Vivienda en condominio
+103 - Departamento habitacional
+106 - Terreno urbano de uso habitacional
+107 - Terreno suburbano habitacional"""
+property.landSurface,Double,N,Superficie terreno
+property.landConstruction,Double,N,Superficie construcción
+property.commercialValue,Object,N,Valor comercial
+property.commercialValue.amount,Double,N,
+property.insurableValue,Object,N,Valor asegurable
+property.insurableValue.amount,Double,N,
+property.clasification,String,N,"Clasificación del bien
+Posibles valores:
+- Minima
+- Económica
+- Interes Social
+- Medio
+- Semi Lujo
+- Residencial
+- Residencial Plus"
+property.terminationYear,String,N,Año termi de obra
+property.realStateAge,String,N,Edad del inmueble
+property.usefulLifeRemnant,String,N,Vida útil remanente
+property.totalLife,String,N,Vida total del inmueble
+property.realStateAssessment,String,N,Valoración inmobiliaria
+property.basements,String,N,Numero de sótanos
+property.levels,String,N,Número de pisos
+property.amountConstruction,Object,N,Valor de construcción
+property.amountConstruction.amount,Double,N,
+property.conservationStatus,String,N,"Estado del bien inmueble
+Posibles valores:
+- Usado
+- Nuevo
+- Hipotecado
+- Renta"
+property.addressComponets[X],Object,N,"Additional geographic information.
+Esta matriz de objetos puede contener los siguientes campos de dirección:
+country
+
+Postal code
+
+State
+
+City
+
+municipality, city or province
+
+neightborthood
+
+street Name
+
+street Number
+
+Door Number
+
+CUV
+
+Block
+
+additional Information"
+property.addressComponets[X].name,String,Y,La descripción de texto completo o el nombre del componente de dirección.
+property.addressComponets[X].code,String,Y,"Un nombre textual abreviado para el componente de dirección. Por ejemplo, un componente de dirección para España puede tener un nombre largo de ""España"" y un nombre corto de ES, usando el código ISO-3166-1 de 2 dígitos."
+property.addressComponets[X].componentTypes[x],String,Y,"Esta matriz indica el tipo de campo y sus características. Contiene un conjunto de cero o más etiquetas que identifican el tipo de información que se ha agregado.
+
+los campos sugeridos dependiendo del dato seleccionado son los siguientes:
+COUNTRY
+
+POSTAL_CODE
+
+ADMINISTRATIVE_AREA_LEVEL_1
+
+STATE
+
+ADMINISTRATIVE_AREA_LEVEL_2
+
+CITY
+
+LOCALITY
+
+NEIGHTBORTHOOD
+
+STREET_NAME
+
+ROUTE
+
+STREET_NUMBER
+
+DOOR_NUMBER
+
+CUV
+
+BLOCK
+
+ADDITIONAL_INFORMATION"
