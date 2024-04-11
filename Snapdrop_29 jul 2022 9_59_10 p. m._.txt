@@ -1,0 +1,23 @@
+Paisaje sonoro
+El Paisaje Sonoro lo conforman todos aquellos sonidos que son característicos de un lugar, propios de un momento o de una determinada actividad.
+
+Sonido
+El sonido, en física, es cualquier fenómeno que involucre la propagación en forma de ondas elásticas
+
+Cualidades:
+Altura, Intensidad, Duracion, Timbre
+
+Oído externo: las ondas sonoras que viajan por el aire se concentran en el pabellón auricular (oreja) y circulan por el canal auditivo hasta llegar al tímpano, que es una membrana flexible que vibra al recibir el impacto de las ondas. 
+Oído medio: en esta zona encontramos una cadena de “huesecillos” (martillo, yunque y estribo) que reciben las vibraciones del tímpano y las amplifican antes de enviarlas al oído interno.
+Oído interno: también llamado cóclea por tener forma de caracol. Esta zona contiene un líquido que se balancea al recibir el estímulo de la cadena de huesecillos y que, al moverse, estimula unas células ciliadas que envían impulsos eléctricos a través del nervio auditivo a nuestro cerebro, donde se reconocen como sonidos.
+
+Ruido
+El ruido es la sensación auditiva inarticulada, generalmente desagradable. ​ En el medio ambiente, se define como todo lo molesto para el oído o, más exactamente, como todo sonido no deseado.
+
+captacion del sonido
+
+microfonos
+
+que es la ganancia
+
+que es el volumen de salida
