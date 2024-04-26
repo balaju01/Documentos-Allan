@@ -1,0 +1,40 @@
+------------------Pasos en SQL Server------------------
+1.- Mandar el Correo
+
+2.- Revisar los archivos log para Validar que la informacion se cargo correctamente
+
+3.- Hacer un selct al mes correspondiente en las tablas Apple Itunes y Orchard para confirmar la correcta carga
+select top(1000) * from [dbo].[APPLEMUSIC] where [Anio] = '2022' and [Mes] = '3'
+select top(1000) * from [dbo].[ITUNES] where [Anio] = '2022' and [Mes] = '3'
+select top(1000) * from [dbo].[ORCHARD] where [Anio] = '2022' and [Mes] = '3'
+
+4.- verificar el estado de los ISRC y UPC de los nuevos discos y artistas en la tabla BBDD_FINAL_CANCIONES si no existen o estan con otros datos se insertan
+select * from [dbo].[BBDD_FINAL_CANCIONES] where [UPC] = ''
+select * from [dbo].[BBDD_FINAL_CANCIONES] where [ALBUM_ID] = ''
+select * from [dbo].[BBDD_FINAL_CANCIONES] where [ISRC] = ''
+select * from [dbo].[BBDD_FINAL_VIDEOS] where [UPC] = ''
+select * from [dbo].[BBDD_FINAL_VIDEOS] where [VIDEO_ID] = ''
+select * from [dbo].[BBDD_FINAL_VIDEOS] where [ISRC] = ''
+INSERT INTO [dbo].[BBDD_FINAL_CANCIONES] ([UPC],[ALBUM_ID],[ARTIST],[ALBUM_NAME],[TRACK_NUMBER],[ISRC],[TRACK_NAME],[GENRE],[SELLO],[LABEL],[COPYRIGHT_YEAR],[RELEASE_DATE]) VALUES ('',''),('','')
+INSERT INTO [dbo].[BBDD_FINAL_VIDEOS] ([UPC],[VIDEO_ID],[ARTIST],[TITLE_ALBUM],[ISRC],[TITLE_VIDEO]) VALUES ('',''),('','')
+UPDATE [dbo].[BBDD_FINAL_tabla] SET COLUMNA = '' WHERE [condicion] = '';
+UPDATE [dbo].[BBDD_FINAL_CANCIONES] SET column1 = value1, column2 = value2, ... WHERE
+
+5.- ejecutar query de actualizacion
+INSERT INTO [000_Client_Dashboard_Total] 
+SELECT FT.*
+FROM V_FINAL_TABLE FT
+JOIN BBDD_FINAL_CANCIONES BFC
+ON FT.UPC_ISRC = BFC.UPC
+WHERE FT.Year_Month = '2022-3' -- CAMBIAR EL MES DE ACUERDO A LA ÚLTIMA ACTUALIZACIÓN
+UNION
+SELECT FT.*
+FROM V_FINAL_TABLE FT
+JOIN BBDD_FINAL_CANCIONES BFC
+ON FT.UPC_ISRC = BFC.ISRC
+WHERE FT.Year_Month = '2022-3' -- CAMBIAR EL MES DE ACUERDO A LA ÚLTIMA ACTUALIZACIÓN
+
+------------------Pasos en Power Bi--------------------
+1.- Actualizar la tabla Base Total, para detectar errores de carga en los datos
+2.- Si exiten errores de carga corregirlos y volver a cargar la tabla Base Total
+3.- Ya que no existan errores actualizar las demas tablas

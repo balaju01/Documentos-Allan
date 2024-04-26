@@ -1,0 +1,209 @@
+ZIP file [C:\Users\DELL\Documents\REPORTES_FONARTE\20201023_Sep2020_fullreport_fonarte_latino_s_a_de_c_v_US.xls.zip] extracted.
+ZIP file [C:\Users\DELL\Documents\REPORTES_FONARTE\apple septiembre 2020.zip] extracted.
+Getting [Orchard] ready... done.
+Getting [Itunes] ready... done.
+Getting [Exchange Rate] ready... done.
+Getting [Apple Music] ready... done.
+
+C:\Windows\system32>sqlcmd -S fonarte2.database.windows.net -d Reporteador -U Dataguys2 -P Fonarte2018 -I -Q "TRUNCATE TABLE TMP_APPLEMUSIC;" 
+
+C:\Windows\system32>sqlcmd -S fonarte2.database.windows.net -d Reporteador -U Dataguys2 -P Fonarte2018 -I -Q "TRUNCATE TABLE TMP_ITUNES;" 
+
+C:\Windows\system32>sqlcmd -S fonarte2.database.windows.net -d Reporteador -U Dataguys2 -P Fonarte2018 -I -Q "TRUNCATE TABLE TMP_FINANCIAL_REPORT;" 
+
+C:\Windows\system32>sqlcmd -S fonarte2.database.windows.net -d Reporteador -U Dataguys2 -P Fonarte2018 -I -Q "TRUNCATE TABLE TMP_ORCHARD;" 
+
+C:\Windows\system32>REN C:\Users\DELL\Documents\REPORTES_FONARTE\*fullreport*.txt TMP_ORCHARD.txt; 
+
+C:\Windows\system32>REN C:\Users\DELL\Documents\REPORTES_FONARTE\S1*.txt TMP_APPLEMUSIC.txt; 
+
+C:\Windows\system32>REN C:\Users\DELL\Documents\REPORTES_FONARTE\*_ZZ*.txt TMP_ITUNES.txt; 
+
+C:\Windows\system32>REN C:\Users\DELL\Documents\REPORTES_FONARTE\financial*.txt TMP_FINANCIAL_REPORT.txt; 
+
+C:\Windows\system32>bcp TMP_APPLEMUSIC in C:\Users\DELL\Documents\REPORTES_FONARTE\TMP_APPLEMUSIC.txt -S fonarte2.database.windows.net -d Reporteador -U Dataguys2 -P Fonarte2018 -q -c -t \t -r 0x0A -C 65001; 
+
+Starting copy...
+1000 rows sent to SQL Server. Total sent: 1000
+1000 rows sent to SQL Server. Total sent: 2000
+1000 rows sent to SQL Server. Total sent: 3000
+1000 rows sent to SQL Server. Total sent: 4000
+1000 rows sent to SQL Server. Total sent: 5000
+1000 rows sent to SQL Server. Total sent: 6000
+1000 rows sent to SQL Server. Total sent: 7000
+1000 rows sent to SQL Server. Total sent: 8000
+1000 rows sent to SQL Server. Total sent: 9000
+1000 rows sent to SQL Server. Total sent: 10000
+1000 rows sent to SQL Server. Total sent: 11000
+1000 rows sent to SQL Server. Total sent: 12000
+1000 rows sent to SQL Server. Total sent: 13000
+1000 rows sent to SQL Server. Total sent: 14000
+1000 rows sent to SQL Server. Total sent: 15000
+1000 rows sent to SQL Server. Total sent: 16000
+1000 rows sent to SQL Server. Total sent: 17000
+1000 rows sent to SQL Server. Total sent: 18000
+1000 rows sent to SQL Server. Total sent: 19000
+1000 rows sent to SQL Server. Total sent: 20000
+1000 rows sent to SQL Server. Total sent: 21000
+1000 rows sent to SQL Server. Total sent: 22000
+1000 rows sent to SQL Server. Total sent: 23000
+1000 rows sent to SQL Server. Total sent: 24000
+1000 rows sent to SQL Server. Total sent: 25000
+1000 rows sent to SQL Server. Total sent: 26000
+1000 rows sent to SQL Server. Total sent: 27000
+1000 rows sent to SQL Server. Total sent: 28000
+1000 rows sent to SQL Server. Total sent: 29000
+1000 rows sent to SQL Server. Total sent: 30000
+1000 rows sent to SQL Server. Total sent: 31000
+1000 rows sent to SQL Server. Total sent: 32000
+1000 rows sent to SQL Server. Total sent: 33000
+1000 rows sent to SQL Server. Total sent: 34000
+1000 rows sent to SQL Server. Total sent: 35000
+1000 rows sent to SQL Server. Total sent: 36000
+1000 rows sent to SQL Server. Total sent: 37000
+SQLState = 08S01, NativeError = 10054
+Error = [Microsoft][ODBC Driver 13 for SQL Server]TCP Provider: Se ha forzado la interrupci¢n de una conexi¢n existente por el host remoto.
+
+SQLState = 08S01, NativeError = 10054
+Error = [Microsoft][ODBC Driver 13 for SQL Server]Communication link failure
+SQLState = 08S01, NativeError = 0
+Error = [Microsoft][ODBC Driver 13 for SQL Server]Communication link failure
+SQLState = 08S01, NativeError = 0
+Error = [Microsoft][ODBC Driver 13 for SQL Server]Communication link failure
+SQLState = 08S01, NativeError = 0
+Error = [Microsoft][ODBC Driver 13 for SQL Server]Communication link failure
+SQLState = 08S01, NativeError = 0
+Error = [Microsoft][ODBC Driver 13 for SQL Server]Communication link failure
+SQLState = 08S01, NativeError = 0
+Error = [Microsoft][ODBC Driver 13 for SQL Server]Communication link failure
+SQLState = 08S01, NativeError = 0
+Error = [Microsoft][ODBC Driver 13 for SQL Server]Communication link failure
+SQLState = 08S01, NativeError = 0
+Error = [Microsoft][ODBC Driver 13 for SQL Server]Communication link failure
+SQLState = 08S01, NativeError = 0
+Error = [Microsoft][ODBC Driver 13 for SQL Server]Communication link failure
+SQLState = 08S01, NativeError = 0
+Error = [Microsoft][ODBC Driver 13 for SQL Server]Communication link failure
+SQLState = 08S01, NativeError = 0
+Error = [Microsoft][ODBC Driver 13 for SQL Server]Communication link failure
+SQLState = 08S01, NativeError = -2147467259
+Error = [Microsoft][ODBC Driver 13 for SQL Server]Communication link failure
+
+BCP copy in failed
+
+C:\Windows\system32>bcp TMP_ITUNES in C:\Users\DELL\Documents\REPORTES_FONARTE\TMP_ITUNES.txt -S fonarte2.database.windows.net -d Reporteador -U Dataguys2 -P Fonarte2018 -q -c -t \t -r 0x0A -C 65001; 
+
+Starting copy...
+
+619 rows copied.
+Network packet size (bytes): 4096
+Clock Time (ms.) Total     : 1030   Average : (600.97 rows per sec.)
+
+C:\Windows\system32>bcp TMP_FINANCIAL_REPORT in C:\Users\DELL\Documents\REPORTES_FONARTE\TMP_FINANCIAL_REPORT.txt -S fonarte2.database.windows.net -d Reporteador -U Dataguys2 -P Fonarte2018 -q -c -t \t -r 0x0A -C 65001; 
+
+Starting copy...
+
+35 rows copied.
+Network packet size (bytes): 4096
+Clock Time (ms.) Total     : 234    Average : (149.57 rows per sec.)
+
+C:\Windows\system32>bcp TMP_ORCHARD in C:\Users\DELL\Documents\REPORTES_FONARTE\TMP_ORCHARD.txt -S fonarte2.database.windows.net -d Reporteador -U Dataguys2 -P Fonarte2018 -q -c -t \t -r 0x0A -C 65001; 
+
+Starting copy...
+1000 rows sent to SQL Server. Total sent: 1000
+1000 rows sent to SQL Server. Total sent: 2000
+1000 rows sent to SQL Server. Total sent: 3000
+1000 rows sent to SQL Server. Total sent: 4000
+1000 rows sent to SQL Server. Total sent: 5000
+1000 rows sent to SQL Server. Total sent: 6000
+1000 rows sent to SQL Server. Total sent: 7000
+1000 rows sent to SQL Server. Total sent: 8000
+1000 rows sent to SQL Server. Total sent: 9000
+1000 rows sent to SQL Server. Total sent: 10000
+1000 rows sent to SQL Server. Total sent: 11000
+1000 rows sent to SQL Server. Total sent: 12000
+SQLState = 08S01, NativeError = 10054
+Error = [Microsoft][ODBC Driver 13 for SQL Server]TCP Provider: Se ha forzado la interrupci¢n de una conexi¢n existente por el host remoto.
+
+SQLState = 08S01, NativeError = 10054
+Error = [Microsoft][ODBC Driver 13 for SQL Server]Communication link failure
+SQLState = 08S01, NativeError = 0
+Error = [Microsoft][ODBC Driver 13 for SQL Server]Communication link failure
+SQLState = 08S01, NativeError = 0
+Error = [Microsoft][ODBC Driver 13 for SQL Server]Communication link failure
+SQLState = 08S01, NativeError = 0
+Error = [Microsoft][ODBC Driver 13 for SQL Server]Communication link failure
+SQLState = 08S01, NativeError = 0
+Error = [Microsoft][ODBC Driver 13 for SQL Server]Communication link failure
+SQLState = 08S01, NativeError = 0
+Error = [Microsoft][ODBC Driver 13 for SQL Server]Communication link failure
+SQLState = 08S01, NativeError = 0
+Error = [Microsoft][ODBC Driver 13 for SQL Server]Communication link failure
+SQLState = 08S01, NativeError = 0
+Error = [Microsoft][ODBC Driver 13 for SQL Server]Communication link failure
+SQLState = 08S01, NativeError = 0
+Error = [Microsoft][ODBC Driver 13 for SQL Server]Communication link failure
+SQLState = 08S01, NativeError = 0
+Error = [Microsoft][ODBC Driver 13 for SQL Server]Communication link failure
+SQLState = 08S01, NativeError = 0
+Error = [Microsoft][ODBC Driver 13 for SQL Server]Communication link failure
+SQLState = 08S01, NativeError = -2147467259
+Error = [Microsoft][ODBC Driver 13 for SQL Server]Communication link failure
+
+BCP copy in failed
+
+C:\Windows\system32>sqlcmd -S fonarte2.database.windows.net -d Reporteador -U Dataguys2 -P Fonarte2018 -I -Q "INSERT INTO APPLEMUSIC SELECT * FROM TMP_APPLEMUSIC;" 
+
+(0 rows affected)
+
+C:\Windows\system32>sqlcmd -S fonarte2.database.windows.net -d Reporteador -U Dataguys2 -P Fonarte2018 -I -Q "INSERT INTO ITUNES SELECT * FROM TMP_ITUNES;" 
+
+(619 rows affected)
+
+C:\Windows\system32>sqlcmd -S fonarte2.database.windows.net -d Reporteador -U Dataguys2 -P Fonarte2018 -I -Q "INSERT INTO ORCHARD SELECT * FROM TMP_ORCHARD;" 
+
+(0 rows affected)
+
+C:\Windows\system32>sqlcmd -S fonarte2.database.windows.net -d Reporteador -U Dataguys2 -P Fonarte2018 -I -Q "INSERT INTO APPLE_CURRENCY SELECT LEFT(RIGHT(DIVISA,4),3), TIPO_DE_CAMBIO, ANIO, MES FROM TMP_FINANCIAL_REPORT;" 
+
+(35 rows affected)
+
+C:\Windows\system32>Robocopy C:\Users\DELL\Documents\REPORTES_FONARTE C:\Users\DELL\Documents\REPORTES_FONARTE_PROCESADOS /mov /s /w:1 /r:1 
+
+-------------------------------------------------------------------------------
+   ROBOCOPY     ::     Herramienta para copia eficaz de archivos                             
+-------------------------------------------------------------------------------
+
+  Inicio: Sat Oct 24 16:03:43 2020
+
+   Origen : C:\Users\DELL\Documents\REPORTES_FONARTE\
+     Destino : C:\Users\DELL\Documents\REPORTES_FONARTE_PROCESADOS\
+
+    Archivos: *.*
+	    
+  Opciones: *.* /S /COPY:DAT /MOV /R:1 /W:1 
+
+------------------------------------------------------------------------------
+
+	                   5	C:\Users\DELL\Documents\REPORTES_FONARTE\
+	  *Archivo EXTRA 		     378	pass.txt
+	    MÃ¡s reciente     		    6148	.DS_Store  0%  100%  
+	    Nuevo arch  		  10.0 m	TMP_APPLEMUSIC.txt  0.0%  9.9% 19.9% 29.9% 39.9% 49.9% 59.9% 69.9% 79.9% 89.9% 99.9%100%  
+	    Nuevo arch  		    2461	TMP_FINANCIAL_REPORT.txt  0%  100%  
+	    Nuevo arch  		  105409	TMP_ITUNES.txt  0%  100%  
+	    Nuevo arch  		  97.7 m	TMP_ORCHARD.txt  0.0%  1.0%  2.0%  3.0%  4.0%  5.1%  6.1%  7.1%  8.1%  9.2% 10.2% 11.2% 12.2% 13.3% 14.3% 15.3% 16.3% 17.3% 18.4% 19.4% 20.4% 21.4% 22.5% 23.5% 24.5% 25.5% 26.6% 27.6% 28.6% 29.6% 30.7% 31.7% 32.7% 33.7% 34.7% 35.8% 36.8% 37.8% 38.8% 39.9% 40.9% 41.9% 42.9% 44.0% 45.0% 46.0% 47.0% 48.1% 49.1% 50.1% 51.1% 52.1% 53.2% 54.2% 55.2% 56.2% 57.3% 58.3% 59.3% 60.3% 61.4% 62.4% 63.4% 64.4% 65.5% 66.5% 67.5% 68.5% 69.5% 70.6% 71.6% 72.6% 73.6% 74.7% 75.7% 76.7% 77.7% 78.8% 79.8% 80.8% 81.8% 82.9% 83.9% 84.9% 85.9% 86.9% 88.0% 89.0% 90.0% 91.0% 92.1% 93.1% 94.1% 95.1% 96.2% 97.2% 98.2% 99.2%100%  
+
+------------------------------------------------------------------------------
+
+               Total   Copiado   OmitidoNo coincidencia     ERROR    Extras
+Directorios:         1         0         1         0         0         0
+ Archivos:         5         5         0         0         0         1
+    Bytes:  107.81 m  107.81 m         0         0         0       378
+    Veces:   0:00:00   0:00:00                       0:00:00   0:00:00
+
+
+Velocidad:           1027770027 Bytes/s
+Velocidad:            58809.472 Megabytes/min
+
+Finalizado: Sat Oct 24 16:03:43 2020
+Total execution time: 3.68 min

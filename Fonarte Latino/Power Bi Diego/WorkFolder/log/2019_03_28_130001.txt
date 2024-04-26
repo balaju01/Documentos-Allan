@@ -1,0 +1,95 @@
+ZIP file [C:\Users\DELL\Documents\REPORTES_FONARTE\20190327_Feb2019_fullreport_fonarte_latino_s_a_de_c_v_US.xls.zip] extracted.
+ZIP file [C:\Users\DELL\Documents\REPORTES_FONARTE\apple febrero 2019.zip] extracted.
+Getting [Orchard] ready... done.
+Getting [Itunes] ready... done.
+Getting [Exchange Rate] ready... done.
+Getting [Apple Music] ready... done.
+
+C:\Windows\system32>sqlcmd -S fonarte2.database.windows.net -d Reporteador -U Dataguys2 -P Fonarte2018 -I -Q "TRUNCATE TABLE TMP_APPLEMUSIC;" 
+Sqlcmd: Error: Microsoft ODBC Driver 13 for SQL Server : TCP Provider: Timeout error [258]. .
+Sqlcmd: Error: Microsoft ODBC Driver 13 for SQL Server : Login timeout expired.
+Sqlcmd: Error: Microsoft ODBC Driver 13 for SQL Server : Unable to complete login process due to delay in login response.
+
+C:\Windows\system32>sqlcmd -S fonarte2.database.windows.net -d Reporteador -U Dataguys2 -P Fonarte2018 -I -Q "TRUNCATE TABLE TMP_ITUNES;" 
+Sqlcmd: Error: Microsoft ODBC Driver 13 for SQL Server : Cannot open server 'fonarte2' requested by the login. Client with IP address '201.137.152.92' is not allowed to access the server.  To enable access, use the Windows Azure Management Portal or run sp_set_firewall_rule on the master database to create a firewall rule for this IP address or address range.  It may take up to five minutes for this change to take effect..
+
+C:\Windows\system32>sqlcmd -S fonarte2.database.windows.net -d Reporteador -U Dataguys2 -P Fonarte2018 -I -Q "TRUNCATE TABLE TMP_FINANCIAL_REPORT;" 
+Sqlcmd: Error: Microsoft ODBC Driver 13 for SQL Server : Cannot open server 'fonarte2' requested by the login. Client with IP address '201.137.152.92' is not allowed to access the server.  To enable access, use the Windows Azure Management Portal or run sp_set_firewall_rule on the master database to create a firewall rule for this IP address or address range.  It may take up to five minutes for this change to take effect..
+
+C:\Windows\system32>sqlcmd -S fonarte2.database.windows.net -d Reporteador -U Dataguys2 -P Fonarte2018 -I -Q "TRUNCATE TABLE TMP_ORCHARD;" 
+Sqlcmd: Error: Microsoft ODBC Driver 13 for SQL Server : Cannot open server 'fonarte2' requested by the login. Client with IP address '201.137.152.92' is not allowed to access the server.  To enable access, use the Windows Azure Management Portal or run sp_set_firewall_rule on the master database to create a firewall rule for this IP address or address range.  It may take up to five minutes for this change to take effect..
+
+C:\Windows\system32>REN C:\Users\DELL\Documents\REPORTES_FONARTE\*fullreport*.txt TMP_ORCHARD.txt; 
+
+C:\Windows\system32>REN C:\Users\DELL\Documents\REPORTES_FONARTE\S1*.txt TMP_APPLEMUSIC.txt; 
+
+C:\Windows\system32>REN C:\Users\DELL\Documents\REPORTES_FONARTE\*_ZZ*.txt TMP_ITUNES.txt; 
+
+C:\Windows\system32>REN C:\Users\DELL\Documents\REPORTES_FONARTE\financial*.txt TMP_FINANCIAL_REPORT.txt; 
+
+C:\Windows\system32>bcp TMP_APPLEMUSIC in C:\Users\DELL\Documents\REPORTES_FONARTE\TMP_APPLEMUSIC.txt -S fonarte2.database.windows.net -d Reporteador -U Dataguys2 -P Fonarte2018 -q -c -t \t -r 0x0A -C 65001; 
+SQLState = 37000, NativeError = 40615
+Error = [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]Cannot open server 'fonarte2' requested by the login. Client with IP address '201.137.152.92' is not allowed to access the server.  To enable access, use the Windows Azure Management Portal or run sp_set_firewall_rule on the master database to create a firewall rule for this IP address or address range.  It may take up to five minutes for this change to take effect.
+
+C:\Windows\system32>bcp TMP_ITUNES in C:\Users\DELL\Documents\REPORTES_FONARTE\TMP_ITUNES.txt -S fonarte2.database.windows.net -d Reporteador -U Dataguys2 -P Fonarte2018 -q -c -t \t -r 0x0A -C 65001; 
+SQLState = 37000, NativeError = 40615
+Error = [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]Cannot open server 'fonarte2' requested by the login. Client with IP address '201.137.152.92' is not allowed to access the server.  To enable access, use the Windows Azure Management Portal or run sp_set_firewall_rule on the master database to create a firewall rule for this IP address or address range.  It may take up to five minutes for this change to take effect.
+
+C:\Windows\system32>bcp TMP_FINANCIAL_REPORT in C:\Users\DELL\Documents\REPORTES_FONARTE\TMP_FINANCIAL_REPORT.txt -S fonarte2.database.windows.net -d Reporteador -U Dataguys2 -P Fonarte2018 -q -c -t \t -r 0x0A -C 65001; 
+SQLState = 37000, NativeError = 40615
+Error = [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]Cannot open server 'fonarte2' requested by the login. Client with IP address '201.137.152.92' is not allowed to access the server.  To enable access, use the Windows Azure Management Portal or run sp_set_firewall_rule on the master database to create a firewall rule for this IP address or address range.  It may take up to five minutes for this change to take effect.
+
+C:\Windows\system32>bcp TMP_ORCHARD in C:\Users\DELL\Documents\REPORTES_FONARTE\TMP_ORCHARD.txt -S fonarte2.database.windows.net -d Reporteador -U Dataguys2 -P Fonarte2018 -q -c -t \t -r 0x0A -C 65001; 
+SQLState = 37000, NativeError = 40615
+Error = [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]Cannot open server 'fonarte2' requested by the login. Client with IP address '201.137.152.92' is not allowed to access the server.  To enable access, use the Windows Azure Management Portal or run sp_set_firewall_rule on the master database to create a firewall rule for this IP address or address range.  It may take up to five minutes for this change to take effect.
+
+C:\Windows\system32>sqlcmd -S fonarte2.database.windows.net -d Reporteador -U Dataguys2 -P Fonarte2018 -I -Q "INSERT INTO APPLEMUSIC SELECT * FROM TMP_APPLEMUSIC;" 
+Sqlcmd: Error: Microsoft ODBC Driver 13 for SQL Server : Cannot open server 'fonarte2' requested by the login. Client with IP address '201.137.152.92' is not allowed to access the server.  To enable access, use the Windows Azure Management Portal or run sp_set_firewall_rule on the master database to create a firewall rule for this IP address or address range.  It may take up to five minutes for this change to take effect..
+
+C:\Windows\system32>sqlcmd -S fonarte2.database.windows.net -d Reporteador -U Dataguys2 -P Fonarte2018 -I -Q "INSERT INTO ITUNES SELECT * FROM TMP_ITUNES;" 
+Sqlcmd: Error: Microsoft ODBC Driver 13 for SQL Server : Cannot open server 'fonarte2' requested by the login. Client with IP address '201.137.152.92' is not allowed to access the server.  To enable access, use the Windows Azure Management Portal or run sp_set_firewall_rule on the master database to create a firewall rule for this IP address or address range.  It may take up to five minutes for this change to take effect..
+
+C:\Windows\system32>sqlcmd -S fonarte2.database.windows.net -d Reporteador -U Dataguys2 -P Fonarte2018 -I -Q "INSERT INTO ORCHARD SELECT * FROM TMP_ORCHARD;" 
+Sqlcmd: Error: Microsoft ODBC Driver 13 for SQL Server : Cannot open server 'fonarte2' requested by the login. Client with IP address '201.137.152.92' is not allowed to access the server.  To enable access, use the Windows Azure Management Portal or run sp_set_firewall_rule on the master database to create a firewall rule for this IP address or address range.  It may take up to five minutes for this change to take effect..
+
+C:\Windows\system32>sqlcmd -S fonarte2.database.windows.net -d Reporteador -U Dataguys2 -P Fonarte2018 -I -Q "INSERT INTO APPLE_CURRENCY SELECT LEFT(RIGHT(DIVISA,4),3), TIPO_DE_CAMBIO, ANIO, MES FROM TMP_FINANCIAL_REPORT;" 
+Sqlcmd: Error: Microsoft ODBC Driver 13 for SQL Server : Cannot open server 'fonarte2' requested by the login. Client with IP address '201.137.152.92' is not allowed to access the server.  To enable access, use the Windows Azure Management Portal or run sp_set_firewall_rule on the master database to create a firewall rule for this IP address or address range.  It may take up to five minutes for this change to take effect..
+
+C:\Windows\system32>Robocopy C:\Users\DELL\Documents\REPORTES_FONARTE C:\Users\DELL\Documents\REPORTES_FONARTE_PROCESADOS /mov /s /w:1 /r:1 
+
+-------------------------------------------------------------------------------
+   ROBOCOPY     ::     Herramienta para copia eficaz de archivos                             
+-------------------------------------------------------------------------------
+
+  Inicio: Thu Mar 28 13:02:00 2019
+
+   Origen : C:\Users\DELL\Documents\REPORTES_FONARTE\
+     Destino : C:\Users\DELL\Documents\REPORTES_FONARTE_PROCESADOS\
+
+    Archivos: *.*
+	    
+  Opciones: *.* /S /COPY:DAT /MOV /R:1 /W:1 
+
+------------------------------------------------------------------------------
+
+	                   5	C:\Users\DELL\Documents\REPORTES_FONARTE\
+	    Más reciente     		    6148	.DS_Store  0%  100%  
+	    Más reciente     		   9.8 m	TMP_APPLEMUSIC.txt  0.0% 10.1% 20.2% 30.3% 40.5% 50.6% 60.7% 70.9% 81.0% 91.1%100%  
+	    Más reciente     		    2311	TMP_FINANCIAL_REPORT.txt  0%  100%  
+	    Más reciente     		  137804	TMP_ITUNES.txt  0%   95%  100%  
+	    Más reciente     		  66.9 m	TMP_ORCHARD.txt  0.0%  1.4%  2.9%  4.4%  5.9%  7.4%  8.9% 10.4% 11.9% 13.4% 14.9% 16.4% 17.9% 19.4% 20.9% 22.4% 23.9% 25.3% 26.8% 28.3% 29.8% 31.3% 32.8% 34.3% 35.8% 37.3% 38.8% 40.3% 41.8% 43.3% 44.8% 46.3% 47.8% 49.2% 50.7% 52.2% 53.7% 55.2% 56.7% 58.2% 59.7% 61.2% 62.7% 64.2% 65.7% 67.2% 68.7% 70.2% 71.7% 73.1% 74.6% 76.1% 77.6% 79.1% 80.6% 82.1% 83.6% 85.1% 86.6% 88.1% 89.6% 91.1% 92.6% 94.1% 95.6% 97.0% 98.5%100%  
+
+------------------------------------------------------------------------------
+
+               Total   Copiado   OmitidoNo coincidencia     ERROR    Extras
+Directorios:         1         0         1         0         0         0
+ Archivos:         5         5         0         0         0         0
+    Bytes:   76.95 m   76.95 m         0         0         0         0
+    Veces:   0:00:00   0:00:00                       0:00:00   0:00:00
+
+
+Velocidad:           858481989 Bytes/s
+Velocidad:           49122.733 Megabytes/min
+
+Finalizado: Thu Mar 28 13:02:00 2019
+Total execution time: 1.99 min
