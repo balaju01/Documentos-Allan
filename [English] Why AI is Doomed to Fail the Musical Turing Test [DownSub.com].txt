@@ -1,0 +1,1228 @@
+What would it take for a machine to jam?
+
+This question was first posed 
+in Computer Music Journal
+
+in 1988 as a form of musical
+
+turing test, a way of identifying human-like
+
+intelligence in machines. And this test is
+
+very simple. Blues and E flat,
+
+one two, a 1234.
+
+What would it take in this case for a
+
+machine to convince me and you that it was
+
+human? Well, very quickly, a number of
+
+things need to happen in real time. First,
+
+the machine would need to identify where one
+
+was and entrain to my pulse using
+
+not only auditory but visual cues. We're very
+
+good at figuring out if other people are
+
+locked in with our pulse. And so I would
+
+need to sense that the machine was feeling
+
+the groove. Two, the machine would
+
+need to identify what it was that I was
+
+doing on my bass guitar, and then fit that
+
+within the paradigm of a twelve bar blues.
+
+Am I doing the quick IV, for example,
+
+or am I playing a II-V on the turnaround
+
+instead of a V VI? So am I playing a
+
+jazz blues versus a delta blues versus a
+
+Chicago style blues? It would then need to
+
+take that information and respond in kind in
+
+an improvised solo, using meaningful blues
+
+vocabulary. Now, music is not really a
+
+language, but it certainly feels like a
+
+language to those who play music. And so if
+
+I ask a musical question, does it feel
+
+like I'm getting a meaningful answer in
+
+response? Does it feel like I'm
+
+connecting with somebody, that there is a
+
+real ghost in the machine on the other side
+
+of the algorithm?
+
+I'm fairly convinced that this will never
+
+happen. No AI will be able to pass a true
+
+musical Turing test. Call Ray Kurzweil.
+
+Tell him hes a hack. Singularity, my ass.
+
+Now, I'm not going to bullBASS you in this video.
+
+I'm not going to appeal to some vague sense
+
+of the uniqueness of human musical
+
+creativity - "AI has no soul" - because it's
+
+gonna get there, right? I mean, Red Lobster
+
+is already using AI generated music in its
+
+ad campaigns. And who are we to question the
+
+aesthetic sensibilities of Red Lobster? Red
+
+Lobster, you got the magic 
+touch. "Cheddar Bay Biscuits
+
+I love you so much" There have
+been some incredible advances in generative
+
+AI from companies like Udio and Suno AI.
+
+They let you generate full pieces of music
+
+from text prompts. Just type in what you
+
+want and it will do a pretty good job of
+
+giving it to you.
+
+"In Tommy's Shack Grill late at night.
+
+Big Joe Flippin those paddies, fine.
+American Cheddar melting just right."
+
+That's horrifying. It's like spitting
+
+on Muddy Waters' grave. Upon hearing these
+
+kinds of results, many techno-optimists have
+
+breathlessly extolled that the musical
+
+Turing Test has been passed.
+
+Machine musical intelligence is upon us.
+
+Daddy Elon is so excited.
+
+So why am I so doubtful here, right?
+
+Why am I saying that music AI 
+will never pass the Turing Test?
+
+Well, I think there's a 
+pretty profound category error
+
+that's going on here that we need to always
+
+be aware of going forward.
+
+What generative AI does is not music.
+
+Let me explain.
+
+This video was brought to you by Nebula.
+
+Hope of an extraordinary
+
+aesthetic success based on extraordinary
+
+technology is a cruel deceit.
+
+Iannis Xennakis, 1985.
+
+In 1950, Alan Turing first wrote about what
+
+he called the Imitation Game, what we now
+
+call the Turing Test. In this test, an
+
+interlocutor asked questions of two
+
+entities, one machine and one human. And if
+
+at the end of a conversation - traditionally
+
+done through a text prompt - the interlocutor
+
+is unable to tell which one is the machine
+
+and which one is the human, then we say that
+
+the machine passed the Turing Test. It
+
+displays human level intelligence. Now,
+
+how might we take that idea and expand it
+
+out into the world of music? Well, one
+
+scenario that we showed at the beginning of
+
+this video involves a "Turing Jam Session".
+
+During the improvisation among an
+
+interlocutor and two musicians, the
+
+interlocutors task would be to identify who
+
+is the machine and who is the human. I'm
+
+really drawn to this test because jam
+
+sessions are a great way to get to know
+
+people, know what they're about, know their
+
+musical taste. They're a lot of fun. They're a
+
+social activity. But there are other
+
+possible musical Turing tests. Christopher
+
+Ariza loosely categorizes them as either
+
+musical directive tests, which involve
+
+ongoing musical interaction between the
+
+interlocutor and two agents, and musical
+
+output tests, which involve no interaction.
+
+The listener simply judges the human-like
+
+quality of a given musical output.
+
+I have no doubt that generative AI will be
+
+able to pass musical output tests. Red
+
+Lobster's marketing team apparently thinks
+
+so, too. But musical directive tests, where
+
+there's a continuous interaction between
+
+agents, put the emphasis on process, not
+
+product. Alan Turing's original imitation
+
+game envisioned a conversation between
+
+agents, not just somebody passively looking
+
+at text and determining whether or not it
+
+was computer generated, whether chatGPT
+
+did your homework, in other words. And so to
+
+pass a musical Turing test, a machine has to
+
+do what musicians do when they make music.
+
+The process has to feel human. One way that
+
+visual artists have already started to push
+
+back at the flood of generative AI images is
+
+to document their process and tell the story
+
+of making the art. This approach will become
+
+more and more common with musicians over the
+
+next couple of years as a means of pushing
+
+back against the inevitable tide of
+
+generative AI slop. So back in 2008,
+
+Jack Conte, current CEO of Patreon, was
+
+releasing music with Nataly Dawn under the
+
+name Pomplamoose. They were releasing these
+
+YouTube videos in a format that they called
+
+video song. Video songs had two one,
+
+what you see is what you hear, and two, if
+
+you hear it, at some point, you saw it.
+
+Now, this seems kind of like obvious now
+
+because this format is so ubiquitous. But
+
+back then, back in 2008, it was a
+
+revolutionary approach to releasing art.
+
+You were seeing the music as it was actually
+
+made - an appeal that I imagine will carry
+
+some resonance in the future in the face of
+
+generative AI. The music theorist William
+
+O'Hara expands on this idea of showing your
+
+work for musicians. Borrowing a term for the
+
+ancient greek word for craft, he calls it
+
+the techne of YouTube. A techne of YouTube
+
+performance, then, is a form of music
+
+theoretical knowledge that exists at the
+
+intersection of analytical detail,
+
+virtuosic performance ability, practical
+
+instrumental considerations, and an
+
+awareness of one's audience and the
+
+communicative tendencies of social media.
+
+Pomplamoose has since expanded on this idea
+
+of techne in social media musical
+
+performance by releasing these short form
+
+video things where you see the musicians
+
+actually working out the music in the studio
+
+and joking around, you get to see how the
+
+sausage is made, so to speak. Can we try
+
+snapping a tight one? Let's try a tight one.
+
+Sorry, you want to snap a tight one?
+
+You also get to see what
+
+exactly would be necessary for a machine
+
+intelligence to do if it was to pass
+
+the musical directive test.
+
+It would need to understand 
+and respond to musical jokes.
+
+It was just like, we're feeling this in two.
+
+I just think about everything in one. One.
+
+One is a 400 bar form.
+
+It would need to understand 
+and take musical direction.
+
+It would need to vibe with Jack Conte,
+
+so to speak.
+
+I talk about him all the time on this channel,
+
+but the musicologist Christophe Small
+
+talks about how music is not really a noun,
+
+but in fact a verb. In his book Musicking,
+
+he writes that music is not a thing at all,
+
+but an activity, something that people do.
+
+The apparent thing "Music" is
+
+a figment, an abstraction of the action,
+
+whose reality vanishes as soon as we examine
+
+it at all, closely.
+
+Singing protestant hymns in a church,
+
+dialing in sick lead tones on a quad cortex
+
+freestyling live on the radio,
+
+facing the wall of death at a metal festival,
+
+watching singers perform o 
+sole mio in a concert hall,
+
+sitting in at a jazz jam session,
+
+streaming yourself on Twitch 
+producing music in FL Studio,
+
+its very to difficult to see what these
+
+things have in common
+
+besides somehow reacting to organized sound.
+
+And any one of these activities might be a good
+
+candidate for a musical directive test.
+
+They are all different examples of ongoing
+
+musical interactions.
+
+Generative AI, on the other hand,
+
+is very good at creating products,
+
+musical recordings.
+
+But that product is only ever useful for
+
+passing the output test.
+
+Passing the directive test, though, would
+
+require AI researchers to treat music as a
+
+verb, like Christopher Small suggests a
+
+process, a thing that two or more people do
+
+together, like in Alan Turing's original
+
+imitation game. And when you do that, you
+
+have to take a look at the dynamic
+
+relationships between audiences and
+
+performers and the technology they use and
+
+the spaces that they make music in. And by
+
+the way, all of this is just for western
+
+music so far.
+
+The whole thing is a lot.
+
+I am not gonna pretend like I know
+
+how AI works. I am but a simple bass player.
+
+I have tried to read those papers and I am
+
+just not smart enough. I do recommend
+
+Valerio Velardo's videos on AI music if you
+
+want to get into some of the technical weeds
+
+about these things. But basically, the way I
+
+understand it is that a large language model
+
+will train on a bunch of data and then use
+
+that data to try and accurately predict what
+
+the next thing will be in a sequence. This
+
+is basically what the computational
+
+cognition model is for humans, which says
+
+that we take information, information in
+
+from the world through our senses as input,
+
+and then we process it in our brain, and
+
+then our brain outputs behavior. This is a
+
+fairly outdated model, and one that I don't
+
+feel like applies to how we think about
+
+music. And if the point is to pass the
+
+Turing test, the machine has to think like a
+
+human.
+
+Anybody who has ever performed knows that
+
+getting stuck inside your head
+
+is the worst possible thing.
+
+Thinking too much means you
+
+cannot react with meaningful musical ideas.
+
+But your mind isn't blank, you're still
+
+thinking about things.
+
+Its just very fragmented.
+
+One hip new theory in philosophy
+
+of the mind that accounts for this is called
+
+4E cognition, after the four E's
+
+Embodied, Extended, Embedded, and Enacted
+
+cognition. They represent a dynamic
+
+relationship between the brain, the body,
+
+and your environment.
+
+The first of these is Embodied cognition.
+
+Your body shapes how you think.
+
+When it comes to music, this means
+
+that if it sounds good, it's because it
+
+feels good.
+
+And this is backed by two decades of
+
+music neuroscience research,
+
+especially when it comes to auditory motor
+
+coupling. The areas of your brain which
+
+process movement through space are the same
+
+areas of your brain that process rhythm and
+
+music in general. The vestibular system that
+
+governs balance influences your sense of
+
+downbeat, where one is. If you're not
+
+physically balancing your body, you might
+
+lose the downbeat. A very common occurrence,
+
+like what I just did here in this jam with
+
+Rotem Sivan and James Muschler. You see me
+
+swaying maybe a little bit too much there in
+
+the background, and then the rhythm gets all
+
+...floaty.
+
+Cool, but maybe not intentional.
+
+Failure is actually something that Alan Turing
+
+identified as a means of getting a machine
+
+to fool people into thinking that it was
+
+human. If a machine is too good at answering
+
+questions, it wont seem human.
+
+To err is human,
+
+and so to pass a Turing test,
+
+an AI might need to lose where one is.
+
+The second form of cognition is
+
+Extended cognition,
+
+where the world is your brain.
+
+Thinking requires a lot of energy -
+
+evolutionarily speaking - your brain gets
+
+tired sometimes. And so humans have figured
+
+out ways of extending our thought patterns
+
+into the physical world as a means of
+
+reducing cognitive load. The classic example
+
+of this is writing. We write things down so
+
+we dont have to remember them anymore,
+
+freeing up cognitive capacity in our brain.
+
+Plato famously complained about this, how
+
+people were getting lazy because they relied
+
+on writing too much. Smartphones are the
+
+latest example of this, extending our brains
+
+into the world with technology. We could say
+
+that music notation is a form of extended
+
+cognition, by letting us remember more
+
+music than we would normally be able to with
+
+our mere brains. Orchestral composers don't
+
+have to remember every note for every
+
+instrument that they have ever written, and
+
+so they are freed from the constraints of
+
+their own memory to imagine larger and
+
+grander musical designs - music shaped by
+
+extending our brains past their limitations.
+
+An AI might need to show forgetfulness if
+
+it's going to pass a musical Turing test.
+
+The third form of cognition is
+
+Embedded cognition.
+
+Patterns of thought are 
+embedded in external systems.
+
+One way to think of this is 
+how I have embedded my musical
+
+vocabulary into a system of tuning for bass.
+
+4th tuning. Like, I don't have to think
+
+that much to be able to express myself with
+
+my bass tuned like this.
+
+The notes are just there where my fingers
+
+expect them to be.
+
+But if I was to detune my bass a little bit
+
+to an unfamiliar tuning system,
+
+I don't know where anything is anymore.
+
+So my cognitive load has increased
+
+as I hunt and peck for each individual note
+
+on my instrument.
+
+Anybody who's ever tried to type with a
+
+Dvorak keyboard
+
+knows what I'm talking about.
+
+The patterns of thought embedded in
+
+the technology that we use,
+
+like the bass guitar,
+
+guide our musical intuitions.
+
+You can tell if somebody wrote a piece in a
+
+digital audio workstation versus musescore,
+
+for example, would an AI need to mimic this
+
+pattern of embedded cognition to pass a
+
+Turing test? I don't know, but this is how
+
+we do it, you know?
+
+The fourth form of cognition is
+
+Enacted cognition.
+
+Doing, is thinking.
+
+You process the world through action.
+
+It basically says that there are
+
+certain activities which are meaningless
+
+if you are passive,
+
+like sports, for example.
+
+We don't say that you're a good
+
+soccer player if you spend a lot of time
+
+thinking about soccer, because you have seen
+
+a lot of other people do it, you know, you
+
+kind of gotta get out there and actually run
+
+and do the thing yourself.
+
+The very first question from this video,
+
+what would it take for a 
+machine intelligence to jam?
+
+Is like asking,
+
+what would it take for a machine 
+intelligence to play soccer?
+
+And the answer is, a body.
+
+We need replicants.
+
+We need androids out there on the field.
+
+Otherwise, it's just a supercomputer
+
+thinking about soccer.
+
+Without a body,
+
+AI sports intelligence is meaningless.
+
+You gotta have robots on the field,
+
+processing in real time what's going on
+
+with their robot bodies.
+
+Without a body,
+
+AI music intelligence is meaningless.
+
+You gotta have robots on the bandstand,
+
+processing in real time what's going on
+
+with their robot bodies.
+
+As the great jazz educator Hal Galper said,
+
+we musicians are athletes of the fine muscles,
+
+and like athletes of the larger muscles,
+
+our meaning is created by our bodies doing things.
+
+Like our siblings in sports,
+
+we share in vivo, the struggle, the joy,
+
+and the experience of our lived selves
+
+moving through the world.
+
+Embodied AI is a long way off, but I don't
+
+see any technical reason why we can't have
+
+musical terminators. Again, I'm not an AI
+
+researcher, so I don't know any of the
+
+actual nitty gritty with any of this stuff,
+
+but, you know, it could happen. And I also
+
+see how it would be possible to treat music
+
+more as a conversation between human and
+
+machine, passing a musical directive test by
+
+valuing and creating meaning in the process
+
+of musicking. So why am I so doubtful?
+
+Why is the thesis of this video that
+
+the musical Turing test will never be passed?
+
+We will never have musical machine intelligence.
+
+[CAPITALISM]
+
+The presumed autonomous thingness of works
+
+of music is, of course, only part of the
+
+prevailing modern philosophy of art in
+
+general. What is valued is not the action of
+
+art, not the act of creating, and even less
+
+that of perceiving and responding, but the
+
+created art object itself.
+
+You can sell a thing.
+
+It's harder to sell the process.
+
+If the process of making quality
+
+recorded music can be made more efficient,
+
+the market is incentivized to make the
+
+process as efficient as possible.
+
+Generative AI creates recorded music
+
+extraordinarily cost effectively compared to
+
+the other ways you might do it. It fully
+
+automates a process that had previously
+
+required human input, much the same way that
+
+industrial capitalism automated making cars,
+
+making food, and making things,
+
+as long as those things are good enough. In
+
+other words, as long as they pass the
+
+musical output test, the processes are
+
+relevant, only the product. There are
+
+billions of dollars now being thrown at
+
+developing generative models for language,
+
+images, and now music. Because there are
+
+potentially billions of dollars to be made
+
+in the market. Spotify is now in on the
+
+generative AI music trend. Theres just, you
+
+know, no money to be made in passing a music
+
+directive test. You're just making the
+
+process to get to the product less
+
+efficient. And I mean that very literally,
+
+too. The current prize for passing an
+
+improvisation based Turing test is only
+
+$1,000. And with such weak market pressure
+
+to do something like this - I mean, I guess
+
+you could sell tickets to see this as part
+
+of a live show - theres just no reason to
+
+spend that kind of computational energy into
+
+doing this. The cloud computing power
+
+required to run large language models uses
+
+absurd amounts of energy consumption is a
+
+great bottleneck for AI. Based on the
+
+extremely intensive computational demands of
+
+training. The carbon cost of image
+
+generation is staggeringly high, and raw
+
+audio generation is slated to be much
+
+higher. I mean, just to, I guess, put this
+
+in perspective, I think a gigawatt, it's
+
+like around the size of
+
+a meaningful nuclear power plant,
+
+only going towards training a model.
+
+Who is going to build the equivalent
+
+of nuclear power plants so that robots can
+
+jam with me? It's just so much more
+
+efficient to have humans do the jamming.
+
+I'm old fashioned and
+
+very idealistic about that. My feeling is
+
+I'll outplay anybody using the machine
+
+or I'll die. I don't care. The day that
+
+the machine outplays me, they can plant me
+
+in the yard with the corn. And I
+
+mean it. I'm very serious. I will not permit
+
+myself to be outplayed by someone using the
+
+machine. I'm just not going to permit that.
+
+You know, there are people that I respect
+
+that use this technology to make beautiful
+
+music that somehow captures what it means to
+
+be human in the year 2024. And I think
+
+that's exciting. But then there are people
+
+that I do not respect, like the people who
+
+run companies like Suno, Udio, and other AI
+
+companies, who have a very accelerationist
+
+mindset when it comes to this, it feels like
+
+music is just one more box to tick on
+
+the way to the singularity. Music is a
+
+problem that technology can solve. There
+
+seems to be a profound disinterest in the
+
+artistic process, why music sounds the way
+
+that it does. And so you get things like the
+
+beautiful, rich history of the blues, a
+
+Black American tradition, reduced to typing
+
+into a text prompt. Delta blues about
+
+cheeseburgers. That's why I refuse to call
+
+this stuff music, because the technology
+
+behind it is so aggressively anti human,
+
+anti history, anti music. And that's why I
+
+also feel like the musical directive test
+
+will never be passed because the people
+
+running the show just don't care. You know,
+
+one of the things that I've learned over the
+
+years talking about musicking on this channel
+
+is that you can change your relationship to
+
+music that you hate by choosing to musick it
+
+differently. And I kind of hate this Red
+
+Lobster tune because it kinda slaps red
+
+lobster. You got me up every
+
+single time.
+
+There's like a phrase extension too
+
+disgusting.
+
+Now, I owe a massive amount of context for
+
+everything that we've talked about here
+
+today to a video that I saw from the science
+
+creator Tibees - Toby Hendy, where she goes
+
+over Alan Turing's original 1950 paper,
+
+where he first details his imitation game.
+
+She highlights just how visionary Turing's
+
+paper truly was, like how he predicted that
+
+machines would need a degree of randomness
+
+in them to evolve to have human like
+
+intelligence. This has actually turned out
+
+to be an essential part of modern machine
+
+learning. She also covers how Turing thought
+
+of potential objections to the idea that
+
+machines could become intelligent,
+
+including some weird ones like Turing felt
+
+like he seriously needed to address the
+
+prospect of extrasensory perception.
+
+Anyway, this video was a great one, giving
+
+me some extra context about the history of
+
+machine learning. And you can find it and
+
+many more like it over on my streaming
+
+service, Nebula. Nebula is a creator-owned
+
+streaming service that was originally
+
+started as a means for creators to make
+
+interesting videos and essays free of the
+
+constraints of the recommendation algorithm.
+
+But it's since organically grown into,
+
+like, one of the genuinely best places on
+
+the Internet for curious folks to find
+
+exclusive, interesting, and enriching
+
+content. Like for example, on there you'll
+
+find science creators like Tibees and Jordan
+
+Harrod, who does some fantastic stuff with
+
+AI. You'll find amazing video essayists like
+
+the OG video essayist herself, Lindsay Ellis
+
+is on Nebula. And also Jacob Geller. If you
+
+have never seen a Jacob Geller video essay,
+
+I highly recommend you check out some Jacob
+
+Geller. Like some of this stuff is so
+
+beautiful. I think he's one of the the best
+
+people in the game making video essays. Go
+
+check out some Jacob Geller. You'll also
+
+find some of my fellow music creators that I
+
+deeply love and respect, like the queen of
+
+jazz education herself, Aimee Nolte is
+
+on Nebula. You also have the wonderful music
+
+theorist 12Tone making videos over
+
+there. I genuinely love the community of
+
+creators over on Nebula. They are such a
+
+wealth of inspiration for me, and I know
+
+they will be a wealth of inspiration for you
+
+too. If you're already on Nebula, we're
+
+making it easier to find content for both
+
+new creators and existing favorites. There
+
+are categories now, news, culture, science,
+
+history, podcasts and classes.
+
+Each category is kind of like its own mini
+
+service. Like, I have some classes over
+
+there. I have a class on vlogging, which you
+
+might enjoy. I also have a class that I did
+
+with Aimee Nolte on jazz and blues that I know
+
+you will enjoy. If you like my nerdy music
+
+theory channel, if you sign up using my link
+
+at Nebula.tv/adamneely, or use the
+
+link below, you can support me and all the
+
+creators over on Nebula directly and get
+
+Nebula for 40% off annual plans,
+
+which is as little as $2.50 a month.
+
+What's exciting, though, and genuinely
+
+unique to nebula, I think, is that now
+
+Nebula is offering lifetime time
+
+subscriptions, which means, yes, now until
+
+the singularity, the end of time. Thank you,
+
+Ray Kurzweil. You can be enjoying Nebula and
+
+all it has to offer. There are some big
+
+concept, high octane Nebula originals to be
+
+excited for coming this summer. Like
+
+Identiteaze, the debut short film from Jessie
+
+Gender coming this June. And of course, Jet
+
+Lag season ten is now in production. You
+
+actually might remember Toby from season
+
+five of Jet Lag The Game, but she'll also be
+
+appearing in the latest season alongside
+
+Ben, Adam, and Sam from Wendover. I'm a fan
+
+of Jet lag the game, by the way. It's kind
+
+of like reminds me of tour. It feels almost
+
+weirdly comfy watching them run around
+
+because it's like me running around Europe.
+
+Anyway, $300 gets you lifetime access to all
+
+of this great stuff and everything that
+
+Nebula will ever produce
+
+from now until the end of time.
+
+I love reading that, by the way.
+
+Now until the end of time.
+
+That's. That's fun.
+
+I'm very excited for the future of Nebula,
+
+and I think you will enjoy this
+
+community that aims to engage the world in a
+
+more meaningful human way.
+
+Thank you so much for watching. You can sign
+
+up today for either 40% off annual plans or
+
+$300 off lifetime access. And until next
+
+time, guys,
+

@@ -1,0 +1,1290 @@
+¿Qué se necesitaría para que una máquina
+
+bloquee? Esta pregunta se planteó por primera vez en
+
+Computer Music Journal en 1988 como una forma de
+
+una prueba de gira musical. Una forma de
+
+identificar la inteligencia humana en las
+
+máquinas. Esta prueba es muy
+
+simple. Blues y mi bemol 1 2 1 2.  3
+
+4 ¿Qué se necesitaría en este caso para que una
+
+máquina nos convenza a mí y a usted de que
+
+era humano? Bueno, muy rápidamente, varias
+
+cosas deben suceder en tiempo real. Primero,
+
+la máquina necesitaría identificar dónde
+
+estaba uno y sincronizar mi pulso usando
+
+no solo señales auditivas sino visuales, somos
+
+muy buenos para descubrir si otras
+
+personas están atrapadas en nuestro pulso, por
+
+lo que necesitaría sentir que la
+
+máquina está sintiendo el
+
+surco. Segundo, la máquina necesitaría
+
+identificar qué era lo que yo estaba.  haciendo con
+
+mi bajo y luego encajar eso dentro
+
+del paradigma de un 12 Bar Blues, ¿estoy
+
+haciendo el cuatro rápido, por ejemplo, o estoy
+
+tocando un two5 en el turnaround en lugar
+
+de un 54? Entonces, ¿estoy tocando un jazz blues
+
+versus un Delta Blues versus  un
+
+Blues al estilo de Chicago, entonces necesitaría tomar
+
+esa información y responder de la misma manera en
+
+un solo improvisado usando un vocabulario significativo de
+
+Blues.
+
+Ahora la música no es
+
+realmente un lenguaje, pero ciertamente
+
+se siente como un lenguaje para aquellos que tocan
+
+música, y si pregunto  una pregunta musical ¿
+
+parece que estoy recibiendo una
+
+respuesta significativa? ¿
+
+parece que estoy conectándome
+
+con alguien? que hay un fantasma real
+
+en la máquina al otro lado del
+
+algoritmo. Estoy bastante convencido  que esto
+
+nunca sucederá, ninguna IA podrá
+
+pasar una verdadera prueba de gira musical, llama a
+
+Ray Kurtwell, dile que es un truco.
+
+Singularidad, mi trasero ahora. No voy a
+
+intimidarte en este video. No voy a
+
+apelar a algo vago.  sentido de la
+
+singularidad de la creatividad musical humana La
+
+IA no tiene alma
+
+porque va a llegar allí bien. Quiero
+
+decir, Red Lobster ya está utilizando
+
+música generada por IA en sus campañas publicitarias y ¿
+
+quiénes somos nosotros para cuestionar la
+
+sensibilidad estética de Red Lobster?
+
+Algunos
+
+avances increíbles en IA generativa de empresas
+
+como Yudo y Sun.  te permiten generar
+
+piezas musicales completas a partir de mensajes de texto,
+
+simplemente escribe lo que quieras y
+
+hará un buen trabajo entregártelo a ti
+
+y a Tommy, muy tarde en la noche, gran Jo,
+
+volteando no Patty
+
+fic
+
+ch, ¿verdad?,
+
+es horrible, es
+
+como escupir.  En la tumba de Muddy Water,
+
+al escuchar este tipo de resultados, muchos
+
+optimistas del techno han ensalzado sin aliento
+
+que se ha pasado la prueba de la gira musical. La
+
+
+
+inteligencia musical de la máquina está sobre nosotros. Papá Elon está tan
+
+emocionado, entonces, ¿por qué tengo tantas dudas? ¿
+
+Por qué estoy diciendo que la música AI?
+
+nunca pasará bien la prueba de gira. Creo que
+
+hay un error de categoría bastante profundo
+
+que está ocurriendo aquí y que
+
+siempre debemos tener en cuenta en el futuro. Lo que
+
+hace la IA generativa no es
+
+música. Déjenme explicarles. Este video fue
+
+presentado por Nebula Hope of.  un
+
+éxito estético extraordinario basado en una
+
+tecnología extraordinaria es un
+
+engaño cruel yanis kakis
+
+1985 en 1950 Alan toring escribió por primera vez
+
+sobre lo que llamó el juego de imitación,
+
+lo que ahora llamamos la prueba itinerante, en
+
+esta prueba un interlocutor hizo
+
+preguntas a dos entidades, una máquina
+
+y otra humana.  y si al final de una
+
+conversación que tradicionalmente se realiza a través de
+
+un mensaje de texto, el interlocutor no puede
+
+decir cuál es la máquina y
+
+cuál es el humano, entonces decimos que
+
+la máquina pasó la prueba de gira y
+
+muestra inteligencia a nivel humano,
+
+ahora ¿cómo podríamos  Toma esa
+
+idea y expándela al mundo de la
+
+música. Bueno, un escenario que
+
+mostramos al comienzo de este video
+
+involucra una sesión improvisada en gira durante
+
+la improvisación entre un interlocutor
+
+y dos músicos. La
+
+tarea del interlocutor sería identificar quién es la
+
+máquina.  y quién es el humano. Realmente me
+
+atrae esta prueba porque las sesiones improvisadas
+
+son una excelente manera de conocer a la
+
+gente. saber de qué se trata. conocer
+
+su gusto musical. son muy divertidos.
+
+son sociables.  actividad, pero
+
+hay otras posibles pruebas de gira musical
+
+Christopher Arza
+
+las categorizó vagamente como
+
+pruebas directivas musicales que implican una
+
+interacción musical continua entre el
+
+interlocutor y dos agentes y
+
+pruebas de producción musical que no implican
+
+interacción. El oyente simplemente juzga
+
+la calidad humana de una producción musical determinada.
+
+No tengo ninguna duda de que la
+
+IA generativa podrá pasar las pruebas de producción musical. El
+
+equipo de marketing de Red Lobster
+
+aparentemente también lo cree, pero
+
+las pruebas directivas musicales en las que hay una
+
+interacción continua entre agentes
+
+ponen el énfasis en el proceso, no en el producto. El
+
+juego de imitación original de Alen Turing
+
+imaginó una conversación entre  agentes,
+
+no simplemente alguien que mira pasivamente el
+
+texto y determina si
+
+fue generado por computadora o no, si el chat GPT
+
+hizo su tarea, en otras palabras,
+
+para pasar una prueba de gira musical, una máquina
+
+tiene que hacer lo que hacen los músicos cuando
+
+hacen música, el proceso tiene que  Sentirse humano
+
+Una forma en la que los artistas visuales ya han
+
+comenzado a hacer frente a la avalancha de
+
+imágenes generativas de IA es documentar
+
+su proceso y contar la historia de la
+
+creación del arte. Este enfoque se volverá
+
+cada vez más común entre los músicos en
+
+los próximos años a medida que avancen.  un medio para
+
+hacer frente a la inevitable marea de
+
+
+
+caída de la IA generativa, por lo que en 2008, Jack kti, actual
+
+director ejecutivo de Patreon, estaba lanzando música con
+
+Natalie Dawn bajo el nombre de Pompus,
+
+estaban lanzando estos videos de YouTube en un
+
+formato que llamaron video canción.
+
+dos reglas, una lo que ves es
+
+lo que oyes y dos, si lo escuchas en
+
+algún momento lo viste ahora, esto parece
+
+algo obvio ahora porque este
+
+formato es muy omnipresente, pero en aquel entonces,
+
+en 2008, era un
+
+enfoque revolucionario para publicar arte.  estabas
+
+viendo la música tal como se hizo en realidad
+
+un atractivo que imagino que tendrá cierta
+
+resonancia en el futuro frente a la
+
+IA generativa. El teórico de la música William
+
+Oara amplía esta idea de mostrar
+
+tu trabajo a los músicos tomando prestado un término
+
+del griego antiguo.  palabra para artesanía,
+
+lo llama la tecnología de YouTube, una tecnología de
+
+interpretación de YouTube, entonces es una forma de
+
+conocimiento teórico musical que existe
+
+en la intersección del detalle analítico, la
+
+capacidad de interpretación virtuosa, las
+
+consideraciones instrumentales prácticas y la
+
+conciencia de la audiencia y las
+
+tendencias comunicativas de las redes sociales.
+
+Desde entonces, Pompus ha ampliado esta idea
+
+de la tecnología en la interpretación musical de las redes sociales
+
+al lanzar estos
+
+videos cortos en los que ves a los
+
+músicos trabajando la música
+
+en el estudio y bromeando, puedes
+
+ver cómo se hace la salchicha, por así
+
+decirlo.  intentamos apretar uno apretado,
+
+intentemos, probemos uno apretado, quieres
+
+apretar uno apretado,
+
+también podrás ver qué
+
+sería exactamente necesario que
+
+hiciera una inteligencia artificial para pasar la
+
+prueba de directiva musical que necesitaría
+
+entender.  y responder a chistes musicales
+
+fue como si estuviéramos sintiendo esto en dos
+
+Solo pienso en todo en uno uno
+
+uno uno uno uno uno uno es una forma de 400 compases
+
+necesitarías entender y
+
+tomar la
+
+dirección musical necesitarías vibrar con
+
+Jack  kti, por así decirlo, hablo de él
+
+todo el tiempo en este canal, pero el
+
+musicólogo Christopher Small habla
+
+de cómo la música no es realmente un sustantivo sino
+
+un verbo. En su libro musicing
+
+escribe que la música no es una cosa en absoluto,
+
+sino una actividad.  algo que la gente hace
+
+lo aparente la música es una invención una
+
+abstracción de la acción cuya realidad se
+
+desvanece tan pronto como la examinamos de
+
+cerca cantando himnos protestantes en una
+
+iglesia marcando con tonos enfermizos en un
+
+estilo libre de cuatro cortezas en vivo en la
+
+radio frente al  Wall of Death en un
+
+festival de metal viendo a los cantantes tocar
+
+o moo en una sala de conciertos sentado en una
+
+sesión improvisada de jazz transmitiéndote a ti mismo en
+
+Twitch produciendo música en Fruity Loops,
+
+es muy difícil ver qué
+
+tienen estas cosas en común además de
+
+reaccionar de alguna manera al sonido organizado y
+
+cualquiera de estas actividades podría ser un
+
+buen candidato para una prueba directiva musical.
+
+Todas son ejemplos diferentes de
+
+interacciones musicales continuas. La
+
+IA generativa, por otro lado, es muy buena para
+
+crear productos, grabaciones musicales, pero
+
+ese producto solo es útil para
+
+aprobar la prueba de salida.
+
+Sin embargo, pasar la prueba directiva requeriría que los
+
+investigadores de IA trataran la música como un verbo,
+
+como Christopher Small sugiere un
+
+proceso, algo que dos o más personas
+
+hacen juntas, como en el
+
+juego Imitation original de Alan Touring, y cuando lo haces,
+
+debes echar un vistazo a
+
+relaciones dinámicas entre audiencias
+
+e intérpretes y la tecnología que
+
+usan y los espacios en los que hacen música
+
+y, por cierto, todo esto es solo
+
+para la música occidental hasta ahora,
+
+todo esto es mucho. No
+
+voy a fingir que sé cómo funciona la IA.
+
+funciona, no soy más que un reproductor simple.
+
+He intentado leer esos artículos y
+
+simplemente no soy lo suficientemente inteligente. Recomiendo los
+
+videos de Valerio ard sobre música con IA si
+
+quieres profundizar en algunos de los aspectos técnicos de
+
+Weeds sobre estas cosas, pero básicamente
+
+la forma en que yo  Lo que entendemos es que un
+
+modelo de lenguaje grande se entrenará con una gran cantidad de
+
+datos y luego los usará para intentar
+
+predecir con precisión qué
+
+será lo siguiente en una secuencia. Esto es básicamente
+
+lo que es el modelo de cognición computacional
+
+para humanos, que dice que tomamos
+
+información del mundo a través de
+
+nuestros sentidos como entrada y luego
+
+la procesamos en nuestro cerebro y luego nuestro cerebro
+
+produce Comportamiento, este es un
+
+modelo bastante obsoleto y no creo que se
+
+aplique a cómo pensamos sobre la música
+
+y si el punto  es pasar la
+
+prueba de la gira, la máquina tiene que pensar como un
+
+humano
+
+[Música]
+
+cualquiera que haya actuado alguna vez sabe
+
+que quedarse atrapado dentro de tu cabeza es
+
+lo peor posible, pensar
+
+demasiado significa que no puedes reaccionar con
+
+ideas musicales significativas, pero tu mente
+
+no.  No estás en blanco, todavía estás pensando en
+
+cosas, simplemente está muy fragmentado. Una
+
+nueva teoría moderna en filosofía de la mente
+
+que explica esto se llama 4 e COG
+
+ion, después de que las cuatro e encarnan la
+
+cognición incorporada y promulgada,
+
+representan una relación dinámica entre
+
+el cerebro.  el cuerpo y tu entorno
+
+el primero de ellos es la cognición encarnada
+
+tu cuerpo moldea tu forma de pensar cuando se
+
+trata de música esto significa que si
+
+suena bien es porque se siente bien
+
+y esto está respaldado por dos décadas de
+
+investigación en neurociencia musical, especialmente
+
+cuando se trata de  Al acoplamiento motor auditivo,
+
+las áreas de su cerebro que procesan el
+
+movimiento a través del espacio son las mismas
+
+áreas de su cerebro que procesan el ritmo
+
+y la música. En general, el
+
+sistema vestibular que gobierna el equilibrio influye en
+
+su sentido del ritmo fuerte donde se encuentra si
+
+no está equilibrando físicamente su
+
+cuerpo, es posible que pierdas el tiempo fuerte,
+
+algo muy común como lo que acabo de hacer
+
+aquí en esta improvisación con ron Savon y
+
+James mushler. Me ves balanceándome tal vez
+
+demasiado allí en el
+
+fondo y luego el ritmo se vuelve
+
+
+
+flotante, pero tal vez no.  El fallo intencional
+
+es en realidad algo que Alan Toring
+
+identificó como un medio para hacer que una
+
+máquina engañe a la gente haciéndoles pensar
+
+que es humana. Si una máquina es demasiado
+
+buena respondiendo preguntas, no
+
+parecerá humana, ventilarla es humana y, por lo tanto,
+
+pasar una gira.  probar una IA podría necesitar
+
+perder donde uno es la segunda forma de
+
+cognición es cognición extendida donde
+
+el mundo es su cerebro
+
+pensar requiere mucha energía
+
+evolutivamente hablando su cerebro se
+
+cansa a veces y por eso los humanos han
+
+descubierto formas de extender nuestros
+
+patrones de pensamiento a  el mundo físico
+
+como medio para reducir la carga cognitiva
+
+el ejemplo clásico de esto es escribir,
+
+escribimos cosas para no tener que
+
+recordarlas más, liberando
+
+capacidad cognitiva en nuestro cerebro. Platón
+
+se quejó de cómo
+
+las personas se vuelven perezosas porque
+
+confiamos demasiado en escribir los teléfonos inteligentes
+
+son el último ejemplo de esto extendiendo
+
+nuestro cerebro al mundo con la
+
+tecnología. Podríamos decir que la
+
+notación musical es una forma de cognición extendida
+
+pero nos permite recordar más música de la que
+
+normalmente podríamos recordar con nuestro
+
+simple cerebro orquestal.  Los compositores no
+
+tienen que recordar cada nota de cada
+
+instrumento que hayan escrito, por
+
+lo que están liberados de las
+
+limitaciones de su propia memoria para
+
+imaginar diseños musicales más grandes y grandiosos.
+
+Música moldeada extendiendo nuestros
+
+cerebros más allá de sus limitaciones, una IA
+
+podría necesitar  mostrar olvido si
+
+va a pasar una prueba de gira musical la
+
+tercera forma de cognición está integrada
+
+patrones de cognición de pensamiento están
+
+integrados en sistemas externos una forma de
+
+pensar en esto es cómo he integrado mi
+
+vocabulario musical en un sistema de
+
+afinación para bajo y afinación  Como si
+
+no tuviera que pensar mucho para poder
+
+expresarme con mi bajo afinado
+
+así,
+
+las notas están justo donde mis
+
+dedos esperan que estén, pero si
+
+desafinara un poco mi base
+
+con un sistema de afinación desconocido.  Ya
+
+no sé dónde está nada,
+
+así que mi carga cognitiva ha
+
+aumentado a medida que busco y picoteo cada
+
+nota individual de mi
+
+
+
+instrumento [de música]. Cualquiera que haya intentado
+
+escribir con un teclado dvorac sabe de qué
+
+estoy hablando, los patrones de
+
+El pensamiento integrado en la tecnología que
+
+utilizamos, como el bajo, guía nuestras iniciativas
+
+musicales. Se puede saber si
+
+alguien escribió una pieza en una
+
+estación de trabajo de audio digital versus la partitura de Muse, por
+
+ejemplo, ¿necesitaría una IA imitar este
+
+patrón de cognición integrada para pasar una
+
+gira?  prueba, no lo sé, pero así es
+
+como lo hacemos, ya sabes, se promulga la cuarta forma de
+
+cognición, la cognición es
+
+pensar, procesas el mundo a través de la
+
+acción, esto básicamente dice que
+
+hay ciertas actividades que
+
+no tienen sentido si eres pasivo, como los
+
+deportes.  Por ejemplo, no decimos que
+
+eres un buen jugador de fútbol si pasas
+
+mucho tiempo pensando en el fútbol
+
+porque has visto a muchas otras
+
+personas hacerlo, sabes que tienes que
+
+salir y correr y hacerlo.
+
+La primera
+
+pregunta de este video, ¿qué se
+
+necesitaría para que la inteligencia de una máquina se bloquee?
+
+es como preguntar qué se necesitaría para que la
+
+inteligencia de una máquina juegue fútbol y
+
+la respuesta es un cuerpo, necesitamos replicantes,
+
+necesitamos androides en el
+
+de lo contrario es solo una supercomputadora
+
+pensando en Fútbol sin cuerpo AI La
+
+inteligencia deportiva no tiene sentido,
+
+tienes que tener robots en el campo
+
+procesando en tiempo real lo que está pasando
+
+con sus cuerpos robóticos sin un cuerpo
+
+AI, la inteligencia musical no tiene sentido,
+
+puedes tener robots en  el Band Stand
+
+procesa en tiempo real lo que sucede
+
+con sus cuerpos robóticos, como dijo el gran
+
+educador de jazz Hal Galper: nosotros, los
+
+músicos, somos atletas de los
+
+músculos finos y, al igual que los atletas de los músculos más grandes,
+
+nuestro significado se crea cuando
+
+nuestros cuerpos hacen cosas como nuestros
+
+hermanos.  en los deportes compartimos en Vivo la
+
+lucha, la alegría y la experiencia de
+
+nosotros mismos moviéndose a través del
+
+
+
+mundo [de la música] encarnado por la IA. Está muy lejos,
+
+pero no veo ninguna razón técnica por la que
+
+no podamos tener Terminators musicales nuevamente.
+
+No soy un investigador de IA, así que no sé
+
+nada del meollo de
+
+todo esto, pero sabes que podría
+
+suceder y también veo cómo sería
+
+posible tratar la música más como una
+
+conversación entre humanos.  y la máquina
+
+pasa una prueba directiva musical al
+
+valorar y crear significado en el
+
+proceso de tocar música, entonces, ¿por qué tengo tantas
+
+dudas? ¿Por qué la tesis de este video es
+
+que la prueba de la gira musical nunca
+
+será P? nunca tendremos inteligencia de máquina musical
+
+
+
+[Música]
+
+la  La supuesta cosidad autónoma de las
+
+obras musicales es, por supuesto, sólo una parte de
+
+la filosofía moderna del arte predominante.
+
+En general, lo que se valora no es la
+
+acción del arte, ni el acto de crear
+
+y menos aún el de percibir y
+
+responder, sino el objeto artístico creado en
+
+sí.  se puede vender algo, es más difícil
+
+vender el proceso si el proceso de
+
+hacer música grabada de calidad se puede
+
+hacer más eficiente, se incentiva al mercado
+
+para que haga el proceso lo más
+
+eficiente posible. La IA generativa
+
+crea música grabada de manera
+
+extraordinariamente rentable en
+
+comparación con otras formas.
+
+hacerlo automatiza completamente un proceso que
+
+anteriormente había requerido participación humana de la
+
+misma manera que el capitalismo industrial
+
+automatizó la fabricación de automóviles, la fabricación de alimentos y
+
+la fabricación de cosas, siempre y cuando esas cosas
+
+sean lo suficientemente buenas, en otras palabras,
+
+siempre que pasen la producción musical, pruebe el
+
+proceso.  Solo es relevante para el producto,
+
+ahora se están invirtiendo miles de millones de dólares
+
+en el desarrollo de modelos generativos
+
+para imágenes de lenguaje y ahora música,
+
+porque potencialmente se pueden ganar miles de millones
+
+de dólares en el mercado.
+
+Spotify ahora está en la
+
+tendencia de la música con IA generativa.  No se puede ganar
+
+dinero al pasar una
+
+prueba directiva musical, solo estás haciendo que el
+
+proceso para llegar al producto sea menos
+
+eficiente y quiero decir que, muy literalmente,
+
+también el premio actual por pasar una
+
+prueba de gira basada en la improvisación es de solo
+
+$ 1,000 y con un mercado tan débil.
+
+presión para hacer algo como esto, quiero
+
+decir, supongo que se podrían vender entradas para
+
+ver esto como parte de un espectáculo en vivo,
+
+simplemente no hay razón para gastar ese tipo de
+
+energía computacional en hacer esto, la
+
+potencia de computación en la nube necesaria para ejecutar
+
+grandes modelos de lenguaje usa
+
+cantidades absurdas.  del consumo de energía es
+
+un gran cuello de botella para la IA debido a las
+
+
+
+demandas computacionales extremadamente intensivas del entrenamiento, el costo de carbono de la
+
+generación de imágenes es asombrosamente alto
+
+y la generación de audio sin procesar está programada para ser
+
+mucho mayor. Quiero decir, supongo que para poner
+
+esto en perspectiva, creo.  un gigavatio
+
+es como del tamaño de una
+
+planta de energía nuclear significativa y solo se utiliza
+
+para entrenar a un modelo que
+
+construirá el equivalente de las
+
+plantas de energía nuclear para que los robots puedan interferir conmigo, es
+
+mucho más eficiente
+
+que los humanos hagan la interferencia.
+
+Soy
+
+anticuado y muy idealista al respecto.
+
+Mi sensación
+
+es que superaré a cualquiera que use la
+
+máquina o moriré. No me importa. El
+
+día que la máquina me supere,
+
+me pueden plantar en el jardín con la máquina.  maíz
+
+uh y lo digo en serio, lo digo muy en serio.
+
+No permitiré que
+
+alguien que use la máquina me supere. Simplemente no
+
+voy a permitir que sepas que hay
+
+personas a las que respeto que usan esta
+
+tecnología para hacer música hermosa.
+
+De alguna manera captura lo que significa ser
+
+humano en el año 2024 y creo que
+
+es emocionante, pero hay
+
+personas a las que no respeto, como las
+
+personas que dirigen empresas como Yudo y
+
+otras empresas de inteligencia artificial que tienen una
+
+mentalidad muy aceleracionista cuando se trata de
+
+esto.  parece que la música es sólo una
+
+casilla más que marcar en el camino hacia la
+
+singularidad la música es un problema que la
+
+tecnología puede resolver parece haber un
+
+profundo desinterés en el
+
+proceso artístico por qué la música suena como lo
+
+hace y por eso obtienes cosas como  la
+
+hermosa y rica historia del blues, una
+
+tradición negra estadounidense reducida a
+
+escribir en un mensaje de texto, delta blues
+
+sobre hamburguesas con queso, por eso me niego
+
+a llamar música a esto porque la
+
+tecnología detrás de esto es tan agresivamente
+
+antihumana, anti-historia, anti-música y es por eso que
+
+También siento que la
+
+prueba de directiva musical nunca se pasará
+
+porque a las personas que dirigen el programa simplemente no les
+
+importa. Sabes, una de las cosas
+
+que he aprendido a lo largo de los años hablando
+
+sobre música en este canal es que
+
+puedes cambiar tu relación con
+
+música que odias al elegir música
+
+diferente y yo odio esta
+
+melodía de Red Lobster porque es como si
+
+
+
+me levantaras galletas
+
+[Música],
+
+tengo que tenerla cada
+
+vez que SA
+
+cada vez que
+
+soy
+
+[Música],
+
+sí  bab, lo
+
+pasé en la
+
+
+
+última
+
+pelea
+
+[Música] y
+
+
+
+también es como una extensión de frase
+
+[Música]
+
+[Aplausos]
+
+repugnante ahora. Debo una gran cantidad de
+
+contexto para todo lo que hemos
+
+hablado hoy aquí a un video que vi
+
+de la ciencia.  La creadora tibetea a Toby
+
+Hendy donde repasa el
+
+artículo original de Alan Touring de 1950, donde
+
+detalla por primera vez su juego de imitación.
+
+Destaca cuán visionario
+
+fue realmente el Touring, cómo predijo que las
+
+máquinas necesitarían un grado de
+
+aleatoriedad en ellas para evolucionar y tener una
+
+inteligencia humana.  en realidad
+
+resultó ser una parte esencial del
+
+aprendizaje automático moderno. También cubre
+
+cómo las giras pensaron en las posibles
+
+objeciones a la idea de que las máquinas
+
+podrían volverse inteligentes, incluidas algunas
+
+raras como las giras, y sintió que
+
+realmente necesitaba abordar la perspectiva
+
+de una percepción sensorial adicional de todos modos.  El
+
+video fue excelente y me brindó un
+
+contexto adicional sobre la historia del
+
+aprendizaje automático y puedes encontrarlo y
+
+muchos más similares en mi
+
+servicio de transmisión nebula nebula es un
+
+servicio de transmisión propiedad del creador que se
+
+inició originalmente como un medio para que los creadores  Haga
+
+videos y ensayos interesantes sin
+
+las limitaciones del
+
+algoritmo de recomendación, pero desde entonces se ha
+
+convertido orgánicamente en uno de los
+
+mejores lugares en Internet para que
+
+las personas curiosas encuentren contenido exclusivo, interesante y
+
+enriquecedor, como por ejemplo,
+
+allí encontrará creadores de ciencia.  como
+
+Tibes y Jordan Herod, que hace
+
+cosas fantásticas con IA, encontrarás
+
+videoensayistas increíbles como la
+
+propia videoensayista de OG Lindsay Ellis está
+
+en Nebula y también Jacob Geller, si
+
+nunca has visto un videoensayo de Jacob Geller,
+
+te recomiendo encarecidamente que le eches un vistazo.  A
+
+algunos de Jacob Geller les gusta, algunas de estas
+
+cosas son tan hermosas. Creo que es una
+
+de las mejores personas en el juego haciendo
+
+ensayos en video. Echa un vistazo a Jacob
+
+Geller. También encontrarás algunos de mis
+
+compañeros creadores de música que amo
+
+y respeto profundamente, como el  La propia reina del jazz educ
+
+Amy Niti está en Nebula. También
+
+tienes al maravilloso teórico de la música 12T
+
+haciendo videos allí. Realmente
+
+amo la comunidad de creadores de
+
+Nebula. Son una gran fuente de
+
+inspiración para mí y sé que
+
+serán una gran fuente de inspiración.  inspiración para ti también
+
+si ya estás en nebula estamos haciendo que sea
+
+más fácil encontrar contenido tanto para los nuevos
+
+creadores como para los favoritos existentes
+
+ahora hay categorías noticias cultura Ciencia
+
+Historia podcasts y clases cada
+
+categoría es como su propio mini
+
+servicio como yo tengo algunos  clases
+
+allí Tengo una clase sobre vlogging que
+
+quizás disfrutes. También tengo una clase que
+
+hice con Amy Niti sobre Jazz y Blues
+
+que sé que disfrutarás si te gusta
+
+mi canal nerd de teoría musical si te
+
+registras usando mi enlace en
+
+nebula.com Neely o use el enlace a continuación,
+
+puede apoyarme a mí y a todos los creadores
+
+directamente en nebula y obtener nebula
+
+con un 40 % de descuento en los planes anuales, que cuesta tan solo
+
+
+
+$ 2,50 al mes, aunque creo que es emocionante y
+
+genuinamente exclusivo de nebula.
+
+que ahora nebula ofrece suscripciones de por vida,
+
+lo que significa que sí, ahora hasta
+
+la singularidad del Fin de los Tiempos,
+
+gracias Ray curtz, puedes disfrutar de nebula
+
+y todo lo que tiene para ofrecer, hay algunos
+
+originales de nebulosa de alto octanaje de gran concepto que están
+
+emocionados por venir este verano
+
+como  identifica el cortometraje debut
+
+de Jesse Gender que se estrenará en junio y,
+
+por supuesto, la temporada 10 de jet lag ya está en
+
+proceso. Quizás recuerdes a Toby
+
+de la temporada 5 de jet lag the game, pero
+
+también aparecerá en la última
+
+temporada junto a Ben Adam y  Sam de
+
+wover Soy fanático del jet lag, el juego por
+
+cierto, me recuerda a la
+
+gira. Se siente casi extrañamente cómodo
+
+viéndolos correr porque es como si
+
+yo estuviera corriendo por Europa de todos modos. $300
+
+te dan acceso de por vida a todo esto.
+
+Cosas geniales y todo lo que Nebula
+
+producirá desde ahora hasta el fin de los
+
+tiempos. Me encanta leerlo, por cierto, desde ahora
+
+hasta el fin de los tiempos. Eso es divertido.
+
+Estoy muy emocionado por el futuro de
+
+Nebula y creo que disfrutarás de esta
+
+comunidad.  que tiene como objetivo involucrar al mundo
+
+de una manera humana más significativa. Muchas gracias
+
+por mirar. Puedes registrarte
+
+hoy para obtener un 40% de descuento en planes anuales o
+
+$300 de descuento en acceso de por vida y hasta la próxima,
+
+
+
+muchachos, paz.
+

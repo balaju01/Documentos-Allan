@@ -1,0 +1,33 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%      PORTADA      %%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{titlepage} %PAGINA PARA PORTADA
+
+    \begin{flushleft}
+
+	   %%%%%%   LOGO Y NOMBRE DE LA INSTITUCION   %%%%%%
+	%   \includegraphics{imagenes/escom.png}
+	 %  \large \textbf{\\Escuela Superior de C\'omputo}
+
+	   \vspace{2.5cm} %Espacio vertical
+
+	   %%%%%%   MATERIA Y TRABAJO REALIZADO   %%%%%%
+	   \large \textbf{Materia}\\% Materia
+	   \rule{5cm}{3pt} % Linea horizontal
+	   \large{\\T\'itulo del trabajo} %Trabajo
+
+	   \vspace{2.5cm} %Espacio vertical
+
+	   %%%%%%   NOMBRE Y GRUPO   %%%%%%
+	   Nombre del alumo:\\  %Alumno
+	   Grupo: \\%Grupo
+
+	   \vspace{2.5cm} %Espacio vertical
+
+	   %%%%%%   FECHA   %%%%%%
+	   Fecha\\Febrero 9, 2010
+
+    \end{flushleft}
+
+\end{titlepage}

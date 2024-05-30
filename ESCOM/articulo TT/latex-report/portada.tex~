@@ -1,0 +1,32 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%      PORTADA      %%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{titlepage}
+
+    \centering %Todo centrado
+
+    %%%%  IMAGEN DE PORTADA Y TITULO DE LA IMAGEN   %%%%
+    \includegraphics{imagenes/pvisual.jpg} %Imagen para portada
+    \textit{\\ Relativity, 1953, Maurits Cornelis Escher} %TItulo de la imagen
+
+    \vspace{1cm} %Espacio vertical
+
+    %%%%  MATERIA-TRABAJO   %%%%
+    \LARGE \textbf{Materia\\}
+    \rule{7cm}{3pt} %Linea horizontal
+    \LARGE {\\T\'itulo del trabajo}
+
+    \vspace{1cm} %Espacio vertical
+
+    %%%%   ALUMNO Y GRUPO   %%%%
+    Nombre del alumno\\
+    Grupo
+
+    \vspace{1cm} %Espacio vertical
+
+    %%%%   LUGAR Y FECHA   %%%%
+    M\'exico D.F.\\
+    8 de febrero de 2010
+
+\end{titlepage}

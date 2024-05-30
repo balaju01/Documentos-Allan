@@ -1,0 +1,37 @@
+\section{T\'itulo de la secci\'on 1}
+
+    Este es el contenido de la secci\'on 1.
+
+    \subsection{T\'itulo de la primer subsecci\'on}
+
+	   Contenido de la primer subsecci\'on.
+
+	   \begin{center}
+		  Algo centrado\footnote{Nota al pie}.
+	   \end{center}
+
+    \subsection{T\'itulo de la segunda subsecci\'on}
+
+	   Contenido de la segunda subsecci\'on. La Tabla \ref{tabla} es un ejemplo de como se realiza una tabla y c\'omo se hace referencia a la misma.
+
+	   \begin{table}[h] %Elemento flotante: Tabla
+		  \begin{center} %centrado
+			 \begin{tabular}{ccc}\hline %ImplementaciOn de la tabla
+				\textbf{UNO} & \textbf{DOS} & \textbf{TRES}\\\hline
+				a & b & c\\
+				d & e & f\\\hline
+			 \end{tabular}
+		  \end{center}
+	   \caption{Ejemplo de tabla. \label{tabla}} %T\'itulo de la tabla y etiqueta para referencias
+	   \end{table}
+
+    \subsection{T\'itulo de la tercera subsecci\'on}
+
+	   Contenido de la tercera subsecci\'on. A continuaci\'on se muestra el un ejemplo de enumeraci\'on:
+
+	   \begin{enumerate}
+		  \item N\'umero 1.
+		  \item N\'umero 2.
+		  \item N\'umero 3.
+		  \item N\'umero 4.
+	   \end{enumerate}

@@ -1,0 +1,19 @@
+%%%%%%   TIPO DE DOCUMENTO: ArtIculo   %%%%%%
+\documentclass[letterpaper,11pt]{article}
+
+%%%%%%%  ESPECIFICACION DE PAQUETES   %%%%%
+\usepackage[spanish]{babel} %Lenguaje: Espanol
+\usepackage{graphicx} %Manejo de imagenes
+
+%%%%%%%    INICIO DEL CUERPO DEL DOCUMENTO    %%%%%%%
+\begin{document}
+
+    %%%%%%%   INCLUYE PORTADA   %%%%%%%
+    \include{portada}
+
+    %%%%%%%   INCLUYE SECCIONES   %%%%%%%
+    \include{./secciones/seccion1} %SecciOn 1
+
+  \bibliographystyle{abbrv} %{plain}
+  \bibliography{bibliografia}
+\end{document}
