@@ -1,3 +1,0 @@
-digraph A {
-0->1[label="a"];
-}
