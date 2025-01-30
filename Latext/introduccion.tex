@@ -1,0 +1,44 @@
+\chapter{Introducci\'on}
+\label{cha:introduccion}
+\addcontentsline{toc}{chapter}{Introducción}
+Actualmente, una gran cantidad de personas hacen uso del internet y de las nuevas tecnologías para comunicarse. Con ello, también se incrementa la cantidad de información que se transmite y/o almacena. En diversas ocasiones, esta información es susceptible a sufrir distintos tipos de ataques, tales como acceso no autorizado, modificación o destrucción de la misma, entre otros. Adicionalmente, cada día aparecen nuevos tipos de ataques a los sistemas de información. Por lo tanto, surge la necesidad de proteger dicha información.\\
+Una de las tecnologías ampliamente usada para comunicarse es el correo electrónico \cite{@}. Los mensajes que envían y reciben los usuarios de correo electrónico pueden ser de diferentes tipos: personales, transaccionales, de notificación o de publicidad. Por lo tanto, cada vez que se escribe y envía un correo electrónico, se está revelando información acerca de las preferencias y/o intereses del usuario. Estos datos, son el insumo más importante, para distintas entidades, entre las cuales están empresas que realizan publicidad en línea, proveedores de internet, instituciones de gobierno, entre otros \cite{sp}.
+El propósito de tener estos datos puede ser realizar publicidad efectiva, vender los datos a empresas de publicidad o averiguar si determinado usuario es una amenaza para el gobierno. Para obtener información acerca de los intereses y/o preferencias del usuario, se hace uso de programas de cómputo denominados \textit{clasificadores}. Los clasificadores son herramientas informáticas que analizan una gran cantidad de información, haciendo uso de técnicas de aprendizaje máquina \cite{stanford}, y posteriormente clasifican un mensaje en determinada categoría o perfil. 
+En este contexto, los clasificadores pueden constituir una amenaza para algunos usuarios del correo electrónico, por tal motivo de ahora en adelante a los programas que clasifican se les denominará \textit{adversarios clasificadores}.\\
+Ante tal escenario, surge la pregunta ¿cómo se puede proteger un usuario contra los adversarios clasificadores? Una posible respuesta es hacer uso de algoritmos de cifrado estándar. Sin embargo, hacer uso de tales algoritmos, implica que los participantes en la comunicación acuerden una clave de cifrado. Desafortunadamente, acordar una clave, no es un proceso sencillo para el usuario común. Otra desventaja de esta primera solución, es que los algoritmos de cifrado estándar ofrecen un alto nivel de seguridad, el cual resulta excesivo cuando se consideran los recursos y el objetivo de un adversario clasificador \cite{clas}.
+
+\section{Justificación}
+La comunicación por medio del correo electrónico es atacada constantemente y por ello se han creado diferentes herramientas para asegurar la transferencia de información entre los usuarios. Pero estas herramientas ofrecen un conjunto de servicios como confidencialidad, no repudio, autenticación, entre otros y es porque están pensadas para hacer frente a adversarios mejor capacitados en la adquisición de información de los usuarios de correo electrónico.\\
+Estas herramientas al enfrentarse a adversarios más capacitados necesitan implementar esquemas y técnicas más sofisticadas para establecer una comunicación segura entre usuarios y el mayor reto que se les presenta es el intercambio de claves, porque si un adversario llega a obtener al menos una clave, el esquema de seguridad se considera roto y la comunicación es vulnerable al ataque del o los adversarios que tengan esa clave robada.\\
+ Si tomamos en cuenta que los adversarios clasificadores son programas de cómputo que solo leen el contenido del correo y buscan palabras específicas no necesitan tantos servicios criptográficos para detener sus ataques a los correos electrónicos. Sería suficiente con tener un esquema de cifrado que proporcione confidencialidad durante el envío de mensajes.\\
+Pero este esquema no solo tiene que preocuparse por la confidencialidad en el envío de los mensajes, también se enfrenta al problema de intercambio de claves para poder descifrar el mensaje por el usuario que recibe el mensaje.\\
+Por lo tanto en este trabajo terminal se propone utilizar CAPTCHAS para el envío de claves entre los usuarios. Los CAPTCHAS contienen una cadena de caracteres que al ser resueltos por un ser humano es posible calcular la clave con que fue cifrado el mensaje, y como el adversario clasificador es un programa de cómputo, le es muy complicado encontrar la clave para descifrar el mensaje y poderlo clasificar correctamente.\\
+
+\section{Objetivos} % (fold)
+
+
+
+    \subsection{Objetivos Generales} % (fold)
+    
+    
+      Desarrollar  una  herramienta  para  un  cliente  de  correo  electrónico  que  permita  cifrar  el 
+      contenido  de  los  mensajes  para  evitar  su  clasificación, haciendo uso de técnicas criptográficas simétricas y un servidor que verifique el envío y recepción de CAPTCHAS entre usuarios. 
+    \subsection{Objetivos Específicos} % (fold)
+    
+    
+        \begin{enumerate}
+         \item Desarrollar  una  herramienta  en  un  cliente  de  correo  electrónico  para  el  envío  y recepción  de   los   correos  cifrados   y   la  generación,  envío  y  recepción  de CAPTCHAS. 
+         \item Desarrollar un servidor de llaves que reciba, aloje y envíe los CAPTCHAS a los usuarios para descifrar los correos electrónicos.       
+         \item Desarrollar un algoritmo de cifrado y descifrado basado en el envío y recepción de CAPTCHAS.
+        \end{enumerate}
+
+\section{PGP (Pretty Good Privacy).}
+Es un programa desarrollado por Phil Zimmermann y cuya finalidad es proteger la información distribuida a través de Internet mediante el uso de criptografía de clave pública, así como facilitar la autenticación de documentos gracias a firmas digitales.\\
+PGP es un sistema híbrido que combina técnicas de criptografía simétrica y criptografía asimétrica, la velocidad de cifrado del método simétrico y la distribución de la claves del método asimétrico.\\
+Cuando un usuario emplea PGP para cifrar un texto en claro, dicho texto es comprimido. La compresión de los datos ahorra espacio en disco, tiempos de transmisión, después de comprimir el texto, PGP crea una clave de sesión secreta que solo se empleará una vez. Esta clave es un número aleatorio generado a partir de los movimientos del ratón y las teclas que se pulsen. Esta clave de sesión se usa con un algoritmo para cifrar el texto claro, una vez que los datos se encuentran cifrados, la clave de sesión se cifra con la clave pública del receptor y se adjunta al texto cifrado enviándose al receptor.\\
+El descifrado sigue el proceso inverso. El receptor usa su clave privada para recuperar la clave de sesión, simétrica, que PGP luego usa para descifrar los datos.\cite{pgp}\\
+\section{GPG (GnuPG o GNU Privacy Guard).}
+GnuPG es una herramienta de seguridad en comunicaciones electrónicas desarrollada por Werner Koch. GnuPG, o también conocida como GPG, implementa el sistema de seguridad OpenPGP. OpenPGP es la implementación libre de PGP y esta bajo la licencia GPL. 
+
+GPG, al igual que PGP, utiliza criptografía de clave pública para que los usuarios puedan comunicarse de modo seguro. También cuenta con sistema de cifrado híbrido para mejorar la velocidad en envió de información y la posibilidad de manejar claves de sesión.\cite{gpg}
+        

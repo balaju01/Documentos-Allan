@@ -1,0 +1,276 @@
+Start Date	End Date	UPC	ISRC/ISBN	Vendor Identifier	Quantity	Partner Share	Extended Partner Share	Partner Share Currency	Sales or Return	Apple Identifier	Artist/Show/Developer/Author	Title	Label/Studio/Network/Developer/Publisher	Grid	Product Type Identifier	ISAN/Other Identifier	Country Of Sale	Pre-order Flag	Promo Code	Customer Price	Customer Currency
+11/03/2024	11/30/2024		MXF602400330	MXF602400330	1	1.29	1.29	AUD	S	1777469273	Fadi El Saadi	Dakhlek wl Hawa (دخلك والهوا شمالي)	Fonarte Latino, S.A. de C.V.		H		AU			2.19	AUD
+11/03/2024	11/30/2024		MXF602400193	MXF602400193	1	1.29	1.29	AUD	S	1745169031	Fadi El Saadi	Haramt Ahebak (حرمت أحبك)	Fonarte Latino, S.A. de C.V.		H		AU			2.19	AUD
+11/03/2024	11/30/2024		MXF601401004	MXF601401004	1	1.29	1.29	AUD	S	934536121	Son de Madera	Mujer Antigua, La Bruja	Fonarte Latino, S.A. de C.V.		H		AU			2.19	AUD
+11/03/2024	11/30/2024		MXF602400334	MXF602400334	1	1.29	1.29	AUD	S	1777469277	Fadi El Saadi	Ya Mdagdag bin Ame (يا مدقدق بن عمي)	Fonarte Latino, S.A. de C.V.		H		AU			2.19	AUD
+11/03/2024	11/30/2024		MXF602400335	MXF602400335	1	1.29	1.29	AUD	S	1777469278	Fadi El Saadi	Al Hada (عالهدا)	Fonarte Latino, S.A. de C.V.		H		AU			2.19	AUD
+11/03/2024	11/30/2024		MXF602400332	MXF602400332	1	1.29	1.29	AUD	S	1777469275	Fadi El Saadi	Deni Sgeri (دنيا صغيره)	Fonarte Latino, S.A. de C.V.		H		AU			2.19	AUD
+11/03/2024	11/30/2024		MXF602400333	MXF602400333	1	1.29	1.29	AUD	S	1777469276	Fadi El Saadi	Tawaheen (يا مارق عالطواحين)	Fonarte Latino, S.A. de C.V.		H		AU			2.19	AUD
+11/03/2024	11/30/2024		MXF602400331	MXF602400331	1	1.29	1.29	AUD	S	1777469274	Fadi El Saadi	El Zena (الزينه لبست خلخالا)	Fonarte Latino, S.A. de C.V.		H		AU			2.19	AUD
+11/03/2024	11/30/2024		MXF600602532	MXF600602532	1	1.16	1.16	BRL	S	337369487	Guadalupe Pineda, Carlos Díaz Caito	Samba en Preludio	Fonarte Latino SA de CV		H		BR			1.90	BRL
+11/03/2024	11/30/2024		MXF602400321	MXF602400321	1	0.91	0.91	CAD	S	1776669633	Santaella	Mi Único Regalo	Fonarte Latino, S.A. de C.V.		H		CA	P		1.29	CAD
+11/03/2024	11/30/2024		MXF600600062	MXF600600062	1	0.91	0.91	CAD	S	144252247	Gabino Palomares	La Maldicion de Malinche	Fonarte Latino, S.A. de C.V.		H		CA			1.29	CAD
+11/03/2024	11/30/2024		MXF602300523	MXF602300523	1	0.91	0.91	CAD	S	1716096470	Skapital Sound	No Te Quiero Perder (En Vivo)	Fonarte Latino, S.A. de C.V.		H		CA			1.29	CAD
+11/03/2024	11/30/2024		MXF600800062	MXF600800062	1	0.70	0.70	CAD	S	292661719	Pedro Aznar	Fragilidad	Fonarte Latino, S.A. de C.V.		H		CA			0.99	CAD
+11/03/2024	11/30/2024		MXF600800061	MXF600800061	1	299.00	299.00	CLP	S	292661718	Pedro Aznar	La Abeja y la Araña	Fonarte Latino, S.A. de C.V.		H		CL			490.00	CLP
+11/03/2024	11/30/2024		MXF600600173	MXF600600173	1	0.71	0.71	EUR	S	145980996	Terceto de Guitarras de la Ciudad de Mexico	Huapango	Fonarte Latino, S.A. de C.V.		H		FR			0.99	EUR
+11/03/2024	11/30/2024		MXF600601662	MXF600601662	1	0.90	0.90	EUR	S	153141061	Adriana Landeros	Tu Risa	Fonarte Latino, S.A. de C.V.		H		ES			1.29	EUR
+11/03/2024	11/30/2024		MXF602100063	MXF602100063	1	0.90	0.90	EUR	S	1550358277	Diana Rash	Masmoudi Kabir 8/4	Fonarte Latino, S.A. de C.V.		H		DE			1.29	EUR
+11/03/2024	11/30/2024	7509841278539		7509841278539	1	4.90	4.90	EUR	S	1562442116	Ricardo Larrea	Por El Planeta - Costa Rica (Music From the Original Tv Series)	Fonarte Latino, S.A. de C.V.		I		DE			8.99	EUR
+11/03/2024	11/30/2024		MXF601800274	MXF601800274	1	0.90	0.90	EUR	S	1357301088	Big Band Jazz de México	Perfidia (feat. Yoshio)	Fonarte Latino, S.A. de C.V.		H		FR			1.29	EUR
+11/03/2024	11/30/2024		MXF601000651	MXF601000651	1	0.71	0.71	EUR	S	406773736	The Rudimentals	Radio Skaweto	Fonarte Latino SA de CV		H		DE			0.99	EUR
+11/03/2024	11/30/2024		MXF600601288	MXF600601288	1	0.71	0.71	EUR	S	152436212	Alberto Escobar	Coincidir	Fonarte Latino, S.A. de C.V.		H		ES			0.99	EUR
+11/03/2024	11/30/2024		MXF601500065	MXF601500065	1	0.72	0.72	GBP	S	964544784	Paulina Goto	Llévame Despacio	Fonarte Latino, S.A. de C.V.		H		GB			0.99	GBP
+11/03/2024	11/30/2024		MXF602300301	MXF602300301	1	148.00	148.00	JPY	S	1683409291	Fadi El Saadi	Rumba Oriental (رومبا أورينتال)	Fonarte Latino, S.A. de C.V.		H		JP			255.00	JPY
+11/03/2024	11/30/2024		MXF602000675	MXF602000675	1	148.00	148.00	JPY	S	1542072810	Fadi El Saadi	Zay El Asal	Fonarte Latino, S.A. de C.V.		H		JP			255.00	JPY
+11/03/2024	11/30/2024		MXF602100136	MXF602100136	1	148.00	148.00	JPY	S	1557969756	Silueta Pálida	El Paso del Tiempo	Fonarte Latino, S.A. de C.V.		H		JP			255.00	JPY
+11/03/2024	11/30/2024		MXF602400192	MXF602400192	1	148.00	148.00	JPY	S	1745169030	Fadi El Saadi	Al Eih Besalouni (أل ايه بيسألوني)	Fonarte Latino, S.A. de C.V.		H		JP			255.00	JPY
+11/03/2024	11/30/2024		MXF602400193	MXF602400193	2	148.00	296.00	JPY	S	1745169031	Fadi El Saadi	Haramt Ahebak (حرمت أحبك)	Fonarte Latino, S.A. de C.V.		H		JP			255.00	JPY
+11/03/2024	11/30/2024	7509841275163		7509841275163	1	865.00	865.00	JPY	S	1357300237	Big Band Jazz de México	Big Band Jazz de México and Friends	Fonarte Latino, S.A. de C.V.		I		JP			1528.00	JPY
+11/03/2024	11/30/2024		MXF601600152	MXF601600152	1	148.00	148.00	JPY	S	1105096866	Fadi El Saadi	Rabab	Fonarte Latino, S.A. de C.V.		H		JP			255.00	JPY
+11/03/2024	11/30/2024		MXF601401043	MXF601401043	1	148.00	148.00	JPY	S	952847548	Louise Phelan	Perhaps, Perhaps, Perhaps (Quizás, Quizás, Quizás)	Fonarte Latino, S.A. de C.V.		H		JP			255.00	JPY
+11/03/2024	11/30/2024	7509841318174		7509841318174	1	865.00	865.00	JPY	S	1542072803	Fadi El Saadi	Lamis (Bellydance, Vol. 6)	Fonarte Latino, S.A. de C.V.		I		JP			1528.00	JPY
+11/03/2024	11/30/2024		MXF601900347	MXF601900347	1	9.15	9.15	MXN	S	1473036222	Pablo Campos, Daniela Ibañez	Inseparables	Fonarte Latino, S.A. de C.V.		H		MX			15.00	MXN
+11/03/2024	11/30/2024		MXF601900413	MXF601900413	1	9.15	9.15	MXN	S	1479604758	Los Folkloristas	El Solar de Monimbó (Son) [Nicaragua]	Fonarte Latino, S.A. de C.V.		H		MX			15.00	MXN
+11/03/2024	11/30/2024		MXF600800078	MXF600800078	1	7.32	7.32	MXN	S	292687574	Los Patita de Perro	Cuando Yo Me Muera	Fonarte Latino, S.A. de C.V.		H		MX			12.00	MXN
+11/03/2024	11/30/2024	7509841318037		7509841318037	1	73.20	73.20	MXN	S	1483843705	Sergio Felix, Gerardo Peña, Alejandro Santiago	3TT	Fonarte Latino, S.A. de C.V.		I		MX			120.00	MXN
+11/03/2024	11/30/2024		MXF601800274	MXF601800274	1	9.15	9.15	MXN	S	1357301088	Big Band Jazz de México	Perfidia (feat. Yoshio)	Fonarte Latino, S.A. de C.V.		H		MX			15.00	MXN
+11/03/2024	11/30/2024		MXF602400312	MXF602400312	1	9.15	9.15	MXN	S	1775983078	Genessis Carrillo	Mi Amor sin Tiempo (feat. Orlando Di Pietro)	Fonarte Latino, S.A. de C.V.		H		MX			15.00	MXN
+11/03/2024	11/30/2024		MXF601800270	MXF601800270	1	9.15	9.15	MXN	S	1357301081	Big Band Jazz de México	Piensa en Mí (feat. Susana Zabaleta)	Fonarte Latino, S.A. de C.V.		H		MX			15.00	MXN
+11/03/2024	11/30/2024		MXF602400366	MXF602400366	4	9.15	36.60	MXN	S	1781715661	Daniela Romo	Amor Amargo	Fonarte Latino, S.A. de C.V.		H		MX			15.00	MXN
+11/03/2024	11/30/2024	7509841284264		7509841284264	2	64.05	128.10	MXN	S	1777469272	Fadi El Saadi	Vol. 11	Fonarte Latino, S.A. de C.V.		I		MX			105.00	MXN
+11/03/2024	11/30/2024		MXF602400318	MXF602400318	1	9.15	9.15	MXN	S	1775983084	Sofia Guardiola	Ganó el Amor	Fonarte Latino, S.A. de C.V.		H		MX			15.00	MXN
+11/03/2024	11/30/2024		MXF602400313	MXF602400313	2	9.15	18.30	MXN	S	1775983079	Karla Esquivel	En Esta Vida	Fonarte Latino, S.A. de C.V.		H		MX			15.00	MXN
+11/03/2024	11/30/2024		MXF600600454	MXF600600454	1	9.15	9.15	MXN	S	151981600	Mexicanto	Canción Sin Luna	Fonarte Latino, S.A. de C.V.		H		MX			15.00	MXN
+11/03/2024	11/30/2024		MXF600600428	MXF600600428	1	9.15	9.15	MXN	S	145983047	Fernando Delgadillo	Hoy Ten Miedo de Mi	Fonarte Latino, S.A. de C.V.		H		MX			15.00	MXN
+11/03/2024	11/30/2024		MXF600600433	MXF600600433	1	9.15	9.15	MXN	S	145983245	Fernando Delgadillo	Julieta	Fonarte Latino, S.A. de C.V.		H		MX			15.00	MXN
+11/03/2024	11/30/2024		MXF600600183	MXF600600183	1	9.15	9.15	MXN	S	146844526	Alejandro Filio	Que Si Me Miras	Fonarte Latino, S.A. de C.V.		H		MX			15.00	MXN
+11/03/2024	11/30/2024		MXF602400270	MXF602400270	1	9.15	9.15	MXN	S	1766372207	Alejandra Robles	La Esperanza	Fonarte Latino, S.A. de C.V.		H		MX			15.00	MXN
+11/03/2024	11/30/2024		MXF601700298	MXF601700298	1	9.15	9.15	MXN	S	1275156138	Carlos Macías	Y en La Playa / Yo Me Quedo Contigo [En Vivo]	Fonarte Latino, S.A. de C.V.		H		MX			15.00	MXN
+11/03/2024	11/30/2024		MXF601700301	MXF601700301	1	9.15	9.15	MXN	S	1275156142	Carlos Macías	Basta [En Vivo]	Fonarte Latino, S.A. de C.V.		H		MX			15.00	MXN
+11/03/2024	11/30/2024		MXF601700336	MXF601700336	1	9.15	9.15	MXN	S	1282629338	Burbujas	El Tesoro del Saber	Fonarte Latino, S.A. de C.V.		H		MX			15.00	MXN
+11/03/2024	11/30/2024		MXF602400102	MXF602400102	1	9.15	9.15	MXN	S	1743042438	Carlos Macías	Un Pacto de Silencio	Fonarte Latino, S.A. de C.V.		H		MX			15.00	MXN
+11/03/2024	11/30/2024		MXF602400311	MXF602400311	1	9.15	9.15	MXN	S	1775795857	Skapital Sound	La Pata de Mono	Fonarte Latino, S.A. de C.V.		H		MX			15.00	MXN
+11/03/2024	11/30/2024		MXF602400310	MXF602400310	1	9.15	9.15	MXN	S	1774804225	Carlos Macías	Lo Que Son Las Cosas	Fonarte Latino, S.A. de C.V.		H		MX			15.00	MXN
+11/03/2024	11/30/2024		MXF602400295	MXF602400295	1	9.15	9.15	MXN	S	1772975598	Monocordio	Suena	Fonarte Latino, S.A. de C.V.		H		MX			15.00	MXN
+11/03/2024	11/30/2024		MXF602400292	MXF602400292	1	9.15	9.15	MXN	S	1772975594	Monocordio	Accidente	Fonarte Latino, S.A. de C.V.		H		MX			15.00	MXN
+11/03/2024	11/30/2024		MXF602400290	MXF602400290	1	9.15	9.15	MXN	S	1772975592	Monocordio	Cantando y Caminando	Fonarte Latino, S.A. de C.V.		H		MX			15.00	MXN
+11/03/2024	11/30/2024		MXF602400296	MXF602400296	1	9.15	9.15	MXN	S	1772372234	Skapital Sound	Gaviota (feat. Sealion Rudies)	Fonarte Latino, S.A. de C.V.		H		MX			15.00	MXN
+11/03/2024	11/30/2024		MXF602400272	MXF602400272	1	9.15	9.15	MXN	S	1767883275	Lucero Mijares, Lucero	Caponera (Jardinera)	Fonarte Latino, S.A. de C.V.		H		MX			15.00	MXN
+11/03/2024	11/30/2024	7509841277129		7509841277129	1	73.20	73.20	MXN	S	1501411311	Valentina Barrios	Concierto de Cuentos	Fonarte Latino, S.A. de C.V.		I		MX			120.00	MXN
+11/03/2024	11/30/2024		MXF600700104	MXF600700104	1	9.15	9.15	MXN	S	257289366	Fernando Delgadillo	Julieta	Fonarte Latino, S.A. de C.V.		H		MX			15.00	MXN
+11/03/2024	11/30/2024		MXF600900157	MXF600900157	10	9.15	91.50	MXN	S	319834694	Inspector	Y Qué	Fonarte Latino, S.A. de C.V.		H		MX			15.00	MXN
+11/03/2024	11/30/2024		MXF600900156	MXF600900156	5	9.15	45.75	MXN	S	319834685	Inspector	Es Por Ti	Fonarte Latino, S.A. de C.V.		H		MX			15.00	MXN
+11/03/2024	11/30/2024		MXF600900049	MXF600900049	1	7.32	7.32	MXN	S	309521816	José Cruz	Me Quedé Sin Ti	Fonarte Latino, S.A. de C.V.		H		MX			12.00	MXN
+11/03/2024	11/30/2024		MXF600800280	MXF600800280	1	9.15	9.15	MXN	S	303594899	Ensamble Tierra Mestiza	Tierra Mestiza	Fonarte Latino, S.A. de C.V.		H		MX			15.00	MXN
+11/03/2024	11/30/2024	7509841213820		7509841213820	1	73.20	73.20	MXN	S	303594704	Ensamble Tierra Mestiza	Ida y Vuelta	Fonarte Latino, S.A. de C.V.		I		MX			120.00	MXN
+11/03/2024	11/30/2024		MXF600602338	MXF600602338	1	9.15	9.15	MXN	S	159155917	Liliana Felipe	Huapango de Moncayo	Fonarte Latino, S.A. de C.V.		H		MX			15.00	MXN
+11/03/2024	11/30/2024		MXF600700259	MXF600700259	1	9.15	9.15	MXN	S	266251196	Edel Juárez	Si Existiera un Dios	Fonarte Latino, S.A. de C.V.		H		MX			15.00	MXN
+11/03/2024	11/30/2024		MXF602100140	MXF602100140	1	9.15	9.15	MXN	S	1563939895	Cristian Castro, Carlos Macías	Lo Que Fuera (Versión Mariachi)	Fonarte Latino, S.A. de C.V.		H		MX			15.00	MXN
+11/03/2024	11/30/2024		MXF602000285	MXF602000285	1	9.15	9.15	MXN	S	1506043351	Botellita de Jerez	Domingo, Mi Vida	Fonarte Latino, S.A. de C.V.		H		MX			15.00	MXN
+11/03/2024	11/30/2024		MXF601300724	MXF601300724	1	7.32	7.32	MXN	S	674087172	Pablo Ahmad	Cacho de Buenos Aires (Por Esa Puta Costumbre)	Fonarte Latino, S.A. de C.V.		H		MX			12.00	MXN
+11/03/2024	11/30/2024		MXF600900860	MXF600900860	1	9.15	9.15	MXN	S	338347533	Los Folkloristas	Rosa de Castilla	Fonarte Latino SA de CV		H		MX			15.00	MXN
+11/03/2024	11/30/2024		MXF600900724	MXF600900724	1	9.15	9.15	MXN	S	335171841	Mexicanto	Me Basta	Fonarte Latino, S.A. de C.V.		H		MX			15.00	MXN
+11/03/2024	11/30/2024		MXF600900163	MXF600900163	1	9.15	9.15	MXN	S	319834714	Inspector	Bésame Mucho	Fonarte Latino, S.A. de C.V.		H		MX			15.00	MXN
+11/03/2024	11/30/2024		MXF601200647	MXF601200647	1	9.15	9.15	MXN	S	538521376	Carlos Macías	Yo No Soy	Fonarte Latino, S.A. de C.V.		H		MX			15.00	MXN
+11/03/2024	11/30/2024		MXF600600918	MXF600600918	1	9.15	9.15	MXN	S	187094249	Alejandro Santiago	A Quién No Sepa	Fonarte Latino, S.A. de C.V.		H		MX			15.00	MXN
+11/03/2024	11/30/2024		MXF601200945	MXF601200945	1	7.32	7.32	MXN	S	562346572	Ensamble Tierra Mestiza	Concierto San Ángel (Para Guitarra y Ensamble) - II Aire De Pirecua	Fonarte Latino, S.A. de C.V.		H		MX			12.00	MXN
+11/03/2024	11/30/2024		MXF601200383	MXF601200383	1	7.32	7.32	MXN	S	565128613	La Tremenda Korte	Vivito y Coleando	Fonarte Latino, S.A. de C.V.		H		MX			12.00	MXN
+11/03/2024	11/30/2024		MXF600601126	MXF600601126	1	9.15	9.15	MXN	S	188671442	Alejandro Santiago	Nunca Sabrás	Fonarte Latino, S.A. de C.V.		H		MX			15.00	MXN
+11/03/2024	11/30/2024		MXF601200996	MXF601200996	1	9.15	9.15	MXN	S	566616460	Carlos Macías	Olvidarte Jamás	Fonarte Latino, S.A. de C.V.		H		MX			15.00	MXN
+11/03/2024	11/30/2024		MXF601300378	MXF601300378	1	7.32	7.32	MXN	S	619976618	Iraida Noriega	Quizás, Quizás, Quizás (feat. Zinco Big Band)	Fonarte Latino, S.A. de C.V.		H		MX			12.00	MXN
+11/03/2024	11/30/2024		MXF600900871	MXF600900871	1	9.15	9.15	MXN	S	338347700	Los Folkloristas	Flor de Canela	Fonarte Latino SA de CV		H		MX			15.00	MXN
+11/03/2024	11/30/2024		MXF601300726	MXF601300726	1	7.32	7.32	MXN	S	674087175	Pablo Ahmad	Me Juego por Vos (Homenaje a México) (feat. La Fábrica de Tangos)	Fonarte Latino, S.A. de C.V.		H		MX			12.00	MXN
+11/03/2024	11/30/2024		MXF601300589	MXF601300589	1	7.32	7.32	MXN	S	711563514	Estrella	Bachata Rosa	Fonarte Latino, S.A. de C.V.		H		MX			12.00	MXN
+11/03/2024	11/30/2024		MXF601200436	MXF601200436	1	9.15	9.15	MXN	S	524890686	Regina Orozco	No se Tú / Te Extraño	Fonarte Latino SA de CV		H		MX			15.00	MXN
+11/03/2024	11/30/2024		MXF600600001	MXF600600001	1	7.32	7.32	MXN	S	178764940	Amparo Ochoa	El Barzon	Fonarte Latino, S.A. de C.V.		H		MX			12.00	MXN
+11/03/2024	11/30/2024		MXF600600003	MXF600600003	1	7.32	7.32	MXN	S	178765029	Amparo Ochoa	A Que Le Tiras Cuando Sueñas Mexicano	Fonarte Latino, S.A. de C.V.		H		MX			12.00	MXN
+11/03/2024	11/30/2024		MXF600600006	MXF600600006	1	7.32	7.32	MXN	S	178765145	Amparo Ochoa	La Maldicion de la Malinche	Fonarte Latino, S.A. de C.V.		H		MX			12.00	MXN
+11/03/2024	11/30/2024		MXF600600011	MXF600600011	1	7.32	7.32	MXN	S	178765402	Amparo Ochoa	Mi Abuelo	Fonarte Latino, S.A. de C.V.		H		MX			12.00	MXN
+11/03/2024	11/30/2024		MXF600600247	MXF600600247	1	9.15	9.15	MXN	S	180112486	Los Folkloristas	Tierra Mestiza	Fonarte Latino, S.A. de C.V.		H		MX			15.00	MXN
+11/03/2024	11/30/2024	7509841213158		7509841213158	1	73.20	73.20	MXN	S	185885565	Mexicanto	Otra Vez	Fonarte Latino, S.A. de C.V.		I		MX			120.00	MXN
+11/03/2024	11/30/2024		MXF600600591	MXF600600591	1	9.15	9.15	MXN	S	186653874	Gabino Palomares	La Maldicion de la Malinche	Fonarte Latino, S.A. de C.V.		H		MX			15.00	MXN
+11/03/2024	11/30/2024		MXF600600298	MXF600600298	3	7.32	21.96	MXN	S	167014217	Amparo Ochoa	La Calaca	Fonarte Latino, S.A. de C.V.		H		MX			12.00	MXN
+11/03/2024	11/30/2024	7509841211307		7509841211307	1	73.20	73.20	MXN	S	151981593	Mexicanto	Seremos Escuchados	Fonarte Latino, S.A. de C.V.		I		MX			120.00	MXN
+11/03/2024	11/30/2024		MXF601200804	MXF601200804	1	10.25	10.25	MXN	S	557984505	Fernando Delgadillo	Hoy Ten Miedo de Mi (Instrumental)	Fonarte Latino, S.A. de C.V.		PR		MX			15.00	MXN
+11/03/2024	11/30/2024		MXF600600711	MXF600600711	1	7.32	7.32	MXN	S	152369483	Ilonka	La Martiniana	Fonarte Latino, S.A. de C.V.		H		MX			12.00	MXN
+11/03/2024	11/30/2024		MXF600601110	MXF600601110	1	9.15	9.15	MXN	S	152428152	Alejandro Santiago	En Pie de Guerra	Fonarte Latino, S.A. de C.V.		H		MX			15.00	MXN
+11/03/2024	11/30/2024		MXF600601288	MXF600601288	3	7.32	21.96	MXN	S	152436212	Alberto Escobar	Coincidir	Fonarte Latino, S.A. de C.V.		H		MX			12.00	MXN
+11/03/2024	11/30/2024		MXF600601402	MXF600601402	1	9.15	9.15	MXN	S	152511262	Alejandro Santiago	Cupido	Fonarte Latino, S.A. de C.V.		H		MX			15.00	MXN
+11/03/2024	11/30/2024		MXF600602499	MXF600602499	1	7.32	7.32	MXN	S	154054212	Amaury Pérez	Hacerte Venir	Fonarte Latino, S.A. de C.V.		H		MX			12.00	MXN
+11/03/2024	11/30/2024		MXF600602545	MXF600602545	1	7.32	7.32	MXN	S	154064727	Amaury Pérez	Para Cuando Me Vaya	Fonarte Latino, S.A. de C.V.		H		MX			12.00	MXN
+11/03/2024	11/30/2024		MXF600600923	MXF600600923	1	9.15	9.15	MXN	S	187094288	Alejandro Santiago	Andromeda	Fonarte Latino, S.A. de C.V.		H		MX			15.00	MXN
+11/03/2024	11/30/2024		MXF600602248	MXF600602248	1	7.32	7.32	MXN	S	159699013	Los Patita de Perro	La Ofrenda	Fonarte Latino, S.A. de C.V.		H		MX			12.00	MXN
+11/03/2024	11/30/2024		MXF600600186	MXF600600186	1	9.15	9.15	MXN	S	146844535	Alejandro Filio	Esa Mujer	Fonarte Latino, S.A. de C.V.		H		MX			15.00	MXN
+11/03/2024	11/30/2024		MXF602400001	MXF602400001	1	9.15	9.15	MXN	S	1724996235	Lucero	Tu Vida Es Mi Vida	Fonarte Latino, S.A. de C.V.		H		MX			15.00	MXN
+11/03/2024	11/30/2024		MXF600600299	MXF600600299	1	7.32	7.32	MXN	S	167014224	Amparo Ochoa	Jacinto Cenobio	Fonarte Latino, S.A. de C.V.		H		MX			12.00	MXN
+11/03/2024	11/30/2024		MXF600600458	MXF600600458	1	9.15	9.15	MXN	S	151981604	Mexicanto	Fernando	Fonarte Latino, S.A. de C.V.		H		MX			15.00	MXN
+11/03/2024	11/30/2024		MXF601200642	MXF601200642	1	9.15	9.15	MXN	S	538521369	Carlos Macías	Amarte Así	Fonarte Latino, S.A. de C.V.		H		MX			15.00	MXN
+11/03/2024	11/30/2024	7509841282581		7509841282581	1	73.20	73.20	MXN	S	1716096129	Skapital Sound	Para Ustedes! (En Vivo) [En Vivo]	Fonarte Latino, S.A. de C.V.		I		MX			120.00	MXN
+11/03/2024	11/30/2024		MXF601200431	MXF601200431	1	9.15	9.15	MXN	S	524890681	Regina Orozco	Hasta Que Vuelvas	Fonarte Latino SA de CV		H		MX			15.00	MXN
+11/03/2024	11/30/2024		MXF601200372	MXF601200372	1	7.32	7.32	MXN	S	514281515	Francisco Barrios "El Mastuerzo"	Kalimán ... El Hombre Increíble	Fonarte Latino SA de CV		H		MX			12.00	MXN
+11/03/2024	11/30/2024		MXF601200219	MXF601200219	1	7.32	7.32	MXN	S	512942989	La Fabrica de Tangos	No Me Importa Nada	Fonarte Latino SA de CV		H		MX			12.00	MXN
+11/03/2024	11/30/2024		MXF601101004	MXF601101004	1	9.15	9.15	MXN	S	476849017	Regina Orozco	La Martiniana	Fonarte Latino SA de CV		H		MX			15.00	MXN
+11/03/2024	11/30/2024		MXF601101003	MXF601101003	1	9.15	9.15	MXN	S	476849015	Regina Orozco	Bodas Negras	Fonarte Latino SA de CV		H		MX			15.00	MXN
+11/03/2024	11/30/2024		MXF602100626	MXF602100626	1	9.15	9.15	MXN	S	1586682075	Ara Saldivar	Si Nos Dejan	Fonarte Latino, S.A. de C.V.		H		MX			15.00	MXN
+11/03/2024	11/30/2024		MXF602200167	MXF602200167	1	9.15	9.15	MXN	S	1625747577	Antonio De Carlo	En Mil Pedazos	Fonarte Latino, S.A. de C.V.		H		MX			15.00	MXN
+11/03/2024	11/30/2024		MXF602300139	MXF602300139	1	9.15	9.15	MXN	S	1670445561	Luna Park	Las Mil y una Noches	Fonarte Latino, S.A. de C.V.		H		MX			15.00	MXN
+11/03/2024	11/30/2024		MXF602300215	MXF602300215	1	9.15	9.15	MXN	S	1675948383	Alejandra Robles	Las Joyas de Oaxaca: El Señor de las Jícaras	Fonarte Latino, S.A. de C.V.		H		MX			15.00	MXN
+11/03/2024	11/30/2024		MXF602300266	MXF602300266	1	9.15	9.15	MXN	S	1679634251	Sergio Jurado, Jorge Jurado	Vecinos	Fonarte Latino, S.A. de C.V.		H		MX			15.00	MXN
+11/03/2024	11/30/2024		MXF602300216	MXF602300216	1	9.15	9.15	MXN	S	1680251627	Alejandra Robles	Las Joyas de Oaxaca: Las Maestras Tejateras	Fonarte Latino, S.A. de C.V.		H		MX			15.00	MXN
+11/03/2024	11/30/2024		MXF602300386	MXF602300386	1	9.15	9.15	MXN	S	1691390676	Santaella	Esta Es Pa' Mi Viejo	Fonarte Latino, S.A. de C.V.		H		MX			15.00	MXN
+11/03/2024	11/30/2024		MXF601600323	MXF601600323	1	9.15	9.15	MXN	S	1129420131	Burbujas	La Marcha de Las Vitaminas	Fonarte Latino, S.A. de C.V.		H		MX			15.00	MXN
+11/03/2024	11/30/2024		MXF602300477	MXF602300477	1	9.15	9.15	MXN	S	1704232693	Daniela Romo, Angélica Vale	Recordar Es Vivir (Tema Aniversario del Canal TLNovelas)	Fonarte Latino, S.A. de C.V.		H		MX			15.00	MXN
+11/03/2024	11/30/2024	7509841282383		7509841282383	1	73.20	73.20	MXN	S	1704900888	Valeria Rojas	Río Revuelto, Vol. 2	Fonarte Latino, S.A. de C.V.		I		MX			120.00	MXN
+11/03/2024	11/30/2024		MXF601700172	MXF601700172	1	9.15	9.15	MXN	S	1256721616	Burbujas	La Raspa	Fonarte Latino, S.A. de C.V.		H		MX			15.00	MXN
+11/03/2024	11/30/2024		MXF601300595	MXF601300595	1	7.32	7.32	MXN	S	711563520	Estrella	Tú de Qué Vas	Fonarte Latino, S.A. de C.V.		H		MX			12.00	MXN
+11/03/2024	11/30/2024		MXF601301191	MXF601301191	1	9.15	9.15	MXN	S	765846877	Carlos Macías	Basta	Fonarte Latino, S.A. de C.V.		H		MX			15.00	MXN
+11/03/2024	11/30/2024		MXF601000221	MXF601000221	1	9.15	9.15	MXN	S	859449056	José Fors	I Am The Fox	Fonarte Latino, S.A. de C.V.		H		MX			15.00	MXN
+11/03/2024	11/30/2024	7509841282376		7509841282376	1	73.20	73.20	MXN	S	1701158442	Valeria Rojas	Río Revuelto, Vol. 1	Fonarte Latino, S.A. de C.V.		I		MX			120.00	MXN
+11/03/2024	11/30/2024	7509841313667		7509841313667	1	79.30	79.30	MXN	S	266250415	Edel Juárez	Títeres de Tú	Fonarte Latino, S.A. de C.V.		I		MX		CMA	130.00	MXN
+11/03/2024	11/30/2024		MXF600700108	MXF600700108	1	9.15	9.15	MXN	S	257289766	David Filio	Soy el Mismo	Fonarte Latino, S.A. de C.V.		H		MX			15.00	MXN
+11/03/2024	11/30/2024		MXF600900159	MXF600900159	2	9.15	18.30	MXN	S	319834704	Inspector	Noviembre	Fonarte Latino, S.A. de C.V.		H		MX			15.00	MXN
+11/03/2024	11/30/2024		MXF600602607	MXF600602607	1	7.32	7.32	MXN	S	168291851	Amaury Pérez	Porque Ya No Me Vas a Querer	Fonarte Latino, S.A. de C.V.		H		MX			12.00	MXN
+11/03/2024	11/30/2024		MXF600700259	MXF600700259	-1	9.15	-9.15	MXN	R	266251196	Edel Juárez	Si Existiera un Dios	Fonarte Latino, S.A. de C.V.		H		MX		CMA-C	-15.00	MXN
+11/03/2024	11/30/2024		MXF601300591	MXF601300591	1	7.32	7.32	MXN	S	711563516	Estrella	Eternamente Tuya	Fonarte Latino, S.A. de C.V.		H		MX			12.00	MXN
+11/03/2024	11/30/2024		MXF602100516	MXF602100516	1	9.15	9.15	MXN	S	1563939896	Carlos Macías	Me Lo Merezco	Fonarte Latino, S.A. de C.V.		H		MX			15.00	MXN
+11/03/2024	11/30/2024		MXF601600555	MXF601600555	1	9.15	9.15	MXN	S	1173641176	Carlos Macías	Yo Me Quedo Contigo	Fonarte Latino, S.A. de C.V.		H		MX			15.00	MXN
+11/03/2024	11/30/2024		MXF601700155	MXF601700155	1	9.15	9.15	MXN	S	1256717997	Burbujas	El Rock de Los Quesos	Fonarte Latino, S.A. de C.V.		H		MX			15.00	MXN
+11/03/2024	11/30/2024		MXF601700161	MXF601700161	1	9.15	9.15	MXN	S	1256720681	Burbujas	Agarra Tu Patín	Fonarte Latino, S.A. de C.V.		H		MX			15.00	MXN
+11/03/2024	11/30/2024		MXF601600329	MXF601600329	1	9.15	9.15	MXN	S	1129420151	Burbujas	Burbujas	Fonarte Latino, S.A. de C.V.		H		MX			15.00	MXN
+11/03/2024	11/30/2024		MXF601800269	MXF601800269	1	9.15	9.15	MXN	S	1357300240	Big Band Jazz de México	Sway (feat. Daniel Boaventura)	Fonarte Latino, S.A. de C.V.		H		MX			15.00	MXN
+11/03/2024	11/30/2024		MXF601600316	MXF601600316	1	9.15	9.15	MXN	S	1129420124	Burbujas	Odisea Burbujas	Fonarte Latino, S.A. de C.V.		H		MX			15.00	MXN
+11/03/2024	11/30/2024		MXF601500897	MXF601500897	1	9.15	9.15	MXN	S	1062959663	Macuiles	Alebrije	Fonarte Latino, S.A. de C.V.		H		MX			15.00	MXN
+11/03/2024	11/30/2024		MXF601401004	MXF601401004	1	9.15	9.15	MXN	S	934536121	Son de Madera	Mujer Antigua, La Bruja	Fonarte Latino, S.A. de C.V.		H		MX			15.00	MXN
+11/03/2024	11/30/2024		MXF601400890	MXF601400890	2	9.15	18.30	MXN	S	922599375	Los Folkloristas	El Coco (Son Jarocho) [México]	Fonarte Latino, S.A. de C.V.		H		MX			15.00	MXN
+11/03/2024	11/30/2024		MXF601400885	MXF601400885	1	9.15	9.15	MXN	S	922599370	Los Folkloristas	La Martiniana (Son Istmeño) [México]	Fonarte Latino, S.A. de C.V.		H		MX			15.00	MXN
+11/03/2024	11/30/2024		MXF601400806	MXF601400806	1	9.15	9.15	MXN	S	909471775	Carlos Macías	Si Yo Te Contara	Fonarte Latino, S.A. de C.V.		H		MX			15.00	MXN
+11/03/2024	11/30/2024		MXF601400799	MXF601400799	1	9.15	9.15	MXN	S	909471764	Carlos Macías	Cuando Me Besas	Fonarte Latino, S.A. de C.V.		H		MX			15.00	MXN
+11/03/2024	11/30/2024	7509841550208		7509841550208	1	91.50	91.50	MXN	S	1275156134	Carlos Macías	Mi Música [En Vivo] [Deluxe Version]	Fonarte Latino, S.A. de C.V.		I		MX			150.00	MXN
+11/03/2024	11/30/2024		MXF601600546	MXF601600546	1	9.15	9.15	MXN	S	1173641161	Carlos Macías	Y en La Playa	Fonarte Latino, S.A. de C.V.		H		MX			15.00	MXN
+11/03/2024	11/30/2024		MXF602200166	MXF602200166	1	9.15	9.15	MXN	S	1623426532	Antonio De Carlo	A Pecho Descubierto	Fonarte Latino, S.A. de C.V.		H		MX			15.00	MXN
+11/03/2024	11/30/2024		MXF602100606	MXF602100606	1	9.15	9.15	MXN	S	1575993685	JNS	Esta Historia Me Suena	Fonarte Latino, S.A. de C.V.		H		MX			15.00	MXN
+11/03/2024	11/30/2024		MXF600800009	MXF600800009	1	1.77	1.77	PEN	S	292528377	Jaime Guardia	Presumes Que Soy Cualquier (Huayno)	Fonarte Latino, S.A. de C.V.		H		PE			2.90	PEN
+11/03/2024	11/30/2024		MXF600800003	MXF600800003	1	1.77	1.77	PEN	S	292528361	Jaime Guardia	Golongrina Viajera (Huayno)	Fonarte Latino, S.A. de C.V.		H		PE			2.90	PEN
+11/03/2024	11/30/2024		MXF602400366	MXF602400366	1	11.40	11.40	RUB	S	1781715661	Daniela Romo	Amor Amargo	Fonarte Latino, S.A. de C.V.		H		RU			22.00	RUB
+11/03/2024	11/30/2024		MXF600601174	MXF600601174	2	0.70	1.40	USD	S	152429692	René Villanueva	Panameño (Tambor)	Fonarte Latino, S.A. de C.V.		H		US			0.99	USD
+11/03/2024	11/30/2024		MXF601600505	MXF601600505	1	0.91	0.91	USD	S	1170235035	Pablo Prieto, Eddie Gomez, Alberto Medina	Mr. J.	Fonarte Latino, S.A. de C.V.		H		US			1.29	USD
+11/03/2024	11/30/2024		MXF601000124	MXF601000124	2	0.91	1.82	USD	S	364390277	Fadi El Saadi	Hesbe Wdab	Fonarte Latino SA de CV		H		US			1.29	USD
+11/03/2024	11/30/2024		MXF600601001	MXF600601001	1	0.70	0.70	USD	S	152417386	Orquesta Aragón	Aprende Mucho	Fonarte Latino, S.A. de C.V.		H		US			0.99	USD
+11/03/2024	11/30/2024		MXF601600505	MXF601600505	-1	0.91	-0.91	USD	R	1170235035	Pablo Prieto, Eddie Gomez, Alberto Medina	Mr. J.	Fonarte Latino, S.A. de C.V.		H		US		CMA-C	-1.29	USD
+11/03/2024	11/30/2024		MXF601600402	MXF601600402	1	0.91	0.91	USD	S	1145564034	Los Folkloristas	Tierra Mestiza (Con Introducción)	Fonarte Latino, S.A. de C.V.		H		US			1.29	USD
+11/03/2024	11/30/2024		MXF601600316	MXF601600316	1	0.91	0.91	USD	S	1129420124	Burbujas	Odisea Burbujas	Fonarte Latino, S.A. de C.V.		H		US			1.29	USD
+11/03/2024	11/30/2024		MXF601600151	MXF601600151	1	0.91	0.91	USD	S	1105096854	Fadi El Saadi	Hawel Teftekerni	Fonarte Latino, S.A. de C.V.		H		US			1.29	USD
+11/03/2024	11/30/2024		MXF600602534	MXF600602534	1	0.70	0.70	USD	S	337369489	Guadalupe Pineda, Carlos Díaz Caito	Jacinto Cenobio	Fonarte Latino SA de CV		H		US			0.99	USD
+11/03/2024	11/30/2024		MXF601500826	MXF601500826	1	0.91	0.91	USD	S	1055794439	Botellita de Jerez	No Pinches Mames	Fonarte Latino, S.A. de C.V.		H		US			1.29	USD
+11/03/2024	11/30/2024		MXF601600555	MXF601600555	1	0.91	0.91	USD	S	1173641176	Carlos Macías	Yo Me Quedo Contigo	Fonarte Latino, S.A. de C.V.		H		US			1.29	USD
+11/03/2024	11/30/2024		MXF601800553	MXF601800553	1	0.91	0.91	USD	S	1434599338	Alejandra Ávalos	Popurrí Sinaloa: El Sinaloense / Tristes Recuerdos / Me Nace del Corazón	Fonarte Latino, S.A. de C.V.		H		US			1.29	USD
+11/03/2024	11/30/2024	7509841211772		7509841211772	1	7.00	7.00	USD	S	152399931	Mexicanto	Felix-Filio	Fonarte Latino, S.A. de C.V.		I		US			9.99	USD
+11/03/2024	11/30/2024		MXF601800558	MXF601800558	1	0.91	0.91	USD	S	1434599343	Alejandra Ávalos	Popurrí Bajío: Guadalajara / Pelea de Gallos / Viva México	Fonarte Latino, S.A. de C.V.		H		US			1.29	USD
+11/03/2024	11/30/2024		MXF600600714	MXF600600714	1	0.70	0.70	USD	S	152369511	Ilonka	Cantos de Pilón	Fonarte Latino, S.A. de C.V.		H		US			0.99	USD
+11/03/2024	11/30/2024		MXF600600431	MXF600600431	1	0.91	0.91	USD	S	145983196	Fernando Delgadillo	Hoy Hace un Buen Día	Fonarte Latino, S.A. de C.V.		H		US			1.29	USD
+11/03/2024	11/30/2024		MXF600800318	MXF600800318	2	0.70	1.40	USD	S	314435499	Terceto de Guitarras de la Ciudad de Mexico	Flor Silvestre	Fonarte Latino, S.A. de C.V.		H		US			0.99	USD
+11/03/2024	11/30/2024		MXF600600428	MXF600600428	2	0.91	1.82	USD	S	145983047	Fernando Delgadillo	Hoy Ten Miedo de Mi	Fonarte Latino, S.A. de C.V.		H		US			1.29	USD
+11/03/2024	11/30/2024		MXF600800323	MXF600800323	1	0.70	0.70	USD	S	314435519	Terceto de Guitarras de la Ciudad de Mexico	La Bruja	Fonarte Latino, S.A. de C.V.		H		US			0.99	USD
+11/03/2024	11/30/2024		MXF600800325	MXF600800325	2	0.70	1.40	USD	S	314435524	Terceto de Guitarras de la Ciudad de Mexico	El Tepetzintleco	Fonarte Latino, S.A. de C.V.		H		US			0.99	USD
+11/03/2024	11/30/2024		MXF600601179	MXF600601179	1	0.70	0.70	USD	S	152429708	René Villanueva	La Tía Noneca (Tambor)	Fonarte Latino, S.A. de C.V.		H		US			0.99	USD
+11/03/2024	11/30/2024		MXF600800330	MXF600800330	1	0.70	0.70	USD	S	314435617	Terceto de Guitarras de la Ciudad de Mexico	Tierra Mestiza	Fonarte Latino, S.A. de C.V.		H		US			0.99	USD
+11/03/2024	11/30/2024		MXF600600258	MXF600600258	1	0.91	0.91	USD	S	180113461	Los Folkloristas	Raíz Viva (Prehispánica)	Fonarte Latino, S.A. de C.V.		H		US			1.29	USD
+11/03/2024	11/30/2024		MXF601100819	MXF601100819	1	0.91	0.91	USD	S	466634780	Los Folkloristas	Tondero y Resbalosa (Perú)	Fonarte Latino SA de CV		H		US			1.29	USD
+11/03/2024	11/30/2024		MXF600602329	MXF600602329	1	0.91	0.91	USD	S	159155617	Liliana Felipe	Java	Fonarte Latino, S.A. de C.V.		H		US			1.29	USD
+11/03/2024	11/30/2024		MXF601200794	MXF601200794	1	0.70	0.70	USD	S	555716421	Fadi El Saadi	Deg Al Mani	Fonarte Latino, S.A. de C.V.		H		US			0.99	USD
+11/03/2024	11/30/2024		MXF601200995	MXF601200995	3	0.91	2.73	USD	S	566614232	Carlos Macías	Mil Vidas (feat. Fernanda Castillo)	Fonarte Latino, S.A. de C.V.		H		US			1.29	USD
+11/03/2024	11/30/2024		MXF601300739	MXF601300739	1	0.70	0.70	USD	S	675225344	Zazhil	Jarana Indígena Del Mayapax de La Xepet (Yucatán)	Fonarte Latino, S.A. de C.V.		H		US			0.99	USD
+11/03/2024	11/30/2024		MXF601900098	MXF601900098	1	0.91	0.91	USD	S	1460029915	Yolotecuani	Maracumbé	Fonarte Latino, S.A. de C.V.		H		US			1.29	USD
+11/03/2024	11/30/2024		MXF601900362	MXF601900362	1	0.91	0.91	USD	S	1474841794	Roberto Limón	Milonga Feroz (feat. César Olguín)	Fonarte Latino, S.A. de C.V.		H		US			1.29	USD
+11/03/2024	11/30/2024		MXF601900639	MXF601900639	1	0.91	0.91	USD	S	1491810789	Salterando Ensamble, Ernesto Anaya	México Ángel y Pastor	Fonarte Latino, S.A. de C.V.		H		US			1.29	USD
+11/03/2024	11/30/2024		MXF602000101	MXF602000101	1	0.91	0.91	USD	S	1500801306	Camila Sodi	A Quién Le Importa?	Fonarte Latino, S.A. de C.V.		H		US			1.29	USD
+11/03/2024	11/30/2024	7509841272490		7509841272490	1	7.00	7.00	USD	S	727847217	Son de Madera	Concierto en Vivo, Glatt & Verkehrt - Viena, Austria	Fonarte Latino, S.A. de C.V.		I		US			9.99	USD
+11/03/2024	11/30/2024		MXF601400638	MXF601400638	1	0.91	0.91	USD	S	892401237	Santaella	Así Fue	Fonarte Latino, S.A. de C.V.		H		US			1.29	USD
+11/03/2024	11/30/2024		MXF600600258	MXF600600258	-1	0.91	-0.91	USD	R	180113461	Los Folkloristas	Raíz Viva (Prehispánica)	Fonarte Latino, S.A. de C.V.		H		US		CMA-C	-1.29	USD
+11/03/2024	11/30/2024	7509841212847		7509841212847	1	7.00	7.00	USD	S	153616746	Alejandro García "Virulo"	El Bueno, El Malo y El Cubano	Fonarte Latino, S.A. de C.V.		I		US			9.99	USD
+11/03/2024	11/30/2024		MXF601100421	MXF601100421	1	0.91	0.91	USD	S	436902425	Lazcano Malo	Buenos Tiempos	Fonarte Latino SA de CV		H		US			1.29	USD
+11/03/2024	11/30/2024		MX3941300127	MX3941300127	1	0.91	0.91	USD	S	1021336452	Jorge Dominguez	Tus Ojitos	Fonarte Latino, S.A. de C.V.		H		US			1.29	USD
+11/03/2024	11/30/2024		MXF600600298	MXF600600298	1	0.70	0.70	USD	S	167014217	Amparo Ochoa	La Calaca	Fonarte Latino, S.A. de C.V.		H		US			0.99	USD
+11/03/2024	11/30/2024		MXF600601523	MXF600601523	1	0.91	0.91	USD	S	167022027	David Filio	Mis Niñas	Fonarte Latino, S.A. de C.V.		H		US			1.29	USD
+11/03/2024	11/30/2024		MXF600602585	MXF600602585	1	0.70	0.70	USD	S	168290001	Chalice	Baby Come Back	Fonarte Latino, S.A. de C.V.		H		US			0.99	USD
+11/03/2024	11/30/2024		MXF600602590	MXF600602590	1	0.70	0.70	USD	S	168290182	Chalice	Heroes	Fonarte Latino, S.A. de C.V.		H		US			0.99	USD
+11/03/2024	11/30/2024	7509841210065		7509841210065	2	7.00	14.00	USD	S	178764871	Amparo Ochoa	Cancionero Popular, Vol. 1	Fonarte Latino, S.A. de C.V.		I		US			9.99	USD
+11/03/2024	11/30/2024	7509841214322		7509841214322	1	7.00	7.00	USD	S	335171795	Mexicanto	Coincidir	Fonarte Latino, S.A. de C.V.		I		US			9.99	USD
+11/03/2024	11/30/2024		MXF601401004	MXF601401004	2	0.91	1.82	USD	S	934536121	Son de Madera	Mujer Antigua, La Bruja	Fonarte Latino, S.A. de C.V.		H		US			1.29	USD
+11/03/2024	11/30/2024		MXF601401077	MXF601401077	1	0.91	0.91	USD	S	938245133	David Filio	Amarrado a Ti (feat. David San José)	Fonarte Latino, S.A. de C.V.		H		US			1.29	USD
+11/03/2024	11/30/2024		MXF601401078	MXF601401078	1	0.91	0.91	USD	S	938245136	David Filio	Con Tu Voz (feat. Antonio García de Diego)	Fonarte Latino, S.A. de C.V.		H		US			1.29	USD
+11/03/2024	11/30/2024		MXF601401080	MXF601401080	1	0.91	0.91	USD	S	938245140	David Filio	Vale La Pena (feat. Javier Ruibal)	Fonarte Latino, S.A. de C.V.		H		US			1.29	USD
+11/03/2024	11/30/2024		MXF601500065	MXF601500065	2	0.91	1.82	USD	S	964544784	Paulina Goto	Llévame Despacio	Fonarte Latino, S.A. de C.V.		H		US			1.29	USD
+11/03/2024	11/30/2024		MXF600600102	MXF600600102	1	0.70	0.70	USD	S	145129336	Amparo Ochoa	El Zenzontle Pregunta por Harlem	Fonarte Latino, S.A. de C.V.		H		US			0.99	USD
+11/03/2024	11/30/2024	7509841210997		7509841210997	1	7.00	7.00	USD	S	180113779	Los Folkloristas	Los Folkloristas Cantan a los Niños	Fonarte Latino, S.A. de C.V.		I		US			9.99	USD
+11/03/2024	11/30/2024		MXF600600483	MXF600600483	1	0.91	0.91	USD	S	184977611	Los Folkloristas	La Malagueña (Gusto, Guerrero)	Fonarte Latino, S.A. de C.V.		H		US			1.29	USD
+11/03/2024	11/30/2024		MXF600602793	MXF600602793	1	0.70	0.70	USD	S	186139522	Amparo Ochoa	La Calaca	Fonarte Latino, S.A. de C.V.		H		US			0.99	USD
+11/03/2024	11/30/2024		MXF600600925	MXF600600925	1	0.91	0.91	USD	S	187094345	Alejandro Santiago	Por Si No Te Vuelvo a Ver	Fonarte Latino, S.A. de C.V.		H		US			1.29	USD
+11/03/2024	11/30/2024		MXF600602905	MXF600602905	1	0.91	0.91	USD	S	188794753	David Filio	Claro Que	Fonarte Latino, S.A. de C.V.		H		US			1.29	USD
+11/03/2024	11/30/2024		MXF600602910	MXF600602910	1	0.91	0.91	USD	S	188795018	David Filio	La Calidez de Mi Hogar	Fonarte Latino, S.A. de C.V.		H		US			1.29	USD
+11/03/2024	11/30/2024		MXF600800017	MXF600800017	1	0.70	0.70	USD	S	289351963	Ernesto Cavour	Punteado (estudio Para Charango)	Fonarte Latino, S.A. de C.V.		H		US			0.99	USD
+11/03/2024	11/30/2024	7509841210973		7509841210973	1	7.00	7.00	USD	S	180112036	Los Folkloristas	México: Horizonte Musical	Fonarte Latino, S.A. de C.V.		I		US		CMA	9.99	USD
+11/03/2024	11/30/2024		MXF600800172	MXF600800172	2	0.91	1.82	USD	S	292749941	Los Folkloristas	Vasija de Barro (feat. Arturo Aguirre) [Danzante]	Fonarte Latino, S.A. de C.V.		H		US			1.29	USD
+11/03/2024	11/30/2024		MXF600800174	MXF600800174	1	0.91	0.91	USD	S	292775966	Los Folkloristas	Khoyaylla (Huayno)	Fonarte Latino, S.A. de C.V.		H		US			1.29	USD
+11/03/2024	11/30/2024		MXF602300551	MXF602300551	1	0.91	0.91	USD	S	1715055392	Lucero	No Volveré	Fonarte Latino, S.A. de C.V.		H		US			1.29	USD
+11/03/2024	11/30/2024		MXF602000674	MXF602000674	1	0.91	0.91	USD	S	1542072808	Fadi El Saadi	Mawoud	Fonarte Latino, S.A. de C.V.		H		US			1.29	USD
+11/03/2024	11/30/2024		MXF602100606	MXF602100606	2	0.91	1.82	USD	S	1575993685	JNS	Esta Historia Me Suena	Fonarte Latino, S.A. de C.V.		H		US			1.29	USD
+11/03/2024	11/30/2024		MXF601401002	MXF601401002	1	0.91	0.91	USD	S	934536119	Son de Madera	Benjamín el de los Llanos	Fonarte Latino, S.A. de C.V.		H		US			1.29	USD
+11/03/2024	11/30/2024		MXF600600022	MXF600600022	1	0.91	0.91	USD	S	143894851	Silvio Rodríguez	Te Doy una Canción	Fonarte Latino, S.A. de C.V.		H		US			1.29	USD
+11/03/2024	11/30/2024		MXF600600019	MXF600600019	2	0.91	1.82	USD	S	143894700	Silvio Rodríguez	Madre	Fonarte Latino, S.A. de C.V.		H		US			1.29	USD
+11/03/2024	11/30/2024	7509841210157		7509841210157	1	7.00	7.00	USD	S	143894282	Silvio Rodríguez, Pablo Milanés	Silvio Rodríguez - Pablo Milanés	Fonarte Latino, S.A. de C.V.		I		US			9.99	USD
+11/03/2024	11/30/2024		MXF602100650	MXF602100650	1	0.91	0.91	USD	S	1587754533	Fadi El Saadi	Maddah El Amar مداح القمر	Fonarte Latino, S.A. de C.V.		H		US			1.29	USD
+11/03/2024	11/30/2024		MXF602300130	MXF602300130	1	0.91	0.91	USD	S	1667640781	José Cantoral	No Sabía Que Existías	Fonarte Latino, S.A. de C.V.		H		US			1.29	USD
+11/03/2024	11/30/2024		MXF602300266	MXF602300266	1	0.91	0.91	USD	S	1679634251	Sergio Jurado, Jorge Jurado	Vecinos	Fonarte Latino, S.A. de C.V.		H		US			1.29	USD
+11/03/2024	11/30/2024		MXF602400312	MXF602400312	1	0.91	0.91	USD	S	1775983078	Genessis Carrillo	Mi Amor sin Tiempo (feat. Orlando Di Pietro)	Fonarte Latino, S.A. de C.V.		H		US			1.29	USD
+11/03/2024	11/30/2024		MXF600600019	MXF600600019	1	0.79	0.79	USD	S	143894700	Silvio Rodríguez	Madre	Fonarte Latino, S.A. de C.V.		H		PY			1.29	USD
+11/03/2024	11/30/2024		MXF601500065	MXF601500065	1	0.79	0.79	USD	S	964544784	Paulina Goto	Llévame Despacio	Fonarte Latino, S.A. de C.V.		H		HN			1.29	USD
+11/03/2024	11/30/2024	7509841284226		7509841284226	1	7.00	7.00	USD	S	1775983077	Varios Artistas	Mi Amor sin Tiempo (Temas de Novela)	Fonarte Latino, S.A. de C.V.		I		US			9.99	USD
+11/03/2024	11/30/2024		MXF602000101	MXF602000101	1	0.79	0.79	USD	S	1500801306	Camila Sodi	A Quién Le Importa?	Fonarte Latino, S.A. de C.V.		H		GT			1.29	USD
+11/03/2024	11/30/2024	7509841212830		7509841212830	1	7.00	7.00	USD	S	156825219	Los Amantes de Lola	3	Fonarte Latino, S.A. de C.V.		I		US			9.99	USD
+11/03/2024	11/30/2024		MXF602400366	MXF602400366	3	0.91	2.73	USD	S	1781715661	Daniela Romo	Amor Amargo	Fonarte Latino, S.A. de C.V.		H		US			1.29	USD
+11/03/2024	11/30/2024		MXF600900859	MXF600900859	2	0.91	1.82	USD	S	338347524	Los Folkloristas	Danza de los Viejitos	Fonarte Latino SA de CV		H		US			1.29	USD
+11/03/2024	11/30/2024		MXF600900860	MXF600900860	4	0.91	3.64	USD	S	338347533	Los Folkloristas	Rosa de Castilla	Fonarte Latino SA de CV		H		US			1.29	USD
+11/03/2024	11/30/2024		MXF600900871	MXF600900871	2	0.91	1.82	USD	S	338347700	Los Folkloristas	Flor de Canela	Fonarte Latino SA de CV		H		US			1.29	USD
+11/03/2024	11/30/2024		MXF600800180	MXF600800180	1	0.91	0.91	USD	S	292776063	Los Folkloristas	Huaynos Para Guitarra (Huayno)	Fonarte Latino, S.A. de C.V.		H		US			1.29	USD
+11/03/2024	11/30/2024		MXF601000126	MXF601000126	1	0.91	0.91	USD	S	364390395	Fadi El Saadi	Takasim Chifftetelli	Fonarte Latino SA de CV		H		US			1.29	USD
+11/03/2024	11/30/2024		MXF601000603	MXF601000603	1	0.70	0.70	USD	S	401781385	Aarón Cruz Trío	A la Ventana Carolina	Fonarte Latino SA de CV		H		US			0.99	USD
+11/03/2024	11/30/2024		MXF601000652	MXF601000652	1	0.70	0.70	USD	S	406773740	Rachid Taha	Rock El Casbah	Fonarte Latino SA de CV		H		US			0.99	USD
+11/03/2024	11/30/2024		MXF602300554	MXF602300554	1	0.91	0.91	USD	S	1715055395	Lucero	La Cigarra	Fonarte Latino, S.A. de C.V.		H		US			1.29	USD
+11/03/2024	11/30/2024	7509841317375		7509841317375	1	7.70	7.70	USD	S	1170234800	Pablo Prieto, Eddie Gomez, Alberto Medina	Triology	Fonarte Latino, S.A. de C.V.		I		US		CMA	10.99	USD
+11/03/2024	11/30/2024		MXF602300383	MXF602300383	1	0.91	0.91	USD	S	1691404662	Kabah	La Casa	Fonarte Latino, S.A. de C.V.		H		US			1.29	USD
+11/03/2024	11/30/2024		MXF602300477	MXF602300477	1	0.91	0.91	USD	S	1704232693	Daniela Romo, Angélica Vale	Recordar Es Vivir (Tema Aniversario del Canal TLNovelas)	Fonarte Latino, S.A. de C.V.		H		US			1.29	USD
+11/03/2024	11/30/2024	7509841282680		7509841282680	1	7.00	7.00	USD	S	1715055387	Lucero	El Gallo de Oro (Las Canciones de la Serie)	Fonarte Latino, S.A. de C.V.		I		US			9.99	USD
+11/03/2024	11/30/2024	7509841284264		7509841284264	1	6.30	6.30	USD	S	1777469272	Fadi El Saadi	Vol. 11	Fonarte Latino, S.A. de C.V.		I		US			8.99	USD
+11/03/2024	11/30/2024		MXF600602984	MXF600602984	1	0.70	0.70	USD	S	337682152	Santa Sabina	Vampiro	Fonarte Latino SA de CV		H		US			0.99	USD
+11/03/2024	11/30/2024	7509841282680		7509841282680	1	7.00	7.00	USD	S	1715055387	Lucero	El Gallo de Oro (Las Canciones de la Serie)	Fonarte Latino, S.A. de C.V.		I		US		CMA	9.99	USD
+11/03/2024	11/30/2024		MXF602000315	MXF602000315	1	0.91	0.91	USD	S	1509990000	Pasatono Orquesta	Tiricia	Fonarte Latino, S.A. de C.V.		H		US			1.29	USD
+11/03/2024	11/30/2024		MXF602300552	MXF602300552	1	0.91	0.91	USD	S	1715055393	Lucero	El Último Trago	Fonarte Latino, S.A. de C.V.		H		US			1.29	USD
+11/03/2024	11/30/2024	7509841282017		7509841282017	1	7.00	7.00	USD	S	1688791381	Son de Madera	Antología En Vivo	Fonarte Latino, S.A. de C.V.		I		US			9.99	USD
+11/03/2024	11/30/2024		MXF602300555	MXF602300555	-1	0.91	-0.91	USD	R	1715055396	Lucero	Yo Soy Feliz	Fonarte Latino, S.A. de C.V.		H		US		CMA-C	-1.29	USD
+11/03/2024	11/30/2024		MXF602300555	MXF602300555	1	0.91	0.91	USD	S	1715055396	Lucero	Yo Soy Feliz	Fonarte Latino, S.A. de C.V.		H		US			1.29	USD
+11/03/2024	11/30/2024		MXF602400001	MXF602400001	1	0.91	0.91	USD	S	1724996235	Lucero	Tu Vida Es Mi Vida	Fonarte Latino, S.A. de C.V.		H		US			1.29	USD
+11/03/2024	11/30/2024		MXF602400192	MXF602400192	1	0.91	0.91	USD	S	1745169030	Fadi El Saadi	Al Eih Besalouni (أل ايه بيسألوني)	Fonarte Latino, S.A. de C.V.		H		US			1.29	USD
+11/03/2024	11/30/2024		MXF602400268	MXF602400268	2	0.91	1.82	USD	S	1766416748	Jordi Bachbush	Fugitivas	Fonarte Latino, S.A. de C.V.		H		US			1.29	USD
+11/03/2024	11/30/2024		MXF602400272	MXF602400272	1	0.91	0.91	USD	S	1767883275	Lucero Mijares, Lucero	Caponera (Jardinera)	Fonarte Latino, S.A. de C.V.		H		US			1.29	USD
+11/03/2024	11/30/2024		MXF602400278	MXF602400278	1	0.91	0.91	USD	S	1771056530	Liliana Felipe	De Diversas Maneras de Borrachos	Fonarte Latino, S.A. de C.V.		H		US			1.29	USD
+11/03/2024	11/30/2024		MXF600800058	MXF600800058	1	0.70	0.70	USD	S	292661709	Pedro Aznar	Confesiones de Invierno	Fonarte Latino, S.A. de C.V.		H		US			0.99	USD
+Total_Rows	257
+Country Of Sale	Partner Share Currency	Quantity	Extended Partner Share
+AU	AUD	8	10.32
+BR	BRL	1	1.16
+CA	CAD	4	3.43
+CL	CLP	1	299.00
+DE	EUR	3	6.51
+ES	EUR	2	1.61
+FR	EUR	2	1.61
+GB	GBP	1	0.72
+JP	JPY	10	2914.00
+MX	MXN	142	2023.86
+PE	PEN	2	3.54
+RU	RUB	1	11.40
+GT	USD	1	0.79
+HN	USD	1	0.79
+PY	USD	1	0.79
+US	USD	115	197.05
