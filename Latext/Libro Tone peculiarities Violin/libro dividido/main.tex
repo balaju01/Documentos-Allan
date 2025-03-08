@@ -1,0 +1,28 @@
+% Archivo principal: main.tex
+\documentclass[12pt]{book}
+
+% Incluir el preámbulo
+\input{preambulo}
+
+\begin{document}
+
+\maketitle
+
+\begin{center}
+    \includegraphics[width=1\textwidth]{../img/portada.png}
+\end{center}
+
+% Incluir capítulos
+\include{portada}
+\include{agradecimientos}
+% Generar el índice
+\tableofcontents
+
+
+
+\include{explicacion}
+\include{indice}
+\include{introduccion}
+% Agregar más capítulos según sea necesario
+
+\end{document}

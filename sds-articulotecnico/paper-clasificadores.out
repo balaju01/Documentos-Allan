@@ -1,0 +1,12 @@
+\BOOKMARK [1][-]{section.1}{Introducci\363n}{}% 1
+\BOOKMARK [1][-]{section.2}{Metodolog\355a}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Preliminares}{section.2}% 3
+\BOOKMARK [3][-]{subsubsection.2.1.1}{Esquema de Secreto Compartido de Shamir}{subsection.2.1}% 4
+\BOOKMARK [3][-]{subsubsection.2.1.2}{CAPTCHA}{subsection.2.1}% 5
+\BOOKMARK [2][-]{subsection.2.2}{Esquema D\355az - Chakraborty}{section.2}% 6
+\BOOKMARK [3][-]{subsubsection.2.2.1}{Codificaci\363n de caracteres a enteros}{subsection.2.2}% 7
+\BOOKMARK [3][-]{subsubsection.2.2.2}{Decodificaci\363n de enteros a caracteres}{subsection.2.2}% 8
+\BOOKMARK [1][-]{section.3}{Resultados}{}% 9
+\BOOKMARK [2][-]{subsection.3.1}{Implementaci\363n}{section.3}% 10
+\BOOKMARK [1][-]{section.4}{Conclusiones}{}% 11
+\BOOKMARK [1][-]{section*.8}{Referencias}{}% 12

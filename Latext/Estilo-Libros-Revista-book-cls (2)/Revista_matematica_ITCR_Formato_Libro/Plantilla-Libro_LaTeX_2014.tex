@@ -1,0 +1,344 @@
+
+
+
+
+
+%-------------------------------------------------------------------------------------
+% ESTA PLANTILLA REQUIERE UNA INSTALACION ACTUALIZADA DE TEXLIVE O MIKTEX (AL 2014)
+%
+% ACTUALICE TODA LA DISTRIBUCIÓN MIKTEX  O TEXLIVE ANTES DE USAR ESTA PLANTILLA
+% O HAGA UNA REINSTALACIÓN DE LA DISTRIBUCIÓN
+%
+%  >>>>>  Esta plantilla requiere el paquete "psboxit" (está en esta carpeta: psboxit.sty) <<<<<<
+%----------------------------------------------------------------------------------------
+
+
+
+\documentclass[11pt,fleqn,x11names,table]{book}                                                  
+% Dimensiones y márgenes.     
+\usepackage[text={15cm,25cm},centering,headsep=20pt,top=0.8in,
+bottom = 0.8in,letterpaper,showframe=false]{geometry} 
+
+%----------------------------------------------------------------------
+\input{Archivo_Diseno_Libro_LaTeX_RevistaMatematica_ITCR}% = Paquetes y código de diseño
+%----------------------------------------------------------------------
+
+\renewcommand{\tablename}{Tabla}
+\definecolor{styrmitcrwcgray1}{rgb}{0.2,0.2,0.2}
+\definecolor{wcgray}{rgb}{0,0.1333,0.3333}
+\usetikzlibrary{arrows}
+
+\usepackage{makeidx}
+\makeindex
+\usepackage{fourier} % Fuente global
+% Insertar  páginas .pdf
+\usepackage{pdfpages}
+
+
+\begin{document}
+% Insertar  Portada.pdf
+\includepdf[pages=-]{images/Portada}
+
+\pagenumbering{roman} 
+%\pagecolor{grisamarillo}
+\parindent=0mm    % Sin sangría
+\pagestyle{empty}
+\titulo{% Autor (\fnte es un comando para un tipo de fuente especial)
+       \huge\bfseries\color{wcolornotas} Alexánder Borbón A., Walter Mora F.}{%
+        %pre-título
+        \color{verdeF}Edición de Textos Científicos
+        }{%
+        %Título principal
+         {\fontsize{80}{1} \selectfont La\TeX{}}
+        }{%
+        %Adicional
+        Composición, Diseño Editorial, Gráficos,\\
+Inkscape, Tikz  y Presentaciones Beamer
+        }
+
+% %----------------------------------------------------------------------------------------
+% % Página para "derechos reservados", ISBN, licencia creative commons, etc.
+% %----------------------------------------------------------------------------------------
+\clearpage
+\begin{copyrightpage}{% 
+   Revista digital Matem\'atica Educaci\'on e Internet (www.tec-digital.itcr.ac.cr/revistamatematica/). 
+   Correo Electr\'onico: \url{wmora2@itcr.ac.cr}
+   Escuela de Matem\'atica
+   Instituto Tecnol\'ogico de Costa Rica
+   Apdo. 159-7050, Cartago
+   Tel\'efono (506)25502225
+   Fax (506)25502493}%
+Mora Flores, Walter.
+\    Edición de Textos Científicos con \LaTeX. Composición, Gráficos, Inkscape y Presentaciones Beamer/Walter Mora F.
+\ Alexánder Borbón A. -- 3ra ed.
+\ -- Escuela de Matemática,Instituto Tecnológico de Costa Rica.  2010.
+\    xxx p.
+\ ISBN 978-9977-66-227-5
+\    1. TeX.  2. Composición tipográfica-automatizada 3. Tipos - símbolos matemáticos.\\     
+\end{copyrightpage}
+~\vfill
+%\thispagestyle{empty}
+
+\noindent 
+\parbox[s]{0.35\textwidth}{Licencia.}\parbox[c]{0.65\textwidth}{
+ \color{gray}
+ \fhv{9}{Revista digital}\\
+ \fhvb{10}{Matemática, Educación e Internet.}\\
+  \fntg[pag][9]{%
+  \href{http://www.tec-digital.itcr.ac.cr/revistamatematica/}{http://www.tec-digital.itcr.ac.cr/revistamatematica/.}}
+ }\\\\ % 
+
+%\noindent {\color{colordominante} Photos by}: Viviana Loaiza. Parque Nacional Chirripó, Costa Rica.\\
+
+
+\includegraphics[scale=0.7]{images/logocc}
+\noindent  {{\fontsize{9}{1} \selectfont Este libro se distribuye bajo la licencia Creative Commons: Atribución-NoComercial-SinDerivadas CC BY-NC-ND (la "Licencia"). Usted puede utilizar este archivo de conformidad con la Licencia. Usted puede obtener una copia de la Licencia en 
+\url{http://creativecommons.org/licenses/by-nc-nd/3.0/}.   En particular, esta licencia permite copiado y distribución gratuita, pero no permite venta ni modificaciones de este material.\\
+  Límite de responsabilidad y exención de garantía: El autor o los autores han hecho su mejor esfuerzo en la preparación de este material.
+  Esta edición se proporciona``tal cual''. Se distribuye gratuitamente con la esperanza de que sea útil, pero sin ninguna garantía expresa o implícita respecto a la exactitud o completitud del contenido.\\
+  La Revista digital Matemáticas, Educación e Internet es una publicación electrónica. El material publicado en ella expresa la opinión de sus autores y no necesariamente la opinión de la revista ni la del Instituto Tecnológico de Costa Rica.}\\
+  
+  
+%--------------------------------------------------------------------------------
+%	Tabla de contenidos
+%--------------------------------------------------------------------------------
+\tableofcontents
+
+%---------------------------------------------------------------------------------
+% Prólogo
+%---------------------------------------------------------------------------------
+
+\begin{prologo}
+\thispagestyle{empty}
+Este texto  cubre aspectos básicos e intermedios sobre composición tipográfica \LaTeX{}\index{LaTeX@\LaTeX}, diseño editorial, presentaciones Beamer\index{Beamer}, edición adicional de gráficos\index{Gráficos} y figuras\index{Figuras}  con Inkscape\index{Inkscape} y Ti\textit{k}z\index{Tikz}. También se desarrollan  tópicos que tienen que
+ver con paquetes especiales. Algunas veces la descripción se hace "por ejemplos", dada la
+vastedad del tema. \\
+
+ ...\\
+ 
+ El  código \fnte{\LaTeX} de este libro (ejemplos y plantilla)  se puede descargar desde el sitio de la \href{revista digital Matemática, Educación e Internet}{\fnte{http://www.tec-digital.itcr.ac.cr/revistamatematica/Libros/index.htm}}.\\
+    
+\textit{Cartago, 2013.} \hfill{\sc W. Mora, A. Borbón.}
+\end{prologo}
+
+
+\cleardoublepage
+\pagestyle{fancy} % Habilitar encabezados
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+
+%--------------------------------------------------------------------------------------
+%	Capítulo 1
+%---------------------------------------------------------------------------------------
+\chapter{\LaTeX: Primeros pasos}
+%%\input{LaTeXPrimerosPasos.tex}
+
+ \begin{caja}[Advertencia.]
+ Las siguientes plantillas usan la versión 2014 del paquete
+ \verb+tcolorbox+ (entre otros paquetes recientes),  por lo tanto {\it debe actualizar los paquetes de sus distribución} \TeX{} o instalar manualmente este paquete (ver el capítulo 9 del libro, \url{http://www.tec-digital.itcr.ac.cr/revistamatematica/Libros/LATEX/LaTeX_2014.pdf}). El paquete "psboxit" viene incluido en la carpeta.
+ \end{caja}
+
+\section{Prueba de entornos}
+
+\begin{definicion}[(Igualdad)][cap1:Igualdad]
+  $$a=b$$
+\end{definicion}
+
+\bigskip
+Según la definición \ref{cap1:Igualdad}, la igualdad...\\
+
+\bigskip
+\begin{teorema}
+ $$a=b$$
+\end{teorema}
+
+\bigskip
+\begin{ejemplo}
+ $$a=b$$
+\end{ejemplo}
+
+%------------------------------------------------------------------------------------------
+\clearpage
+
+\begin{lema}
+  $$a=b$$
+\end{lema}
+
+\bigskip
+\begin{corolario}
+ $$a=b$$
+\end{corolario}
+
+\bigskip
+\begin{caja}[Una caja de comentario]
+ $$a=b$$
+\end{caja}
+
+\subsection{Tablas}
+ % \usepackage{array,tabularx}
+ % \usepackage[table, x11names]{xcolor}
+
+\newcolumntype{Y}{>{\raggedleft\arraybackslash}X} % Ver tabularx
+%
+\tcbset{enhanced,fonttitle=\bfseries\large,fontupper=\normalsize\sffamily,
+         colback=LightCyan1,colframe=DarkOrange4,colbacktitle=DarkOrange4,
+         coltitle=black,center title
+       }
+
+%%-Tabla - Estilo beamer
+\begin{tcolorbox}[tabularx={X||X||X},title= {\white Iteración}, beamer]
+  & $x_i$           & $y_i=f(x_i)$ \\\hline\hline
+A & $x_0=0$         & $0$           \\\hline
+B & $x_1=0.75$      &  $-0.0409838$ \\\hline
+C & $x_2=1.5$       &  $1.31799$  
+\end{tcolorbox}
+
+
+%----------------------------------------------------------------------------------------
+%	Capítulo 2
+%----------------------------------------------------------------------------------------
+\chapter{Acciones en una sesión con \LaTeX{}}
+
+%%\input{AccionesSesionLaTeX.tex}
+
+%----------------------------------------------------------------------------------------
+%	Capítulo 3
+%----------------------------------------------------------------------------------------
+% \clearpage
+\chapter{Escritura de Texto Normal}
+
+%%\input{EscrituraTextoNormal.tex}
+
+%----------------------------------------------------------------------------------------
+%	Capítulo 4
+%----------------------------------------------------------------------------------------
+\chapter{Texto en modo matemático}\label{textomatematico}
+% \clearpage
+%%\input{TextoModoMatematico.tex}
+% 
+%----------------------------------------------------------------------------------------
+%	Capítulo 5
+%----------------------------------------------------------------------------------------
+\chapter{Tablas y objetos flotantes}
+% \clearpage
+%%\input{Tablas.tex}
+% 
+%----------------------------------------------------------------------------------------
+%	Capítulo 
+%----------------------------------------------------------------------------------------
+\chapter{Insertar gráficos y figuras}
+% \clearpage
+%\input{aInsertarFiguras.tex}
+% 
+
+%----------------------------------------------------------------------------------------
+%	Capítulo 
+%----------------------------------------------------------------------------------------
+\chapter{Edición de gráficos y figuras}
+% \clearpage
+%\input{edicionFiguras.tex}
+% 
+
+
+%----------------------------------------------------------------------------------------
+%	Capítulo 
+%----------------------------------------------------------------------------------------
+\chapter{Citas bibliográficas  con BibTeX}
+% \clearpage
+%%\input{HacerBibliografia.tex}
+% 
+
+%----------------------------------------------------------------------------------------
+%	Capítulo 
+%----------------------------------------------------------------------------------------
+\chapter{Diseño Editorial}
+% \clearpage
+%%\input{DisenoEditorial.tex}
+% 
+
+%----------------------------------------------------------------------------------------
+%	Capítulo 
+%----------------------------------------------------------------------------------------
+
+\chapter{Entornos y cajas}\label{cajas}
+% \clearpage
+%%\input{cajas.tex}
+% 
+
+
+%----------------------------------------------------------------------------------------
+%	Capítulo 
+%----------------------------------------------------------------------------------------
+\chapter{Personalizar el Documento}
+% \clearpage
+%\input{PersonalizarElDocumento.tex}
+% 
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	Capítulo 
+%----------------------------------------------------------------------------------------
+\chapter{Transparencias con  Beamer}
+% \clearpage
+% \input{Beamer.tex}
+% 
+
+%----------------------------------------------------------------------------------------
+%	Capítulo 
+%----------------------------------------------------------------------------------------
+\chapter{Posters y Trípticos (Brochures)}
+% \clearpage
+% \input{PosterYBrochures.tex}
+% 
+
+%----------------------------------------------------------------------------------------
+%	Capítulo 
+%----------------------------------------------------------------------------------------
+\chapter{Documentos \LaTeX{} en Internet}
+% \clearpage
+% \input{LaTeXInternet.tex}
+% 
+
+%----------------------------------------------------------------------------------------
+%	Bibliografía
+%----------------------------------------------------------------------------------------
+ \clearpage
+\thispagestyle{empty}
+\addcontentsline{toc}{schapter}{\addvspace{30pt}\large\sc\bfseries Bibliografía \color{azulF}\hfill   }
+
+\begin{thebibliography}{AAAAAA}
+  \bibitem{abbot} S. Abbot. "{\it Understanding Analysis}". Springer. 2000.\\
+  
+  \bibitem{Andrew} Andrew Mertz y  William Slough. {\it "Beamer by Example"}.
+  En \url{http://www.tug.org/pracjourn/2005-4/mertz/mertz.pdf}
+  
+
+
+\bibitem{} Joseph Wright. "From \verb+\newcommand+ to \verb+\NewDocumentCommand+
+with xparse".  \url{https://www.tug.org/TUGboat/tb31-3/tb99wright.pdf}.
+Consultada el 10 de Enero 2014.
+
+\end{thebibliography}
+% \clearpage
+%\input{Bibliografia}
+% 
+
+%----------------------------------------------------------------------------------------
+%	Apéndices
+%----------------------------------------------------------------------------------------
+
+%\input{apendiceAgregarPaquetesNuevos.tex}
+%\input{Habilitarshellescape.tex}
+% \input{ApendiceA.tex}%insalar una distribución y un editor
+% \input{softwareadicional}
+% \input{massoftwareadicional}
+% \input{ApendiceB.tex}
+% \input{IndiceComun.tex}
+% 
+% %%%%%%%%%%% ImprimirIndice
+%\printindex
+
+\end{document}

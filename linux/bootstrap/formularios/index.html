@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Formulario</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.css">
+</head>
+<body>
+	<div class="container">
+	<br>
+		<form action="" class="">
+			<div class="form-group">
+				<label for="nombre">Nombre:</label>
+				<input class="form-control" id="nombre" type="text" placeholder="Nombre:"></input>
+			</div>
+			<div class="form-group">
+				<label for="option">Elige una opcion:</label>
+				<select class="form-control" name="" id="option">
+					<option value="">Opcion #1</option>
+					<option value="">Opcion #2</option>
+					<option value="">Opcion #3</option>
+					<option value="">Opcion #4</option>
+					<option value="">Opcion #5</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="mensaje">Mensaje:</label>
+				<textarea class="form-control" id="mensaje" placeholder="Escribe tu mensaje:"></textarea>
+			</div>
+			<div class="form-group">
+				<label for="archivo">Archivo:</label>
+				<input type="file" id="archivo"></input>
+				<p class="help-block">Maximo 50MB</p>
+			</div>
+			<button class="btn btn-primary">Enviar</button>
+		</form>
+	</div>
+	<br>
+	<br>
+	<div class="container">
+		<form action="" class="form-inline">
+			<div class="form-group">
+				<label class="sr-only" for="nombre">Nombre:</label>
+				<input class="form-control" id="nombre" type="text" placeholder="Nombre:"></input>
+			</div>
+			<div class="form-group">
+				<div class="input-group">
+					<label class="sr-only" for="correo">Correo:</label>
+					<div class="input-group-addon">@</div>
+					<input class="form-control" id="correo" type="text" placeholder="Correo:"></input>
+				</div>
+			</div>
+			<div class="checkbox">
+				<label>
+					<input type="checkbox" name="" id="">Recuerdame</input>
+				</label>
+			</div>
+			<button class="btn btn-primary">Enviar</button>
+		</form>
+	</div>
+	<br>
+	<br>
+	<div class="container">
+		<form action="" class="form-horizontal">
+			<div class="form-group has-success">
+				<label class="control-label col-md-2" for="nombre">Nombre:</label>
+				<div class="col-md-10">
+					<input class="form-control" id="nombre" type="text" placeholder="Nombre:"></input>
+				</div>
+			</div>
+			<div class="form-group has-warning">
+					<label class="control-label col-md-2" for="nombre">Nombre:</label>
+					<div class="col-md-10">
+						<p class="form-control-static">Allan Ulises Zepeda</p>
+					</div>
+			</div>
+			<div class="form-group has-error">
+				<label class="control-label col-md-2" for="correo">Correo:</label>
+				<div class="col-md-10">
+					<input class="form-control" id="correo" type="text" placeholder="Correo:"></input>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="checkbox col-md-2 col-md-offset-2">
+					<label>
+						<input type="checkbox" name="" id="">Recuerdame</input>
+					</label>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-md-2 col-md-offset-2">
+					<button class="btn btn-primary">Enviar</button>
+				</div>
+			</div>
+		</form>
+	</div>
+	<br>
+	<br>
+	<div class="container">
+		<form action="">
+			<div class="form-group">
+				<label>label Basico</label>
+				<input type="text" placeholder="Input Basico" class="form-control"></input>
+			</div>
+			
+			<textarea name="" id="" placeholder="textarea" class="form-control"></textarea>
+			<div class="form-group">
+				<div class="checkbox">
+					<label class="checkbox-inline">
+						<input type="checkbox" name="" id="">Checkbox #1</input>
+					</label>
+				</div>
+				<div class="checkbox">
+					<label class="checkbox-inline">
+						<input type="checkbox" name="" id="">Checkbox #2</input>
+					</label>
+				</div>
+				<div class="checkbox">
+					<label class="checkbox-inline">
+						<input type="checkbox" name="" id="">Checkbox #3</input>
+					</label>
+					
+				</div>
+			</div>
+			<div form-group>
+				<label class="checkbox-inline">
+					<input type="checkbox" name="" id="">Checkbox #1</input>
+				</label>
+			
+			
+				<label class="checkbox-inline">
+					<input type="checkbox" name="" id="">Checkbox #2</input>
+				</label>
+			
+			
+				<label class="checkbox-inline">
+					<input type="checkbox" name="" id="">Checkbox #3</input>
+				</label>
+			</div>
+			
+
+			<div class="radio">
+				<label for="radio1">
+					<input type="radio" name="opcion" id="radio1">Radio Button #1</input>
+				</label>
+			</div>
+			<div class="radio">
+				<label for="radio2">
+					<input type="radio" name="opcion" id="radio2">Radio Button #2</input>
+				</label>
+			</div>
+			<div class="radio">
+				<label for="radio3">
+					<input type="radio" name="opcion" id="radio3">Radio Button #3</input>
+				</label>
+			</div>
+			
+		</form>
+	</div>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+</html>

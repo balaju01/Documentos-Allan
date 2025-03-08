@@ -1,0 +1,1157 @@
+
+
+
+%--------------------------------------------------------------------------
+%-------------------------------------------------------------------------------------
+% ESTA PLANTILLA REQUIERE UNA INSTALACION ACTUALIZADA DE TEXLIVE O MIKTEX (AL 2014)
+%
+% ACTUALICE TODA LA DISTRIBUCIÓN MIKTEX  O TEXLIVE ANTES DE USAR ESTA PLANTILLA
+% O HAGA UNA REINSTALACIÓN DE LA DISTRIBUCIÓN
+%----------------------------------------------------------------------------------------
+%--------------------------------------------------------------------------
+
+
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{RevistaMatematica_ITCR_Estilo_Libro_A}[2013/08/18]
+
+
+\RequirePackage[spanish]{babel}
+\RequirePackage[latin1]{inputenc} %  Entrada de acentos
+\RequirePackage[T1]{fontenc}
+\RequirePackage[autostyle, spanish = mexican]{csquotes} % manejo de comillas: " "
+\MakeOuterQuote{"}
+%\RequirePackage{pslatex}          % Fuentes finas postscript
+%\RequirePackage[sc]{mathpazo}    % Fuentes mathpazo
+\RequirePackage{helvet}
+\RequirePackage{palatino}         % Fuente palatino
+\linespread{1.05}                 % Fuente Palatino necesita espaciado
+%\RequirePackage[full]{textcomp}  % Caracteres especiales como ' (recto)
+\RequirePackage{xcolor} % Color: usando X11names
+%\RequirePackage{psboxit}
+\RequirePackage{pstricks}
+\RequirePackage{xparse}
+\RequirePackage{tcolorbox}        % Paquete para cajas de Teoremas, ejemplos, etc.
+\tcbuselibrary{skins,breakable}   % Librerias tcolorbox
+\RequirePackage{xargs}            % Comandos con opciones
+\usetikzlibrary{positioning,shadows,backgrounds,calc}%
+\DeclareGraphicsExtensions{.pdf,.png,.jpg, .eps} %priorización de formatos
+\RequirePackage{multicol}
+\RequirePackage{amsmath,amssymb,amsfonts,latexsym,cancel,stmaryrd} %Soporte math símbolos-fonts.
+\RequirePackage[amsmath,thmmarks,hyperref]{ntheorem}
+\RequirePackage[ruled,,vlined,lined,linesnumbered,algochapter]{algorithm2e}
+\RequirePackage{framed}
+\RequirePackage{titletoc}
+\RequirePackage{etoolbox}
+\RequirePackage{fancyvrb}
+%\RequirePackage{minted}   %iluminar código. Habilitar mejor en Ubuntu (Linux)
+\renewcommand{\theFancyVerbLine}{\sffamily
+	\textcolor[rgb]{0,0,0.5}{\scriptsize
+    \oldstylenums{\arabic{FancyVerbLine}}}}
+\RequirePackage{colortbl}
+\RequirePackage{tabularx}
+\RequirePackage{booktabs}
+%\RequirePackage{epstopdf}      % Conversión - Miktes 2.9 o inferior, TexLive 2009. o inferior
+\RequirePackage[small,bf]{caption}
+\RequirePackage{titlesec}
+\RequirePackage[shortlabels]{enumitem}
+\renewcommand{\baselinestretch}{1.1}
+\frenchspacing
+%\thispagestyle{empty}
+\parindent=0mm
+
+%--------------------------------------------------------------------------------
+% COLORES personales
+%--------------------------------------------------------------------------------
+\definecolor{colordominante}{RGB}{11,17,79}
+\definecolor{colordominanteF}{RGB}{219,68,14}
+\definecolor{colorejemplo}{RGB}{77,190,208}
+\definecolor{colordefinicion}{RGB}{97,196,161}
+\definecolor{colorteorema}{RGB}{0,133,202}
+\definecolor{colortitulo}{RGB}{0,133,202}
+\definecolor{colorcaja}{RGB}{244,227,200}
+\definecolor{grisamarillo}{RGB}{248,248,245} 
+\definecolor{amarilloD}{RGB}{251,237,121}
+\colorlet{colorfondoejemplo}{gray!10}
+\colorlet{colorfondodefinicion}{gray!10}
+\colorlet{colorfondoteorema}{gray!10}
+\definecolor{colorfondocaja}{RGB}{252,252,244}
+
+\definecolor{rosado}{RGB}{201,148,199}
+\definecolor{violeta}{RGB}{117,107,177}
+\definecolor{amarilloS}{RGB}{252,252,244}
+\definecolor{azulF}{rgb}{.0,.0,.3}
+\definecolor{grisD}{rgb}{.3,.3,.3}
+\definecolor{grisF}{rgb}{.6,.6,.6}
+\definecolor{miverde}{RGB}{44,162,67}
+\newcommand{\verde}{\color{miverde}}
+
+
+%-------------------------------------------------------------------------------
+% Comandos para fuentes especiales
+%-------------------------------------------------------------------------------
+\newcommandx*{\fnte}[4][1=pag,2=9,3=n]{{\color{azulF}\fontfamily{#1}\fontsize{#2}{1}\fontshape{#3}\selectfont{#4}}}
+\newcommandx*{\fntb}[4][1=pag,2=11,3=n]{{\color{azulF}\fontfamily{#1}\fontsize{#2}{1}\fontseries{b}\fontshape{#3}\selectfont{#4}}}
+\newcommandx*{\fntg}[4][1=pag,2=9,3=n]{{\color{grisF}\fontfamily{#1}\fontsize{#2}{1}\fontshape{#3}\selectfont{#4}}}
+\newcommand{\fhv}[2]{{\fontfamily{phv}\fontsize{#1}{1}\selectfont{#2}}}
+\newcommand{\fhvb}[2]{{\fontfamily{phv}\fontseries{b}\fontsize{#1}{1}\selectfont{#2}}}
+%-------------------------------------------------------------------------------
+
+
+%********************************** DISENO *************************************
+
+%-------------------Diseño de CAPITULO (estilo simple) -------------------------
+\newcommand{\hsp}{\hspace{20pt}}
+\titleformat{\chapter}[hang]{\huge\bfseries}{{
+        \fontsize{6em}{6em}\selectfont\black
+        \thechapter}\hsp\textcolor{colorteorema}{\vrule height 4em width 1pt}\hsp}{0pt}{\huge\bfseries}
+                
+%------------------------------ Diseño de  PARTE-------------------------------
+\renewcommand\part{%
+  \if@openright
+    \cleardoublepage
+  \else
+    \clearpage
+  \fi
+  \thispagestyle{plain}%
+  \if@twocolumn
+    \onecolumn
+    \@tempswatrue
+  \else
+    \@tempswafalse
+  \fi
+  \null\vfil
+  \secdef\@part\@spart}
+
+\def\@part[#1]#2{%
+    \ifnum \c@secnumdepth >-2\relax
+      \refstepcounter{part}%
+      \addcontentsline{toc}{part}{\thepart\hspace{1em}#1}%
+    \else
+      \addcontentsline{toc}{part}{#1}%
+    \fi
+    %\markboth{}{}%
+    {\centering
+     \interlinepenalty \@M
+     \normalfont
+     \ifnum \c@secnumdepth >-2\relax
+       \huge\bfseries \partname\nobreakspace\thepart
+       \par
+       \vskip 20\p@
+     \fi
+     \Huge \bfseries #2\par}%
+    \@endpart}
+\def\@spart#1{%
+    {\centering
+     \interlinepenalty \@M
+     \normalfont
+     \Huge \bfseries #1\par}%
+    \@endpart}
+\def\@endpart{\vfil\newpage
+              \if@twoside
+               \if@openright
+                \null
+                \thispagestyle{empty}%
+                \newpage
+               \fi
+              \fi
+              \if@tempswa
+                \twocolumn
+              \fi}
+% Fin PARTE
+
+
+
+% Diseño de  SECCIONES SUBSECCIONES - SUBSUB...----------------------------------------
+\newcommand{\mcaja}[1]{%
+{{\fboxsep 12pt \fboxrule 0pt%
+\fcolorbox{white}{white}{%
+\color{grisD} \huge #1}}} %color numeración secciones
+}
+
+
+%
+\def\section{\@ifstar\unnumberedsection\numberedsection}
+\def\numberedsection{\@ifnextchar[%]
+  \numberedsectionwithtwoarguments\numberedsectionwithoneargument}
+\def\unnumberedsection{\@ifnextchar[%]
+  \unnumberedsectionwithtwoarguments\unnumberedsectionwithoneargument}
+\def\numberedsectionwithoneargument#1{\numberedsectionwithtwoarguments[#1]{#1}}
+\def\unnumberedsectionwithoneargument#1{\unnumberedsectionwithtwoarguments[#1]{#1}}
+\def\numberedsectionwithtwoarguments[#1]#2{%
+  \ifhmode\par\fi
+  \removelastskip
+  \vskip 3ex\goodbreak
+  \refstepcounter{section}%
+  \begingroup
+  %\noindent
+  \leavevmode\large\bfseries\raggedright\mcaja%caja aplica a number section
+  \thesection\color{azulF} #2\par\nobreak   %Color del texto de \section{texto}
+  \endgroup
+  \noindent\hrulefill\nobreak
+  \vskip 2ex\nobreak
+  \addcontentsline{toc}{section}{%
+    \protect\numberline{\thesection}%
+    #1}%
+  }
+\def\unnumberedsectionwithtwoarguments[#1]#2{%
+  \ifhmode\par\fi
+  \removelastskip
+  \vskip 3ex\goodbreak
+%  \refstepcounter{section}%
+  \begingroup
+  \noindent
+  \leavevmode\Large\bfseries\raggedright
+%  \thesection\
+  #2\par\nobreak
+  \endgroup
+  \noindent\hrulefill\nobreak
+  \vskip 0ex\nobreak
+  \addcontentsline{toc}{section}{%
+%    \protect\numberline{\thesection}%
+    #1}%
+  }
+
+
+%--Subsecciones-subsubsecciones-paragraph...apéndice------------------------------------
+%  TEORIA
+% \@startsection {NAME}{LEVEL}{INDENT}{BEFORESKIP}{AFTERSKIP}{STYLE} 
+%            optional * [ALTHEADING]{HEADING}
+%    Generic command to start a section.  
+%    NAME       : e.g., 'subsection'
+%    LEVEL      : a number, denoting depth of section -- e.g., chapter=1,
+%                 section = 2, etc.  A section number will be printed if
+%                 and only if LEVEL < or = the value of the secnumdepth
+%                 counter.
+%    INDENT     : Indentation of heading from left margin
+%    BEFORESKIP : Absolute value = skip to leave above the heading.  
+%                 If negative, then paragraph indent of text following 
+%                 heading is suppressed.
+%    AFTERSKIP  : if positive, then skip to leave below heading,
+%                       else - skip to leave to right of run-in heading.
+%    STYLE      : commands to set style
+%  If '*' missing, then increments the counter.  If it is present, then
+%  there should be no [ALTHEADING] argument.  A sectioning command
+%  is normally defined to \@startsection + its first six arguments.
+%
+%\RequirePackage{appendix}
+%
+% \renewcommand\section{\@startsection {section}{1}{\z@}%
+%                                    {-3.5ex \@plus -1ex \@minus -.2ex}%
+%                                    {2.3ex \@plus.2ex}%
+%                                    {\sectionfont\Large\bfseries\color{azulF}}}
+\renewcommand\subsection{\@startsection{subsection}{2}{\z@}%
+                                     {-3.25ex\@plus -1ex \@minus -.2ex}%
+                                     {1.5ex \@plus .2ex}%
+                                     {\large\bfseries\color{azulF}}}
+\renewcommand\subsubsection{\@startsection{subsubsection}{3}{\z@}%
+                                     {-3.25ex\@plus -1ex \@minus -.2ex}%
+                                     {1.5ex \@plus .2ex}%
+                                     {\normalsize\bfseries\color{azulF}}}
+\renewcommand\paragraph{\@startsection{paragraph}{4}{\z@}%
+                                    {3.25ex \@plus1ex \@minus.2ex}%
+                                    {-1em}%
+                                    {\normalsize\bfseries\color{azulF}}}
+\renewcommand\subparagraph{\@startsection{subparagraph}{5}{\parindent}%
+                                       {3.25ex \@plus1ex \@minus .2ex}%
+                                       {-1em}%
+                                      {\normalsize\bfseries\color{azulF}}}
+                                    
+
+%--- Fin Partes- Capítulos - secciones - subsecciones - subsubsections
+
+%-----------------------------------------------------------------------------------
+% Diseño de Cabeceras Contenido, Título, secciones, subsecciones,etc.--
+%-----------------------------------------------------------------------------------
+%Págs blancas 
+%
+\def\cleardoublepage{\clearpage\if@twoside \ifodd\c@page\else
+\hbox{}
+\vspace*{\fill}
+\begin{center}
+Esta página fue dejada intencionalmente blanca
+\end{center}
+\vspace{\fill}
+\thispagestyle{empty}
+\newpage
+\if@twocolumn\hbox{}\newpage\fi\fi\fi}
+
+
+%-----------------Cabeceras--------------------------------------------------------
+
+\newcommand{\helv}{\fontfamily{phv}\fontsize{8}{10}\selectfont}
+\RequirePackage{fancyhdr}
+\pagestyle{fancy}
+ \renewcommand{\chaptermark}[1]{\markboth{#1}{#1}}
+ \renewcommand{\sectionmark}[1]{\markright{#1}{#1}}
+% \renewcommand{\sectionmark}[1]{\markboth{\thesection\#1}}
+ \fancyhf{} % borra cabecera y pie actuales
+ \fancyhead[LE,RO]{\bfseries \helv\thepage} %Left Even page - Right Odd page
+ %\fancyhead[R]{\bfseries \helv\thepage}  % Numeración siempre a la derecha
+ \fancyhead[LO]{\helv\rightmark}
+ \fancyhead[RE]{\helv\leftmark}
+ \renewcommand{\headrulewidth}{0pt} % Sin raya. Con raya?: cambiar {0} por {0.5pt}
+ \renewcommand{\footrulewidth}{0pt}
+ \setlength\headheight{14.5pt}
+ \fancyheadoffset[R]{0.0cm} %Numeración de página en el borde de la página
+  \addtolength{\headheight}{0.5pt} % espacio para la raya
+ \fancypagestyle{plain}{%
+ \fancyhead{} % elimina cabeceras y raya en páginas "plain"
+ \renewcommand{\headrulewidth}{0pt} }
+% Fin cabeceras -------------------------------------------------------------------
+
+%-- Prólogo -----------------------------------------------------------------------
+\NewDocumentEnvironment{prologo}{O{}}{%
+\addcontentsline{toc}{schapter}{%
+\hspace{6em}{\color{azulF}{\fontfamily{phv}\fontsize{9}{10}\selectfont Prol\'ogo}} \qquad}
+\chapter*{Prólogo}
+\bigskip\bigskip
+\begin{minipage}{0.9\textwidth}
+ #1}{\end{minipage}}
+ 
+
+%-- TITULO-------------------------------------------------------------------------
+%
+\def\thickhrulefill{\leavevmode \leaders \color{colorteorema}\hrule height 4pt\hfill \kern \z@}
+\renewcommand{\maketitle}{\begin{titlepage}%
+    %\let\footnotesize\small
+    \let\footnoterule\relax
+    \parindent \z@
+    \reset@font
+    \null
+    \vskip 10\p@
+    \hbox{\mbox{%
+        \hspace{4pt}%
+        \IfFileExists{images/logo.pdf}{\includegraphics[width=3em]{images/logo.pdf}}{}%     
+        \hspace{4pt}
+        }%
+      \color{colortitulo}\vrule depth 0.9\textheight width 1pt%
+      %\vrule height2.75ex depth1.25ex width 1pt
+      \mbox{\hspace{2em}}
+      \vtop{% %%%%%%%%%%%%%%%%%%
+
+        \vskip 40\p@
+        \begin{flushleft}
+          \huge \bfseries \@title \par
+        \end{flushleft}
+        \vskip 80\p@
+        \begin{flushleft}
+          \@author \par
+        \end{flushleft}
+        
+         \vskip 240\p@
+         \color{gray}
+        \begin{flushleft}
+          \fhv{10}{Revista digital}\\
+          \fhvb{12}{Matemática, Educación e Internet}\\
+           \fntg[phv][10]{%
+            \href{http://www.tec-digital.itcr.ac.cr/revistamatematica/}{(http://www.tec-digital.itcr.ac.cr/revistamatematica/).}}\\          
+        \end{flushleft}
+        \vfil
+        }}
+    \null
+  \end{titlepage}%
+  \setcounter{footnote}{0}%
+}
+% Fin Titulo----------------------------------------------------------------------------
+
+
+
+
+%-------------------CONTENIDO -----------------------------------------------------
+%\usepackage{kpfonts}
+
+\definecolor{doc}{RGB}{0,60,110}
+%\usepackage{titletoc}
+\contentsmargin{0cm}
+\titlecontents{chapter}[0pc]
+{\addvspace{30pt}%
+\begin{tikzpicture}[remember picture, overlay]%
+\draw[fill=doc!30,draw=doc!30] (-4,-.1) rectangle (0,0.5);%
+\pgftext[left,x=-1.5 cm,y=0.2cm]{\color{white}\Huge\sc\bfseries \ \thecontentslabel};%
+\end{tikzpicture}\color{doc!40}\large\sc\bfseries}%
+{}
+{}
+{\;\titlerule\;\large\sc\bfseries Página \thecontentspage
+\begin{tikzpicture}[remember picture, overlay]
+\draw[fill=doc!25,draw=doc!20] (2pt,0) rectangle (6,0.1pt);
+\end{tikzpicture}}%
+%%---
+\titlecontents{section}[2.4pc]
+{\addvspace{1pt}}
+{\contentslabel[\color{azulF}\thecontentslabel]{2.4pc}}
+{}
+{\hfill\small \color{azulF}\thecontentspage}
+[]
+%------
+
+% \titlecontents{subsection}[4pc]
+% {\addvspace{-1pt}\small}
+% {}
+% {}
+% {\hfill\small \color{azulF}\thecontentspage}
+% []
+
+%%Habilitar numeración de subsecciones en la tabla de contenidos
+\titlecontents{subsection}[4pc]
+{\addvspace{-1pt}\small}
+{\contentslabel[\color{azulF}\thecontentslabel]{2pc}}
+{}
+{\hfill\small \color{azulF}\thecontentspage}
+[]
+
+%\makeatletter
+\renewcommand{\tableofcontents}{%
+\chapter*{%
+\vspace*{-20\p@}%
+\begin{tikzpicture}[remember picture, overlay]%
+\pgftext[right,x=15cm,y=0.2cm]{\color{doc!30}\Huge\sc\bfseries \contentsname};%
+\draw[fill=doc!30,draw=doc!30] (13,-.75) rectangle (20,1);%
+\clip (13,-.75) rectangle (20,1);
+\pgftext[right,x=15cm,y=0.2cm]{\color{white}\Huge\sc\bfseries \contentsname};%
+\end{tikzpicture}}%
+\@starttoc{toc}}
+%\makeatother
+
+% Fin Contenido -------------------------------------------------------------------
+
+
+
+
+
+%----------------------------------------------------------------------------------------
+% Copypright, ISBN, ...
+%----------------------------------------------------------------------------------------
+\def\copyrightpage{\thispagestyle{empty}%
+\vbox to\textheight\bgroup\vfill\obeylines\obeyspaces\xcopyrightpage}
+
+\def\xcopyrightpage#1#2\end#3{\scriptsize\parindent=0pt
+Copyright\copyright{#1} 
+\vskip40pt
+#2\vskip200pt\egroup\endgroup}
+\let\endcopyrightpage\relax
+% Fin Copyright
+% ---------------------------------------------------------------------------
+
+% dofootnote con derechos ---------------------------------------------------
+\def\dofnote#1#2{\vtop{\hyphenpenalty=10000
+\advance\hsize -10pt \raggedright
+\footnotesize{\it #1. }{ #2}\\
+\noindent\hbox{\footnotesize
+Derechos Reservados \copyright\ \thecopyrightyear\ Revista digital Matem\'atica, Educaci\'on e Internet.
+ \href{www.tec-digital.itcr.ac.cr/revistamatematica/}{www.tec-digital.itcr.ac.cr/revistamatematica/}}}}
+
+
+\def\offprintinfo#1#2{
+\def\theoffprint{\bgroup\frenchspacing
+\dofnote{#1}{#2}
+\egroup}}
+
+%-----------------------------------------------------------------------------
+
+
+
+%--------------------------------------------------------------------------------
+% Entornos  
+%--------------------------------------------------------------------------------
+%  Cajas con el paquete  tcbcolor 
+%  CONTADORES: wejemplo, wdefinicion, wlema, wteorema, wcorolario, wproposicion,wejercicio
+
+\newcounter{tcbca}[chapter]
+\renewcommand{\thetcbca}{\thechapter.\arabic{tcbca}}
+
+\newcounter{tcbejem}[chapter]
+\renewcommand{\thetcbejem}{\thechapter.\arabic{tcbejem}}
+
+\newcounter{tcble}[chapter]
+\renewcommand{\thetcble}{\thechapter.\arabic{tcble}}
+
+\newcounter{tcbteo}[chapter]
+\renewcommand{\thetcbteo}{\thechapter.\arabic{tcbteo}}
+
+\newcounter{tcbdefi}[chapter]
+\renewcommand{\thetcbdefi}{\thechapter.\arabic{tcbdefi}}
+
+\newcounter{tcbcoro}[chapter]
+\renewcommand{\thetcbcoro}{\thechapter.\arabic{tcbcoro}}
+
+\newcounter{tcbpropo}[chapter]
+\renewcommand{\thetcbpropo}{\thechapter.\arabic{tcbpropo}}
+
+\newcounter{tcbvoca}[chapter]
+\renewcommand{\thetcbvoca}{\thechapter.\arabic{tcbvoca}}
+
+\newcounter{tcbejer}[chapter]
+\renewcommand{\thetcbejer}{\thechapter.\arabic{tcbejer}}
+
+% Propiedades de nodo---------------------------------------------------------------
+\tikzset{
+    wnodeEjemplo/.style={%
+         rectangle, minimum width=4cm,
+         text=gray!10!black, 
+         top color=colorejemplo!20!white, bottom color=colorejemplo,
+         inner sep=1mm,anchor=west,font=\normalsize},
+    wnodeTeorema/.style={%
+         rectangle, minimum width=4cm, 
+         top color=colorteorema!50!white, bottom color=colorteorema,
+         text=black!80!white,
+         inner sep=1mm,anchor=west,font=\normalsize},     
+     wnodeDefinicion/.style={%
+         rectangle, minimum width=4cm, %minimum height=0.3cm,
+         text=black,
+         top color=colordefinicion!20!white, bottom color=colordefinicion,
+         inner sep=1mm,anchor=west,font=\normalsize
+         }, 
+     wnodeCaja/.style={%
+         rectangle, minimum width=4cm, 
+         top color=colorcaja, bottom color=colorcaja,
+         inner sep=1mm,anchor=west,font=\normalsize
+         }          
+}
+
+
+% Definición----------------------------------------------------------------------
+\newtcolorbox{wwdefinicion}[3][]{%
+arc=0mm,breakable,
+enhanced,colback=colorfondodefinicion,drop fuzzy shadow,
+boxrule=0pt,
+top=3mm, %Inicia texto
+enlarge top by=\baselineskip/2+1mm,
+enlarge top at break by=0mm,pad at break=2mm,
+fontupper=\normalsize,
+step and label={tcbdefi}{#3},
+    % Borde
+    overlay unbroken={\draw[color=colordefinicion,line width=1.9pt] (frame.north west)
+                    --(frame.south west);                  
+    % Caja de Título DEFINICION
+    \node[wnodeDefinicion]at ([xshift=-1pt,  yshift=2.20mm]frame.north west)
+         {\textbf{Definición \thetcbdefi \;#2}};
+      },
+    % Borde
+    overlay first={\draw[color=colordefinicion,line width=1.9pt] (frame.north west)
+                    --(frame.south west);                  
+    % Caja de Título DEFINICION
+    \node[wnodeDefinicion]at ([xshift=-1pt,  yshift=2.20mm]frame.north west)
+         {\textbf{Definición \thetcbdefi \;#2}};
+      },      
+overlay last={\draw[color=colordefinicion,line width=1.9pt] (frame.north west)
+ --(frame.south west);
+}
+#1}%
+%-
+\NewDocumentEnvironment{wdefinicion}{O{} O{} O{}}{\bigskip\begin{wwdefinicion}{#1}{#2}%
+ #3}{\end{wwdefinicion}\bigskip }
+% Fin DEFINICION 
+
+
+
+% Ejemplo ---------------------------------------------------------------------
+\newtcolorbox{wwejemplo}[3][]{%
+arc=0mm,breakable,drop fuzzy shadow,
+enhanced,colback=colorfondoejemplo,
+boxrule=0pt,
+top=3mm, %Separación vertical - inicia texto
+enlarge top by=\baselineskip/2+1mm,
+enlarge top at break by=0mm,pad at break=2mm,
+fontupper=\normalsize,
+step and label={tcbejem}{#3},
+%Borde
+overlay unbroken={\draw[color=colorejemplo,line width=1.9pt] (frame.north west)
+ --(frame.south west);
+% Caja de Título EJEMPLO
+\node[wnodeEjemplo]at ([xshift=-1pt,yshift=2.20mm]frame.north west){\textbf{Ejemplo\;\thetcbejem \;\;#2}};
+},
+%Borde
+overlay first={\draw[color=colorejemplo,line width=1.9pt] (frame.north west)
+ --(frame.south west);
+% Caja de Título EJEMPLO
+\node[wnodeEjemplo]at ([xshift=-1pt,yshift=2.20mm]frame.north west){\textbf{Ejemplo\;\thetcbejem \;\;#2}};
+},
+%Borde cambio de página
+overlay middle={\draw[color=colorejemplo,line width=1.9pt] (frame.north west)
+ --(frame.south west);},
+overlay last={\draw[color=colorejemplo,line width=1.9pt] (frame.north west)
+ --(frame.south west);
+}
+#1}
+%-
+\NewDocumentEnvironment{wejemplo}{O{} O{} O{}}{\bigskip\begin{wwejemplo}{#1}{#2}%
+ #3}{\end{wwejemplo}\bigskip }
+% Fin EJEMPLO
+
+
+% Teorema -----------------------------------------------------------------
+\newtcolorbox{wwteorema}[3][]{%
+arc=0mm,breakable,
+enhanced,colback=colorfondoteorema,drop fuzzy shadow,
+boxrule=0pt,
+top=3mm, %Separación vertical - inicia texto
+enlarge top by=\baselineskip/2+1mm,
+enlarge top at break by=0mm,pad at break=2mm,
+fontupper=\normalsize,
+step and label={tcbteo}{#3},
+%Bordes-----------------------------------------------------------------
+overlay unbroken={\draw[color=colorteorema,line width=1.9pt] (frame.north west)
+ --(frame.south west);
+%Caja de Título: TEOREMA
+node distance=0cm,
+\node[wnodeTeorema](tituloTeo) at ([xshift=-1pt, yshift=2.20mm]frame.north west)
+{\textbf{Teorema \thetcbteo \;#2}};
+},
+%Bordes-----------------------------------------------------------------
+overlay first={\draw[color=colorteorema,line width=1.9pt] (frame.north west)
+ --(frame.south west);
+%Caja de Título: TEOREMA
+node distance=0cm,
+\node[wnodeTeorema](tituloTeo) at ([xshift=-1pt, yshift=2.20mm]frame.north west)
+{\textbf{Teorema \thetcbteo \;#2}};
+},
+overlay last={\draw[color=colorteorema,line width=1.9pt] (frame.north west)
+ --(frame.south west);
+}
+#1}
+%-
+\NewDocumentEnvironment{wteorema}{O{} O{} O{}}{\bigskip\begin{wwteorema}{#1}{#2}%
+ #3}{\end{wwteorema}\bigskip }
+% Fin TEOREMA
+
+% LEMA -------------------------------------------------------------------------
+\newtcolorbox{wwlema}[3][]{%
+arc=0mm,breakable,
+enhanced,colback=colorfondoteorema,drop fuzzy shadow,
+boxrule=0pt,
+top=3mm, %Separación vertical - inicia texto
+enlarge top by=\baselineskip/2+1mm,
+enlarge top at break by=0mm,pad at break=2mm,
+fontupper=\normalsize,
+step and label={tcble}{#3},
+%Bordes-----------------------------------------------------------------
+overlay unbroken={\draw[color=colorteorema,line width=1.9pt] (frame.north west)
+ --(frame.south west);
+%Caja de Título: LEMA
+node distance=0cm,
+\node[wnodeTeorema]at ([xshift=-1pt,  yshift=2.20mm]frame.north west)
+{ \textbf{Lema \thetcble\; #2}};
+ },
+%Bordes-----------------------------------------------------------------
+overlay first={\draw[color=colorteorema,line width=1.9pt] (frame.north west)
+ --(frame.south west);
+%Caja de Título: LEMA
+node distance=0cm,
+\node[wnodeTeorema]at ([xshift=-1pt,  yshift=2.20mm]frame.north west)
+{ \textbf{Lema \thetcble\; #2}};
+ },
+ overlay last={\draw[color=colorteorema,line width=1.9pt] (frame.north west)
+ --(frame.south west);
+}
+#1}
+%-
+\NewDocumentEnvironment{wlema}{O{} O{} O{}}{\bigskip\begin{wwlema}{#1}{#2}%
+ #3}{\end{wwlema}\bigskip }
+%Fin LEMA
+
+
+% Proposición ----------------------------------------------------------------
+\newtcolorbox{wwproposicion}[3][]{%
+arc=0mm,breakable,
+enhanced,colback=colorfondoteorema,drop fuzzy shadow,
+boxrule=0pt,
+top=3mm, 
+enlarge top by=\baselineskip/2+1mm,
+enlarge top at break by=0mm,pad at break=2mm,
+fontupper=\normalsize,
+step and label={tcbpropo}{#3},
+%Bordes-----------------------------------------------------------------
+overlay unbroken={\draw[color=colorteorema,line width=1.9pt] (frame.north west)
+ --(frame.south west);
+%Caja de Título: Proposición
+\node[wnodeTeorema]
+at ([xshift=-1pt,  yshift=2.20mm]frame.north west){ \textbf{Proposición \;\thetcbpropo \;#2}};},
+overlay last={\draw[color=colorteorema,line width=1.9pt] (frame.north west)
+ --(frame.south west);
+},
+%Bordes-----------------------------------------------------------------
+overlay first={\draw[color=colorteorema,line width=1.9pt] (frame.north west)
+ --(frame.south west);
+%Caja de Título: Proposición
+\node[wnodeTeorema]
+at ([xshift=-1pt,  yshift=2.20mm]frame.north west){ \textbf{Proposición \;\thetcbpropo \;#2}};},
+overlay last={\draw[color=colorteorema,line width=1.9pt] (frame.north west)
+ --(frame.south west);
+}, 
+overlay last={\draw[color=colorteorema,line width=1.9pt] (frame.north west)
+ --(frame.south west);
+}
+#1}
+%-
+\NewDocumentEnvironment{wproposicion}{O{} O{} O{}}{\bigskip\begin{wwproposicion}{#1}{#2}%
+ #3}{\end{wwproposicion}\bigskip }
+%Fin Proposicion-----------------------------------------------------------------
+
+% % Corolario -------------------------------------------------------
+\newtcolorbox{wwcoro}[2][]{%
+arc=0mm,breakable,enhanced,colback=gray!5,boxrule=0pt,
+top=1mm,left=3pt,
+fontupper={\small\bf\sffamily {\color{azulF}Corolario \thetcbcoro}\;}~\normalfont, 
+step and label={tcbcoro}{#2},
+overlay unbroken  = {%barra vertical
+\draw[color=gray,line width=3pt] ([xshift=2pt] frame.north west)--([xshift=2pt] frame.south west);           }, 
+overlay first  = {%barra vertical
+\draw[color=gray,line width=3pt] ([xshift=2pt] frame.north west)--([xshift=2pt] frame.south west);           },      
+% Mantener borde en cambio de página     
+overlay last ={\draw[color=gray,line width=3pt] 
+                     ([xshift=2pt] frame.north west)--([xshift=2pt] frame.south west);
+              }     
+#1}
+%-
+\NewDocumentEnvironment{wcorolario}{O{} O{}}{\smallskip\begin{wwcoro}{#1}%
+}{\end{wwcoro}\smallskip }
+% Corolario------------------------------------------------------
+
+
+% Ejercicio - Caja para ejercicio solitario
+\newtcolorbox{wwejercicio}[1][]{%
+arc=0mm,breakable,enhanced,colback=gray!5,boxrule=0pt,
+top=1mm,left=3pt,
+fontupper={\bf\sffamily {\color{miverde}Ejercicio.}\;}~\normalfont, 
+overlay unbroken  = {%barra vertical
+\draw[color=gray,line width=3pt] ([xshift=2pt] frame.north west)--([xshift=2pt] frame.south west);           
+}, 
+overlay first  = {%barra vertical
+\draw[color=gray,line width=3pt] ([xshift=2pt] frame.north west)--([xshift=2pt] frame.south west);           
+},      
+% Mantener borde en cambio de página     
+overlay last ={\draw[color=gray,line width=3pt] 
+                     ([xshift=2pt] frame.north west)--([xshift=2pt] frame.south west);
+              }     
+#1}
+%-
+\NewDocumentEnvironment{ejercicio}{O{} O{}}{\smallskip\begin{wwejercicio}{#1}%
+}{\end{wwejercicio}\smallskip }
+% Ejercicio------------------------------------------------------
+
+
+%CAJA simple---------------------------------------------------------------------
+\newtcolorbox{wwbox}[1][]{%
+arc=0mm,breakable,drop fuzzy shadow,
+enhanced,colback=grisamarillo,
+boxrule=0pt,
+top=3mm, %Separación vertical - inicia texto
+enlarge top by=\baselineskip/2+1mm,
+enlarge top at break by=0mm,pad at break=2mm,
+fontupper=\normalsize,
+%step and label={tcbca}{#3},
+%Borde
+overlay unbroken={\draw[color=amarilloD,line width=0.5pt] (frame.north west)
+  --([xshift=0pt]frame.north east)
+  --([xshift=0pt]frame.south east)
+  --([xshift=0pt]frame.south west)--(frame.north west);
+        },
+%Borde
+overlay first={\draw[color=amarilloD,line width=0.5pt] (frame.north west)
+  --([xshift=0pt]frame.north east)
+  --([xshift=0pt]frame.south east)
+  --([xshift=0pt]frame.south west)--(frame.north west);
+        },
+%Borde cambio de página
+overlay last={\draw[color=amarilloD,line width=0.5pt] (frame.north west)
+  --([xshift=0pt]frame.north east)
+  --([xshift=0pt]frame.south east)
+  --([xshift=0pt]frame.south west)--(frame.north west);}
+#1}
+
+ \newenvironment{scaja}[1][]{\bigskip\begin{wwbox}%
+ #1}{\end{wwbox}}	
+% Fin CAJA simple	
+% Fin CAJA simple
+
+
+%CAJA de comentario ---------------------------------------------------------------------
+\newtcolorbox{wwcaja}[2][]{%
+arc=0mm,breakable,%drop fuzzy shadow,
+enhanced,colback=colorfondocaja,
+boxrule=0pt,
+top=3mm, %Separación vertical - inicia texto
+enlarge top by=\baselineskip/2+1mm,
+enlarge top at break by=0mm,pad at break=2mm,
+fontupper=\normalsize,
+%step and label={tcbca}{#3},
+%Borde
+overlay unbroken={\draw[color=colorcaja,line width=0.5pt] (frame.north west)
+  --([xshift=0pt]frame.north east)
+  --([xshift=0pt]frame.south east)
+  --([xshift=0pt]frame.south west)--(frame.north west);
+% Caja de Título CAJA
+\node[ rectangle, %minimum width=0cm, minimum height=0.0cm,
+         top color=colorcaja, bottom color=colorcaja,
+         inner sep=0.5mm,anchor=west,font=\normalsize]at ([xshift=-0.4pt,  yshift=2.30mm]frame.north west){\textbf{#2}};
+         },
+%Borde
+overlay first={\draw[color=colorcaja,line width=0.5pt] (frame.north west)
+  --([xshift=0pt]frame.north east)
+  --([xshift=0pt]frame.south east)
+  --([xshift=0pt]frame.south west)--(frame.north west);
+% Caja de Título CAJA
+\node[ rectangle, %minimum width=0cm, minimum height=0.0cm,
+         top color=colorcaja, bottom color=colorcaja,
+         inner sep=0.5mm,anchor=west,font=\normalsize]at ([xshift=-0.4pt,  yshift=2.30mm]frame.north west){\textbf{#2}};
+         },
+%Borde cambio de página
+overlay last={\draw[color=colorcaja,line width=0.5pt] (frame.north west)
+  --([xshift=0pt]frame.north east)
+  --([xshift=0pt]frame.south east)
+  --([xshift=0pt]frame.south west)--(frame.north west);}
+#1}
+%-
+\NewDocumentEnvironment{wcaja}{O{} O{}}{\bigskip\begin{wwcaja}{#1}%
+ #2}{\end{wwcaja}\bigskip }
+% Fin CAJA de comentario
+
+
+
+%CAJA vocabulario-------------------------------------------------------
+\newtcolorbox{vocabox}[3][]{%
+arc=0mm,breakable,enhanced,colback=white,boxrule=0pt,
+top=1mm, left=3pt,
+step and label={tcbvoca}{#3},
+fontupper={\small\bf\sffamily {\color{azulF}Vocabulario \thetcbvoca \;#2}}~\normalfont, %"Vocabulario..."+texto del cuerpo
+overlay unbroken  = {%barra vertical
+\draw[color=white,line width=3pt] ([xshift=2pt] frame.north west)--([xshift=2pt] frame.south west);                 
+         },%
+overlay first  = {%barra vertical
+\draw[color=white,line width=3pt] ([xshift=2pt] frame.north west)--([xshift=2pt] frame.south west);                 
+         },%
+% Mantener borde en cambio de página     
+overlay last ={\draw[color=white,line width=3pt] ([xshift=2pt] frame.north west)--([xshift=2pt] frame.south west);   },    
+#1}
+%-
+\NewDocumentEnvironment{vocabulario}{O{} O{} O{}}{\smallskip\begin{vocabox}{#1}{#2}%
+#3}{\end{vocabox}\smallskip }	
+% Fin vocabulario
+
+%CAJA nota-------------------------------------------------------
+\newtcolorbox{notabox}[1][]{%
+arc=0mm,breakable,
+enhanced,colback=white,
+boxrule=0pt,
+top=3mm, %Separación vertical - inicia texto
+left=25pt,
+enlarge top by=\baselineskip/2+1mm,
+enlarge top at break by=0mm,pad at break=2mm,
+fontupper={\begin{tikzpicture}[overlay]
+\node[draw=colordominanteF,line width=1pt,circle,fill=white,font=\sffamily\bfseries,inner sep=2pt,outer sep=0pt] at (-15pt,3pt){\textcolor{colordominanteF}{N}};\end{tikzpicture}}~\normalfont,  %"NOTA..."+texto del cuerpo
+%Borde y círculo
+overlay unbroken={
+\draw[color=white,line width=0.5pt] (frame.north west)
+  --([xshift=0pt]frame.north east)
+  --([xshift=0pt]frame.south east)
+  --([xshift=0pt]frame.south west)--(frame.north west);
+        },
+%Borde y círculo
+overlay first={
+\draw[color=white,line width=0.5pt] (frame.north west)
+  --([xshift=0pt]frame.north east)
+  --([xshift=0pt]frame.south east)
+  --([xshift=0pt]frame.south west)--(frame.north west);
+        },
+%Borde cambio de página
+overlay last={\draw[color=white,line width=0.5pt] (frame.north west)
+  --([xshift=0pt]frame.north east)
+  --([xshift=0pt]frame.south east)
+  --([xshift=0pt]frame.south west)--(frame.north west);}
+#1}
+%-
+ \newenvironment{nota}[1][]{\bigskip\begin{notabox}%
+ #1}{\end{notabox}}	
+% Fin nota
+
+
+% Fin TCOLORBOX------------------------------------------------------------------
+
+
+%---------------Teoremas, definiciones, etc. SIN CAJAS ---------------------------
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{2}
+\setcounter{chapter}{0}
+\RequirePackage[amsmath,thmmarks,hyperref]{ntheorem}
+
+%Color número=##1,  ##2=Teorema (def, etc) y ##3=[Teorema tal]
+%
+\renewtheoremstyle{plain}%
+{\item[\hskip\labelsep \theorem@headerfont \color{azulF} ##1\ {\color{grisD}##2}\color{white}\theorem@separator]}%
+{\item[\hskip\labelsep \theorem@headerfont \color{azulF} ##1\ {\color{grisD} ##2}\ {\color{azulF}\normalfont(##3).}\color{white}\theorem@separator]}
+\theoremheaderfont{\sffamily\bfseries\color{azulF}}
+\theorembodyfont{\normalfont}
+
+
+
+\newtheorem{teorema}{Teorema}[chapter]
+\newtheorem{lema}{Lema}[chapter]
+\newtheorem{corolario}{{Corolario}}[chapter]
+\newtheorem{definicion}{Definición}[chapter]
+\newtheorem{ejemplo}{Ejemplo}[chapter]
+
+% Fin entornos Teoremas, definiciones, etc.----------------------------------------------
+
+
+%--------------------------------------------------------------------------------
+% LISTAS DE EJERCICIOS
+%--------------------------------------------------------------------------------
+ 
+\RequirePackage{answers}
+\newtheorem{exer}{}[chapter]
+\newenvironment{ejer}{\begin{exer}\normalfont}{\end{exer}}
+\Newassociation{solu}{Soln}{ans}
+
+% USO del entorno personalizado---------------------------------------------------
+%\begin{ejercicios} --- \end{ejercicios} para listas simples
+%\begin{cejercicios} --- \end{cejercicios} para listas en cajas
+
+\NewDocumentEnvironment{ejercicios}{O{}}{%
+\bigskip\begin{minipage}{\textwidth}{\bf\verde Ejercicios}
+                                     #1}{\end{minipage}\bigskip}
+
+
+
+\colorlet{color1}{gray!5!white}       % color fondo
+\definecolor{color2}{RGB}{117,184,68} % color del nodo
+% Caja ejercicios--
+\newtcolorbox{wwlistaejercicios}[1][]{%
+  arc=0mm,breakable,enhanced,colback=color1,boxrule=0pt,top=8mm, 
+  enlarge top by=\baselineskip/2+1mm, enlarge top at break by=0mm,
+  pad at break=2mm,fontupper=\normalsize,
+  overlay unbroken={ % nodo rectangular  para "Ejercicios"
+  \node[rectangle, minimum width=4cm, 
+      top color=color2, bottom color=color2, 
+      inner sep=1mm,anchor=west,font=\normalsize] 
+   at ([xshift=0pt,yshift=-3mm]frame.north west)%
+{\textbf{Ejercicios}};},
+  overlay first={ % nodo rectangular  para "Ejercicios"
+  \node[rectangle, minimum width=4cm, 
+      top color=color2, bottom color=color2, 
+      inner sep=1mm,anchor=west,font=\normalsize] 
+   at ([xshift=0pt,yshift=-3mm]frame.north west)%
+{\textbf{Ejercicios}};},
+overlay last ={ } % cambio de página, solo caja gris
+#1}
+
+% Nuevo entorno personalizado----------------------------------------
+\NewDocumentEnvironment{cejercicios}{O{}}{%
+\bigskip\begin{wwlistaejercicios}%
+ #1}{\end{wwlistaejercicios}\bigskip } % 
+% -------------------------------------------------------------------
+
+
+
+
+% Entorno con Caja para ejercicios-----------------------------------------
+%\begin{cajaejercicios}  o \begin{cajaejercicios}[de tal] 
+%                        o \begin{cajaejercicios}[][ref]
+% Entorno personalizado---------------------------------------------------
+\definecolor{colorejercicios}{RGB}{99,42,134}
+%\newcounter{tcbejer}[chapter]
+%\renewcommand{\thetcbejer}{\thechapter.\arabic{tcbejer}}
+
+\newtcolorbox{wwejercicios}[3][]{%
+arc=0mm,breakable,%drop fuzzy shadow,
+enhanced,colback=gray!5,boxrule=0pt,top=7mm,
+fontupper=\normalsize,step and label={tcbejer}{#3},
+overlay unbroken = {
+%Borde grueso superior
+\draw[color=colorejercicios,line width=3pt] (frame.north west)--([xshift=0pt]frame.north east);
+%Caja de Título: Ejer --
+\node[rounded corners=3pt,  draw=colorejercicios, top color=white, bottom color=white, thick,inner sep=1mm,anchor=west, font=\small\bf\sffamily](tituloejer) at ([xshift=5mm, yshift=0mm]frame.north west)
+{\textbf{\color{miverde}  Ejercicios \thetcbejer \;#2}};
+%borde línea inferior
+ \draw[color=colorejercicios,line width=0.2pt] (frame.south west)--([xshift=0pt]frame.south east); 
+},%overlay
+overlay first = {
+%Borde grueso superior
+\draw[color=colorejercicios,line width=3pt] (frame.north west)--([xshift=0pt]frame.north east);
+%Caja de Título: Ejer --
+\node[rounded corners=3pt,  draw=colorejercicios, top color=white, bottom color=white, thick,inner sep=1mm,anchor=west, font=\small\bf\sffamily](tituloejer) at ([xshift=5mm, yshift=0mm]frame.north west)
+{\textbf{\color{miverde}  Ejercicios \thetcbejer \;#2}};
+%borde línea inferior
+ \draw[color=colorejercicios,line width=0.2pt] (frame.south west)--([xshift=0pt]frame.south east); 
+},%overlay
+% % Mantener borde en cambio de página 
+% overlay middle = {\draw[color=colordominante,line width=0.2pt] (frame.north west)--([xshift=0pt]frame.north east);
+%                 } 
+overlay middle ={},
+overlay last = { %borde línea inferior
+ \draw[color=colorejercicios,line width=0.2pt] (frame.south west)--([xshift=0pt]frame.south east); 
+                } 
+#1}
+%-
+\NewDocumentEnvironment{cajaejercicios}{O{} O{} O{}}{\smallskip\begin{wwejercicios}{#1}{#2}%
+ #3}{\end{wwejercicios}\smallskip }
+% ejercicios---------------------------------------------------------
+
+
+% Comandos para paquete answers
+% pregunta-solución
+\newcommand{\exersol}[2]{
+\begin{ejer} 
+#1\scantokens{\begin{solu}#2\end{solu}}
+\end{ejer}}
+% listas \item pregunta-solución
+\newcommand{\itemps}[2]{\item #1\scantokens{\begin{solu}#2\end{solu}}}
+
+\newcommand{\bex}{\scantokens{\begin{solu} \end{solu}}\begin{enumerate}[label=\alph*.)]}
+\newcommand{\eex}{\end{enumerate}}
+
+
+
+% Soluciones al final del documento
+\def\soluciones{
+\expandafter\ifx\csname Closesolutionfile\endcsname \relax\else
+\Closesolutionfile{ans}\fi
+}
+
+\def\solucionesCap#1{\section*{Soluciones del Cap\'{\i}tulo #1}\input{ans#1}}
+% Fin Listas de Ejercicios-------------------------------------------
+
+
+
+%-----------------------------------------------------------------------------
+%hyperref
+%-----------------------------------------------------------------------------
+\RequirePackage[breaklinks,colorlinks=true, pdfstartview=FitV, linkcolor=azulF,
+citecolor=azulF, urlcolor=azulF]{hyperref}
+%\RequirePackage{breakurl} %braek url, usar después de hyperref
+                      %Uso \burl{http:...}
+%------------------------------------------------------------------------------
+
+
+%-----------------------------------------------------------------------------
+%código de programas (LaTeX en ese caso)
+%-----------------------------------------------------------------------------
+
+\RequirePackage{listings}
+% Puede usar lstlisting|texto| para código en el texto
+\lstset{ %
+  	      language={[LaTeX]TeX}, %Pascal % lenguaje de programación
+  	      basicstyle=\bfseries\ttfamily,
+  	      keywordstyle=\color{blue},
+  	      commentstyle=\color{miverde},	   
+  	      backgroundcolor=\color{gray!5},
+  	      showstringspaces=false
+  	      }
+  	        	     
+%-----------------------------------------------------------------------------
+%Listas de puntos con Tikz
+%-----------------------------------------------------------------------------
+
+% Puntos Tikz y  Enumerate con  Tikz -
+  \newcommand{\tpto}{\tikz \shadedraw [shading=ball] (0,0) circle (.1cm);}
+  \newcommand{\ttpto}[1]{\begin{tikzpicture}
+  	\node[scale=.5, circle, shade, ball color=blue]  {\color{white}\Large\textbf#1};
+  \end{tikzpicture}}
+  \newcommand{\ttptov}{\begin{tikzpicture}
+  	\node[scale=.5, circle, shade, ball color=green]  {\color{white}\Large\textbf.};
+  \end{tikzpicture}}
+  \newcommand{\ttptor}{\begin{tikzpicture}
+  	\node[scale=.5, circle, shade, ball color=red]  {\color{white}\Large\textbf.};
+  \end{tikzpicture}}
+  \newcommand{\ptoazul}[1]{\begin{tikzpicture}
+  	\node[scale=.5, circle, shade, ball color=blue]  {\color{white}\Large\textbf#1};
+  \end{tikzpicture}}
+ \newcommand{\ptomb}{\ptoazul$\;$}
+ \newcommand{\itempto}{\item[\tpto]}
+ \newcommand{\pto}{\tpto}
+ \newcommand{\ptom}{\tpto$\;$}
+ \newcommand{\ptomv}{\ttptov$\;$}
+ \newcommand{\ptomr}{\ttptor$\;$}
+
+ % Listas -- con puntos
+
+ %\RequirePackage{enumerate}
+ \newcommand{\witem}[1]{\item[{\bf #1)}]}
+ 
+ \newcommand*{\itembolasgrises}[1]{%
+ \footnotesize\protect\tikz[baseline=-3pt]%
+ \protect\node[fill=gray!50,shape=circle,draw,inner sep=1.2pt,line width=0.2mm](n1){#1};}
+ \newcommand*{\itembolasazules}[1]{%
+ \footnotesize\protect\tikz[baseline=-3pt]%
+ \protect\node[scale=.5, circle, shade, ball color=blue]  {\color{white}\Large\bf#1};}
+ \newcommand*{\itembolasverdes}[1]{%
+ \footnotesize\protect\tikz[baseline=-3pt]%
+ \protect\node[scale=.5, circle, shade, ball color=green]  {\color{white}\Large\bf#1};}
+ \newcommand*{\itembolasrojas}[1]{%
+  \footnotesize\protect\tikz[baseline=-3pt]%
+  \protect\node[scale=.5, circle, shade, ball color=red]  {\color{white}\Large\bf#1};}
+  
+%Comando para listas con bolas	
+\newcommand{\beaz}{\begin{enumerate}[label=\itembolasazules{\arabic*}]}
+\newcommand{\eeaz}{\end{enumerate}}
+
+\typeout{Paquete de Estilo A.\\
+Revista digital Matemática, Educación e Internet.\\
+http://www.tec-digital.itcr.ac.cr/revistamatematica/
+}
+% FIN Listas 
+ 
+
+ 
+ 
+%-----------------------------------------------------------------------------
+% TABLAS CON Tikz
+%----------------------------------------------------------------------------- 
+\usepackage{array}
+\usetikzlibrary{calc,fit,shadows,arrows,positioning}
+\pgfdeclarelayer{background}
+\pgfdeclarelayer{foreground}
+\pgfsetlayers{background,main,foreground}
+%--
+%------------------------------------------------------------------------------
+% Data Table
+%------------------------------------------------------------------------------
+\newsavebox{\dataTableContent} % Box
+\newenvironment{dataTable}[1] % \new environment
+{%
+\begin{lrbox}{\dataTableContent}%
+\begin{tabular}{#1}}%
+%
+{%
+\end{tabular}
+\end{lrbox}
+\begin{tikzpicture}
+\node [inner xsep=0pt] (tbl){\usebox{\dataTableContent}};
+\begin{pgfonlayer}{background}
+% table
+\draw[rounded corners=1pt,top color=gray!1,bottom color=gray!30,draw=black]
+(tbl.north east) rectangle (tbl.south west);
+% top line
+\draw[rounded corners=1pt,top color=gray!10!black,bottom color=gray!50!black,draw=black]%
+($(tbl.north west)$) rectangle ($(tbl.north east)-(0,1.5\baselineskip)$);
+% bottom rule
+\draw[rounded corners=0.25pt,fill=gray,draw=black]%
+(tbl.south west) rectangle ($(tbl.south east)+(0,0.05)$);
+\end{pgfonlayer}
+\end{tikzpicture}}
+% --
+ 
+ 
+ 
+%----------------------------------------------------------------------------- 
+%- Modoficación de chapter para que abra y cierre archivos ans----------------
+%-----------------------------------------------------------------------------
+\newcount\ansj % contador de listas ans i
+\ansj=\thechapter
+%           % -- Infiltrar \chapter --------------------------------------------
+% \makeatletter %no es necesario en .sty
+\let\stdchapter\chapter % \stdchapter guarda la def original de \chapter
+\renewcommand*\chapter{ % -- Infiltrar: abrir y cerrar archivos ans j---
+\expandafter\ifx\csname Closesolutionfile\endcsname \relax\else
+\Closesolutionfile{ans}\fi
+\expandafter\ifx\csname Opensolutionfile\endcsname \relax\else
+\Opensolutionfile{ans}[ans\number\ansj]\advance\ansj by 1\fi
+                        %------------------------------------------------------
+                        % Volver a la def original de \chapter
+\@ifstar{\starchapter}{\@dblarg\nostarchapter}}
+\newcommand*\starchapter[1]{\stdchapter*{#1}}
+\def\nostarchapter[#1]#2{\stdchapter[{#1}]{#2}}
+%\makeatother %no es necesario en .sty
+ % -- -------------------------------------------------------------------------
+
+

@@ -1,0 +1,49 @@
+\begin{thebibliography}{1}
+
+\bibitem{sp}
+M.~Brodsky.
+\newblock Reflexiones jurídicas sobre el e-marketing en chile.
+\newblock Interactive Advertising Bureau, 2015.
+\newblock \url{http://www.iab.cl/reflexiones-juridicas-sobre-el-
+  e-marketing-en-chile/}.
+
+\bibitem{clas}
+S.~Diaz-Santiago and D.~Chakraborty.
+\newblock On securing communication from profilers.
+\newblock In P.~Samarati, W.~Lou, and J.~Zhou, editors, {\em {SECRYPT} 2012 -
+  Proceedings of the International Conference on Security and Cryptography,
+  Rome, Italy, 24-27 July, 2012, {SECRYPT} is part of {ICETE} - The
+  International Joint Conference on e-Business and Telecommunications}, pages
+  154--162. SciTePress, 2012.
+
+\bibitem{Attacks}
+P.~Golle and A.~Farahat.
+\newblock Defending email communication against profiling attacks.
+\newblock In V.~Atluri, P.~F. Syverson, and S.~D.~C. di~Vimercati, editors,
+  {\em Proceedings of the 2004 {ACM} Workshop on Privacy in the Electronic
+  Society, {WPES} 2004, Washington, DC, USA, October 28, 2004}, pages 39--40.
+  ACM, 2004.
+
+\bibitem{stanford}
+D.~Jurafsky and J.~H. Martin.
+\newblock {\em Speech and Language Processing: An Introduction to Natural
+  Language Processing, Computational Linguistics, and Speech Recognition}.
+\newblock Prentice Hall PTR, Upper Saddle River, NJ, USA, 1st edition, 2000.
+
+\bibitem{shamir}
+A.~Shamir.
+\newblock How to share a secret.
+\newblock {\em Commun. {ACM}}, 22(11):612--613, 1979.
+
+\bibitem{Ahn03}
+L.~von Ahn, M.~Blum, N.~J. Hopper, and J.~Langford.
+\newblock {CAPTCHA}: Using hard {AI} problems for security.
+\newblock In E.~Biham, editor, {\em EUROCRYPT}, volume 2656 of {\em Lecture
+  Notes in Computer Science}, pages 294--311. Springer, 2003.
+
+\bibitem{@}
+Wikipedia.
+\newblock Email --- {W}ikipedia{,} the free encyclopedia, 2015.
+\newblock \url{http://en.wikipedia.org/wiki/Email}.
+
+\end{thebibliography}

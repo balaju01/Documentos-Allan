@@ -1,0 +1,20 @@
+\select@language {spanish}
+\contentsline {schapter}{\vskip 30pt\relax \relax \fontsize {12}{14}\selectfont \sc \bfseries Pr\'ologo \hfill \color {azulF} }{\es@scroman {vii}}{chapter*.2}
+\contentsline {chapter}{\numberline {1}\LaTeX : Primeros pasos}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Prueba de entornos}{1}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}Tablas}{2}{subsection.1.1.1}
+\contentsline {chapter}{\numberline {2}Acciones en una sesi\'on con \LaTeX {}}{3}{chapter.2}
+\contentsline {chapter}{\numberline {3}Escritura de Texto Normal}{5}{chapter.3}
+\contentsline {chapter}{\numberline {4}Texto en modo matem\'atico}{7}{chapter.4}
+\contentsline {chapter}{\numberline {5}Tablas y objetos flotantes}{9}{chapter.5}
+\contentsline {chapter}{\numberline {6}Insertar gr\'aficos y figuras}{11}{chapter.6}
+\contentsline {chapter}{\numberline {7}Edici\'on de gr\'aficos y figuras}{13}{chapter.7}
+\contentsline {chapter}{\numberline {8}Citas bibliogr\'aficas con BibTeX}{15}{chapter.8}
+\contentsline {chapter}{\numberline {9}Dise\~no Editorial}{17}{chapter.9}
+\contentsline {chapter}{\numberline {10}Entornos y cajas}{19}{chapter.10}
+\contentsline {chapter}{\numberline {11}Personalizar el Documento}{21}{chapter.11}
+\contentsline {chapter}{\numberline {12}Transparencias con Beamer}{23}{chapter.12}
+\contentsline {chapter}{\numberline {13}Posters y Tr\IeC {\'\i }pticos (Brochures)}{25}{chapter.13}
+\contentsline {chapter}{\numberline {14}Documentos \LaTeX {} en Internet}{27}{chapter.14}
+\contentsline {schapter}{\vskip 30pt\relax \relax \fontsize {12}{14}\selectfont \sc \bfseries Bibliograf\IeC {\'\i }a \color {azulF}\hfill }{28}{chapter.14}
+\contentsfinish 
