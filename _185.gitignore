@@ -1,7 +1,0 @@
-/vendor
-/node_modules
-Homestead.yaml
-Homestead.json
-.env
-.env.example
-readme.md
