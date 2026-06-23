@@ -1,0 +1,4 @@
+# CONTENTS.
+
+CHART 6 INDEX 8 INTRODUCTION 12 LECTURE I -Violin Tone-Character 17 LECTURE II- Accident No. 1 26 LECTURE III-The Fraudulent Violin Builder 42 LECTURE IV- Violin Sounding-Board Wood 57 LECTURE V-Disintegration of Violin Interior Surfaces 78 LECTURE VI -My Wornout Violin, or Varnish Phenomenon No. 1 92 LECTURE VII- Varnish Phenomenon No. 2- . 113 LECTURE VHI-Uniformity of Violin Tone- Values 130 LECTURE IX- Violin Tone-Modifiers 150' LECTURE X-Violin Tone-Modifiers, con- tinued 160 LECTURE XI -Violin Tone-Modifiers, con- tinued 171 LECTURE XII -Violin Tone-Modifiers, con- tinued 180 LECTURE XIII -Violin Tone-Modifiers, con- cluded 190 LECTURE XIV- Maximum Evenness of Violin Tone-Power 205 LECTURE XV -Maximum Evenness of Violin Tone-Power, concluded 222 LECTURE XVI-Maximum Violin Tone-Power 235 LECTURE XVII-Philosophy Involved in Vio- lin Interior-Surface Conditions 256 LECTURE \VlII-Our Pass-Over 274 APPENDIX 289
+vn
